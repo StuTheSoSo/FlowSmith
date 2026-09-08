@@ -1,0 +1,443 @@
+[
+  {
+    "id": "osteoporosis",
+    "label": "骨质疏松症/骨质减少/骨密度低",
+    "description": "避免负重的脊柱屈曲、旋转和末端侧弯。"
+  },
+  {
+    "id": "pregnancy",
+    "label": "怀孕",
+    "description": "按三个月修改； 怀孕中期后避免长时间仰卧和腹部剧烈屈曲。",
+    "hasTrimester": true
+  },
+  {
+    "id": "postpartum",
+    "label": "产后/产后恢复",
+    "description": "专注于温和的核心重新连接、盆底恢复和逐步恢复负荷。"
+  },
+  {
+    "id": "pelvic_floor_dysfunction",
+    "label": "盆底功能障碍",
+    "description": "注重盆底稳定性，避免强烈的瓦氏动作或不受控制的腹部负荷。"
+  },
+  {
+    "id": "diastasis_recti",
+    "label": "直肌分离/腹部分离",
+    "description": "避免负重腹部屈曲、剧烈扭转以及在没有支撑的情况下增加腹内压力的运动。"
+  },
+  {
+    "id": "low_back_pain",
+    "label": "慢性腰痛（椎间盘突出、椎管狭窄、脊椎滑脱）",
+    "description": "优先选择脊柱中立稳定并避免重复弯曲或疼痛的动作。"
+  },
+  {
+    "id": "scoliosis",
+    "label": "脊柱侧弯/脊柱不对称",
+    "description": "倾向于注意不对称的姿势，避免剧烈扭转，并优先考虑平衡的脊柱支撑。"
+  },
+  {
+    "id": "arthritis",
+    "label": "关节炎（一般）",
+    "description": "尊重无痛范围并避免重负荷或极端的极限运动。"
+  },
+  {
+    "id": "knee_issues",
+    "label": "膝盖问题（关节炎、疼痛、置换）",
+    "description": "避免膝关节过度屈曲、疼痛范围和直接的关节压力。"
+  },
+  {
+    "id": "hip_issues",
+    "label": "髋关节问题（关节炎、疼痛、置换）",
+    "description": "使用较小的臀部范围并避免过度打开或负载旋转。"
+  },
+  {
+    "id": "foot_ankle_issues",
+    "label": "脚/脚踝问题",
+    "description": "避免高冲击足部负荷、过度跖屈和无支撑的踝关节不稳定。"
+  },
+  {
+    "id": "joint_replacement",
+    "label": "关节置换（膝、髋、肩）",
+    "description": "有利于受控的、低冲击的运动，并避免更换关节周围的高负载关节应力。"
+  },
+  {
+    "id": "recent_surgery",
+    "label": "最近的手术",
+    "description": "首先获得医疗许可； 喜欢轻柔、有支撑的运动，避免高风险运动。"
+  },
+  {
+    "id": "shoulder_instability",
+    "label": "肩部不稳定/撞击",
+    "description": "避免过重的过头负荷、无支撑的肩部负重以及加剧肩部不稳定性的运动。"
+  },
+  {
+    "id": "neck_shoulder",
+    "label": "颈部/肩部问题",
+    "description": "避免无支撑的头部抬起和肩部过度负荷。"
+  },
+  {
+    "id": "bursitis",
+    "label": "滑囊炎/肌腱病",
+    "description": "避免在发炎的滑囊周围重复摩擦、挤压或末端关节位置。"
+  },
+  {
+    "id": "respiratory",
+    "label": "呼吸系统/哮喘/呼吸问题",
+    "description": "如果您有哮喘或呼吸道症状，请避免屏气、快速用力和胸部按压姿势。"
+  },
+  {
+    "id": "respiratory_pulmonary",
+    "label": "呼吸/肺部疾病",
+    "description": "喜欢以温和的呼吸为主导的工作； 避免屏气、快速用力以及压迫胸部或限制气流的姿势。"
+  },
+  {
+    "id": "hypertension",
+    "label": "高血压/心血管问题",
+    "description": "避免倒立和屏气； 使用缓慢、受控的运动。"
+  },
+  {
+    "id": "cardiovascular_disease",
+    "label": "心血管疾病",
+    "description": "避免重负荷、快速转换和屏气； 喜欢低强度、稳定的运动并监测心脏反应。"
+  },
+  {
+    "id": "arrhythmia_cardiac_device",
+    "label": "心律失常/心脏装置",
+    "description": "修改强度和躯干位置； 避免突然的高强度运动和改变胸部按压或对设备部位施加压力的姿势。"
+  },
+  {
+    "id": "diabetes",
+    "label": "糖尿病/代谢问题",
+    "description": "保持稳定的运动，监测强度，并避免在血糖波动期间长时间用力。"
+  },
+  {
+    "id": "metabolic_endocrine",
+    "label": "代谢/内分泌状况",
+    "description": "管理强度、节奏和温度敏感性； 如果能量、血糖或荷尔蒙平衡不稳定，请避免突然用力。"
+  },
+  {
+    "id": "autoimmune_inflammatory",
+    "label": "自身免疫/炎症状况",
+    "description": "围绕耀斑周期进行规划； 在活动性炎症期间避免高负荷或长时间的关节压迫，并使用更温和的起搏。"
+  },
+  {
+    "id": "chronic_fatigue",
+    "label": "慢性疲劳/自身免疫敏感性",
+    "description": "使用温和的节奏、较短的训练时间，并避免过度疲劳。"
+  },
+  {
+    "id": "immune_infectious",
+    "label": "免疫/感染性疾病",
+    "description": "选择低影响、适应性强的运动； 避免疲劳、发烧或全身性疾病，并调整恢复能力。"
+  },
+  {
+    "id": "oncology_treatment",
+    "label": "积极的癌症/癌症治疗",
+    "description": "使用症状引导的运动； 在积极治疗或恢复期间避免高负荷、剧烈压缩和无支撑的努力。"
+  },
+  {
+    "id": "swollen_glands",
+    "label": "腺体肿胀/淋巴结肿大",
+    "description": "淋巴结肿大通常表明感染或炎症。 动作要轻柔，避免颈部、下巴或腋窝附近受压或拉伤。"
+  },
+  {
+    "id": "gastrointestinal_pelvic",
+    "label": "胃肠道/盆底状况",
+    "description": "修改核心压缩和弯曲； 避免可能加剧症状的强烈腹内压和骨盆劳损。"
+  },
+  {
+    "id": "neurological_disorder",
+    "label": "神经系统疾病",
+    "description": "调整平衡、协调和感觉变化； 优先考虑支持、较慢的进展和明确的提示。"
+  },
+  {
+    "id": "vertigo_dizziness",
+    "label": "眩晕/头晕",
+    "description": "避免快速头部运动、倒立和无支撑的平衡工作，这些可能会引发头晕。"
+  },
+  {
+    "id": "balance_issues",
+    "label": "平衡/跌倒风险",
+    "description": "避免无支撑的平衡挑战，通过稳定、扎实的运动取得进步。"
+  },
+  {
+    "id": "mental_cognitive",
+    "label": "心理健康/认知状况",
+    "description": "使用简单的提示、额外的支持和温和的节奏来帮助集中注意力、压力反应和安全的运动执行。"
+  },
+  {
+    "id": "weight_concerns",
+    "label": "超重/肥胖/体重问题",
+    "description": "喜欢低冲击、对关节友好的普拉提运动，避免过度负荷、快速转换或不稳定的平衡工作。"
+  },
+  {
+    "id": "vision_impairment",
+    "label": "视力障碍/失明",
+    "description": "提供额外的提示、实际操作支持，并确保安全、无障碍的环境。 根据需要调整平衡和定向工作。"
+  },
+  {
+    "id": "hearing_impairment",
+    "label": "听力障碍/耳聋",
+    "description": "使用视觉演示、书面说明或触觉反馈。 确保视线清晰并尽量减少对口头提示的依赖。"
+  },
+  {
+    "id": "epilepsy_seizure",
+    "label": "癫痫/癫痫发作",
+    "description": "避免闪光或快速头部运动等触发因素。 监测警告信号并确保癫痫发作时的安全环境。"
+  },
+  {
+    "id": "severe_allergy",
+    "label": "严重过敏/过敏反应风险",
+    "description": "注意环境和设备过敏原（例如乳胶、清洁剂）。 确保应急计划和药物（例如肾上腺素）可供使用。"
+  },
+  {
+    "id": "chronic_pain_syndrome",
+    "label": "慢性疼痛综合征（例如纤维肌痛）",
+    "description": "使用温和的节奏、疼痛监测和渐进式。 避免过度劳累并尊重个人疼痛阈值。"
+  },
+  {
+    "id": "skin_condition",
+    "label": "皮肤状况（例如伤口、湿疹、牛皮癣）",
+    "description": "为了舒适和卫生而进行修改。 避免直接接触开放性伤口上的设备，并确保正确的清洁方案。"
+  },
+  {
+    "id": "transplant_immunosuppression",
+    "label": "移植受者/免疫抑制",
+    "description": "喜欢温和、低强度的运动。 监测感染风险并避免拥挤或不卫生的环境。"
+  },
+  {
+    "id": "recent_hospitalization",
+    "label": "最近住院/长期卧床休息",
+    "description": "逐渐重新开始运动。 监测身体失调、直立性低血压以及以安全的速度进展。"
+  },
+  {
+    "id": "pacemaker_implant",
+    "label": "起搏器/植入式医疗器械",
+    "description": "避免对设备部位产生直接压力或创伤。 遵守任何设备特定的运动限制，并根据需要咨询医疗团队。"
+  },
+  {
+    "id": "substance_use_recovery",
+    "label": "药物使用障碍/康复",
+    "description": "注意可能对协调、判断和精力的影响。 使用创伤知情方法并根据需要提供额外支持。"
+  },
+  {
+    "id": "hypermobility_syndrome",
+    "label": "过度活动综合症",
+    "description": "避免无支撑的极端关节范围和快速方向变化； 强调控制力量和关节稳定性。"
+  },
+  {
+    "id": "hernia",
+    "label": "疝气",
+    "description": "避免严重的腹部拉伤、瓦氏呼吸法和深腹内压。 专注于核心支撑和温和的活动能力。"
+  },
+  {
+    "id": "parkinsons_disease",
+    "label": "帕金森病",
+    "description": "使用缓慢、受控的运动，并有明确的提示，避免突然改变方向和无支撑的平衡工作。"
+  },
+  {
+    "id": "multiple_sclerosis",
+    "label": "多发性硬化症（MS）",
+    "description": "围绕疲劳和温度敏感性进行计划。 避免强度快速变化、过热和无支撑的平衡工作。"
+  },
+  {
+    "id": "stress_incontinence",
+    "label": "压力性尿失禁",
+    "description": "避免强烈的腹部压力和高冲击负荷。 专注于盆底友好的稳定性和时机。"
+  },
+  {
+    "id": "disc_degeneration",
+    "label": "椎间盘退变",
+    "description": "通过中立对齐保护脊柱，避免重复屈曲/伸展，并有利于轻柔的节段运动。"
+  },
+  {
+    "id": "radiculopathy_sciatica",
+    "label": "神经根病/坐骨神经痛",
+    "description": "避免剧烈的脊柱弯曲和压缩。 喜欢神经友好的姿势和温和的减压。"
+  },
+  {
+    "id": "ankylosing_spondylitis",
+    "label": "强直性脊柱炎",
+    "description": "避免脊柱末端伸展和旋转。 专注于轻柔的活动、姿势和呼吸引导的分段运动。"
+  },
+  {
+    "id": "sacroiliac_dysfunction",
+    "label": "骶髂关节 (SIJ) 功能障碍",
+    "description": "避免深度扭转和不均匀的重心转移。 使用微妙的骨盆稳定和均匀的臀部负载。"
+  },
+  {
+    "id": "cervical_spine_dysfunction",
+    "label": "颈椎功能障碍",
+    "description": "避免无支撑的头部抬起、颈部深度伸展和头部快速旋转。"
+  },
+  {
+    "id": "frozen_shoulder",
+    "label": "粘连性囊炎 / 肩周炎",
+    "description": "有利于肩膀的轻柔活动，但不会造成疼痛。 避免用力过头移动和剧烈旋转。"
+  },
+  {
+    "id": "rotator_cuff_injury",
+    "label": "肩袖损伤",
+    "description": "以受控的、无痛的范围保护肩部，并避免在负载下突然过头或外旋。"
+  },
+  {
+    "id": "acromioclavicular_sprain",
+    "label": "肩锁 (AC) 扭伤",
+    "description": "避免肩部直接受压、肩锁关节承受重负荷以及高风险的肩部位置。"
+  },
+  {
+    "id": "thoracic_outlet_syndrome",
+    "label": "胸廓出口综合征 (TOS)",
+    "description": "避免持续肩部抬高、颈部深度伸展以及颈部和肩部之间的压迫。"
+  },
+  {
+    "id": "tennis_elbow",
+    "label": "肱骨外上髁炎/网球肘",
+    "description": "避免重复抓握、在负载下伸展手腕以及强烈抵抗肘部伸展。"
+  },
+  {
+    "id": "golfers_elbow",
+    "label": "内上髁炎/高尔夫球肘",
+    "description": "避免在抵抗肘部拉伤的情况下重复手腕弯曲和前臂旋前。"
+  },
+  {
+    "id": "nerve_compression",
+    "label": "神经受压/卡压",
+    "description": "有利于中立关节对齐和温和的范围。 避免挤压、压迫或过度拉伸神经的姿势。"
+  },
+  {
+    "id": "carpal_tunnel_syndrome",
+    "label": "腕管综合症",
+    "description": "避免手腕在负载下长时间伸展或弯曲，并避免手指反复紧握并受压。"
+  },
+  {
+    "id": "cubital_tunnel_syndrome",
+    "label": "尺神经/肘管综合症",
+    "description": "避免肘部长时间屈曲、肘部内侧直接受压以及用力握紧。"
+  },
+  {
+    "id": "radial_nerve_issue",
+    "label": "桡神经问题",
+    "description": "避免持续的手腕下垂姿势、肘部受压以及在负载下用力伸展前臂。"
+  },
+  {
+    "id": "ankle_sprain",
+    "label": "脚踝扭伤",
+    "description": "避免不稳定的表面、突然的方向改变和无支撑的单腿着陆。"
+  },
+  {
+    "id": "achilles_tendinopathy",
+    "label": "跟腱病",
+    "description": "避免在负载下反复跳跃、突然用力推离和剧烈背屈。"
+  },
+  {
+    "id": "posterior_tibialis_dysfunction",
+    "label": "胫骨后肌功能障碍 (PTTD)",
+    "description": "有利于足弓支撑，避免过度内旋和脚内侧长时间承重。"
+  },
+  {
+    "id": "tibial_stress_syndrome",
+    "label": "胫骨应力综合症（TSS）",
+    "description": "避免小腿受到重复冲击和大容量负荷。 倾向于低影响、渐进的方式。"
+  },
+  {
+    "id": "plantar_fasciitis",
+    "label": "足底筋膜炎",
+    "description": "避免长时间脚趾伸展、赤脚负重和高冲击力的步法。"
+  },
+  {
+    "id": "bunions",
+    "label": "拇囊炎（拇外翻）",
+    "description": "避免像鞋一样的狭窄脚部定位、脚趾抓地以及大脚趾压力过大。"
+  },
+  {
+    "id": "hip_arthroscopy",
+    "label": "全髋关节镜检查 (THA)",
+    "description": "在臀部范围内小心移动，避免深度旋转、张开或过大的臀部负荷。"
+  },
+  {
+    "id": "piriformis_syndrome",
+    "label": "梨状肌综合症/坐骨神经卡压",
+    "description": "避免深度外旋和压迫臀部和臀部。 有利于臀部和臀部的柔和活动。"
+  },
+  {
+    "id": "hamstring_tendinopathy",
+    "label": "腿筋肌腱病",
+    "description": "避免因疼痛而过度拉伸腿筋、快速拉长和负荷膝关节伸展。"
+  },
+  {
+    "id": "muscle_strain",
+    "label": "肌肉拉伤",
+    "description": "避免突然过度拉伸、过度负荷和高速拉长受影响的肌肉。"
+  },
+  {
+    "id": "snapping_hip_syndrome",
+    "label": "弹响髋综合症（SHS）",
+    "description": "避免突然的髋关节屈曲/伸展和大声的爆裂动作。 注重控制、稳定性和平稳旋转。"
+  },
+  {
+    "id": "greater_trochanteric_pain",
+    "label": "大转子疼痛综合征/髋关节滑囊炎",
+    "description": "避免对髋部外侧施加直接压力和加重髋部外侧的负荷。"
+  },
+  {
+    "id": "femoroacetabular_impingement",
+    "label": "股骨髋臼撞击症 (FAI)",
+    "description": "避免髋部深度屈曲、内旋和前屈髋部位置，以免挤压髋部前部。"
+  },
+  {
+    "id": "patellofemoral_pain",
+    "label": "髌股疼痛综合征 (PFPS)",
+    "description": "避免膝盖深度弯曲、膝盖长时间承受负荷以及不稳定的单腿工作，这些都会增加前膝盖的压力。"
+  },
+  {
+    "id": "iliotibial_band_syndrome",
+    "label": "髂胫束综合症 (ITBS)",
+    "description": "避免重复的膝关节屈曲/伸展和髋关节过度内收，以免刺激膝关节外侧。"
+  },
+  {
+    "id": "meniscus_tear",
+    "label": "半月板撕裂",
+    "description": "避免在膝盖负荷下扭转、深蹲和突然旋转，以免对膝盖施加剪切力。"
+  },
+  {
+    "id": "ligament_injury",
+    "label": "韧带损伤（ACL、PCL、MCL、LCL）",
+    "description": "在韧带愈合和稳定性改善之前，避免扭转、旋转和深蹲或负重的膝盖位置。"
+  },
+  {
+    "id": "perimenopause_menopause",
+    "label": "围绝经期/更年期",
+    "description": "监测耐热性和骨密度； 避免屏气、高冲击负荷和极端强度。 支持关节松弛和心血管适应。"
+  },
+  {
+    "id": "stroke_recovery",
+    "label": "中风/CVA 恢复",
+    "description": "适应偏瘫、痉挛和协调变化。 使用缓慢、有支撑的运动，避免高强度运动，并监测血压反应。"
+  },
+  {
+    "id": "long_covid",
+    "label": "长期新冠病毒/病毒后综合症",
+    "description": "尊重劳累后不适——避免因疲劳或呼吸困难而推力。 采用有节奏、低强度的运动并经常休息。"
+  },
+  {
+    "id": "hip_labral_tear",
+    "label": "髋关节盂唇撕裂",
+    "description": "避免髋部深度屈曲、内旋和撞击姿势。 注重无痛范围、髋部稳定性和受控运动。"
+  },
+  {
+    "id": "wrist_conditions",
+    "label": "手腕状况",
+    "description": "改变或避免手腕负重。 使用拳头或前臂支撑进行四足和平板支撑练习。"
+  },
+  {
+    "id": "lymphedema",
+    "label": "淋巴水肿",
+    "description": "避免对患肢进行过紧的压迫、长时间的手臂抬高和剧烈运动。 使用轻柔、有节奏的运动和膈式呼吸。"
+  },
+  {
+    "id": "other",
+    "label": "其他",
+    "description": "针对此处未列出的情况获取人工智能支持的指导。"
+  }
+]

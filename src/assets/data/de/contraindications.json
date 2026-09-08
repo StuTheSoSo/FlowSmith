@@ -1,0 +1,1293 @@
+{
+  "osteoporosis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Belastete Wirbelsäulenbeugung und Vorwärtsbeugung beanspruchen die Wirbel.",
+      "alternative": "Verwenden Sie neutrale Wirbelsäulenstabilisatoren und Beinrutschen in Rückenlage."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Inversion und Belastung der Wirbelsäule im Endbereich können schwache Knochen komprimieren.",
+      "alternative": "Ersetzen Sie die Übung durch sanfte Beckenneigungen in Rückenlage."
+    },
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "Das Abrollen der abgerundeten Wirbelsäule führt zu einer wiederholten Beugungsbelastung.",
+      "alternative": "Wählen Sie unterstützte Kniebeugen oder Einzelbeinstrecken."
+    },
+    {
+      "exerciseId": "spine_stretch_forward",
+      "reason": "Eine Vorwärtsbeugung unter Belastung erhöht das Risiko einer Wirbelkörperkompression.",
+      "alternative": "Versuchen Sie es mit sitzender Haltungsarbeit mit neutraler Wirbelsäulenstreckung."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Hochbelastetes Rumpfheben in Beugung und Gleichgewicht kann die Wirbelsäule belasten.",
+      "alternative": "Verwenden Sie modifizierte unterstützte Sit-up-Progressionen mit einem Ball."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Inversion und belastete Wirbelsäulengelenke können empfindliche Wirbel komprimieren.",
+      "alternative": "Wählen Sie sanfte Beinrutschen in Rückenlage oder Beckenneigungen mit neutraler Wirbelsäule."
+    }
+  ],
+  "pregnancy": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Eine starke Bauchbeugung kann die wachsende Gebärmutter und die Rektusdiastase belasten.",
+      "alternative": "Gehen Sie zur seitlich liegenden oder unterstützten Sitzübung über."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Inversion und Beinheben in Rückenlage können nach der Mitte der Schwangerschaft unangenehm sein.",
+      "alternative": "Benutzen Sie sanfte Beckenbodenatmung im Sitzen oder in der Seitenlage."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Volles Heben und Ausbalancieren im Sit-up-Stil kann die Linea alba überlasten.",
+      "alternative": "Konzentrieren Sie sich auf die neutrale Wirbelsäulenhaltung und die Aktivierung des Beckenbodens."
+    },
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Das unterstützte Heben von Kopf und Rumpf aus der Rückenlage kann Bauch und Nacken belasten.",
+      "alternative": "Nutzen Sie sichere Stand- oder seitlich liegende Kernvarianten."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Inversion und Wirbelsäulenkompression sollten während der Schwangerschaft am besten vermieden werden.",
+      "alternative": "Wählen Sie seitlich liegende Dehnübungen und sanft unterstützte Hüftübungen."
+    }
+  ],
+  "low_back_pain": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Wiederholte Beugung der Wirbelsäule kann Schmerzen in der Bandscheibe oder der hinteren Kette verschlimmern.",
+      "alternative": "Wählen Sie Beckenneigung und unterstützte Überbrückung mit neutraler Wirbelsäule."
+    },
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "Das Rollen unter Belastung kann zu Beschwerden im unteren Rückenbereich führen.",
+      "alternative": "Verwenden Sie sanfte Übungen zur Stabilisierung des Rumpfes im Sitzen oder in Rückenlage."
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "Rotation mit Wirbelsäulenflexion kann eine empfindliche Lendenwirbelsäule reizen.",
+      "alternative": "Verwenden Sie hüftfokussierte Seitenlagearbeit und neutrale Wirbelsäulenrotation."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Inversion und Lendenstreckung können für viele Rückenbeschwerden zu intensiv sein.",
+      "alternative": "Verwenden Sie unterstützte Brückenfortschritte und sanfte Hüftlifte."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Die Artikulation der Wirbelsäule mit Inversion kann Schmerzen im unteren Rückenbereich und Nervenverspannungen verschlimmern.",
+      "alternative": "Verwenden Sie neutrale Beckenstabilisierungsübungen und sanfte Dehnübungen in Rückenlage."
+    }
+  ],
+  "hypertension": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "Inversion kann den Blutdruck erhöhen und sollte vermieden werden.",
+      "alternative": "Beweglichkeit im Sitzen oder im Vierfüßlerstand mit gleichmäßiger Atmung."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Eine Inversion mit hoher Anstrengung kann das Herz-Kreislauf-System belasten.",
+      "alternative": "Wählen Sie neutrale Wirbelsäulenplankengriffe oder sitzende Beinarbeit."
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "Anhalten des Atems und schnelle Rotation können den Blutdruck in die Höhe treiben.",
+      "alternative": "Machen Sie langsame, kontrollierte Hüftkreise mit entspannter Atmung."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Gleichgewichtsumkehrungen können für Herzprobleme zu intensiv sein.",
+      "alternative": "Bleiben Sie mit Rumpfstabilität und Beinheben auf der Matte."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Inversion und Wirbelsäulenkompression können bei empfindlichen Personen den Blutdruck erhöhen.",
+      "alternative": "Wählen Sie tief liegende Rumpfstabilisierung und sanfte Stehmobilität."
+    }
+  ],
+  "knee_issues": [
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "Eine tiefe Hüftstraffung kann die Knie belasten und Gelenkschmerzen verschlimmern.",
+      "alternative": "Verwenden Sie sanfte Beckenneigungen und unterstützte Gesäßbrücken."
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Beinheben auf der Planke übt Druck auf die Knie und Hüften aus.",
+      "alternative": "Arbeiten Sie im Vierfüßlerstand mit angehobenen Beinen oder seitlich liegenden Beinheben."
+    },
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "Beinstreckungen in Bauchlage können zu Verspannungen im Knie oder in der hinteren Oberschenkelmuskulatur führen.",
+      "alternative": "Verwenden Sie sitzende oder seitlich liegende einbeinige Bewegungen mit reduzierter Reichweite."
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "Wiederholte Kniebeugung kann arthritische Gelenke belasten.",
+      "alternative": "Wählen Sie statische Beinhaltungen oder sanftes Marschieren in Rückenlage."
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "Das Reformer-Beindrücken kann zu einer dauerhaften Belastung der empfindlichen Knie führen.",
+      "alternative": "Verwenden Sie sitzende oder unterstützte Beinarbeit mit geringer Reichweite und geringerem Widerstand."
+    }
+  ],
+  "hip_issues": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Große Hüftkreise können schmerzhafte oder instabile Hüften verschlimmern.",
+      "alternative": "Verwenden Sie kleinere Beinkreise oder Hüftgelenke mit Unterstützung."
+    },
+    {
+      "exerciseId": "scissors",
+      "reason": "Eine extreme Hüftbewegung in Rückenlage kann zu Reizungen der Hüftgelenke führen.",
+      "alternative": "Halten Sie die Beine tiefer und arbeiten Sie mit kleineren kontrollierten Übungen."
+    },
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "Die weit geöffnete Beinbalance belastet die Hüftkapsel.",
+      "alternative": "Verwenden Sie sitzende Adduktoren- und Abduktorenkontrollübungen."
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "Rotationsbewegungen der Hüfte können bei einer Gelenkentzündung schmerzhaft sein.",
+      "alternative": "Wählen Sie sanft unterstützte Hüftpumpen in Rückenlage."
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "Wiederholtes Drücken der Beine kann aufgrund der belasteten Beugung und Streckung die empfindlichen Hüften reizen.",
+      "alternative": "Arbeiten Sie mit kleiner Reichweite und geringerem Widerstand oder entscheiden Sie sich für Beinrutschen in Rückenlage."
+    }
+  ],
+  "neck_shoulder": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Ein dauerhaft angehobener Kopf und Nacken kann die Verspannung der Halswirbelsäule verschlimmern.",
+      "alternative": "Halten Sie den Kopf gestützt, während Sie gleichzeitig die Kernatmung aufrechterhalten."
+    },
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Das Anheben des Kopfes ohne Unterstützung erhöht die Belastung des Nackens und der Schultern.",
+      "alternative": "Verwenden Sie Kinnbeugen und sanftes, unterstütztes Rollen in einem neutralen Nacken."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Beim Heben des Kopfes mit Balance können Nacken- und Schulterstabilisatoren belastet werden.",
+      "alternative": "Benutzen Sie sitzende, unterstützte Rumpfübungen und vermeiden Sie die volle V-Position."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Die Rückenstreckung in Bauchlage belastet den Nacken und die oberen Schultern.",
+      "alternative": "Führen Sie sanfte Bauchübungen durch, wobei die Hände zur Unterstützung unter den Schultern liegen."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Die Belastung der Schultern über die Stange kann die Schulterinstabilität oder Nackenverspannungen verschlimmern.",
+      "alternative": "Verwenden Sie eine sanft unterstützte Rückenstreckung mit geringerem Widerstand."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Die Belastung der Reformer-Schulter unter einer umgekehrten Wirbelsäule kann verspannte Nacken-/Schulterbereiche belasten.",
+      "alternative": "Wählen Sie eine unterstützte Rückenstreckung in Bauchlage oder eine Wirbelsäulenmobilisierung in Rückenlage ohne Inversion."
+    }
+  ],
+  "recent_surgery": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Die Beugung der Wirbelsäule unter Belastung ist nach der Operation oft zu aggressiv.",
+      "alternative": "Konzentrieren Sie sich auf sanfte Atmung, Beckenboden und Haltungsunterstützung."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Inversion und tiefe Artikulation können während der Genesung unsicher sein.",
+      "alternative": "Wählen Sie unterstützte Bewegungen und befolgen Sie die professionelle Freigabe."
+    },
+    {
+      "exerciseId": "spine_twist",
+      "reason": "Das Verdrehen unter Last kann das heilende Gewebe belasten.",
+      "alternative": "Verwenden Sie eine neutrale Wirbelsäulenrotation aus sitzender oder stehender Position."
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "Seitliche Beugung kann nach einer Operation unangenehm sein.",
+      "alternative": "Halten Sie die Bewegungen sanft und vermeiden Sie Biegungen im Endbereich."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Inversion und tiefe Wirbelsäulenartikulation sind nach einer kürzlich erfolgten Operation normalerweise kontraindiziert.",
+      "alternative": "Verwenden Sie sanfte Beckenneigungen in Rückenlage und eine unterstützte Mobilisierung der Wirbelsäule."
+    }
+  ],
+  "arthritis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Wiederholtes Beugen kann steife Gelenke verschlimmern.",
+      "alternative": "Verwenden Sie kleine Wirbelsäulengelenke und neutrale Rumpfarbeit."
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "Eine Drehung mit Vorwärtsbeugung kann arthritische Gelenke reizen.",
+      "alternative": "Verwenden Sie sitzende, seitlich liegende Rotation mit Unterstützung."
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "Umgekehrte Hüftkreise können für empfindliche Gelenke zu intensiv sein.",
+      "alternative": "Wählen Sie einfache Hüftkreise mit reduzierter Reichweite."
+    },
+    {
+      "exerciseId": "seal",
+      "reason": "Das Rollen kann sich auf der arthritischen Wirbelsäule oder den Hüften hart anfühlen.",
+      "alternative": "Nutzen Sie eine unterstützte Rumpfstärkung ohne dynamisches Rollen."
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "Das Training mit der Reformer-Beinpresse kann ohne sorgfältiges Lastmanagement arthritische Knie- oder Hüftgelenke verschlimmern.",
+      "alternative": "Verwenden Sie einen geringeren Widerstand und konzentrieren Sie sich auf einen kleinen kontrollierten Bereich."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Inversion und Wirbelsäulenkompression können für arthritische Gelenke unangenehm sein.",
+      "alternative": "Wählen Sie eine sanfte Wirbelsäulenmobilisierung ohne große Reichweite oder Inversion."
+    }
+  ],
+  "scoliosis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Eine starke Beugung der Wirbelsäule kann die Krümmung verstärken, wenn sie nicht kontrolliert wird.",
+      "alternative": "Verwenden Sie unterstützte Rolldowns mit neutralem Becken und Asymmetriebewusstsein."
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "Eine Rotation durch die Wirbelsäule kann zu einer ungleichmäßigen Belastung einer gekrümmten Wirbelsäule führen.",
+      "alternative": "Machen Sie sanfte seitliche Dehnübungen im Sitzen mit gleicher Aufmerksamkeit auf beide Seiten."
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "Eine tiefe asymmetrische Seitbeugung kann eine skoliotische Kurve belasten.",
+      "alternative": "Arbeiten Sie mit kleinen Seitenbiegungen und halten Sie die Rippen lang."
+    }
+  ],
+  "pelvic_floor_dysfunction": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Starkes Pumpen des Bauches und eine starke Atemkoordination können den Beckenbodendruck erhöhen.",
+      "alternative": "Halten Sie den Kopf gestützt und konzentrieren Sie sich auf eine sanfte Beckenbodenbeanspruchung."
+    },
+    {
+      "exerciseId": "single_leg_stretch",
+      "reason": "Wiederholte Hüftbeugung und Unterbauchbeanspruchung können einen schwachen Beckenboden reizen.",
+      "alternative": "Führen Sie unterstützte Kniebeugen oder modifiziertes Marschieren mit neutralem Becken durch."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Die volle Sit-up-Bewegung belastet den Beckenboden und die Linea alba.",
+      "alternative": "Benutzen Sie unterstützte sitzende Rumpfübungen und vermeiden Sie die volle V-Position."
+    }
+  ],
+  "diastasis_recti": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Starkes Abpumpen des Bauches kann den Abstand vergrößern und den intraabdominalen Druck erhöhen.",
+      "alternative": "Führen Sie unterstützte Rumpfübungen mit gesenktem Kopf durch und konzentrieren Sie sich auf den Einsatz der quer verlaufenden Bauchmuskulatur."
+    },
+    {
+      "exerciseId": "roll_up",
+      "reason": "Eine belastete Wirbelsäulenbeugung belastet die Linea alba.",
+      "alternative": "Üben Sie Beckenneigungen und unterstütztes Abrollen mit neutraler Wirbelsäule."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Eine vollständige V-Position und eine Bauchstraffung können die einzelnen Bauchmuskeln überbeanspruchen.",
+      "alternative": "Verwenden Sie eine modifizierte Rumpfübung im Sitzen mit gebeugten Knien und geringem Hub."
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "Die kombinierte Streckung des unteren Bauchmuskels und das Ausstrecken des Arms können den Druck in der Mittellinie erhöhen.",
+      "alternative": "Wählen Sie Fersenrutschen und Einzelbeinstützen mit minimaler Bauchbelastung."
+    }
+  ],
+  "shoulder_instability": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Eine starke Belastung der Schulter über der Stange kann die Instabilität oder das Impingement verschlimmern.",
+      "alternative": "Verwenden Sie eine unterstützte Rückenstreckung mit geringerem Widerstand und stabiler Schulterplatzierung."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Die Streckung in Bauchlage kann zu einer übermäßigen Belastung der Nacken- und Schulterstabilisatoren führen.",
+      "alternative": "Wählen Sie sanftes Heben in Bauchlage mit den Händen unter den Schultern zur Unterstützung."
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "Wiederholtes abwechselndes Armheben kann instabile Schultergelenke überlasten.",
+      "alternative": "Verwenden Sie die Armstreckung im unteren Bereich, wobei der Schwerpunkt stärker auf der Stabilität des Schulterblatts liegt."
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "Schultergestützte Brückenpositionen können die Beschwerden verstärken, wenn die Schultern instabil sind.",
+      "alternative": "Halten Sie den Oberkörper entspannt und arbeiten Sie mit Variationen der unteren Brücke oder der Gesäßmuskulatur in Rückenlage."
+    }
+  ],
+  "bursitis": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Große Hüftkreise können entzündete Schleimbeutel um die Hüfte oder das Becken reizen.",
+      "alternative": "Machen Sie kleinere, langsamere Beinkreise mit unterstütztem Becken."
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "Wiederholte Hüftrotationen können eine Schleimbeutelentzündung im Hüftgelenk verschlimmern.",
+      "alternative": "Wählen Sie sanft unterstützte Hüftpumpen in einem neutralen Bereich."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Die Rückenstreckung in Bauchlage kann bereits empfindliche Schleimbeutel der Schulter komprimieren.",
+      "alternative": "Arbeiten Sie mit unterstützten Brustheben und vermeiden Sie eine aggressive Streckung des oberen Rückens."
+    },
+    {
+      "exerciseId": "long_box_series",
+      "reason": "Eine längere Reichweite des Oberkörpers und die Bewegung des Wagens unter Last können das empfindliche Schultergewebe belasten.",
+      "alternative": "Verwenden Sie leichtere Federn und kleinere Armbewegungen und halten Sie dabei die Schultern stabil."
+    }
+  ],
+  "vertigo_dizziness": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "Inversion kann Schwindel und Orientierungslosigkeit auslösen.",
+      "alternative": "Wählen Sie stattdessen sanfte Beckenneigungen in Rückenlage oder Sitzmobilität."
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "Eine schnelle Drehung der Wirbelsäule mit über dem Kopf befindlichen Beinen kann das Gleichgewicht stören.",
+      "alternative": "Machen Sie langsame Hüftkreise mit gestütztem Kopf und fixierten Augen."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Inversion und plötzliche Gleichgewichtsprobleme können den Schwindel verschlimmern.",
+      "alternative": "Bleiben Sie mit unterstützten Brückenbewegungen und langsamen Bewegungen auf der Matte."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Fortgeschrittene Inversionen und Balancierübungen können zu Benommenheit führen.",
+      "alternative": "Konzentrieren Sie sich auf die Rumpfstabilität am Boden und einen gleichmäßigen Atem."
+    }
+  ],
+  "postpartum": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Belastete Wirbelsäulenbeugung und Bauchstraffung können die sich erholende Körpermitte nach der Geburt belasten.",
+      "alternative": "Verwenden Sie unterstützte Beckenneigungen und sanfte Übungen zur Wiederherstellung der Rumpfmuskulatur im Sitzen."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Ein vollständiges Heben im V-Stil kann die heilende Linea alba und den Beckenboden überlasten.",
+      "alternative": "Üben Sie unterstützte Rumpfheben im Sitzen mit gebeugten Knien und sanftem Atem."
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "Eine starke Streckung und Streckung des Abdomens kann zu einer Überlastung der sich erholenden Mittellinie führen.",
+      "alternative": "Wählen Sie Fersenrutschen und Einzelbeinstützen mit minimaler Bauchbelastung."
+    }
+  ],
+  "balance_issues": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Fortgeschrittene Gleichgewichtsübungen erhöhen das Sturzrisiko und die Instabilität.",
+      "alternative": "Konzentrieren Sie sich auf die Stabilität auf dem Boden und auf die langsame Rumpfkontrolle."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Inversion und hohe Gleichgewichtsanforderungen können für instabile Kunden eine zu große Herausforderung darstellen.",
+      "alternative": "Verwenden Sie unterstützte Brückenprogressionen und Hüftlifts auf niedriger Ebene."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Die Überkopfinversion der Beine kann das Gleichgewicht und die räumliche Orientierung beeinträchtigen.",
+      "alternative": "Wählen Sie Sitz- oder Rückenbeweglichkeit ohne Inversion."
+    }
+  ],
+  "joint_replacement": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Das Pressen des Reformer-Beins kann eine zu starke Belastung auf ein ersetztes Knie oder eine ersetzte Hüfte ausüben.",
+      "alternative": "Verwenden Sie leichtere Federn, einen kleineren Bewegungsbereich oder eine Beinstütze im Sitzen."
+    },
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "Eine belastete Kniebeugung und Hüftbewegung können ein ersetztes Gelenk belasten.",
+      "alternative": "Wählen Sie unterstützte Knieheben mit minimaler Reichweite und kontrollierter Ausrichtung."
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Große Hüftkreise können einen Ersatz des Hüftgelenks verschlimmern.",
+      "alternative": "Verwenden Sie kleinere unterstützte Beinkreise oder isometrische Hüftstabilitätsübungen."
+    }
+  ],
+  "foot_ankle_issues": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Durch die Reformer-Fußleiste wird eine wiederholte Belastung auf die Knöchel und den Vorfuß ausgeübt.",
+      "alternative": "Verwenden Sie einen leichteren Widerstand und halten Sie die Füße flach mit minimaler Plantarflexion."
+    },
+    {
+      "exerciseId": "elephant",
+      "reason": "Die Belastung der Füße und Knöchel kann die empfindlichen Gelenke verschlimmern.",
+      "alternative": "Wählen Sie sitzende oder unterstützte Dehnübungen für die hintere Oberschenkelmuskulatur ohne schwere Fußbelastung."
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "Schnelle Unterschenkelbewegungen und spitze Fußpositionen können zu Knöchel- oder Fußschmerzen führen.",
+      "alternative": "Verwenden Sie langsamere Beinkreise in Rückenlage mit einer neutralen Fußposition."
+    }
+  ],
+  "hypermobility_syndrome": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Große, nicht unterstützte Gelenkbereiche können bei Hypermobilität schlaffes Bindegewebe überdehnen.",
+      "alternative": "Verwenden Sie kleinere Kurven, aktive Stabilität und halten Sie das Becken beim Beinkreisen gestützt."
+    }
+  ],
+  "hernia": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Belastete Bauchbeugungen und -belastungen können den intraabdominalen Druck erhöhen und einen Leistenbruch reizen.",
+      "alternative": "Wählen Sie Beckenneigung, Rumpfarbeit in Rückenlage und sanfte Atemunterstützung ohne starkes Knirschen."
+    }
+  ],
+  "parkinsons_disease": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Instabile Gleichgewichtsprobleme erhöhen das Sturzrisiko, wenn die motorische Kontrolle und die Reaktionsgeschwindigkeit beeinträchtigt sind.",
+      "alternative": "Verwenden Sie geerdete, unterstützte Bewegungen mit breiter Basis und langsamen Übergängen."
+    }
+  ],
+  "multiple_sclerosis": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Anhaltendes Pumpen der Atmung und Intensität der Rumpfmuskulatur können bei einem MS-Patienten zu Überhitzung oder übermäßiger Ermüdung führen.",
+      "alternative": "Nutzen Sie kürzere, kühlere Sitzungen mit sanfter, atembasierter Rumpfarbeit."
+    }
+  ],
+  "stress_incontinence": [
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "Eine starke Abdominaldehnung und ein starker Beckendruck können die Ausfluss- oder Beckenbodenbeschwerden verschlimmern.",
+      "alternative": "Verwenden Sie Fersenrutschen und einen sanften Kerneingriff mit stabilem Becken."
+    }
+  ],
+  "disc_degeneration": [
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "Wiederholte Beugung und Kompression der Wirbelsäule können eine bereits degenerierte Bandscheibe verschlimmern.",
+      "alternative": "Wählen Sie eine neutrale Beckenneigung der Wirbelsäule und eine unterstützte Rumpfstabilisierung."
+    }
+  ],
+  "radiculopathy_sciatica": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Eine tiefe Beugung der Wirbelsäule kann die Kompression der Nervenwurzeln und Ischiassymptome verstärken.",
+      "alternative": "Nutzen Sie eine sanft unterstützte Wirbelsäulenmobilität und vermeiden Sie ein Vorbeugen unter Last."
+    }
+  ],
+  "ankylosing_spondylitis": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "Inversion und axiale Kompression können eine entzündete, steife Wirbelsäule belasten und die Brustausdehnung einschränken.",
+      "alternative": "Wählen Sie unterstützte Brückenarbeit und sanfte Wirbelsäulenbeweglichkeit im Sitzen."
+    }
+  ],
+  "sacroiliac_dysfunction": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Große Beinkreise können zu einer ungleichmäßigen Beckenscherung führen und das ISG reizen.",
+      "alternative": "Machen Sie kleine, kontrollierte Beinbewegungen mit stabilisiertem Becken."
+    }
+  ],
+  "cervical_spine_dysfunction": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Das Anheben des Kopfes und die Beugung der Halswirbelsäule ohne Unterstützung können die Nackenfunktionsstörung verschlimmern.",
+      "alternative": "Halten Sie den Kopf gestützt und üben Sie eine sanfte Rumpfübung ohne tiefe Nackenbewegungen aus."
+    }
+  ],
+  "frozen_shoulder": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Eine Rückenstreckung in Bauchlage kann eine steife, schmerzhafte Schulter verschlimmern und die Bewegungsfreiheit einschränken.",
+      "alternative": "Führen Sie unterstützte Brustheben durch, wobei die Arme leicht und nahe am Körper liegen."
+    }
+  ],
+  "rotator_cuff_injury": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Starke Schulterbelastungen und Außenrotation können eine verletzte Rotatorenmanschette reizen.",
+      "alternative": "Wählen Sie eine sanft unterstützte Schultermobilität und vermeiden Sie eine tiefe Belastung des Schultergelenks."
+    }
+  ],
+  "acromioclavicular_sprain": [
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "Schulterkompression und Oberkörperbelastung können die Schmerzen im AC-Gelenk verschlimmern.",
+      "alternative": "Verwenden Sie Beckenneigungen oder niedrige Brückenvarianten mit reduziertem Schulterdruck."
+    }
+  ],
+  "thoracic_outlet_syndrome": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Eine anhaltende Schulterhochlagerung und Atemkoordination können die Kompression in der Nähe des Brustausgangs verstärken.",
+      "alternative": "Öffnen Sie die Brust sanft mit unterstützten Armen und vermeiden Sie Schulterpositionen über dem Kopf."
+    }
+  ],
+  "tennis_elbow": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Die Belastung der Hände und Unterarme kann die Reizung der seitlichen Ellenbogensehnen verschlimmern.",
+      "alternative": "Benutzen Sie Schulterübungen mit geringerer Belastung und vermeiden Sie kräftiges Greifen oder Handgelenksstreckungen."
+    }
+  ],
+  "golfers_elbow": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Die Belastung des Unterarms und die Bewegung des Handgelenks können den medialen Ellenbogen im Golferellenbogen belasten.",
+      "alternative": "Wählen Sie unterstütztes Oberkörpertraining mit minimalem Handgelenk- oder Griffdruck."
+    }
+  ],
+  "nerve_compression": [
+    {
+      "exerciseId": "corkscrew",
+      "reason": "Durch Verdrehen und Wirbelsäulenkompression kann ein empfindlicher Nerv eingeklemmt und die Kompressionssymptome verschlimmert werden.",
+      "alternative": "Benutzen Sie eine sanfte Beweglichkeit der Wirbelsäule mit neutraler Ausrichtung und vermeiden Sie Drehungen im Endbereich."
+    }
+  ],
+  "carpal_tunnel_syndrome": [
+    {
+      "exerciseId": "teaser",
+      "reason": "Durch Streckung und Greifen des Handgelenks kann der Druck im Karpaltunnel erhöht werden.",
+      "alternative": "Verwenden Sie unterstützte Rumpfarbeit mit neutralem Handgelenk und reduziertem Fingergriff."
+    }
+  ],
+  "cubital_tunnel_syndrome": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Eine Oberkörperbelastung im Plank-Stil kann den Nervus ulnaris am Ellenbogen komprimieren.",
+      "alternative": "Verwenden Sie unterstützte Rumpfarbeit und halten Sie den Ellenbogen gerade und frei von direktem Druck."
+    }
+  ],
+  "radial_nerve_issue": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Die Positionierung von Handgelenk und Arm unter Belastung kann die Symptome des N. radialis verschlimmern, wenn der Arm gestreckt oder gestaucht wird.",
+      "alternative": "Führen Sie eine sanfte Rumpfarbeit durch, wobei sich die Handgelenke und Ellenbogen in einer neutralen, schmerzfreien Position befinden."
+    }
+  ],
+  "ankle_sprain": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Nicht unterstützte Gleichgewichtsübungen können das heilende Sprunggelenk belasten und das Risiko einer erneuten Verstauchung erhöhen.",
+      "alternative": "Führen Sie sitzende oder unterstützte Beinarbeit durch, bei der beide Füße geerdet sind."
+    }
+  ],
+  "achilles_tendinopathy": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Das Drücken der Reformer-Fußstange kann die Achillessehne bei wiederholter Plantarflexion überlasten.",
+      "alternative": "Setzen Sie einen geringeren Widerstand ein und vermeiden Sie starkes Abstoßen durch die Füße."
+    }
+  ],
+  "posterior_tibialis_dysfunction": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Die Arbeit mit der Fußstange mit hohem Volumen kann die Belastung des medialen Knöchels und des Fußgewölbes verstärken.",
+      "alternative": "Verwenden Sie sanftere, neutrale Fußpositionen und reduzieren Sie wiederholte Belastungen durch den Innenfuß."
+    }
+  ],
+  "tibial_stress_syndrome": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Wiederholte Beinpressübungen können Schienbeinschmerzen und Belastungsreaktionen im Schienbein verstärken.",
+      "alternative": "Wählen Sie einen geringeren Widerstand und vermeiden Sie lange Beinsätze mit hohem Volumen."
+    }
+  ],
+  "plantar_fasciitis": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Hoher Fußstangendruck und Zehenstreckung können die Plantarfaszie reizen.",
+      "alternative": "Verwenden Sie eine weiche, neutrale Fußposition und einen geringeren Widerstand bei geringerer Zehenbeugung."
+    }
+  ],
+  "bunions": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Enge Fußstellungen und Vorfußdruck können die Ballenbeschwerden verstärken.",
+      "alternative": "Stellen Sie den Fuß breiter und weicher auf und vermeiden Sie es, direkt durch das Großzehengelenk zu drücken."
+    }
+  ],
+  "hip_arthroscopy": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Große Hüftkreise können nach einer Arthroskopie das heilende Hüftgelenk und das tiefe Gewebe belasten.",
+      "alternative": "Benutzen Sie kleinere, unterstützte Beinkreise und halten Sie das Becken stabil."
+    }
+  ],
+  "piriformis_syndrome": [
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "Wide hip opening and rotation can aggravate piriformis irritation and sciatic symptoms.",
+      "alternative": "Use gentle hip mobility with the legs closer together and the pelvis supported."
+    }
+  ],
+  "hamstring_tendinopathy": [
+    {
+      "exerciseId": "scissors",
+      "reason": "Eine aggressive Dehnung der Oberschenkelmuskulatur und schnelle abwechselnde Beinbewegungen können die Sehnenreizung verschlimmern.",
+      "alternative": "Benutzen Sie eine sanfte Kontrolle der Oberschenkelmuskulatur und vermeiden Sie schnelle Beinschwünge im Endbereich."
+    }
+  ],
+  "muscle_strain": [
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "Belastete hintere Kettenglieder und anhaltende Muskelverspannungen können eine akute Zerrung verschlimmern.",
+      "alternative": "Benutzen Sie eine sanfte, unterstützte Beweglichkeit und vermeiden Sie eine starke Beinstreckung mit Widerstand."
+    }
+  ],
+  "snapping_hip_syndrome": [
+    {
+      "exerciseId": "hip_circles",
+      "reason": "Schnelle, große Hüftkreise können ein Knacken auslösen und das Hüftgewebe reizen.",
+      "alternative": "Verwenden Sie kleinere, langsamere Hüftbewegungen mit Schwerpunkt auf Stabilität."
+    }
+  ],
+  "greater_trochanteric_pain": [
+    {
+      "exerciseId": "side_bend",
+      "reason": "Seitlicher Druck und starke seitliche Hüftbewegungen können stärkere Trochanterschmerzen verschlimmern.",
+      "alternative": "Benutzen Sie sanfte Hüftübungen im Stehen oder in Rückenlage mit weniger seitlicher Belastung."
+    }
+  ],
+  "femoroacetabular_impingement": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Eine tiefe Hüftbeugung und Innenrotation können bei FAI die Vorderseite der Hüfte einklemmen.",
+      "alternative": "Verwenden Sie kleinere Hüftkreise und vermeiden Sie Beugung und Rotation im Endbereich."
+    }
+  ],
+  "patellofemoral_pain": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Reformer-Beinpressen können die Kompression unter der Kniescheibe erhöhen und die Schmerzen im vorderen Knie verschlimmern.",
+      "alternative": "Verwenden Sie einen geringeren Widerstand und halten Sie die Knieausrichtung stabil und mit geringer Reichweite."
+    }
+  ],
+  "iliotibial_band_syndrome": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Wiederholte Kniebeugung und Hüftadduktion können das äußere Knie und das IT-Band reizen.",
+      "alternative": "Führen Sie eine kontrollierte Unterschenkelarbeit durch und vermeiden Sie eine übermäßige Adduktion der Hüfte."
+    }
+  ],
+  "meniscus_tear": [
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "Belastete Kniebeugung und Belastung können einen Meniskusriss verschlimmern.",
+      "alternative": "Benutzen Sie sanfte Kniestreckübungen mit weniger Druckbelastung."
+    }
+  ],
+  "ligament_injury": [
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "Eine tiefe oder belastete Kniebeugung kann die heilenden Kniebänder belasten.",
+      "alternative": "Verwenden Sie kontrollierte, unterstützte Kniearbeit mit minimalem Gewicht und einer neutralen Ausrichtung."
+    }
+  ],
+  "chronic_fatigue": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Häufige Atem- und Rumpfwiederholungen können die Ermüdung verschlimmern, wenn das Tempo zu aggressiv ist.",
+      "alternative": "Verwenden Sie kürzere Sätze, sanftere Atemübungen und gönnen Sie Ruhepausen."
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "Dauerhaftes Arm- und Beinheben in Bauchlage kann für Klienten mit niedrigem Energieverbrauch zu anstrengend sein.",
+      "alternative": "Wählen Sie Einzelbeinheben mit häufigen Erholungspausen."
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Ausgedehnte Beinheben auf der Plankenbasis können einen müden Körper überfordern.",
+      "alternative": "Verwenden Sie unterstützte Vierbeiner- oder Rückenübungen mit weniger anhaltender Belastung."
+    }
+  ],
+  "diabetes": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Beinarbeit mit hohem Widerstand kann eine Herausforderung sein, wenn eine Durchblutungsstörung oder eine Neuropathie vorliegt.",
+      "alternative": "Verwenden Sie leichtere Federn und konzentrieren Sie sich auf eine gleichmäßige, kontrollierte Schlittenbewegung."
+    },
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "Längeres Liegendanstrengen kann zu einer schnellen Ermüdung der Schultern und Beine führen.",
+      "alternative": "Wählen Sie kürzere Übungen für die hintere Kette mit häufigen Pausen."
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "Schnelle, abwechselnde Bewegungen des Unterkörpers können unangenehm sein, wenn die Empfindung eingeschränkt ist.",
+      "alternative": "Verwenden Sie einen langsameren Beinrhythmus und halten Sie das Becken stabil."
+    }
+  ],
+  "weight_concerns": [
+    {
+      "exerciseId": "teaser",
+      "reason": "Eine hohe Anforderung an die Rumpfmuskulatur und das Gleichgewicht kann bei zusätzlichem Körpergewicht schwierig sein.",
+      "alternative": "Verwenden Sie unterstützte Rumpfheben mit gebeugten Knien und einem niedrigeren Schwerpunkt."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Inversion und schnelles Anheben der Beine können die Belastung des unteren Rückens und der Hüften erhöhen.",
+      "alternative": "Wählen Sie unterstützte Brücken und langsamere Hüftheben mit einer neutralen Wirbelsäule."
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "Das dynamische Rollgleichgewicht kann instabil sein und die Gelenke überfordern.",
+      "alternative": "Konzentrieren Sie sich auf die kontrollierte Rumpfarbeit im Sitzen oder in Rückenlage mit stabilem Fußkontakt."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Fortgeschrittene Gleichgewichts- und Beinstreckungsanforderungen können die Kontrolle und Stabilität der Gelenke erschweren.",
+      "alternative": "Verwenden Sie geerdete Stabilitätsübungen mit beiden Füßen auf der Matte und kleinen Bewegungen."
+    }
+  ],
+  "respiratory": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "Inversionen und Kompression des Oberkörpers können bei Asthmatikern das Atmen erschweren.",
+      "alternative": "Verwenden Sie unterstützte Bruststraffungen und vermeiden Sie Brustkompressions- oder Atemanhaltepositionen."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Die Position der Beine über dem Kopf und die Beugung der Wirbelsäule können den Brustkorb einschränken und die Atmung erschweren.",
+      "alternative": "Wählen Sie eine sanfte Rumpfarbeit in Rückenlage mit gestütztem Kopf und Brustkorb."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Ein schneller Atemwechsel und eine erhöhte Intensität der Körpermitte können pfeifende Atemgeräusche oder Atemlosigkeit auslösen.",
+      "alternative": "Üben Sie langsameres, atembasiertes Bauchtraining mit häufigen Ruhephasen und einer Haltung mit offener Brust."
+    }
+  ],
+  "swollen_glands": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Eine unterstützende Kopf- und Halsstraffung kann die empfindlichen Lymphknoten im Nacken verschlimmern.",
+      "alternative": "Halten Sie den Kopf gestützt und konzentrieren Sie sich auf die sanfte Aktivierung des Rumpfes ohne schwere Nackenbewegungen."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Die Inversion der Beine über dem Kopf kann den Druck und die Beschwerden im Bereich der geschwollenen Nacken- und Schulterknoten erhöhen.",
+      "alternative": "Wählen Sie eine neutralere, unterstützte Rumpfarbeit in Rückenlage mit Kopf und Nacken in einer bequemen Position."
+    },
+    {
+      "exerciseId": "seated_spine_twist",
+      "reason": "Eine starke Rotation um die Halswirbelsäule kann empfindliche Lymphknoten im Nacken und Kiefer reizen.",
+      "alternative": "Machen Sie kleinere Sitzrotationen mit einer langen Wirbelsäule und vermeiden Sie tiefe Drehungen des Kopfes."
+    }
+  ],
+  "vision_impairment": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Nicht unterstützte Gleichgewichtshaltungen sind auf visuelles Feedback angewiesen und können das Sturzrisiko bei Sehbehinderung erhöhen.",
+      "alternative": "Verwenden Sie geerdete, unterstützte Übungen wie sitzende Beinarbeit und stabile Stehmobilität."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Bei eingeschränkter Sehkraft kann es schwierig sein, die Inversion und schnelle Übergänge sicher zu beurteilen.",
+      "alternative": "Wählen Sie eine unterstützte Beweglichkeit in Rückenlage und sanfte Rumpfarbeit mit den Händen auf stabilen Oberflächen."
+    }
+  ],
+  "hearing_impairment": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Übungen, die schnelle verbale Hinweise erfordern, sind ohne zuverlässiges Gehör schwieriger zu befolgen.",
+      "alternative": "Verwenden Sie langsame, vorhersehbare Bewegungen mit visueller Demonstration und klaren Gesten."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Komplexes Timing und Ausgewogenheit im Teaser können ohne visuelle oder taktile Hinweisunterstützung unsicher sein.",
+      "alternative": "Verwenden Sie unterstützte Rumpfübungen im Sitzen mit gebeugten Knien und stabilen Stützen."
+    }
+  ],
+  "epilepsy_seizure": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "Inversionen und schnelle Bewegungen der Wirbelsäule können das Risiko eines anfallbedingten Sturzes erhöhen.",
+      "alternative": "Halten Sie die Wirbelsäule durch unterstützte Brückenbewegungen und langsame Bewegungen niedrig."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Eine instabile Gleichgewichtsarbeit kann gefährlich sein, wenn es während der Übung zu einem Anfall kommt.",
+      "alternative": "Benutzen Sie eine stabile, bodenbasierte Rumpfarbeit und vermeiden Sie nicht unterstützte Gleichgewichtspositionen."
+    }
+  ],
+  "severe_allergy": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Gurte und Stützen von Reformer können Latex oder Allergene enthalten, die eine schwere Reaktion auslösen.",
+      "alternative": "Verwenden Sie mattenbasierte Unterkörperarbeit mit hypoallergenen Requisiten und sauberer Ausrüstung."
+    }
+  ],
+  "chronic_pain_syndrome": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Anhaltendes Kernpumpen kann zu intensiv sein, um eine weit verbreitete Schmerzempfindlichkeit und Müdigkeit hervorzurufen.",
+      "alternative": "Üben Sie kürzere Sätze mit gestütztem Kopf und sanfter Atmung."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Hohe Kernanforderungen und Gleichgewichtsanforderungen können in mehreren Regionen zu Schmerzen führen.",
+      "alternative": "Verwenden Sie modifizierte Sitzübungen mit Unterstützung und geringem Hub."
+    }
+  ],
+  "skin_condition": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Liegendverlängerungen drücken auf den Oberkörper und können entzündete oder empfindliche Haut an Brust und Bauch reizen.",
+      "alternative": "Wählen Sie unterstütztes Liegendheben mit Unterarmen auf der Matte oder Rückenstreckübungen im Sitzen."
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "Der Schulterdruck durch die Matte oder das Gerät kann Ekzeme, Wunden oder Psoriasis am Oberkörper verschlimmern.",
+      "alternative": "Verwenden Sie sanfte Beckenneigungen und unterstützte Gesäßbrückenvarianten mit Polsterung."
+    }
+  ],
+  "transplant_immunosuppression": [
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Eine aggressive Artikulation und Inversion der Wirbelsäule kann zu belastend sein, während die Immunfunktion und die Erholung empfindlich bleiben.",
+      "alternative": "Verwenden Sie sanfte Beckenneigungen in Rückenlage und eine unterstützte Mobilisierung der Wirbelsäule ohne Inversion."
+    }
+  ],
+  "recent_hospitalization": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "Inversion und schnelle Wirbelsäulenbewegungen sind oft zu intensiv für jemanden, der sich von einem kürzlichen Krankenhausaufenthalt oder einer Bettruhe erholt.",
+      "alternative": "Wählen Sie unterstützte Brückenfortschritte und langsame, kontrollierte Hüftheben."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Nicht unterstützte Gleichgewichtsprobleme erhöhen das Sturzrisiko für Klienten, die nach einem Krankenhausaufenthalt dekonditioniert sind.",
+      "alternative": "Führen Sie ein geerdetes Krafttraining mit beiden Füßen auf der Matte durch."
+    }
+  ],
+  "pacemaker_implant": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Eine Rückenstreckung in Bauchlage kann die Brust und den Oberkörper in der Nähe der Herzschrittmacherstelle komprimieren.",
+      "alternative": "Wählen Sie sanfte, unterstützte Brusthebeübungen mit den Unterarmen auf der Matte."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Eine starke Schulter- und Brustbelastung kann in der Nähe eines Herzimplantats einen unangenehmen Druck ausüben.",
+      "alternative": "Verwenden Sie leichtere Unterstützung und Rückenstreckbewegungen im unteren Bereich."
+    }
+  ],
+  "substance_use_recovery": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Instabile Gleichgewichtsübungen können unsicher sein, wenn bei der Erholung die Koordination oder Konzentration beeinträchtigt ist.",
+      "alternative": "Verwenden Sie stabile, fundierte Pilates-Übungen mit klaren, einfachen Hinweisen."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Inversionen und schnelle Positionsänderungen können riskant sein, wenn Aufmerksamkeit und Körperwahrnehmung schwanken.",
+      "alternative": "Wählen Sie stattdessen eine sanfte Beweglichkeit in Rückenlage und unterstützte Rumpfarbeit."
+    }
+  ],
+  "respiratory_pulmonary": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "Inversion und tiefe Brustkompression können die Atembeschwerden bei Lungenschüben verschlimmern.",
+      "alternative": "Verwenden Sie unterstützte Brückenprogressionen oder eine sanfte Sitzmobilität mit offenem Brustkorb."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Über dem Kopf liegende Beine und die Beugung der Wirbelsäule können den Brustkorb einschränken und Atemnot auslösen.",
+      "alternative": "Wählen Sie Rumpfarbeit in Rückenlage mit gestütztem Kopf und Brustkorb."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Inversion und Wirbelsäulenkompression können das Atmen für Personen mit eingeschränkter Lungenfunktion erschweren.",
+      "alternative": "Verwenden Sie sanfte Beckenneigungen und eine tief liegende Wirbelsäulenartikulation ohne Inversion."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Die hochintensive Atemkoordination kann für eine beeinträchtigte Lungenfunktion zu anstrengend sein.",
+      "alternative": "Üben Sie eine langsamere, atembasierte Bauchübung mit häufigen Pausen."
+    }
+  ],
+  "cardiovascular_disease": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "Inversion und hohe Anstrengung können den Blutdruck in die Höhe treiben und das Herz belasten.",
+      "alternative": "Nutzen Sie tief liegende Kernarbeiten und stabile Brückenverläufe."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Schnelle Übergänge und die Positionierung der Beine über dem Kopf können für ein geschwächtes Herz-Kreislauf-System belastend sein.",
+      "alternative": "Wählen Sie eine sanfte Beweglichkeit in Rückenlage und eine langsame Artikulation der Wirbelsäule."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Eine starke Belastung des Oberkörpers kann die Herzfrequenzreaktion und die Blutdruckkontrolle überfordern.",
+      "alternative": "Benutzen Sie eine leichtere Schulterstütze und vermeiden Sie maximalen Widerstand."
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "Anhaltendes Beindrücken kann bei Menschen mit Herzerkrankungen zu einer übermäßigen kardiovaskulären Belastung führen.",
+      "alternative": "Bevorzugen Sie langsamere Beinarbeit mit geringem Widerstand und überwachen Sie die Anstrengung genau."
+    }
+  ],
+  "arrhythmia_cardiac_device": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Eine tiefe Brustkompression und eine Belastung des Oberkörpers können die Stelle des Geräts reizen oder die Rhythmuskontrolle stören.",
+      "alternative": "Wählen Sie eine sanft unterstützte Rückenstreckung mit minimalem Widerstand."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Bei einem implantierten Herzgerät können Bauchlage und Druck auf die Brust unangenehm sein.",
+      "alternative": "Heben Sie die Brust sanft an, während die Unterarme auf der Matte liegen."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Eine schnelle Inversion und plötzliche Kraftänderungen können einen unregelmäßigen Herzrhythmus auslösen.",
+      "alternative": "Bleiben Sie tief auf der Matte und nutzen Sie kontrollierte Brückenbewegungen."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Instabile Gleichgewichtsübungen können unsicher sein, wenn eine Herzrhythmusstörung die Koordination oder das Bewusstsein beeinträchtigt.",
+      "alternative": "Führen Sie geerdete Rumpfstabilitätsübungen mit beiden Füßen auf der Matte durch."
+    }
+  ],
+  "metabolic_endocrine": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Schnelles Pumpen des Atems und anhaltende Intensität der Körpermitte können den Blutzucker- und Energiespiegel destabilisieren.",
+      "alternative": "Verwenden Sie kürzere Sätze mit sanfter Atmung und häufigen Pausen."
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "Anhaltende Beinbewegungen können zu einem schnellen Stoffwechselbedarf und Energieschwankungen führen.",
+      "alternative": "Wählen Sie eine langsamere Beinarbeit mit geringerem Widerstand und vorsichtigem Tempo."
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "Die dynamische Ganzkörpersequenzierung kann zu intensiv sein, wenn der Stoffwechsel oder das Hormongleichgewicht instabil ist.",
+      "alternative": "Konzentrieren Sie sich auf langsamere, unterstützte Rumpf- und Wirbelsäulenartikulationsübungen."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Hohe Kernintensitäts- und Gleichgewichtsanforderungen können das Glukose- oder Hormon-regulierte Energiesystem überfordern.",
+      "alternative": "Verwenden Sie unterstützte Rumpfübungen im Sitzen mit gebeugten Knien und einer neutralen Wirbelsäule."
+    }
+  ],
+  "autoimmune_inflammatory": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Eine tiefe Rückenstreckung und eine längere Belastung des Oberkörpers können Gelenk- oder Gewebeentzündungen verschlimmern.",
+      "alternative": "Verwenden Sie sanft unterstützte Liegestützen mit geringer Reichweite."
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "Das Heben der Hüfte unter Belastung und die Kompression der Schulter können während eines Schubs schmerzhaft oder entzündlich sein.",
+      "alternative": "Wählen Sie Beckenneigungen mit einer neutralen Wirbelsäule und viel Ruhe zwischen den Wiederholungen."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Inversion und Wirbelsäulenkompression können systemische Entzündungssymptome verschlimmern.",
+      "alternative": "Verwenden Sie Beckenneigungen in Rückenlage und eine sanfte Mobilisierung der Wirbelsäule ohne Inversion."
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Große Hüftbewegungen und Rotationsbelastungen können sich bei einer Autoimmunentzündung als zu intensiv anfühlen.",
+      "alternative": "Machen Sie kleinere Beinkreise und stützen Sie das Becken mit den Händen."
+    }
+  ],
+  "immune_infectious": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Die atemfokussierte Kernintensität kann während einer aktiven Infektion oder einer Immunschwäche zu anstrengend sein.",
+      "alternative": "Üben Sie sanfte Atemübungen und ruhen Sie sich aus, wenn Symptome vorhanden sind."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Inversion und höhere Anstrengung können Müdigkeit und systemische Krankheitssymptome verschlimmern.",
+      "alternative": "Verwenden Sie unterstützte Bridge-Verläufe und reduzieren Sie die Intensität."
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "Anhaltende Widerstandsarbeit kann während der Genesung nach einer Infektion übermäßig anstrengend sein.",
+      "alternative": "Wählen Sie Beinübungen mit geringem Widerstand und geringer Belastung und zusätzlichen Ruhepausen."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Schwere Anstrengungen des Oberkörpers können bei akuten Erkrankungen oder verminderter Immunität unsicher sein.",
+      "alternative": "Führen Sie eine sanfte, unterstützte Rückenstreckung durch und hören Sie auf, wenn sich die Symptome verschlimmern."
+    }
+  ],
+  "oncology_treatment": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "Inversion und Wirbelsäulenkompression können während der aktiven Krebsbehandlung schlecht toleriert werden.",
+      "alternative": "Wählen Sie eine sanfte Rumpfarbeit in Rückenlage mit gestütztem Kopf und Brustkorb."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Hohe Anstrengung und Inversion können zu Müdigkeit, Blutergüssen oder Herz-Kreislauf-Belastung führen.",
+      "alternative": "Verwenden Sie tief liegende Brückenprogressionen mit kontrollierter Atmung."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Bei behandlungsbedingter Ermüdung können Bauchdruck und Rückenstreckung zu aggressiv sein.",
+      "alternative": "Verwenden Sie unterstützte Liegestützübungen mit den Unterarmen auf der Matte."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Inversion und tiefe Wirbelsäulenartikulation können riskant sein, wenn das Blutbild oder die Gewebetoleranz niedrig sind.",
+      "alternative": "Verwenden Sie stattdessen sanfte Beckenneigungen in Rückenlage und eine tiefe Beweglichkeit."
+    }
+  ],
+  "gastrointestinal_pelvic": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Eine belastete Bauchbeugung kann den intraabdominalen Druck erhöhen und Becken- oder Magen-Darm-Symptome verschlimmern.",
+      "alternative": "Verwenden Sie Beckenneigungen und eine sanfte Wiederverbindung des Rumpfes mit einer neutralen Wirbelsäule."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Starkes Pumpen des Bauches und eine starke Atemkoordination können Beckenboden- oder Verdauungsbeschwerden verschlimmern.",
+      "alternative": "Üben Sie eine langsamere Rumpfarbeit mit weniger Bauchdruck."
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "Die kombinierte Streckung der unteren Bauchmuskeln und das Ausstrecken der Arme können zu einer übermäßigen Belastung des Beckenbodens und des Bauches führen.",
+      "alternative": "Verwenden Sie Fersenrutschen und Einbeinstützen mit minimalem Druck."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Ein hoher Bedarf an Rumpfmuskulatur und Gleichgewicht kann den Beckendruck und Bauchbeschwerden erhöhen.",
+      "alternative": "Verwenden Sie unterstützte Rumpfübungen im Sitzen mit gebeugten Knien und sanftem Heben."
+    }
+  ],
+  "neurological_disorder": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Eine instabile Gleichgewichtsarbeit kann das Sturzrisiko erhöhen, wenn die Koordination oder das Empfindungsvermögen beeinträchtigt sind.",
+      "alternative": "Verwenden Sie fundierte Rumpfstabilitätsübungen mit einer breiten Stützbasis."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Inversion und schnelle Positionswechsel können für Klienten mit neurologischen Koordinationsproblemen eine Herausforderung sein.",
+      "alternative": "Wählen Sie eine langsame, unterstützte Beweglichkeit der Wirbelsäule und vermeiden Sie Beinpositionen über Kopf."
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Große Beinkreise erfordern Kontrolle und Propriozeption, die bei neurologischen Erkrankungen beeinträchtigt sein können.",
+      "alternative": "Verwenden Sie kleinere unterstützte Beinkreise oder Einzelbeinheben mit stabilisiertem Becken."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Hohe Gleichgewichts- und Koordinationsanforderungen können unsicher sein, wenn die motorische Kontrolle inkonsistent ist.",
+      "alternative": "Verwenden Sie unterstützte Rumpfheben im Sitzen mit gebeugten Knien und einer stabilen Basis."
+    }
+  ],
+  "mental_cognitive": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Komplexe Gleichgewichtshaltungen können unsicher sein, wenn Konzentration, Gedächtnis oder Verarbeitungsgeschwindigkeit beeinträchtigt sind.",
+      "alternative": "Verwenden Sie einfache, fundierte Übungen mit klaren, vorhersehbaren Hinweisen."
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "Dynamische Abläufe und schnelle Übergänge können jemanden mit kognitiven oder psychischen Problemen überfordern.",
+      "alternative": "Wählen Sie langsamere, linearere Übungen mit jeweils einer Bewegung."
+    },
+    {
+      "exerciseId": "criss_cross",
+      "reason": "Bei kognitiven oder emotionalen Symptomen kann es schwierig sein, schnelle Rotation und Koordination sicher zu befolgen.",
+      "alternative": "Verwenden Sie eine sanfte Sitz- oder Rückenrotation mit klaren, temporeichen Anweisungen."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Hohe Komplexitäts- und Gleichgewichtsanforderungen können zu viel sein, wenn die mentale Konzentration oder die Stresstoleranz gering sind.",
+      "alternative": "Nutzen Sie unterstützte Rumpfübungen im Sitzen mit einfachen, gleichmäßigen Bewegungen."
+    }
+  ],
+  "other": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Dieser Zustand ist nicht ausdrücklich aufgeführt; Wählen Sie eine sanfte, unterstützte Arbeit und konsultieren Sie einen qualifizierten Arzt, bevor Sie risikoreiche Bewegungen versuchen.",
+      "alternative": "Verwenden Sie geerdetes Pilates mit einer stabilen Basis, geringer Belastung und klaren Anweisungen."
+    }
+  ],
+  "perimenopause_menopause": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "Inversion kann vasomotorische Symptome auslösen und den Blutdruck während hormoneller Veränderungen erhöhen.",
+      "alternative": "Wählen Sie eine sanfte Rumpfarbeit in Rückenlage mit gestütztem Kopf und Brustkorb."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Eine Inversion mit hohem Kraftaufwand ist bei hormonellen Herz-Kreislauf-Veränderungen und einer möglichen Verringerung der Knochendichte ungeeignet.",
+      "alternative": "Verwenden Sie unterstützte Brückenprogressionen und sanfte Hüftheben mit einer neutralen Wirbelsäule."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Anhaltende hochintensive Atemarbeit kann bei Hitzewallungen oder Herz-Kreislauf-Empfindlichkeit unangenehm sein.",
+      "alternative": "Üben Sie langsameres, atemgesteuertes Bauchtraining mit kürzeren Sätzen und einer offenen Brusthaltung."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Eine Gleichgewichtsumkehr kann die Blutdruckstabilität und Koordinationsänderungen im Zusammenhang mit der Perimenopause gefährden.",
+      "alternative": "Verwenden Sie geerdete Stabilitätsübungen mit beiden Füßen auf der Matte und kleinen Bewegungen."
+    }
+  ],
+  "stroke_recovery": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Eine belastete Wirbelsäulenbeugung mit beidseitigem Ziehen ist bei Hemiplegie oder asymmetrischer Schwäche unsicher.",
+      "alternative": "Konzentrieren Sie sich auf sanftes Atmen, unterstützte Beckenneigungen und einseitige Beinbewegungen."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Ein hohes Maß an Gleichgewicht und bilateraler Koordination ist bei der frühen Genesung nach einem Schlaganfall unsicher.",
+      "alternative": "Verwenden Sie unterstützte Rumpfübungen im Sitzen mit gebeugten Knien und geerdeten Füßen."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Eine vollständige Gleichgewichtsumkehr erfordert eine bilaterale Koordination, die nach einem Schlaganfall normalerweise nicht verfügbar ist.",
+      "alternative": "Wählen Sie fundierte Rumpfstabilitätsübungen mit einer breiten Unterstützungsbasis."
+    },
+    {
+      "exerciseId": "spine_twist",
+      "reason": "Rotation unter Belastung kann die sich erholenden motorischen Bahnen belasten und spastische oder schwache Muskeln belasten.",
+      "alternative": "Verwenden Sie eine sanfte Sitzrotation mit unterstützten Armen und langsamen, kontrollierten Bewegungen."
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Plank erfordert beidseitige Schulter- und Beinstabilität, die nach einem Schlaganfall normalerweise nicht verfügbar ist.",
+      "alternative": "Arbeiten Sie in einer unterstützten, seitlich liegenden oder sitzenden Position mit jeweils einer Gliedmaße."
+    }
+  ],
+  "long_covid": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Anhaltende aerobe Anstrengung kann bei Klienten mit langer COVID-19-Erkrankung ein Unwohlsein nach der Belastung auslösen.",
+      "alternative": "Verwenden Sie kürzere, sanftere, atembasierte Kernübungen mit häufigen Ruhepausen."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Höchstanstrengung ist gefährlich, da es zu postviraler Müdigkeit und Energieeinschränkungen kommt.",
+      "alternative": "Verwenden Sie eine unterstützte Kernaktivierung im Sitzen mit minimaler Belastung und langsamem Tempo."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Eine Inversion mit hoher Intensität ist während der energiebegrenzten postviralen Erholung unsicher.",
+      "alternative": "Wählen Sie eine sanfte Überbrückung in Rückenlage mit langsamen Übergängen und ruhen Sie sich zwischen den Wiederholungen aus."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Dynamisches Training in Bauchlage mit hoher Anstrengung kann einen Rückfall der Symptome nach der Belastung auslösen.",
+      "alternative": "Verwenden Sie mit minimalem Kraftaufwand einen sanften Unterarmlift in Bauchlage oder eine Sphinxposition."
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "Anhaltendes Heben von Armen und Beinen in Bauchlage kann einen Langzeit-COVID-Klienten im normalen Rahmen erschöpfen.",
+      "alternative": "Wählen Sie Einzelbeinübungen mit vollständiger Ruhepause zwischen den Wiederholungen und hören Sie beim ersten Anzeichen von Ermüdung auf."
+    }
+  ],
+  "hip_labral_tear": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Große Hüftkreise üben eine Scherbelastung auf das Labrum aus und können das Reißen verschlimmern.",
+      "alternative": "Benutzen Sie sehr kleine, unterstützte Beinkreise und halten Sie das Becken völlig stabil."
+    },
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "Eine weite Hüftöffnung und Balance können ein bereits gerissenes Labrum beeinträchtigen.",
+      "alternative": "Führen Sie eine sanfte Adduktorenübung im Sitzen durch, wobei die Beine näher beieinander liegen."
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "Durch die Rotationsbelastung der Hüfte wird das Labrumgewebe belastet und es besteht die Gefahr weiterer Risse.",
+      "alternative": "Führen Sie kleinere Hüftbewegungen mit strenger Stabilität aus und vermeiden Sie Rotationen im Endbereich."
+    },
+    {
+      "exerciseId": "front_splits",
+      "reason": "Bei extremer Beugung und Streckung der Hüfte wird das Labrum komprimiert und geschert.",
+      "alternative": "Gehen Sie vorsichtig mit den Hüftgelenken um und vermeiden Sie Endpositionen der Hüfte."
+    },
+    {
+      "exerciseId": "scissors",
+      "reason": "Eine schnelle abwechselnde Hüftbeugung kann den Labrumriss reizen und die Schmerzen verstärken.",
+      "alternative": "Verwenden Sie eine langsame, kontrollierte Beinabsenkung mit kleinem Bewegungsspielraum und neutralem Becken."
+    }
+  ],
+  "wrist_conditions": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "In der Plank-Position wird das gesamte Körpergewicht durch die Handgelenke belastet.",
+      "alternative": "Verwenden Sie Unterarmplanken oder wechseln Sie zu einem Beinheben im Sitzen, um das Handgelenk zu entlasten."
+    },
+    {
+      "exerciseId": "push_up",
+      "reason": "Eine belastete Handgelenkstreckung verschlimmert direkt Frakturen, Verstauchungen und Tendinopathien.",
+      "alternative": "Verwenden Sie Liegestütze an der Wand oder auf den Unterarm gestützte Positionen, um das Handgelenk zu entlasten."
+    },
+    {
+      "exerciseId": "swan",
+      "reason": "Bei der Liegestützpositionierung in Bauchlage wird ein erheblicher Teil des Körpergewichts auf die Handgelenke verlagert.",
+      "alternative": "Verwenden Sie eine Sphinx- oder Unterarm-gestützte Bauchlage, um eine Belastung des Handgelenks zu vermeiden."
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "Durch die Belastung mit der seitlichen Planke wird das Handgelenk in Streckung und seitliche Kompression belastet.",
+      "alternative": "Verwenden Sie eine Unterarm-Seitenplanke oder rollen Sie das Handgelenk in einer Faustposition von der Matte."
+    },
+    {
+      "exerciseId": "plank",
+      "reason": "Eine anhaltende Handgelenksstreckung unter Körpergewicht kann jede Verletzung oder jeden Zustand des Handgelenks verschlimmern.",
+      "alternative": "Verwenden Sie eine Unterarmplanke als direkten Ersatz, um Rumpfarbeit ohne Belastung des Handgelenks zu leisten."
+    }
+  ],
+  "lymphedema": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Dynamische Armbewegungen über dem Kopf können den Lymphdruck erhöhen und die Schwellung in der betroffenen Extremität verschlimmern.",
+      "alternative": "Führen Sie einen sanften Unterarmlift in Bauchlage mit unterstützten Armen durch und vermeiden Sie den Griff über den Kopf."
+    },
+    {
+      "exerciseId": "arm_springs",
+      "reason": "Wiederholte Widerstandsbelastungen des Arms können das Lymphödem verschlimmern und den Lymphabfluss beeinträchtigen.",
+      "alternative": "Führen Sie sanfte, rhythmische Armbewegungen unterhalb der Schulterhöhe ohne Widerstand aus."
+    },
+    {
+      "exerciseId": "rowing_series",
+      "reason": "Zugwiderstand mit den Armen kann den Lymphfluss verschlechtern und die Schwellung verstärken.",
+      "alternative": "Nutzen Sie eine sanfte, unterstützte Armbeweglichkeit ohne Widerstand und halten Sie die Gliedmaße leicht angehoben."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Überkopfdrücken gegen Widerstand belastet die betroffenen Lymphknoten und Gefäße.",
+      "alternative": "Gehen Sie vorsichtig und ohne Widerstand vor und halten Sie den Arm möglichst unterhalb der Schulter."
+    },
+    {
+      "exerciseId": "magic_circle_press",
+      "reason": "Das Zusammendrücken des Arms oder das Drücken über dem Kopf kann den venösen und lymphatischen Druck in den betroffenen Gliedmaßen erhöhen.",
+      "alternative": "Konzentrieren Sie sich auf eine sanfte, rhythmische Unterkörper- oder Rumpfarbeit, während Sie den betroffenen Arm ruhen lassen."
+    }
+  ]
+}

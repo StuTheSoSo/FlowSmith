@@ -1,0 +1,34 @@
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+
+  <ion-footer>
+    <ion-toolbar>
+      <nav class="tab-row" aria-label="Primary navigation">
+        <a class="tab-btn" routerLink="/home" routerLinkActive="selected">
+          <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+          <span>Planner</span>
+        </a>
+        <a class="tab-btn" routerLink="/library" routerLinkActive="selected">
+          <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+          <span>Library</span>
+        </a>
+        <a class="tab-btn" routerLink="/templates" routerLinkActive="selected">
+          <ion-icon name="copy-outline" aria-hidden="true"></ion-icon>
+          <span>Templates</span>
+        </a>
+        <a class="tab-btn" routerLink="/run" routerLinkActive="selected">
+          <ion-icon name="timer-outline" aria-hidden="true"></ion-icon>
+          <span>Run</span>
+        </a>
+        <!-- <a class="tab-btn" routerLink="/clients" routerLinkActive="selected">
+          <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+          <span>Clients</span>
+        </a> -->
+        <a class="tab-btn" routerLink="/settings" routerLinkActive="selected">
+          <ion-icon name="settings-outline" aria-hidden="true"></ion-icon>
+          <span>Settings</span>
+        </a>
+      </nav>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>

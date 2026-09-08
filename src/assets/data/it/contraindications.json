@@ -1,0 +1,1293 @@
+{
+  "osteoporosis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Flessione spinale caricata e vertebre da stress con flessione in avanti.",
+      "alternative": "Utilizzare stabilizzatori neutri per il nucleo della colonna vertebrale e scivoli per le gambe supine."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione e il carico spinale a fine corsa possono comprimere le ossa deboli.",
+      "alternative": "Sostituisci con delicate inclinazioni pelviche in posizione supina."
+    },
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "Il rotolamento della colonna vertebrale arrotondata applica uno stress di flessione ripetuto.",
+      "alternative": "Scegli piegamenti del ginocchio supportati o allungamenti a gamba singola."
+    },
+    {
+      "exerciseId": "spine_stretch_forward",
+      "reason": "La flessione in avanti con carico aumenta il rischio di compressione vertebrale.",
+      "alternative": "Prova il lavoro posturale seduto con estensione neutra della colonna vertebrale."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Il sollevamento del core ad alto carico in flessione e in equilibrio può affaticare la colonna vertebrale.",
+      "alternative": "Usa progressioni di sit-up supportate modificate con una palla."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversione e il carico sull'articolazione spinale possono comprimere le vertebre fragili.",
+      "alternative": "Scegli delicati scivolamenti delle gambe in posizione supina o inclinazioni pelviche con colonna vertebrale neutra."
+    }
+  ],
+  "pregnancy": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Una forte flessione addominale può stressare l'utero in crescita e la diastasi dei retti.",
+      "alternative": "Passare al lavoro centrale seduto di lato o supportato."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione e il sollevamento delle gambe in posizione supina possono risultare scomodi dopo la metà della gravidanza.",
+      "alternative": "Utilizzare una respirazione delicata del pavimento pelvico da seduti o distesi su un fianco."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Il sollevamento e l'equilibrio in stile sit-up possono sovraccaricare la linea alba.",
+      "alternative": "Concentrati sulla postura neutra della colonna vertebrale e sull'attivazione del pavimento pelvico."
+    },
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Il sollevamento della testa e del busto supportato dalla posizione supina può affaticare la pancia e il collo.",
+      "alternative": "Usa varianti del core in piedi o sdraiati in sicurezza."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "È meglio evitare l'inversione e la compressione spinale durante la gravidanza.",
+      "alternative": "Scegli esercizi di stretching laterali e un delicato lavoro con le anche supportate."
+    }
+  ],
+  "low_back_pain": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flessione spinale ripetitiva può aggravare il dolore del disco o della catena posteriore.",
+      "alternative": "Scegli inclinazioni pelviche e ponti supportati con colonna vertebrale neutra."
+    },
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "Il rotolamento sotto carico può far esplodere i sintomi della parte bassa della schiena.",
+      "alternative": "Utilizzare esercizi delicati di stabilizzazione del core seduti o supini."
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "La rotazione con flessione spinale può irritare una colonna lombare sensibile.",
+      "alternative": "Usa il lavoro laterale focalizzato sull'anca e la rotazione neutra della colonna vertebrale."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversione e l'estensione lombare possono essere troppo intense per molte condizioni della schiena.",
+      "alternative": "Usa progressioni del ponte supportate e sollevamenti delicati dell'anca."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'articolazione spinale con inversione può aggravare la lombalgia e la tensione neurale.",
+      "alternative": "Utilizzare esercizi di stabilizzazione pelvica neutri e un delicato lavoro di allungamento in posizione supina."
+    }
+  ],
+  "hypertension": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione può aumentare la pressione sanguigna e dovrebbe essere evitata.",
+      "alternative": "Usa la mobilità seduta o quadrupede con la respirazione costante."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversione ad alto sforzo può stressare il sistema cardiovascolare.",
+      "alternative": "Scegli le prese neutre della colonna vertebrale o il lavoro con le gambe seduti."
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "Trattenere il respiro e ruotare rapidamente può aumentare la pressione sanguigna.",
+      "alternative": "Usa movimenti circolari dell'anca lenti e controllati con una respirazione rilassata."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Le inversioni di equilibrio possono sembrare troppo intense per problemi cardiaci.",
+      "alternative": "Rimani sul tappetino con stabilità del core e sollevamento delle gambe."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversione e la compressione spinale possono aumentare la pressione sanguigna negli individui sensibili.",
+      "alternative": "Scegli la stabilizzazione del core in basso e una mobilità in piedi delicata."
+    }
+  ],
+  "knee_issues": [
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "Il sollevamento profondo dell'anca può caricare le ginocchia e aggravare il dolore articolare.",
+      "alternative": "Usa inclinazioni pelviche delicate e ponti glutei supportati."
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "I sollevamenti delle gambe basati sul plank esercitano pressione sulle ginocchia e sui fianchi.",
+      "alternative": "Lavoro in quadrupede con gambe sollevate o sollevamenti delle gambe distesi."
+    },
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "Le estensioni delle gambe inclinate possono irritare la tensione del ginocchio o del tendine del ginocchio.",
+      "alternative": "Usa movimenti su una gamba sola da seduto o disteso con una portata ridotta."
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "La flessione ripetuta del ginocchio può sottoporre a tensione le articolazioni artritiche.",
+      "alternative": "Scegli la tenuta statica delle gambe o la marcia dolce in posizione supina."
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "La pressatura delle gambe del Reformer può posizionare un carico continuo attraverso le ginocchia sensibili.",
+      "alternative": "Utilizzare esercizi per le gambe seduti o supportati con portata ridotta e resistenza più leggera."
+    }
+  ],
+  "hip_issues": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "I grandi cerchi dell'anca possono aggravare i fianchi dolorosi o instabili.",
+      "alternative": "Usa cerchi per le gambe più piccoli o cerniere per le anche con supporto."
+    },
+    {
+      "exerciseId": "scissors",
+      "reason": "L'escursione estrema dell'anca in posizione supina può irritare le articolazioni dell'anca.",
+      "alternative": "Tieni le gambe più basse e lavora con sollevamenti controllati più piccoli."
+    },
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "L'equilibrio delle gambe completamente aperte mette a dura prova la capsula dell'anca.",
+      "alternative": "Utilizzare gli adduttori seduti e il lavoro di controllo degli abduttori."
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "Il movimento rotatorio dell'anca può essere doloroso se l'articolazione è infiammata.",
+      "alternative": "Scegli delle pompe per le anche con supporto delicato in posizione supina."
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "La pressione ripetuta delle gambe può irritare i fianchi sensibili a causa della flessione e dell'estensione caricate.",
+      "alternative": "Lavora con un raggio d'azione ridotto e una resistenza più leggera, oppure scegli gli slide con la gamba supina."
+    }
+  ],
+  "neck_shoulder": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Il sollevamento prolungato della testa e del collo può aggravare la tensione cervicale.",
+      "alternative": "Mantieni la testa supportata mantenendo il respiro profondo."
+    },
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Il sollevamento della testa senza supporto aumenta lo sforzo del collo e la tensione delle spalle.",
+      "alternative": "Usa le pieghe del mento e il rotolamento delicato e supportato con un collo neutro."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Il sollevamento della testa con equilibrio può caricare gli stabilizzatori del collo e delle spalle.",
+      "alternative": "Utilizzare il core work supportato da seduti ed evitare la posizione a V completa."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L'estensione della schiena in posizione prona sollecita il collo e la parte superiore delle spalle.",
+      "alternative": "Usa sollevamenti delicati con le mani sotto le spalle per supporto."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Caricare le spalle sopra la barra può aggravare l'instabilità delle spalle o la tensione del collo.",
+      "alternative": "Utilizzare una delicata estensione della schiena supportata con una resistenza inferiore."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Il carico sulle spalle del Reformer sotto una colonna vertebrale invertita può stressare le aree strette del collo e delle spalle.",
+      "alternative": "Scegli l'estensione della schiena prona supportata o la mobilizzazione della colonna vertebrale supina senza inversione."
+    }
+  ],
+  "recent_surgery": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flessione spinale sotto carico è spesso troppo aggressiva dopo l'intervento chirurgico.",
+      "alternative": "Concentrati sulla respirazione delicata, sul pavimento pelvico e sul supporto della postura."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione e l'articolazione profonda possono essere pericolose durante il recupero.",
+      "alternative": "Scegli i movimenti supportati e segui l'autorizzazione professionale."
+    },
+    {
+      "exerciseId": "spine_twist",
+      "reason": "La torsione con carico può stressare i tessuti in via di guarigione.",
+      "alternative": "Utilizzare la rotazione neutra della colonna vertebrale da posizioni sedute o in piedi."
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "La flessione laterale può essere scomoda dopo l'intervento chirurgico.",
+      "alternative": "Mantieni i movimenti delicati ed evita piegamenti estremi."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversione e l'articolazione profonda della colonna vertebrale sono generalmente controindicate dopo un recente intervento chirurgico.",
+      "alternative": "Utilizzare delicate inclinazioni pelviche supine e mobilizzazione supportata della colonna vertebrale."
+    }
+  ],
+  "arthritis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flessione ripetitiva può aggravare la rigidità delle articolazioni.",
+      "alternative": "Utilizza piccole articolazioni spinali e un lavoro centrale neutro."
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "La rotazione con flessione in avanti può irritare le articolazioni artritiche.",
+      "alternative": "Utilizzare la rotazione laterale da seduti con supporto."
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "I movimenti dell'anca invertiti possono essere troppo intensi per le articolazioni sensibili.",
+      "alternative": "Scegli semplici cerchi per i fianchi con una portata ridotta."
+    },
+    {
+      "exerciseId": "seal",
+      "reason": "Il rotolamento può risultare duro per la colonna vertebrale o i fianchi artritici.",
+      "alternative": "Utilizzare il rafforzamento del core supportato senza rotolamento dinamico."
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "Il lavoro con il leg press del Reformer può aggravare l'artrosi delle articolazioni del ginocchio o dell'anca senza un'attenta gestione del carico.",
+      "alternative": "Usa una resistenza più leggera e concentrati su un raggio d'azione limitato e controllato."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversione e la compressione spinale possono essere scomode per le articolazioni artritiche.",
+      "alternative": "Scegliere una mobilizzazione delicata della colonna vertebrale senza ampio range o inversione."
+    }
+  ],
+  "scoliosis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Un'ampia flessione spinale può accentuare la curva se non controllata.",
+      "alternative": "Utilizzare i roll-down supportati con bacino neutro e consapevolezza dell'asimmetria."
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "La rotazione attraverso la colonna vertebrale può creare un carico irregolare in una colonna vertebrale curva.",
+      "alternative": "Esegui delicati allungamenti laterali da seduto prestando la stessa attenzione a entrambi i lati."
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "Una profonda flessione laterale asimmetrica può sovraccaricare una curva scoliotica.",
+      "alternative": "Lavorare con piccole pieghe laterali e mantenere le coste lunghe."
+    }
+  ],
+  "pelvic_floor_dysfunction": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Una forte pompa addominale e la coordinazione del respiro possono aumentare la pressione sul pavimento pelvico.",
+      "alternative": "Mantieni la testa supportata e concentrati su un delicato coinvolgimento del pavimento pelvico."
+    },
+    {
+      "exerciseId": "single_leg_stretch",
+      "reason": "La flessione ripetuta dell'anca e l'impegno della parte inferiore dell'addome possono irritare un pavimento pelvico debole.",
+      "alternative": "Eseguire piegamenti del ginocchio supportati o marcia modificata con bacino neutro."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Il movimento completo degli addominali carica il pavimento pelvico e la linea alba.",
+      "alternative": "Utilizzare il core work supportato da seduti ed evitare la posizione a V completa."
+    }
+  ],
+  "diastasis_recti": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Un forte pompaggio addominale può ampliare la separazione e aumentare la pressione intra-addominale.",
+      "alternative": "Utilizza il lavoro di base supportato con la testa abbassata e concentrati sull'impegno trasversale dell'addome."
+    },
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flessione spinale sotto carico pone stress sulla linea alba.",
+      "alternative": "Esercitati con le inclinazioni pelviche e i roll-down supportati con la colonna vertebrale neutra."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "La posizione a V completa e il sollevamento addominale possono sovraccaricare i muscoli addominali separati.",
+      "alternative": "Usa il core work modificato da seduto con le ginocchia piegate e il sollevamento basso."
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "La combinazione dell'estensione degli addominali inferiori e della portata del braccio può aumentare la pressione attraverso la linea mediana.",
+      "alternative": "Scegli le diapositive per il tallone e i supporti per gamba singola con uno sforzo addominale minimo."
+    }
+  ],
+  "shoulder_instability": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Un carico pesante sulle spalle sopra la barra può aggravare l'instabilità o il conflitto.",
+      "alternative": "Utilizzare l'estensione della schiena supportata con una resistenza più leggera e un posizionamento stabile delle spalle."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L'estensione prona può sottoporre a uno sforzo eccessivo gli stabilizzatori del collo e delle spalle.",
+      "alternative": "Scegli un sollevamento delicato con le mani sotto le spalle per supporto."
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "Ripetuti sollevamenti alternati delle braccia possono sovraccaricare le articolazioni instabili della spalla.",
+      "alternative": "Utilizzare l'estensione del braccio nella gamma inferiore con maggiore enfasi sulla stabilità scapolare."
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "Le posizioni del ponte supportato dalle spalle possono aumentare il disagio se le spalle sono instabili.",
+      "alternative": "Mantieni la parte superiore del corpo rilassata e lavora con variazioni del ponte inferiore o con il coinvolgimento dei glutei supini."
+    }
+  ],
+  "bursitis": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "I grandi cerchi dell'anca possono irritare le borse infiammate attorno all'anca o al bacino.",
+      "alternative": "Usa circoli delle gambe più piccoli e lenti con il bacino supportato."
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "La rotazione ripetitiva dell'anca può aggravare la borsite nell'articolazione dell'anca.",
+      "alternative": "Scegli décolleté per fianchi delicati e supportati in un range neutro."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L'estensione della schiena in posizione prona può comprimere le borse della spalla già dolenti.",
+      "alternative": "Lavora con sollevamenti del torace supportati ed evita l'estensione aggressiva della parte superiore della schiena."
+    },
+    {
+      "exerciseId": "long_box_series",
+      "reason": "La portata estesa della parte superiore del corpo e il movimento del carrello carico possono stressare i tessuti sensibili della spalla.",
+      "alternative": "Usa molle più leggere e movimenti più piccoli delle braccia mantenendo le spalle stabili."
+    }
+  ],
+  "vertigo_dizziness": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione può provocare vertigini e disorientamento.",
+      "alternative": "Scegli invece delicate inclinazioni pelviche supine o mobilità seduta."
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "Una rapida rotazione della colonna vertebrale con le gambe sopra la testa può compromettere l'equilibrio.",
+      "alternative": "Esegui lenti movimenti circolari dei fianchi con la testa appoggiata e gli occhi fissi."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversione e l'improvvisa sfida all'equilibrio possono peggiorare le vertigini.",
+      "alternative": "Rimani sul tappetino con progressioni del ponte supportate e movimenti lenti."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Inversioni e bilanciamenti avanzati possono provocare vertigini.",
+      "alternative": "Concentrati sulla stabilità del core basata sul pavimento e sul respiro costante."
+    }
+  ],
+  "postpartum": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flessione spinale sotto carico e il sollevamento addominale possono stressare il recupero del core postpartum.",
+      "alternative": "Utilizzare inclinazioni pelviche supportate e un delicato lavoro di riconnessione del tronco da seduti."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Il sollevamento completo in stile V può sovraccaricare la linea alba di guarigione e il pavimento pelvico.",
+      "alternative": "Esercitati con i sollevamenti del core da seduti, con le ginocchia piegate e un respiro delicato."
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "Una forte estensione e estensione addominale possono sovraesprimere una linea mediana in recupero.",
+      "alternative": "Scegli le diapositive per il tallone e i supporti per gamba singola con uno sforzo addominale minimo."
+    }
+  ],
+  "balance_issues": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Il lavoro avanzato sull'equilibrio aumenta il rischio di caduta e l'instabilità.",
+      "alternative": "Concentrarsi sulla stabilità a terra e sul controllo lento del core."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversione e la richiesta di saldo elevato possono essere troppo impegnative per i clienti instabili.",
+      "alternative": "Usa progressioni del ponte supportate e sollevamenti dell'anca a basso livello."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione delle gambe sopra la testa può mettere alla prova l'equilibrio e l'orientamento spaziale.",
+      "alternative": "Scegli la mobilità centrale seduta o supina senza inversione."
+    }
+  ],
+  "joint_replacement": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Il leg press del Reformer può imporre un carico eccessivo sul ginocchio o sull'anca sostituiti.",
+      "alternative": "Utilizzare molle più leggere, un raggio di movimento ridotto o un supporto per le gambe seduti."
+    },
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "La flessione sotto carico del ginocchio e il movimento dell'anca possono sottoporre a tensione l'articolazione sostituita.",
+      "alternative": "Scegli sollevamenti con ginocchio supportato con portata minima e allineamento controllato."
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Grandi circonferenze dell'anca possono aggravare la sostituzione dell'articolazione dell'anca.",
+      "alternative": "Utilizzare cerchi più piccoli con le gambe supportate o lavori isometrici sulla stabilità dell'anca."
+    }
+  ],
+  "foot_ankle_issues": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Il lavoro con la pedana Reformer applica un carico ripetuto alle caviglie e all'avampiede.",
+      "alternative": "Usa una resistenza più leggera e mantieni i piedi piatti con una flessione plantare minima."
+    },
+    {
+      "exerciseId": "elephant",
+      "reason": "Il carico sui piedi e sulle caviglie può aggravare la sensibilità delle articolazioni.",
+      "alternative": "Scegli gli allungamenti dei tendini del ginocchio seduti o supportati senza carico pesante sui piedi."
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "I movimenti rapidi della parte inferiore della gamba e le posizioni dei piedi appuntiti possono irritare il dolore alla caviglia o al piede.",
+      "alternative": "Usa cerchi più lenti con le gambe supine con una posizione neutra dei piedi."
+    }
+  ],
+  "hypermobility_syndrome": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Grandi estensioni articolari non supportate possono allungare eccessivamente il tessuto connettivo lasso nell'ipermobilità.",
+      "alternative": "Usa curve più piccole, stabilità attiva e mantieni il bacino supportato durante i cerchi delle gambe."
+    }
+  ],
+  "hernia": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flessione e lo sforzo addominale sotto carico possono aumentare la pressione intra-addominale e irritare un'ernia.",
+      "alternative": "Scegli l'inclinazione pelvica, il lavoro supino e il supporto delicato del respiro senza scricchiolii pesanti."
+    }
+  ],
+  "parkinsons_disease": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Le sfide legate all'equilibrio instabile aumentano il rischio di caduta quando il controllo motorio e la velocità di reazione sono influenzati.",
+      "alternative": "Usa movimenti appoggiati al suolo e supportati con una base ampia e transizioni lente."
+    }
+  ],
+  "multiple_sclerosis": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "L'aspirazione prolungata e l'intensità del core possono surriscaldare o affaticare eccessivamente qualcuno con SM.",
+      "alternative": "Utilizza sessioni più brevi e più fresche con un delicato lavoro di base basato sul respiro."
+    }
+  ],
+  "stress_incontinence": [
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "Una forte estensione addominale e una pressione pelvica possono esacerbare le perdite o i sintomi del pavimento pelvico.",
+      "alternative": "Usa gli slide del tallone e un delicato coinvolgimento del core con il bacino stabile."
+    }
+  ],
+  "disc_degeneration": [
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "La flessione e la compressione spinale ripetute possono aggravare un disco già degenerato.",
+      "alternative": "Scegli l'inclinazione pelvica neutra della colonna vertebrale e la stabilizzazione del core supportata."
+    }
+  ],
+  "radiculopathy_sciatica": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flessione spinale profonda può aumentare la compressione delle radici nervose e i sintomi della sciatica.",
+      "alternative": "Utilizzare una mobilità spinale supportata in modo delicato ed evitare di piegarsi in avanti sotto carico."
+    }
+  ],
+  "ankylosing_spondylitis": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione e la compressione assiale possono stressare una colonna vertebrale infiammata e rigida e limitare l'espansione del torace.",
+      "alternative": "Scegli un lavoro a ponte supportato e una delicata mobilità della colonna vertebrale da seduti."
+    }
+  ],
+  "sacroiliac_dysfunction": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Grandi cerchi delle gambe possono creare cesoie pelviche irregolari e irritare l'articolazione sacroiliaca.",
+      "alternative": "Utilizzare piccoli movimenti controllati delle gambe con il bacino stabilizzato."
+    }
+  ],
+  "cervical_spine_dysfunction": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Il sollevamento della testa e la flessione cervicale non supportati possono aggravare la disfunzione del collo.",
+      "alternative": "Mantieni la testa supportata e usa esercizi delicati per il core senza movimenti profondi del collo."
+    }
+  ],
+  "frozen_shoulder": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L'estensione della schiena inclinata può aggravare una spalla rigida e dolorosa e limitare il comfort.",
+      "alternative": "Utilizzare sollevamenti del torace supportati con le braccia leggere e vicine al corpo."
+    }
+  ],
+  "rotator_cuff_injury": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Il carico pesante sulla spalla e la rotazione esterna possono irritare una cuffia dei rotatori lesionata.",
+      "alternative": "Scegli una mobilità della spalla dolce e supportata ed evita un carico profondo sull'articolazione della spalla."
+    }
+  ],
+  "acromioclavicular_sprain": [
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "La compressione della spalla e il carico sulla parte superiore del corpo possono peggiorare il dolore all'articolazione AC.",
+      "alternative": "Utilizzare inclinazioni pelviche o variazioni del ponte basso con pressione ridotta sulle spalle."
+    }
+  ],
+  "thoracic_outlet_syndrome": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "L'elevazione prolungata della spalla e la coordinazione del respiro possono aumentare la compressione vicino all'uscita toracica.",
+      "alternative": "Usa un'apertura delicata del torace con le braccia sostenute ed evita posizioni delle spalle sopra la testa."
+    }
+  ],
+  "tennis_elbow": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Il carico sulle mani e sugli avambracci può aggravare l'irritazione del tendine laterale del gomito.",
+      "alternative": "Utilizzare il lavoro sulle spalle con carico inferiore ed evitare prese energiche o estensioni del polso."
+    }
+  ],
+  "golfers_elbow": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Il carico dell’avambraccio e l’azione del polso possono sforzare il gomito mediale del gomito del golfista.",
+      "alternative": "Scegli il lavoro supportato per la parte superiore del corpo con una forzatura minima del polso o della presa."
+    }
+  ],
+  "nerve_compression": [
+    {
+      "exerciseId": "corkscrew",
+      "reason": "La torsione e la compressione spinale possono pizzicare un nervo sensibile e peggiorare i sintomi della compressione.",
+      "alternative": "Utilizzare una mobilità spinale delicata con allineamento neutro ed evitare torsioni a fine corsa."
+    }
+  ],
+  "carpal_tunnel_syndrome": [
+    {
+      "exerciseId": "teaser",
+      "reason": "L'estensione del polso e la presa possono aumentare la pressione nel tunnel carpale.",
+      "alternative": "Utilizzare il core work supportato con un polso neutro e una presa ridotta delle dita."
+    }
+  ],
+  "cubital_tunnel_syndrome": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Il carico della parte superiore del corpo in stile plank può comprimere il nervo ulnare al gomito.",
+      "alternative": "Usa il core work supportato e mantieni il gomito dritto e libero da pressione diretta."
+    }
+  ],
+  "radial_nerve_issue": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Il posizionamento del polso e del braccio sotto carico può aggravare i sintomi del nervo radiale se il braccio è esteso o compresso.",
+      "alternative": "Esegui un delicato lavoro sul core con i polsi e i gomiti in posizioni neutre e indolori."
+    }
+  ],
+  "ankle_sprain": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Il lavoro sull'equilibrio non supportato può stressare una caviglia in via di guarigione e aumentare il rischio di nuova distorsione.",
+      "alternative": "Usa il lavoro con le gambe seduto o supportato con entrambi i piedi a terra."
+    }
+  ],
+  "achilles_tendinopathy": [
+    {
+      "exerciseId": "footwork",
+      "reason": "La spinta della pedana del Reformer può sovraccaricare il tendine di Achille con ripetute flessioni plantari.",
+      "alternative": "Utilizzare una resistenza più leggera ed evitare forti spinte attraverso i piedi."
+    }
+  ],
+  "posterior_tibialis_dysfunction": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Il lavoro ad alto volume con la barra dei piedi può esacerbare la tensione mediale della caviglia e dell'arco plantare.",
+      "alternative": "Utilizzare posizioni dei piedi più delicate e neutre e ridurre il carico ripetitivo attraverso la parte interna del piede."
+    }
+  ],
+  "tibial_stress_syndrome": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Il lavoro ripetuto di leg press può aggravare il dolore alla tibia e le reazioni di stress nella tibia.",
+      "alternative": "Scegli una resistenza inferiore ed evita serie di gambe lunghe e ad alto volume."
+    }
+  ],
+  "plantar_fasciitis": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Un'elevata pressione del poggiapiedi e l'estensione delle dita dei piedi possono irritare la fascia plantare.",
+      "alternative": "Utilizzare un posizionamento del piede morbido e neutro e una resistenza inferiore con minore flessione delle dita."
+    }
+  ],
+  "bunions": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Le posizioni strette del piede e la pressione sull'avampiede possono aumentare il disagio dell'alluce valgo.",
+      "alternative": "Posiziona il piede in modo più ampio e morbido ed evita di premere direttamente sull'articolazione dell'alluce."
+    }
+  ],
+  "hip_arthroscopy": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "I grandi cerchi dell'anca possono sottoporre a tensione l'articolazione dell'anca in via di guarigione e i tessuti profondi dopo l'artroscopia.",
+      "alternative": "Usa cerchi delle gambe più piccoli e supportati e mantieni il bacino stabile."
+    }
+  ],
+  "piriformis_syndrome": [
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "Un'ampia apertura e rotazione dell'anca possono aggravare l'irritazione del piriforme e i sintomi della sciatica.",
+      "alternative": "Usa una delicata mobilità delle anche con le gambe più vicine e il bacino sostenuto."
+    }
+  ],
+  "hamstring_tendinopathy": [
+    {
+      "exerciseId": "scissors",
+      "reason": "L'allungamento aggressivo dei tendini del ginocchio e il rapido movimento alternato delle gambe possono peggiorare l'irritazione dei tendini.",
+      "alternative": "Usa un controllo delicato dei muscoli posteriori della coscia ed evita oscillazioni veloci delle gambe a fine corsa."
+    }
+  ],
+  "muscle_strain": [
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "Il carico di lavoro della catena posteriore e la tensione muscolare sostenuta possono aggravare uno sforzo acuto.",
+      "alternative": "Utilizzare una mobilità delicata e supportata ed evitare un'estensione della gamba forte e contro resistenza."
+    }
+  ],
+  "snapping_hip_syndrome": [
+    {
+      "exerciseId": "hip_circles",
+      "reason": "Cerchi rapidi e ampi dell'anca possono innescare scatti e irritare i tessuti dell'anca.",
+      "alternative": "Usa movimenti dell'anca più piccoli e lenti con enfasi sulla stabilità."
+    }
+  ],
+  "greater_trochanteric_pain": [
+    {
+      "exerciseId": "side_bend",
+      "reason": "La pressione laterale e il forte movimento laterale dell'anca possono aggravare un maggiore dolore al trocantere.",
+      "alternative": "Utilizzare un lavoro delicato sull'anca in piedi o supino con meno carico laterale."
+    }
+  ],
+  "femoroacetabular_impingement": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "La flessione profonda dell'anca e la rotazione interna possono pizzicare la parte anteriore dell'anca nel FAI.",
+      "alternative": "Utilizzare circoli dell'anca più piccoli ed evitare flessioni e rotazioni estreme."
+    }
+  ],
+  "patellofemoral_pain": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Il riformatore leg press può aumentare la compressione sotto la rotula e peggiorare il dolore alla parte anteriore del ginocchio.",
+      "alternative": "Utilizzare una resistenza più leggera e mantenere stabile l'allineamento del ginocchio con un range ridotto."
+    }
+  ],
+  "iliotibial_band_syndrome": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "La flessione ripetuta del ginocchio e l'adduzione dell'anca possono irritare il ginocchio esterno e la banda IT.",
+      "alternative": "Utilizzare un lavoro controllato per la parte inferiore della gamba evitando un'eccessiva adduzione dell'anca."
+    }
+  ],
+  "meniscus_tear": [
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "La flessione del ginocchio sotto carico e il carico possono aggravare una lesione del menisco.",
+      "alternative": "Utilizzare un lavoro delicato di estensione del ginocchio con un carico di compressione inferiore."
+    }
+  ],
+  "ligament_injury": [
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "La flessione profonda o sotto carico del ginocchio può mettere a dura prova i legamenti in via di guarigione.",
+      "alternative": "Utilizzare il lavoro con le ginocchia controllato e supportato con un peso minimo e un allineamento neutro."
+    }
+  ],
+  "chronic_fatigue": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Il respiro ad alta ripetizione e il lavoro centrale possono peggiorare l'affaticamento se la stimolazione è troppo aggressiva.",
+      "alternative": "Usa serie più brevi, un lavoro respiratorio più delicato e consenti pause di riposo."
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "I sollevamenti prolungati di braccia e gambe in posizione prona possono essere troppo impegnativi per i clienti con poca energia.",
+      "alternative": "Scegli sollevamenti a ramo singolo con frequenti pause di recupero."
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "I sollevamenti prolungati delle gambe basati sul plank possono sovraccaricare un corpo affaticato.",
+      "alternative": "Utilizzare esercizi quadrupedi supportati o supini con carico meno sostenuto."
+    }
+  ],
+  "diabetes": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Il lavoro con le gambe ad alta resistenza può essere difficile se è presente circolazione o neuropatia.",
+      "alternative": "Utilizza molle più leggere e concentrati su movimenti fluidi e controllati del carrello."
+    },
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "Uno sforzo prolungato in posizione prona può affaticare rapidamente le spalle e le gambe.",
+      "alternative": "Scegliere un lavoro con catena posteriore di durata più breve con riposo frequente."
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "Il movimento alternato rapido della parte inferiore del corpo può essere scomodo se la sensibilità è ridotta.",
+      "alternative": "Usa ritmi delle gambe più lenti e mantieni il bacino stabile."
+    }
+  ],
+  "weight_concerns": [
+    {
+      "exerciseId": "teaser",
+      "reason": "Un'elevata richiesta di equilibrio e di core può essere difficile sotto il peso corporeo aggiunto.",
+      "alternative": "Usa i sollevamenti core supportati con le ginocchia piegate e un baricentro più basso."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversione e il sollevamento rapido delle gambe possono aumentare lo sforzo sulla parte bassa della schiena e sui fianchi.",
+      "alternative": "Scegli ponti supportati e sollevamenti dell'anca più lenti con una colonna vertebrale neutra."
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "Il bilanciamento dinamico del rotolamento può essere instabile ed eccessivamente impegnativo per le articolazioni.",
+      "alternative": "Concentrarsi sul lavoro controllato del core seduto o supino con un contatto stabile del piede."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "La richiesta avanzata di equilibrio e di estensione delle gambe può mettere a dura prova il controllo congiunto e la stabilità.",
+      "alternative": "Utilizzare esercizi di stabilità a terra con entrambi i piedi sul tappetino e movimenti a breve distanza."
+    }
+  ],
+  "respiratory": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "Le inversioni e la compressione della parte superiore del corpo possono rendere difficile la respirazione per le persone con asma.",
+      "alternative": "Utilizzare sollevamenti del torace supportati ed evitare posizioni di compressione del torace o di trattenimento del respiro."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "La posizione delle gambe sopra la testa e la flessione della colonna vertebrale possono limitare la gabbia toracica e rendere difficile la respirazione.",
+      "alternative": "Scegli un delicato lavoro supino con la testa e il torace supportati."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Il ciclo respiratorio rapido e l'intensità del core possono innescare respiro sibilante o mancanza di respiro.",
+      "alternative": "Pratica un lavoro addominale più lento basato sul respiro con riposo frequente e postura del torace aperto."
+    }
+  ],
+  "swollen_glands": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Il sollevamento di supporto della testa e del collo può aggravare i linfonodi dolenti del collo.",
+      "alternative": "Mantieni la testa supportata e concentrati su una delicata attivazione del core senza movimenti pesanti del collo."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione delle gambe sopra la testa può aumentare la pressione e il disagio attorno ai nodi gonfi del collo e delle spalle.",
+      "alternative": "Scegli un lavoro supino più neutro e supportato con la testa e il collo in una posizione comoda."
+    },
+    {
+      "exerciseId": "seated_spine_twist",
+      "reason": "Una forte rotazione attorno alla colonna cervicale può irritare i linfonodi teneri nel collo e nella mascella.",
+      "alternative": "Utilizzare rotazioni più piccole da seduti con una colonna vertebrale lunga ed evitare rotazioni profonde della testa."
+    }
+  ],
+  "vision_impairment": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Le posizioni di equilibrio non supportate dipendono dal feedback visivo e possono aumentare il rischio di caduta in caso di ipovisione.",
+      "alternative": "Utilizza esercizi con il supporto a terra, come il lavoro con le gambe da seduto e la mobilità stabile in piedi."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione e le transizioni rapide possono essere difficili da giudicare con sicurezza quando la vista è compromessa.",
+      "alternative": "Scegli una mobilità supina supportata e un lavoro delicato sul core con le mani su superfici stabili."
+    }
+  ],
+  "hearing_impairment": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Gli esercizi che richiedono segnali verbali veloci sono più difficili da seguire senza un udito affidabile.",
+      "alternative": "Usa movimenti lenti e prevedibili con dimostrazioni visive e gesti chiari."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Il tempismo e l'equilibrio complessi nel Teaser possono essere pericolosi senza il supporto di segnali visivi o tattili.",
+      "alternative": "Usa i sollevamenti del core seduti supportati con le ginocchia piegate e segnali costanti."
+    }
+  ],
+  "epilepsy_seizure": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "Le inversioni e le articolazioni spinali rapide possono aumentare il rischio di cadute correlate alle convulsioni.",
+      "alternative": "Mantieni la colonna vertebrale bassa con progressioni del ponte supportate e movimenti lenti."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Il lavoro con equilibrio instabile può essere pericoloso se si verifica un attacco durante l'esercizio.",
+      "alternative": "Utilizzare un lavoro centrale stabile a pavimento ed evitare posizioni di equilibrio non supportate."
+    }
+  ],
+  "severe_allergy": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Le cinghie e gli accessori del riformatore possono contenere lattice o allergeni che scatenano una reazione grave.",
+      "alternative": "Utilizza il lavoro per la parte inferiore del corpo su tappetino con oggetti di scena ipoallergenici e attrezzature pulite."
+    }
+  ],
+  "chronic_pain_syndrome": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Il pompaggio prolungato del core può essere troppo intenso per una diffusa sensibilità al dolore e affaticamento.",
+      "alternative": "Esercitati con serie più brevi con la testa supportata e un respiro delicato."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "L’elevata domanda di base e i requisiti di equilibrio possono causare problemi in più regioni.",
+      "alternative": "Utilizzare il core work modificato da seduti con supporto e sollevamento basso."
+    }
+  ],
+  "skin_condition": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Le extension in posizione prona premono sul busto e possono irritare la pelle infiammata o sensibile del torace e dell'addome.",
+      "alternative": "Scegli sollevamenti proni supportati con gli avambracci sul tappetino o lavori di estensione della schiena seduti."
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "La pressione sulle spalle esercitata dal tappetino o dall'attrezzatura può aggravare l'eczema, le ferite o la psoriasi sulla parte superiore del corpo.",
+      "alternative": "Usa inclinazioni pelviche delicate e varianti del ponte dei glutei supportato con imbottitura."
+    }
+  ],
+  "transplant_immunosuppression": [
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'articolazione e l'inversione spinale aggressive possono essere troppo stressanti mentre la funzione immunitaria e il recupero rimangono delicati.",
+      "alternative": "Utilizzare delicate inclinazioni pelviche in posizione supina e mobilizzazione supportata della colonna vertebrale senza inversione."
+    }
+  ],
+  "recent_hospitalization": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversione e il movimento rapido della colonna vertebrale sono spesso troppo intensi per chi si sta riprendendo da un recente ricovero in ospedale o da riposo a letto.",
+      "alternative": "Scegli progressioni del ponte supportate e sollevamenti dell'anca lenti e controllati."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Le sfide di equilibrio non supportate aumentano il rischio di caduta per i clienti che vengono decondizionati dopo il ricovero ospedaliero.",
+      "alternative": "Usa il lavoro di forza con entrambi i piedi sul tappetino."
+    }
+  ],
+  "pacemaker_implant": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L'estensione della schiena in posizione prona può comprimere il torace e la parte superiore del corpo vicino al sito del pacemaker.",
+      "alternative": "Scegli sollevamenti delicati del torace supportati con gli avambracci sul tappetino."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Un carico pesante sulle spalle e sul torace può esercitare una pressione scomoda vicino a un impianto cardiaco.",
+      "alternative": "Utilizzare un supporto più leggero e movimenti di estensione della schiena più bassi."
+    }
+  ],
+  "substance_use_recovery": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Il lavoro con equilibrio instabile può essere pericoloso se la coordinazione o la concentrazione sono compromesse durante il recupero.",
+      "alternative": "Usa esercizi di Pilates stabili e con i piedi per terra con suggerimenti chiari e semplici."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione e i rapidi cambiamenti di posizione possono essere rischiosi se l'attenzione e la consapevolezza del corpo sono variabili.",
+      "alternative": "Scegli invece una mobilità supina delicata e un lavoro di base supportato."
+    }
+  ],
+  "respiratory_pulmonary": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversione e la compressione toracica profonda possono peggiorare la difficoltà respiratoria durante le riacutizzazioni polmonari.",
+      "alternative": "Utilizzare progressioni del ponte supportate o una mobilità seduta delicata con il petto aperto."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Le gambe sopra la testa e la flessione della colonna vertebrale possono limitare la gabbia toracica e provocare mancanza di respiro.",
+      "alternative": "Scegli il core work in posizione supina con la testa e il torace supportati."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversione e la compressione spinale possono rendere disagevole la respirazione per chi ha limiti polmonari.",
+      "alternative": "Usa delicate inclinazioni pelviche e l'articolazione bassa della colonna vertebrale senza inversione."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "La coordinazione del respiro ad alta intensità può essere troppo impegnativa per una funzione polmonare compromessa.",
+      "alternative": "Pratica un lavoro addominale più lento basato sul respiro con riposo frequente."
+    }
+  ],
+  "cardiovascular_disease": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversione e lo sforzo intenso possono aumentare la pressione sanguigna e affaticare il cuore.",
+      "alternative": "Utilizzare il lavoro centrale basso e progressioni stabili del ponte."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Le transizioni rapide e il posizionamento delle gambe sopra la testa possono essere stressanti per un sistema cardiovascolare indebolito.",
+      "alternative": "Scegli una mobilità supina delicata e un'articolazione spinale lenta."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Un carico pesante sulla parte superiore del corpo può sovraccaricare la risposta della frequenza cardiaca e il controllo della pressione sanguigna.",
+      "alternative": "Utilizzare un supporto per le spalle più leggero ed evitare la massima resistenza."
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "La spinta prolungata delle gambe può creare un'eccessiva domanda cardiovascolare per chi soffre di malattie cardiache.",
+      "alternative": "Preferisci un lavoro con le gambe più lento e a bassa resistenza e monitora attentamente lo sforzo."
+    }
+  ],
+  "arrhythmia_cardiac_device": [
+    {
+      "exerciseId": "push_through",
+      "reason": "La compressione profonda del torace e il carico della parte superiore del corpo possono irritare il sito del dispositivo o interrompere il controllo del ritmo.",
+      "alternative": "Scegli una delicata estensione della schiena supportata con una resistenza minima."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L'estensione prona e la pressione toracica possono risultare scomode con un dispositivo cardiaco impiantato.",
+      "alternative": "Solleva delicatamente il torace con gli avambracci sul tappetino."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Una rapida inversione e cambiamenti improvvisi dello sforzo possono innescare un ritmo cardiaco irregolare.",
+      "alternative": "Rimani basso sul tappeto e usa progressioni controllate sul ponte."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Il lavoro sull'equilibrio instabile può essere pericoloso se un'aritmia influisce sulla coordinazione o sulla consapevolezza.",
+      "alternative": "Usa esercizi di stabilità del core con entrambi i piedi sul tappetino."
+    }
+  ],
+  "metabolic_endocrine": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Il respiro veloce e l'intensità sostenuta del core possono destabilizzare i livelli di zucchero nel sangue e di energia.",
+      "alternative": "Utilizza serie più brevi con respirazione delicata e riposo frequente."
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "La spinta sostenuta delle gambe può creare una rapida domanda metabolica e oscillazioni di energia.",
+      "alternative": "Scegli un lavoro con le gambe più lento e con una resistenza inferiore, con un ritmo attento."
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "Il sequenziamento dinamico di tutto il corpo può essere troppo intenso quando l'equilibrio metabolico o ormonale è instabile.",
+      "alternative": "Concentrarsi sul lavoro più lento e supportato sulle articolazioni centrali e spinali."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "L'elevata intensità del core e la richiesta di equilibrio possono sovraccaricare i sistemi energetici regolati dal glucosio o dagli ormoni.",
+      "alternative": "Utilizzare i sollevamenti del core seduti supportati con le ginocchia piegate e la colonna vertebrale neutra."
+    }
+  ],
+  "autoimmune_inflammatory": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L'estensione profonda della schiena e il carico prolungato della parte superiore del corpo possono peggiorare l'infiammazione delle articolazioni o dei tessuti.",
+      "alternative": "Utilizzare sollevamenti delicati in posizione prona e supportati con un range ridotto."
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "Il sollevamento dell'anca sotto carico e la compressione della spalla possono essere dolorosi o infiammatori durante una riacutizzazione.",
+      "alternative": "Scegli le inclinazioni pelviche con una colonna vertebrale neutra e molto riposo tra una ripetizione e l'altra."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversione e la compressione spinale possono aggravare i sintomi infiammatori sistemici.",
+      "alternative": "Utilizzare inclinazioni pelviche supine e una delicata mobilizzazione della colonna vertebrale senza inversione."
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Il movimento ampio dell'anca e il carico rotatorio possono sembrare troppo intensi durante l'infiammazione autoimmune.",
+      "alternative": "Eseguire dei cerchi più piccoli con le gambe e sostenere il bacino con le mani."
+    }
+  ],
+  "immune_infectious": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "L'intensità del core focalizzata sul respiro può essere troppo faticosa durante un'infezione attiva o una compromissione immunitaria.",
+      "alternative": "Pratica il respiro delicato e riposa quando i sintomi sono presenti."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversione e uno sforzo maggiore possono peggiorare l'affaticamento e i sintomi di malattie sistemiche.",
+      "alternative": "Utilizza le progressioni del ponte supportate e riduci l'intensità."
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "Il lavoro di resistenza prolungata può essere eccessivamente impegnativo durante il recupero dall’infezione.",
+      "alternative": "Scegli un lavoro per le gambe a bassa resistenza e a basso impatto con pause di riposo extra."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Uno sforzo intenso della parte superiore del corpo può essere pericoloso durante una malattia acuta o una ridotta immunità.",
+      "alternative": "Usa una delicata estensione della schiena supportata e fermati se i sintomi peggiorano."
+    }
+  ],
+  "oncology_treatment": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione e la compressione spinale possono essere scarsamente tollerate durante il trattamento attivo del cancro.",
+      "alternative": "Scegli un delicato lavoro supino con la testa e il torace supportati."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Uno sforzo intenso e l'inversione possono aumentare l'affaticamento, i lividi o lo stress cardiovascolare.",
+      "alternative": "Usa progressioni a ponte basso con respirazione controllata."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "La compressione del torace e l'estensione della schiena in posizione prona possono essere troppo aggressive durante l'affaticamento correlato al trattamento.",
+      "alternative": "Utilizzare sollevamenti proni supportati con gli avambracci sul tappetino."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversione e l'articolazione profonda della colonna vertebrale possono essere rischiose quando l'emocromo o la tolleranza dei tessuti sono bassi.",
+      "alternative": "Usa invece delicate inclinazioni pelviche supine e mobilità bassa."
+    }
+  ],
+  "gastrointestinal_pelvic": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flessione addominale sotto carico può aumentare la pressione intra-addominale e aggravare i sintomi pelvici o gastrointestinali.",
+      "alternative": "Usa le inclinazioni pelviche e una delicata riconnessione del core con una colonna vertebrale neutra."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Una forte pompa addominale e la coordinazione del respiro possono peggiorare il pavimento pelvico o il disagio digestivo.",
+      "alternative": "Esercita un lavoro di base più lento con una minore compressione addominale."
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "La combinazione dell'estensione degli addominali inferiori e della estensione del braccio può sottoporre a sforzo eccessivo il pavimento pelvico e l'addome.",
+      "alternative": "Utilizzare le diapositive del tallone e i supporti per gamba singola con una pressione minima."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Un elevato sollevamento del core e una richiesta di equilibrio possono aumentare la pressione pelvica e il disagio addominale.",
+      "alternative": "Usa il core work seduto e supportato con le ginocchia piegate e un sollevamento delicato."
+    }
+  ],
+  "neurological_disorder": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Il lavoro sull'equilibrio instabile può aumentare il rischio di caduta se la coordinazione o la sensibilità sono compromesse.",
+      "alternative": "Usa esercizi di stabilità del core con un'ampia base di supporto."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione e i rapidi cambiamenti di posizione possono rappresentare una sfida per i clienti con problemi di coordinazione neurologica.",
+      "alternative": "Scegli una mobilità spinale lenta e supportata ed evita posizioni delle gambe sopra la testa."
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "I grandi circoli delle gambe richiedono controllo e propriocezione che possono essere compromessi in condizioni neurologiche.",
+      "alternative": "Utilizzare cerchi più piccoli con le gambe supportate o sollevamenti con una gamba sola con il bacino stabilizzato."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Un'elevata richiesta di equilibrio e coordinazione può essere pericolosa se il controllo del motore è incoerente.",
+      "alternative": "Utilizzare i sollevamenti core seduti supportati con le ginocchia piegate e una base stabile."
+    }
+  ],
+  "mental_cognitive": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Le pose di equilibrio complesse possono essere pericolose se vengono influenzate la concentrazione, la memoria o la velocità di elaborazione.",
+      "alternative": "Utilizza esercizi semplici e concreti con segnali chiari e prevedibili."
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "Le sequenze dinamiche e le transizioni rapide possono sopraffare qualcuno con problemi cognitivi o di salute mentale.",
+      "alternative": "Scegli esercizi più lenti e lineari con un movimento alla volta."
+    },
+    {
+      "exerciseId": "criss_cross",
+      "reason": "La rotazione e la coordinazione rapide possono essere difficili da seguire in modo sicuro con sintomi cognitivi o emotivi.",
+      "alternative": "Utilizzare una rotazione delicata da seduti o supini con istruzioni chiare e ritmiche."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "L'elevata complessità e la richiesta di equilibrio possono essere eccessive quando la concentrazione mentale o la tolleranza allo stress sono basse.",
+      "alternative": "Utilizza il core work supportato da seduto con movimenti semplici e costanti."
+    }
+  ],
+  "other": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Questa condizione non è specificatamente elencata; scegliere un lavoro delicato e supportato e consultare un medico qualificato prima di tentare movimenti ad alto rischio.",
+      "alternative": "Usa il Pilates con i piedi per terra, con una base stabile, un carico basso e istruzioni chiare."
+    }
+  ],
+  "perimenopause_menopause": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversione può innescare sintomi vasomotori e aumentare la pressione sanguigna durante i cambiamenti ormonali.",
+      "alternative": "Scegli un delicato lavoro supino con la testa e il torace supportati."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversione ad alto sforzo non è adatta durante i cambiamenti ormonali cardiovascolari e la potenziale riduzione della densità ossea.",
+      "alternative": "Usa progressioni del ponte supportate e sollevamenti delicati dell'anca con una colonna vertebrale neutra."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Il lavoro respiratorio prolungato e ad alta intensità può essere scomodo durante le vampate di calore o la sensibilità cardiovascolare.",
+      "alternative": "Esercitati con un lavoro addominale più lento, guidato dal respiro, con serie più brevi e postura del torace aperto."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "L'inversione dell'equilibrio può mettere alla prova la stabilità della pressione sanguigna e i cambiamenti di coordinazione associati alla perimenopausa.",
+      "alternative": "Utilizzare esercizi di stabilità a terra con entrambi i piedi sul tappetino e movimenti a breve distanza."
+    }
+  ],
+  "stroke_recovery": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flessione spinale sotto carico con trazione bilaterale non è sicura in caso di emiplegia o debolezza asimmetrica.",
+      "alternative": "Concentrati sulla respirazione delicata, sulle inclinazioni pelviche supportate e sugli scivolamenti unilaterali delle gambe."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "L’equilibrio tra richieste elevate e il coordinamento bilaterale non sono sicuri nel recupero precoce dell’ictus.",
+      "alternative": "Usa il core work seduto e supportato con le ginocchia piegate e i piedi a terra."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "L'inversione completa dell'equilibrio richiede una coordinazione bilaterale che in genere non è disponibile dopo l'ictus.",
+      "alternative": "Scegli esercizi di stabilità del core con un'ampia base di supporto."
+    },
+    {
+      "exerciseId": "spine_twist",
+      "reason": "La rotazione sotto carico può stressare le vie motorie di recupero e sfidare la muscolatura spastica o debole.",
+      "alternative": "Usa una rotazione delicata da seduto con le braccia supportate e un movimento lento e controllato."
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Il plank richiede stabilità bilaterale della spalla e della gamba che di solito non è disponibile dopo un ictus.",
+      "alternative": "Lavora in una posizione distesa o seduta supportata con un arto alla volta."
+    }
+  ],
+  "long_covid": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Lo sforzo aerobico prolungato può innescare malessere post-sforzo nei pazienti affetti da COVID da lungo tempo.",
+      "alternative": "Utilizza un lavoro di base più breve e delicato, basato sul respiro, con frequenti pause di riposo."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "L'esercizio di picco dello sforzo è pericoloso con l'affaticamento post-virale e i vincoli dell'involucro energetico.",
+      "alternative": "Utilizzare l'attivazione del core da seduti supportata con carico minimo e stimolazione lenta."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversione ad alta intensità non è sicura durante il recupero post-virale a energia limitata.",
+      "alternative": "Scegli un delicato ponte supino con transizioni lente e riposo tra le ripetizioni."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L'esercizio dinamico incline ad alto sforzo può innescare una ricaduta dei sintomi post-sforzo.",
+      "alternative": "Usa un delicato sollevamento dell'avambraccio inclinato o una posizione della sfinge con il minimo sforzo."
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "Il sollevamento prolungato di braccia e gambe in posizione prona può esaurire un paziente affetto da lungo tempo da COVID ben entro i limiti normali.",
+      "alternative": "Scegli sollevamenti con un solo arto con riposo completo tra le ripetizioni e fermati al primo segno di affaticamento."
+    }
+  ],
+  "hip_labral_tear": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "I grandi cerchi dell'anca esercitano uno stress di taglio sul labbro e possono peggiorare la lacerazione.",
+      "alternative": "Usa movimenti delle gambe molto piccoli e supportati e mantieni il bacino completamente stabile."
+    },
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "L'ampia apertura dell'anca e l'equilibrio possono colpire un labbro già lacerato.",
+      "alternative": "Usa un delicato lavoro sugli adduttori da seduto con le gambe più vicine tra loro."
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "Il carico rotazionale dell'anca sollecita il tessuto labrale e rischia di ulteriore lacerazione.",
+      "alternative": "Utilizzare movimenti dell'anca più piccoli con stabilità rigorosa ed evitare rotazioni a fine corsa."
+    },
+    {
+      "exerciseId": "front_splits",
+      "reason": "L'escursione estrema dell'anca in flessione ed estensione comprime e taglia il labbro.",
+      "alternative": "Usa un delicato lavoro di cerniera dell'anca ed evita posizioni dell'anca a fine corsa."
+    },
+    {
+      "exerciseId": "scissors",
+      "reason": "La rapida flessione alternata dell'anca può irritare lo strappo labiale e aumentare il dolore.",
+      "alternative": "Utilizzare un abbassamento lento e controllato delle gambe con un range ridotto e bacino neutro."
+    }
+  ],
+  "wrist_conditions": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Nella posizione della plancia tutto il peso del corpo viene caricato attraverso i polsi.",
+      "alternative": "Usa il plank dell'avambraccio o modifica il sollevamento della gamba da seduto per scaricare il polso."
+    },
+    {
+      "exerciseId": "push_up",
+      "reason": "L'estensione del polso sotto carico aggrava direttamente fratture, distorsioni e tendinopatie.",
+      "alternative": "Usa le flessioni sul muro o le posizioni supportate dall'avambraccio per rimuovere il carico sul polso."
+    },
+    {
+      "exerciseId": "swan",
+      "reason": "La posizione prona delle flessioni trasferisce un peso corporeo significativo sui polsi.",
+      "alternative": "Utilizzare una posizione prona supportata da una sfinge o dall'avambraccio per evitare il carico sul polso."
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "Il carico del plank laterale carica il polso in estensione e compressione laterale.",
+      "alternative": "Usa un plank laterale dell'avambraccio o fai rotolare il polso dal tappetino con la posizione del pugno."
+    },
+    {
+      "exerciseId": "plank",
+      "reason": "L'estensione prolungata del polso sotto il peso corporeo può peggiorare qualsiasi lesione o condizione del polso.",
+      "alternative": "Usa un plank sull'avambraccio come sostituto diretto per ottenere il lavoro sul core senza carico sul polso."
+    }
+  ],
+  "lymphedema": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Il movimento dinamico del braccio sopra la testa può aumentare la pressione linfatica e peggiorare il gonfiore nell'arto interessato.",
+      "alternative": "Eseguire un leggero sollevamento dell'avambraccio prono con le braccia sostenute ed evitare la portata sopra la testa."
+    },
+    {
+      "exerciseId": "arm_springs",
+      "reason": "Il carico ripetuto sul braccio con resistenza può esacerbare il linfedema e compromettere il drenaggio linfatico.",
+      "alternative": "Usa movimenti delicati e ritmici del braccio sotto l'altezza delle spalle senza resistenza."
+    },
+    {
+      "exerciseId": "rowing_series",
+      "reason": "Tirare la resistenza con le braccia può peggiorare il flusso linfatico e aumentare il gonfiore.",
+      "alternative": "Utilizzare una mobilità delicata del braccio supportato senza resistenza e mantenere l'arto leggermente sollevato."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "La spinta dall'alto contro la resistenza sollecita i linfonodi e i vasi colpiti.",
+      "alternative": "Allungati delicatamente senza resistenza e mantieni il braccio sotto la spalla quando possibile."
+    },
+    {
+      "exerciseId": "magic_circle_press",
+      "reason": "La compressione del braccio o la pressione sopra la testa possono aumentare la pressione venosa e linfatica negli arti colpiti.",
+      "alternative": "Concentrati su un lavoro delicato e ritmico sulla parte inferiore del corpo o sul core mentre riposi il braccio interessato."
+    }
+  ]
+}

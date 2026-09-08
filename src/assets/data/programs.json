@@ -1,0 +1,322 @@
+[
+  {
+    "id": "ankylosing_spondylitis_flow",
+    "name": "Ankylosing Spondylitis Flow",
+    "description": "A gentle extension and rib-mobility program to counteract spinal stiffening patterns, with hip opening and thoracic expansion.",
+    "level": "Beginner",
+    "accessLevel": "Free",
+    "goal": "Maintain spinal extension and chest mobility.",
+    "focusAreas": ["Spinal extension", "Rib mobility", "Hip flexibility"],
+    "exerciseIds": ["spine_mobilization", "swan_prep", "breaststroke", "mermaid", "shoulder_bridge", "spine_stretch_forward", "side_kick", "cat_stretch_cadillac"]
+  },
+  {
+    "id": "arthritis_gentle_flow",
+    "name": "Arthritis-Gentle Flow",
+    "description": "A warm, fluid movement session that reduces joint stiffness, builds gentle synovial circulation, and maintains comfortable range of motion.",
+    "level": "Beginner",
+    "accessLevel": "Free",
+    "goal": "Ease joint stiffness and maintain comfortable range of motion.",
+    "focusAreas": ["Joint mobility", "Gentle warmth", "Fluid movement"],
+    "exerciseIds": ["shoulder_rolls", "spine_mobilization", "rolling_like_a_ball", "one_leg_circle", "side_kick", "pelvic_curl", "seal", "seated_side_bend"]
+  },
+  {
+    "id": "back_friendly_recovery",
+    "name": "Back-Friendly Recovery",
+    "description": "A low-impact session designed to support the low back with neutral spine strength, gentle articulation, and pelvic control.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "Improve back stability and reduce compressive stress.",
+    "focusAreas": ["Low back", "Neutral spine", "Core stability"],
+    "exerciseIds": ["pelvic_curl", "shoulder_bridge", "rolling_like_a_ball", "spine_stretch_forward", "side_kick_series"]
+  },
+  {
+    "id": "balance_vestibular",
+    "name": "Balance & Vestibular Stability",
+    "description": "A ground-based proprioception and vestibular adaptation program for dizziness, vertigo, and fall risk — minimising sudden head position changes and prioritising stability.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Improve balance, proprioception, and fall prevention.",
+    "focusAreas": ["Grounded stability", "Proprioception", "Fall prevention"],
+    "exerciseIds": ["pelvic_curl", "rolling_like_a_ball", "shoulder_bridge", "side_kick", "one_leg_circle", "pilates_ring_squeeze", "footwork", "single_leg_stretch"]
+  },
+  {
+    "id": "beginner_mat_foundation",
+    "name": "Beginner Mat Foundation",
+    "description": "A gentle introductory Pilates session focused on core support, spinal articulation, and breath coordination.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Build stable core and mat movement confidence.",
+    "focusAreas": ["Core", "Spinal articulation", "Breath"],
+    "exerciseIds": ["the_hundred", "roll_up", "spine_stretch_forward", "pelvic_curl", "shoulder_bridge"]
+  },
+  {
+    "id": "cardiac_safe_flow",
+    "name": "Cardiac-Safe Flow",
+    "description": "A breath-regulated, moderate-intensity session for hypertension, cardiovascular disease, and cardiac device users — avoiding Valsalva and extremes of exertion.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Support cardiovascular health with safe, breath-led movement.",
+    "focusAreas": ["Breath regulation", "Moderate intensity", "Cardiovascular safety"],
+    "exerciseIds": ["spine_mobilization", "shoulder_rolls", "pelvic_curl", "rolling_like_a_ball", "side_kick", "shoulder_bridge", "spine_stretch_forward", "seal"]
+  },
+  {
+    "id": "cervical_neck_care",
+    "name": "Cervical & Neck Care",
+    "description": "A cervical-decompression sequence with scapular stability and thoracic opening to relieve neck load and improve upper-body alignment.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Reduce cervical compression and improve neck posture.",
+    "focusAreas": ["Cervical decompression", "Scapular stability", "Thoracic mobility"],
+    "exerciseIds": ["shoulder_rolls", "spine_mobilization", "seated_side_bend", "arm_springs", "band_arm_series", "pilates_ring_squeeze", "swan_prep", "hanging_cadillac"]
+  },
+  {
+    "id": "chronic_pain_fibromyalgia",
+    "name": "Chronic Pain & Fibromyalgia",
+    "description": "A pain-paced, graded movement program for fibromyalgia and chronic pain syndrome — using central sensitisation principles to build movement tolerance gently.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Build gentle movement tolerance with pain-pacing principles.",
+    "focusAreas": ["Pain-paced movement", "Central sensitisation", "Gentle progressive load"],
+    "exerciseIds": ["spine_mobilization", "shoulder_rolls", "rolling_like_a_ball", "pelvic_curl", "seal", "mermaid", "spine_stretch_forward", "side_kick"]
+  },
+  {
+    "id": "disc_sciatica_relief",
+    "name": "Disc & Sciatica Relief",
+    "description": "A neutral-spine session that combines lumbar decompression, gentle neural mobility, and graduated core loading for disc and sciatic pain.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Reduce disc compression and sciatic nerve tension.",
+    "focusAreas": ["Lumbar decompression", "Neural mobility", "Neutral spine"],
+    "exerciseIds": ["pelvic_curl", "knee_stretch", "spine_stretch_forward", "shoulder_bridge", "one_leg_circle", "swan_prep", "single_leg_stretch", "spine_mobilization"]
+  },
+  {
+    "id": "epilepsy_ground_safe",
+    "name": "Epilepsy Ground-Safe Flow",
+    "description": "A ground-based mat program for epilepsy and seizure disorders — staying low, avoiding inversions and breath-holding, with calm pacing throughout.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Exercise safely with epilepsy using a ground-based, inversion-free sequence.",
+    "focusAreas": ["Ground-based safety", "No inversions", "Calm pacing"],
+    "exerciseIds": ["pelvic_curl", "shoulder_bridge", "rolling_like_a_ball", "single_leg_stretch", "spine_stretch_forward", "side_kick", "spine_mobilization"]
+  },
+  {
+    "id": "foot_ankle_rehab",
+    "name": "Foot & Ankle Rehabilitation",
+    "description": "An intrinsic foot and ankle strengthening sequence addressing plantar loading, Achilles resilience, and foot alignment for common lower-limb conditions.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Strengthen foot intrinsics and restore ankle stability.",
+    "focusAreas": ["Foot strength", "Ankle stability", "Achilles loading"],
+    "exerciseIds": ["footwork", "achilles_stretch_chair", "running_reformer", "pilates_ring_squeeze", "foam_roller_series", "side_kick", "single_leg_stretch"]
+  },
+  {
+    "id": "hip_lateral_recovery",
+    "name": "Hip & Lateral Chain Recovery",
+    "description": "A glute and lateral hip strengthening program addressing piriformis, hamstring, IT band, and greater trochanteric pain with targeted spring and mat work.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "Strengthen the lateral hip chain and relieve hip and thigh pain.",
+    "focusAreas": ["Lateral hip strength", "Glute activation", "Hip flexibility"],
+    "exerciseIds": ["side_kick_series", "one_leg_circle", "leg_springs", "pilates_ring_squeeze", "shoulder_bridge", "single_leg_stretch", "foam_roller_series", "side_kick_kneeling"]
+  },
+  {
+    "id": "hip_mobility_recovery",
+    "name": "Hip Mobility & Recovery",
+    "description": "A hip mobility program that respects impingement-free ranges, builds lateral hip stability, and restores functional movement patterns.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Restore hip mobility and strengthen lateral stabilisers.",
+    "focusAreas": ["Hip mobility", "Lateral stabilisers", "Safe range"],
+    "exerciseIds": ["pelvic_curl", "one_leg_circle", "side_kick_series", "leg_springs", "knee_stretch", "footwork", "single_leg_stretch", "hip_circles"]
+  },
+  {
+    "id": "hypermobility_control",
+    "name": "Hypermobility Control",
+    "description": "A joint-stabilisation program that builds neuromuscular control and end-range awareness, replacing passive flexibility with active strength.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "Develop active joint stability and neuromuscular control.",
+    "focusAreas": ["Joint stabilisation", "Neuromuscular control", "Controlled loading"],
+    "exerciseIds": ["pelvic_curl", "shoulder_bridge", "plank", "pilates_ring_squeeze", "footwork", "single_leg_stretch", "band_arm_series", "coordination"]
+  },
+  {
+    "id": "joint_replacement_recovery",
+    "name": "Joint Replacement Recovery",
+    "description": "A post-surgical mobility restoration program using gentle range-of-motion work, non-impact loading, and progressive movement confidence.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Restore mobility and confidence after joint replacement or surgery.",
+    "focusAreas": ["Post-surgical mobility", "Gentle range", "Non-impact rehab"],
+    "exerciseIds": ["spine_mobilization", "shoulder_rolls", "pelvic_curl", "shoulder_bridge", "leg_springs", "footwork", "rolling_like_a_ball", "side_kick"]
+  },
+  {
+    "id": "knee_rehab",
+    "name": "Knee Rehabilitation",
+    "description": "A VMO and quad-activation sequence using non-weight-bearing leg work and spring resistance to support knee recovery and prevent re-injury.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Restore knee stability and quad control after injury or surgery.",
+    "focusAreas": ["Quad activation", "Knee stability", "Non-weight-bearing leg"],
+    "exerciseIds": ["footwork", "leg_springs", "pilates_ring_squeeze", "single_leg_stretch", "side_kick", "shoulder_bridge", "pelvic_curl", "coordination"]
+  },
+  {
+    "id": "metabolic_whole_body",
+    "name": "Metabolic Whole-Body Flow",
+    "description": "A progressive whole-body activation sequence for diabetes, metabolic conditions, and weight management — prioritising circulation, functional strength, and energy expenditure.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "Activate metabolism and build functional full-body strength.",
+    "focusAreas": ["Circulation", "Functional strength", "Metabolic activation"],
+    "exerciseIds": ["footwork", "the_hundred", "single_leg_stretch", "shoulder_bridge", "side_kick", "swan_prep", "pilates_ring_squeeze", "coordination"]
+  },
+  {
+    "id": "mind_body_calm",
+    "name": "Mind-Body Calm",
+    "description": "A breath-led somatic flow for anxiety, mental health conditions, and recovery — using rhythm, grounding, and interoceptive awareness to calm the nervous system.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Calm the nervous system through breath-led somatic movement.",
+    "focusAreas": ["Breath awareness", "Somatic calm", "Mind-body connection"],
+    "exerciseIds": ["spine_mobilization", "shoulder_rolls", "rolling_like_a_ball", "seal", "spine_stretch_forward", "mermaid", "pelvic_curl", "one_leg_circle"]
+  },
+  {
+    "id": "neurological_movement",
+    "name": "Neurological Movement Flow",
+    "description": "A coordination and proprioception-focused program for MS, Parkinson's, and neurological conditions — using rhythmic, predictable sequences to support motor control.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Improve motor coordination and neuromuscular rhythm.",
+    "focusAreas": ["Coordination", "Proprioception", "Rhythmic movement"],
+    "exerciseIds": ["rolling_like_a_ball", "pelvic_curl", "shoulder_bridge", "side_kick", "spine_stretch_forward", "pilates_ring_squeeze", "shoulder_rolls", "single_leg_stretch"]
+  },
+  {
+    "id": "osteoporosis_safe_flow",
+    "name": "Osteoporosis-Safe Flow",
+    "description": "An extension-focused sequence that avoids loaded spinal flexion and rotation, building axial strength and posture with bone-friendly loading.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Strengthen posture and support bone density safely.",
+    "focusAreas": ["Spinal extension", "Bone loading", "Posture"],
+    "exerciseIds": ["shoulder_rolls", "spine_mobilization", "swan_prep", "swimming", "shoulder_bridge", "side_kick", "footwork", "band_arm_series", "leg_springs"]
+  },
+  {
+    "id": "pelvic_floor_foundations",
+    "name": "Pelvic Floor Foundations",
+    "description": "A pressure-management program for pelvic floor dysfunction, diastasis recti, hernia, and incontinence — building deep core reconnection without excessive intra-abdominal load.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Reconnect deep core and pelvic floor with load management.",
+    "focusAreas": ["Pelvic floor", "Deep core", "Pressure management"],
+    "exerciseIds": ["pelvic_curl", "shoulder_bridge", "single_leg_stretch", "pilates_ring_squeeze", "seal", "spine_stretch_forward", "rolling_like_a_ball"]
+  },
+  {
+    "id": "postpartum_recovery_flow",
+    "name": "Postpartum Recovery Flow",
+    "description": "A gentle Pilates sequence designed to support postpartum core rebuilding, pelvic floor awareness, and gradual abdominal return.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Rebuild core support and pelvic stability after pregnancy.",
+    "focusAreas": ["Postpartum", "Pelvic floor", "Core rebuilding"],
+    "exerciseIds": ["pelvic_curl", "shoulder_bridge", "mermaid", "single_leg_stretch", "pilates_ring_squeeze"]
+  },
+  {
+    "id": "prenatal_mobility_flow",
+    "name": "Prenatal Mobility Flow",
+    "description": "A pregnancy-safe Pilates flow that supports the changing body with gentle spinal mobility and lateral openness.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Maintain mobility and core support during pregnancy.",
+    "focusAreas": ["Prenatal", "Mobility", "Pelvic stability"],
+    "exerciseIds": ["mermaid", "shoulder_bridge", "pelvic_curl", "leg_pull_back", "spine_stretch_forward"]
+  },
+  {
+    "id": "reformer_strength_flow",
+    "name": "Reformer Strength Flow",
+    "description": "An apparatus-based routine that develops lower-body control, carriage coordination, and spinal support.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "Build Reformer strength and control.",
+    "focusAreas": ["Reformer", "Leg strength", "Spinal support"],
+    "exerciseIds": ["footwork", "elephant", "long_box_series", "short_spine_massage"]
+  },
+  {
+    "id": "respiratory_breath_flow",
+    "name": "Respiratory & Breath Flow",
+    "description": "A diaphragmatic breathing and ribcage expansion program to improve thoracic mobility and breathing mechanics in respiratory and pulmonary conditions.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Expand breathing capacity and thoracic mobility.",
+    "focusAreas": ["Diaphragmatic breathing", "Rib expansion", "Postural opening"],
+    "exerciseIds": ["spine_mobilization", "seated_side_bend", "shoulder_rolls", "mermaid", "spine_stretch_forward", "swan_prep", "band_arm_series", "the_hundred"]
+  },
+  {
+    "id": "rotator_cuff_shoulder",
+    "name": "Rotator Cuff & Shoulder Rehab",
+    "description": "A scapular-first shoulder rehabilitation sequence targeting rotator cuff activation, pendular range of motion, and progressive loading for frozen shoulder, impingement, and AC sprains.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Restore rotator cuff strength and pain-free shoulder range.",
+    "focusAreas": ["Rotator cuff", "Scapular stability", "Shoulder range"],
+    "exerciseIds": ["shoulder_rolls", "arm_springs", "band_arm_series", "pilates_ring_squeeze", "breaststroke", "swan_prep", "pulling_straps", "spine_mobilization"]
+  },
+  {
+    "id": "restorative_immune",
+    "name": "Restorative Immune Support",
+    "description": "A gentle, energy-conserving program for chronic fatigue, autoimmune conditions, oncology treatment, and immunosuppression — honouring capacity limits with restorative movement.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Support recovery and energy with gentle restorative movement.",
+    "focusAreas": ["Restorative movement", "Energy conservation", "Immune support"],
+    "exerciseIds": ["spine_mobilization", "shoulder_rolls", "rolling_like_a_ball", "pelvic_curl", "spine_stretch_forward", "seal", "mermaid"]
+  },
+  {
+    "id": "sacroiliac_stability",
+    "name": "Sacroiliac Stability",
+    "description": "A pelvic stability program targeting symmetric hip loading, SIJ compression control, and deep lumbopelvic muscle recruitment.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Stabilise the sacroiliac joint and pelvic girdle.",
+    "focusAreas": ["Pelvic stability", "Hip alignment", "Core control"],
+    "exerciseIds": ["pelvic_curl", "shoulder_bridge", "single_leg_stretch", "pilates_ring_squeeze", "footwork", "knee_stretch", "rolling_like_a_ball"]
+  },
+  {
+    "id": "scoliosis_balance",
+    "name": "Scoliosis Balance Flow",
+    "description": "A laterally balanced session using derotational cues, lateral breathing, and symmetry-focused movement to support the scoliotic spine.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "Balance lateral asymmetry and improve spinal awareness.",
+    "focusAreas": ["Spinal balance", "Lateral breathing", "Derotation"],
+    "exerciseIds": ["spine_mobilization", "mermaid", "spine_twist", "shoulder_bridge", "side_kick_series", "seated_side_bend", "foam_roller_series", "pilates_ring_squeeze"]
+  },
+  {
+    "id": "sensory_adapted_flow",
+    "name": "Sensory-Adapted Flow",
+    "description": "A proprioceptively-rich, predictable Pilates sequence designed for vision and hearing impairment — using spatial consistency, tactile cueing, and safe orientation.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Move safely and confidently with sensory impairment.",
+    "focusAreas": ["Proprioceptive safety", "Predictable sequence", "Sensory adaptation"],
+    "exerciseIds": ["pelvic_curl", "shoulder_bridge", "rolling_like_a_ball", "single_leg_stretch", "spine_stretch_forward", "seal", "pilates_ring_squeeze"]
+  },
+  {
+    "id": "shoulder_friendly_flow",
+    "name": "Shoulder-Friendly Flow",
+    "description": "A focused session for shoulder comfort that emphasizes scapular support, gentle upper-body strength, and safe range of motion.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Support shoulder stability with safe Pilates movement.",
+    "focusAreas": ["Shoulder", "Scapular support", "Upper body"],
+    "exerciseIds": ["roll_down_bar", "long_box_series", "mermaid", "breaststroke", "pilates_ring_squeeze"]
+  },
+  {
+    "id": "upper_limb_nerve",
+    "name": "Upper Limb & Nerve Relief",
+    "description": "A thoracic-opening and neural-mobilisation flow for wrist, elbow, and nerve compression conditions — keeping joint loading low and range of motion wide.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Decompress nerves and restore thoracic and upper-limb mobility.",
+    "focusAreas": ["Thoracic opening", "Neural mobility", "Wrist-safe movement"],
+    "exerciseIds": ["shoulder_rolls", "spine_mobilization", "seated_side_bend", "band_arm_series", "swan_prep", "mermaid", "spine_twist", "arm_springs"]
+  }
+]

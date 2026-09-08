@@ -1,0 +1,443 @@
+[
+  {
+    "id": "osteoporosis",
+    "label": "Osteoporosis/Osteopenia/Baja densidad ósea",
+    "description": "Evite la flexión, rotación y flexión lateral al final de la columna con carga."
+  },
+  {
+    "id": "pregnancy",
+    "label": "Embarazo",
+    "description": "Modificar por trimestre; Evite la flexión abdominal prolongada en decúbito supino y intensa después de la mitad del embarazo.",
+    "hasTrimester": true
+  },
+  {
+    "id": "postpartum",
+    "label": "Recuperación posparto/posnatal",
+    "description": "Concéntrese en la reconexión suave del núcleo, la recuperación del suelo pélvico y el retorno progresivo a la carga."
+  },
+  {
+    "id": "pelvic_floor_dysfunction",
+    "label": "Disfunción del suelo pélvico",
+    "description": "Concéntrese en la estabilidad del suelo pélvico y evite el Valsalva fuerte o la carga abdominal incontrolada."
+  },
+  {
+    "id": "diastasis_recti",
+    "label": "Diástasis de rectos / separación abdominal",
+    "description": "Evite la flexión abdominal cargada, las torsiones intensas y los ejercicios que aumenten la presión intraabdominal sin apoyo."
+  },
+  {
+    "id": "low_back_pain",
+    "label": "Dolor lumbar crónico (hernia de disco, estenosis espinal, espondilolistesis)",
+    "description": "Prefiera la estabilización neutra de la columna y evite flexiones repetitivas o movimientos dolorosos."
+  },
+  {
+    "id": "scoliosis",
+    "label": "Escoliosis / Asimetría espinal",
+    "description": "Favorezca una postura consciente de la asimetría, evite torsiones agresivas y priorice el soporte espinal equilibrado."
+  },
+  {
+    "id": "arthritis",
+    "label": "Artritis (general)",
+    "description": "Respete el rango sin dolor y evite cargas pesadas o movimientos extremos al final del rango."
+  },
+  {
+    "id": "knee_issues",
+    "label": "Problemas de rodilla (artritis, dolor, reemplazo)",
+    "description": "Evite la flexión profunda de la rodilla, el rango doloroso y la presión articular directa."
+  },
+  {
+    "id": "hip_issues",
+    "label": "Problemas de cadera (artritis, dolor, reemplazo)",
+    "description": "Utilice rangos de cadera más pequeños y evite la apertura extrema o la rotación con carga."
+  },
+  {
+    "id": "foot_ankle_issues",
+    "label": "Problemas de pie/tobillo",
+    "description": "Evite cargas de pie de alto impacto, flexión plantar excesiva e inestabilidad del tobillo sin apoyo."
+  },
+  {
+    "id": "joint_replacement",
+    "label": "Reemplazo de articulaciones (rodilla, cadera, hombro)",
+    "description": "Favorezca el movimiento controlado y de bajo impacto y evite tensiones articulares de alta carga alrededor de la articulación reemplazada."
+  },
+  {
+    "id": "recent_surgery",
+    "label": "Cirugía reciente",
+    "description": "Obtenga primero una autorización médica; favorezca el movimiento suave y apoyado y evite ejercicios de alto riesgo."
+  },
+  {
+    "id": "shoulder_instability",
+    "label": "Inestabilidad/pinzamiento del hombro",
+    "description": "Evite cargas pesadas por encima de la cabeza, soportar peso en los hombros sin apoyo y movimientos que agraven la inestabilidad del hombro."
+  },
+  {
+    "id": "neck_shoulder",
+    "label": "Problemas de cuello/hombros",
+    "description": "Evite levantar la cabeza sin apoyo y cargar excesivamente los hombros."
+  },
+  {
+    "id": "bursitis",
+    "label": "Bursitis / Tendinopatía",
+    "description": "Evite la fricción repetitiva, la compresión o las posiciones articulares al final del rango alrededor de las bolsas inflamadas."
+  },
+  {
+    "id": "respiratory",
+    "label": "Problemas respiratorios/asma/respiración",
+    "description": "Evite contener la respiración, realizar esfuerzos rápidos y posiciones que comprendan el pecho si tiene asma o síntomas respiratorios."
+  },
+  {
+    "id": "respiratory_pulmonary",
+    "label": "Condición respiratoria/pulmonar",
+    "description": "Favorecer el trabajo suave y guiado por la respiración; Evite contener la respiración, los esfuerzos rápidos y las posiciones que compriman el pecho o restrinjan el flujo de aire."
+  },
+  {
+    "id": "hypertension",
+    "label": "Hipertensión / Preocupaciones cardiovasculares",
+    "description": "Evite las inversiones y la contención de la respiración; Utilice movimientos lentos y controlados."
+  },
+  {
+    "id": "cardiovascular_disease",
+    "label": "Enfermedad cardiovascular",
+    "description": "Evite cargas pesadas, transiciones rápidas y contener la respiración; favorecer el movimiento constante y de baja intensidad y controlar la respuesta cardíaca."
+  },
+  {
+    "id": "arrhythmia_cardiac_device",
+    "label": "Arritmia/dispositivo cardíaco",
+    "description": "Modificar la intensidad y las posiciones del torso; Evite esfuerzos elevados y repentinos y posiciones que alteren la compresión del pecho o estresen el sitio del dispositivo."
+  },
+  {
+    "id": "diabetes",
+    "label": "Diabetes / Preocupaciones metabólicas",
+    "description": "Utilice movimientos constantes, controle la intensidad y evite esfuerzos prolongados durante las fluctuaciones del azúcar en sangre."
+  },
+  {
+    "id": "metabolic_endocrine",
+    "label": "Condición metabólica/endocrina",
+    "description": "Gestione la intensidad, el ritmo y la sensibilidad a la temperatura; Evite el esfuerzo repentino si la energía, el azúcar en la sangre o el equilibrio hormonal son inestables."
+  },
+  {
+    "id": "autoimmune_inflammatory",
+    "label": "Condición autoinmune/inflamatoria",
+    "description": "Planifique los ciclos de llamaradas; Evite cargas elevadas o compresiones articulares prolongadas durante la inflamación activa y utilice un ritmo más suave."
+  },
+  {
+    "id": "chronic_fatigue",
+    "label": "Fatiga crónica / Sensibilidad autoinmune",
+    "description": "Utilice un ritmo suave, sesiones más cortas y evite forzar la fatiga excesiva."
+  },
+  {
+    "id": "immune_infectious",
+    "label": "Condición inmune/infecciosa",
+    "description": "Elija movimientos adaptables y de bajo impacto; Evite superar la fatiga, la fiebre o una enfermedad sistémica y ajústese a la capacidad de recuperación."
+  },
+  {
+    "id": "oncology_treatment",
+    "label": "Cáncer activo/tratamiento del cáncer",
+    "description": "Utilice movimientos guiados por los síntomas; Evite cargas elevadas, compresiones agresivas y esfuerzos sin apoyo durante el tratamiento activo o la recuperación."
+  },
+  {
+    "id": "swollen_glands",
+    "label": "Glándulas inflamadas/nódulos linfáticos agrandados",
+    "description": "Los ganglios linfáticos inflamados a menudo indican infección o inflamación. Favorezca los movimientos suaves y evite la presión o la tensión cerca del cuello, la mandíbula o las axilas."
+  },
+  {
+    "id": "gastrointestinal_pelvic",
+    "label": "Condición del suelo gastrointestinal/pélvico",
+    "description": "Modificar la compresión y flexión del núcleo; Evite una fuerte presión intraabdominal y tensión pélvica que puedan exacerbar los síntomas."
+  },
+  {
+    "id": "neurological_disorder",
+    "label": "Trastorno neurológico",
+    "description": "Ajustar el equilibrio, la coordinación y los cambios de sensación; Priorice el apoyo, las progresiones más lentas y las señales claras."
+  },
+  {
+    "id": "vertigo_dizziness",
+    "label": "Vértigo / Mareos",
+    "description": "Evite los movimientos rápidos de la cabeza, las inversiones y los trabajos de equilibrio sin apoyo que puedan provocar mareos."
+  },
+  {
+    "id": "balance_issues",
+    "label": "Equilibrio / Riesgo de Caída",
+    "description": "Evite los desafíos de equilibrio sin apoyo y progrese con movimientos estables y fundamentados."
+  },
+  {
+    "id": "mental_cognitive",
+    "label": "Salud mental/condición cognitiva",
+    "description": "Utilice señales simples, apoyo adicional y un ritmo suave para ayudar con la concentración, la respuesta al estrés y la ejecución segura de los movimientos."
+  },
+  {
+    "id": "weight_concerns",
+    "label": "Sobrepeso / Obesidad / Preocupaciones por el peso",
+    "description": "Favorezca el Pilates de bajo impacto y que proteja las articulaciones y evite la carga excesiva, las transiciones rápidas o el trabajo de equilibrio inestable."
+  },
+  {
+    "id": "vision_impairment",
+    "label": "Deterioro de la visión/ceguera",
+    "description": "Proporcione indicaciones adicionales, apoyo práctico y garantice un entorno seguro y libre de obstáculos. Adaptar el trabajo de equilibrio y orientación según sea necesario."
+  },
+  {
+    "id": "hearing_impairment",
+    "label": "Discapacidad auditiva / sordera",
+    "description": "Utilice demostraciones visuales, instrucciones escritas o comentarios táctiles. Garantice líneas de visión claras y minimice la dependencia de señales verbales."
+  },
+  {
+    "id": "epilepsy_seizure",
+    "label": "Epilepsia/trastorno convulsivo",
+    "description": "Evite desencadenantes como luces intermitentes o movimientos rápidos de la cabeza. Esté atento a las señales de advertencia y garantice un entorno seguro en caso de convulsión."
+  },
+  {
+    "id": "severe_allergy",
+    "label": "Alergias graves/Riesgo de anafilaxia",
+    "description": "Esté atento a los alérgenos ambientales y de los equipos (p. ej., látex, agentes de limpieza). Asegúrese de que el plan de emergencia y los medicamentos (por ejemplo, epinefrina) estén accesibles."
+  },
+  {
+    "id": "chronic_pain_syndrome",
+    "label": "Síndrome de dolor crónico (p. ej., fibromialgia)",
+    "description": "Utilice un ritmo suave, controle el dolor y progresiones graduales. Evite el esfuerzo excesivo y respete los umbrales de dolor individuales."
+  },
+  {
+    "id": "skin_condition",
+    "label": "Condición de la piel (p. ej., heridas, eccema, psoriasis)",
+    "description": "Modificar para mayor comodidad e higiene. Evite el contacto directo con el equipo en heridas abiertas y garantice protocolos de limpieza adecuados."
+  },
+  {
+    "id": "transplant_immunosuppression",
+    "label": "Receptor de trasplante / Inmunosupresión",
+    "description": "Favorezca el ejercicio suave y de bajo impacto. Vigile el riesgo de infección y evite entornos concurridos o insalubres."
+  },
+  {
+    "id": "recent_hospitalization",
+    "label": "Hospitalización reciente/reposo prolongado en cama",
+    "description": "Reintroduzca el movimiento gradualmente. Supervise el descondicionamiento, la hipotensión ortostática y el progreso a un ritmo seguro."
+  },
+  {
+    "id": "pacemaker_implant",
+    "label": "Marcapasos/dispositivo médico implantado",
+    "description": "Evite la presión directa o el traumatismo en el lugar del dispositivo. Siga las restricciones de movimiento específicas del dispositivo y consulte con el equipo médico según sea necesario."
+  },
+  {
+    "id": "substance_use_recovery",
+    "label": "Trastorno por uso de sustancias/Recuperación",
+    "description": "Sea consciente de los posibles impactos en la coordinación, el juicio y la energía. Utilice enfoques informados sobre el trauma y brinde apoyo adicional según sea necesario."
+  },
+  {
+    "id": "hypermobility_syndrome",
+    "label": "Síndrome de hipermovilidad",
+    "description": "Evite rangos de articulaciones extremos sin soporte y cambios rápidos de dirección; enfatizar la fuerza controlada y la estabilidad de las articulaciones."
+  },
+  {
+    "id": "hernia",
+    "label": "hernia",
+    "description": "Evite la tensión abdominal intensa, Valsalva y la presión intraabdominal profunda. Concéntrese en el núcleo de apoyo y la movilidad suave."
+  },
+  {
+    "id": "parkinsons_disease",
+    "label": "Enfermedad de Parkinson",
+    "description": "Utilice movimientos lentos y controlados con señales claras, evitando cambios repentinos de dirección y trabajo de equilibrio sin apoyo."
+  },
+  {
+    "id": "multiple_sclerosis",
+    "label": "Esclerosis múltiple (EM)",
+    "description": "Planifique teniendo en cuenta la fatiga y la sensibilidad a la temperatura. Evite los cambios rápidos de intensidad, el sobrecalentamiento y el trabajo de equilibrio sin apoyo."
+  },
+  {
+    "id": "stress_incontinence",
+    "label": "Incontinencia de esfuerzo",
+    "description": "Evite la presión abdominal fuerte y las cargas de alto impacto. Concéntrese en la sincronización y la estabilización respetuosas con el suelo pélvico."
+  },
+  {
+    "id": "disc_degeneration",
+    "label": "Degeneración del disco",
+    "description": "Proteja la columna con una alineación neutra, evite la flexión/extensión repetida y favorezca el movimiento segmentario suave."
+  },
+  {
+    "id": "radiculopathy_sciatica",
+    "label": "Radiculopatía / Ciática",
+    "description": "Evite la flexión y compresión agresiva de la columna. Favorezca posiciones que protejan los nervios y una descompresión suave."
+  },
+  {
+    "id": "ankylosing_spondylitis",
+    "label": "Espondilitis anquilosante",
+    "description": "Evite la extensión y rotación de la columna al final del rango. Concéntrese en la movilidad suave, la postura y el movimiento segmentario impulsado por la respiración."
+  },
+  {
+    "id": "sacroiliac_dysfunction",
+    "label": "Disfunción de la articulación sacroilíaca (SIJ)",
+    "description": "Evite torsiones profundas y cambios de peso desiguales. Utilice una estabilización pélvica sutil e incluso una carga de cadera."
+  },
+  {
+    "id": "cervical_spine_dysfunction",
+    "label": "Disfunción de la columna cervical",
+    "description": "Evite levantar la cabeza sin apoyo, extender profundamente el cuello y rotar rápidamente la cabeza."
+  },
+  {
+    "id": "frozen_shoulder",
+    "label": "Capsulitis Adhesiva / Hombro Congelado",
+    "description": "Favorece la movilidad suave del hombro sin llegar al dolor. Evite movimientos enérgicos por encima de la cabeza y rotaciones agresivas."
+  },
+  {
+    "id": "rotator_cuff_injury",
+    "label": "Lesión del manguito rotador",
+    "description": "Proteja el hombro con rangos controlados y sin dolor y evite la rotación externa o por encima de la cabeza repentina bajo carga."
+  },
+  {
+    "id": "acromioclavicular_sprain",
+    "label": "Esguince acromioclavicular (AC)",
+    "description": "Evite la compresión directa del hombro, cargas pesadas en la articulación AC y posiciones de hombro de alto riesgo."
+  },
+  {
+    "id": "thoracic_outlet_syndrome",
+    "label": "Síndrome de salida torácica (TOS)",
+    "description": "Evite la elevación sostenida de los hombros, la extensión profunda del cuello y la compresión entre el cuello y el hombro."
+  },
+  {
+    "id": "tennis_elbow",
+    "label": "Epicondilitis lateral/codo de tenista",
+    "description": "Evite el agarre repetitivo, la extensión de la muñeca bajo carga y la extensión del codo con resistencia fuerte."
+  },
+  {
+    "id": "golfers_elbow",
+    "label": "Epicondilitis medial/codo de golfista",
+    "description": "Evite la flexión repetitiva de la muñeca y la pronación del antebrazo con tensión resistida del codo."
+  },
+  {
+    "id": "nerve_compression",
+    "label": "Compresión/atrapamiento de nervios",
+    "description": "Favorezca la alineación neutra de las articulaciones y el rango suave. Evite posiciones que pellizquen, compriman o estiren demasiado los nervios."
+  },
+  {
+    "id": "carpal_tunnel_syndrome",
+    "label": "Síndrome del túnel carpiano",
+    "description": "Evite la extensión o flexión prolongada de la muñeca bajo carga y el agarre repetido de los dedos con compresión."
+  },
+  {
+    "id": "cubital_tunnel_syndrome",
+    "label": "Nervio cubital / síndrome del túnel cubital",
+    "description": "Evite la flexión prolongada del codo, la presión directa sobre la parte interna del codo y el agarre con fuerza."
+  },
+  {
+    "id": "radial_nerve_issue",
+    "label": "Preocupación por el nervio radial",
+    "description": "Evite posiciones sostenidas de caída de la muñeca, presión en el codo y extensión forzada del antebrazo bajo carga."
+  },
+  {
+    "id": "ankle_sprain",
+    "label": "Esguince de tobillo",
+    "description": "Evite superficies inestables, cambios repentinos de dirección y aterrizajes con una sola pierna sin apoyo."
+  },
+  {
+    "id": "achilles_tendinopathy",
+    "label": "Tendinopatía de Aquiles",
+    "description": "Evite los saltos repetidos, los empujones repentinos y contundentes y la dorsiflexión agresiva bajo carga."
+  },
+  {
+    "id": "posterior_tibialis_dysfunction",
+    "label": "Disfunción del tibial posterior (PTTD)",
+    "description": "Favorezca el apoyo del arco, evite la pronación excesiva y la carga prolongada de peso en la parte interna del pie."
+  },
+  {
+    "id": "tibial_stress_syndrome",
+    "label": "Síndrome de estrés tibial (SST)",
+    "description": "Evite impactos repetitivos y cargas de gran volumen a través de la parte inferior de la pierna. Favorecer la progresión gradual y de bajo impacto."
+  },
+  {
+    "id": "plantar_fasciitis",
+    "label": "Fascitis plantar",
+    "description": "Evite la extensión prolongada de los dedos de los pies, la carga con los pies descalzos y el juego de pies de alto impacto."
+  },
+  {
+    "id": "bunions",
+    "label": "Juanetes (Hallux Valgus)",
+    "description": "Evite la posición estrecha del pie como si fuera un zapato, los dedos de los pies agarrados al suelo y la presión excesiva en el dedo gordo."
+  },
+  {
+    "id": "hip_arthroscopy",
+    "label": "Artroscopia total de cadera (ATC)",
+    "description": "Muévase con precaución alrededor del rango de la cadera y evite la rotación profunda, la apertura amplia o la carga contundente de la cadera."
+  },
+  {
+    "id": "piriformis_syndrome",
+    "label": "Síndrome piriforme/atrapamiento del nervio ciático",
+    "description": "Evite la rotación externa profunda y la compresión a través de los glúteos y las caderas. Favorece la suave movilidad de glúteos y cadera."
+  },
+  {
+    "id": "hamstring_tendinopathy",
+    "label": "Tendinopatía del tendón de la corva",
+    "description": "Evite el estiramiento agresivo de los isquiotibiales, el alargamiento rápido y la extensión cargada de la rodilla debido al dolor."
+  },
+  {
+    "id": "muscle_strain",
+    "label": "tensión muscular",
+    "description": "Evite el estiramiento excesivo repentino, la carga agresiva y el alargamiento a alta velocidad del músculo afectado."
+  },
+  {
+    "id": "snapping_hip_syndrome",
+    "label": "Síndrome de cadera en chasquido (SHS)",
+    "description": "Evite la flexión/extensión repentina de la cadera y los movimientos fuertes. Concéntrese en el control, la estabilidad y las rotaciones suaves."
+  },
+  {
+    "id": "greater_trochanteric_pain",
+    "label": "Síndrome de dolor del trocantérico mayor/bursitis de cadera",
+    "description": "Evite la presión directa sobre la parte exterior de la cadera y cargas que agraven la cadera lateral."
+  },
+  {
+    "id": "femoroacetabular_impingement",
+    "label": "Pinzamiento femoroacetabular (FAI)",
+    "description": "Evite la flexión profunda de la cadera, la rotación interna y las posiciones de cadera flexionadas hacia adelante que pellizcan la parte frontal de la cadera."
+  },
+  {
+    "id": "patellofemoral_pain",
+    "label": "Síndrome de dolor patelofemoral (PFPS)",
+    "description": "Evite flexiones profundas de las rodillas, cargas prolongadas sobre las rodillas y trabajo inestable con una sola pierna que aumente la tensión en la rodilla delantera."
+  },
+  {
+    "id": "iliotibial_band_syndrome",
+    "label": "Síndrome de la banda iliotibial (ITBS)",
+    "description": "Evite la flexión/extensión repetitiva de la rodilla y la aducción excesiva de la cadera que irrita la parte externa de la rodilla."
+  },
+  {
+    "id": "meniscus_tear",
+    "label": "Desgarro de menisco",
+    "description": "Evite torcerse bajo la carga de la rodilla, sentadillas profundas y giros repentinos que generen fuerza de corte en la rodilla."
+  },
+  {
+    "id": "ligament_injury",
+    "label": "Lesión del ligamento (LCA, PCL, MCL, LCL)",
+    "description": "Evite torcer, pivotar y posiciones profundas o cargadas de la rodilla hasta que mejoren la curación y la estabilidad de los ligamentos."
+  },
+  {
+    "id": "perimenopause_menopause",
+    "label": "Perimenopausia / Menopausia",
+    "description": "Controlar la tolerancia al calor y la densidad ósea; Evite contener la respiración, realizar cargas de alto impacto y de intensidad extrema. Apoya la laxitud articular y la adaptación cardiovascular."
+  },
+  {
+    "id": "stroke_recovery",
+    "label": "Recuperación de accidente cerebrovascular/ACV",
+    "description": "Adaptarse a hemiplejía, espasticidad y cambios de coordinación. Utilice movimientos lentos y apoyados, evite esfuerzos elevados y controle las respuestas de la presión arterial."
+  },
+  {
+    "id": "long_covid",
+    "label": "COVID prolongado/Síndrome posviral",
+    "description": "Respete el malestar post-esfuerzo: evite forzar la fatiga o la dificultad para respirar. Utilice movimientos rápidos y de baja intensidad con descanso frecuente."
+  },
+  {
+    "id": "hip_labral_tear",
+    "label": "Desgarro del labrum de la cadera",
+    "description": "Evite la flexión profunda de la cadera, la rotación interna y las posiciones de pinzamiento. Favorezca el rango sin dolor, la estabilidad de la cadera y el movimiento controlado."
+  },
+  {
+    "id": "wrist_conditions",
+    "label": "Condiciones de la muñeca",
+    "description": "Modificar o evitar la carga de peso en las muñecas. Utilice soporte para el puño o el antebrazo para ejercicios en cuadrúpedo y en plancha."
+  },
+  {
+    "id": "lymphedema",
+    "label": "Linfedema",
+    "description": "Evite la compresión fuerte, la elevación prolongada del brazo y el ejercicio intenso de la extremidad afectada. Utilice movimientos suaves y rítmicos y respiración diafragmática."
+  },
+  {
+    "id": "other",
+    "label": "Otro",
+    "description": "Obtenga orientación respaldada por IA para una afección que no figura aquí."
+  }
+]

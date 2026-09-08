@@ -1,0 +1,401 @@
+{
+  "osteoporosis": [
+    {"exerciseId":"roll_up","reason":"Loaded spinal flexion and forward bending stress vertebrae.","alternative":"Use neutral spine core stabilizers and supine leg slides."},
+    {"exerciseId":"roll_over","reason":"Inversion and end-range spinal loading can compress weak bones.","alternative":"Replace with gentle pelvic tilts in supine."},
+    {"exerciseId":"rolling_like_a_ball","reason":"Rounded spine rolling applies repeated flexion stress.","alternative":"Choose supported knee folds or single-leg stretches."},
+    {"exerciseId":"spine_stretch_forward","reason":"Forward flexion with load increases vertebral compression risk.","alternative":"Try seated postural work with neutral spine extension."},
+    {"exerciseId":"teaser","reason":"High-load core lift in flexion and balance can strain the spine.","alternative":"Use modified supported sit-up progressions with a ball."},
+    {"exerciseId":"short_spine_massage","reason":"Inversion and loaded spinal articulation may compress fragile vertebrae.","alternative":"Choose gentle supine leg slides or pelvic tilts with neutral spine."}
+  ],
+  "pregnancy": [
+    {"exerciseId":"roll_up","reason":"Heavy abdominal flexion can stress the growing uterus and diastasis recti.","alternative":"Move to side-lying or supported seated core work."},
+    {"exerciseId":"roll_over","reason":"Inversion and supine leg lift may be uncomfortable after mid-pregnancy.","alternative":"Use gentle pelvic floor breathing in seated or side-lying."},
+    {"exerciseId":"teaser","reason":"Full sit-up style lifting and balance can overwork the linea alba.","alternative":"Focus on neutral spine posture and pelvic floor activation."},
+    {"exerciseId":"neck_pull","reason":"Supported head and torso lift from supine can strain the belly and neck.","alternative":"Use safe standing or side-lying core variations."},
+    {"exerciseId":"short_spine_massage","reason":"Inversion and spinal compression are best avoided during pregnancy.","alternative":"Choose side-lying stretches and gentle supported hip work."}
+  ],
+  "low_back_pain": [
+    {"exerciseId":"roll_up","reason":"Repetitive spinal flexion can aggravate a painful disc or posterior chain.","alternative":"Choose pelvic tilts and supported bridging with neutral spine."},
+    {"exerciseId":"rolling_like_a_ball","reason":"Loaded rolling may flare low back symptoms.","alternative":"Use gentle seated or supine core stabilization exercises."},
+    {"exerciseId":"saw","reason":"Rotation with spinal flexion can irritate a sensitive lumbar spine.","alternative":"Use hip-focused side-lying work and neutral spine rotation."},
+    {"exerciseId":"jackknife","reason":"Inversion and lumbar extension can be too intense for many back conditions.","alternative":"Use supported bridge progressions and gentle hip lifts."},
+    {"exerciseId":"short_spine_massage","reason":"Spinal articulation with inversion can aggravate low back pain and neural tension.","alternative":"Use neutral pelvic stabilization exercises and gentle supine stretch work."}
+  ],
+  "hypertension": [
+    {"exerciseId":"roll_over","reason":"Inversion may raise blood pressure and should be avoided.","alternative":"Use seated or quadruped mobility with steady breathing."},
+    {"exerciseId":"jackknife","reason":"High-effort inversion can stress the cardiovascular system.","alternative":"Choose neutral spine plank holds or seated leg work."},
+    {"exerciseId":"corkscrew","reason":"Breath-holding and rapid rotation may spike blood pressure.","alternative":"Use slow, controlled hip circles with relaxed breathing."},
+    {"exerciseId":"control_balance","reason":"Balance inversions can feel too intense for heart concerns.","alternative":"Stay on the mat with core stability and leg lifts."},
+    {"exerciseId":"short_spine_massage","reason":"Inversion and spinal compression can elevate blood pressure in sensitive individuals.","alternative":"Choose low-lying core stabilization and gentle standing mobility."}
+  ],
+  "knee_issues": [
+    {"exerciseId":"shoulder_bridge","reason":"Deep hip lift can load knees and aggravate joint pain.","alternative":"Use gentle pelvic tilts and supported glute bridges."},
+    {"exerciseId":"leg_pull_front","reason":"Plank-based leg lifts place pressure on the knees and hips.","alternative":"Work in quadruped with lifted legs or side-lying leg lifts."},
+    {"exerciseId":"leg_pull_back","reason":"Prone leg extensions can irritate knee or hamstring tension.","alternative":"Use seated or side-lying single-leg moves with reduced range."},
+    {"exerciseId":"bicycle","reason":"Repeated knee flexion may strain arthritic joints.","alternative":"Choose static leg holds or gentle marching in supine."},
+    {"exerciseId":"footwork","reason":"Reformer leg pressing can place continuous load through sensitive knees.","alternative":"Use seated or supported legwork with small range and lighter resistance."}
+  ],
+  "hip_issues": [
+    {"exerciseId":"one_leg_circle","reason":"Large hip circles can aggravate painful or unstable hips.","alternative":"Use smaller leg circles or hip hinges with support."},
+    {"exerciseId":"scissors","reason":"Extreme hip range in supine can irritate hip joints.","alternative":"Keep legs lower and work with smaller controlled lifts."},
+    {"exerciseId":"open_leg_rocker","reason":"Wide open leg balance places strain on the hip capsule.","alternative":"Use seated adductor and abductor control work."},
+    {"exerciseId":"hip_circles","reason":"Rotational hip motion may be painful if the joint is inflamed.","alternative":"Choose gentle supported hip pumps in supine."},
+    {"exerciseId":"footwork","reason":"Repeated leg pressing can irritate sensitive hips due to loaded flexion and extension.","alternative":"Work with small range and lighter resistance, or choose supine leg slides."}
+  ],
+  "neck_shoulder": [
+    {"exerciseId":"the_hundred","reason":"Sustained lifted head and neck can aggravate cervical tension.","alternative":"Keep the head supported while maintaining core breath."},
+    {"exerciseId":"neck_pull","reason":"Unsupported head lift increases neck strain and shoulder tension.","alternative":"Use chin-tucks and gentle supported rolling in a neutral neck."},
+    {"exerciseId":"teaser","reason":"Head lift with balance can load neck and shoulder stabilizers.","alternative":"Use seated supported core work and avoid full V position."},
+    {"exerciseId":"swan_dive","reason":"Prone back extension stresses the neck and upper shoulders.","alternative":"Use gentle prone lifts with hands under shoulders for support."},
+    {"exerciseId":"push_through","reason":"Loading the shoulders over the bar can aggravate shoulder instability or neck tension.","alternative":"Use gentle supported back extension with lower resistance."},
+    {"exerciseId":"short_spine_massage","reason":"Reformer shoulder loading under an inverted spine can stress tight neck/shoulder areas.","alternative":"Choose supported prone back extension or supine spine mobilization without inversion."}
+  ],
+  "recent_surgery": [
+    {"exerciseId":"roll_up","reason":"Loaded spinal flexion is often too aggressive after surgery.","alternative":"Focus on gentle breathing, pelvic floor, and posture support."},
+    {"exerciseId":"roll_over","reason":"Inversion and deep articulation can be unsafe during recovery.","alternative":"Choose supported movements and follow professional clearance."},
+    {"exerciseId":"spine_twist","reason":"Twisting with load may stress healing tissues.","alternative":"Use neutral spine rotation from seated or standing positions."},
+    {"exerciseId":"side_bend","reason":"Lateral flexion can be uncomfortable after surgery.","alternative":"Keep movements gentle and avoid end-range bending."},
+    {"exerciseId":"short_spine_massage","reason":"Inversion and deep spinal articulation are usually contraindicated after recent surgery.","alternative":"Use gentle supine pelvic tilts and supported spine mobilization."}
+  ],
+  "arthritis": [
+    {"exerciseId":"roll_up","reason":"Repetitive flexion may aggravate stiff joints.","alternative":"Use small spinal articulations and neutral core work."},
+    {"exerciseId":"saw","reason":"Rotation with forward flexion can irritate arthritic joints.","alternative":"Use seated side-lying rotation with support."},
+    {"exerciseId":"corkscrew","reason":"Inverted hip circles may be too intense for sensitive joints.","alternative":"Choose simple hip circles with reduced range."},
+    {"exerciseId":"seal","reason":"Rolling can feel harsh on arthritic spine or hips.","alternative":"Use supported core strengthening without dynamic rolling."},
+    {"exerciseId":"footwork","reason":"Reformer leg press work can aggravate arthritic knee or hip joints without careful load management.","alternative":"Use lighter resistance and focus on small controlled range."},
+    {"exerciseId":"short_spine_massage","reason":"Inversion and spinal compression may be uncomfortable for arthritic joints.","alternative":"Choose gentle spine mobilization without large range or inversion."}
+  ],
+  "scoliosis": [
+    {"exerciseId":"roll_up","reason":"Large spinal flexion can accentuate the curve if not controlled.","alternative":"Use supported roll-downs with a neutral pelvis and asymmetry awareness."},
+    {"exerciseId":"saw","reason":"Rotation through the spine may create uneven loading in a curved spine.","alternative":"Do gentle seated side stretches with equal attention to both sides."},
+    {"exerciseId":"side_bend","reason":"Deep asymmetric side flexion can strain a scoliotic curve.","alternative":"Work with small side bends and keep the ribs long."}
+  ],
+  "pelvic_floor_dysfunction": [
+    {"exerciseId":"the_hundred","reason":"Strong abdominal pumping and breath coordination may increase pelvic floor pressure.","alternative":"Keep the head supported and focus on gentle pelvic floor engagement."},
+    {"exerciseId":"single_leg_stretch","reason":"Repeated hip flexion and lower abdominal engagement can irritate a weak pelvic floor.","alternative":"Perform supported knee folds or modified marching with neutral pelvis."},
+    {"exerciseId":"teaser","reason":"Full sit-up movement loads the pelvic floor and linea alba.","alternative":"Use supported seated core work and avoid full V position."}
+  ],
+  "diastasis_recti": [
+    {"exerciseId":"the_hundred","reason":"Strong abdominal pumping can widen the separation and increase intra-abdominal pressure.","alternative":"Use supported core work with the head down and focus on transverse abdominis engagement."},
+    {"exerciseId":"roll_up","reason":"Loaded spinal flexion places stress on the linea alba.","alternative":"Practice pelvic tilts and supported roll-downs with a neutral spine."},
+    {"exerciseId":"teaser","reason":"Full V-position and abdominal lift can overstress separated abdominal muscles.","alternative":"Use modified seated core work with bent knees and low lift."},
+    {"exerciseId":"double_leg_stretch","reason":"Combined lower ab extension and arm reach may increase pressure through the midline.","alternative":"Choose heel slides and single-leg supports with minimal abdominal strain."}
+  ],
+  "shoulder_instability": [
+    {"exerciseId":"push_through","reason":"Heavy shoulder loading over the bar may aggravate instability or impingement.","alternative":"Use supported back extension with lighter resistance and stable shoulder placement."},
+    {"exerciseId":"swan_dive","reason":"Prone extension can place excessive demand on the neck and shoulder stabilizers.","alternative":"Choose gentle prone lifting with hands under shoulders for support."},
+    {"exerciseId":"swimming","reason":"Repeated alternating arm lifts can overwork unstable shoulder joints.","alternative":"Use lower range arm extension with more emphasis on scapular stability."},
+    {"exerciseId":"shoulder_bridge","reason":"Shoulder-supported bridge positions may increase discomfort if the shoulders are unstable.","alternative":"Keep the upper body relaxed and work with lower bridge variations or supine glute engagement."}
+  ],
+  "bursitis": [
+    {"exerciseId":"one_leg_circle","reason":"Large hip circles can irritate inflamed bursae around the hip or pelvis.","alternative":"Use smaller, slower leg circles with a supported pelvis."},
+    {"exerciseId":"hip_circles","reason":"Repetitive hip rotation may aggravate bursitis in the hip joint.","alternative":"Choose gentle supported hip pumps in a neutral range."},
+    {"exerciseId":"swan_dive","reason":"Prone back extension can compress already tender shoulder bursae.","alternative":"Work with supported chest lifts and avoid aggressive upper back extension."},
+    {"exerciseId":"long_box_series","reason":"Extended upper-body reach and loaded carriage movement may stress sensitive shoulder tissues.","alternative":"Use lighter springs and smaller arm movements while keeping the shoulders stable."}
+  ],
+  "vertigo_dizziness": [
+    {"exerciseId":"roll_over","reason":"Inversion can trigger dizziness and disorientation.","alternative":"Choose gentle supine pelvic tilts or seated mobility instead."},
+    {"exerciseId":"corkscrew","reason":"Rapid spinal rotation with legs overhead can disrupt balance.","alternative":"Use slow hip circles with the head supported and eyes fixed."},
+    {"exerciseId":"jackknife","reason":"Inversion and sudden balance challenge may worsen vertigo.","alternative":"Stay on the mat with supported bridge progressions and slow movement."},
+    {"exerciseId":"control_balance","reason":"Advanced inversions and balancing can provoke lightheadedness.","alternative":"Focus on floor-based core stability and steady breath."}
+  ],
+  "postpartum": [
+    {"exerciseId":"roll_up","reason":"Loaded spinal flexion and abdominal lifting can stress a recovering postpartum core.","alternative":"Use supported pelvic tilts and gentle seated core reconnection work."},
+    {"exerciseId":"teaser","reason":"Full V-style lifting can overload the healing linea alba and pelvic floor.","alternative":"Practice supported seated core lifts with bent knees and gentle breath."},
+    {"exerciseId":"double_leg_stretch","reason":"Strong abdominal extension and reach may overpressure a recovering midline.","alternative":"Choose heel slides and single-leg supports with minimal abdominal strain."}
+  ],
+  "balance_issues": [
+    {"exerciseId":"control_balance","reason":"Advanced balance work increases fall risk and instability.","alternative":"Focus on grounded floor-based stability and slow core control."},
+    {"exerciseId":"jackknife","reason":"Inversion and high balance demand can be too challenging for unstable clients.","alternative":"Use supported bridge progressions and low-level hip lifts."},
+    {"exerciseId":"roll_over","reason":"Legs overhead inversion can challenge balance and spatial orientation.","alternative":"Choose seated or supine core mobility without inversion."}
+  ],
+  "joint_replacement": [
+    {"exerciseId":"footwork","reason":"Reformer leg pressing can place too much load on a replaced knee or hip.","alternative":"Use lighter springs, smaller range of motion, or seated leg support."},
+    {"exerciseId":"knee_stretch","reason":"Loaded knee flexion and hip movement can strain a replaced joint.","alternative":"Choose supported knee lifts with minimal range and controlled alignment."},
+    {"exerciseId":"one_leg_circle","reason":"Large hip circles may aggravate a replaced hip joint.","alternative":"Use smaller supported leg circles or isometric hip stability work."}
+  ],
+  "foot_ankle_issues": [
+    {"exerciseId":"footwork","reason":"Reformer footbar work places repeated load through the ankles and forefoot.","alternative":"Use lighter resistance and keep the feet flat with minimal plantarflexion."},
+    {"exerciseId":"elephant","reason":"Weight-bearing through the feet and ankles can aggravate sensitive joints.","alternative":"Choose seated or supported hamstring stretches without heavy foot load."},
+    {"exerciseId":"bicycle","reason":"Rapid lower-leg movement and pointed foot positions can irritate ankle or foot pain.","alternative":"Use slower supine leg circles with a neutral foot position."}
+  ],
+  "hypermobility_syndrome": [
+    {"exerciseId":"one_leg_circle","reason":"Large unsupported joint ranges can overstretch lax connective tissue in hypermobility.","alternative":"Use smaller curves, active stability, and keep the pelvis supported during leg circles."}
+  ],
+  "hernia": [
+    {"exerciseId":"roll_up","reason":"Loaded abdominal flexion and strain may increase intra-abdominal pressure and irritate a hernia.","alternative":"Choose pelvic tilts, supine core work, and gentle breath support without heavy crunching."}
+  ],
+  "parkinsons_disease": [
+    {"exerciseId":"control_balance","reason":"Unstable balance challenges increase fall risk when motor control and reaction speed are affected.","alternative":"Use grounded, supported movement with a wide base and slow transitions."}
+  ],
+  "multiple_sclerosis": [
+    {"exerciseId":"the_hundred","reason":"Sustained breath pumping and core intensity can overheat or overly fatigue someone with MS.","alternative":"Use shorter, cooler sessions with gentle breath-based core work."}
+  ],
+  "stress_incontinence": [
+    {"exerciseId":"double_leg_stretch","reason":"Strong abdominal extension and pelvic pressure may exacerbate leaking or pelvic floor symptoms.","alternative":"Use heel slides and gentle core engagement with the pelvis stable."}
+  ],
+  "disc_degeneration": [
+    {"exerciseId":"rolling_like_a_ball","reason":"Repeated spinal flexion and compression can aggravate an already degenerated disc.","alternative":"Choose neutral spine pelvic tilts and supported core stabilization."}
+  ],
+  "radiculopathy_sciatica": [
+    {"exerciseId":"roll_up","reason":"Deep spinal flexion can increase nerve root compression and sciatica symptoms.","alternative":"Use gentle supported spinal mobility and avoid forward-bending under load."}
+  ],
+  "ankylosing_spondylitis": [
+    {"exerciseId":"roll_over","reason":"Inversion and axial compression may stress an inflamed, stiff spine and limit chest expansion.","alternative":"Choose supported bridge work and gentle seated spinal mobility."}
+  ],
+  "sacroiliac_dysfunction": [
+    {"exerciseId":"one_leg_circle","reason":"Large leg circles can create uneven pelvic shear and irritate the SI joint.","alternative":"Use small, controlled leg movements with the pelvis stabilized."}
+  ],
+  "cervical_spine_dysfunction": [
+    {"exerciseId":"neck_pull","reason":"Unsupported head lifting and cervical flexion can aggravate neck dysfunction.","alternative":"Keep the head supported and use gentle core exercise without deep neck motion."}
+  ],
+  "frozen_shoulder": [
+    {"exerciseId":"swan_dive","reason":"Prone back extension can aggravate a stiff, painful shoulder and restrict comfortable range.","alternative":"Use supported chest lifts with the arms light and close to the body."}
+  ],
+  "rotator_cuff_injury": [
+    {"exerciseId":"push_through","reason":"Heavy shoulder loading and external rotation may irritate an injured rotator cuff.","alternative":"Choose gentle supported shoulder mobility and avoid deep load on the shoulder joint."}
+  ],
+  "acromioclavicular_sprain": [
+    {"exerciseId":"shoulder_bridge","reason":"Shoulder compression and upper-body load can worsen pain at the AC joint.","alternative":"Use pelvic tilts or low bridge variations with reduced shoulder pressure."}
+  ],
+  "thoracic_outlet_syndrome": [
+    {"exerciseId":"the_hundred","reason":"Sustained shoulder elevation and breath coordination can increase compression near the thoracic outlet.","alternative":"Use gentle chest opening with arms supported and avoid overhead shoulder positions."}
+  ],
+  "tennis_elbow": [
+    {"exerciseId":"push_through","reason":"Weight-bearing on the hands and forearms can aggravate lateral elbow tendon irritation.","alternative":"Use lower-load shoulder work and avoid forceful gripping or wrist extension."}
+  ],
+  "golfers_elbow": [
+    {"exerciseId":"push_through","reason":"Forearm loading and wrist action can strain the medial elbow in golfer’s elbow.","alternative":"Choose supported upper-body work with minimal wrist or grip forcing."}
+  ],
+  "nerve_compression": [
+    {"exerciseId":"corkscrew","reason":"Twisting and spinal compression can pinch a sensitive nerve and worsen compression symptoms.","alternative":"Use gentle spinal mobility with neutral alignment and avoid end-range twist."}
+  ],
+  "carpal_tunnel_syndrome": [
+    {"exerciseId":"teaser","reason":"Wrist extension and gripping can increase pressure in the carpal tunnel.","alternative":"Use supported core work with a neutral wrist and reduced finger grip."}
+  ],
+  "cubital_tunnel_syndrome": [
+    {"exerciseId":"leg_pull_front","reason":"Plank-style upper-body loading can compress the ulnar nerve at the elbow.","alternative":"Use supported core work and keep the elbow straight and free from direct pressure."}
+  ],
+  "radial_nerve_issue": [
+    {"exerciseId":"neck_pull","reason":"Wrist and arm positioning under load may aggravate radial nerve symptoms if the arm is extended or compressed.","alternative":"Use gentle core work with the wrists and elbows in neutral, pain-free positions."}
+  ],
+  "ankle_sprain": [
+    {"exerciseId":"control_balance","reason":"Unsupported balance work can stress a healing ankle and increase the risk of re-sprain.","alternative":"Use seated or supported leg work with both feet grounded."}
+  ],
+  "achilles_tendinopathy": [
+    {"exerciseId":"footwork","reason":"Reformer footbar pushing can overload the Achilles tendon with repeated plantarflexion.","alternative":"Use lighter resistance and avoid strong push-off through the feet."}
+  ],
+  "posterior_tibialis_dysfunction": [
+    {"exerciseId":"footwork","reason":"High-volume footbar work may exacerbate medial ankle and arch strain.","alternative":"Use gentler, neutral foot positions and reduce repetitive loading through the inner foot."}
+  ],
+  "tibial_stress_syndrome": [
+    {"exerciseId":"footwork","reason":"Repeated leg press work can aggravate shin pain and stress reactions in the tibia.","alternative":"Choose lower resistance and avoid long high-volume leg sets."}
+  ],
+  "plantar_fasciitis": [
+    {"exerciseId":"footwork","reason":"High footbar pressure and toe extension can irritate the plantar fascia.","alternative":"Use soft, neutral foot placement and lower resistance with less toe flexion."}
+  ],
+  "bunions": [
+    {"exerciseId":"footwork","reason":"Narrow foot positions and forefoot pressure can increase bunion discomfort.","alternative":"Use wider, softer foot placement and avoid pressing directly through the big toe joint."}
+  ],
+  "hip_arthroscopy": [
+    {"exerciseId":"one_leg_circle","reason":"Large hip circles can strain the healing hip joint and deep tissue after arthroscopy.","alternative":"Use smaller, supported leg circles and keep the pelvis stable."}
+  ],
+  "piriformis_syndrome": [
+    {"exerciseId":"open_leg_rocker","reason":"Wide hip opening and rotation can aggravate piriformis irritation and sciatic symptoms.","alternative":"Use gentle hip mobility with the legs closer together and the pelvis supported."}
+  ],
+  "hamstring_tendinopathy": [
+    {"exerciseId":"scissors","reason":"Aggressive hamstring lengthening and rapid alternating leg motion can worsen tendon irritation.","alternative":"Use gentle hamstring control and avoid fast, end-range leg swings."}
+  ],
+  "muscle_strain": [
+    {"exerciseId":"leg_pull_back","reason":"Loaded posterior chain work and sustained muscle tension can aggravate an acute strain.","alternative":"Use gentle, supported mobility and avoid strong, resisted leg extension."}
+  ],
+  "snapping_hip_syndrome": [
+    {"exerciseId":"hip_circles","reason":"Fast, large hip circles may trigger snapping and irritate the hip tissues.","alternative":"Use smaller, slower hip movements with emphasis on stability."}
+  ],
+  "greater_trochanteric_pain": [
+    {"exerciseId":"side_bend","reason":"Side-lying pressure and strong lateral hip movement can aggravate greater trochanter pain.","alternative":"Use gentle standing or supine hip work with less lateral load."}
+  ],
+  "femoroacetabular_impingement": [
+    {"exerciseId":"one_leg_circle","reason":"Deep hip flexion and internal rotation can pinch the front of the hip in FAI.","alternative":"Use smaller hip circles and avoid end-range flexion and rotation."}
+  ],
+  "patellofemoral_pain": [
+    {"exerciseId":"footwork","reason":"Reformer leg press can increase compression under the kneecap and worsen anterior knee pain.","alternative":"Use lighter resistance and keep knee alignment stable with shallow range."}
+  ],
+  "iliotibial_band_syndrome": [
+    {"exerciseId":"leg_pull_front","reason":"Repetitive knee flexion and hip adduction may irritate the outer knee and IT band.","alternative":"Use controlled lower-leg work avoiding excessive hip adduction."}
+  ],
+  "meniscus_tear": [
+    {"exerciseId":"knee_stretch","reason":"Loaded knee flexion and weight-bearing can aggravate a meniscus tear.","alternative":"Use gentle knee extension work with less compressive load."}
+  ],
+  "ligament_injury": [
+    {"exerciseId":"knee_stretch","reason":"Deep or loaded knee flexion may strain healing knee ligaments.","alternative":"Use controlled, supported knee work with minimal weight and a neutral alignment."}
+  ],
+  "chronic_fatigue": [
+    {"exerciseId":"the_hundred","reason":"High-repetition breath and core work can worsen fatigue if pacing is too aggressive.","alternative":"Use shorter sets, gentler breath work, and allow rest breaks."},
+    {"exerciseId":"swimming","reason":"Sustained prone arm and leg lifts can be too demanding for low-energy clients.","alternative":"Choose single-limb lifts with frequent recovery pauses."},
+    {"exerciseId":"leg_pull_front","reason":"Extended plank-based leg lifts may overtax a fatigued body.","alternative":"Use supported quadruped or supine core exercises with less sustained load."}
+  ],
+  "diabetes": [
+    {"exerciseId":"footwork","reason":"High-resistance leg work can be challenging if circulation or neuropathy is present.","alternative":"Use lighter springs and focus on smooth, controlled carriage movement."},
+    {"exerciseId":"leg_pull_back","reason":"Prolonged prone effort may fatigue the shoulders and legs quickly.","alternative":"Choose shorter duration posterior chain work with frequent rest."},
+    {"exerciseId":"bicycle","reason":"Rapid alternating lower body movement can be uncomfortable if sensation is reduced.","alternative":"Use slower leg rhythms and keep the pelvis stable."}
+  ],
+  "weight_concerns": [
+    {"exerciseId":"teaser","reason":"High core and balance demand can be difficult under added body weight.","alternative":"Use supported core lifts with bent knees and a lower center of gravity."},
+    {"exerciseId":"jackknife","reason":"Inversion and rapid leg lifting may increase strain on the lower back and hips.","alternative":"Choose supported bridges and slower hip lifts with a neutral spine."},
+    {"exerciseId":"boomerang","reason":"Dynamic rolling balance can be unstable and overly demanding on the joints.","alternative":"Focus on controlled seated or supine core work with stable foot contact."},
+    {"exerciseId":"control_balance","reason":"Advanced balance and leg extension demand can tax joint control and stability.","alternative":"Use grounded stability exercises with both feet on the mat and small range movements."}
+  ],
+  "respiratory": [
+    {"exerciseId":"jackknife","reason":"Inversions and upper-body compression can make breathing difficult for people with asthma.","alternative":"Use supported chest lifts and avoid chest-compressive or breath-holding positions."},
+    {"exerciseId":"roll_over","reason":"Legs-overhead position and spinal flexion can restrict the rib cage and challenge breathing.","alternative":"Choose gentle supine core work with the head and chest supported."},
+    {"exerciseId":"the_hundred","reason":"Rapid breath cycling and core intensity may trigger wheezing or breathlessness.","alternative":"Practice slower breath-based abdominal work with frequent rest and open chest posture."}
+  ],
+  "swollen_glands": [
+    {"exerciseId":"neck_pull","reason":"Supportive head and neck lifting can aggravate tender lymph nodes in the neck.","alternative":"Keep the head supported and focus on gentle core activation without heavy neck motion."},
+    {"exerciseId":"roll_over","reason":"Legs-overhead inversion may increase pressure and discomfort around swollen neck and shoulder nodes.","alternative":"Choose more neutral, supported supine core work with the head and neck in a comfortable position."},
+    {"exerciseId":"seated_spine_twist","reason":"Strong rotation around the cervical spine can irritate tender lymph nodes in the neck and jaw.","alternative":"Use smaller seated rotations with a long spine and avoid deep turning of the head."}
+  ],
+  "vision_impairment": [
+    {"exerciseId":"control_balance","reason":"Unsupported balance poses depend on visual feedback and can increase fall risk with low vision.","alternative":"Use grounded, supported exercises like seated leg work and stable standing mobility."},
+    {"exerciseId":"roll_over","reason":"Inversion and quick transitions can be difficult to judge safely when vision is impaired.","alternative":"Choose supported supine mobility and gentle core work with hands on stable surfaces."}
+  ],
+  "hearing_impairment": [
+    {"exerciseId":"control_balance","reason":"Exercises requiring fast verbal cues are harder to follow without reliable hearing.","alternative":"Use slow, predictable movement with visual demonstration and clear gestures."},
+    {"exerciseId":"teaser","reason":"Complex timing and balance in Teaser can be unsafe without visual or tactile cueing support.","alternative":"Use supported seated core lifts with bent knees and steady cues."}
+  ],
+  "epilepsy_seizure": [
+    {"exerciseId":"jackknife","reason":"Inversions and rapid spinal articulations may raise the risk of a seizure-related fall.","alternative":"Keep the spine low with supported bridge progressions and slow movement."},
+    {"exerciseId":"control_balance","reason":"Unstable balance work can be dangerous if a seizure occurs during the exercise.","alternative":"Use stable floor-based core work and avoid unsupported balancing positions."}
+  ],
+  "severe_allergy": [
+    {"exerciseId":"footwork","reason":"Reformer straps and props can contain latex or allergens that trigger a severe reaction.","alternative":"Use mat-based lower-body work with hypoallergenic props and clean equipment."}
+  ],
+  "chronic_pain_syndrome": [
+    {"exerciseId":"the_hundred","reason":"Sustained core pumping can be too intense for widespread pain sensitivity and fatigue.","alternative":"Practice shorter sets with the head supported and gentle breath timing."},
+    {"exerciseId":"teaser","reason":"High core demand and balance requirements may flare pain in multiple regions.","alternative":"Use modified seated core work with support and low lift."}
+  ],
+  "skin_condition": [
+    {"exerciseId":"swan_dive","reason":"Prone extensions press the torso and can irritate inflamed or sensitive skin on the chest and abdomen.","alternative":"Choose supported prone lifts with forearms on the mat or seated back extension work."},
+    {"exerciseId":"shoulder_bridge","reason":"Shoulder pressure from the mat or equipment can aggravate eczema, wounds, or psoriasis on the upper body.","alternative":"Use gentle pelvic tilts and supported glute bridge variants with padding."}
+  ],
+  "transplant_immunosuppression": [
+    {"exerciseId":"short_spine_massage","reason":"Aggressive spinal articulation and inversion can be too stressful while immune function and recovery remain delicate.","alternative":"Use gentle supine pelvic tilts and supported spine mobilization without inversion."}
+  ],
+  "recent_hospitalization": [
+    {"exerciseId":"jackknife","reason":"Inversion and rapid spinal movement are often too intense for someone recovering from recent hospitalization or bed rest.","alternative":"Choose supported bridge progressions and slow, controlled hip lifts."},
+    {"exerciseId":"control_balance","reason":"Unsupported balance challenges increase fall risk for clients who are deconditioned after hospitalization.","alternative":"Use grounded core strength work with both feet on the mat."}
+  ],
+  "pacemaker_implant": [
+    {"exerciseId":"swan_dive","reason":"Prone back extension can compress the chest and upper body near the pacemaker site.","alternative":"Choose gentle supported chest lifts with the forearms on the mat."},
+    {"exerciseId":"push_through","reason":"Heavy shoulder and chest loading may place uncomfortable pressure near a cardiac implant.","alternative":"Use lighter support and lower-range back extension movements."}
+  ],
+  "substance_use_recovery": [
+    {"exerciseId":"control_balance","reason":"Unstable balance work can be unsafe if coordination or concentration is impaired in recovery.","alternative":"Use stable, grounded Pilates exercises with clear, simple cues."},
+    {"exerciseId":"roll_over","reason":"Inversion and rapid position changes may be risky if attention and body awareness are variable.","alternative":"Choose gentle supine mobility and supported core work instead."}
+  ],
+  "respiratory_pulmonary": [
+    {"exerciseId":"jackknife","reason":"Inversion and deep chest compression can worsen breathing difficulty during pulmonary flare-ups.","alternative":"Use supported bridge progressions or chest-open gentle seated mobility."},
+    {"exerciseId":"roll_over","reason":"Legs overhead and spinal flexion may restrict the rib cage and trigger breathlessness.","alternative":"Choose supine core work with the head and chest supported."},
+    {"exerciseId":"short_spine_massage","reason":"Inversion and spinal compression can make breathing uncomfortable for someone with pulmonary limits.","alternative":"Use gentle pelvic tilts and low-lying spine articulation without inversion."},
+    {"exerciseId":"the_hundred","reason":"High-intensity breath coordination can be too demanding for compromised lung function.","alternative":"Practice slower breath-based abdominal work with frequent rest."}
+  ],
+  "cardiovascular_disease": [
+    {"exerciseId":"jackknife","reason":"Inversion and high exertion can spike blood pressure and strain the heart.","alternative":"Use low-lying core work and stable bridge progressions."},
+    {"exerciseId":"roll_over","reason":"Rapid transitions and legs-overhead positioning can be stressful for a weakened cardiovascular system.","alternative":"Choose gentle supine mobility and slow spinal articulation."},
+    {"exerciseId":"push_through","reason":"Heavy upper-body loading may overtax heart rate response and blood pressure control.","alternative":"Use lighter shoulder support and avoid maximal resistance."},
+    {"exerciseId":"running_reformer","reason":"Sustained leg pushing may create excessive cardiovascular demand for someone with heart disease.","alternative":"Favor slower, low-resistance leg work and monitor exertion closely."}
+  ],
+  "arrhythmia_cardiac_device": [
+    {"exerciseId":"push_through","reason":"Deep chest compression and upper-body loading may irritate the device site or disrupt rhythm control.","alternative":"Choose gentle supported back extension with minimal resistance."},
+    {"exerciseId":"swan_dive","reason":"Prone extension and chest pressure can be uncomfortable with an implanted cardiac device.","alternative":"Use gentle chest lifts with forearms on the mat."},
+    {"exerciseId":"jackknife","reason":"Rapid inversion and sudden effort changes may trigger an irregular heart rhythm.","alternative":"Stay low to the mat and use controlled bridge progressions."},
+    {"exerciseId":"control_balance","reason":"Unstable balance work can be unsafe if an arrhythmia affects coordination or awareness.","alternative":"Use grounded core stability exercises with both feet on the mat."}
+  ],
+  "metabolic_endocrine": [
+    {"exerciseId":"the_hundred","reason":"Fast breath pumping and sustained core intensity can destabilize blood sugar and energy levels.","alternative":"Use shorter sets with gentle breathing and frequent rest."},
+    {"exerciseId":"running_reformer","reason":"Sustained leg pushing may create rapid metabolic demand and energy swings.","alternative":"Choose slower, lower-resistance leg work with careful pacing."},
+    {"exerciseId":"boomerang","reason":"Dynamic full-body sequencing can be too intense when metabolic or hormonal balance is unstable.","alternative":"Focus on slower, supported core and spinal articulation work."},
+    {"exerciseId":"teaser","reason":"High core intensity and balance demand may overtax glucose or hormone-regulated energy systems.","alternative":"Use supported seated core lifts with bent knees and a neutral spine."}
+  ],
+  "autoimmune_inflammatory": [
+    {"exerciseId":"swan_dive","reason":"Deep back extension and prolonged upper-body loading can worsen joint or tissue inflammation.","alternative":"Use gentle supported prone lifts with small range."},
+    {"exerciseId":"shoulder_bridge","reason":"Loaded hip lift and shoulder compression may be painful or inflammatory during a flare.","alternative":"Choose pelvic tilts with a neutral spine and plenty of rest between reps."},
+    {"exerciseId":"short_spine_massage","reason":"Inversion and spinal compression may aggravate systemic inflammatory symptoms.","alternative":"Use supine pelvic tilts and gentle spine mobilization without inversion."},
+    {"exerciseId":"one_leg_circle","reason":"Large hip motion and rotational loading can feel too intense during autoimmune inflammation.","alternative":"Use smaller leg circles and support the pelvis with the hands."}
+  ],
+  "immune_infectious": [
+    {"exerciseId":"the_hundred","reason":"Breath-focused core intensity can be too taxing during active infection or immune compromise.","alternative":"Practice gentle breath work and rest when symptoms are present."},
+    {"exerciseId":"jackknife","reason":"Inversion and higher exertion may worsen fatigue and systemic illness symptoms.","alternative":"Use supported bridge progressions and reduce intensity."},
+    {"exerciseId":"running_reformer","reason":"Sustained resistance work can be overly demanding while recovering from infection.","alternative":"Choose low-resistance, low-impact leg work with extra rest breaks."},
+    {"exerciseId":"push_through","reason":"Heavy upper-body effort may be unsafe during acute illness or reduced immunity.","alternative":"Use gentle supported back extension and stop if symptoms worsen."}
+  ],
+  "oncology_treatment": [
+    {"exerciseId":"roll_over","reason":"Inversion and spinal compression can be poorly tolerated during active cancer treatment.","alternative":"Choose gentle supine core work with the head and chest supported."},
+    {"exerciseId":"jackknife","reason":"High exertion and inversion may increase fatigue, bruising, or cardiovascular stress.","alternative":"Use low-lying bridge progressions with controlled breathing."},
+    {"exerciseId":"swan_dive","reason":"Prone chest compression and back extension may be too aggressive during treatment-related fatigue.","alternative":"Use supported prone lifts with forearms on the mat."},
+    {"exerciseId":"short_spine_massage","reason":"Inversion and deep spine articulation can be risky when blood counts or tissue tolerance are low.","alternative":"Use gentle supine pelvic tilts and low-lying mobility instead."}
+  ],
+  "gastrointestinal_pelvic": [
+    {"exerciseId":"roll_up","reason":"Loaded abdominal flexion can increase intra-abdominal pressure and aggravate pelvic or GI symptoms.","alternative":"Use pelvic tilts and gentle core reconnection with a neutral spine."},
+    {"exerciseId":"the_hundred","reason":"Strong abdominal pumping and breath coordination may worsen pelvic floor or digestive discomfort.","alternative":"Practice slower core work with less abdominal compression."},
+    {"exerciseId":"double_leg_stretch","reason":"Combined lower ab extension and arm reach may place excessive strain on the pelvic floor and abdomen.","alternative":"Use heel slides and single-leg supports with minimal pressure."},
+    {"exerciseId":"teaser","reason":"High core lift and balance demand can increase pelvic pressure and abdominal discomfort.","alternative":"Use supported seated core work with bent knees and a gentle lift."}
+  ],
+  "neurological_disorder": [
+    {"exerciseId":"control_balance","reason":"Unstable balance work may increase fall risk if coordination or sensation is affected.","alternative":"Use grounded core stability exercises with a wide base of support."},
+    {"exerciseId":"roll_over","reason":"Inversion and fast position changes can be challenging for clients with neurological coordination issues.","alternative":"Choose slow, supported spinal mobility and avoid overhead leg positions."},
+    {"exerciseId":"one_leg_circle","reason":"Large leg circles require control and proprioception that may be impaired in neurological conditions.","alternative":"Use smaller supported leg circles or single-leg lifts with the pelvis stabilized."},
+    {"exerciseId":"teaser","reason":"High balance and coordination demand can be unsafe if motor control is inconsistent.","alternative":"Use supported seated core lifts with bent knees and a stable base."}
+  ],
+  "mental_cognitive": [
+    {"exerciseId":"control_balance","reason":"Complex balance poses can be unsafe if concentration, memory, or processing speed are affected.","alternative":"Use simple, grounded exercises with clear, predictable cues."},
+    {"exerciseId":"boomerang","reason":"Dynamic sequencing and quick transitions may overwhelm someone with cognitive or mental-health concerns.","alternative":"Choose slower, more linear exercises with one movement at a time."},
+    {"exerciseId":"criss_cross","reason":"Fast rotation and coordination can be difficult to follow safely with cognitive or emotional symptoms.","alternative":"Use gentle seated or supine rotation with clear, paced instruction."},
+    {"exerciseId":"teaser","reason":"High complexity and balance demand may be too much when mental focus or stress tolerance are low.","alternative":"Use supported seated core work with simple, steady movement."}
+  ],
+  "other": [
+    {"exerciseId":"control_balance","reason":"This condition is not specifically listed; choose gentle, supported work and consult a qualified clinician before attempting high-risk movement.","alternative":"Use grounded Pilates with a stable base, low load, and clear instruction."}
+  ],
+  "perimenopause_menopause": [
+    {"exerciseId":"roll_over","reason":"Inversion may trigger vasomotor symptoms and elevate blood pressure during hormonal changes.","alternative":"Choose gentle supine core work with the head and chest supported."},
+    {"exerciseId":"jackknife","reason":"High-effort inversion is unsuitable during hormonal cardiovascular changes and potential bone density reduction.","alternative":"Use supported bridge progressions and gentle hip lifts with a neutral spine."},
+    {"exerciseId":"the_hundred","reason":"Sustained high-intensity breath work may be uncomfortable during hot flashes or cardiovascular sensitivity.","alternative":"Practice slower, breath-led abdominal work with shorter sets and open chest posture."},
+    {"exerciseId":"control_balance","reason":"Balance inversion can challenge blood pressure stability and coordination changes associated with perimenopause.","alternative":"Use grounded stability exercises with both feet on the mat and small range movements."}
+  ],
+  "stroke_recovery": [
+    {"exerciseId":"roll_up","reason":"Loaded spinal flexion with bilateral pulling is unsafe with hemiplegia or asymmetric weakness.","alternative":"Focus on gentle breathing, supported pelvic tilts, and unilateral leg slides."},
+    {"exerciseId":"teaser","reason":"High-demand balance and bilateral coordination are unsafe in early stroke recovery.","alternative":"Use supported seated core work with bent knees and grounded feet."},
+    {"exerciseId":"control_balance","reason":"Full balance inversion requires bilateral coordination that is typically unavailable after stroke.","alternative":"Choose grounded core stability exercises with a wide base of support."},
+    {"exerciseId":"spine_twist","reason":"Rotation under load can stress recovering motor pathways and challenge spastic or weak musculature.","alternative":"Use gentle seated rotation with supported arms and slow, controlled movement."},
+    {"exerciseId":"leg_pull_front","reason":"Plank demands bilateral shoulder and leg stability that is usually unavailable after stroke.","alternative":"Work in a supported side-lying or seated position with one limb at a time."}
+  ],
+  "long_covid": [
+    {"exerciseId":"the_hundred","reason":"Sustained aerobic effort can trigger post-exertional malaise in long COVID clients.","alternative":"Use shorter, gentler breath-based core work with frequent rest breaks."},
+    {"exerciseId":"teaser","reason":"Peak exertion exercise is dangerous with post-viral fatigue and energy envelope constraints.","alternative":"Use supported seated core activation with minimal load and slow pacing."},
+    {"exerciseId":"jackknife","reason":"High-intensity inversion is unsafe during energy-limited post-viral recovery.","alternative":"Choose gentle supine bridging with slow transitions and rest between repetitions."},
+    {"exerciseId":"swan_dive","reason":"Dynamic high-effort prone exercise can trigger post-exertional symptom relapse.","alternative":"Use a gentle prone forearm lift or sphinx position with minimal effort."},
+    {"exerciseId":"swimming","reason":"Sustained prone arm and leg lifting may exhaust a long COVID client well within normal limits.","alternative":"Choose single-limb lifts with full rest between repetitions and stop at first sign of fatigue."}
+  ],
+  "hip_labral_tear": [
+    {"exerciseId":"one_leg_circle","reason":"Large hip circles place shear stress on the labrum and may worsen tearing.","alternative":"Use very small, supported leg circles and keep the pelvis completely stable."},
+    {"exerciseId":"open_leg_rocker","reason":"Wide hip opening and balance can impinge an already torn labrum.","alternative":"Use gentle seated adductor work with legs closer together."},
+    {"exerciseId":"hip_circles","reason":"Rotational hip loading stresses the labral tissue and risks further tearing.","alternative":"Use smaller hip movements with strict stability and avoid end-range rotation."},
+    {"exerciseId":"front_splits","reason":"Extreme hip range in flexion and extension compresses and shears the labrum.","alternative":"Use gentle hip hinge work and avoid end-range hip positions."},
+    {"exerciseId":"scissors","reason":"Rapid alternating hip flexion can irritate the labral tear and increase pain.","alternative":"Use slow, controlled leg lowering with a small range and neutral pelvis."}
+  ],
+  "wrist_conditions": [
+    {"exerciseId":"leg_pull_front","reason":"Full body weight is loaded through the wrists in the plank position.","alternative":"Use forearm plank or modify to a seated leg lift to offload the wrist."},
+    {"exerciseId":"push_up","reason":"Loaded wrist extension directly aggravates fractures, sprains, and tendinopathies.","alternative":"Use wall push-ups or forearm-supported positions to remove wrist load."},
+    {"exerciseId":"swan","reason":"Prone push-up positioning places significant body weight through the wrists.","alternative":"Use a sphinx or forearm-supported prone position to avoid wrist loading."},
+    {"exerciseId":"side_bend","reason":"Side plank weight-bearing loads the wrist into extension and lateral compression.","alternative":"Use a forearm side plank or roll the wrist off the mat with a fist position."},
+    {"exerciseId":"plank","reason":"Sustained wrist extension under body weight can worsen any wrist injury or condition.","alternative":"Use a forearm plank as a direct substitute to achieve core work without wrist load."}
+  ],
+  "lymphedema": [
+    {"exerciseId":"swan_dive","reason":"Dynamic overhead arm movement can increase lymphatic pressure and worsen swelling in the affected limb.","alternative":"Use a gentle prone forearm lift with arms supported and avoid overhead reach."},
+    {"exerciseId":"arm_springs","reason":"Repeated resisted arm loading can exacerbate lymphedema and impair lymphatic drainage.","alternative":"Use gentle, rhythmic arm movements below shoulder height with no resistance."},
+    {"exerciseId":"rowing_series","reason":"Pulling resistance with the arms may worsen lymphatic flow and increase swelling.","alternative":"Use gentle supported arm mobility without resistance and keep the limb slightly elevated."},
+    {"exerciseId":"push_through","reason":"Overhead pushing against resistance stresses the affected lymph nodes and vessels.","alternative":"Use a gentle reach with no resistance and keep the arm below the shoulder when possible."},
+    {"exerciseId":"magic_circle_press","reason":"Arm squeezing or overhead pressing can increase venous and lymphatic pressure in affected limbs.","alternative":"Focus on gentle, rhythmic lower-body or core work while resting the affected arm."}
+  ]
+}

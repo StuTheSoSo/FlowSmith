@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Templates</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Templates</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <section class="templates-hero">
+    <p class="eyebrow">SafePilates programs</p>
+    <h1>Start from a template</h1>
+    <p>Use a SafePilates program as a timed FlowSmith class plan. Each exercise starts at 5 minutes until you customize durations.</p>
+  </section>
+
+  <ion-note color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-note>
+
+  <section class="template-grid" aria-label="Class templates">
+    <article
+      class="template-card"
+      role="button"
+      tabindex="0"
+      [class.is-expanded]="isExpanded(template)"
+      [attr.aria-expanded]="isExpanded(template)"
+      *ngFor="let template of templates; trackBy: trackProgram"
+      (click)="toggleTemplate(template)"
+      (keydown.enter)="toggleTemplate(template)"
+      (keydown.space)="toggleTemplate(template); $event.preventDefault()"
+    >
+      <div>
+        <p class="eyebrow">{{ template.level || 'All levels' }}</p>
+        <h2>{{ template.name }}</h2>
+        <p>{{ template.goal || template.description || 'SafePilates template flow' }}</p>
+      </div>
+
+      <div class="template-meta">
+        <ion-chip>{{ template.exerciseIds.length }} exercises</ion-chip>
+        <ion-chip>{{ getTemplateDurationMinutes(template) }} min</ion-chip>
+        <ion-chip *ngIf="template.accessLevel">{{ template.accessLevel }}</ion-chip>
+      </div>
+
+      <div class="focus-list" *ngIf="template.focusAreas?.length">
+        <span *ngFor="let focus of template.focusAreas?.slice(0, 3)">{{ focus }}</span>
+      </div>
+
+      <section class="template-preview" *ngIf="isExpanded(template)" aria-label="Template exercises">
+        <header>
+          <strong>Exercise order</strong>
+          <span>5 min each</span>
+        </header>
+
+        <ol>
+          <li *ngFor="let exerciseId of template.exerciseIds; let index = index">
+            <span>{{ index + 1 }}</span>
+            <strong>{{ getExerciseName(exerciseId) }}</strong>
+          </li>
+        </ol>
+      </section>
+
+      <ion-button expand="block" (click)="startTemplate(template); $event.stopPropagation()">
+        <ion-icon name="play-outline" slot="start" aria-hidden="true"></ion-icon>
+        Start template
+      </ion-button>
+    </article>
+  </section>
+</ion-content>

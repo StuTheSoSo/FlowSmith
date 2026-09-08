@@ -1,0 +1,714 @@
+[
+  {
+    "id": "ankylosing_spondylitis_flow",
+    "name": "Fluxo de espondilite anquilosante",
+    "description": "Um programa suave de extensão e mobilidade das costelas para neutralizar os padrões de rigidez da coluna, com abertura do quadril e expansão torácica.",
+    "level": "Beginner",
+    "accessLevel": "Free",
+    "goal": "Manter a extensão da coluna e a mobilidade do tórax.",
+    "focusAreas": [
+      "Extensão espinhal",
+      "Mobilidade das costelas",
+      "Flexibilidade do quadril"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "swan_prep",
+      "breaststroke",
+      "mermaid",
+      "shoulder_bridge",
+      "spine_stretch_forward",
+      "side_kick",
+      "cat_stretch_cadillac"
+    ]
+  },
+  {
+    "id": "arthritis_gentle_flow",
+    "name": "Artrite-fluxo suave",
+    "description": "Uma sessão de movimento quente e fluido que reduz a rigidez articular, cria uma circulação sinovial suave e mantém uma amplitude de movimento confortável.",
+    "level": "Beginner",
+    "accessLevel": "Free",
+    "goal": "Alivia a rigidez das articulações e mantém uma amplitude de movimento confortável.",
+    "focusAreas": [
+      "Mobilidade articular",
+      "Calor suave",
+      "Movimento fluido"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "rolling_like_a_ball",
+      "one_leg_circle",
+      "side_kick",
+      "pelvic_curl",
+      "seal",
+      "seated_side_bend"
+    ]
+  },
+  {
+    "id": "back_friendly_recovery",
+    "name": "Recuperação amigável",
+    "description": "Uma sessão de baixo impacto projetada para apoiar a região lombar com força neutra da coluna, articulação suave e controle pélvico.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "Melhore a estabilidade das costas e reduza o estresse compressivo.",
+    "focusAreas": [
+      "Lombar",
+      "Coluna neutra",
+      "Estabilidade central"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "rolling_like_a_ball",
+      "spine_stretch_forward",
+      "side_kick_series"
+    ]
+  },
+  {
+    "id": "balance_vestibular",
+    "name": "Equilíbrio e estabilidade vestibular",
+    "description": "Um programa terrestre de propriocepção e adaptação vestibular para tonturas, vertigens e risco de queda – minimizando mudanças repentinas na posição da cabeça e priorizando a estabilidade.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Melhore o equilíbrio, a propriocepção e a prevenção de quedas.",
+    "focusAreas": [
+      "Estabilidade aterrada",
+      "Propriocepção",
+      "Prevenção de quedas"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "rolling_like_a_ball",
+      "shoulder_bridge",
+      "side_kick",
+      "one_leg_circle",
+      "pilates_ring_squeeze",
+      "footwork",
+      "single_leg_stretch"
+    ]
+  },
+  {
+    "id": "beginner_mat_foundation",
+    "name": "Fundação de tapete para iniciantes",
+    "description": "Uma sessão introdutória suave de Pilates focada no suporte central, articulação da coluna vertebral e coordenação respiratória.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Construa confiança estável no núcleo e no movimento do tapete.",
+    "focusAreas": [
+      "Núcleo",
+      "Articulação espinhal",
+      "Respiração"
+    ],
+    "exerciseIds": [
+      "the_hundred",
+      "roll_up",
+      "spine_stretch_forward",
+      "pelvic_curl",
+      "shoulder_bridge"
+    ]
+  },
+  {
+    "id": "cardiac_safe_flow",
+    "name": "Fluxo seguro para o coração",
+    "description": "Uma sessão de intensidade moderada e regulada pela respiração para usuários de hipertensão, doenças cardiovasculares e dispositivos cardíacos – evitando Valsalva e esforços extremos.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Apoie a saúde cardiovascular com movimentos seguros e guiados pela respiração.",
+    "focusAreas": [
+      "Regulação da respiração",
+      "Intensidade moderada",
+      "Segurança cardiovascular"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "pelvic_curl",
+      "rolling_like_a_ball",
+      "side_kick",
+      "shoulder_bridge",
+      "spine_stretch_forward",
+      "seal"
+    ]
+  },
+  {
+    "id": "cervical_neck_care",
+    "name": "Cuidados Cervicais e Pescoço",
+    "description": "Uma sequência de descompressão cervical com estabilidade escapular e abertura torácica para aliviar a carga no pescoço e melhorar o alinhamento da parte superior do corpo.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Reduza a compressão cervical e melhore a postura do pescoço.",
+    "focusAreas": [
+      "Descompressão cervical",
+      "Estabilidade escapular",
+      "Mobilidade torácica"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "seated_side_bend",
+      "arm_springs",
+      "band_arm_series",
+      "pilates_ring_squeeze",
+      "swan_prep",
+      "hanging_cadillac"
+    ]
+  },
+  {
+    "id": "chronic_pain_fibromyalgia",
+    "name": "Dor Crônica e Fibromialgia",
+    "description": "Um programa de movimento gradual e com ritmo de dor para fibromialgia e síndrome de dor crônica — usando princípios de sensibilização central para desenvolver tolerância ao movimento suavemente.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Desenvolva uma tolerância suave ao movimento com princípios de estimulação da dor.",
+    "focusAreas": [
+      "Movimento com ritmo de dor",
+      "Sensibilização central",
+      "Carga progressiva suave"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "rolling_like_a_ball",
+      "pelvic_curl",
+      "seal",
+      "mermaid",
+      "spine_stretch_forward",
+      "side_kick"
+    ]
+  },
+  {
+    "id": "disc_sciatica_relief",
+    "name": "Alívio de disco e ciática",
+    "description": "Uma sessão de coluna neutra que combina descompressão lombar, mobilidade neural suave e carga central graduada para dores de disco e ciática.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Reduza a compressão do disco e a tensão do nervo ciático.",
+    "focusAreas": [
+      "Descompressão lombar",
+      "Mobilidade neural",
+      "Coluna neutra"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "knee_stretch",
+      "spine_stretch_forward",
+      "shoulder_bridge",
+      "one_leg_circle",
+      "swan_prep",
+      "single_leg_stretch",
+      "spine_mobilization"
+    ]
+  },
+  {
+    "id": "epilepsy_ground_safe",
+    "name": "Epilepsia Fluxo Seguro no Solo",
+    "description": "Um programa de solo para epilepsia e distúrbios convulsivos – mantendo-se abaixado, evitando inversões e prendendo a respiração, com um ritmo calmo o tempo todo.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Exercite-se com segurança com epilepsia usando uma sequência baseada no solo e sem inversão.",
+    "focusAreas": [
+      "Segurança terrestre",
+      "Sem inversões",
+      "Ritmo calmo"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "rolling_like_a_ball",
+      "single_leg_stretch",
+      "spine_stretch_forward",
+      "side_kick",
+      "spine_mobilization"
+    ]
+  },
+  {
+    "id": "foot_ankle_rehab",
+    "name": "Reabilitação de Pé e Tornozelo",
+    "description": "Uma sequência intrínseca de fortalecimento do pé e tornozelo que aborda a carga plantar, a resiliência do Aquiles e o alinhamento do pé para condições comuns dos membros inferiores.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Fortalecer os intrínsecos do pé e restaurar a estabilidade do tornozelo.",
+    "focusAreas": [
+      "Força do pé",
+      "Estabilidade do tornozelo",
+      "Carregamento de Aquiles"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "achilles_stretch_chair",
+      "running_reformer",
+      "pilates_ring_squeeze",
+      "foam_roller_series",
+      "side_kick",
+      "single_leg_stretch"
+    ]
+  },
+  {
+    "id": "hip_lateral_recovery",
+    "name": "Recuperação de quadril e cadeia lateral",
+    "description": "Um programa de fortalecimento de glúteos e laterais do quadril que aborda piriforme, isquiotibiais, banda IT e dor trocantérica maior com trabalho direcionado de molas e solo.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "Fortaleça a cadeia lateral do quadril e alivie a dor no quadril e na coxa.",
+    "focusAreas": [
+      "Força lateral do quadril",
+      "Ativação de glúteos",
+      "Flexibilidade do quadril"
+    ],
+    "exerciseIds": [
+      "side_kick_series",
+      "one_leg_circle",
+      "leg_springs",
+      "pilates_ring_squeeze",
+      "shoulder_bridge",
+      "single_leg_stretch",
+      "foam_roller_series",
+      "side_kick_kneeling"
+    ]
+  },
+  {
+    "id": "hip_mobility_recovery",
+    "name": "Mobilidade e recuperação do quadril",
+    "description": "Um programa de mobilidade do quadril que respeita amplitudes livres de impacto, cria estabilidade lateral do quadril e restaura padrões de movimento funcional.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Restaure a mobilidade do quadril e fortaleça os estabilizadores laterais.",
+    "focusAreas": [
+      "Mobilidade do quadril",
+      "Estabilizadores laterais",
+      "Alcance seguro"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "one_leg_circle",
+      "side_kick_series",
+      "leg_springs",
+      "knee_stretch",
+      "footwork",
+      "single_leg_stretch",
+      "hip_circles"
+    ]
+  },
+  {
+    "id": "hypermobility_control",
+    "name": "Controle de hipermobilidade",
+    "description": "Um programa de estabilização articular que desenvolve o controle neuromuscular e a consciência da amplitude final, substituindo a flexibilidade passiva pela força ativa.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "Desenvolva estabilidade articular ativa e controle neuromuscular.",
+    "focusAreas": [
+      "Estabilização articular",
+      "Controle neuromuscular",
+      "Carregamento controlado"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "plank",
+      "pilates_ring_squeeze",
+      "footwork",
+      "single_leg_stretch",
+      "band_arm_series",
+      "coordination"
+    ]
+  },
+  {
+    "id": "joint_replacement_recovery",
+    "name": "Recuperação de substituição articular",
+    "description": "Um programa de restauração da mobilidade pós-cirúrgica que utiliza trabalho suave de amplitude de movimento, carga sem impacto e confiança de movimento progressivo.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Restaure a mobilidade e a confiança após substituição articular ou cirurgia.",
+    "focusAreas": [
+      "Mobilidade pós-cirúrgica",
+      "Gama suave",
+      "Reabilitação sem impacto"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "pelvic_curl",
+      "shoulder_bridge",
+      "leg_springs",
+      "footwork",
+      "rolling_like_a_ball",
+      "side_kick"
+    ]
+  },
+  {
+    "id": "knee_rehab",
+    "name": "Reabilitação do Joelho",
+    "description": "Uma sequência de VMO e ativação quádrupla usando trabalho de pernas sem suporte de peso e resistência de mola para apoiar a recuperação do joelho e prevenir novas lesões.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Restaure a estabilidade do joelho e o controle do quadríceps após lesão ou cirurgia.",
+    "focusAreas": [
+      "Ativação quádrupla",
+      "Estabilidade do joelho",
+      "Perna sem suporte de peso"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "leg_springs",
+      "pilates_ring_squeeze",
+      "single_leg_stretch",
+      "side_kick",
+      "shoulder_bridge",
+      "pelvic_curl",
+      "coordination"
+    ]
+  },
+  {
+    "id": "metabolic_whole_body",
+    "name": "Fluxo metabólico de corpo inteiro",
+    "description": "Uma sequência progressiva de ativação de todo o corpo para diabetes, condições metabólicas e controle de peso – priorizando circulação, força funcional e gasto energético.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "Ative o metabolismo e desenvolva força funcional em todo o corpo.",
+    "focusAreas": [
+      "Circulação",
+      "Força funcional",
+      "Ativação metabólica"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "the_hundred",
+      "single_leg_stretch",
+      "shoulder_bridge",
+      "side_kick",
+      "swan_prep",
+      "pilates_ring_squeeze",
+      "coordination"
+    ]
+  },
+  {
+    "id": "mind_body_calm",
+    "name": "Calma mente-corpo",
+    "description": "Um fluxo somático conduzido pela respiração para ansiedade, problemas de saúde mental e recuperação – usando ritmo, ancoragem e consciência interoceptiva para acalmar o sistema nervoso.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Acalme o sistema nervoso por meio de movimentos somáticos inspirados na respiração.",
+    "focusAreas": [
+      "Consciência da respiração",
+      "Calma somática",
+      "Conexão mente-corpo"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "rolling_like_a_ball",
+      "seal",
+      "spine_stretch_forward",
+      "mermaid",
+      "pelvic_curl",
+      "one_leg_circle"
+    ]
+  },
+  {
+    "id": "neurological_movement",
+    "name": "Fluxo de Movimento Neurológico",
+    "description": "Um programa focado em coordenação e propriocepção para esclerose múltipla, Parkinson e condições neurológicas — usando sequências rítmicas e previsíveis para apoiar o controle motor.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Melhorar a coordenação motora e o ritmo neuromuscular.",
+    "focusAreas": [
+      "Coordenação",
+      "Propriocepção",
+      "Movimento rítmico"
+    ],
+    "exerciseIds": [
+      "rolling_like_a_ball",
+      "pelvic_curl",
+      "shoulder_bridge",
+      "side_kick",
+      "spine_stretch_forward",
+      "pilates_ring_squeeze",
+      "shoulder_rolls",
+      "single_leg_stretch"
+    ]
+  },
+  {
+    "id": "osteoporosis_safe_flow",
+    "name": "Fluxo seguro para osteoporose",
+    "description": "Uma sequência focada na extensão que evita flexão e rotação da coluna vertebral sob carga, construindo força axial e postura com carga favorável aos ossos.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Fortaleça a postura e apoie a densidade óssea com segurança.",
+    "focusAreas": [
+      "Extensão espinhal",
+      "Carregamento ósseo",
+      "Postura"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "swan_prep",
+      "swimming",
+      "shoulder_bridge",
+      "side_kick",
+      "footwork",
+      "band_arm_series",
+      "leg_springs"
+    ]
+  },
+  {
+    "id": "pelvic_floor_foundations",
+    "name": "Fundações do assoalho pélvico",
+    "description": "Um programa de gerenciamento de pressão para disfunção do assoalho pélvico, diástase retal, hérnia e incontinência – construindo reconexão central profunda sem carga intra-abdominal excessiva.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Reconecte o núcleo profundo e o assoalho pélvico com gerenciamento de carga.",
+    "focusAreas": [
+      "Assoalho pélvico",
+      "Núcleo profundo",
+      "Gerenciamento de pressão"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "single_leg_stretch",
+      "pilates_ring_squeeze",
+      "seal",
+      "spine_stretch_forward",
+      "rolling_like_a_ball"
+    ]
+  },
+  {
+    "id": "postpartum_recovery_flow",
+    "name": "Fluxo de recuperação pós-parto",
+    "description": "Uma sequência suave de Pilates projetada para apoiar a reconstrução do núcleo pós-parto, a consciência do assoalho pélvico e o retorno abdominal gradual.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Reconstrua o suporte central e a estabilidade pélvica após a gravidez.",
+    "focusAreas": [
+      "Pós-parto",
+      "Assoalho pélvico",
+      "Reconstrução central"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "mermaid",
+      "single_leg_stretch",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "prenatal_mobility_flow",
+    "name": "Fluxo de mobilidade pré-natal",
+    "description": "Um fluxo de Pilates seguro para a gravidez que apoia as mudanças do corpo com mobilidade suave da coluna e abertura lateral.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Mantenha a mobilidade e o suporte central durante a gravidez.",
+    "focusAreas": [
+      "Pré-natal",
+      "Mobilidade",
+      "Estabilidade pélvica"
+    ],
+    "exerciseIds": [
+      "mermaid",
+      "shoulder_bridge",
+      "pelvic_curl",
+      "leg_pull_back",
+      "spine_stretch_forward"
+    ]
+  },
+  {
+    "id": "reformer_strength_flow",
+    "name": "Fluxo de força do reformador",
+    "description": "Uma rotina baseada em aparelhos que desenvolve o controle da parte inferior do corpo, a coordenação do transporte e o suporte da coluna vertebral.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "Desenvolva a força e o controle do Reformer.",
+    "focusAreas": [
+      "Reformador",
+      "Força das pernas",
+      "Suporte espinhal"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "elephant",
+      "long_box_series",
+      "short_spine_massage"
+    ]
+  },
+  {
+    "id": "respiratory_breath_flow",
+    "name": "Fluxo respiratório e respiratório",
+    "description": "Um programa de respiração diafragmática e expansão da caixa torácica para melhorar a mobilidade torácica e a mecânica respiratória em condições respiratórias e pulmonares.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Expanda a capacidade respiratória e a mobilidade torácica.",
+    "focusAreas": [
+      "Respiração diafragmática",
+      "Expansão de costela",
+      "Abertura postural"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "seated_side_bend",
+      "shoulder_rolls",
+      "mermaid",
+      "spine_stretch_forward",
+      "swan_prep",
+      "band_arm_series",
+      "the_hundred"
+    ]
+  },
+  {
+    "id": "rotator_cuff_shoulder",
+    "name": "Manguito Rotador e Reabilitação de Ombro",
+    "description": "Uma sequência de reabilitação do primeiro ombro escapular visando a ativação do manguito rotador, amplitude de movimento pendular e carga progressiva para ombro congelado, impacto e entorse AC.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Restaure a força do manguito rotador e a amplitude dos ombros sem dor.",
+    "focusAreas": [
+      "Manguito rotador",
+      "Estabilidade escapular",
+      "Faixa de ombro"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "arm_springs",
+      "band_arm_series",
+      "pilates_ring_squeeze",
+      "breaststroke",
+      "swan_prep",
+      "pulling_straps",
+      "spine_mobilization"
+    ]
+  },
+  {
+    "id": "restorative_immune",
+    "name": "Suporte imunológico restaurador",
+    "description": "Um programa suave e de conservação de energia para fadiga crônica, doenças autoimunes, tratamento oncológico e imunossupressão — respeitando os limites de capacidade com movimentos restauradores.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Apoie a recuperação e a energia com movimentos restauradores suaves.",
+    "focusAreas": [
+      "Movimento restaurativo",
+      "Conservação de energia",
+      "Suporte imunológico"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "rolling_like_a_ball",
+      "pelvic_curl",
+      "spine_stretch_forward",
+      "seal",
+      "mermaid"
+    ]
+  },
+  {
+    "id": "sacroiliac_stability",
+    "name": "Estabilidade Sacroilíaca",
+    "description": "Um programa de estabilidade pélvica visando carga simétrica no quadril, controle de compressão SIJ e recrutamento muscular lombopélvico profundo.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Estabilize a articulação sacroilíaca e a cintura pélvica.",
+    "focusAreas": [
+      "Estabilidade pélvica",
+      "Alinhamento do quadril",
+      "Controle central"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "single_leg_stretch",
+      "pilates_ring_squeeze",
+      "footwork",
+      "knee_stretch",
+      "rolling_like_a_ball"
+    ]
+  },
+  {
+    "id": "scoliosis_balance",
+    "name": "Fluxo de equilíbrio da escoliose",
+    "description": "Uma sessão equilibrada lateralmente usando dicas derotacionais, respiração lateral e movimento focado na simetria para apoiar a coluna escoliótica.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "Equilibre a assimetria lateral e melhore a consciência da coluna vertebral.",
+    "focusAreas": [
+      "Equilíbrio espinhal",
+      "Respiração lateral",
+      "Derotação"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "mermaid",
+      "spine_twist",
+      "shoulder_bridge",
+      "side_kick_series",
+      "seated_side_bend",
+      "foam_roller_series",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "sensory_adapted_flow",
+    "name": "Fluxo Sensorial Adaptado",
+    "description": "Uma sequência de Pilates previsível e rica em propriocepção, projetada para deficiência visual e auditiva — usando consistência espacial, dicas táteis e orientação segura.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Mova-se com segurança e confiança com deficiência sensorial.",
+    "focusAreas": [
+      "Segurança proprioceptiva",
+      "Sequência previsível",
+      "Adaptação sensorial"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "rolling_like_a_ball",
+      "single_leg_stretch",
+      "spine_stretch_forward",
+      "seal",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "shoulder_friendly_flow",
+    "name": "Fluxo Amigável aos Ombros",
+    "description": "Uma sessão focada no conforto dos ombros que enfatiza o suporte escapular, a força suave da parte superior do corpo e a amplitude de movimento segura.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Apoie a estabilidade dos ombros com movimentos seguros de Pilates.",
+    "focusAreas": [
+      "Ombro",
+      "Suporte escapular",
+      "Parte superior do corpo"
+    ],
+    "exerciseIds": [
+      "roll_down_bar",
+      "long_box_series",
+      "mermaid",
+      "breaststroke",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "upper_limb_nerve",
+    "name": "Alívio de membros superiores e nervos",
+    "description": "Um fluxo de abertura torácica e mobilização neural para condições de compressão do punho, cotovelo e nervos – mantendo a carga articular baixa e a amplitude de movimento ampla.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "Descomprima os nervos e restaure a mobilidade torácica e dos membros superiores.",
+    "focusAreas": [
+      "Abertura torácica",
+      "Mobilidade neural",
+      "Movimento seguro para o pulso"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "seated_side_bend",
+      "band_arm_series",
+      "swan_prep",
+      "mermaid",
+      "spine_twist",
+      "arm_springs"
+    ]
+  }
+]

@@ -1,0 +1,164 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>FlowSmith</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="sparkles-outline" slot="icon-only" aria-hidden="true"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">FlowSmith</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <section class="planner-hero">
+    <div>
+      <p class="eyebrow">Timeline planner</p>
+      <h1>{{ plan.name }}</h1>
+      <p>{{ plan.goal }}</p>
+    </div>
+
+    <div class="hero-stats" aria-label="Plan summary">
+      <span><strong>{{ planDurationMinutes }}</strong> min</span>
+      <span><strong>{{ plan.segments.length }}</strong> sections</span>
+      <span><strong>{{ savedPlansUsed }}/{{ freePlanLimit }}</strong> free plans</span>
+    </div>
+
+    <ion-button expand="block" class="start-class-button" (click)="startClass()">
+      <ion-icon name="play-outline" slot="start" aria-hidden="true"></ion-icon>
+      Start class
+    </ion-button>
+  </section>
+
+  <!-- <section class="control-strip">
+    <ion-searchbar
+      class="exercise-search"
+      placeholder="Search exercises, focus, equipment"
+      debounce="250"
+      [(ngModel)]="searchTerm"
+    ></ion-searchbar>
+  </section> -->
+
+  <ion-note color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-note>
+
+  <!-- <section class="client-card">
+    <div>
+      <span class="summary-label">Client safety layer</span>
+      <strong>{{ plan.clientName }}</strong>
+      <p>{{ conditionLabels || 'No conditions selected' }}</p>
+    </div>
+    <span class="premium-card-flag">Pro</span>
+  </section> -->
+
+  <ion-segment
+    [(ngModel)]="selectedSegmentId"
+    class="segment-picker"
+    (ionChange)="selectSegment($any($event).detail.value)"
+  >
+    <ion-segment-button *ngFor="let segment of plan.segments; trackBy: trackSegment" [value]="segment.id">
+      <ion-label>{{ segment.name }}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <main class="planner-grid">
+    <section class="timeline" aria-label="Class timeline">
+      <article
+        class="timeline-segment"
+        [id]="'segment-' + segment.id"
+        [class.is-active]="segment.id === selectedSegmentId"
+        *ngFor="let segment of plan.segments; trackBy: trackSegment"
+      >
+        <header>
+          <div>
+            <p class="eyebrow">{{ getSegmentDuration(segment) }} / {{ segment.durationTargetMinutes }} min</p>
+            <h2>{{ segment.name }}</h2>
+            <span>{{ segment.intent }}</span>
+          </div>
+        </header>
+
+        <div
+          class="flow-item"
+          [id]="'item-' + item.id"
+          [class.just-added]="item.id === highlightedItemId"
+          *ngFor="let item of segment.items; trackBy: trackItem"
+        >
+          <div class="time-pill">
+            <ion-input
+              type="number"
+              min="1"
+              [ngModel]="item.durationMinutes"
+              (ngModelChange)="updateDuration(item, $event)"
+              aria-label="Duration minutes"
+            ></ion-input>
+            <span>min</span>
+          </div>
+
+          <div class="item-body">
+            <div class="item-heading">
+              <div>
+                <h3>{{ getExercise(item)?.name || item.exerciseId }}</h3>
+                <p>{{ getExercise(item)?.focus || getExercise(item)?.shortDescription || 'Imported from SafePilates' }}</p>
+              </div>
+              <ion-chip>{{ item.apparatus }}</ion-chip>
+            </div>
+
+            <ion-textarea
+              autoGrow="true"
+              placeholder="Instructor notes or cues"
+              [(ngModel)]="item.notes"
+            ></ion-textarea>
+
+            <div class="warning-stack" *ngIf="getWarnings(item).length">
+              <div class="warning" *ngFor="let warning of getWarnings(item)">
+                <ion-icon name="alert-circle-outline" aria-hidden="true"></ion-icon>
+                <div>
+                  <strong>Safety note</strong>
+                  <p>{{ warning.reason }}</p>
+                  <span *ngIf="warning.alternative">Alternative: {{ warning.alternative }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-actions" aria-label="Timeline item actions">
+            <ion-button fill="clear" size="small" (click)="moveItem(segment, item, -1)">
+              <ion-icon name="chevron-up-outline" slot="icon-only" aria-hidden="true"></ion-icon>
+            </ion-button>
+            <ion-button fill="clear" size="small" (click)="moveItem(segment, item, 1)">
+              <ion-icon name="chevron-down-outline" slot="icon-only" aria-hidden="true"></ion-icon>
+            </ion-button>
+            <ion-button fill="clear" size="small" (click)="duplicateItem(segment, item)">
+              <ion-icon name="copy-outline" slot="icon-only" aria-hidden="true"></ion-icon>
+            </ion-button>
+            <ion-button fill="clear" color="danger" size="small" (click)="removeItem(segment, item)">
+              <ion-icon name="trash-outline" slot="icon-only" aria-hidden="true"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <aside class="library-panel" aria-label="Exercise library">
+      <header>
+        <div>
+          <p class="eyebrow">SafePilates library</p>
+          <h2>Add exercises</h2>
+        </div>
+        <span>{{ filteredExercises.length }} shown</span>
+      </header>
+
+      <button class="exercise-result" type="button" *ngFor="let exercise of filteredExercises; trackBy: trackExercise" (click)="addExercise(exercise)">
+        <span>
+          <strong>{{ exercise.name }}</strong>
+          <small>{{ exercise.level }} · {{ exercise.category }} · {{ exercise.equipment || 'Mat' }}</small>
+        </span>
+        <ion-icon name="add-circle-outline" aria-hidden="true"></ion-icon>
+      </button>
+    </aside>
+  </main>
+</ion-content>

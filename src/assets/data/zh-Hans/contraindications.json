@@ -1,0 +1,1293 @@
+{
+  "osteoporosis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "加载脊柱屈曲和向前弯曲应力椎骨。",
+      "alternative": "使用中立脊柱核心稳定器和仰卧腿部滑动。"
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "倒立和末端脊柱负载会压缩脆弱的骨骼。",
+      "alternative": "改为仰卧时骨盆轻微倾斜。"
+    },
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "圆形脊柱滚动施加重复的屈曲应力。",
+      "alternative": "选择支撑膝盖折叠或单腿伸展。"
+    },
+    {
+      "exerciseId": "spine_stretch_forward",
+      "reason": "负载前屈会增加椎骨压缩风险。",
+      "alternative": "尝试使用脊柱中立伸展的坐姿姿势练习。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "屈曲和平衡时的高负荷核心提升可能会使脊柱拉伤。",
+      "alternative": "使用改进的带球支撑仰卧起坐进展。"
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "倒置和负重脊柱关节可能会压缩脆弱的椎骨。",
+      "alternative": "选择轻柔的仰卧腿部滑动或脊柱中立的骨盆倾斜。"
+    }
+  ],
+  "pregnancy": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "腹部过度屈曲会对生长中的子宫和直肌造成压力。",
+      "alternative": "转向侧卧或支撑坐姿核心训练。"
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "怀孕中期后，倒立和仰卧抬腿可能会感到不舒服。",
+      "alternative": "坐姿或侧卧时使用轻柔的骨盆底呼吸。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "完全仰卧起坐式的提升和平衡可能会使白线过度劳累。",
+      "alternative": "关注脊柱中立姿势和盆底激活。"
+    },
+    {
+      "exerciseId": "neck_pull",
+      "reason": "从仰卧位支撑头部和躯干抬起可能会拉伤腹部和颈部。",
+      "alternative": "使用安全的站立或侧卧核心变化。"
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "怀孕期间最好避免倒立和脊柱受压。",
+      "alternative": "选择侧卧伸展运动和轻柔支撑臀部的运动。"
+    }
+  ],
+  "low_back_pain": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "重复的脊柱弯曲会加重椎间盘或后链的疼痛。",
+      "alternative": "选择骨盆倾斜和脊柱中立的支撑桥接。"
+    },
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "负荷滚动可能会加剧腰部症状。",
+      "alternative": "使用温和的坐姿或仰卧核心稳定练习。"
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "脊柱屈曲的旋转会刺激敏感的腰椎。",
+      "alternative": "采用以髋部为重点的侧卧运动和中立脊柱旋转。"
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "对于许多背部状况来说，倒立和腰部伸展可能过于剧烈。",
+      "alternative": "使用支撑桥式渐进和轻柔的臀部提升。"
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "脊柱关节倒转会加重腰痛和神经紧张。",
+      "alternative": "使用中立骨盆稳定练习和温和的仰卧伸展运动。"
+    }
+  ],
+  "hypertension": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "倒立可能会升高血压，应避免。",
+      "alternative": "使用坐姿或四足行走，呼吸平稳。"
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "高强度倒立会给心血管系统带来压力。",
+      "alternative": "选择中立脊柱平板支撑或坐姿腿部练习。"
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "屏住呼吸和快速旋转可能会使血压升高。",
+      "alternative": "缓慢、受控地打圈，呼吸放松。"
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "平衡倒置可能会让人感觉过于强烈，不利于心脏健康。",
+      "alternative": "留在垫子上，保持核心稳定性和抬腿。"
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "倒立和脊柱受压可能会使敏感个体的血压升高。",
+      "alternative": "选择低洼的核心稳定性和温和的站立活动性。"
+    }
+  ],
+  "knee_issues": [
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "深度提臀会给膝盖带来负担并加剧关节疼痛。",
+      "alternative": "使用温和的骨盆倾斜和支撑臀桥。"
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "基于平板支撑的抬腿会对膝盖和臀部施加压力。",
+      "alternative": "以四足行走，抬腿或侧卧抬腿。"
+    },
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "俯卧腿部伸展会刺激膝盖或腿筋紧张。",
+      "alternative": "使用坐姿或侧卧的单腿动作，幅度较小。"
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "反复屈膝可能会拉伤关节炎关节。",
+      "alternative": "选择静态腿部保持或仰卧轻柔行进。"
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "塑身机压腿可以通过敏感的膝盖施加持续的负荷。",
+      "alternative": "使用坐姿或支撑腿法，范围小，阻力小。"
+    }
+  ],
+  "hip_issues": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "大臀部圈会加剧臀部疼痛或不稳定。",
+      "alternative": "使用较小的腿圈或带支撑的髋铰链。"
+    },
+    {
+      "exerciseId": "scissors",
+      "reason": "仰卧时髋部范围过大会刺激髋关节。",
+      "alternative": "保持双腿放低并使用较小的受控升降机进行工作。"
+    },
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "双腿张开平衡会对髋关节囊造成压力。",
+      "alternative": "使用坐姿控制内收肌和外展肌进行工作。"
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "如果关节发炎，旋转髋部运动可能会感到疼痛。",
+      "alternative": "选择仰卧时轻柔支撑的髋泵。"
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "反复压腿会因屈曲和伸展负荷而刺激敏感的臀部。",
+      "alternative": "练习幅度较小、阻力较小的动作，或选择仰卧腿部滑行。"
+    }
+  ],
+  "neck_shoulder": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "持续抬起头颈部会加剧颈椎紧张。",
+      "alternative": "保持头部支撑，同时保持核心呼吸。"
+    },
+    {
+      "exerciseId": "neck_pull",
+      "reason": "无支撑的头部抬起会增加颈部紧张和肩部紧张。",
+      "alternative": "使用下巴收拢动作并在颈部中立位置轻轻支撑滚动。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "头部平衡提升可以对颈部和肩部稳定器施加负载。",
+      "alternative": "使用坐姿支撑核心练习并避免完全 V 形位置。"
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "俯卧背部伸展会给颈部和上肩部带来压力。",
+      "alternative": "使用轻柔的俯卧举重动作，双手放在肩膀下方以获得支撑。"
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "将肩部负载在杠铃上方会加剧肩部不稳定或颈部紧张。",
+      "alternative": "使用阻力较小的轻柔支撑背部伸展。"
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "脊柱倒转下的塑身机肩部负荷会给紧绷的颈部/肩部区域带来压力。",
+      "alternative": "选择有支撑的俯卧背部伸展或仰卧脊柱松动，无需倒立。"
+    }
+  ],
+  "recent_surgery": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "手术后负重脊柱屈曲通常过于激进。",
+      "alternative": "专注于轻柔的呼吸、骨盆底和姿势支持。"
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "倒立和深关节在恢复过程中可能不安全。",
+      "alternative": "选择受支持的动作并遵循专业许可。"
+    },
+    {
+      "exerciseId": "spine_twist",
+      "reason": "负重扭转可能会给愈合组织带来压力。",
+      "alternative": "从坐姿或站立位置使用中立脊柱旋转。"
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "手术后侧屈可能会感到不舒服。",
+      "alternative": "保持动作轻柔，避免末端弯曲。"
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "近期手术后通常禁忌反转和深部脊柱关节。",
+      "alternative": "使用温和的仰卧骨盆倾斜和支持脊柱活动。"
+    }
+  ],
+  "arthritis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "重复屈曲可能会加剧关节僵硬。",
+      "alternative": "使用小型脊柱关节和中立核心工作。"
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "向前屈曲的旋转会刺激患有关节炎的关节。",
+      "alternative": "在支撑下使用坐姿侧卧旋转。"
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "倒转髋关节对于敏感关节来说可能过于剧烈。",
+      "alternative": "选择范围较小的简单臀部圆圈。"
+    },
+    {
+      "exerciseId": "seal",
+      "reason": "滚动会让患有关节炎的脊柱或臀部感到刺痛。",
+      "alternative": "使用支撑核心强化，无需动态滚动。"
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "如果没有仔细的负荷管理，塑身机腿举工作可能会加重膝关节或髋关节的关节炎。",
+      "alternative": "使用较轻的阻力并专注于较小的控制范围。"
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "倒立和脊柱受压可能会让患有关节炎的关节感到不舒服。",
+      "alternative": "选择温和的脊柱动员，不要进行大范围或倒转。"
+    }
+  ],
+  "scoliosis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "如果不加以控制，脊柱的大幅度弯曲会加剧弯曲。",
+      "alternative": "使用具有中立骨盆和不对称意识的支撑下滚。"
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "通过脊柱旋转可能会在弯曲的脊柱中产生不均匀的负载。",
+      "alternative": "进行轻柔的坐姿侧向伸展运动，同时注意两侧。"
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "深度不对称侧屈会拉伤脊柱侧弯。",
+      "alternative": "进行小侧弯并保持肋骨较长。"
+    }
+  ],
+  "pelvic_floor_dysfunction": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "强烈的腹部抽吸和呼吸协调可能会增加盆底压力。",
+      "alternative": "保持头部受到支撑，并专注于温和的骨盆底接触。"
+    },
+    {
+      "exerciseId": "single_leg_stretch",
+      "reason": "反复屈髋和下腹部活动会刺激脆弱的骨盆底。",
+      "alternative": "进行支撑膝盖折叠或改良式骨盆中立行进。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "完整的仰卧起坐运动会增加骨盆底和白线的负荷。",
+      "alternative": "使用受支撑的坐式核心练习并避免完全 V 形位置。"
+    }
+  ],
+  "diastasis_recti": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "强烈的腹部抽吸可以扩大分离并增加腹内压。",
+      "alternative": "使用低头支撑的核心训练，重点关注腹横肌的参与。"
+    },
+    {
+      "exerciseId": "roll_up",
+      "reason": "负载的脊柱屈曲会对白线施加压力。",
+      "alternative": "练习骨盆倾斜和脊柱中立的支撑下翻。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "完全 V 字位和腹部提升可能会对分离的腹部肌肉造成过度压力。",
+      "alternative": "使用改良的坐姿核心训练，弯曲膝盖和低举升。"
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "下腹部伸展和手臂伸展相结合可能会增加中线的压力。",
+      "alternative": "选择脚跟滑梯和单腿支撑，腹部压力最小。"
+    }
+  ],
+  "shoulder_instability": [
+    {
+      "exerciseId": "push_through",
+      "reason": "杠铃上的沉重肩部负载可能会加剧不稳定或撞击。",
+      "alternative": "使用阻力较小且肩部位置稳定的支撑背部伸展。"
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "俯卧伸展会对颈部和肩部的稳定器产生过高的要求。",
+      "alternative": "选择轻柔的俯卧举重动作，双手放在肩膀下方作为支撑。"
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "反复交替举臂会使不稳定的肩关节过度劳累。",
+      "alternative": "使用较低范围的手臂伸展，更强调肩胛骨的稳定性。"
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "如果肩膀不稳定，肩部支撑的桥位置可能会增加不适。",
+      "alternative": "保持上半身放松，并进行下桥变化或仰卧臀肌接合。"
+    }
+  ],
+  "bursitis": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "大的臀部圆圈会刺激臀部或骨盆周围发炎的滑囊。",
+      "alternative": "使用较小、较慢的腿部转圈并支撑骨盆。"
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "重复髋关节旋转可能会加重髋关节滑囊炎。",
+      "alternative": "在中性范围内选择温和支撑的臀部泵。"
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "俯卧背部伸展可以压缩已经很脆弱的肩部滑囊。",
+      "alternative": "使用支撑胸部提升动作，避免过度上背部伸展。"
+    },
+    {
+      "exerciseId": "long_box_series",
+      "reason": "上半身伸展和负重的运动可能会给敏感的肩部组织带来压力。",
+      "alternative": "使用较轻的弹簧和较小的手臂动作，同时保持肩膀稳定。"
+    }
+  ],
+  "vertigo_dizziness": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "倒立会引发头晕和迷失方向。",
+      "alternative": "选择温和的仰卧骨盆倾斜或坐姿活动。"
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "双腿过头快速旋转脊柱会破坏平衡。",
+      "alternative": "使用缓慢的髋部转圈，头部受到支撑，眼睛固定。"
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "倒立和突然的平衡挑战可能会加剧眩晕。",
+      "alternative": "留在垫子上，并在支撑下进行桥式动作并缓慢移动。"
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "高级倒立和平衡可能会引起头晕。",
+      "alternative": "注重基于地板的核心稳定性和稳定的呼吸。"
+    }
+  ],
+  "postpartum": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "负重的脊柱屈曲和腹部提升会给正在恢复的产后核心带来压力。",
+      "alternative": "使用支撑骨盆倾斜和轻柔的坐姿核心重新连接工作。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "全 V 型提升会使正在愈合的白线和骨盆底超负荷。",
+      "alternative": "练习支撑坐式核心举重，弯曲膝盖并轻柔呼吸。"
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "强有力的腹部伸展和伸展可能会对正在恢复的中线造成压力。",
+      "alternative": "选择脚跟滑梯和单腿支撑，腹部压力最小。"
+    }
+  ],
+  "balance_issues": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "高级平衡训练会增加跌倒风险和不稳定。",
+      "alternative": "专注于基于地面的稳定性和缓慢的核心控制。"
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "反转和高平衡需求对于不稳定的客户来说可能太具有挑战性。",
+      "alternative": "使用支撑桥渐进和低水平髋部提升。"
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "腿过头倒立会挑战平衡和空间定向。",
+      "alternative": "选择坐姿或仰卧核心灵活性，无需倒立。"
+    }
+  ],
+  "joint_replacement": [
+    {
+      "exerciseId": "footwork",
+      "reason": "塑身机压腿会给更换的膝盖或臀部带来过多的负荷。",
+      "alternative": "使用较轻的弹簧、较小的运动范围或坐式腿部支撑。"
+    },
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "膝关节弯曲和髋关节负荷运动可能会拉伤替换的关节。",
+      "alternative": "选择具有最小范围和受控对准的支撑膝部提升装置。"
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "大髋关节可能会加重更换后的髋关节的情况。",
+      "alternative": "使用较小的支撑腿圈或等长髋部稳定性练习。"
+    }
+  ],
+  "foot_ankle_issues": [
+    {
+      "exerciseId": "footwork",
+      "reason": "塑身机脚杆工作通过脚踝和前脚施加重复的负载。",
+      "alternative": "使用较小的阻力并保持足部平坦，跖屈程度最小。"
+    },
+    {
+      "exerciseId": "elephant",
+      "reason": "通过脚和脚踝承受重量会加重敏感关节的负担。",
+      "alternative": "选择坐姿或支撑腘绳肌拉伸，而不需要承受沉重的足部负荷。"
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "快速的小腿运动和尖脚位置会刺激脚踝或足部疼痛。",
+      "alternative": "使用较慢的仰卧腿转圈，脚处于中立位置。"
+    }
+  ],
+  "hypermobility_syndrome": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "没有支撑的大关节范围可能会在过度活动时过度拉伸松弛的结缔组织。",
+      "alternative": "使用较小的曲线、主动稳定性，并在腿部转圈时保持骨盆受到支撑。"
+    }
+  ],
+  "hernia": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "腹部负荷弯曲和拉伤可能会增加腹内压并刺激疝气。",
+      "alternative": "选择骨盆倾斜、仰卧核心训练和轻柔的呼吸支持，无需进行剧烈的仰卧起坐。"
+    }
+  ],
+  "parkinsons_disease": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "当运动控制和反应速度受到影响时，不稳定的平衡挑战会增加跌倒风险。",
+      "alternative": "使用接地、受支撑的运动，基础宽，过渡缓慢。"
+    }
+  ],
+  "multiple_sclerosis": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "持续的呼吸泵动和核心强度可能会使多发性硬化症患者过热或过度疲劳。",
+      "alternative": "使用更短、更凉爽的训练，并进行温和的基于呼吸的核心训练。"
+    }
+  ],
+  "stress_incontinence": [
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "强烈的腹部伸展和骨盆压力可能会加剧渗漏或骨盆底症状。",
+      "alternative": "使用脚跟滑动和温和的核心接合，使骨盆保持稳定。"
+    }
+  ],
+  "disc_degeneration": [
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "反复的脊柱弯曲和压缩可能会加重已经退化的椎间盘。",
+      "alternative": "选择中立脊柱骨盆倾斜和支撑核心稳定。"
+    }
+  ],
+  "radiculopathy_sciatica": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "脊柱深度屈曲会加重神经根受压和坐骨神经痛症状。",
+      "alternative": "使用温和的支撑脊柱活动并避免在负载下向前弯曲。"
+    }
+  ],
+  "ankylosing_spondylitis": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "倒立和轴向压缩可能会对发炎、僵硬的脊柱造成压力，并限制胸部扩张。",
+      "alternative": "选择支撑桥工作和轻柔的坐姿脊柱活动度。"
+    }
+  ],
+  "sacroiliac_dysfunction": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "大的腿部圆圈会产生不均匀的骨盆剪切力并刺激骶髂关节。",
+      "alternative": "在骨盆稳定的情况下进行小幅度、受控的腿部运动。"
+    }
+  ],
+  "cervical_spine_dysfunction": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "无支撑的头部抬起和颈椎屈曲会加重颈部功能障碍。",
+      "alternative": "保持头部支撑并进行温和的核心锻炼，不要进行深度颈部运动。"
+    }
+  ],
+  "frozen_shoulder": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "俯卧背部伸展会加剧肩膀僵硬、疼痛并限制舒适范围。",
+      "alternative": "使用支撑胸部提举，手臂轻且靠近身体。"
+    }
+  ],
+  "rotator_cuff_injury": [
+    {
+      "exerciseId": "push_through",
+      "reason": "沉重的肩部负荷和外旋可能会刺激受伤的肩袖。",
+      "alternative": "选择轻柔支撑肩部活动并避免肩关节承受深度负荷。"
+    }
+  ],
+  "acromioclavicular_sprain": [
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "肩部压迫和上半身负荷会使肩锁关节疼痛加剧。",
+      "alternative": "使用骨盆倾斜或低桥变化来减少肩部压力。"
+    }
+  ],
+  "thoracic_outlet_syndrome": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "持续的肩部抬高和呼吸协调可以增加胸廓出口附近的压力。",
+      "alternative": "在手臂支撑的情况下轻柔地打开胸部，并避免过肩姿势。"
+    }
+  ],
+  "tennis_elbow": [
+    {
+      "exerciseId": "push_through",
+      "reason": "手和前臂负重会加重肘外侧肌腱的刺激。",
+      "alternative": "使用较低负荷的肩部工作并避免用力抓握或手腕伸展。"
+    }
+  ],
+  "golfers_elbow": [
+    {
+      "exerciseId": "push_through",
+      "reason": "前臂负荷和手腕动作可能会拉伤高尔夫球手肘部的内侧肘部。",
+      "alternative": "选择有支撑的上半身训练，手腕或握力的压力最小。"
+    }
+  ],
+  "nerve_compression": [
+    {
+      "exerciseId": "corkscrew",
+      "reason": "扭转和压迫脊柱会挤压敏感神经并加重压迫症状。",
+      "alternative": "使用温和的脊柱活动性和中立对齐，避免末端扭转。"
+    }
+  ],
+  "carpal_tunnel_syndrome": [
+    {
+      "exerciseId": "teaser",
+      "reason": "手腕伸展和抓握会增加腕管内的压力。",
+      "alternative": "使用支撑核心动作，手腕保持中立并减少手指握力。"
+    }
+  ],
+  "cubital_tunnel_syndrome": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "平板支撑式上身负重会压迫肘部的尺神经。",
+      "alternative": "使用支撑核心练习并保持肘部伸直且不受直接压力。"
+    }
+  ],
+  "radial_nerve_issue": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "如果手臂伸展或压缩，手腕和手臂在负载下的定位可能会加重桡神经症状。",
+      "alternative": "使用温和的核心训练，手腕和肘部处于中立、无痛的位置。"
+    }
+  ],
+  "ankle_sprain": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "无支撑的平衡训练会给正在愈合的脚踝带来压力，并增加再次扭伤的风险。",
+      "alternative": "使用坐姿或支撑腿练习，双脚着地。"
+    }
+  ],
+  "achilles_tendinopathy": [
+    {
+      "exerciseId": "footwork",
+      "reason": "塑身机脚杆推动会使跟腱因反复跖屈而超负荷。",
+      "alternative": "使用较小的阻力并避免通过脚强力推出。"
+    }
+  ],
+  "posterior_tibialis_dysfunction": [
+    {
+      "exerciseId": "footwork",
+      "reason": "大量的脚杆工作可能会加剧踝关节内侧和足弓的拉伤。",
+      "alternative": "使用更温和、中立的脚位并减少脚内侧的重复负荷。"
+    }
+  ],
+  "tibial_stress_syndrome": [
+    {
+      "exerciseId": "footwork",
+      "reason": "重复压腿工作会加重胫骨疼痛和胫骨应激反应。",
+      "alternative": "选择较低的阻力并避免长时间的高强度腿组。"
+    }
+  ],
+  "plantar_fasciitis": [
+    {
+      "exerciseId": "footwork",
+      "reason": "高脚杆压力和脚趾伸展会刺激足底筋膜。",
+      "alternative": "使用柔软、中性的足部放置和较低的阻力以及较少的脚趾弯曲。"
+    }
+  ],
+  "bunions": [
+    {
+      "exerciseId": "footwork",
+      "reason": "狭窄的足部位置和前足压力会增加拇囊炎的不适感。",
+      "alternative": "使用更宽、更柔软的脚部放置，避免直接按压大脚趾关节。"
+    }
+  ],
+  "hip_arthroscopy": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "关节镜检查后，大的髋关节圈可能会拉伤正在愈合的髋关节和深层组织。",
+      "alternative": "使用较小的支撑腿圈并保持骨盆稳定。"
+    }
+  ],
+  "piriformis_syndrome": [
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "髋部张开和旋转会加重梨状肌刺激和坐骨神经症状。",
+      "alternative": "使用温和的臀部活动，双腿并拢并支撑骨盆。"
+    }
+  ],
+  "hamstring_tendinopathy": [
+    {
+      "exerciseId": "scissors",
+      "reason": "积极的腿筋延长和快速交替的腿部运动会加剧肌腱刺激。",
+      "alternative": "使用温和的腿筋控制并避免快速、末端范围的腿部摆动。"
+    }
+  ],
+  "muscle_strain": [
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "后链负荷过重和持续的肌肉紧张会加剧急性拉伤。",
+      "alternative": "使用轻柔、有支撑的活动方式，避免强力、有阻力的腿部伸展。"
+    }
+  ],
+  "snapping_hip_syndrome": [
+    {
+      "exerciseId": "hip_circles",
+      "reason": "快速、大的髋部转圈可能会引发折断并刺激髋部组织。",
+      "alternative": "使用更小、更慢的臀部运动，强调稳定性。"
+    }
+  ],
+  "greater_trochanteric_pain": [
+    {
+      "exerciseId": "side_bend",
+      "reason": "侧卧压力和强烈的髋部横向运动会加重大转子疼痛。",
+      "alternative": "使用轻柔的站立或仰卧臀部训练，减少侧向负荷。"
+    }
+  ],
+  "femoroacetabular_impingement": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "髋部深度屈曲和内旋可能会在 FAI 中挤压髋部前部。",
+      "alternative": "使用较小的髋关节圈并避免末端屈曲和旋转。"
+    }
+  ],
+  "patellofemoral_pain": [
+    {
+      "exerciseId": "footwork",
+      "reason": "塑身机腿举会增加膝盖骨下的压力并加剧膝前疼痛。",
+      "alternative": "使用较小的阻力并在较浅的范围内保持膝盖对齐稳定。"
+    }
+  ],
+  "iliotibial_band_syndrome": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "重复的膝关节屈曲和髋关节内收可能会刺激膝关节外侧和髂胫束。",
+      "alternative": "使用受控的小腿运动，避免髋部过度内收。"
+    }
+  ],
+  "meniscus_tear": [
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "膝盖弯曲和负重会加重半月板撕裂。",
+      "alternative": "使用较小的压缩负荷进行轻柔的膝关节伸展运动。"
+    }
+  ],
+  "ligament_injury": [
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "深度或负重的膝关节屈曲可能会拉伤正在愈合的膝关节韧带。",
+      "alternative": "使用受控的、受支撑的膝关节训练，重量最小，保持中立位。"
+    }
+  ],
+  "chronic_fatigue": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "如果节奏过于激进，高重复呼吸和核心工作可能会加剧疲劳。",
+      "alternative": "使用更短的组数、更温和的呼吸工作，并允许休息。"
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "持续俯卧举臂和举腿对于能量较低的客户来说可能要求过高。",
+      "alternative": "选择频繁恢复暂停的单肢举重动作。"
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "长时间平板支撑抬腿可能会使疲劳的身体负担过重。",
+      "alternative": "使用持续负荷较小的支撑四足或仰卧核心练习。"
+    }
+  ],
+  "diabetes": [
+    {
+      "exerciseId": "footwork",
+      "reason": "如果存在循环或神经病变，高阻力腿部工作可能会具有挑战性。",
+      "alternative": "使用较轻的弹簧并注重平稳、受控的滑架运动。"
+    },
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "长时间俯卧可能会使肩膀和腿部很快疲劳。",
+      "alternative": "选择持续时间较短的后链工作并经常休息。"
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "如果感觉减弱，快速交替的下半身运动可能会感到不舒服。",
+      "alternative": "使用较慢的腿部节奏并保持骨盆稳定。"
+    }
+  ],
+  "weight_concerns": [
+    {
+      "exerciseId": "teaser",
+      "reason": "在体重增加的情况下，高核心和平衡需求可能会很困难。",
+      "alternative": "使用弯曲膝盖和较低重心的支撑核心举升。"
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "倒立和快速抬腿可能会增加下背部和臀部的压力。",
+      "alternative": "选择支撑桥和较慢的髋部提升以及脊柱中立。"
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "动态滚动平衡可能不稳定并且对关节的要求过高。",
+      "alternative": "专注于受控的坐姿或仰卧核心训练，并保持足部稳定的接触。"
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "高级平衡和腿部伸展需求会影响联合控制和稳定性。",
+      "alternative": "使用双脚放在垫子上并进行小范围运动的接地稳定性练习。"
+    }
+  ],
+  "respiratory": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "倒立和上半身受压会使哮喘患者呼吸困难。",
+      "alternative": "使用支撑胸部提举并避免胸部受压或屏气姿势。"
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "腿举过头顶的位置和脊柱弯曲会限制胸腔并挑战呼吸。",
+      "alternative": "选择温和的仰卧核心训练，头部和胸部得到支撑。"
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "快速呼吸循环和核心强度可能会引发喘息或呼吸困难。",
+      "alternative": "练习以较慢的呼吸为基础的腹部运动，并经常休息和开胸姿势。"
+    }
+  ],
+  "swollen_glands": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "支持性头部和颈部提升会加剧颈部压痛淋巴结。",
+      "alternative": "保持头部受到支撑，专注于温和的核心激活，而不需要剧烈的颈部运动。"
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "双腿过头倒转可能会增加肿胀的颈部和肩部节点周围的压力和不适。",
+      "alternative": "选择更中立、受支撑的仰卧核心训练，使头部和颈部处于舒适的位置。"
+    },
+    {
+      "exerciseId": "seated_spine_twist",
+      "reason": "颈椎周围的强烈旋转会刺激颈部和下颌的敏感淋巴结。",
+      "alternative": "脊柱较长时，使用较小的坐姿旋转，并避免深度转动头部。"
+    }
+  ],
+  "vision_impairment": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "无支撑的平衡姿势取决于视觉反馈，可能会增加低视力患者跌倒的风险。",
+      "alternative": "使用接地、有支撑的练习，例如坐姿腿部练习和稳定的站立活动。"
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "当视力受损时，倒置和快速转换可能很难安全判断。",
+      "alternative": "选择支持的仰卧活动和轻柔的核心训练，双手放在稳定的表面上。"
+    }
+  ],
+  "hearing_impairment": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "如果没有可靠的听力，需要快速言语提示的练习就很难遵循。",
+      "alternative": "使用缓慢、可预测的动作，并进行视觉演示和清晰的手势。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "如果没有视觉或触觉提示支持，Teaser 中的复杂计时和平衡可能是不安全的。",
+      "alternative": "使用支撑坐式核心举重，弯曲膝盖并保持稳定的提示。"
+    }
+  ],
+  "epilepsy_seizure": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "倒立和快速脊柱关节可能会增加癫痫相关跌倒的风险。",
+      "alternative": "通过支撑桥式渐进和缓慢运动保持脊柱较低。"
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "如果在锻炼过程中发生癫痫发作，不稳定的平衡工作可能会很危险。",
+      "alternative": "使用稳定的基于地板的核心工作并避免无支撑的平衡位置。"
+    }
+  ],
+  "severe_allergy": [
+    {
+      "exerciseId": "footwork",
+      "reason": "塑身机带和道具可能含有乳胶或过敏原，会引发严重反应。",
+      "alternative": "使用基于垫子的下半身工作，并使用防过敏的道具和干净的设备。"
+    }
+  ],
+  "chronic_pain_syndrome": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "持续的核心抽吸对于普遍的疼痛敏感性和疲劳来说可能过于强烈。",
+      "alternative": "在头部支撑和轻柔呼吸定时的情况下练习较短的组数。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "高核心需求和平衡要求可能会在多个地区引发痛苦。",
+      "alternative": "使用改良的坐式核心练习，具有支撑和低升力。"
+    }
+  ],
+  "skin_condition": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "俯卧伸展会压迫躯干，并可能刺激胸部和腹部发炎或敏感的皮肤。",
+      "alternative": "选择前臂放在垫子上的支撑俯卧举重或坐姿靠背伸展运动。"
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "来自垫子或设备的肩部压力可能会加重上半身的湿疹、伤口或牛皮癣。",
+      "alternative": "使用温和的骨盆倾斜和带衬垫的支撑臀桥变体。"
+    }
+  ],
+  "transplant_immunosuppression": [
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "积极的脊柱关节和倒转可能会带来太大的压力，而免疫功能和恢复仍然很脆弱。",
+      "alternative": "使用温和的仰卧骨盆倾斜和支持的脊柱松动，无需倒转。"
+    }
+  ],
+  "recent_hospitalization": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "对于最近住院或卧床休息的人来说，倒立和快速脊柱运动往往过于剧烈。",
+      "alternative": "选择有支撑的桥式渐进和缓慢、受控的髋部提升。"
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "无支撑的平衡挑战会增加住院后身体状况不佳的客户跌倒的风险。",
+      "alternative": "使用接地核心力量练习，双脚放在垫子上。"
+    }
+  ],
+  "pacemaker_implant": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "俯卧背部伸展会压迫起搏器部位附近的胸部和上半身。",
+      "alternative": "选择轻柔支撑的胸部提举，前臂放在垫子上。"
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "沉重的肩部和胸部负荷可能会给心脏植入物附近带来不舒服的压力。",
+      "alternative": "使用较轻的支撑和较低范围的背部伸展运动。"
+    }
+  ],
+  "substance_use_recovery": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "如果恢复过程中协调性或注意力受到损害，不稳定的平衡工作可能会不安全。",
+      "alternative": "使用稳定、扎实的普拉提练习并提供清晰、简单的提示。"
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "如果注意力和身体意识发生变化，倒立和快速位置变化可能会有风险。",
+      "alternative": "选择温和的仰卧活动并支持核心工作。"
+    }
+  ],
+  "respiratory_pulmonary": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "倒立和深胸按压会加重肺部疾病发作期间的呼吸困难。",
+      "alternative": "使用支持的桥式渐进或开胸轻柔的坐姿移动。"
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "双腿举过头顶和脊柱弯曲可能会限制胸腔并引发呼吸困难。",
+      "alternative": "选择仰卧核心训练，头部和胸部得到支撑。"
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "倒立和脊柱受压可能会使肺功能受限的人呼吸不舒服。",
+      "alternative": "使用温和的骨盆倾斜和低位脊柱关节，不要倒转。"
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "高强度呼吸协调对于肺功能受损来说可能要求过高。",
+      "alternative": "练习以较慢的呼吸为基础的腹部运动并经常休息。"
+    }
+  ],
+  "cardiovascular_disease": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "倒立和高强度运动会使血压升高并使心脏紧张。",
+      "alternative": "使用低洼的核心工作和稳定的桥梁级数。"
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "快速转换和双腿举过头顶的姿势可能会给虚弱的心血管系统带来压力。",
+      "alternative": "选择轻柔的仰卧活动和缓慢的脊柱关节。"
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "上半身过重的负荷可能会使心率反应和血压控制负担过重。",
+      "alternative": "使用较轻的肩部支撑并避免最大阻力。"
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "持续的腿部推力可能会对患有心脏病的人产生过多的心血管需求。",
+      "alternative": "优先进行较慢、低阻力的腿部训练，并密切监测运动量。"
+    }
+  ],
+  "arrhythmia_cardiac_device": [
+    {
+      "exerciseId": "push_through",
+      "reason": "胸部深部按压和上半身负荷可能会刺激设备部位或扰乱心律控制。",
+      "alternative": "选择阻力最小、轻柔支撑的背部伸展。"
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "植入心脏装置时，俯卧伸展和胸部压力可能会让人感到不舒服。",
+      "alternative": "将前臂放在垫子上，进行轻柔的胸部提举。"
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "快速倒立和突然的力度变化可能会引发心律不齐。",
+      "alternative": "保持靠近垫子的位置并使用受控的桥式进展。"
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "如果心律失常影响协调性或意识，不稳定的平衡工作可能是不安全的。",
+      "alternative": "双脚放在垫子上进行接地核心稳定性练习。"
+    }
+  ],
+  "metabolic_endocrine": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "快速呼吸泵和持续的核心强度可能会破坏血糖和能量水平的稳定。",
+      "alternative": "使用较短的组数、轻柔的呼吸和频繁的休息。"
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "持续的腿部推力可能会产生快速的代谢需求和能量波动。",
+      "alternative": "选择较慢、阻力较小的腿部训练，并小心调整节奏。"
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "当代谢或荷尔蒙平衡不稳定时，动态全身测序可能会过于激烈。",
+      "alternative": "专注于较慢的、有支撑的核心和脊柱关节训练。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "高核心强度和平衡需求可能会使葡萄糖或激素调节的能量系统负担过重。",
+      "alternative": "使用支撑坐式核心举重，膝盖弯曲，脊柱保持中立。"
+    }
+  ],
+  "autoimmune_inflammatory": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "深度背部伸展和长时间的上半身负荷会加重关节或组织炎症。",
+      "alternative": "使用轻柔、小范围支撑的俯卧移位机。"
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "在发作期间，负载的髋部提升和肩部压缩可能会引起疼痛或发炎。",
+      "alternative": "选择骨盆倾斜，脊柱保持中立，并在重复次数之间充分休息。"
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "倒立和脊柱受压可能会加重全身炎症症状。",
+      "alternative": "使用仰卧骨盆倾斜和温和的脊柱松动，无需倒转。"
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "在自身免疫性炎症期间，较大的髋部运动和旋转负荷可能会感觉过于强烈。",
+      "alternative": "使用较小的腿部圆圈并用手支撑骨盆。"
+    }
+  ],
+  "immune_infectious": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "在活跃感染或免疫受损期间，以呼吸为中心的核心强度可能过于繁重。",
+      "alternative": "出现症状时练习轻柔的呼吸和休息。"
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "倒立和较高的运动量可能会加重疲劳和全身性疾病症状。",
+      "alternative": "使用支撑桥级数并降低强度。"
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "从感染中恢复期间，持续的抵抗工作可能要求过高。",
+      "alternative": "选择低阻力、低冲击力的腿部训练，并有额外的休息时间。"
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "在急性疾病或免疫力下降期间，上半身的剧烈运动可能不安全。",
+      "alternative": "使用温和的支撑背部伸展，如果症状恶化则停止。"
+    }
+  ],
+  "oncology_treatment": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "在积极的癌症治疗期间，倒置和脊柱压迫的耐受性较差。",
+      "alternative": "选择轻柔的仰卧核心训练，并支撑头部和胸部。"
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "高强度的用力和倒立可能会增加疲劳、瘀伤或心血管压力。",
+      "alternative": "使用低洼的桥式渐进并控制呼吸。"
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "在治疗相关的疲劳期间，俯卧胸部按压和背部伸展可能过于激进。",
+      "alternative": "使用前臂放在垫子上的支撑俯卧举重。"
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "当血细胞计数或组织耐受性较低时，倒立和深部脊柱关节可能存在风险。",
+      "alternative": "使用温和的仰卧骨盆倾斜和低位活动来代替。"
+    }
+  ],
+  "gastrointestinal_pelvic": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "负荷腹部屈曲会增加腹内压并加重骨盆或胃肠道症状。",
+      "alternative": "使用骨盆倾斜和温和的核心重新连接与中立脊柱。"
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "强烈的腹部抽吸和呼吸协调可能会加重盆底或消化道不适。",
+      "alternative": "练习较慢的核心训练，减少腹部压力。"
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "下腹部伸展和手臂伸展相结合可能会对骨盆底和腹部造成过度压力。",
+      "alternative": "使用脚跟滑动和单腿支撑以最小的压力。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "高核心提升和平衡需求会增加骨盆压力和腹部不适。",
+      "alternative": "使用支撑坐式核心训练，弯曲膝盖并轻轻抬起。"
+    }
+  ],
+  "neurological_disorder": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "如果协调或感觉受到影响，不稳定的平衡工作可能会增加跌倒的风险。",
+      "alternative": "使用具有广泛支撑基础的接地核心稳定性练习。"
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "倒立和快速位置变化对于有神经协调问题的客户来说可能具有挑战性。",
+      "alternative": "选择缓慢、有支撑的脊柱活动性并避免过头的腿部姿势。"
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "大腿圈需要控制和本体感觉，这在神经系统疾病中可能会受到损害。",
+      "alternative": "使用较小的支撑腿圈或单腿抬举，保持骨盆稳定。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "如果电机控制不一致，高平衡和协调需求可能会不安全。",
+      "alternative": "使用支撑坐式核心举升机，膝盖弯曲，底座稳定。"
+    }
+  ],
+  "mental_cognitive": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "如果注意力、记忆力或处理速度受到影响，复杂的平衡姿势可能不安全。",
+      "alternative": "使用简单、基础的练习，并提供清晰、可预测的提示。"
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "动态排序和快速转换可能会让有认知或心理健康问题的人不知所措。",
+      "alternative": "选择更慢、更线性的练习，一次一个动作。"
+    },
+    {
+      "exerciseId": "criss_cross",
+      "reason": "对于认知或情绪症状，快速旋转和协调可能很难安全地遵循。",
+      "alternative": "在清晰、有节奏的指导下使用轻柔的坐姿或仰卧旋转。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "当精神集中度或压力承受能力较低时，高复杂性和平衡需求可能会过多。",
+      "alternative": "使用支撑坐式核心练习，动作简单、稳定。"
+    }
+  ],
+  "other": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "这个条件没有具体列出； 在尝试高风险运动之前，选择温和、有支持的工作并咨询合格的临床医生。",
+      "alternative": "使用具有稳定基础、低负荷和明确指示的接地普拉提。"
+    }
+  ],
+  "perimenopause_menopause": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "倒立可能会引发血管舒缩症状，并在荷尔蒙变化期间导致血压升高。",
+      "alternative": "选择温和的仰卧核心训练，并支撑头部和胸部。"
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "在荷尔蒙心血管变化和潜在的骨密度降低期间，高强度倒立是不合适的。",
+      "alternative": "使用支撑桥式渐进和轻柔的髋部提升以及脊柱中立。"
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "在潮热或心血管敏感期间，持续的高强度呼吸工作可能会感到不舒服。",
+      "alternative": "以较短的组数和开胸姿势练习较慢的、以呼吸为主导的腹部训练。"
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "平衡倒置可能会挑战与围绝经期相关的血压稳定性和协调性变化。",
+      "alternative": "使用双脚放在垫子上并进行小范围运动的接地稳定性练习。"
+    }
+  ],
+  "stroke_recovery": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "双侧拉力的负载脊柱屈曲对于偏瘫或不对称无力是不安全的。",
+      "alternative": "专注于轻柔的呼吸、支撑骨盆倾斜和单侧腿部滑动。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "高要求的平衡和双边协调在中风早期恢复中是不安全的。",
+      "alternative": "使用支撑坐式核心训练，膝盖弯曲，双脚着地。"
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "完全平衡倒置需要双边协调，而这在中风后通常是无法实现的。",
+      "alternative": "选择具有广泛支持基础的接地核心稳定性练习。"
+    },
+    {
+      "exerciseId": "spine_twist",
+      "reason": "负载下的旋转会给正在恢复的运动通路带来压力，并挑战痉挛或虚弱的肌肉组织。",
+      "alternative": "使用支撑手臂的轻柔坐姿旋转以及缓慢、受控的运动。"
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "平板支撑需要双侧肩部和腿部的稳定性，而这在中风后通常是无法实现的。",
+      "alternative": "在有支撑的侧卧或坐姿下工作，一次只用一只肢体。"
+    }
+  ],
+  "long_covid": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "持续的有氧运动可能会引发长期新冠患者的运动后不适。",
+      "alternative": "使用更短、更温和的基于呼吸的核心训练，并经常休息。"
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "由于病毒后疲劳和能量包络限制，峰值运动是危险的。",
+      "alternative": "使用支撑坐位核心激活，负载最小，节奏较慢。"
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "在病毒后能量有限的恢复过程中，高强度反转是不安全的。",
+      "alternative": "选择温和的仰卧桥接，缓慢过渡并在重复之间休息。"
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "动态高强度俯卧运动可引发劳力后症状复发。",
+      "alternative": "使用轻柔的俯卧前臂抬起或狮身人面像姿势，以最小的努力。"
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "持续俯卧举起手臂和腿部可能会使体型较长的新冠患者在正常范围内感到疲惫不堪。",
+      "alternative": "选择单肢举重，在重复之间充分休息，并在第一次出现疲劳迹象时停止。"
+    }
+  ],
+  "hip_labral_tear": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "大的臀圈会对盂唇施加剪切应力，并可能加剧撕裂。",
+      "alternative": "使用非常小的支撑腿圈并保持骨盆完全稳定。"
+    },
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "较宽的髋部张开和平衡可能会冲击已经撕裂的盂唇。",
+      "alternative": "使用轻柔的坐姿内收肌练习，双腿并拢。"
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "旋转髋关节负荷会对盂唇组织施加压力，并有进一步撕裂的风险。",
+      "alternative": "使用较小的髋部运动并保持严格的稳定性，并避免末端旋转。"
+    },
+    {
+      "exerciseId": "front_splits",
+      "reason": "屈曲和伸展时髋部的极限范围会压缩和剪切盂唇。",
+      "alternative": "使用轻柔的髋部铰链动作并避免末端范围的髋部位置。"
+    },
+    {
+      "exerciseId": "scissors",
+      "reason": "快速交替髋部屈曲会刺激盂唇撕裂并增加疼痛。",
+      "alternative": "缓慢、受控地降低腿部，幅度较小，骨盆保持中立。"
+    }
+  ],
+  "wrist_conditions": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "全身重量通过平板支撑位置的手腕承受。",
+      "alternative": "使用前臂平板支撑或改为坐姿抬腿来减轻手腕的负担。"
+    },
+    {
+      "exerciseId": "push_up",
+      "reason": "负重的手腕伸展会直接加剧骨折、扭伤和肌腱病。",
+      "alternative": "使用靠墙俯卧撑或前臂支撑的姿势来消除手腕负荷。"
+    },
+    {
+      "exerciseId": "swan",
+      "reason": "俯卧俯卧撑姿势将大量体重置于手腕上。",
+      "alternative": "使用狮身人面像或前臂支撑的俯卧姿势以避免手腕负荷。"
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "侧平板支撑使手腕承受伸展和侧向压缩的负荷。",
+      "alternative": "使用前臂侧平板支撑或以拳头位置将手腕从垫子上滚下来。"
+    },
+    {
+      "exerciseId": "plank",
+      "reason": "手腕在体重作用下持续伸展会使手腕受伤或状况恶化。",
+      "alternative": "使用前臂平板支撑作为直接替代品，在没有手腕负荷的情况下完成核心工作。"
+    }
+  ],
+  "lymphedema": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "手臂的动态过头运动会增加淋巴压力并加剧受影响肢体的肿胀。",
+      "alternative": "使用轻柔的俯卧前臂抬起方式，并支撑手臂，并避免将手臂伸过头顶。"
+    },
+    {
+      "exerciseId": "arm_springs",
+      "reason": "反复抵抗手臂负荷会加剧淋巴水肿并损害淋巴引流。",
+      "alternative": "在肩高以下进行轻柔、有节奏的手臂运动，不要有任何阻力。"
+    },
+    {
+      "exerciseId": "rowing_series",
+      "reason": "用手臂拉阻力可能会恶化淋巴流动并增加肿胀。",
+      "alternative": "使用轻柔的支撑手臂活动，没有阻力，并保持肢体稍微抬高。"
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "对抗阻力的头顶推力会对受影响的淋巴结和血管造成压力。",
+      "alternative": "轻轻地伸手，不要有任何阻力，并尽可能将手臂保持在肩膀下方。"
+    },
+    {
+      "exerciseId": "magic_circle_press",
+      "reason": "手臂挤压或过头按压会增加受影响肢体的静脉和淋巴压力。",
+      "alternative": "专注于轻柔、有节奏的下半身或核心训练，同时让受影响的手臂休息。"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+.coming-soon-card {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+  margin-top: 2.5rem;
+  padding: 2rem 1.25rem;
+  border: 1.5px solid var(--sp-border);
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--sp-card-start) 58%, var(--sp-card-end) 100%);
+  box-shadow: 0 8px 32px var(--sp-shadow), 0 2px 8px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+.coming-soon-card ion-icon {
+  color: var(--ion-color-primary);
+  font-size: 2.4rem;
+}
+
+.coming-soon-card h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.coming-soon-card p {
+  margin: 0;
+  max-width: 32rem;
+  color: var(--sp-ink-2);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}

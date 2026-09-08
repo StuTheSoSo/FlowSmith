@@ -1,0 +1,73 @@
+ion-card {
+  margin-bottom: 1rem;
+}
+
+.theme-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.4rem 0;
+}
+
+.theme-row ion-chip {
+  cursor: pointer;
+}
+
+.theme-row ion-chip.selected {
+  --background: var(--ion-color-primary);
+  --color: #ffffff;
+  background: linear-gradient(90deg, var(--ion-color-primary) 60%, var(--ion-color-tertiary) 100%) !important;
+  color: #ffffff !important;
+  border-color: var(--ion-color-tertiary);
+}
+
+.timer-setting {
+  --background: rgba(255, 255, 255, 0.64);
+  --border-radius: 18px;
+  border: 1px solid var(--sp-border);
+  border-radius: 18px;
+}
+
+.timer-setting strong,
+.timer-setting p {
+  display: block;
+  margin: 0;
+}
+
+.timer-setting p {
+  margin-top: 0.2rem;
+  color: var(--sp-ink-3);
+  font-size: 0.82rem;
+  line-height: 1.3;
+}
+
+.coming-soon-card {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+  margin-top: 1.5rem;
+  padding: 2rem 1.25rem;
+  border: 1.5px solid var(--sp-border);
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--sp-card-start) 58%, var(--sp-card-end) 100%);
+  box-shadow: 0 8px 32px var(--sp-shadow), 0 2px 8px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+.coming-soon-card ion-icon {
+  color: var(--ion-color-primary);
+  font-size: 2.4rem;
+}
+
+.coming-soon-card h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.coming-soon-card p {
+  margin: 0;
+  max-width: 32rem;
+  color: var(--sp-ink-2);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}

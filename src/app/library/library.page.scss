@@ -1,0 +1,162 @@
+.control-strip {
+  margin-bottom: 0.8rem;
+}
+
+.exercise-search {
+  padding: 0;
+  --background: rgba(255, 255, 255, 0.92);
+  --border-radius: 18px;
+  --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  --placeholder-color: var(--sp-ink-3);
+}
+
+.results-panel {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0.9rem;
+  border: 1.5px solid var(--sp-border);
+  border-radius: 22px;
+  background: linear-gradient(135deg, var(--sp-card-start) 58%, var(--sp-card-end) 100%);
+  box-shadow: 0 8px 32px var(--sp-shadow), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.results-panel header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.results-panel header span {
+  color: var(--sp-ink-3);
+  font-size: 0.82rem;
+}
+
+.exercise-result {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid rgba(212, 237, 242, 0.9);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--sp-brand-ink);
+  cursor: pointer;
+  text-align: left;
+}
+
+.exercise-result:focus-visible {
+  outline: 2px solid var(--ion-color-primary);
+  outline-offset: 3px;
+}
+
+.exercise-result strong,
+.exercise-result small {
+  display: block;
+}
+
+.exercise-result small {
+  margin-top: 0.18rem;
+  color: var(--sp-ink-3);
+  font-size: 0.76rem;
+}
+
+.exercise-result ion-icon {
+  flex-shrink: 0;
+  color: var(--ion-color-primary);
+  font-size: 1.35rem;
+}
+
+.exercise-detail-content {
+  --padding-top: calc(env(safe-area-inset-top) + 0.8rem);
+}
+
+.detail-hero,
+.detail-section {
+  border: 1.5px solid var(--sp-border);
+  border-radius: 22px;
+  background: linear-gradient(135deg, var(--sp-card-start) 58%, var(--sp-card-end) 100%);
+  box-shadow: 0 8px 32px var(--sp-shadow), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.detail-hero {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1rem;
+}
+
+.detail-hero h1,
+.detail-hero p,
+.detail-section h2,
+.detail-section p {
+  margin: 0;
+}
+
+.detail-hero h1 {
+  overflow-wrap: anywhere;
+  color: var(--sp-brand-ink);
+  font-size: 1.8rem;
+  line-height: 1.05;
+}
+
+.detail-hero p:not(.eyebrow),
+.detail-section p,
+.detail-section li {
+  color: var(--sp-ink-2);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.detail-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.detail-section {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.75rem;
+  padding: 0.9rem;
+}
+
+.detail-section h2 {
+  color: var(--ion-color-primary);
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.detail-section ol,
+.detail-section ul {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.safety-section {
+  border-color: rgba(199, 86, 106, 0.28);
+  background: rgba(255, 246, 249, 0.94);
+}
+
+@media (min-width: 760px) {
+  .detail-hero,
+  .detail-section,
+  .detail-grid {
+    max-width: 820px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

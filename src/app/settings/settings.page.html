@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Settings</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Color theme</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="theme-row">
+        <ion-chip
+          *ngFor="let theme of themeOptions"
+          [outline]="selectedTheme !== theme.value"
+          [class.selected]="selectedTheme === theme.value"
+          (click)="onThemeChange(theme.value)"
+        >
+          <ion-label>{{ theme.label }}</ion-label>
+        </ion-chip>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Class timer</ion-card-title>
+      <ion-card-subtitle>Controls how FlowSmith advances during a live class</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none" class="timer-setting">
+        <ion-label>
+          <strong>Auto-advance exercises</strong>
+          <p>Move to the next exercise automatically when the timer reaches zero.</p>
+        </ion-label>
+        <ion-toggle
+          slot="end"
+          [checked]="classRunner.settings.autoAdvanceOnExerciseEnd"
+          (ionChange)="onAutoAdvanceChange($any($event).detail.checked)"
+        ></ion-toggle>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Language</ion-card-title>
+      <ion-card-subtitle>Applies to exercises, conditions, and library content</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="theme-row">
+        <ion-chip
+          *ngFor="let language of flowData.languages"
+          [outline]="flowData.currentLanguage !== language.code"
+          [class.selected]="flowData.currentLanguage === language.code"
+          (click)="onLanguageChange(language.code)"
+        >
+          <ion-label>{{ language.label }}</ion-label>
+        </ion-chip>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <section class="coming-soon-card">
+    <ion-icon name="settings-outline" aria-hidden="true"></ion-icon>
+    <h2>More settings are coming soon</h2>
+    <p>Pro status and data source info will live here next.</p>
+  </section>
+</ion-content>

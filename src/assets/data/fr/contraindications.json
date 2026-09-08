@@ -1,0 +1,1293 @@
+{
+  "osteoporosis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Flexion vertébrale chargée et vertèbres de contrainte en flexion vers l'avant.",
+      "alternative": "Utilisez des stabilisateurs neutres de la colonne vertébrale et des glissières pour les jambes en décubitus dorsal."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversion et la charge vertébrale en fin de course peuvent comprimer les os faibles.",
+      "alternative": "Remplacez par de légères inclinaisons pelviennes en décubitus dorsal."
+    },
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "Le roulement arrondi de la colonne vertébrale applique une contrainte de flexion répétée.",
+      "alternative": "Choisissez des plis de genoux soutenus ou des étirements sur une seule jambe."
+    },
+    {
+      "exerciseId": "spine_stretch_forward",
+      "reason": "La flexion vers l’avant avec charge augmente le risque de compression vertébrale.",
+      "alternative": "Essayez le travail postural assis avec une extension neutre de la colonne vertébrale."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Un soulèvement du tronc à charge élevée en flexion et en équilibre peut mettre la colonne vertébrale à rude épreuve.",
+      "alternative": "Utilisez des progressions de redressements assis modifiées avec un ballon."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversion et l'articulation vertébrale chargée peuvent comprimer les vertèbres fragiles.",
+      "alternative": "Choisissez des glissades douces des jambes en décubitus dorsal ou des inclinaisons pelviennes avec une colonne vertébrale neutre."
+    }
+  ],
+  "pregnancy": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Une flexion abdominale importante peut stresser la croissance de l'utérus et le diastasis recti.",
+      "alternative": "Passez au travail de base couché sur le côté ou assis avec support."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversion et le soulèvement des jambes en décubitus dorsal peuvent être inconfortables après la mi-grossesse.",
+      "alternative": "Utilisez une respiration douce du plancher pelvien en position assise ou couchée sur le côté."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Le levage et l'équilibre complets de style sit-up peuvent surcharger la ligne blanche.",
+      "alternative": "Concentrez-vous sur la posture neutre de la colonne vertébrale et l’activation du plancher pelvien."
+    },
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Un soutien de la tête et du torse en position couchée peut fatiguer le ventre et le cou.",
+      "alternative": "Utilisez des variantes de base debout ou latérales en toute sécurité."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Il est préférable d’éviter l’inversion et la compression vertébrale pendant la grossesse.",
+      "alternative": "Choisissez des étirements latéraux et un travail doux et soutenu des hanches."
+    }
+  ],
+  "low_back_pain": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Les flexions vertébrales répétitives peuvent aggraver un disque ou une chaîne postérieure douloureux.",
+      "alternative": "Choisissez des inclinaisons pelviennes et un pontage soutenu avec une colonne vertébrale neutre."
+    },
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "Rouler en charge peut provoquer des symptômes lombaires.",
+      "alternative": "Utilisez des exercices doux de stabilisation du tronc en position assise ou couchée."
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "La rotation avec flexion vertébrale peut irriter une colonne lombaire sensible.",
+      "alternative": "Utilisez un travail latéral axé sur la hanche et une rotation neutre de la colonne vertébrale."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversion et l'extension lombaire peuvent être trop intenses pour de nombreuses conditions de dos.",
+      "alternative": "Utilisez des progressions de pont soutenues et des levées de hanches douces."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'articulation vertébrale avec inversion peut aggraver les douleurs lombaires et la tension neuronale.",
+      "alternative": "Utilisez des exercices neutres de stabilisation pelvienne et des étirements doux en décubitus dorsal."
+    }
+  ],
+  "hypertension": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversion peut augmenter la tension artérielle et doit être évitée.",
+      "alternative": "Utilisez la mobilité assise ou quadrupède avec une respiration régulière."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Une inversion à fort effort peut stresser le système cardiovasculaire.",
+      "alternative": "Choisissez des prises de planches neutres pour la colonne vertébrale ou un travail des jambes assises."
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "L'apnée et la rotation rapide peuvent augmenter la tension artérielle.",
+      "alternative": "Utilisez des cercles de hanches lents et contrôlés avec une respiration détendue."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Balance inversions can feel too intense for heart concerns.",
+      "alternative": "Stay on the mat with core stability and leg lifts."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversion et la compression vertébrale peuvent élever la tension artérielle chez les personnes sensibles.",
+      "alternative": "Choisissez une stabilisation centrale à basse altitude et une mobilité debout douce."
+    }
+  ],
+  "knee_issues": [
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "Un lifting profond des hanches peut charger les genoux et aggraver les douleurs articulaires.",
+      "alternative": "Utilisez des inclinaisons pelviennes douces et des ponts fessiers soutenus."
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Les levées de jambes basées sur des planches exercent une pression sur les genoux et les hanches.",
+      "alternative": "Travaillez en quadrupède avec les jambes levées ou les levées de jambes latérales."
+    },
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "Les extensions de jambes sujettes peuvent irriter les tensions du genou ou des ischio-jambiers.",
+      "alternative": "Utilisez des mouvements sur une jambe assis ou couchés sur le côté avec une portée réduite."
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "Une flexion répétée du genou peut mettre à rude épreuve les articulations arthritiques.",
+      "alternative": "Choisissez des prises de jambes statiques ou une marche douce en décubitus dorsal."
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "La pression sur les jambes du Reformer peut exercer une charge continue sur les genoux sensibles.",
+      "alternative": "Utilisez des travaux de jambes assis ou soutenus avec une petite portée et une résistance plus légère."
+    }
+  ],
+  "hip_issues": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Les grands cercles de hanches peuvent aggraver les hanches douloureuses ou instables.",
+      "alternative": "Utilisez des cercles de jambes plus petits ou des charnières de hanche avec support."
+    },
+    {
+      "exerciseId": "scissors",
+      "reason": "Une amplitude extrême des hanches en décubitus dorsal peut irriter les articulations de la hanche.",
+      "alternative": "Gardez les jambes plus basses et travaillez avec des levées contrôlées plus petites."
+    },
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "L’équilibre des jambes largement ouvertes exerce une pression sur la capsule de la hanche.",
+      "alternative": "Utilisez un travail de contrôle des adducteurs et des ravisseurs assis."
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "Le mouvement de rotation de la hanche peut être douloureux si l’articulation est enflammée.",
+      "alternative": "Choisissez des pompes à hanches à soutien doux en décubitus dorsal."
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "Une pression répétée sur les jambes peut irriter les hanches sensibles en raison de la flexion et de l'extension chargées.",
+      "alternative": "Travaillez avec une petite portée et une résistance plus légère, ou choisissez des toboggans pour jambes en décubitus dorsal."
+    }
+  ],
+  "neck_shoulder": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Une tête et un cou relevés de manière prolongée peuvent aggraver la tension cervicale.",
+      "alternative": "Gardez la tête soutenue tout en maintenant la respiration centrale."
+    },
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Un soulèvement de la tête non pris en charge augmente la tension du cou et des épaules.",
+      "alternative": "Utilisez des mentonnières et des roulements doux et soutenus dans un cou neutre."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Le levage de tête avec équilibre peut charger les stabilisateurs du cou et des épaules.",
+      "alternative": "Utilisez le travail de base assis et soutenu et évitez la position en V complet."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L’extension du dos en position couchée sollicite le cou et le haut des épaules.",
+      "alternative": "Utilisez des levées douces sur le ventre avec les mains sous les épaules pour vous soutenir."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Charger les épaules sur la barre peut aggraver l’instabilité des épaules ou la tension du cou.",
+      "alternative": "Utilisez une extension dorsale légèrement soutenue avec une résistance plus faible."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "La charge sur l'épaule du Reformer sous une colonne vertébrale inversée peut stresser les zones tendues du cou et des épaules.",
+      "alternative": "Choisissez une extension du dos en position couchée ou une mobilisation de la colonne vertébrale en décubitus dorsal sans inversion."
+    }
+  ],
+  "recent_surgery": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexion vertébrale chargée est souvent trop agressive après une intervention chirurgicale.",
+      "alternative": "Concentrez-vous sur la respiration douce, le plancher pelvien et le soutien de la posture."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversion et l'articulation profonde peuvent être dangereuses pendant la récupération.",
+      "alternative": "Choisissez des mouvements soutenus et suivez l’autorisation professionnelle."
+    },
+    {
+      "exerciseId": "spine_twist",
+      "reason": "La torsion sous l'effet d'une charge peut stresser les tissus en voie de guérison.",
+      "alternative": "Utilisez une rotation neutre de la colonne vertébrale en position assise ou debout."
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "La flexion latérale peut être inconfortable après la chirurgie.",
+      "alternative": "Gardez les mouvements doux et évitez de vous pencher en fin de course."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversion et l'articulation vertébrale profonde sont généralement contre-indiquées après une intervention chirurgicale récente.",
+      "alternative": "Utilisez des inclinaisons pelviennes en décubitus dorsal douces et une mobilisation soutenue de la colonne vertébrale."
+    }
+  ],
+  "arthritis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Des flexions répétitives peuvent aggraver la raideur des articulations.",
+      "alternative": "Utilisez de petites articulations vertébrales et un travail de base neutre."
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "La rotation avec flexion vers l'avant peut irriter les articulations arthritiques.",
+      "alternative": "Utilisez la rotation assise sur le côté avec support."
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "Les cercles de hanche inversés peuvent être trop intenses pour les articulations sensibles.",
+      "alternative": "Choisissez des cercles de hanches simples avec une portée réduite."
+    },
+    {
+      "exerciseId": "seal",
+      "reason": "Rouler peut être dur pour la colonne vertébrale ou les hanches arthritiques.",
+      "alternative": "Utilisez le renforcement du noyau pris en charge sans roulement dynamique."
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "Le travail de presse à jambes avec un Reformer peut aggraver l'arthrite des articulations du genou ou de la hanche sans une gestion soigneuse de la charge.",
+      "alternative": "Utilisez une résistance plus légère et concentrez-vous sur une petite plage contrôlée."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversion et la compression vertébrale peuvent être inconfortables pour les articulations arthritiques.",
+      "alternative": "Choisissez une mobilisation douce de la colonne vertébrale sans grande amplitude ni inversion."
+    }
+  ],
+  "scoliosis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Une grande flexion vertébrale peut accentuer la courbure si elle n’est pas contrôlée.",
+      "alternative": "Utilisez des roll-downs pris en charge avec un bassin neutre et une conscience de l'asymétrie."
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "La rotation à travers la colonne vertébrale peut créer une charge inégale dans une colonne vertébrale courbée.",
+      "alternative": "Faites des étirements doux sur le côté assis avec la même attention des deux côtés."
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "Une flexion latérale asymétrique profonde peut contraindre une courbe scoliotique.",
+      "alternative": "Travaillez avec de petits coudes latéraux et gardez les côtes longues."
+    }
+  ],
+  "pelvic_floor_dysfunction": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Un fort pompage abdominal et une coordination respiratoire peuvent augmenter la pression du plancher pelvien.",
+      "alternative": "Gardez la tête soutenue et concentrez-vous sur un engagement doux du plancher pelvien."
+    },
+    {
+      "exerciseId": "single_leg_stretch",
+      "reason": "Une flexion répétée de la hanche et un engagement du bas de l’abdomen peuvent irriter un plancher pelvien faible.",
+      "alternative": "Effectuez des plis de genou soutenus ou une marche modifiée avec un bassin neutre."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Un mouvement complet de redressement assis sollicite le plancher pelvien et la ligne blanche.",
+      "alternative": "Utilisez un travail de base assis soutenu et évitez la position en V complet."
+    }
+  ],
+  "diastasis_recti": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Un fort pompage abdominal peut élargir la séparation et augmenter la pression intra-abdominale.",
+      "alternative": "Utilisez un travail de base soutenu avec la tête baissée et concentrez-vous sur l’engagement transversal de l’abdomen."
+    },
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexion vertébrale chargée exerce une pression sur la ligne blanche.",
+      "alternative": "Pratiquez des inclinaisons pelviennes et des roulages soutenus avec une colonne vertébrale neutre."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "La position en V complète et le lifting abdominal peuvent surcharger les muscles abdominaux séparés.",
+      "alternative": "Utilisez un travail de base assis modifié avec les genoux pliés et une faible portance."
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "L’extension combinée des abdominaux inférieurs et la portée des bras peuvent augmenter la pression sur la ligne médiane.",
+      "alternative": "Choisissez des talonnettes et des supports pour une seule jambe avec un minimum de tension abdominale."
+    }
+  ],
+  "shoulder_instability": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Une charge importante sur l'épaule sur la barre peut aggraver l'instabilité ou le conflit.",
+      "alternative": "Utilisez une extension du dos soutenue avec une résistance plus légère et un placement stable des épaules."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L'extension en position couchée peut exercer une pression excessive sur les stabilisateurs du cou et des épaules.",
+      "alternative": "Choisissez un levage doux sur le ventre avec les mains sous les épaules pour vous soutenir."
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "Des levées de bras répétées et alternées peuvent surcharger les articulations instables des épaules.",
+      "alternative": "Utilisez une extension de bras inférieure en mettant davantage l’accent sur la stabilité scapulaire."
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "Les positions de pont soutenues par les épaules peuvent augmenter l'inconfort si les épaules sont instables.",
+      "alternative": "Gardez le haut du corps détendu et travaillez avec des variations du pont inférieur ou un engagement des fessiers en décubitus dorsal."
+    }
+  ],
+  "bursitis": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Les grands cercles de hanche peuvent irriter les bourses enflammées autour de la hanche ou du bassin.",
+      "alternative": "Utilisez des cercles de jambes plus petits et plus lents avec un bassin soutenu."
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "Une rotation répétitive de la hanche peut aggraver la bursite de l'articulation de la hanche.",
+      "alternative": "Choisissez des pompes à hanches à soutien doux dans une gamme neutre."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L’extension du dos en position couchée peut comprimer les bourses séreuses de l’épaule déjà sensibles.",
+      "alternative": "Travaillez avec des levées de poitrine soutenues et évitez les extensions agressives du haut du dos."
+    },
+    {
+      "exerciseId": "long_box_series",
+      "reason": "La portée étendue du haut du corps et les mouvements chargés du chariot peuvent stresser les tissus sensibles des épaules.",
+      "alternative": "Utilisez des ressorts plus légers et des mouvements de bras plus petits tout en gardant les épaules stables."
+    }
+  ],
+  "vertigo_dizziness": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversion peut déclencher des étourdissements et une désorientation.",
+      "alternative": "Choisissez plutôt des inclinaisons pelviennes en décubitus dorsal douces ou une mobilité assise."
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "Une rotation rapide de la colonne vertébrale avec les jambes au-dessus de la tête peut perturber l'équilibre.",
+      "alternative": "Utilisez des cercles de hanches lents avec la tête appuyée et les yeux fixes."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversion et un défi d'équilibre soudain peuvent aggraver les vertiges.",
+      "alternative": "Restez sur le tapis avec des progressions de pont soutenues et des mouvements lents."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Les inversions et l’équilibrage avancés peuvent provoquer des étourdissements.",
+      "alternative": "Concentrez-vous sur la stabilité du corps au sol et sur une respiration régulière."
+    }
+  ],
+  "postpartum": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Une flexion vertébrale chargée et un soulèvement abdominal peuvent stresser le noyau post-partum en convalescence.",
+      "alternative": "Utilisez des inclinaisons pelviennes soutenues et un travail doux de reconnexion du noyau assis."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Un levage complet en V peut surcharger la ligne blanche et le plancher pelvien de guérison.",
+      "alternative": "Pratiquez des levées de corps assises avec appui, les genoux pliés et une respiration douce."
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "Une extension et une portée abdominales fortes peuvent surcharger une ligne médiane en convalescence.",
+      "alternative": "Choisissez des talonnettes et des supports pour une seule jambe avec un minimum de tension abdominale."
+    }
+  ],
+  "balance_issues": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Le travail d’équilibre avancé augmente le risque de chute et l’instabilité.",
+      "alternative": "Concentrez-vous sur la stabilité basée sur le sol et le contrôle lent du noyau."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversion et la demande d'équilibre élevée peuvent être trop difficiles pour les clients instables.",
+      "alternative": "Utilisez des progressions de pont prises en charge et des levées de hanches de bas niveau."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L’inversion des jambes au-dessus de la tête peut remettre en question l’équilibre et l’orientation spatiale.",
+      "alternative": "Choisissez une mobilité centrale assise ou couchée sans inversion."
+    }
+  ],
+  "joint_replacement": [
+    {
+      "exerciseId": "footwork",
+      "reason": "La pression sur la jambe du Reformer peut placer trop de charge sur un genou ou une hanche remplacé.",
+      "alternative": "Utilisez des ressorts plus légers, une amplitude de mouvement plus petite ou un support de jambe assis."
+    },
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "Une flexion du genou et un mouvement de la hanche chargés peuvent mettre à rude épreuve une articulation remplacée.",
+      "alternative": "Choisissez des genouillères soutenues avec une portée minimale et un alignement contrôlé."
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Les grands cercles de hanche peuvent aggraver une articulation de la hanche remplacée.",
+      "alternative": "Utilisez des cercles de jambes soutenus plus petits ou un travail de stabilité isométrique des hanches."
+    }
+  ],
+  "foot_ankle_issues": [
+    {
+      "exerciseId": "footwork",
+      "reason": "La barre de pied Reformer exerce une charge répétée sur les chevilles et l'avant-pied.",
+      "alternative": "Utilisez une résistance plus légère et gardez les pieds à plat avec une flexion plantaire minimale."
+    },
+    {
+      "exerciseId": "elephant",
+      "reason": "La mise en charge des pieds et des chevilles peut aggraver les articulations sensibles.",
+      "alternative": "Choisissez des étirements des ischio-jambiers assis ou soutenus sans charge lourde sur les pieds."
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "Les mouvements rapides du bas de la jambe et les positions pointues des pieds peuvent irriter les douleurs à la cheville ou au pied.",
+      "alternative": "Utilisez des cercles de jambes en décubitus dorsal plus lents avec une position neutre des pieds."
+    }
+  ],
+  "hypermobility_syndrome": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "De grandes plages articulaires non soutenues peuvent sur-étirer le tissu conjonctif relâché en cas d'hypermobilité.",
+      "alternative": "Utilisez des courbes plus petites, une stabilité active et maintenez le bassin soutenu pendant les cercles de jambes."
+    }
+  ],
+  "hernia": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Une flexion et une tension abdominales chargées peuvent augmenter la pression intra-abdominale et irriter une hernie.",
+      "alternative": "Choisissez des inclinaisons pelviennes, un travail de base en décubitus dorsal et une respiration douce sans craquements lourds."
+    }
+  ],
+  "parkinsons_disease": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Les problèmes d’équilibre instable augmentent le risque de chute lorsque le contrôle du moteur et la vitesse de réaction sont affectés.",
+      "alternative": "Utilisez des mouvements ancrés et soutenus avec une base large et des transitions lentes."
+    }
+  ],
+  "multiple_sclerosis": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Une respiration soutenue et une intensité de base peuvent surchauffer ou fatiguer excessivement une personne atteinte de SEP.",
+      "alternative": "Utilisez des séances plus courtes et plus fraîches avec un travail de base basé sur la respiration."
+    }
+  ],
+  "stress_incontinence": [
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "Une forte extension abdominale et une pression pelvienne peuvent exacerber les symptômes de fuite ou du plancher pelvien.",
+      "alternative": "Utilisez des diapositives de talon et un engagement doux du noyau avec la stabilité du bassin."
+    }
+  ],
+  "disc_degeneration": [
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "Des flexions et compressions vertébrales répétées peuvent aggraver un disque déjà dégénéré.",
+      "alternative": "Choisissez des inclinaisons pelviennes neutres de la colonne vertébrale et une stabilisation centrale soutenue."
+    }
+  ],
+  "radiculopathy_sciatica": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Une flexion vertébrale profonde peut augmenter la compression des racines nerveuses et les symptômes de sciatique.",
+      "alternative": "Utilisez une mobilité vertébrale douce et soutenue et évitez de vous pencher vers l’avant sous une charge."
+    }
+  ],
+  "ankylosing_spondylitis": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversion et la compression axiale peuvent stresser une colonne vertébrale enflammée et raide et limiter l'expansion thoracique.",
+      "alternative": "Choisissez un travail de pont soutenu et une mobilité vertébrale douce et assise."
+    }
+  ],
+  "sacroiliac_dysfunction": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Les grands cercles de jambes peuvent créer un cisaillement pelvien inégal et irriter l’articulation SI.",
+      "alternative": "Utilisez de petits mouvements de jambes contrôlés avec le bassin stabilisé."
+    }
+  ],
+  "cervical_spine_dysfunction": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Un soulèvement de la tête et une flexion cervicale non pris en charge peuvent aggraver le dysfonctionnement du cou.",
+      "alternative": "Gardez la tête soutenue et utilisez des exercices de base doux sans mouvements profonds du cou."
+    }
+  ],
+  "frozen_shoulder": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L'extension du dos en position couchée peut aggraver une épaule raide et douloureuse et restreindre la portée confortable.",
+      "alternative": "Utilisez des soulèvements de poitrine soutenus avec les bras légers et près du corps."
+    }
+  ],
+  "rotator_cuff_injury": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Une charge importante sur l'épaule et une rotation externe peuvent irriter une coiffe des rotateurs blessée.",
+      "alternative": "Choisissez une mobilité douce et soutenue des épaules et évitez les charges profondes sur l’articulation de l’épaule."
+    }
+  ],
+  "acromioclavicular_sprain": [
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "La compression de l'épaule et la charge sur le haut du corps peuvent aggraver la douleur au niveau de l'articulation AC.",
+      "alternative": "Utilisez des inclinaisons pelviennes ou des variations de pont bas avec une pression réduite sur les épaules."
+    }
+  ],
+  "thoracic_outlet_syndrome": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Une élévation soutenue des épaules et une coordination respiratoire peuvent augmenter la compression près du défilé thoracique.",
+      "alternative": "Utilisez une ouverture douce de la poitrine avec les bras soutenus et évitez les positions des épaules au-dessus de la tête."
+    }
+  ],
+  "tennis_elbow": [
+    {
+      "exerciseId": "push_through",
+      "reason": "L’appui sur les mains et les avant-bras peut aggraver l’irritation des tendons latéraux du coude.",
+      "alternative": "Utilisez un travail d’épaule à faible charge et évitez de saisir avec force ou d’étendre le poignet."
+    }
+  ],
+  "golfers_elbow": [
+    {
+      "exerciseId": "push_through",
+      "reason": "La charge de l’avant-bras et l’action du poignet peuvent fatiguer le coude médial du coude du golfeur.",
+      "alternative": "Choisissez un travail soutenu du haut du corps avec un minimum de force sur le poignet ou la poignée."
+    }
+  ],
+  "nerve_compression": [
+    {
+      "exerciseId": "corkscrew",
+      "reason": "La torsion et la compression vertébrale peuvent pincer un nerf sensible et aggraver les symptômes de compression.",
+      "alternative": "Utilisez une mobilité vertébrale douce avec un alignement neutre et évitez les torsions en fin de course."
+    }
+  ],
+  "carpal_tunnel_syndrome": [
+    {
+      "exerciseId": "teaser",
+      "reason": "L’extension et la préhension du poignet peuvent augmenter la pression dans le canal carpien.",
+      "alternative": "Utilisez un travail de base soutenu avec un poignet neutre et une prise réduite des doigts."
+    }
+  ],
+  "cubital_tunnel_syndrome": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Une charge du haut du corps en forme de planche peut comprimer le nerf cubital au niveau du coude.",
+      "alternative": "Utilisez un travail de base soutenu et gardez le coude droit et libre de toute pression directe."
+    }
+  ],
+  "radial_nerve_issue": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Le positionnement du poignet et du bras sous charge peut aggraver les symptômes du nerf radial si le bras est étendu ou comprimé.",
+      "alternative": "Effectuez un travail de base doux avec les poignets et les coudes dans des positions neutres et indolores."
+    }
+  ],
+  "ankle_sprain": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Un travail d’équilibre non soutenu peut stresser une cheville en voie de guérison et augmenter le risque de nouvelle entorse.",
+      "alternative": "Utilisez le travail avec les jambes assises ou soutenues, les deux pieds au sol."
+    }
+  ],
+  "achilles_tendinopathy": [
+    {
+      "exerciseId": "footwork",
+      "reason": "La poussée de la barre de pied du Reformer peut surcharger le tendon d'Achille avec des flexions plantaires répétées.",
+      "alternative": "Utilisez une résistance plus légère et évitez les fortes poussées à travers les pieds."
+    }
+  ],
+  "posterior_tibialis_dysfunction": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Un travail intensif sur la barre plantaire peut exacerber les tensions médiales de la cheville et de la voûte plantaire.",
+      "alternative": "Utilisez des positions de pied plus douces et neutres et réduisez les charges répétitives sur l’intérieur du pied."
+    }
+  ],
+  "tibial_stress_syndrome": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Un travail répété de presse sur les jambes peut aggraver les douleurs au tibia et les réactions de stress au niveau du tibia.",
+      "alternative": "Choisissez une résistance plus faible et évitez les longues séries de jambes à volume élevé."
+    }
+  ],
+  "plantar_fasciitis": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Une pression élevée sur la barre plantaire et une extension des orteils peuvent irriter le fascia plantaire.",
+      "alternative": "Utilisez un placement de pied doux et neutre et une résistance plus faible avec moins de flexion des orteils."
+    }
+  ],
+  "bunions": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Les positions étroites des pieds et la pression de l’avant-pied peuvent augmenter l’inconfort des oignons.",
+      "alternative": "Utilisez un placement de pied plus large et plus doux et évitez d’appuyer directement sur l’articulation du gros orteil."
+    }
+  ],
+  "hip_arthroscopy": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Les grands cercles de hanche peuvent mettre à rude épreuve l’articulation de la hanche en cours de guérison et les tissus profonds après une arthroscopie.",
+      "alternative": "Utilisez des cercles de jambes plus petits et soutenus et maintenez le bassin stable."
+    }
+  ],
+  "piriformis_syndrome": [
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "Une large ouverture et rotation de la hanche peut aggraver l’irritation du piriforme et les symptômes sciatiques.",
+      "alternative": "Utilisez une mobilité douce des hanches avec les jambes rapprochées et le bassin soutenu."
+    }
+  ],
+  "hamstring_tendinopathy": [
+    {
+      "exerciseId": "scissors",
+      "reason": "Un allongement agressif des ischio-jambiers et des mouvements alternés rapides des jambes peuvent aggraver l’irritation des tendons.",
+      "alternative": "Utilisez un contrôle doux des ischio-jambiers et évitez les balancements rapides des jambes en fin de course."
+    }
+  ],
+  "muscle_strain": [
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "Un travail de chaîne postérieur chargé et une tension musculaire soutenue peuvent aggraver une tension aiguë.",
+      "alternative": "Utilisez une mobilité douce et soutenue et évitez les extensions de jambe fortes et résistantes."
+    }
+  ],
+  "snapping_hip_syndrome": [
+    {
+      "exerciseId": "hip_circles",
+      "reason": "Des cercles de hanche rapides et larges peuvent déclencher des claquements et irriter les tissus de la hanche.",
+      "alternative": "Utilisez des mouvements de hanche plus petits et plus lents en mettant l’accent sur la stabilité."
+    }
+  ],
+  "greater_trochanteric_pain": [
+    {
+      "exerciseId": "side_bend",
+      "reason": "Une pression latérale et un fort mouvement latéral de la hanche peuvent aggraver une douleur plus importante au trochanter.",
+      "alternative": "Utilisez un travail de hanche doux en position debout ou couchée avec moins de charge latérale."
+    }
+  ],
+  "femoroacetabular_impingement": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Une flexion profonde de la hanche et une rotation interne peuvent pincer l’avant de la hanche en FAI.",
+      "alternative": "Utilisez des cercles de hanches plus petits et évitez les flexions et rotations extrêmes."
+    }
+  ],
+  "patellofemoral_pain": [
+    {
+      "exerciseId": "footwork",
+      "reason": "La presse à jambes Reformer peut augmenter la compression sous la rotule et aggraver la douleur antérieure du genou.",
+      "alternative": "Utilisez une résistance plus légère et maintenez l’alignement du genou stable avec une plage peu profonde."
+    }
+  ],
+  "iliotibial_band_syndrome": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "La flexion répétitive du genou et l'adduction de la hanche peuvent irriter l'extérieur du genou et la bande IT.",
+      "alternative": "Utilisez un travail contrôlé du bas des jambes en évitant une adduction excessive de la hanche."
+    }
+  ],
+  "meniscus_tear": [
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "La flexion du genou et la mise en charge sous charge peuvent aggraver une déchirure du ménisque.",
+      "alternative": "Utilisez un travail d’extension du genou doux avec moins de charge de compression."
+    }
+  ],
+  "ligament_injury": [
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "Une flexion profonde ou chargée du genou peut mettre à rude épreuve les ligaments du genou en voie de guérison.",
+      "alternative": "Utilisez un travail du genou contrôlé et soutenu avec un poids minimal et un alignement neutre."
+    }
+  ],
+  "chronic_fatigue": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Un travail respiratoire et de base à répétition élevée peut aggraver la fatigue si le rythme est trop agressif.",
+      "alternative": "Utilisez des séries plus courtes, un travail respiratoire plus doux et autorisez des pauses."
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "Les levées soutenues des bras et des jambes en position couchée peuvent être trop exigeantes pour les clients à faible énergie.",
+      "alternative": "Choisissez des liftings d’un seul membre avec des pauses de récupération fréquentes."
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Les levées de jambes prolongées basées sur des planches peuvent surcharger un corps fatigué.",
+      "alternative": "Utilisez des exercices de base pour quadrupèdes ou en décubitus dorsal avec une charge moins soutenue."
+    }
+  ],
+  "diabetes": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Le travail des jambes à haute résistance peut être difficile en cas de circulation ou de neuropathie.",
+      "alternative": "Utilisez des ressorts plus légers et concentrez-vous sur un mouvement fluide et contrôlé du chariot."
+    },
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "Un effort prolongé en position couchée peut fatiguer rapidement les épaules et les jambes.",
+      "alternative": "Choisissez un travail à la chaîne postérieure de plus courte durée avec un repos fréquent."
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "Les mouvements alternés rapides du bas du corps peuvent être inconfortables si la sensation est réduite.",
+      "alternative": "Utilisez des rythmes de jambes plus lents et gardez le bassin stable."
+    }
+  ],
+  "weight_concerns": [
+    {
+      "exerciseId": "teaser",
+      "reason": "Une demande élevée en matière de noyau et d’équilibre peut être difficile avec un poids corporel supplémentaire.",
+      "alternative": "Utilisez des levées de corps soutenues avec les genoux pliés et un centre de gravité plus bas."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversion et le soulèvement rapide des jambes peuvent augmenter la tension sur le bas du dos et les hanches.",
+      "alternative": "Choisissez des ponts soutenus et des levées de hanches plus lentes avec une colonne vertébrale neutre."
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "L’équilibre de roulement dynamique peut être instable et trop exigeant pour les articulations.",
+      "alternative": "Concentrez-vous sur un travail de base contrôlé en position assise ou couchée avec un contact stable avec les pieds."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "L’équilibre avancé et la demande d’extension des jambes peuvent mettre à rude épreuve le contrôle et la stabilité des articulations.",
+      "alternative": "Utilisez des exercices de stabilité au sol avec les deux pieds sur le tapis et des mouvements de petite amplitude."
+    }
+  ],
+  "respiratory": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "Les inversions et la compression du haut du corps peuvent rendre la respiration difficile pour les personnes asthmatiques.",
+      "alternative": "Utilisez des soulèvements thoraciques soutenus et évitez les positions de compression thoracique ou d’apnée."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "La position des jambes au-dessus de la tête et la flexion de la colonne vertébrale peuvent restreindre la cage thoracique et gêner la respiration.",
+      "alternative": "Choisissez un travail de base en décubitus dorsal doux avec la tête et la poitrine soutenues."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Des cycles respiratoires rapides et une intensité de base peuvent déclencher une respiration sifflante ou un essoufflement.",
+      "alternative": "Pratiquez un travail abdominal plus lent basé sur la respiration avec des repos fréquents et une posture thoracique ouverte."
+    }
+  ],
+  "swollen_glands": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "Un lifting de soutien de la tête et du cou peut aggraver les ganglions lymphatiques sensibles du cou.",
+      "alternative": "Gardez la tête soutenue et concentrez-vous sur une activation douce du corps sans mouvements lourds du cou."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L’inversion des jambes au-dessus de la tête peut augmenter la pression et l’inconfort autour des nœuds enflés du cou et des épaules.",
+      "alternative": "Choisissez un travail de base en décubitus dorsal plus neutre et soutenu avec la tête et le cou dans une position confortable."
+    },
+    {
+      "exerciseId": "seated_spine_twist",
+      "reason": "Une forte rotation autour de la colonne cervicale peut irriter les ganglions lymphatiques sensibles du cou et de la mâchoire.",
+      "alternative": "Utilisez des rotations assises plus petites avec une colonne vertébrale longue et évitez les rotations profondes de la tête."
+    }
+  ],
+  "vision_impairment": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Les poses d'équilibre non prises en charge dépendent du retour visuel et peuvent augmenter le risque de chute en cas de basse vision.",
+      "alternative": "Utilisez des exercices au sol et soutenus comme le travail des jambes assises et une mobilité debout stable."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversion et les transitions rapides peuvent être difficiles à évaluer en toute sécurité lorsque la vision est altérée.",
+      "alternative": "Choisissez une mobilité en décubitus dorsal soutenue et un travail de base doux avec les mains sur des surfaces stables."
+    }
+  ],
+  "hearing_impairment": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Les exercices nécessitant des signaux verbaux rapides sont plus difficiles à suivre sans une audition fiable.",
+      "alternative": "Utilisez des mouvements lents et prévisibles avec une démonstration visuelle et des gestes clairs."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Un timing et un équilibre complexes dans Teaser peuvent être dangereux sans support de repérage visuel ou tactile.",
+      "alternative": "Utilisez des levées de corps assises soutenues avec les genoux pliés et des repères stables."
+    }
+  ],
+  "epilepsy_seizure": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "Les inversions et les articulations vertébrales rapides peuvent augmenter le risque de chute liée à une crise.",
+      "alternative": "Gardez la colonne vertébrale basse avec des progressions de pont soutenues et des mouvements lents."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Un travail d'équilibre instable peut être dangereux si une crise survient pendant l'exercice.",
+      "alternative": "Utilisez un travail de base stable au sol et évitez les positions d’équilibrage non soutenues."
+    }
+  ],
+  "severe_allergy": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Les sangles et accessoires Reformer peuvent contenir du latex ou des allergènes qui déclenchent une réaction grave.",
+      "alternative": "Utilisez un travail du bas du corps sur tapis avec des accessoires hypoallergéniques et un équipement propre."
+    }
+  ],
+  "chronic_pain_syndrome": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Un pompage de base soutenu peut être trop intense pour une sensibilité à la douleur et une fatigue généralisées.",
+      "alternative": "Pratiquez des séries plus courtes avec la tête appuyée et une respiration douce."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Une demande de base élevée et des exigences d’équilibre peuvent déclencher des douleurs dans plusieurs régions.",
+      "alternative": "Utilisez un travail de base assis modifié avec un support et une faible portance."
+    }
+  ],
+  "skin_condition": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Les extensions sujettes pressent le torse et peuvent irriter la peau enflammée ou sensible de la poitrine et de l'abdomen.",
+      "alternative": "Choisissez des levées couchées soutenues avec les avant-bras sur le tapis ou un travail d'extension du dossier assis."
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "La pression exercée sur les épaules par le tapis ou l'équipement peut aggraver l'eczéma, les plaies ou le psoriasis sur le haut du corps.",
+      "alternative": "Utilisez des inclinaisons pelviennes douces et des variantes de ponts fessiers soutenus avec rembourrage."
+    }
+  ],
+  "transplant_immunosuppression": [
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L’articulation et l’inversion agressives de la colonne vertébrale peuvent être trop stressantes alors que la fonction immunitaire et la récupération restent délicates.",
+      "alternative": "Utilisez des inclinaisons pelviennes en décubitus dorsal douces et une mobilisation soutenue de la colonne vertébrale sans inversion."
+    }
+  ],
+  "recent_hospitalization": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversion et les mouvements rapides de la colonne vertébrale sont souvent trop intenses pour une personne qui se remet d'une récente hospitalisation ou d'un alitement.",
+      "alternative": "Choisissez des progressions de pont soutenues et des levées de hanche lentes et contrôlées."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Les problèmes d’équilibre non pris en charge augmentent le risque de chute pour les clients déconditionnés après une hospitalisation.",
+      "alternative": "Utilisez un travail de force de base au sol avec les deux pieds sur le tapis."
+    }
+  ],
+  "pacemaker_implant": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L'extension du dos en position couchée peut comprimer la poitrine et le haut du corps près du site du stimulateur cardiaque.",
+      "alternative": "Choisissez des soulèvements thoraciques doux et soutenus avec les avant-bras sur le tapis."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Une charge importante sur les épaules et la poitrine peut exercer une pression inconfortable à proximité d'un implant cardiaque.",
+      "alternative": "Utilisez un soutien plus léger et des mouvements d’extension du dos plus bas."
+    }
+  ],
+  "substance_use_recovery": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Un travail avec un équilibre instable peut être dangereux si la coordination ou la concentration est altérée lors de la récupération.",
+      "alternative": "Utilisez des exercices Pilates stables et ancrés avec des indices clairs et simples."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversion et les changements rapides de position peuvent être risqués si l'attention et la conscience corporelle sont variables.",
+      "alternative": "Choisissez plutôt une mobilité douce en décubitus dorsal et un travail de base soutenu."
+    }
+  ],
+  "respiratory_pulmonary": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversion et la compression thoracique profonde peuvent aggraver les difficultés respiratoires lors des poussées pulmonaires.",
+      "alternative": "Utilisez des progressions de pont soutenues ou une mobilité assise douce avec poitrine ouverte."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Les jambes au-dessus de la tête et la flexion de la colonne vertébrale peuvent restreindre la cage thoracique et déclencher un essoufflement.",
+      "alternative": "Choisissez un travail de base en décubitus dorsal avec la tête et la poitrine soutenues."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversion et la compression vertébrale peuvent rendre la respiration inconfortable pour une personne présentant des limites pulmonaires.",
+      "alternative": "Utilisez des inclinaisons pelviennes douces et une articulation basse de la colonne vertébrale sans inversion."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "La coordination respiratoire à haute intensité peut être trop exigeante pour une fonction pulmonaire compromise.",
+      "alternative": "Pratiquez un travail abdominal plus lent basé sur la respiration avec des repos fréquents."
+    }
+  ],
+  "cardiovascular_disease": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversion et l'effort intense peuvent augmenter la tension artérielle et mettre le cœur à rude épreuve.",
+      "alternative": "Utilisez un travail de base à basse altitude et des progressions de pont stables."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Les transitions rapides et le positionnement des jambes au-dessus de la tête peuvent être stressants pour un système cardiovasculaire affaibli.",
+      "alternative": "Choisissez une mobilité douce en décubitus dorsal et une articulation vertébrale lente."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Une charge importante sur le haut du corps peut surcharger la réponse de la fréquence cardiaque et le contrôle de la pression artérielle.",
+      "alternative": "Utilisez un support d’épaule plus léger et évitez toute résistance maximale."
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "Une poussée soutenue des jambes peut créer une demande cardiovasculaire excessive chez une personne souffrant d’une maladie cardiaque.",
+      "alternative": "Privilégiez un travail des jambes plus lent et à faible résistance et surveillez de près l’effort."
+    }
+  ],
+  "arrhythmia_cardiac_device": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Une compression thoracique profonde et une charge sur le haut du corps peuvent irriter le site du dispositif ou perturber le contrôle du rythme.",
+      "alternative": "Choisissez une extension dorsale légèrement soutenue avec une résistance minimale."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "L'extension en position couchée et la pression thoracique peuvent être inconfortables avec un dispositif cardiaque implanté.",
+      "alternative": "Utilisez des soulèvements de poitrine doux avec les avant-bras sur le tapis."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Une inversion rapide et des changements soudains d'effort peuvent déclencher un rythme cardiaque irrégulier.",
+      "alternative": "Restez près du tapis et utilisez des progressions de pont contrôlées."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Un travail avec un équilibre instable peut être dangereux si une arythmie affecte la coordination ou la conscience.",
+      "alternative": "Utilisez des exercices de stabilité de base au sol avec les deux pieds sur le tapis."
+    }
+  ],
+  "metabolic_endocrine": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Une respiration rapide et une intensité de base soutenue peuvent déstabiliser la glycémie et les niveaux d'énergie.",
+      "alternative": "Utilisez des séries plus courtes avec une respiration douce et un repos fréquent."
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "Une poussée soutenue des jambes peut créer une demande métabolique rapide et des fluctuations énergétiques.",
+      "alternative": "Choisissez un travail des jambes plus lent et à faible résistance avec un rythme prudent."
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "Le séquençage dynamique du corps entier peut être trop intense lorsque l’équilibre métabolique ou hormonal est instable.",
+      "alternative": "Concentrez-vous sur un travail d’articulation du tronc et de la colonne vertébrale plus lent et soutenu."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Une intensité de base élevée et une demande d'équilibre élevée peuvent surcharger les systèmes énergétiques régulés par le glucose ou les hormones.",
+      "alternative": "Utilisez des levées de corps assises soutenues avec les genoux pliés et une colonne vertébrale neutre."
+    }
+  ],
+  "autoimmune_inflammatory": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Une extension profonde du dos et une charge prolongée sur le haut du corps peuvent aggraver l’inflammation des articulations ou des tissus.",
+      "alternative": "Utilisez des levées douces et soutenues avec une petite portée."
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "Le soulèvement de la hanche en charge et la compression de l'épaule peuvent être douloureux ou inflammatoires lors d'une poussée.",
+      "alternative": "Choisissez des inclinaisons pelviennes avec une colonne vertébrale neutre et beaucoup de repos entre les répétitions."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversion et la compression vertébrale peuvent aggraver les symptômes inflammatoires systémiques.",
+      "alternative": "Utilisez des inclinaisons pelviennes en décubitus dorsal et une mobilisation douce de la colonne vertébrale sans inversion."
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Les mouvements importants de la hanche et les charges de rotation peuvent sembler trop intenses lors d’une inflammation auto-immune.",
+      "alternative": "Utilisez des cercles de jambes plus petits et soutenez le bassin avec les mains."
+    }
+  ],
+  "immune_infectious": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "L’intensité de base axée sur la respiration peut être trop éprouvante en cas d’infection active ou de déficience immunitaire.",
+      "alternative": "Pratiquez un travail respiratoire doux et reposez-vous lorsque des symptômes sont présents."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversion et un effort plus intense peuvent aggraver la fatigue et les symptômes de maladies systémiques.",
+      "alternative": "Utilisez des progressions de pont prises en charge et réduisez l’intensité."
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "Un travail de résistance soutenu peut s’avérer trop exigeant pendant la convalescence après une infection.",
+      "alternative": "Choisissez un travail des jambes à faible résistance et à faible impact avec des pauses supplémentaires."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Un effort intense du haut du corps peut être dangereux en cas de maladie aiguë ou d’immunité réduite.",
+      "alternative": "Utilisez une extension du dos légèrement soutenue et arrêtez si les symptômes s'aggravent."
+    }
+  ],
+  "oncology_treatment": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversion et la compression vertébrale peuvent être mal tolérées pendant le traitement actif du cancer.",
+      "alternative": "Choisissez un travail de base en décubitus dorsal doux avec la tête et la poitrine soutenues."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "Un effort intense et une inversion peuvent augmenter la fatigue, les ecchymoses ou le stress cardiovasculaire.",
+      "alternative": "Utilisez des progressions de pont basses avec une respiration contrôlée."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "La compression thoracique couchée et l'extension du dos peuvent être trop agressives en cas de fatigue liée au traitement.",
+      "alternative": "Utilisez des levées couchées soutenues avec les avant-bras sur le tapis."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "L'inversion et l'articulation profonde de la colonne vertébrale peuvent être risquées lorsque la numération globulaire ou la tolérance tissulaire sont faibles.",
+      "alternative": "Utilisez plutôt des inclinaisons pelviennes douces en décubitus dorsal et une mobilité à basse altitude."
+    }
+  ],
+  "gastrointestinal_pelvic": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Une flexion abdominale chargée peut augmenter la pression intra-abdominale et aggraver les symptômes pelviens ou gastro-intestinaux.",
+      "alternative": "Utilisez des inclinaisons pelviennes et une reconnexion douce du tronc avec une colonne vertébrale neutre."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Un fort pompage abdominal et une coordination respiratoire peuvent aggraver le plancher pelvien ou l’inconfort digestif.",
+      "alternative": "Pratiquez un travail de base plus lent avec moins de compression abdominale."
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "L’extension combinée des abdominaux inférieurs et la portée des bras peuvent exercer une pression excessive sur le plancher pelvien et l’abdomen.",
+      "alternative": "Utilisez des glissières de talon et des supports pour une seule jambe avec une pression minimale."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Une demande élevée de levage et d’équilibre du tronc peut augmenter la pression pelvienne et l’inconfort abdominal.",
+      "alternative": "Utilisez un travail de base assis et soutenu avec les genoux pliés et un soulèvement doux."
+    }
+  ],
+  "neurological_disorder": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Un travail d’équilibre instable peut augmenter le risque de chute si la coordination ou la sensation est affectée.",
+      "alternative": "Utilisez des exercices de stabilité de base au sol avec une large base de soutien."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversion et les changements de position rapides peuvent être difficiles pour les clients ayant des problèmes de coordination neurologique.",
+      "alternative": "Choisissez une mobilité vertébrale lente et soutenue et évitez les positions des jambes au-dessus de la tête."
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Les grands cercles de jambes nécessitent un contrôle et une proprioception qui peuvent être altérés dans des conditions neurologiques.",
+      "alternative": "Utilisez des cercles de jambes soutenus plus petits ou des levées sur une seule jambe avec le bassin stabilisé."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Une demande élevée d’équilibre et de coordination peut être dangereuse si le contrôle du moteur est incohérent.",
+      "alternative": "Utilisez des ascenseurs de base assis avec des genoux pliés et une base stable."
+    }
+  ],
+  "mental_cognitive": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Les poses d'équilibre complexes peuvent être dangereuses si la concentration, la mémoire ou la vitesse de traitement sont affectées.",
+      "alternative": "Utilisez des exercices simples et concrets avec des indices clairs et prévisibles."
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "Un séquençage dynamique et des transitions rapides peuvent submerger une personne souffrant de problèmes cognitifs ou de santé mentale.",
+      "alternative": "Choisissez des exercices plus lents et plus linéaires avec un mouvement à la fois."
+    },
+    {
+      "exerciseId": "criss_cross",
+      "reason": "Une rotation et une coordination rapides peuvent être difficiles à suivre en toute sécurité en raison de symptômes cognitifs ou émotionnels.",
+      "alternative": "Utilisez une rotation douce en position assise ou couchée avec des instructions claires et rythmées."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Une complexité élevée et une demande d’équilibre peuvent être trop importantes lorsque la concentration mentale ou la tolérance au stress sont faibles.",
+      "alternative": "Utilisez un travail de base assis avec un mouvement simple et régulier."
+    }
+  ],
+  "other": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Cette condition n’est pas spécifiquement répertoriée ; choisissez un travail doux et soutenu et consultez un clinicien qualifié avant de tenter un mouvement à haut risque.",
+      "alternative": "Utilisez le Pilates mis à la terre avec une base stable, une faible charge et des instructions claires."
+    }
+  ],
+  "perimenopause_menopause": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "L'inversion peut déclencher des symptômes vasomoteurs et élever la tension artérielle lors de changements hormonaux.",
+      "alternative": "Choisissez un travail de base en décubitus dorsal doux avec la tête et la poitrine soutenues."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversion à effort élevé n'est pas adaptée en cas de changements hormonaux cardiovasculaires et de réduction potentielle de la densité osseuse.",
+      "alternative": "Utilisez des progressions de pont soutenues et des levées de hanches douces avec une colonne vertébrale neutre."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Un travail respiratoire soutenu et de haute intensité peut être inconfortable en cas de bouffées de chaleur ou de sensibilité cardiovasculaire.",
+      "alternative": "Pratiquez un travail abdominal plus lent et inspiré par la respiration avec des séries plus courtes et une posture de poitrine ouverte."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "L'inversion de l'équilibre peut remettre en question la stabilité de la pression artérielle et les changements de coordination associés à la périménopause.",
+      "alternative": "Utilisez des exercices de stabilité au sol avec les deux pieds sur le tapis et des mouvements de petite amplitude."
+    }
+  ],
+  "stroke_recovery": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexion vertébrale chargée avec traction bilatérale est dangereuse en cas d'hémiplégie ou de faiblesse asymétrique.",
+      "alternative": "Concentrez-vous sur une respiration douce, des inclinaisons pelviennes soutenues et des glissements unilatéraux des jambes."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "L’équilibre à forte demande et la coordination bilatérale sont dangereux au début du rétablissement après un AVC.",
+      "alternative": "Utilisez un travail de base assis avec des genoux pliés et des pieds au sol."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "L'inversion complète de l'équilibre nécessite une coordination bilatérale qui n'est généralement pas disponible après un AVC.",
+      "alternative": "Choisissez des exercices de stabilité de base au sol avec une large base de soutien."
+    },
+    {
+      "exerciseId": "spine_twist",
+      "reason": "La rotation sous charge peut stresser les voies motrices de récupération et mettre à l’épreuve une musculature spasmodique ou faible.",
+      "alternative": "Utilisez une rotation assise douce avec les bras soutenus et des mouvements lents et contrôlés."
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "La planche exige une stabilité bilatérale des épaules et des jambes qui n'est généralement pas disponible après un AVC.",
+      "alternative": "Travaillez en position couchée ou assise avec un seul membre à la fois."
+    }
+  ],
+  "long_covid": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Un effort aérobique soutenu peut déclencher un malaise post-effort chez les clients atteints d’une longue COVID.",
+      "alternative": "Utilisez un travail de base basé sur la respiration plus court et plus doux avec des pauses fréquentes."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "L’exercice d’effort maximal est dangereux en raison de la fatigue post-virale et des contraintes d’enveloppe énergétique.",
+      "alternative": "Utilisez l’activation du noyau assis prise en charge avec une charge minimale et une stimulation lente."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "L'inversion à haute intensité est dangereuse pendant la récupération post-virale limitée en énergie.",
+      "alternative": "Choisissez un pont en décubitus dorsal doux avec des transitions lentes et reposez-vous entre les répétitions."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Un exercice dynamique et exigeant un effort élevé peut déclencher une rechute des symptômes post-effort.",
+      "alternative": "Utilisez une position douce de levage de l'avant-bras ou une position du sphinx avec un minimum d'effort."
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "Le levage soutenu des bras et des jambes en position couchée peut épuiser un client atteint de longue date de COVID bien dans les limites normales.",
+      "alternative": "Choisissez des levées d’un seul membre avec repos complet entre les répétitions et arrêtez-vous au premier signe de fatigue."
+    }
+  ],
+  "hip_labral_tear": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Les grands cercles de hanche exercent une contrainte de cisaillement sur le labrum et peuvent aggraver la déchirure.",
+      "alternative": "Utilisez de très petits cercles de jambes soutenus et maintenez le bassin complètement stable."
+    },
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "Une large ouverture et un équilibre de la hanche peuvent nuire à un labrum déjà déchiré.",
+      "alternative": "Utilisez un travail doux des adducteurs assis avec les jambes rapprochées."
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "La charge rotationnelle de la hanche sollicite le tissu labral et risque de se déchirer davantage.",
+      "alternative": "Utilisez des mouvements de hanche plus petits avec une stabilité stricte et évitez les rotations en fin de course."
+    },
+    {
+      "exerciseId": "front_splits",
+      "reason": "L'amplitude extrême de la hanche en flexion et en extension comprime et cisaille le labrum.",
+      "alternative": "Utilisez un travail doux sur les charnières de la hanche et évitez les positions de hanche en fin de course."
+    },
+    {
+      "exerciseId": "scissors",
+      "reason": "Une flexion alternée rapide de la hanche peut irriter la déchirure labrale et augmenter la douleur.",
+      "alternative": "Utilisez un abaissement lent et contrôlé des jambes avec une petite amplitude et un bassin neutre."
+    }
+  ],
+  "wrist_conditions": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Tout le poids du corps est chargé via les poignets en position de planche.",
+      "alternative": "Utilisez une planche sur l’avant-bras ou passez à un levage de jambe assis pour décharger le poignet."
+    },
+    {
+      "exerciseId": "push_up",
+      "reason": "L'extension du poignet chargée aggrave directement les fractures, les entorses et les tendinopathies.",
+      "alternative": "Utilisez des pompes murales ou des positions soutenues par l'avant-bras pour éliminer la charge du poignet."
+    },
+    {
+      "exerciseId": "swan",
+      "reason": "La position couchée des pompes place un poids corporel important sur les poignets.",
+      "alternative": "Utilisez une position couchée soutenue par un sphinx ou un avant-bras pour éviter toute charge sur le poignet."
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "La mise en charge des planches latérales charge le poignet en extension et en compression latérale.",
+      "alternative": "Utilisez une planche latérale sur l’avant-bras ou faites rouler le poignet hors du tapis avec une position de poing."
+    },
+    {
+      "exerciseId": "plank",
+      "reason": "Une extension soutenue du poignet sous le poids du corps peut aggraver toute blessure ou état du poignet.",
+      "alternative": "Utilisez une planche sur l'avant-bras comme substitut direct pour réaliser un travail de base sans charge sur le poignet."
+    }
+  ],
+  "lymphedema": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Le mouvement dynamique du bras au-dessus de la tête peut augmenter la pression lymphatique et aggraver le gonflement du membre affecté.",
+      "alternative": "Utilisez un levage doux de l'avant-bras en position couchée avec les bras soutenus et évitez de les atteindre au-dessus de votre tête."
+    },
+    {
+      "exerciseId": "arm_springs",
+      "reason": "Des charges répétées et résistantes au bras peuvent exacerber le lymphœdème et altérer le drainage lymphatique.",
+      "alternative": "Utilisez des mouvements de bras doux et rythmés sous la hauteur des épaules, sans résistance."
+    },
+    {
+      "exerciseId": "rowing_series",
+      "reason": "Tirer sur la résistance avec les bras peut aggraver le flux lymphatique et augmenter l’enflure.",
+      "alternative": "Utilisez une mobilité douce du bras soutenu sans résistance et gardez le membre légèrement surélevé."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "La poussée aérienne contre la résistance met à rude épreuve les ganglions lymphatiques et les vaisseaux affectés.",
+      "alternative": "Utilisez une portée douce sans résistance et gardez le bras sous l'épaule lorsque cela est possible."
+    },
+    {
+      "exerciseId": "magic_circle_press",
+      "reason": "La compression des bras ou la pression au-dessus de la tête peuvent augmenter la pression veineuse et lymphatique dans les membres affectés.",
+      "alternative": "Concentrez-vous sur un travail doux et rythmé du bas du corps ou du tronc tout en reposant le bras affecté."
+    }
+  ]
+}

@@ -1,0 +1,714 @@
+[
+  {
+    "id": "ankylosing_spondylitis_flow",
+    "name": "强直性脊柱炎流程",
+    "description": "温和的伸展和肋骨活动计划，通过髋部打开和胸部扩张来抵消脊柱僵硬模式。",
+    "level": "Beginner",
+    "accessLevel": "Free",
+    "goal": "保持脊柱伸展和胸部活动度。",
+    "focusAreas": [
+      "脊柱伸展",
+      "肋骨活动度",
+      "髋关节灵活性"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "swan_prep",
+      "breaststroke",
+      "mermaid",
+      "shoulder_bridge",
+      "spine_stretch_forward",
+      "side_kick",
+      "cat_stretch_cadillac"
+    ]
+  },
+  {
+    "id": "arthritis_gentle_flow",
+    "name": "关节炎-温和的流动",
+    "description": "温暖、流畅的运动课程可减少关节僵硬、建立温和的滑膜循环并保持舒适的运动范围。",
+    "level": "Beginner",
+    "accessLevel": "Free",
+    "goal": "缓解关节僵硬并保持舒适的运动范围。",
+    "focusAreas": [
+      "关节活动度",
+      "温柔的温暖",
+      "流体运动"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "rolling_like_a_ball",
+      "one_leg_circle",
+      "side_kick",
+      "pelvic_curl",
+      "seal",
+      "seated_side_bend"
+    ]
+  },
+  {
+    "id": "back_friendly_recovery",
+    "name": "背部友好型恢复",
+    "description": "这是一个低冲击训练，旨在通过中性脊柱力量、柔和的关节和骨盆控制来支撑腰部。",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "提高背部稳定性并减少压缩应力。",
+    "focusAreas": [
+      "低背",
+      "脊柱中立",
+      "核心稳定性"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "rolling_like_a_ball",
+      "spine_stretch_forward",
+      "side_kick_series"
+    ]
+  },
+  {
+    "id": "balance_vestibular",
+    "name": "平衡和前庭稳定性",
+    "description": "针对头晕、眩晕和跌倒风险的地面本体感觉和前庭适应计划 - 最大限度地减少突然的头部位置变化并优先考虑稳定性。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "改善平衡、本体感觉和预防跌倒。",
+    "focusAreas": [
+      "接地稳定性",
+      "本体感觉",
+      "预防跌倒"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "rolling_like_a_ball",
+      "shoulder_bridge",
+      "side_kick",
+      "one_leg_circle",
+      "pilates_ring_squeeze",
+      "footwork",
+      "single_leg_stretch"
+    ]
+  },
+  {
+    "id": "beginner_mat_foundation",
+    "name": "初学者垫基础",
+    "description": "温和的普拉提入门课程，重点关注核心支撑、脊柱关节和呼吸协调。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "建立稳定的核心和垫上运动信心。",
+    "focusAreas": [
+      "核心",
+      "脊柱关节",
+      "呼吸"
+    ],
+    "exerciseIds": [
+      "the_hundred",
+      "roll_up",
+      "spine_stretch_forward",
+      "pelvic_curl",
+      "shoulder_bridge"
+    ]
+  },
+  {
+    "id": "cardiac_safe_flow",
+    "name": "心脏安全流量",
+    "description": "适合高血压、心血管疾病和心脏装置使用者的呼吸调节、中等强度课程——避免瓦氏动作和过度用力。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "通过安全、以呼吸为主导的运动来支持心血管健康。",
+    "focusAreas": [
+      "呼吸调节",
+      "中等强度",
+      "心血管安全"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "pelvic_curl",
+      "rolling_like_a_ball",
+      "side_kick",
+      "shoulder_bridge",
+      "spine_stretch_forward",
+      "seal"
+    ]
+  },
+  {
+    "id": "cervical_neck_care",
+    "name": "颈椎护理",
+    "description": "颈椎减压序列具有肩胛稳定性和胸廓开口，可减轻颈部负荷并改善上身对齐。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "减少颈椎受压，改善颈部姿势。",
+    "focusAreas": [
+      "颈椎减压",
+      "肩胛骨稳定性",
+      "胸廓活动度"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "seated_side_bend",
+      "arm_springs",
+      "band_arm_series",
+      "pilates_ring_squeeze",
+      "swan_prep",
+      "hanging_cadillac"
+    ]
+  },
+  {
+    "id": "chronic_pain_fibromyalgia",
+    "name": "慢性疼痛和纤维肌痛",
+    "description": "针对纤维肌痛和慢性疼痛综合征的疼痛节奏分级运动计划——利用中枢敏化原理温和地建立运动耐受力。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "根据疼痛节奏原则建立温和的运动耐受力。",
+    "focusAreas": [
+      "疼痛节奏的运动",
+      "中枢敏化",
+      "温和的渐进式负载"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "rolling_like_a_ball",
+      "pelvic_curl",
+      "seal",
+      "mermaid",
+      "spine_stretch_forward",
+      "side_kick"
+    ]
+  },
+  {
+    "id": "disc_sciatica_relief",
+    "name": "椎间盘和坐骨神经痛缓解",
+    "description": "脊柱中立位治疗结合了腰椎减压、温和的神经活动以及针对椎间盘和坐骨神经疼痛的分级核心负荷。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "减少椎间盘受压和坐骨神经张力。",
+    "focusAreas": [
+      "腰椎减压",
+      "神经流动性",
+      "脊柱中立"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "knee_stretch",
+      "spine_stretch_forward",
+      "shoulder_bridge",
+      "one_leg_circle",
+      "swan_prep",
+      "single_leg_stretch",
+      "spine_mobilization"
+    ]
+  },
+  {
+    "id": "epilepsy_ground_safe",
+    "name": "癫痫地面安全流程",
+    "description": "针对癫痫和癫痫疾病的地面垫上训练计划 — 保持低位，避免倒立和屏气，全程保持平静的节奏。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "使用基于地面的无倒转顺序对癫痫患者进行安全锻炼。",
+    "focusAreas": [
+      "地面安全",
+      "无倒置",
+      "平静的节奏"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "rolling_like_a_ball",
+      "single_leg_stretch",
+      "spine_stretch_forward",
+      "side_kick",
+      "spine_mobilization"
+    ]
+  },
+  {
+    "id": "foot_ankle_rehab",
+    "name": "足踝康复",
+    "description": "内在的足部和踝部强化序列，可解决常见下肢状况的足底负荷、跟腱弹性和足部对齐问题。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "增强足部内在力量，恢复踝关节稳定性。",
+    "focusAreas": [
+      "脚力",
+      "脚踝稳定性",
+      "阿喀琉斯加载"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "achilles_stretch_chair",
+      "running_reformer",
+      "pilates_ring_squeeze",
+      "foam_roller_series",
+      "side_kick",
+      "single_leg_stretch"
+    ]
+  },
+  {
+    "id": "hip_lateral_recovery",
+    "name": "髋关节和侧链恢复",
+    "description": "臀肌和侧髋强化计划，通过有针对性的弹簧和垫子训练来解决梨状肌、腿筋、髂胫束和大转子疼痛。",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "强化外侧髋链，缓解臀部和大腿疼痛。",
+    "focusAreas": [
+      "髋部外侧力量",
+      "臀肌激活",
+      "髋关节灵活性"
+    ],
+    "exerciseIds": [
+      "side_kick_series",
+      "one_leg_circle",
+      "leg_springs",
+      "pilates_ring_squeeze",
+      "shoulder_bridge",
+      "single_leg_stretch",
+      "foam_roller_series",
+      "side_kick_kneeling"
+    ]
+  },
+  {
+    "id": "hip_mobility_recovery",
+    "name": "髋关节活动与恢复",
+    "description": "髋部活动计划尊重无冲击范围、建立髋部横向稳定性并恢复功能性运动模式。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "恢复髋部活动能力并加强横向稳定肌。",
+    "focusAreas": [
+      "髋关节活动度",
+      "横向稳定器",
+      "安全范围"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "one_leg_circle",
+      "side_kick_series",
+      "leg_springs",
+      "knee_stretch",
+      "footwork",
+      "single_leg_stretch",
+      "hip_circles"
+    ]
+  },
+  {
+    "id": "hypermobility_control",
+    "name": "超机动控制",
+    "description": "一种关节稳定计划，可增强神经肌肉控制和末端意识，用主动力量取代被动灵活性。",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "发展主动关节稳定性和神经肌肉控制。",
+    "focusAreas": [
+      "关节稳定",
+      "神经肌肉控制",
+      "受控装载"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "plank",
+      "pilates_ring_squeeze",
+      "footwork",
+      "single_leg_stretch",
+      "band_arm_series",
+      "coordination"
+    ]
+  },
+  {
+    "id": "joint_replacement_recovery",
+    "name": "关节置换恢复",
+    "description": "术后活动恢复计划，采用温和的活动范围工作、无冲击负荷和渐进的运动信心。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "关节置换或手术后恢复活动能力和信心。",
+    "focusAreas": [
+      "术后活动能力",
+      "温和范围",
+      "无冲击康复"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "pelvic_curl",
+      "shoulder_bridge",
+      "leg_springs",
+      "footwork",
+      "rolling_like_a_ball",
+      "side_kick"
+    ]
+  },
+  {
+    "id": "knee_rehab",
+    "name": "膝关节康复",
+    "description": "VMO 和四重激活序列使用非负重腿部工作和弹簧阻力来支持膝盖恢复并防止再次受伤。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "受伤或手术后恢复膝盖稳定性和股四头肌控制。",
+    "focusAreas": [
+      "四重激活",
+      "膝关节稳定性",
+      "非负重腿"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "leg_springs",
+      "pilates_ring_squeeze",
+      "single_leg_stretch",
+      "side_kick",
+      "shoulder_bridge",
+      "pelvic_curl",
+      "coordination"
+    ]
+  },
+  {
+    "id": "metabolic_whole_body",
+    "name": "全身代谢流",
+    "description": "针对糖尿病、代谢状况和体重管理的渐进式全身激活序列——优先考虑循环、功能强度和能量消耗。",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "激活新陈代谢并增强全身功能性力量。",
+    "focusAreas": [
+      "流通量",
+      "功能强度",
+      "代谢激活"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "the_hundred",
+      "single_leg_stretch",
+      "shoulder_bridge",
+      "side_kick",
+      "swan_prep",
+      "pilates_ring_squeeze",
+      "coordination"
+    ]
+  },
+  {
+    "id": "mind_body_calm",
+    "name": "身心平静",
+    "description": "以呼吸为主导的躯体流动，用于治疗焦虑、心理健康状况和恢复——利用节奏、接地和内感受意识来平静神经系统。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "通过呼吸引导的躯体运动使神经系统平静。",
+    "focusAreas": [
+      "呼吸意识",
+      "躯体平静",
+      "身心连接"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "rolling_like_a_ball",
+      "seal",
+      "spine_stretch_forward",
+      "mermaid",
+      "pelvic_curl",
+      "one_leg_circle"
+    ]
+  },
+  {
+    "id": "neurological_movement",
+    "name": "神经运动流程",
+    "description": "针对多发性硬化症、帕金森病和神经系统疾病的以协调和本体感觉为重点的计划 - 使用有节奏的、可预测的序列来支持运动控制。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "改善运动协调性和神经肌肉节律。",
+    "focusAreas": [
+      "协调",
+      "本体感觉",
+      "有节奏的运动"
+    ],
+    "exerciseIds": [
+      "rolling_like_a_ball",
+      "pelvic_curl",
+      "shoulder_bridge",
+      "side_kick",
+      "spine_stretch_forward",
+      "pilates_ring_squeeze",
+      "shoulder_rolls",
+      "single_leg_stretch"
+    ]
+  },
+  {
+    "id": "osteoporosis_safe_flow",
+    "name": "骨质疏松-安全流程",
+    "description": "以伸展为重点的序列，可避免负载的脊柱弯曲和旋转，通过对骨骼有益的负载来增强轴向强度和姿势。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "安全地加强姿势并支持骨密度。",
+    "focusAreas": [
+      "脊柱伸展",
+      "骨负荷",
+      "姿势"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "swan_prep",
+      "swimming",
+      "shoulder_bridge",
+      "side_kick",
+      "footwork",
+      "band_arm_series",
+      "leg_springs"
+    ]
+  },
+  {
+    "id": "pelvic_floor_foundations",
+    "name": "盆底基础",
+    "description": "针对盆底功能障碍、直肌分离、疝气和失禁的压力管理计划——在不产生过多腹内负荷的情况下建立深层核心重新连接。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "通过负荷管理重新连接深层核心和骨盆底。",
+    "focusAreas": [
+      "盆底",
+      "深层核心",
+      "压力管理"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "single_leg_stretch",
+      "pilates_ring_squeeze",
+      "seal",
+      "spine_stretch_forward",
+      "rolling_like_a_ball"
+    ]
+  },
+  {
+    "id": "postpartum_recovery_flow",
+    "name": "产后恢复流程",
+    "description": "温和的普拉提序列，旨在支持产后核心重建、盆底意识和腹部逐渐恢复。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "怀孕后重建核心支撑和骨盆稳定性。",
+    "focusAreas": [
+      "产后",
+      "盆底",
+      "核心重建"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "mermaid",
+      "single_leg_stretch",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "prenatal_mobility_flow",
+    "name": "产前活动流程",
+    "description": "孕期安全的普拉提流程，通过温和的脊柱活动度和横向开放性来支持不断变化的身体。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "怀孕期间保持活动能力和核心支撑。",
+    "focusAreas": [
+      "产前",
+      "移动性",
+      "骨盆稳定性"
+    ],
+    "exerciseIds": [
+      "mermaid",
+      "shoulder_bridge",
+      "pelvic_curl",
+      "leg_pull_back",
+      "spine_stretch_forward"
+    ]
+  },
+  {
+    "id": "reformer_strength_flow",
+    "name": "塑身机力量流",
+    "description": "一种基于器械的训练，可培养下半身控制、行走协调性和脊柱支撑。",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "增强塑身机的力量和控制力。",
+    "focusAreas": [
+      "塑身机",
+      "腿部力量",
+      "脊柱支撑"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "elephant",
+      "long_box_series",
+      "short_spine_massage"
+    ]
+  },
+  {
+    "id": "respiratory_breath_flow",
+    "name": "呼吸和呼吸流量",
+    "description": "横膈膜呼吸和胸腔扩张计划，可改善呼吸和肺部疾病的胸廓活动度和呼吸力学。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "扩大呼吸能力和胸部活动能力。",
+    "focusAreas": [
+      "横膈膜呼吸",
+      "肋骨扩张",
+      "姿势开口"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "seated_side_bend",
+      "shoulder_rolls",
+      "mermaid",
+      "spine_stretch_forward",
+      "swan_prep",
+      "band_arm_series",
+      "the_hundred"
+    ]
+  },
+  {
+    "id": "rotator_cuff_shoulder",
+    "name": "肩袖和肩部康复",
+    "description": "肩胛优先的肩部康复序列，针对肩袖激活、摆动运动范围以及针对肩周炎、撞击和 AC 扭伤的渐进负荷。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "恢复肩袖强度和无痛肩部范围。",
+    "focusAreas": [
+      "肩袖",
+      "肩胛骨稳定性",
+      "肩部范围"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "arm_springs",
+      "band_arm_series",
+      "pilates_ring_squeeze",
+      "breaststroke",
+      "swan_prep",
+      "pulling_straps",
+      "spine_mobilization"
+    ]
+  },
+  {
+    "id": "restorative_immune",
+    "name": "恢复性免疫支持",
+    "description": "针对慢性疲劳、自身免疫性疾病、肿瘤治疗和免疫抑制的温和、节能计划——通过恢复性运动尊重能力限制。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "通过温和的恢复性运动支持恢复和能量。",
+    "focusAreas": [
+      "恢复性运动",
+      "节能",
+      "免疫支持"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "rolling_like_a_ball",
+      "pelvic_curl",
+      "spine_stretch_forward",
+      "seal",
+      "mermaid"
+    ]
+  },
+  {
+    "id": "sacroiliac_stability",
+    "name": "骶髂关节稳定性",
+    "description": "针对对称髋部负荷、SIJ 压缩控制和深层腰盆肌募集的骨盆稳定性计划。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "稳定骶髂关节和骨盆带。",
+    "focusAreas": [
+      "骨盆稳定性",
+      "髋关节对齐",
+      "核心控制"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "single_leg_stretch",
+      "pilates_ring_squeeze",
+      "footwork",
+      "knee_stretch",
+      "rolling_like_a_ball"
+    ]
+  },
+  {
+    "id": "scoliosis_balance",
+    "name": "脊柱侧弯平衡流",
+    "description": "使用去旋转提示、横向呼吸和对称运动来支撑脊柱侧凸的横向平衡训练。",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "平衡横向不对称并提高脊柱意识。",
+    "focusAreas": [
+      "脊柱平衡",
+      "侧方呼吸",
+      "反旋转"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "mermaid",
+      "spine_twist",
+      "shoulder_bridge",
+      "side_kick_series",
+      "seated_side_bend",
+      "foam_roller_series",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "sensory_adapted_flow",
+    "name": "感官适应流程",
+    "description": "本体感受丰富、可预测的普拉提序列，专为视力和听力障碍而设计——利用空间一致性、触觉提示和安全定向。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "在感觉障碍的情况下安全、自信地移动。",
+    "focusAreas": [
+      "本体感受安全",
+      "可预测的顺序",
+      "感觉适应"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "rolling_like_a_ball",
+      "single_leg_stretch",
+      "spine_stretch_forward",
+      "seal",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "shoulder_friendly_flow",
+    "name": "肩部友好的流程",
+    "description": "专注于肩部舒适的课程，强调肩胛支撑、温和的上半身力量和安全的运动范围。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "通过安全的普拉提运动支持肩部稳定性。",
+    "focusAreas": [
+      "肩部",
+      "肩胛骨支撑",
+      "上半身"
+    ],
+    "exerciseIds": [
+      "roll_down_bar",
+      "long_box_series",
+      "mermaid",
+      "breaststroke",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "upper_limb_nerve",
+    "name": "上肢和神经舒缓",
+    "description": "针对手腕、肘部和神经受压情况的胸廓开放和神经动员流程——保持关节负荷低和运动范围宽。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "减压神经并恢复胸部和上肢的活动能力。",
+    "focusAreas": [
+      "胸廓开口",
+      "神经流动性",
+      "手腕安全运动"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "seated_side_bend",
+      "band_arm_series",
+      "swan_prep",
+      "mermaid",
+      "spine_twist",
+      "arm_springs"
+    ]
+  }
+]

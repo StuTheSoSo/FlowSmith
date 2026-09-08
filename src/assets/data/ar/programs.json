@@ -1,0 +1,714 @@
+[
+  {
+    "id": "ankylosing_spondylitis_flow",
+    "name": "تدفق التهاب الفقار اللاصق",
+    "description": "برنامج لطيف للتمديد وحركة الأضلاع لمواجهة أنماط تصلب العمود الفقري، مع فتح الورك وتوسيع الصدر.",
+    "level": "Beginner",
+    "accessLevel": "Free",
+    "goal": "الحفاظ على امتداد العمود الفقري وحركة الصدر.",
+    "focusAreas": [
+      "تمديد العمود الفقري",
+      "حركة الضلع",
+      "مرونة الورك"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "swan_prep",
+      "breaststroke",
+      "mermaid",
+      "shoulder_bridge",
+      "spine_stretch_forward",
+      "side_kick",
+      "cat_stretch_cadillac"
+    ]
+  },
+  {
+    "id": "arthritis_gentle_flow",
+    "name": "التهاب المفاصل-تدفق لطيف",
+    "description": "جلسة حركية دافئة وسلسة تقلل من تصلب المفاصل، وتبني الدورة الدموية الزلالية اللطيفة، وتحافظ على نطاق مريح من الحركة.",
+    "level": "Beginner",
+    "accessLevel": "Free",
+    "goal": "تخفيف تصلب المفاصل والحفاظ على نطاق مريح من الحركة.",
+    "focusAreas": [
+      "التنقل المشترك",
+      "الدفء اللطيف",
+      "حركة السوائل"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "rolling_like_a_ball",
+      "one_leg_circle",
+      "side_kick",
+      "pelvic_curl",
+      "seal",
+      "seated_side_bend"
+    ]
+  },
+  {
+    "id": "back_friendly_recovery",
+    "name": "استعادة صديقة للظهر",
+    "description": "جلسة منخفضة التأثير مصممة لدعم أسفل الظهر بقوة العمود الفقري المحايدة، والتعبير اللطيف، والتحكم في الحوض.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "تحسين استقرار الظهر وتقليل الضغط الضاغط.",
+    "focusAreas": [
+      "أسفل الظهر",
+      "العمود الفقري محايد",
+      "الاستقرار الأساسي"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "rolling_like_a_ball",
+      "spine_stretch_forward",
+      "side_kick_series"
+    ]
+  },
+  {
+    "id": "balance_vestibular",
+    "name": "التوازن والاستقرار الدهليزي",
+    "description": "برنامج استقبال الحس العميق والتكيف الدهليزي على الأرض لعلاج الدوخة والدوار ومخاطر السقوط - تقليل التغيرات المفاجئة في وضع الرأس وإعطاء الأولوية للاستقرار.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "تحسين التوازن، واستقبال الحس العميق، والوقاية من السقوط.",
+    "focusAreas": [
+      "الاستقرار الارضي",
+      "استقبال الحس العميق",
+      "الوقاية من السقوط"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "rolling_like_a_ball",
+      "shoulder_bridge",
+      "side_kick",
+      "one_leg_circle",
+      "pilates_ring_squeeze",
+      "footwork",
+      "single_leg_stretch"
+    ]
+  },
+  {
+    "id": "beginner_mat_foundation",
+    "name": "مؤسسة المبتدئين مات",
+    "description": "جلسة بيلاتيس تمهيدية لطيفة تركز على الدعم الأساسي، وتعبير العمود الفقري، وتنسيق التنفس.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "بناء الثقة الأساسية وحركة الحصيرة المستقرة.",
+    "focusAreas": [
+      "الأساسية",
+      "مفصل العمود الفقري",
+      "نفس"
+    ],
+    "exerciseIds": [
+      "the_hundred",
+      "roll_up",
+      "spine_stretch_forward",
+      "pelvic_curl",
+      "shoulder_bridge"
+    ]
+  },
+  {
+    "id": "cardiac_safe_flow",
+    "name": "التدفق الآمن للقلب",
+    "description": "جلسة منظمة للتنفس ومتوسطة الشدة لمرضى ارتفاع ضغط الدم وأمراض القلب والأوعية الدموية ومستخدمي أجهزة القلب - مع تجنب فالسالفا والجهد الشديد.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "دعم صحة القلب والأوعية الدموية من خلال حركة آمنة تقودها التنفس.",
+    "focusAreas": [
+      "تنظيم التنفس",
+      "شدة معتدلة",
+      "سلامة القلب والأوعية الدموية"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "pelvic_curl",
+      "rolling_like_a_ball",
+      "side_kick",
+      "shoulder_bridge",
+      "spine_stretch_forward",
+      "seal"
+    ]
+  },
+  {
+    "id": "cervical_neck_care",
+    "name": "العناية بعنق الرحم والرقبة",
+    "description": "تسلسل تخفيف الضغط على عنق الرحم مع ثبات الكتف وفتحة الصدر لتخفيف الحمل على الرقبة وتحسين محاذاة الجزء العلوي من الجسم.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "تقليل ضغط عنق الرحم وتحسين وضع الرقبة.",
+    "focusAreas": [
+      "تخفيف ضغط عنق الرحم",
+      "الاستقرار الكتفي",
+      "التنقل الصدري"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "seated_side_bend",
+      "arm_springs",
+      "band_arm_series",
+      "pilates_ring_squeeze",
+      "swan_prep",
+      "hanging_cadillac"
+    ]
+  },
+  {
+    "id": "chronic_pain_fibromyalgia",
+    "name": "الألم المزمن والفيبروميالجيا",
+    "description": "برنامج حركة متدرج لإيقاع الألم لعلاج الألم العضلي الليفي ومتلازمة الألم المزمن — باستخدام مبادئ التوعية المركزية لبناء القدرة على تحمل الحركة بلطف.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "بناء القدرة على تحمل الحركة اللطيفة باستخدام مبادئ سرعة الألم.",
+    "focusAreas": [
+      "حركة وتيرة الألم",
+      "التحسس المركزي",
+      "تحميل تدريجي لطيف"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "rolling_like_a_ball",
+      "pelvic_curl",
+      "seal",
+      "mermaid",
+      "spine_stretch_forward",
+      "side_kick"
+    ]
+  },
+  {
+    "id": "disc_sciatica_relief",
+    "name": "تخفيف القرص وعرق النسا",
+    "description": "جلسة محايدة للعمود الفقري تجمع بين تخفيف الضغط القطني والحركة العصبية اللطيفة والتحميل الأساسي المتدرج لعلاج القرص والألم الوركي.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "تقليل ضغط القرص وتوتر العصب الوركي.",
+    "focusAreas": [
+      "تخفيف الضغط القطني",
+      "التنقل العصبي",
+      "العمود الفقري محايد"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "knee_stretch",
+      "spine_stretch_forward",
+      "shoulder_bridge",
+      "one_leg_circle",
+      "swan_prep",
+      "single_leg_stretch",
+      "spine_mobilization"
+    ]
+  },
+  {
+    "id": "epilepsy_ground_safe",
+    "name": "الصرع التدفق الآمن الأرضي",
+    "description": "برنامج حصيرة أرضية لعلاج الصرع واضطرابات النوبات - البقاء منخفضًا، وتجنب الانقلابات وحبس النفس، مع وتيرة هادئة طوال الوقت.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "تمرن بأمان مع الصرع باستخدام تسلسل أرضي خالٍ من الانقلاب.",
+    "focusAreas": [
+      "السلامة الأرضية",
+      "لا الانقلابات",
+      "وتيرة هادئة"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "rolling_like_a_ball",
+      "single_leg_stretch",
+      "spine_stretch_forward",
+      "side_kick",
+      "spine_mobilization"
+    ]
+  },
+  {
+    "id": "foot_ankle_rehab",
+    "name": "إعادة تأهيل القدم والكاحل",
+    "description": "تسلسل جوهري لتقوية القدم والكاحل يعالج التحميل الأخمصي، ومرونة العرقوب، ومحاذاة القدم لحالات الأطراف السفلية الشائعة.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "تقوية جوهر القدم واستعادة ثبات الكاحل.",
+    "focusAreas": [
+      "قوة القدم",
+      "استقرار الكاحل",
+      "تحميل أخيل"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "achilles_stretch_chair",
+      "running_reformer",
+      "pilates_ring_squeeze",
+      "foam_roller_series",
+      "side_kick",
+      "single_leg_stretch"
+    ]
+  },
+  {
+    "id": "hip_lateral_recovery",
+    "name": "استعادة سلسلة الورك والجانبية",
+    "description": "برنامج لتقوية الألوية والجانبية للورك يعالج الكمثري، وأوتار الركبة، وشريط IT، وآلام المدور الأكبر مع عمل نابض وحصيرة مستهدفة.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "تقوية سلسلة الورك الجانبية وتخفيف آلام الورك والفخذ.",
+    "focusAreas": [
+      "قوة الورك الجانبية",
+      "تنشيط الألوية",
+      "مرونة الورك"
+    ],
+    "exerciseIds": [
+      "side_kick_series",
+      "one_leg_circle",
+      "leg_springs",
+      "pilates_ring_squeeze",
+      "shoulder_bridge",
+      "single_leg_stretch",
+      "foam_roller_series",
+      "side_kick_kneeling"
+    ]
+  },
+  {
+    "id": "hip_mobility_recovery",
+    "name": "حركة الورك والانتعاش",
+    "description": "برنامج لحركة الورك يحترم النطاقات الخالية من الاصطدامات، ويبني استقرار الورك الجانبي، ويستعيد أنماط الحركة الوظيفية.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "استعادة حركة الورك وتقوية المثبتات الجانبية.",
+    "focusAreas": [
+      "حركة الورك",
+      "المثبتات الجانبية",
+      "نطاق آمن"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "one_leg_circle",
+      "side_kick_series",
+      "leg_springs",
+      "knee_stretch",
+      "footwork",
+      "single_leg_stretch",
+      "hip_circles"
+    ]
+  },
+  {
+    "id": "hypermobility_control",
+    "name": "التحكم في فرط الحركة",
+    "description": "برنامج تثبيت المفاصل الذي يبني التحكم العصبي العضلي والوعي بالمدى النهائي، ويستبدل المرونة السلبية بالقوة النشطة.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "تطوير استقرار المفاصل النشط والتحكم العصبي العضلي.",
+    "focusAreas": [
+      "استقرار المفاصل",
+      "السيطرة العصبية العضلية",
+      "التحميل المتحكم فيه"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "plank",
+      "pilates_ring_squeeze",
+      "footwork",
+      "single_leg_stretch",
+      "band_arm_series",
+      "coordination"
+    ]
+  },
+  {
+    "id": "joint_replacement_recovery",
+    "name": "استعادة استبدال المفاصل",
+    "description": "برنامج استعادة الحركة بعد الجراحة باستخدام نطاق الحركة اللطيف، والتحميل بدون تأثير، والثقة التقدمية في الحركة.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "استعادة القدرة على الحركة والثقة بعد استبدال المفاصل أو الجراحة.",
+    "focusAreas": [
+      "التنقل بعد الجراحة",
+      "نطاق لطيف",
+      "إعادة التأهيل غير التأثير"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "pelvic_curl",
+      "shoulder_bridge",
+      "leg_springs",
+      "footwork",
+      "rolling_like_a_ball",
+      "side_kick"
+    ]
+  },
+  {
+    "id": "knee_rehab",
+    "name": "إعادة تأهيل الركبة",
+    "description": "تسلسل VMO والتنشيط الرباعي باستخدام عمل الساق غير الحاملة للوزن ومقاومة الزنبرك لدعم تعافي الركبة ومنع الإصابة مرة أخرى.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "استعادة ثبات الركبة والتحكم الرباعي بعد الإصابة أو الجراحة.",
+    "focusAreas": [
+      "تفعيل رباعي",
+      "استقرار الركبة",
+      "الساق غير الحاملة للوزن"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "leg_springs",
+      "pilates_ring_squeeze",
+      "single_leg_stretch",
+      "side_kick",
+      "shoulder_bridge",
+      "pelvic_curl",
+      "coordination"
+    ]
+  },
+  {
+    "id": "metabolic_whole_body",
+    "name": "التدفق الأيضي لكامل الجسم",
+    "description": "تسلسل تنشيط تدريجي لكامل الجسم لمرض السكري، وحالات التمثيل الغذائي، وإدارة الوزن - مع إعطاء الأولوية للدورة الدموية، والقوة الوظيفية، وإنفاق الطاقة.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "تنشيط عملية التمثيل الغذائي وبناء القوة الوظيفية لكامل الجسم.",
+    "focusAreas": [
+      "الدورة الدموية",
+      "القوة الوظيفية",
+      "التنشيط الأيضي"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "the_hundred",
+      "single_leg_stretch",
+      "shoulder_bridge",
+      "side_kick",
+      "swan_prep",
+      "pilates_ring_squeeze",
+      "coordination"
+    ]
+  },
+  {
+    "id": "mind_body_calm",
+    "name": "هدوء العقل والجسم",
+    "description": "تدفق جسدي يقوده التنفس للقلق وحالات الصحة العقلية والتعافي - باستخدام الإيقاع والتأريض والوعي الداخلي لتهدئة الجهاز العصبي.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "تهدئة الجهاز العصبي من خلال الحركة الجسدية التي يقودها التنفس.",
+    "focusAreas": [
+      "الوعي بالتنفس",
+      "الهدوء الجسدي",
+      "اتصال العقل والجسم"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "rolling_like_a_ball",
+      "seal",
+      "spine_stretch_forward",
+      "mermaid",
+      "pelvic_curl",
+      "one_leg_circle"
+    ]
+  },
+  {
+    "id": "neurological_movement",
+    "name": "تدفق الحركة العصبية",
+    "description": "برنامج يركز على التنسيق واستقبال الحس العميق لمرض التصلب العصبي المتعدد، ومرض باركنسون، والحالات العصبية - باستخدام تسلسلات إيقاعية يمكن التنبؤ بها لدعم التحكم الحركي.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "تحسين التنسيق الحركي والإيقاع العصبي العضلي.",
+    "focusAreas": [
+      "التنسيق",
+      "استقبال الحس العميق",
+      "حركة إيقاعية"
+    ],
+    "exerciseIds": [
+      "rolling_like_a_ball",
+      "pelvic_curl",
+      "shoulder_bridge",
+      "side_kick",
+      "spine_stretch_forward",
+      "pilates_ring_squeeze",
+      "shoulder_rolls",
+      "single_leg_stretch"
+    ]
+  },
+  {
+    "id": "osteoporosis_safe_flow",
+    "name": "هشاشة العظام-التدفق الآمن",
+    "description": "تسلسل يركز على التمديد ويتجنب انثناء العمود الفقري المحمل ودورانه، وبناء القوة المحورية والوضعية مع التحميل الصديق للعظام.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "تعزيز الموقف ودعم كثافة العظام بأمان.",
+    "focusAreas": [
+      "تمديد العمود الفقري",
+      "تحميل العظام",
+      "الموقف"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "swan_prep",
+      "swimming",
+      "shoulder_bridge",
+      "side_kick",
+      "footwork",
+      "band_arm_series",
+      "leg_springs"
+    ]
+  },
+  {
+    "id": "pelvic_floor_foundations",
+    "name": "أسس قاع الحوض",
+    "description": "برنامج لإدارة الضغط لعلاج الخلل الوظيفي في قاع الحوض، والانبساط المستقيمي، والفتق، وسلس البول - مما يؤدي إلى إعادة الاتصال العميق بين الأعضاء دون تحميل مفرط داخل البطن.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "أعد توصيل القلب العميق وقاع الحوض من خلال إدارة الأحمال.",
+    "focusAreas": [
+      "قاع الحوض",
+      "جوهر عميق",
+      "إدارة الضغط"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "single_leg_stretch",
+      "pilates_ring_squeeze",
+      "seal",
+      "spine_stretch_forward",
+      "rolling_like_a_ball"
+    ]
+  },
+  {
+    "id": "postpartum_recovery_flow",
+    "name": "تدفق التعافي بعد الولادة",
+    "description": "سلسلة بيلاتيس لطيفة مصممة لدعم إعادة بناء القلب بعد الولادة، والوعي بقاع الحوض، والعودة التدريجية للبطن.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "إعادة بناء الدعم الأساسي واستقرار الحوض بعد الحمل.",
+    "focusAreas": [
+      "بعد الولادة",
+      "قاع الحوض",
+      "إعادة البناء الأساسية"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "mermaid",
+      "single_leg_stretch",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "prenatal_mobility_flow",
+    "name": "تدفق التنقل قبل الولادة",
+    "description": "تمرين بيلاتيس آمن أثناء الحمل ويدعم الجسم المتغير من خلال حركة العمود الفقري اللطيفة والانفتاح الجانبي.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "الحفاظ على الحركة والدعم الأساسي أثناء الحمل.",
+    "focusAreas": [
+      "ما قبل الولادة",
+      "التنقل",
+      "استقرار الحوض"
+    ],
+    "exerciseIds": [
+      "mermaid",
+      "shoulder_bridge",
+      "pelvic_curl",
+      "leg_pull_back",
+      "spine_stretch_forward"
+    ]
+  },
+  {
+    "id": "reformer_strength_flow",
+    "name": "تدفق القوة الإصلاحية",
+    "description": "روتين قائم على الأجهزة يعمل على تطوير التحكم في الجزء السفلي من الجسم وتنسيق النقل ودعم العمود الفقري.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "بناء قوة الإصلاح والسيطرة.",
+    "focusAreas": [
+      "المصلح",
+      "قوة الساق",
+      "دعم العمود الفقري"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "elephant",
+      "long_box_series",
+      "short_spine_massage"
+    ]
+  },
+  {
+    "id": "respiratory_breath_flow",
+    "name": "الجهاز التنفسي وتدفق التنفس",
+    "description": "برنامج التنفس البطني وتوسيع القفص الصدري لتحسين حركة الصدر وميكانيكية التنفس في حالات الجهاز التنفسي والرئة.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "توسيع القدرة على التنفس والحركة الصدرية.",
+    "focusAreas": [
+      "التنفس الغشائي",
+      "توسيع الضلع",
+      "الفتح الوضعي"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "seated_side_bend",
+      "shoulder_rolls",
+      "mermaid",
+      "spine_stretch_forward",
+      "swan_prep",
+      "band_arm_series",
+      "the_hundred"
+    ]
+  },
+  {
+    "id": "rotator_cuff_shoulder",
+    "name": "إعادة تأهيل الكفة المدورة والكتف",
+    "description": "سلسلة إعادة تأهيل الكتف الأول، والتي تستهدف تنشيط الكفة المدورة، ونطاق الحركة البندولية، والتحميل التدريجي للكتف المتجمد، والاصطدام، والالتواء بالتيار المتردد.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "استعادة قوة الكفة المدورة ونطاق الكتف الخالي من الألم.",
+    "focusAreas": [
+      "الكفة المدورة",
+      "الاستقرار الكتفي",
+      "نطاق الكتف"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "arm_springs",
+      "band_arm_series",
+      "pilates_ring_squeeze",
+      "breaststroke",
+      "swan_prep",
+      "pulling_straps",
+      "spine_mobilization"
+    ]
+  },
+  {
+    "id": "restorative_immune",
+    "name": "دعم المناعة التصالحية",
+    "description": "برنامج لطيف يحافظ على الطاقة في حالات التعب المزمن، وحالات المناعة الذاتية، وعلاج الأورام، وكبت المناعة - احترام حدود القدرة من خلال الحركة التصالحية.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "دعم الانتعاش والطاقة مع الحركة التصالحية اللطيفة.",
+    "focusAreas": [
+      "الحركة التصالحية",
+      "الحفاظ على الطاقة",
+      "دعم المناعة"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "rolling_like_a_ball",
+      "pelvic_curl",
+      "spine_stretch_forward",
+      "seal",
+      "mermaid"
+    ]
+  },
+  {
+    "id": "sacroiliac_stability",
+    "name": "الاستقرار العجزي الحرقفي",
+    "description": "برنامج استقرار الحوض الذي يستهدف التحميل المتماثل للورك، والتحكم في ضغط SIJ، وتجنيد العضلات القطنية العميقة.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "تثبيت المفصل العجزي الحرقفي وحزام الحوض.",
+    "focusAreas": [
+      "استقرار الحوض",
+      "محاذاة الورك",
+      "السيطرة الأساسية"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "single_leg_stretch",
+      "pilates_ring_squeeze",
+      "footwork",
+      "knee_stretch",
+      "rolling_like_a_ball"
+    ]
+  },
+  {
+    "id": "scoliosis_balance",
+    "name": "تدفق توازن الجنف",
+    "description": "جلسة متوازنة جانبيًا باستخدام إشارات الدوران والتنفس الجانبي والحركة التي تركز على التماثل لدعم العمود الفقري الجنفي.",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "توازن عدم التماثل الجانبي وتحسين الوعي في العمود الفقري.",
+    "focusAreas": [
+      "توازن العمود الفقري",
+      "التنفس الجانبي",
+      "انحراف"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "mermaid",
+      "spine_twist",
+      "shoulder_bridge",
+      "side_kick_series",
+      "seated_side_bend",
+      "foam_roller_series",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "sensory_adapted_flow",
+    "name": "التدفق الحسي المتكيف",
+    "description": "تسلسل بيلاتيس غني بحس الحس العميق ويمكن التنبؤ به مصمم لضعف البصر والسمع - باستخدام الاتساق المكاني والإشارات اللمسية والتوجيه الآمن.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "التحرك بأمان وثقة مع الإعاقة الحسية.",
+    "focusAreas": [
+      "السلامة التحسسية",
+      "تسلسل يمكن التنبؤ به",
+      "التكيف الحسي"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "rolling_like_a_ball",
+      "single_leg_stretch",
+      "spine_stretch_forward",
+      "seal",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "shoulder_friendly_flow",
+    "name": "تدفق صديق للكتف",
+    "description": "جلسة مركزة لراحة الكتف مع التركيز على دعم الكتف وقوة الجزء العلوي من الجسم اللطيفة ونطاق الحركة الآمن.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "دعم ثبات الكتف من خلال حركة البيلاتس الآمنة.",
+    "focusAreas": [
+      "الكتف",
+      "دعم كتفي",
+      "الجزء العلوي من الجسم"
+    ],
+    "exerciseIds": [
+      "roll_down_bar",
+      "long_box_series",
+      "mermaid",
+      "breaststroke",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "upper_limb_nerve",
+    "name": "الطرف العلوي وتخفيف الأعصاب",
+    "description": "تدفق فتح الصدر والتعبئة العصبية لحالات ضغط المعصم والمرفق والأعصاب - مما يحافظ على تحميل المفصل منخفضًا ونطاق الحركة واسعًا.",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "تخفيف الضغط على الأعصاب واستعادة حركة الصدر والأطراف العلوية.",
+    "focusAreas": [
+      "فتح الصدر",
+      "التنقل العصبي",
+      "حركة آمنة للمعصم"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "seated_side_bend",
+      "band_arm_series",
+      "swan_prep",
+      "mermaid",
+      "spine_twist",
+      "arm_springs"
+    ]
+  }
+]

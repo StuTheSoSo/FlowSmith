@@ -1,0 +1,443 @@
+[
+  {
+    "id": "osteoporosis",
+    "label": "Osteoporosis / Osteopenia / Low Bone Density",
+    "description": "Avoid loaded spinal flexion, rotation, and end-range side bending."
+  },
+  {
+    "id": "pregnancy",
+    "label": "Pregnancy",
+    "description": "Modify by trimester; avoid prolonged supine and heavy abdominal flexion after mid-pregnancy.",
+    "hasTrimester": true
+  },
+  {
+    "id": "postpartum",
+    "label": "Postpartum / Postnatal Recovery",
+    "description": "Focus on gentle core reconnection, pelvic floor recovery, and progressive return to load."
+  },
+  {
+    "id": "pelvic_floor_dysfunction",
+    "label": "Pelvic Floor Dysfunction",
+    "description": "Focus on pelvic floor-friendly stability and avoid strong Valsalva or uncontrolled abdominal loading."
+  },
+  {
+    "id": "diastasis_recti",
+    "label": "Diastasis Recti / Abdominal Separation",
+    "description": "Avoid loaded abdominal flexion, intense twisting, and exercises that increase intra-abdominal pressure without support."
+  },
+  {
+    "id": "low_back_pain",
+    "label": "Chronic Low Back Pain (disc herniation, spinal stenosis, spondylolisthesis)",
+    "description": "Prefer neutral spine stabilization and avoid repetitive flexion or painful movements."
+  },
+  {
+    "id": "scoliosis",
+    "label": "Scoliosis / Spinal Asymmetry",
+    "description": "Favor asymmetry-aware posture, avoid aggressive twisting, and prioritize balanced spinal support."
+  },
+  {
+    "id": "arthritis",
+    "label": "Arthritis (general)",
+    "description": "Respect pain-free range and avoid heavy loading or extreme end-range motions."
+  },
+  {
+    "id": "knee_issues",
+    "label": "Knee Issues (arthritis, pain, replacement)",
+    "description": "Avoid deep loaded knee flexion, painful range, and direct joint pressure."
+  },
+  {
+    "id": "hip_issues",
+    "label": "Hip Issues (arthritis, pain, replacement)",
+    "description": "Use smaller hip ranges and avoid extreme opening or loaded rotation."
+  },
+  {
+    "id": "foot_ankle_issues",
+    "label": "Foot / Ankle Issues",
+    "description": "Avoid high-impact foot loading, excessive plantarflexion, and unsupported ankle instability."
+  },
+  {
+    "id": "joint_replacement",
+    "label": "Joint Replacement (knee, hip, shoulder)",
+    "description": "Favor controlled, low-impact movement and avoid high-load joint stress around the replaced joint."
+  },
+  {
+    "id": "recent_surgery",
+    "label": "Recent Surgery",
+    "description": "Get medical clearance first; favor gentle, supported movement and avoid high-risk exercises."
+  },
+  {
+    "id": "shoulder_instability",
+    "label": "Shoulder Instability / Impingement",
+    "description": "Avoid heavy overhead loading, unsupported shoulder weight-bearing, and movements that aggravate shoulder instability."
+  },
+  {
+    "id": "neck_shoulder",
+    "label": "Neck / Shoulder Issues",
+    "description": "Avoid unsupported head lifts and excessive shoulder loading."
+  },
+  {
+    "id": "bursitis",
+    "label": "Bursitis / Tendinopathy",
+    "description": "Avoid repetitive friction, compression, or end-range joint positions around inflamed bursae."
+  },
+  {
+    "id": "respiratory",
+    "label": "Respiratory / Asthma / Breath Concerns",
+    "description": "Avoid breath-holding, rapid exertion, and chest-compressive positions if you have asthma or respiratory symptoms."
+  },
+  {
+    "id": "respiratory_pulmonary",
+    "label": "Respiratory / Pulmonary Condition",
+    "description": "Favor gentle breath-led work; avoid breath-holding, rapid exertion, and positions that compress the chest or restrict airflow."
+  },
+  {
+    "id": "hypertension",
+    "label": "Hypertension / Cardiovascular Concerns",
+    "description": "Avoid inversions and breath-holding; use slow, controlled movement."
+  },
+  {
+    "id": "cardiovascular_disease",
+    "label": "Cardiovascular Disease",
+    "description": "Avoid heavy load, rapid transitions, and breath-holding; favor low-intensity, steady movement and monitor heart response."
+  },
+  {
+    "id": "arrhythmia_cardiac_device",
+    "label": "Arrhythmia / Cardiac Device",
+    "description": "Modify intensity and torso positions; avoid sudden high exertion and positions that alter chest compression or stress the device site."
+  },
+  {
+    "id": "diabetes",
+    "label": "Diabetes / Metabolic Concerns",
+    "description": "Use steady movement, monitor intensity, and avoid prolonged strain during blood sugar fluctuation."
+  },
+  {
+    "id": "metabolic_endocrine",
+    "label": "Metabolic / Endocrine Condition",
+    "description": "Manage intensity, pacing, and temperature sensitivity; avoid sudden exertion if energy, blood sugar, or hormonal balance is unstable."
+  },
+  {
+    "id": "autoimmune_inflammatory",
+    "label": "Autoimmune / Inflammatory Condition",
+    "description": "Plan around flare cycles; avoid high-load or prolonged joint compression during active inflammation and use gentler pacing."
+  },
+  {
+    "id": "chronic_fatigue",
+    "label": "Chronic Fatigue / Autoimmune Sensitivity",
+    "description": "Use gentle pacing, shorter sessions, and avoid pushing through excessive fatigue."
+  },
+  {
+    "id": "immune_infectious",
+    "label": "Immune / Infectious Condition",
+    "description": "Choose low-impact, adaptable movement; avoid pushing through fatigue, fever, or systemic illness and adjust for recovery capacity."
+  },
+  {
+    "id": "oncology_treatment",
+    "label": "Active Cancer / Cancer Treatment",
+    "description": "Use symptom-guided movement; avoid high load, aggressive compression, and unsupported effort during active treatment or recovery."
+  },
+  {
+    "id": "swollen_glands",
+    "label": "Swollen Glands / Enlarged Lymph Nodes",
+    "description": "Swollen lymph nodes often indicate infection or inflammation. Favor gentle movement and avoid pressure or strain near the neck, jaw, or armpits."
+  },
+  {
+    "id": "gastrointestinal_pelvic",
+    "label": "Gastrointestinal / Pelvic Floor Condition",
+    "description": "Modify core compression and flexion; avoid strong intra-abdominal pressure and pelvic strain that may exacerbate symptoms."
+  },
+  {
+    "id": "neurological_disorder",
+    "label": "Neurological Disorder",
+    "description": "Adjust for balance, coordination, and sensation changes; prioritize support, slower progressions, and clear cues."
+  },
+  {
+    "id": "vertigo_dizziness",
+    "label": "Vertigo / Dizziness",
+    "description": "Avoid rapid head movement, inversions, and unsupported balance work that may trigger dizziness."
+  },
+  {
+    "id": "balance_issues",
+    "label": "Balance / Fall Risk",
+    "description": "Avoid unsupported balance challenges and progress with stable, grounded movement."
+  },
+  {
+    "id": "mental_cognitive",
+    "label": "Mental Health / Cognitive Condition",
+    "description": "Use simple cues, extra support, and gentle pacing to help with concentration, stress response, and safe movement execution."
+  },
+  {
+    "id": "weight_concerns",
+    "label": "Overweight / Obesity / Weight Concerns",
+    "description": "Favor low-impact, joint-friendly Pilates and avoid excessive load, fast transitions, or unstable balance work."
+  },
+  {
+    "id": "vision_impairment",
+    "label": "Vision Impairment / Blindness",
+    "description": "Provide extra cueing, hands-on support, and ensure a safe, obstacle-free environment. Adapt balance and orientation work as needed."
+  },
+  {
+    "id": "hearing_impairment",
+    "label": "Hearing Impairment / Deafness",
+    "description": "Use visual demonstration, written instructions, or tactile feedback. Ensure clear sightlines and minimize reliance on verbal cues."
+  },
+  {
+    "id": "epilepsy_seizure",
+    "label": "Epilepsy / Seizure Disorder",
+    "description": "Avoid triggers such as flashing lights or rapid head movements. Monitor for warning signs and ensure a safe environment in case of seizure."
+  },
+  {
+    "id": "severe_allergy",
+    "label": "Severe Allergies / Anaphylaxis Risk",
+    "description": "Be aware of environmental and equipment allergens (e.g., latex, cleaning agents). Ensure emergency plan and medication (e.g., epinephrine) are accessible."
+  },
+  {
+    "id": "chronic_pain_syndrome",
+    "label": "Chronic Pain Syndrome (e.g., Fibromyalgia)",
+    "description": "Use gentle pacing, pain monitoring, and gradual progressions. Avoid overexertion and respect individual pain thresholds."
+  },
+  {
+    "id": "skin_condition",
+    "label": "Skin Condition (e.g., wounds, eczema, psoriasis)",
+    "description": "Modify for comfort and hygiene. Avoid direct contact with equipment on open wounds and ensure proper cleaning protocols."
+  },
+  {
+    "id": "transplant_immunosuppression",
+    "label": "Transplant Recipient / Immunosuppression",
+    "description": "Favor gentle, low-impact exercise. Monitor for infection risk and avoid crowded or unsanitary environments."
+  },
+  {
+    "id": "recent_hospitalization",
+    "label": "Recent Hospitalization / Prolonged Bed Rest",
+    "description": "Reintroduce movement gradually. Monitor for deconditioning, orthostatic hypotension, and progress at a safe pace."
+  },
+  {
+    "id": "pacemaker_implant",
+    "label": "Pacemaker / Implanted Medical Device",
+    "description": "Avoid direct pressure or trauma to the device site. Follow any device-specific movement restrictions and consult with the medical team as needed."
+  },
+  {
+    "id": "substance_use_recovery",
+    "label": "Substance Use Disorder / Recovery",
+    "description": "Be aware of possible impacts on coordination, judgment, and energy. Use trauma-informed approaches and provide extra support as needed."
+  },
+  {
+    "id": "hypermobility_syndrome",
+    "label": "Hypermobility Syndrome",
+    "description": "Avoid unsupported extreme joint ranges and rapid direction changes; emphasize controlled strength and joint stability."
+  },
+  {
+    "id": "hernia",
+    "label": "Hernia",
+    "description": "Avoid heavy abdominal strain, Valsalva, and deep intra-abdominal pressure. Focus on supportive core and gentle mobility."
+  },
+  {
+    "id": "parkinsons_disease",
+    "label": "Parkinson's Disease",
+    "description": "Use slow, controlled movement with clear cues, avoiding sudden changes in direction and unsupported balance work."
+  },
+  {
+    "id": "multiple_sclerosis",
+    "label": "Multiple Sclerosis (MS)",
+    "description": "Plan around fatigue and temperature sensitivity. Avoid rapid intensity changes, overheating, and unsupported balance work."
+  },
+  {
+    "id": "stress_incontinence",
+    "label": "Stress Incontinence",
+    "description": "Avoid strong abdominal pressure and high-impact loading. Focus on pelvic floor-friendly stabilization and timing."
+  },
+  {
+    "id": "disc_degeneration",
+    "label": "Disc Degeneration",
+    "description": "Protect the spine with neutral alignment, avoid repeated flexion/extension, and favor gentle segmental movement."
+  },
+  {
+    "id": "radiculopathy_sciatica",
+    "label": "Radiculopathy / Sciatica",
+    "description": "Avoid aggressive spinal flexion and compression. Favor nerve-friendly positions and gentle decompression."
+  },
+  {
+    "id": "ankylosing_spondylitis",
+    "label": "Ankylosing Spondylitis",
+    "description": "Avoid end-range spinal extension and rotation. Focus on gentle mobility, posture, and breath-led segmental movement."
+  },
+  {
+    "id": "sacroiliac_dysfunction",
+    "label": "Sacroiliac Joint (SIJ) Dysfunction",
+    "description": "Avoid deep twisting and uneven weight shifts. Use subtle pelvic stabilization and even hip loading."
+  },
+  {
+    "id": "cervical_spine_dysfunction",
+    "label": "Cervical Spine Dysfunction",
+    "description": "Avoid unsupported head lifts, deep neck extension, and rapid head rotations."
+  },
+  {
+    "id": "frozen_shoulder",
+    "label": "Adhesive Capsulitis / Frozen Shoulder",
+    "description": "Favor gentle shoulder mobility without reaching into pain. Avoid forceful overhead movement and aggressive rotation."
+  },
+  {
+    "id": "rotator_cuff_injury",
+    "label": "Rotator Cuff Injury",
+    "description": "Protect the shoulder with controlled, pain-free ranges and avoid sudden overhead or external rotation under load."
+  },
+  {
+    "id": "acromioclavicular_sprain",
+    "label": "Acromioclavicular (AC) Sprain",
+    "description": "Avoid direct shoulder compression, heavy load on the AC joint, and high-risk shoulder positions."
+  },
+  {
+    "id": "thoracic_outlet_syndrome",
+    "label": "Thoracic Outlet Syndrome (TOS)",
+    "description": "Avoid sustained shoulder elevation, deep neck extension, and compression between the neck and shoulder."
+  },
+  {
+    "id": "tennis_elbow",
+    "label": "Lateral Epicondylitis / Tennis Elbow",
+    "description": "Avoid repetitive gripping, wrist extension under load, and strong resisted elbow extension."
+  },
+  {
+    "id": "golfers_elbow",
+    "label": "Medial Epicondylitis / Golfer's Elbow",
+    "description": "Avoid repetitive wrist flexion and forearm pronation with resisted elbow strain."
+  },
+  {
+    "id": "nerve_compression",
+    "label": "Nerve Compression / Entrapment",
+    "description": "Favor neutral joint alignment and gentle range. Avoid positions that pinch, compress, or overstretch nerves."
+  },
+  {
+    "id": "carpal_tunnel_syndrome",
+    "label": "Carpal Tunnel Syndrome",
+    "description": "Avoid prolonged wrist extension or flexion under load and repeated finger gripping with compression."
+  },
+  {
+    "id": "cubital_tunnel_syndrome",
+    "label": "Ulnar Nerve / Cubital Tunnel Syndrome",
+    "description": "Avoid prolonged elbow flexion, direct pressure on the inner elbow, and forceful gripping."
+  },
+  {
+    "id": "radial_nerve_issue",
+    "label": "Radial Nerve Concern",
+    "description": "Avoid sustained wrist drop positions, pressure at the elbow, and forceful forearm extension under load."
+  },
+  {
+    "id": "ankle_sprain",
+    "label": "Ankle Sprain",
+    "description": "Avoid unstable surfaces, sudden direction changes, and unsupported single-leg landing."
+  },
+  {
+    "id": "achilles_tendinopathy",
+    "label": "Achilles Tendinopathy",
+    "description": "Avoid repeated jumping, sudden forceful push-off, and aggressive dorsiflexion under load."
+  },
+  {
+    "id": "posterior_tibialis_dysfunction",
+    "label": "Posterior Tibialis Dysfunction (PTTD)",
+    "description": "Favor arch support, avoid excessive pronation and prolonged weight-bearing on the inside of the foot."
+  },
+  {
+    "id": "tibial_stress_syndrome",
+    "label": "Tibial Stress Syndrome (TSS)",
+    "description": "Avoid repetitive impact and high-volume loading through the lower leg. Favor low-impact, gradual progression."
+  },
+  {
+    "id": "plantar_fasciitis",
+    "label": "Plantar Fasciitis",
+    "description": "Avoid prolonged toe extension, barefoot loading, and high-impact footwork."
+  },
+  {
+    "id": "bunions",
+    "label": "Bunions (Hallux Valgus)",
+    "description": "Avoid narrow shoe-like foot positioning, toes gripping the floor, and excessive big-toe pressure."
+  },
+  {
+    "id": "hip_arthroscopy",
+    "label": "Total Hip Arthroscopy (THA)",
+    "description": "Move with caution around hip range and avoid deep rotation, wide opening, or forceful hip load."
+  },
+  {
+    "id": "piriformis_syndrome",
+    "label": "Piriformis Syndrome / Sciatic Nerve Entrapment",
+    "description": "Avoid deep external rotation and compression through the buttock and hips. Favor gentle glute and hip mobility."
+  },
+  {
+    "id": "hamstring_tendinopathy",
+    "label": "Hamstring Tendinopathy",
+    "description": "Avoid aggressive hamstring stretching, rapid lengthening, and loaded knee extension through pain."
+  },
+  {
+    "id": "muscle_strain",
+    "label": "Muscle Strain",
+    "description": "Avoid sudden overstretching, aggressive loading, and high-speed lengthening of the affected muscle."
+  },
+  {
+    "id": "snapping_hip_syndrome",
+    "label": "Snapping Hip Syndrome (SHS)",
+    "description": "Avoid sudden hip flexion/extension and loud popping movements. Focus on control, stability, and smooth rotations."
+  },
+  {
+    "id": "greater_trochanteric_pain",
+    "label": "Greater Trochanteric Pain Syndrome / Hip Bursitis",
+    "description": "Avoid direct pressure on the outside of the hip and load that aggravates the lateral hip."
+  },
+  {
+    "id": "femoroacetabular_impingement",
+    "label": "Femoroacetabular Impingement (FAI)",
+    "description": "Avoid deep hip flexion, internal rotation, and forward-flexed hip positions that pinch the front of the hip."
+  },
+  {
+    "id": "patellofemoral_pain",
+    "label": "Patellofemoral Pain Syndrome (PFPS)",
+    "description": "Avoid deep knee bends, prolonged knee loading, and unstable single-leg work that increases front knee stress."
+  },
+  {
+    "id": "iliotibial_band_syndrome",
+    "label": "Iliotibial Band Syndrome (ITBS)",
+    "description": "Avoid repetitive knee flexion/extension and excessive hip adduction that irritates the outer knee."
+  },
+  {
+    "id": "meniscus_tear",
+    "label": "Meniscus Tear",
+    "description": "Avoid twisting under knee load, deep squats, and sudden pivoting that places shear force on the knee."
+  },
+  {
+    "id": "ligament_injury",
+    "label": "Ligament Injury (ACL, PCL, MCL, LCL)",
+    "description": "Avoid twisting, pivoting, and deep or loaded knee positions until ligament healing and stability improve."
+  },
+  {
+    "id": "perimenopause_menopause",
+    "label": "Perimenopause / Menopause",
+    "description": "Monitor heat tolerance and bone density; avoid breath-holding, high-impact loading, and extreme intensity. Support joint laxity and cardiovascular adaptation."
+  },
+  {
+    "id": "stroke_recovery",
+    "label": "Stroke / CVA Recovery",
+    "description": "Adapt for hemiplegia, spasticity, and coordination changes. Use slow, supported movement, avoid high exertion, and monitor blood pressure responses."
+  },
+  {
+    "id": "long_covid",
+    "label": "Long COVID / Post-Viral Syndrome",
+    "description": "Respect post-exertional malaise — avoid pushing through fatigue or breathlessness. Use paced, low-intensity movement with frequent rest."
+  },
+  {
+    "id": "hip_labral_tear",
+    "label": "Hip Labral Tear",
+    "description": "Avoid deep hip flexion, internal rotation, and impingement positions. Favor pain-free range, hip stability, and controlled movement."
+  },
+  {
+    "id": "wrist_conditions",
+    "label": "Wrist Conditions",
+    "description": "Modify or avoid weight-bearing on the wrists. Use fist or forearm support for quadruped and plank-based exercises."
+  },
+  {
+    "id": "lymphedema",
+    "label": "Lymphedema",
+    "description": "Avoid tight compression, prolonged arm elevation, and intense exercise of the affected limb. Use gentle, rhythmic movement and diaphragmatic breathing."
+  },
+  {
+    "id": "other",
+    "label": "Other",
+    "description": "Get AI-backed guidance for a condition not listed here."
+  }
+]

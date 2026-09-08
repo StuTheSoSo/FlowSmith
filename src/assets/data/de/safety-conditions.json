@@ -1,0 +1,443 @@
+[
+  {
+    "id": "osteoporosis",
+    "label": "Osteoporose / Osteopenie / niedrige Knochendichte",
+    "description": "Vermeiden Sie belastete Wirbelsäulenbeugungen, Rotationen und seitliche Beugungen im Endbereich."
+  },
+  {
+    "id": "pregnancy",
+    "label": "Schwangerschaft",
+    "description": "Je nach Trimester ändern; Vermeiden Sie längere Rückenlage und starke Bauchbeugung nach der Mitte der Schwangerschaft.",
+    "hasTrimester": true
+  },
+  {
+    "id": "postpartum",
+    "label": "Postpartale / postnatale Genesung",
+    "description": "Konzentrieren Sie sich auf die sanfte Wiederherstellung der Rumpfmuskulatur, die Wiederherstellung des Beckenbodens und die schrittweise Rückkehr zur Belastung."
+  },
+  {
+    "id": "pelvic_floor_dysfunction",
+    "label": "Funktionsstörung des Beckenbodens",
+    "description": "Konzentrieren Sie sich auf eine beckenbodenfreundliche Stabilität und vermeiden Sie starke Valsalva- oder unkontrollierte Bauchbelastungen."
+  },
+  {
+    "id": "diastasis_recti",
+    "label": "Rektusdiastase / Abdominaltrennung",
+    "description": "Vermeiden Sie belastete Bauchbeugungen, starke Drehungen und Übungen, die den intraabdominalen Druck ohne Unterstützung erhöhen."
+  },
+  {
+    "id": "low_back_pain",
+    "label": "Chronische Schmerzen im unteren Rückenbereich (Bandscheibenvorfall, Spinalkanalstenose, Spondylolisthesis)",
+    "description": "Bevorzugen Sie eine neutrale Wirbelsäulenstabilisierung und vermeiden Sie wiederholte Beugungen oder schmerzhafte Bewegungen."
+  },
+  {
+    "id": "scoliosis",
+    "label": "Skoliose / Wirbelsäulenasymmetrie",
+    "description": "Bevorzugen Sie eine asymmetrische Haltung, vermeiden Sie aggressives Verdrehen und legen Sie Wert auf eine ausgewogene Unterstützung der Wirbelsäule."
+  },
+  {
+    "id": "arthritis",
+    "label": "Arthritis (allgemein)",
+    "description": "Respektieren Sie den schmerzfreien Bereich und vermeiden Sie schwere Belastungen oder extreme Endbereichsbewegungen."
+  },
+  {
+    "id": "knee_issues",
+    "label": "Knieprobleme (Arthritis, Schmerzen, Ersatz)",
+    "description": "Vermeiden Sie tiefe Kniebeugungen, schmerzhafte Bewegungen und direkten Gelenkdruck."
+  },
+  {
+    "id": "hip_issues",
+    "label": "Hüftprobleme (Arthritis, Schmerzen, Ersatz)",
+    "description": "Verwenden Sie kleinere Hüftbereiche und vermeiden Sie extreme Öffnungen oder belastete Rotationen."
+  },
+  {
+    "id": "foot_ankle_issues",
+    "label": "Fuß-/Knöchelprobleme",
+    "description": "Vermeiden Sie starke Fußbelastungen, übermäßige Plantarflexion und nicht unterstützte Knöchelinstabilität."
+  },
+  {
+    "id": "joint_replacement",
+    "label": "Gelenkersatz (Knie, Hüfte, Schulter)",
+    "description": "Bevorzugen Sie kontrollierte, stoßarme Bewegungen und vermeiden Sie hohe Gelenkbelastungen im Bereich des ersetzten Gelenks."
+  },
+  {
+    "id": "recent_surgery",
+    "label": "Kürzliche Operation",
+    "description": "Holen Sie zuerst eine ärztliche Genehmigung ein; Bevorzugen Sie sanfte, unterstützte Bewegungen und vermeiden Sie risikoreiche Übungen."
+  },
+  {
+    "id": "shoulder_instability",
+    "label": "Schulterinstabilität / Impingement",
+    "description": "Vermeiden Sie schwere Überkopfbelastungen, ungestützte Schulterbelastungen und Bewegungen, die die Schulterinstabilität verschlimmern."
+  },
+  {
+    "id": "neck_shoulder",
+    "label": "Nacken-/Schulterprobleme",
+    "description": "Vermeiden Sie ungestütztes Anheben des Kopfes und übermäßige Schulterbelastung."
+  },
+  {
+    "id": "bursitis",
+    "label": "Schleimbeutelentzündung / Tendinopathie",
+    "description": "Vermeiden Sie wiederholte Reibung, Kompression oder Gelenkpositionen im Endbereich um entzündete Schleimbeutel."
+  },
+  {
+    "id": "respiratory",
+    "label": "Atemwegs-/Asthma-/Atembeschwerden",
+    "description": "Vermeiden Sie Atemanhalten, schnelle Anstrengung und Brustdruckpositionen, wenn Sie Asthma oder Atemwegsbeschwerden haben."
+  },
+  {
+    "id": "respiratory_pulmonary",
+    "label": "Atemwegs-/Lungenerkrankung",
+    "description": "Bevorzugen Sie sanftes, atemgeführtes Arbeiten; Vermeiden Sie Atemanhalten, schnelle Anstrengung und Positionen, die den Brustkorb komprimieren oder den Luftstrom einschränken."
+  },
+  {
+    "id": "hypertension",
+    "label": "Hypertonie / Herz-Kreislauf-Probleme",
+    "description": "Vermeiden Sie Umkehrungen und das Anhalten des Atems; Verwenden Sie langsame, kontrollierte Bewegungen."
+  },
+  {
+    "id": "cardiovascular_disease",
+    "label": "Herz-Kreislauf-Erkrankungen",
+    "description": "Vermeiden Sie schwere Lasten, schnelle Übergänge und das Anhalten des Atems; Bevorzugen Sie gleichmäßige Bewegungen mit geringer Intensität und überwachen Sie die Herzreaktion."
+  },
+  {
+    "id": "arrhythmia_cardiac_device",
+    "label": "Arrhythmie/Herzgerät",
+    "description": "Intensität und Rumpfpositionen ändern; Vermeiden Sie plötzliche hohe Anstrengungen und Positionen, die die Brustkompression verändern oder die Gerätestelle belasten."
+  },
+  {
+    "id": "diabetes",
+    "label": "Diabetes / Stoffwechselprobleme",
+    "description": "Achten Sie auf gleichmäßige Bewegungen, überwachen Sie die Intensität und vermeiden Sie längere Belastungen bei Blutzuckerschwankungen."
+  },
+  {
+    "id": "metabolic_endocrine",
+    "label": "Stoffwechsel-/endokrine Erkrankung",
+    "description": "Verwalten Sie Intensität, Tempo und Temperaturempfindlichkeit. Vermeiden Sie plötzliche Anstrengungen, wenn Energie, Blutzucker oder Hormonhaushalt instabil sind."
+  },
+  {
+    "id": "autoimmune_inflammatory",
+    "label": "Autoimmuner / entzündlicher Zustand",
+    "description": "Planen Sie Fackelzyklen ein; Vermeiden Sie eine hohe Belastung oder längere Gelenkkompression während einer aktiven Entzündung und verwenden Sie ein sanfteres Tempo."
+  },
+  {
+    "id": "chronic_fatigue",
+    "label": "Chronische Müdigkeit / Autoimmunempfindlichkeit",
+    "description": "Gehen Sie sanft vor, machen Sie kürzere Sitzungen und vermeiden Sie übermäßige Ermüdung."
+  },
+  {
+    "id": "immune_infectious",
+    "label": "Immun-/Infektionszustand",
+    "description": "Wählen Sie eine sanfte, anpassungsfähige Bewegung; Vermeiden Sie Ermüdung, Fieber oder systemische Erkrankungen und passen Sie sich der Erholungsfähigkeit an."
+  },
+  {
+    "id": "oncology_treatment",
+    "label": "Aktive Krebs-/Krebsbehandlung",
+    "description": "Verwenden Sie symptomgesteuerte Bewegungen. Vermeiden Sie hohe Belastungen, aggressive Kompression und nicht unterstützte Anstrengungen während der aktiven Behandlung oder Genesung."
+  },
+  {
+    "id": "swollen_glands",
+    "label": "Geschwollene Drüsen / vergrößerte Lymphknoten",
+    "description": "Geschwollene Lymphknoten weisen oft auf eine Infektion oder Entzündung hin. Bevorzugen Sie sanfte Bewegungen und vermeiden Sie Druck oder Belastung im Nacken-, Kiefer- oder Achselbereich."
+  },
+  {
+    "id": "gastrointestinal_pelvic",
+    "label": "Magen-Darm-/Beckenbodenzustand",
+    "description": "Ändern Sie die Kompression und Flexion des Rumpfes. Vermeiden Sie starken intraabdominalen Druck und Beckenbelastungen, die die Symptome verschlimmern können."
+  },
+  {
+    "id": "neurological_disorder",
+    "label": "Neurologische Störung",
+    "description": "Passen Sie sich an Gleichgewichts-, Koordinations- und Empfindungsänderungen an; Priorisieren Sie Unterstützung, langsamere Fortschritte und klare Hinweise."
+  },
+  {
+    "id": "vertigo_dizziness",
+    "label": "Schwindel / Schwindel",
+    "description": "Vermeiden Sie schnelle Kopfbewegungen, Umkehrungen und nicht unterstützte Gleichgewichtsübungen, die Schwindelgefühle auslösen können."
+  },
+  {
+    "id": "balance_issues",
+    "label": "Gleichgewicht / Sturzrisiko",
+    "description": "Vermeiden Sie nicht unterstützte Gleichgewichtsherausforderungen und kommen Sie mit stabilen, geerdeten Bewegungen voran."
+  },
+  {
+    "id": "mental_cognitive",
+    "label": "Psychische Gesundheit / kognitiver Zustand",
+    "description": "Verwenden Sie einfache Hinweise, zusätzliche Unterstützung und sanftes Tempo, um die Konzentration, Stressreaktion und sichere Bewegungsausführung zu fördern."
+  },
+  {
+    "id": "weight_concerns",
+    "label": "Übergewicht / Fettleibigkeit / Gewichtsprobleme",
+    "description": "Bevorzugen Sie sanftes, gelenkschonendes Pilates und vermeiden Sie übermäßige Belastungen, schnelle Übergänge oder instabile Gleichgewichtsübungen."
+  },
+  {
+    "id": "vision_impairment",
+    "label": "Sehbehinderung/Blindheit",
+    "description": "Bieten Sie zusätzliche Hinweise, praktische Unterstützung und sorgen Sie für eine sichere, hindernisfreie Umgebung. Passen Sie die Gleichgewichts- und Orientierungsübungen nach Bedarf an."
+  },
+  {
+    "id": "hearing_impairment",
+    "label": "Hörbehinderung / Taubheit",
+    "description": "Verwenden Sie visuelle Demonstrationen, schriftliche Anweisungen oder taktiles Feedback. Sorgen Sie für klare Sichtlinien und minimieren Sie die Abhängigkeit von verbalen Hinweisen."
+  },
+  {
+    "id": "epilepsy_seizure",
+    "label": "Epilepsie / Anfallsleiden",
+    "description": "Vermeiden Sie Auslöser wie blinkende Lichter oder schnelle Kopfbewegungen. Achten Sie auf Warnzeichen und sorgen Sie im Falle eines Anfalls für eine sichere Umgebung."
+  },
+  {
+    "id": "severe_allergy",
+    "label": "Risiko schwerer Allergien/Anaphylaxie",
+    "description": "Achten Sie auf Umwelt- und Geräteallergene (z. B. Latex, Reinigungsmittel). Stellen Sie sicher, dass ein Notfallplan und Medikamente (z. B. Adrenalin) verfügbar sind."
+  },
+  {
+    "id": "chronic_pain_syndrome",
+    "label": "Chronisches Schmerzsyndrom (z. B. Fibromyalgie)",
+    "description": "Verwenden Sie sanftes Tempo, Schmerzüberwachung und schrittweise Fortschritte. Vermeiden Sie Überanstrengung und respektieren Sie die individuellen Schmerzgrenzen."
+  },
+  {
+    "id": "skin_condition",
+    "label": "Hautzustand (z. B. Wunden, Ekzeme, Psoriasis)",
+    "description": "Für Komfort und Hygiene anpassen. Vermeiden Sie direkten Kontakt mit der Ausrüstung auf offenen Wunden und achten Sie auf ordnungsgemäße Reinigungsprotokolle."
+  },
+  {
+    "id": "transplant_immunosuppression",
+    "label": "Transplantatempfänger / Immunsuppression",
+    "description": "Bevorzugen Sie sanfte Übungen mit geringer Belastung. Achten Sie auf Infektionsrisiken und vermeiden Sie überfüllte oder unhygienische Umgebungen."
+  },
+  {
+    "id": "recent_hospitalization",
+    "label": "Kürzlicher Krankenhausaufenthalt / längere Bettruhe",
+    "description": "Führen Sie die Bewegung schrittweise wieder ein. Überwachen Sie Dekonditionierung, orthostatische Hypotonie und Fortschritte in einem sicheren Tempo."
+  },
+  {
+    "id": "pacemaker_implant",
+    "label": "Herzschrittmacher/implantiertes medizinisches Gerät",
+    "description": "Vermeiden Sie direkten Druck oder Trauma auf die Gerätestelle. Befolgen Sie alle gerätespezifischen Bewegungseinschränkungen und konsultieren Sie bei Bedarf das medizinische Team."
+  },
+  {
+    "id": "substance_use_recovery",
+    "label": "Substanzgebrauchsstörung / Erholung",
+    "description": "Seien Sie sich möglicher Auswirkungen auf Koordination, Urteilsvermögen und Energie bewusst. Nutzen Sie traumabasierte Ansätze und leisten Sie bei Bedarf zusätzliche Unterstützung."
+  },
+  {
+    "id": "hypermobility_syndrome",
+    "label": "Hypermobilitätssyndrom",
+    "description": "Vermeiden Sie ungestützte extreme Gelenkbereiche und schnelle Richtungswechsel; Betonen Sie kontrollierte Kraft und Gelenkstabilität."
+  },
+  {
+    "id": "hernia",
+    "label": "Hernie",
+    "description": "Vermeiden Sie starke Bauchbelastung, Valsalva und tiefen intraabdominalen Druck. Konzentrieren Sie sich auf unterstützende Rumpf- und sanfte Beweglichkeit."
+  },
+  {
+    "id": "parkinsons_disease",
+    "label": "Parkinson-Krankheit",
+    "description": "Benutzen Sie langsame, kontrollierte Bewegungen mit klaren Hinweisen und vermeiden Sie plötzliche Richtungsänderungen und nicht unterstützte Gleichgewichtsübungen."
+  },
+  {
+    "id": "multiple_sclerosis",
+    "label": "Multiple Sklerose (MS)",
+    "description": "Planen Sie Müdigkeit und Temperaturempfindlichkeit ein. Vermeiden Sie schnelle Intensitätswechsel, Überhitzung und nicht unterstützte Gleichgewichtsübungen."
+  },
+  {
+    "id": "stress_incontinence",
+    "label": "Belastungsinkontinenz",
+    "description": "Vermeiden Sie starken Bauchdruck und starke Stoßbelastungen. Konzentrieren Sie sich auf beckenbodenfreundliche Stabilisierung und Timing."
+  },
+  {
+    "id": "disc_degeneration",
+    "label": "Bandscheibendegeneration",
+    "description": "Schützen Sie die Wirbelsäule durch neutrale Ausrichtung, vermeiden Sie wiederholte Flexion/Extension und bevorzugen Sie sanfte Segmentbewegungen."
+  },
+  {
+    "id": "radiculopathy_sciatica",
+    "label": "Radikulopathie / Ischias",
+    "description": "Vermeiden Sie aggressive Beugung und Kompression der Wirbelsäule. Bevorzugen Sie nervenschonende Positionen und sanfte Dekompression."
+  },
+  {
+    "id": "ankylosing_spondylitis",
+    "label": "Spondylitis ankylosans",
+    "description": "Vermeiden Sie eine Streckung und Drehung der Wirbelsäule im Endbereich. Konzentrieren Sie sich auf sanfte Beweglichkeit, Körperhaltung und atemgeführte Segmentbewegungen."
+  },
+  {
+    "id": "sacroiliac_dysfunction",
+    "label": "Funktionsstörung des Iliosakralgelenks (SIJ).",
+    "description": "Vermeiden Sie tiefes Verdrehen und ungleichmäßige Gewichtsverlagerungen. Nutzen Sie eine subtile Beckenstabilisierung und gleichmäßige Hüftbelastung."
+  },
+  {
+    "id": "cervical_spine_dysfunction",
+    "label": "Funktionsstörung der Halswirbelsäule",
+    "description": "Vermeiden Sie ungestütztes Anheben des Kopfes, tiefe Nackenstreckung und schnelle Kopfdrehungen."
+  },
+  {
+    "id": "frozen_shoulder",
+    "label": "Adhäsive Kapsulitis / Frozen Shoulder",
+    "description": "Fördern Sie eine sanfte Beweglichkeit der Schulter, ohne in den Schmerz hineinzugreifen. Vermeiden Sie kraftvolle Überkopfbewegungen und aggressive Rotationen."
+  },
+  {
+    "id": "rotator_cuff_injury",
+    "label": "Verletzung der Rotatorenmanschette",
+    "description": "Schützen Sie die Schulter durch kontrollierte, schmerzfreie Bewegungen und vermeiden Sie plötzliche Überkopf- oder Außenrotationen unter Belastung."
+  },
+  {
+    "id": "acromioclavicular_sprain",
+    "label": "Akromioklavikuläre (AC) Verstauchung",
+    "description": "Vermeiden Sie direkte Schulterkompression, starke Belastung des AC-Gelenks und riskante Schulterpositionen."
+  },
+  {
+    "id": "thoracic_outlet_syndrome",
+    "label": "Thoracic-Outlet-Syndrom (TOS)",
+    "description": "Vermeiden Sie anhaltendes Anheben der Schulter, tiefe Nackenstreckung und Kompression zwischen Nacken und Schulter."
+  },
+  {
+    "id": "tennis_elbow",
+    "label": "Laterale Epicondylitis / Tennisellenbogen",
+    "description": "Avoid repetitive gripping, wrist extension under load, and strong resisted elbow extension."
+  },
+  {
+    "id": "golfers_elbow",
+    "label": "Mediale Epicondylitis / Golferellenbogen",
+    "description": "Vermeiden Sie eine wiederholte Beugung des Handgelenks und eine Pronation des Unterarms mit Widerstand gegen die Belastung des Ellenbogens."
+  },
+  {
+    "id": "nerve_compression",
+    "label": "Nervenkompression/Einklemmung",
+    "description": "Bevorzugen Sie eine neutrale Gelenkausrichtung und eine sanfte Bewegung. Vermeiden Sie Positionen, die Nerven einklemmen, komprimieren oder überdehnen."
+  },
+  {
+    "id": "carpal_tunnel_syndrome",
+    "label": "Karpaltunnelsyndrom",
+    "description": "Vermeiden Sie eine längere Streckung oder Beugung des Handgelenks unter Belastung und wiederholtes Greifen der Finger mit Kompression."
+  },
+  {
+    "id": "cubital_tunnel_syndrome",
+    "label": "Ulnar Nerve / Cubital Tunnel Syndrome",
+    "description": "Vermeiden Sie eine längere Ellenbogenbeugung, direkten Druck auf die Innenseite des Ellenbogens und kräftiges Greifen."
+  },
+  {
+    "id": "radial_nerve_issue",
+    "label": "Besorgnis über den Radialnerv",
+    "description": "Vermeiden Sie dauerhafte Senkpositionen des Handgelenks, Druck auf den Ellenbogen und eine kräftige Streckung des Unterarms unter Belastung."
+  },
+  {
+    "id": "ankle_sprain",
+    "label": "Knöchelverstauchung",
+    "description": "Vermeiden Sie instabile Oberflächen, plötzliche Richtungsänderungen und nicht unterstützte Landungen mit einem Bein."
+  },
+  {
+    "id": "achilles_tendinopathy",
+    "label": "Achillessehnen-Tendinopathie",
+    "description": "Vermeiden Sie wiederholtes Springen, plötzliches, kraftvolles Abstoßen und aggressive Dorsalflexion unter Last."
+  },
+  {
+    "id": "posterior_tibialis_dysfunction",
+    "label": "Posterior-Tibialis-Dysfunktion (PTTD)",
+    "description": "Bevorzugen Sie die Unterstützung des Fußgewölbes, vermeiden Sie übermäßige Pronation und längere Belastung der Fußinnenseite."
+  },
+  {
+    "id": "tibial_stress_syndrome",
+    "label": "Tibia-Stress-Syndrom (TSS)",
+    "description": "Vermeiden Sie wiederholte Stöße und großvolumige Belastungen durch den Unterschenkel. Bevorzugen Sie einen sanften, schrittweisen Fortschritt."
+  },
+  {
+    "id": "plantar_fasciitis",
+    "label": "Plantarfasziitis",
+    "description": "Vermeiden Sie eine längere Zehenstreckung, Belastungen barfuß und starke Beinarbeit."
+  },
+  {
+    "id": "bunions",
+    "label": "Ballenzehen (Hallux Valgus)",
+    "description": "Vermeiden Sie eine enge, schuhähnliche Fußstellung, ein Festklemmen der Zehen am Boden und übermäßigen Druck auf die Großzehe."
+  },
+  {
+    "id": "hip_arthroscopy",
+    "label": "Totale Hüftarthroskopie (THA)",
+    "description": "Bewegen Sie sich vorsichtig im Hüftbereich und vermeiden Sie tiefe Rotationen, weite Öffnungen oder starke Hüftbelastungen."
+  },
+  {
+    "id": "piriformis_syndrome",
+    "label": "Piriformis-Syndrom / Einklemmung des Ischiasnervs",
+    "description": "Vermeiden Sie eine tiefe Außenrotation und Kompression durch Gesäß und Hüfte. Bevorzugen Sie eine sanfte Gesäß- und Hüftbeweglichkeit."
+  },
+  {
+    "id": "hamstring_tendinopathy",
+    "label": "Tendinopathie der hinteren Oberschenkelmuskulatur",
+    "description": "Vermeiden Sie aggressives Dehnen der hinteren Oberschenkelmuskulatur, schnelles Dehnen und schmerzende Kniestreckung unter Belastung."
+  },
+  {
+    "id": "muscle_strain",
+    "label": "Muskelzerrung",
+    "description": "Vermeiden Sie plötzliche Überdehnungen, aggressive Belastungen und schnelle Dehnungen des betroffenen Muskels."
+  },
+  {
+    "id": "snapping_hip_syndrome",
+    "label": "Schnapp-Hüft-Syndrom (SHS)",
+    "description": "Vermeiden Sie plötzliche Hüftbeugungen/-streckungen und laute Knallbewegungen. Konzentrieren Sie sich auf Kontrolle, Stabilität und sanfte Rotationen."
+  },
+  {
+    "id": "greater_trochanteric_pain",
+    "label": "Großes Trochanterschmerzsyndrom / Hüftschleimbeutelentzündung",
+    "description": "Vermeiden Sie direkten Druck auf die Außenseite der Hüfte und Belastungen, die die seitliche Hüfte belasten."
+  },
+  {
+    "id": "femoroacetabular_impingement",
+    "label": "Femoroacetabuläres Impingement (FAI)",
+    "description": "Vermeiden Sie tiefe Hüftbeugung, Innenrotation und nach vorne gebeugte Hüftpositionen, die die Vorderseite der Hüfte einklemmen."
+  },
+  {
+    "id": "patellofemoral_pain",
+    "label": "Patellofemorales Schmerzsyndrom (PFPS)",
+    "description": "Vermeiden Sie tiefe Kniebeugen, längere Kniebelastungen und instabile einbeinige Arbeit, die die Belastung des vorderen Knies erhöht."
+  },
+  {
+    "id": "iliotibial_band_syndrome",
+    "label": "Iliotibialband-Syndrom (ITBS)",
+    "description": "Vermeiden Sie wiederholte Kniebeugung/-streckung und übermäßige Hüftadduktion, die das äußere Knie reizen."
+  },
+  {
+    "id": "meniscus_tear",
+    "label": "Meniskusriss",
+    "description": "Vermeiden Sie ein Verdrehen unter Belastung des Knies, tiefe Kniebeugen und plötzliche Drehungen, die eine Scherkraft auf das Knie ausüben."
+  },
+  {
+    "id": "ligament_injury",
+    "label": "Bänderverletzung (ACL, PCL, MCL, LCL)",
+    "description": "Vermeiden Sie Drehungen, Drehungen und tiefe oder belastete Kniepositionen, bis sich die Heilung und Stabilität der Bänder verbessert hat."
+  },
+  {
+    "id": "perimenopause_menopause",
+    "label": "Perimenopause / Menopause",
+    "description": "Überwachen Sie Hitzetoleranz und Knochendichte; Vermeiden Sie Atemanhalten, starke Stoßbelastungen und extreme Intensität. Unterstützen Sie die Gelenkschlaffheit und die kardiovaskuläre Anpassung."
+  },
+  {
+    "id": "stroke_recovery",
+    "label": "Schlaganfall/CVA-Erholung",
+    "description": "Anpassung an Hemiplegie, Spastik und Koordinationsveränderungen. Führen Sie langsame, unterstützte Bewegungen aus, vermeiden Sie große Anstrengungen und überwachen Sie die Blutdruckreaktionen."
+  },
+  {
+    "id": "long_covid",
+    "label": "Langes COVID / Postvirales Syndrom",
+    "description": "Respektieren Sie das Unwohlsein nach der Anstrengung – vermeiden Sie es, sich durch Müdigkeit oder Atemlosigkeit durchzusetzen. Verwenden Sie temporeiche Bewegungen mit geringer Intensität und häufigen Pausen."
+  },
+  {
+    "id": "hip_labral_tear",
+    "label": "Hüftlabralriss",
+    "description": "Vermeiden Sie tiefe Hüftbeugung, Innenrotation und Impingementpositionen. Bevorzugen Sie schmerzfreie Reichweite, Hüftstabilität und kontrollierte Bewegung."
+  },
+  {
+    "id": "wrist_conditions",
+    "label": "Handgelenksbeschwerden",
+    "description": "Ändern oder vermeiden Sie die Belastung der Handgelenke. Verwenden Sie für Vierfüßler- und Plankenübungen die Faust- oder Unterarmunterstützung."
+  },
+  {
+    "id": "lymphedema",
+    "label": "Lymphödem",
+    "description": "Vermeiden Sie starke Kompression, längeres Anheben des Arms und intensives Training der betroffenen Extremität. Verwenden Sie sanfte, rhythmische Bewegungen und Zwerchfellatmung."
+  },
+  {
+    "id": "other",
+    "label": "Andere",
+    "description": "Erhalten Sie KI-gestützte Anleitung für eine Erkrankung, die hier nicht aufgeführt ist."
+  }
+]

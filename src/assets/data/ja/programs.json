@@ -1,0 +1,714 @@
+[
+  {
+    "id": "ankylosing_spondylitis_flow",
+    "name": "強直性脊椎炎の流れ",
+    "description": "股関節の開きと胸郭の拡張を伴う、脊椎硬化パターンに対抗するための穏やかな伸展と肋骨の可動性プログラム。",
+    "level": "Beginner",
+    "accessLevel": "Free",
+    "goal": "脊椎の伸展と胸部の可動性を維持します。",
+    "focusAreas": [
+      "脊椎の伸展",
+      "肋骨の可動性",
+      "股関節の柔軟性"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "swan_prep",
+      "breaststroke",
+      "mermaid",
+      "shoulder_bridge",
+      "spine_stretch_forward",
+      "side_kick",
+      "cat_stretch_cadillac"
+    ]
+  },
+  {
+    "id": "arthritis_gentle_flow",
+    "name": "関節炎に優しい流れ",
+    "description": "関節の硬直を軽減し、穏やかな滑膜循環を構築し、快適な可動域を維持する、温かく流れるような動きのセッションです。",
+    "level": "Beginner",
+    "accessLevel": "Free",
+    "goal": "関節の硬さを緩和し、快適な可動域を維持します。",
+    "focusAreas": [
+      "関節の可動性",
+      "優しい温もり",
+      "流体の動き"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "rolling_like_a_ball",
+      "one_leg_circle",
+      "side_kick",
+      "pelvic_curl",
+      "seal",
+      "seated_side_bend"
+    ]
+  },
+  {
+    "id": "back_friendly_recovery",
+    "name": "背中に優しい回復",
+    "description": "自然な背骨の強さ、穏やかな関節運動、骨盤のコントロールで腰をサポートするように設計された、衝撃の少ないセッションです。",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "背中の安定性を向上させ、圧縮応力を軽減します。",
+    "focusAreas": [
+      "腰が低い",
+      "中立背骨",
+      "コアの安定性"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "rolling_like_a_ball",
+      "spine_stretch_forward",
+      "side_kick_series"
+    ]
+  },
+  {
+    "id": "balance_vestibular",
+    "name": "バランスと前庭の安定性",
+    "description": "めまい、回転性めまい、転倒リスクに対する地上ベースの固有受容および前庭適応プログラム。突然の頭の位置の変化を最小限に抑え、安定性を優先します。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "バランス感覚、固有受容感覚、転倒防止を改善します。",
+    "focusAreas": [
+      "接地された安定性",
+      "固有受容",
+      "転倒防止"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "rolling_like_a_ball",
+      "shoulder_bridge",
+      "side_kick",
+      "one_leg_circle",
+      "pilates_ring_squeeze",
+      "footwork",
+      "single_leg_stretch"
+    ]
+  },
+  {
+    "id": "beginner_mat_foundation",
+    "name": "初心者マットファンデーション",
+    "description": "体幹のサポート、脊椎の関節運動、呼吸の調整に焦点を当てた、穏やかな入門ピラティス セッションです。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "安定したコアとマットの動きに自信を築きます。",
+    "focusAreas": [
+      "コア",
+      "脊椎の関節",
+      "息"
+    ],
+    "exerciseIds": [
+      "the_hundred",
+      "roll_up",
+      "spine_stretch_forward",
+      "pelvic_curl",
+      "shoulder_bridge"
+    ]
+  },
+  {
+    "id": "cardiac_safe_flow",
+    "name": "心臓に安全なフロー",
+    "description": "高血圧、心血管疾患、心臓装置使用者向けの、呼吸を調節した中強度のセッションです。バルサルバや極度の運動を避けます。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "安全な呼吸主導の動きで心臓血管の健康をサポートします。",
+    "focusAreas": [
+      "呼吸の調節",
+      "中程度の強度",
+      "心臓血管の安全性"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "pelvic_curl",
+      "rolling_like_a_ball",
+      "side_kick",
+      "shoulder_bridge",
+      "spine_stretch_forward",
+      "seal"
+    ]
+  },
+  {
+    "id": "cervical_neck_care",
+    "name": "頸部と首のケア",
+    "description": "肩甲骨の安定性と胸部の開口部を備えた頸椎減圧シーケンスにより、首の負担を軽減し、上半身のアライメントを改善します。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "頸椎の圧迫を軽減し、首の姿勢を改善します。",
+    "focusAreas": [
+      "子宮頸部減圧術",
+      "肩甲骨の安定性",
+      "胸部の可動性"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "seated_side_bend",
+      "arm_springs",
+      "band_arm_series",
+      "pilates_ring_squeeze",
+      "swan_prep",
+      "hanging_cadillac"
+    ]
+  },
+  {
+    "id": "chronic_pain_fibromyalgia",
+    "name": "慢性疼痛と線維筋痛症",
+    "description": "線維筋痛症および慢性疼痛症候群のための、痛みのペースに合わせた段階的な運動プログラムです。中枢感作原理を使用して、運動耐性を穏やかに構築します。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "痛みのペーシングの原則に従って、穏やかな動きへの耐性を構築します。",
+    "focusAreas": [
+      "痛みのペースに合わせた動き",
+      "中枢性感作",
+      "緩やかな漸進的負荷"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "rolling_like_a_ball",
+      "pelvic_curl",
+      "seal",
+      "mermaid",
+      "spine_stretch_forward",
+      "side_kick"
+    ]
+  },
+  {
+    "id": "disc_sciatica_relief",
+    "name": "椎間板と坐骨神経痛の緩和",
+    "description": "腰椎減圧、穏やかな神経可動性、椎間板痛と坐骨神経痛に対する段階的な体幹負荷を組み合わせたニュートラルスパインセッションです。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "椎間板の圧迫と坐骨神経の緊張を軽減します。",
+    "focusAreas": [
+      "腰部減圧術",
+      "神経の可動性",
+      "中立背骨"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "knee_stretch",
+      "spine_stretch_forward",
+      "shoulder_bridge",
+      "one_leg_circle",
+      "swan_prep",
+      "single_leg_stretch",
+      "spine_mobilization"
+    ]
+  },
+  {
+    "id": "epilepsy_ground_safe",
+    "name": "てんかんグラウンドセーフフロー",
+    "description": "てんかんと発作障害のための地上マット プログラムです。姿勢を低くし、転倒や息止めを避け、全体を通して穏やかなペースで行います。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "てんかんのある方でも、地面をベースにした反転のないシーケンスを使用して安全にエクササイズを行ってください。",
+    "focusAreas": [
+      "地上の安全性",
+      "反転なし",
+      "穏やかなペース"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "rolling_like_a_ball",
+      "single_leg_stretch",
+      "spine_stretch_forward",
+      "side_kick",
+      "spine_mobilization"
+    ]
+  },
+  {
+    "id": "foot_ankle_rehab",
+    "name": "足と足首のリハビリテーション",
+    "description": "一般的な下肢の症状に対する足底負荷、アキレス腱の回復力、および足のアライメントに対処する、足と足首を強化する本質的なシーケンス。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "足の本質を強化し、足首の安定性を回復します。",
+    "focusAreas": [
+      "足の強さ",
+      "足首の安定性",
+      "アキレス荷重"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "achilles_stretch_chair",
+      "running_reformer",
+      "pilates_ring_squeeze",
+      "foam_roller_series",
+      "side_kick",
+      "single_leg_stretch"
+    ]
+  },
+  {
+    "id": "hip_lateral_recovery",
+    "name": "股関節と側鎖の回復",
+    "description": "ターゲットを絞ったスプリングとマットワークで、梨状筋、ハムストリング、ITバンド、大転子部の痛みに対処する臀筋と股関節側面の強化プログラムです。",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "外側の股関節チェーンを強化し、股関節と太ももの痛みを軽減します。",
+    "focusAreas": [
+      "股関節の横方向の強度",
+      "大臀筋の活性化",
+      "股関節の柔軟性"
+    ],
+    "exerciseIds": [
+      "side_kick_series",
+      "one_leg_circle",
+      "leg_springs",
+      "pilates_ring_squeeze",
+      "shoulder_bridge",
+      "single_leg_stretch",
+      "foam_roller_series",
+      "side_kick_kneeling"
+    ]
+  },
+  {
+    "id": "hip_mobility_recovery",
+    "name": "股関節の可動性と回復",
+    "description": "インピンジメントのない範囲を尊重し、股関節の横方向の安定性を高め、機能的な動きのパターンを回復する股関節の可動性プログラム。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "股関節の可動性を回復し、横方向のスタビライザーを強化します。",
+    "focusAreas": [
+      "股関節の可動性",
+      "横方向スタビライザー",
+      "安全範囲"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "one_leg_circle",
+      "side_kick_series",
+      "leg_springs",
+      "knee_stretch",
+      "footwork",
+      "single_leg_stretch",
+      "hip_circles"
+    ]
+  },
+  {
+    "id": "hypermobility_control",
+    "name": "ハイパーモビリティ制御",
+    "description": "受動的な柔軟性を能動的な強さに置き換え、神経筋の制御と限界範囲の認識を構築する関節安定化プログラム。",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "積極的な関節の安定性と神経筋の制御を開発します。",
+    "focusAreas": [
+      "関節の安定化",
+      "神経筋制御",
+      "制御された荷重"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "plank",
+      "pilates_ring_squeeze",
+      "footwork",
+      "single_leg_stretch",
+      "band_arm_series",
+      "coordination"
+    ]
+  },
+  {
+    "id": "joint_replacement_recovery",
+    "name": "関節置換術の回復",
+    "description": "穏やかな可動域ワーク、非衝撃負荷、および漸進的な動きの自信を使用した、術後の可動性回復プログラム。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "関節置換術または手術後に可動性と自信を回復します。",
+    "focusAreas": [
+      "術後の可動性",
+      "穏やかな範囲",
+      "ノンインパクトリハビリテーション"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "pelvic_curl",
+      "shoulder_bridge",
+      "leg_springs",
+      "footwork",
+      "rolling_like_a_ball",
+      "side_kick"
+    ]
+  },
+  {
+    "id": "knee_rehab",
+    "name": "膝のリハビリテーション",
+    "description": "VMO とクワッド アクティベーション シーケンスは、体重を負荷しないレッグワークとスプリング抵抗を使用して、膝の回復をサポートし、再傷害を防ぎます。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "怪我や手術後に膝の安定性と大腿四頭筋のコントロールを回復します。",
+    "focusAreas": [
+      "クアッドアクティベーション",
+      "膝の安定性",
+      "体重がかからない脚"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "leg_springs",
+      "pilates_ring_squeeze",
+      "single_leg_stretch",
+      "side_kick",
+      "shoulder_bridge",
+      "pelvic_curl",
+      "coordination"
+    ]
+  },
+  {
+    "id": "metabolic_whole_body",
+    "name": "全身の代謝の流れ",
+    "description": "糖尿病、代謝状態、体重管理のための段階的な全身活性化シーケンスで、循環、機能的強度、エネルギー消費を優先します。",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "新陳代謝を活性化し、全身の機能的な強さを構築します。",
+    "focusAreas": [
+      "循環",
+      "機能的強度",
+      "代謝の活性化"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "the_hundred",
+      "single_leg_stretch",
+      "shoulder_bridge",
+      "side_kick",
+      "swan_prep",
+      "pilates_ring_squeeze",
+      "coordination"
+    ]
+  },
+  {
+    "id": "mind_body_calm",
+    "name": "心と体の穏やかさ",
+    "description": "不安、精神的健康状態、回復のための呼吸主導の体の流れ — リズム、グラウンディング、内受容意識を使用して神経系を落ち着かせます。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "呼吸による体性運動を通じて神経系を落ち着かせます。",
+    "focusAreas": [
+      "呼吸の意識",
+      "身体的な静けさ",
+      "心と体のつながり"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "rolling_like_a_ball",
+      "seal",
+      "spine_stretch_forward",
+      "mermaid",
+      "pelvic_curl",
+      "one_leg_circle"
+    ]
+  },
+  {
+    "id": "neurological_movement",
+    "name": "神経学的運動の流れ",
+    "description": "MS、パーキンソン病、神経学的症状のための調整と固有受容に焦点を当てたプログラムで、リズミカルで予測可能なシーケンスを使用して運動制御をサポートします。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "運動調整と神経筋リズムを改善します。",
+    "focusAreas": [
+      "コーディネート",
+      "固有受容",
+      "リズミカルな動き"
+    ],
+    "exerciseIds": [
+      "rolling_like_a_ball",
+      "pelvic_curl",
+      "shoulder_bridge",
+      "side_kick",
+      "spine_stretch_forward",
+      "pilates_ring_squeeze",
+      "shoulder_rolls",
+      "single_leg_stretch"
+    ]
+  },
+  {
+    "id": "osteoporosis_safe_flow",
+    "name": "骨粗鬆症に安全なフロー",
+    "description": "伸展に重点を置いたシーケンスで、負荷がかかる脊椎の屈曲と回転を回避し、骨に優しい負荷で軸の強度と姿勢を構築します。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "姿勢を強化し、安全に骨密度をサポートします。",
+    "focusAreas": [
+      "脊椎の伸展",
+      "骨の装填",
+      "姿勢"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "swan_prep",
+      "swimming",
+      "shoulder_bridge",
+      "side_kick",
+      "footwork",
+      "band_arm_series",
+      "leg_springs"
+    ]
+  },
+  {
+    "id": "pelvic_floor_foundations",
+    "name": "骨盤底基礎",
+    "description": "骨盤底機能不全、直腸離散、ヘルニア、失禁のための圧力管理プログラムで、過剰な腹腔内負荷をかけずに体幹の深い再結合を構築します。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "負荷管理により深部コアと骨盤底を再接続します。",
+    "focusAreas": [
+      "骨盤底",
+      "ディープコア",
+      "圧力管理"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "single_leg_stretch",
+      "pilates_ring_squeeze",
+      "seal",
+      "spine_stretch_forward",
+      "rolling_like_a_ball"
+    ]
+  },
+  {
+    "id": "postpartum_recovery_flow",
+    "name": "産後の回復の流れ",
+    "description": "産後の体幹の再構築、骨盤底の意識、そして徐々に腹部を戻すことをサポートするように設計された穏やかなピラティス シーケンスです。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "妊娠後に体幹のサポートと骨盤の安定性を再構築します。",
+    "focusAreas": [
+      "産後",
+      "骨盤底",
+      "コアの再構築"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "mermaid",
+      "single_leg_stretch",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "prenatal_mobility_flow",
+    "name": "産前移動の流れ",
+    "description": "妊娠中も安全なピラティス フローで、脊椎の穏やかな可動性と側方の開きによって変化する身体をサポートします。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "妊娠中の可動性と体幹のサポートを維持します。",
+    "focusAreas": [
+      "出生前",
+      "モビリティ",
+      "骨盤の安定性"
+    ],
+    "exerciseIds": [
+      "mermaid",
+      "shoulder_bridge",
+      "pelvic_curl",
+      "leg_pull_back",
+      "spine_stretch_forward"
+    ]
+  },
+  {
+    "id": "reformer_strength_flow",
+    "name": "リフォーマーの強度フロー",
+    "description": "下半身のコントロール、キャリッジの調整、脊椎のサポートを開発する器具ベースのルーチン。",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "リフォーマーの強さとコントロールを構築します。",
+    "focusAreas": [
+      "改革者",
+      "脚力",
+      "脊椎サポート"
+    ],
+    "exerciseIds": [
+      "footwork",
+      "elephant",
+      "long_box_series",
+      "short_spine_massage"
+    ]
+  },
+  {
+    "id": "respiratory_breath_flow",
+    "name": "呼吸と呼吸の流れ",
+    "description": "呼吸器および肺の状態における胸部の可動性と呼吸機構を改善するための、横隔膜呼吸および胸郭拡張プログラム。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "呼吸能力と胸部の可動性を拡大します。",
+    "focusAreas": [
+      "横隔膜呼吸",
+      "リブの拡張",
+      "姿勢の開き方"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "seated_side_bend",
+      "shoulder_rolls",
+      "mermaid",
+      "spine_stretch_forward",
+      "swan_prep",
+      "band_arm_series",
+      "the_hundred"
+    ]
+  },
+  {
+    "id": "rotator_cuff_shoulder",
+    "name": "腱板と肩のリハビリテーション",
+    "description": "五十肩、インピンジメント、およびAC捻挫に対する回旋腱板の活性化、振り子の可動範囲、および漸進的な負荷をターゲットとした肩甲骨優先の肩リハビリテーションシーケンス。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "腱板の強度と痛みのない肩の範囲を回復します。",
+    "focusAreas": [
+      "腱板",
+      "肩甲骨の安定性",
+      "肩の範囲"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "arm_springs",
+      "band_arm_series",
+      "pilates_ring_squeeze",
+      "breaststroke",
+      "swan_prep",
+      "pulling_straps",
+      "spine_mobilization"
+    ]
+  },
+  {
+    "id": "restorative_immune",
+    "name": "回復免疫サポート",
+    "description": "慢性疲労、自己免疫疾患、腫瘍治療、免疫抑制のための、穏やかでエネルギーを節約するプログラムであり、回復運動で能力の限界を守ります。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "穏やかな回復運動で回復とエネルギーをサポートします。",
+    "focusAreas": [
+      "修復運動",
+      "省エネルギー",
+      "免疫サポート"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "shoulder_rolls",
+      "rolling_like_a_ball",
+      "pelvic_curl",
+      "spine_stretch_forward",
+      "seal",
+      "mermaid"
+    ]
+  },
+  {
+    "id": "sacroiliac_stability",
+    "name": "仙腸関節の安定性",
+    "description": "対称的な股関節負荷、SIJ 圧縮制御、腰骨盤深部筋の動員をターゲットとした骨盤安定性プログラム。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "仙腸関節と骨盤帯を安定させます。",
+    "focusAreas": [
+      "骨盤の安定性",
+      "股関節のアライメント",
+      "コアコントロール"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "single_leg_stretch",
+      "pilates_ring_squeeze",
+      "footwork",
+      "knee_stretch",
+      "rolling_like_a_ball"
+    ]
+  },
+  {
+    "id": "scoliosis_balance",
+    "name": "側弯症バランスフロー",
+    "description": "側弯症の脊椎をサポートするために、回転解除の合図、側方呼吸、対称性を重視した動きを使用した、横方向のバランスの取れたセッションです。",
+    "level": "Intermediate",
+    "accessLevel": "Pro",
+    "goal": "左右非対称のバランスをとり、脊椎の意識を改善します。",
+    "focusAreas": [
+      "脊椎のバランス",
+      "側方呼吸",
+      "回転解除"
+    ],
+    "exerciseIds": [
+      "spine_mobilization",
+      "mermaid",
+      "spine_twist",
+      "shoulder_bridge",
+      "side_kick_series",
+      "seated_side_bend",
+      "foam_roller_series",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "sensory_adapted_flow",
+    "name": "感覚に適応した流れ",
+    "description": "視覚障害と聴覚障害向けに設計された、固有受容に富んだ予測可能なピラティス シーケンスです。空間の一貫性、触覚の合図、安全な方向付けを使用します。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "感覚障害があっても安全かつ自信を持って移動できます。",
+    "focusAreas": [
+      "固有受容安全性",
+      "予測可能なシーケンス",
+      "感覚適応"
+    ],
+    "exerciseIds": [
+      "pelvic_curl",
+      "shoulder_bridge",
+      "rolling_like_a_ball",
+      "single_leg_stretch",
+      "spine_stretch_forward",
+      "seal",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "shoulder_friendly_flow",
+    "name": "肩に優しいフロー",
+    "description": "肩甲骨のサポート、穏やかな上半身の強さ、安全な可動域を重視した、肩の快適さを重視したセッションです。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "安全なピラティスの動きで肩の安定をサポートします。",
+    "focusAreas": [
+      "肩",
+      "肩甲骨サポート",
+      "上半身"
+    ],
+    "exerciseIds": [
+      "roll_down_bar",
+      "long_box_series",
+      "mermaid",
+      "breaststroke",
+      "pilates_ring_squeeze"
+    ]
+  },
+  {
+    "id": "upper_limb_nerve",
+    "name": "上肢と神経の緩和",
+    "description": "手首、肘、神経の圧迫状態に対する胸椎の開口と神経動員のフローにより、関節の負荷を低く保ち、可動域を広く保ちます。",
+    "level": "Beginner",
+    "accessLevel": "Pro",
+    "goal": "神経の圧迫を解除し、胸部と上肢の可動性を回復します。",
+    "focusAreas": [
+      "胸部開口部",
+      "神経の可動性",
+      "手首に安全な動き"
+    ],
+    "exerciseIds": [
+      "shoulder_rolls",
+      "spine_mobilization",
+      "seated_side_bend",
+      "band_arm_series",
+      "swan_prep",
+      "mermaid",
+      "spine_twist",
+      "arm_springs"
+    ]
+  }
+]

@@ -1,0 +1,1293 @@
+{
+  "osteoporosis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Flexión de la columna cargada y vértebras de tensión en flexión hacia adelante.",
+      "alternative": "Utilice estabilizadores centrales de la columna neutrales y deslizadores de piernas en posición supina."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "La inversión y la carga espinal de rango final pueden comprimir los huesos débiles.",
+      "alternative": "Reemplace con suaves inclinaciones pélvicas en decúbito supino."
+    },
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "El giro redondeado de la columna aplica una tensión de flexión repetida.",
+      "alternative": "Elija pliegues de rodillas con apoyo o estiramientos con una sola pierna."
+    },
+    {
+      "exerciseId": "spine_stretch_forward",
+      "reason": "La flexión hacia adelante con carga aumenta el riesgo de compresión vertebral.",
+      "alternative": "Pruebe el trabajo postural sentado con extensión neutra de la columna."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "La elevación del core con cargas elevadas en flexión y equilibrio puede forzar la columna.",
+      "alternative": "Utilice progresiones de abdominales con apoyo modificado con una pelota."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "La inversión y la articulación espinal cargada pueden comprimir las vértebras frágiles.",
+      "alternative": "Elija suaves deslizamientos de piernas en posición supina o inclinaciones pélvicas con la columna neutra."
+    }
+  ],
+  "pregnancy": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexión abdominal intensa puede estresar el crecimiento del útero y la diástasis de los rectos.",
+      "alternative": "Pase al trabajo central sentado con apoyo o acostado de lado."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "La inversión y el levantamiento de las piernas en decúbito supino pueden resultar incómodos después de la mitad del embarazo.",
+      "alternative": "Utilice una suave respiración del suelo pélvico mientras está sentado o acostado de lado."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "El levantamiento y el equilibrio completos al estilo de los abdominales pueden sobrecargar la línea alba.",
+      "alternative": "Concéntrese en la postura neutra de la columna y la activación del suelo pélvico."
+    },
+    {
+      "exerciseId": "neck_pull",
+      "reason": "La elevación de la cabeza y el torso con apoyo en posición supina puede forzar el abdomen y el cuello.",
+      "alternative": "Utilice variaciones del núcleo de pie o acostado de lado de forma segura."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "Es mejor evitar la inversión y la compresión espinal durante el embarazo.",
+      "alternative": "Elija estiramientos acostados de lado y trabajo suave de cadera con apoyo."
+    }
+  ],
+  "low_back_pain": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexión espinal repetitiva puede agravar un disco doloroso o una cadena posterior.",
+      "alternative": "Elija inclinaciones pélvicas y puentes apoyados con columna neutra."
+    },
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "Rodar con carga puede agravar los síntomas de la espalda baja.",
+      "alternative": "Utilice ejercicios suaves de estabilización del núcleo sentado o supino."
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "La rotación con flexión de la columna puede irritar una columna lumbar sensible.",
+      "alternative": "Utilice un trabajo acostado de lado centrado en la cadera y una rotación neutra de la columna."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "La inversión y la extensión lumbar pueden ser demasiado intensas para muchas afecciones de la espalda.",
+      "alternative": "Utilice progresiones de puentes con apoyo y elevaciones suaves de cadera."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "La articulación espinal con inversión puede agravar el dolor lumbar y la tensión neural.",
+      "alternative": "Utilice ejercicios neutros de estabilización pélvica y ejercicios suaves de estiramiento en posición supina."
+    }
+  ],
+  "hypertension": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "La inversión puede aumentar la presión arterial y debe evitarse.",
+      "alternative": "Utilice movilidad sentada o cuadrúpeda con respiración constante."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "La inversión de alto esfuerzo puede estresar el sistema cardiovascular.",
+      "alternative": "Elija posiciones neutras en plancha para la columna vertebral o trabajo con las piernas sentado."
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "Contener la respiración y rotar rápidamente puede aumentar la presión arterial.",
+      "alternative": "Utilice círculos de cadera lentos y controlados con respiración relajada."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Las inversiones de equilibrio pueden resultar demasiado intensas para los problemas cardíacos.",
+      "alternative": "Permanezca en la colchoneta con estabilidad central y elevación de piernas."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "La inversión y la compresión espinal pueden elevar la presión arterial en personas sensibles.",
+      "alternative": "Elija una estabilización central baja y una movilidad suave de pie."
+    }
+  ],
+  "knee_issues": [
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "El levantamiento profundo de cadera puede cargar las rodillas y agravar el dolor en las articulaciones.",
+      "alternative": "Utilice inclinaciones pélvicas suaves y puentes de glúteos apoyados."
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Los levantamientos de piernas basados ​​en planchas ejercen presión sobre las rodillas y las caderas.",
+      "alternative": "Trabaja en cuadrúpedo con las piernas levantadas o elevaciones de piernas acostadas de lado."
+    },
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "Las extensiones de piernas en decúbito prono pueden irritar la tensión en la rodilla o en los isquiotibiales.",
+      "alternative": "Utilice movimientos con una sola pierna sentado o acostado de lado con rango reducido."
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "La flexión repetida de la rodilla puede provocar tensión en las articulaciones artríticas.",
+      "alternative": "Elija agarres estáticos de las piernas o marchar suavemente en decúbito supino."
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "La presión de piernas reformadora puede colocar una carga continua a través de las rodillas sensibles.",
+      "alternative": "Utilice trabajo de piernas sentado o apoyado con un alcance pequeño y una resistencia más ligera."
+    }
+  ],
+  "hip_issues": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Los círculos grandes de la cadera pueden agravar el dolor o la inestabilidad de las caderas.",
+      "alternative": "Utilice círculos más pequeños para las piernas o bisagras de cadera con apoyo."
+    },
+    {
+      "exerciseId": "scissors",
+      "reason": "El rango extremo de la cadera en posición supina puede irritar las articulaciones de la cadera.",
+      "alternative": "Mantenga las piernas más bajas y trabaje con levantamientos controlados más pequeños."
+    },
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "El equilibrio de las piernas bien abiertas ejerce presión sobre la cápsula de la cadera.",
+      "alternative": "Utilice el trabajo de control de abductores y aductores sentados."
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "El movimiento de rotación de la cadera puede resultar doloroso si la articulación está inflamada.",
+      "alternative": "Elija movimientos suaves de cadera con apoyo en posición supina."
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "Presionar repetidamente las piernas puede irritar las caderas sensibles debido a la flexión y extensión cargadas.",
+      "alternative": "Trabaje con un rango pequeño y una resistencia más ligera, o elija deslizamientos de piernas en posición supina."
+    }
+  ],
+  "neck_shoulder": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "La elevación sostenida de la cabeza y el cuello puede agravar la tensión cervical.",
+      "alternative": "Mantenga la cabeza apoyada mientras mantiene la respiración central."
+    },
+    {
+      "exerciseId": "neck_pull",
+      "reason": "El levantamiento de la cabeza sin apoyo aumenta la tensión en el cuello y los hombros.",
+      "alternative": "Utilice mentoneras y movimientos suaves con apoyo en un cuello neutro."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "El levantamiento de cabeza con equilibrio puede cargar los estabilizadores de cuello y hombros.",
+      "alternative": "Utilice un trabajo central sentado y apoyado y evite la posición en V completa."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "La extensión de la espalda en decúbito prono tensiona el cuello y la parte superior de los hombros.",
+      "alternative": "Utilice levantamientos suaves en decúbito prono con las manos debajo de los hombros como apoyo."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Cargar los hombros sobre la barra puede agravar la inestabilidad de los hombros o la tensión del cuello.",
+      "alternative": "Utilice una extensión suave de la espalda con apoyo y con menor resistencia."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "La carga del hombro Reformer bajo una columna invertida puede estresar las áreas tensas del cuello y los hombros.",
+      "alternative": "Elija la extensión de la espalda en decúbito prono con apoyo o la movilización de la columna en decúbito supino sin inversión."
+    }
+  ],
+  "recent_surgery": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexión espinal cargada suele ser demasiado agresiva después de la cirugía.",
+      "alternative": "Concéntrese en la respiración suave, el suelo pélvico y el apoyo postural."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "La inversión y la articulación profunda pueden ser peligrosas durante la recuperación.",
+      "alternative": "Elija movimientos compatibles y siga la autorización profesional."
+    },
+    {
+      "exerciseId": "spine_twist",
+      "reason": "Torcer con carga puede estresar los tejidos en curación.",
+      "alternative": "Utilice la rotación neutra de la columna desde posiciones sentadas o de pie."
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "La flexión lateral puede resultar incómoda después de la cirugía.",
+      "alternative": "Mantenga los movimientos suaves y evite doblarse al final del rango."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "La inversión y la articulación espinal profunda suelen estar contraindicadas después de una cirugía reciente.",
+      "alternative": "Utilice suaves inclinaciones pélvicas en decúbito supino y movilización de la columna con apoyo."
+    }
+  ],
+  "arthritis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexión repetitiva puede agravar la rigidez de las articulaciones.",
+      "alternative": "Utilice pequeñas articulaciones de la columna y trabajo central neutro."
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "La rotación con flexión hacia adelante puede irritar las articulaciones artríticas.",
+      "alternative": "Utilice la rotación sentado y acostado de lado con apoyo."
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "Los círculos invertidos de la cadera pueden ser demasiado intensos para las articulaciones sensibles.",
+      "alternative": "Elija círculos de cadera simples con rango reducido."
+    },
+    {
+      "exerciseId": "seal",
+      "reason": "Rodar puede resultar duro para la columna o las caderas artríticas.",
+      "alternative": "Utilice el fortalecimiento del núcleo con apoyo sin rodamiento dinámico."
+    },
+    {
+      "exerciseId": "footwork",
+      "reason": "El trabajo de prensa de piernas reformador puede agravar las articulaciones artríticas de la rodilla o la cadera sin un control cuidadoso de la carga.",
+      "alternative": "Utilice una resistencia más ligera y concéntrese en un rango pequeño y controlado."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "La inversión y la compresión espinal pueden resultar incómodas para las articulaciones artríticas.",
+      "alternative": "Elija una movilización suave de la columna sin un gran rango ni inversión."
+    }
+  ],
+  "scoliosis": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "Una gran flexión de la columna puede acentuar la curva si no se controla.",
+      "alternative": "Utilice roll-downs con apoyo con una pelvis neutra y conciencia de la asimetría."
+    },
+    {
+      "exerciseId": "saw",
+      "reason": "La rotación a través de la columna puede crear una carga desigual en una columna curva.",
+      "alternative": "Haga estiramientos laterales suaves sentado con igual atención a ambos lados."
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "La flexión lateral asimétrica profunda puede forzar una curva escoliótica.",
+      "alternative": "Trabaja con pequeñas curvas laterales y mantén las costillas largas."
+    }
+  ],
+  "pelvic_floor_dysfunction": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "El bombeo abdominal fuerte y la coordinación de la respiración pueden aumentar la presión del suelo pélvico.",
+      "alternative": "Mantenga la cabeza apoyada y concéntrese en el contacto suave del suelo pélvico."
+    },
+    {
+      "exerciseId": "single_leg_stretch",
+      "reason": "La flexión repetida de la cadera y el compromiso del abdomen inferior pueden irritar un suelo pélvico débil.",
+      "alternative": "Realice pliegues de rodillas apoyados o marchas modificadas con pelvis neutra."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "El movimiento completo de abdominales carga el suelo pélvico y la línea alba.",
+      "alternative": "Utilice un trabajo central sentado con apoyo y evite la posición en V completa."
+    }
+  ],
+  "diastasis_recti": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Un bombeo abdominal fuerte puede ampliar la separación y aumentar la presión intraabdominal.",
+      "alternative": "Utilice un trabajo central apoyado con la cabeza hacia abajo y concéntrese en el compromiso transversal del abdomen."
+    },
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexión espinal cargada ejerce presión sobre la línea alba.",
+      "alternative": "Practique inclinaciones pélvicas y caídas con apoyo con la columna neutra."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "La posición en V completa y la elevación abdominal pueden sobrecargar los músculos abdominales separados.",
+      "alternative": "Utilice trabajo central sentado modificado con las rodillas dobladas y elevación baja."
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "La extensión combinada de los abdominales inferiores y el alcance del brazo pueden aumentar la presión a través de la línea media.",
+      "alternative": "Elija deslizadores para el talón y soportes para una sola pierna con una tensión abdominal mínima."
+    }
+  ],
+  "shoulder_instability": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Una carga pesada sobre los hombros sobre la barra puede agravar la inestabilidad o el choque.",
+      "alternative": "Utilice una extensión de espalda con soporte con una resistencia más ligera y una colocación estable de los hombros."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "La extensión en decúbito prono puede imponer una exigencia excesiva a los estabilizadores del cuello y los hombros.",
+      "alternative": "Elija levantar objetos en decúbito prono y suave con las manos debajo de los hombros como apoyo."
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "Los levantamientos repetidos y alternos de brazos pueden sobrecargar las articulaciones inestables de los hombros.",
+      "alternative": "Utilice la extensión del brazo en el rango inferior con más énfasis en la estabilidad escapular."
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "Las posiciones de puentes con apoyo en los hombros pueden aumentar la incomodidad si los hombros están inestables.",
+      "alternative": "Mantenga la parte superior del cuerpo relajada y trabaje con variaciones del puente inferior o compromiso de los glúteos en decúbito supino."
+    }
+  ],
+  "bursitis": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Los círculos grandes en la cadera pueden irritar las bolsas inflamadas alrededor de la cadera o la pelvis.",
+      "alternative": "Utilice círculos de piernas más pequeños y lentos con la pelvis apoyada."
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "La rotación repetitiva de la cadera puede agravar la bursitis en la articulación de la cadera.",
+      "alternative": "Elija movimientos suaves de cadera con apoyo en un rango neutral."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "La extensión de la espalda en decúbito prono puede comprimir las bolsas del hombro que ya están sensibles.",
+      "alternative": "Trabaje con levantamientos de pecho con apoyo y evite la extensión agresiva de la parte superior de la espalda."
+    },
+    {
+      "exerciseId": "long_box_series",
+      "reason": "El alcance extendido de la parte superior del cuerpo y el movimiento del carro con carga pueden estresar los tejidos sensibles del hombro.",
+      "alternative": "Utilice resortes más ligeros y movimientos más pequeños de los brazos mientras mantiene estables los hombros."
+    }
+  ],
+  "vertigo_dizziness": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "La inversión puede provocar mareos y desorientación.",
+      "alternative": "En su lugar, elija inclinaciones suaves de la pelvis en decúbito supino o movilidad sentada."
+    },
+    {
+      "exerciseId": "corkscrew",
+      "reason": "La rotación rápida de la columna con las piernas por encima de la cabeza puede alterar el equilibrio.",
+      "alternative": "Utilice círculos lentos con la cadera con la cabeza apoyada y los ojos fijos."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "La inversión y la dificultad repentina del equilibrio pueden empeorar el vértigo.",
+      "alternative": "Manténgase en la colchoneta con progresiones de puente apoyadas y movimientos lentos."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Las inversiones y el equilibrio avanzados pueden provocar mareos.",
+      "alternative": "Concéntrese en la estabilidad central basada en el piso y la respiración constante."
+    }
+  ],
+  "postpartum": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexión espinal cargada y el levantamiento abdominal pueden estresar un núcleo posparto en recuperación.",
+      "alternative": "Utilice inclinaciones pélvicas con apoyo y un trabajo suave de reconexión del núcleo sentado."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "El levantamiento completo en forma de V puede sobrecargar la línea alba en curación y el suelo pélvico.",
+      "alternative": "Practique levantamientos centrales sentado con apoyo, con las rodillas dobladas y respirando suavemente."
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "Una extensión y alcance abdominal fuertes pueden ejercer presión excesiva sobre la línea media en recuperación.",
+      "alternative": "Elija deslizadores para el talón y soportes para una sola pierna con una tensión abdominal mínima."
+    }
+  ],
+  "balance_issues": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "El trabajo avanzado de equilibrio aumenta el riesgo de caídas y la inestabilidad.",
+      "alternative": "Concéntrese en la estabilidad basada en el suelo y en el control lento del núcleo."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "La inversión y la alta demanda de saldo pueden ser demasiado desafiantes para los clientes inestables.",
+      "alternative": "Utilice progresiones de puentes con soporte y levantamientos de cadera de bajo nivel."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "La inversión de las piernas por encima de la cabeza puede desafiar el equilibrio y la orientación espacial.",
+      "alternative": "Elija movilidad central sentada o supina sin inversión."
+    }
+  ],
+  "joint_replacement": [
+    {
+      "exerciseId": "footwork",
+      "reason": "La presión de piernas con reformador puede imponer demasiada carga a una rodilla o cadera reemplazada.",
+      "alternative": "Utilice resortes más livianos, menor rango de movimiento o soporte para las piernas sentado."
+    },
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "La flexión cargada de la rodilla y el movimiento de la cadera pueden forzar la articulación reemplazada.",
+      "alternative": "Elija levantamientos de rodilla con soporte con un alcance mínimo y una alineación controlada."
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Los círculos grandes de la cadera pueden agravar una articulación de cadera reemplazada.",
+      "alternative": "Utilice círculos más pequeños con las piernas apoyadas o trabajo isométrico de estabilidad de la cadera."
+    }
+  ],
+  "foot_ankle_issues": [
+    {
+      "exerciseId": "footwork",
+      "reason": "El trabajo de la barra de pies Reformer coloca carga repetida a través de los tobillos y el antepié.",
+      "alternative": "Utilice una resistencia más ligera y mantenga los pies planos con una flexión plantar mínima."
+    },
+    {
+      "exerciseId": "elephant",
+      "reason": "La carga de peso a través de los pies y los tobillos puede agravar las articulaciones sensibles.",
+      "alternative": "Elija estiramientos de los isquiotibiales sentado o apoyado sin una carga pesada en el pie."
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "Los movimientos rápidos de la parte inferior de la pierna y las posiciones puntiagudas del pie pueden irritar el dolor de tobillo o pie.",
+      "alternative": "Utilice círculos más lentos con las piernas en decúbito supino con una posición neutra del pie."
+    }
+  ],
+  "hypermobility_syndrome": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Los rangos articulares grandes sin soporte pueden estirar demasiado el tejido conectivo laxo en la hipermovilidad.",
+      "alternative": "Utilice curvas más pequeñas, estabilidad activa y mantenga la pelvis apoyada durante los círculos con las piernas."
+    }
+  ],
+  "hernia": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexión abdominal cargada y la tensión pueden aumentar la presión intraabdominal e irritar una hernia.",
+      "alternative": "Elija inclinaciones pélvicas, trabajo central en decúbito supino y apoyo respiratorio suave sin crujidos fuertes."
+    }
+  ],
+  "parkinsons_disease": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Los problemas de equilibrio inestable aumentan el riesgo de caídas cuando el control motor y la velocidad de reacción se ven afectados.",
+      "alternative": "Utilice movimientos fundamentados y apoyados con una base amplia y transiciones lentas."
+    }
+  ],
+  "multiple_sclerosis": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "El bombeo sostenido de la respiración y la intensidad central pueden sobrecalentar o fatigar demasiado a alguien con EM.",
+      "alternative": "Utilice sesiones más cortas y más frescas con un suave trabajo central basado en la respiración."
+    }
+  ],
+  "stress_incontinence": [
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "Una fuerte extensión abdominal y presión pélvica pueden exacerbar los síntomas de fuga o del suelo pélvico.",
+      "alternative": "Utilice deslizamientos del talón y un acoplamiento suave del núcleo con el establo de la pelvis."
+    }
+  ],
+  "disc_degeneration": [
+    {
+      "exerciseId": "rolling_like_a_ball",
+      "reason": "La flexión y compresión repetidas de la columna pueden agravar un disco ya degenerado.",
+      "alternative": "Elija inclinaciones pélvicas de la columna neutra y estabilización del núcleo con soporte."
+    }
+  ],
+  "radiculopathy_sciatica": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexión profunda de la columna puede aumentar la compresión de la raíz nerviosa y los síntomas de la ciática.",
+      "alternative": "Utilice una movilidad espinal suave y apoyada y evite inclinarse hacia adelante bajo carga."
+    }
+  ],
+  "ankylosing_spondylitis": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "La inversión y la compresión axial pueden estresar una columna inflamada y rígida y limitar la expansión del tórax.",
+      "alternative": "Elija trabajo de puentes con soporte y movilidad espinal suave mientras está sentado."
+    }
+  ],
+  "sacroiliac_dysfunction": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Los círculos grandes en las piernas pueden crear un corte pélvico desigual e irritar la articulación SI.",
+      "alternative": "Utilice movimientos pequeños y controlados de las piernas con la pelvis estabilizada."
+    }
+  ],
+  "cervical_spine_dysfunction": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "El levantamiento de la cabeza sin apoyo y la flexión cervical pueden agravar la disfunción del cuello.",
+      "alternative": "Mantenga la cabeza apoyada y realice ejercicios centrales suaves sin movimientos profundos del cuello."
+    }
+  ],
+  "frozen_shoulder": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "La extensión de la espalda en decúbito prono puede agravar un hombro rígido y doloroso y restringir el rango cómodo.",
+      "alternative": "Utilice levantamientos de pecho con apoyo con los brazos ligeros y cerca del cuerpo."
+    }
+  ],
+  "rotator_cuff_injury": [
+    {
+      "exerciseId": "push_through",
+      "reason": "La carga pesada del hombro y la rotación externa pueden irritar el manguito rotador lesionado.",
+      "alternative": "Elija una movilidad suave y apoyada del hombro y evite una carga profunda en la articulación del hombro."
+    }
+  ],
+  "acromioclavicular_sprain": [
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "La compresión del hombro y la carga en la parte superior del cuerpo pueden empeorar el dolor en la articulación AC.",
+      "alternative": "Utilice inclinaciones pélvicas o variaciones de puentes bajos con presión reducida en los hombros."
+    }
+  ],
+  "thoracic_outlet_syndrome": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "La elevación sostenida del hombro y la coordinación de la respiración pueden aumentar la compresión cerca de la salida torácica.",
+      "alternative": "Utilice una apertura suave del pecho con los brazos apoyados y evite posiciones de hombros por encima de la cabeza."
+    }
+  ],
+  "tennis_elbow": [
+    {
+      "exerciseId": "push_through",
+      "reason": "Cargar peso sobre las manos y los antebrazos puede agravar la irritación del tendón lateral del codo.",
+      "alternative": "Utilice un trabajo de hombros con menor carga y evite agarrar con fuerza o extender la muñeca."
+    }
+  ],
+  "golfers_elbow": [
+    {
+      "exerciseId": "push_through",
+      "reason": "La carga del antebrazo y la acción de la muñeca pueden tensar el codo medial en el codo de golfista.",
+      "alternative": "Elija trabajo con apoyo para la parte superior del cuerpo con una fuerza mínima en la muñeca o el agarre."
+    }
+  ],
+  "nerve_compression": [
+    {
+      "exerciseId": "corkscrew",
+      "reason": "La torsión y la compresión espinal pueden pellizcar un nervio sensible y empeorar los síntomas de la compresión.",
+      "alternative": "Utilice una movilidad espinal suave con una alineación neutra y evite la torsión final."
+    }
+  ],
+  "carpal_tunnel_syndrome": [
+    {
+      "exerciseId": "teaser",
+      "reason": "La extensión y el agarre de la muñeca pueden aumentar la presión en el túnel carpiano.",
+      "alternative": "Utilice un trabajo central apoyado con una muñeca neutra y un agarre reducido de los dedos."
+    }
+  ],
+  "cubital_tunnel_syndrome": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "La carga de la parte superior del cuerpo en forma de tabla puede comprimir el nervio cubital en el codo.",
+      "alternative": "Utilice trabajo central con apoyo y mantenga el codo recto y libre de presión directa."
+    }
+  ],
+  "radial_nerve_issue": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "La posición de la muñeca y el brazo bajo carga puede agravar los síntomas del nervio radial si el brazo está extendido o comprimido.",
+      "alternative": "Utilice un trabajo central suave con las muñecas y los codos en posiciones neutras y sin dolor."
+    }
+  ],
+  "ankle_sprain": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "El trabajo de equilibrio sin apoyo puede estresar el tobillo en proceso de curación y aumentar el riesgo de sufrir un nuevo esguince.",
+      "alternative": "Utilice trabajo de piernas sentado o apoyado con ambos pies apoyados en el suelo."
+    }
+  ],
+  "achilles_tendinopathy": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Empujar la barra de pies Reformer puede sobrecargar el tendón de Aquiles con flexión plantar repetida.",
+      "alternative": "Utilice una resistencia más ligera y evite un fuerte impulso con los pies."
+    }
+  ],
+  "posterior_tibialis_dysfunction": [
+    {
+      "exerciseId": "footwork",
+      "reason": "El trabajo de alto volumen con la barra de pies puede exacerbar la tensión medial del tobillo y del arco.",
+      "alternative": "Utilice posiciones de pies más suaves y neutrales y reduzca la carga repetitiva a través de la parte interna del pie."
+    }
+  ],
+  "tibial_stress_syndrome": [
+    {
+      "exerciseId": "footwork",
+      "reason": "El trabajo repetido de prensa de piernas puede agravar el dolor en la espinilla y las reacciones de estrés en la tibia.",
+      "alternative": "Elija una resistencia más baja y evite las series largas de piernas de gran volumen."
+    }
+  ],
+  "plantar_fasciitis": [
+    {
+      "exerciseId": "footwork",
+      "reason": "La presión elevada en la barra de pies y la extensión de los dedos pueden irritar la fascia plantar.",
+      "alternative": "Utilice una colocación suave y neutra del pie y una menor resistencia con menos flexión de los dedos."
+    }
+  ],
+  "bunions": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Las posiciones estrechas del pie y la presión del antepié pueden aumentar la incomodidad del juanete.",
+      "alternative": "Utilice una colocación del pie más amplia y suave y evite presionar directamente a través de la articulación del dedo gordo."
+    }
+  ],
+  "hip_arthroscopy": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Los círculos grandes de la cadera pueden forzar la articulación de la cadera en curación y el tejido profundo después de la artroscopia.",
+      "alternative": "Utilice círculos de piernas más pequeños y apoyados y mantenga estable la pelvis."
+    }
+  ],
+  "piriformis_syndrome": [
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "La amplia apertura y rotación de la cadera pueden agravar la irritación del piriforme y los síntomas de la ciática.",
+      "alternative": "Utilice una movilidad suave de la cadera con las piernas más juntas y la pelvis apoyada."
+    }
+  ],
+  "hamstring_tendinopathy": [
+    {
+      "exerciseId": "scissors",
+      "reason": "El alargamiento agresivo de los isquiotibiales y el movimiento alternativo rápido de las piernas pueden empeorar la irritación del tendón.",
+      "alternative": "Utilice un control suave de los isquiotibiales y evite los movimientos rápidos de piernas en los extremos."
+    }
+  ],
+  "muscle_strain": [
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "El trabajo de la cadena posterior cargado y la tensión muscular sostenida pueden agravar una distensión aguda.",
+      "alternative": "Utilice una movilidad suave y con apoyo y evite la extensión de piernas fuerte y resistida."
+    }
+  ],
+  "snapping_hip_syndrome": [
+    {
+      "exerciseId": "hip_circles",
+      "reason": "Los círculos grandes y rápidos de la cadera pueden provocar chasquidos e irritar los tejidos de la cadera.",
+      "alternative": "Utilice movimientos de cadera más pequeños y lentos con énfasis en la estabilidad."
+    }
+  ],
+  "greater_trochanteric_pain": [
+    {
+      "exerciseId": "side_bend",
+      "reason": "La presión en decúbito lateral y el fuerte movimiento lateral de la cadera pueden agravar el dolor del trocánter mayor.",
+      "alternative": "Utilice un trabajo suave con la cadera de pie o en decúbito supino con menos carga lateral."
+    }
+  ],
+  "femoroacetabular_impingement": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "La flexión profunda de la cadera y la rotación interna pueden pellizcar la parte frontal de la cadera en FAI.",
+      "alternative": "Utilice círculos de cadera más pequeños y evite la flexión y rotación en el rango final."
+    }
+  ],
+  "patellofemoral_pain": [
+    {
+      "exerciseId": "footwork",
+      "reason": "La prensa de piernas reformadora puede aumentar la compresión debajo de la rótula y empeorar el dolor anterior de la rodilla.",
+      "alternative": "Utilice una resistencia más ligera y mantenga estable la alineación de la rodilla con un rango reducido."
+    }
+  ],
+  "iliotibial_band_syndrome": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "La flexión repetitiva de la rodilla y la aducción de la cadera pueden irritar la parte externa de la rodilla y la banda IT.",
+      "alternative": "Utilice un trabajo controlado de la parte inferior de las piernas evitando la aducción excesiva de la cadera."
+    }
+  ],
+  "meniscus_tear": [
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "La flexión excesiva de la rodilla y la carga de peso pueden agravar un desgarro de menisco.",
+      "alternative": "Utilice un trabajo suave de extensión de rodilla con menos carga de compresión."
+    }
+  ],
+  "ligament_injury": [
+    {
+      "exerciseId": "knee_stretch",
+      "reason": "La flexión profunda o cargada de la rodilla puede tensar los ligamentos de la rodilla en proceso de curación.",
+      "alternative": "Utilice un trabajo de rodilla controlado y apoyado con un peso mínimo y una alineación neutra."
+    }
+  ],
+  "chronic_fatigue": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "La respiración y el trabajo central con muchas repeticiones pueden empeorar la fatiga si el ritmo es demasiado agresivo.",
+      "alternative": "Utilice series más cortas, ejercicios de respiración más suaves y permita descansos."
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "Los levantamientos sostenidos de brazos y piernas en decúbito prono pueden ser demasiado exigentes para los clientes con poca energía.",
+      "alternative": "Elija levantamientos de una sola extremidad con pausas frecuentes de recuperación."
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Los levantamientos de piernas extendidos basados ​​en planchas pueden sobrecargar un cuerpo fatigado.",
+      "alternative": "Utilice ejercicios básicos en posición supina o cuadrúpeda con apoyo con una carga menos sostenida."
+    }
+  ],
+  "diabetes": [
+    {
+      "exerciseId": "footwork",
+      "reason": "El trabajo de piernas de alta resistencia puede ser un desafío si hay circulación o neuropatía.",
+      "alternative": "Utilice resortes más livianos y concéntrese en un movimiento suave y controlado del carro."
+    },
+    {
+      "exerciseId": "leg_pull_back",
+      "reason": "El esfuerzo prolongado en decúbito prono puede fatigar los hombros y las piernas rápidamente.",
+      "alternative": "Elija trabajo de cadena posterior de menor duración con descanso frecuente."
+    },
+    {
+      "exerciseId": "bicycle",
+      "reason": "El movimiento rápido y alternativo de la parte inferior del cuerpo puede resultar incómodo si se reduce la sensación.",
+      "alternative": "Utilice ritmos más lentos en las piernas y mantenga estable la pelvis."
+    }
+  ],
+  "weight_concerns": [
+    {
+      "exerciseId": "teaser",
+      "reason": "Una alta exigencia central y de equilibrio puede resultar difícil con un peso corporal añadido.",
+      "alternative": "Utilice levantamientos centrales apoyados con las rodillas dobladas y un centro de gravedad más bajo."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "La inversión y el levantamiento rápido de las piernas pueden aumentar la tensión en la zona lumbar y las caderas.",
+      "alternative": "Elija puentes con soporte y levantamientos de cadera más lentos con una columna neutra."
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "El equilibrio dinámico de rodadura puede ser inestable y demasiado exigente para las articulaciones.",
+      "alternative": "Concéntrese en el trabajo central controlado sentado o en decúbito supino con un contacto estable con los pies."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "La demanda avanzada de equilibrio y extensión de piernas puede poner a prueba el control y la estabilidad de las articulaciones.",
+      "alternative": "Utilice ejercicios de estabilidad en el suelo con ambos pies sobre la colchoneta y movimientos de rango pequeño."
+    }
+  ],
+  "respiratory": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "Las inversiones y la compresión de la parte superior del cuerpo pueden dificultar la respiración de las personas con asma.",
+      "alternative": "Utilice levantamientos de pecho con apoyo y evite posiciones que comprendan el pecho o contengan la respiración."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "La posición de las piernas sobre la cabeza y la flexión de la columna pueden restringir la caja torácica y dificultar la respiración.",
+      "alternative": "Elija un trabajo suave en posición supina con la cabeza y el pecho apoyados."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "Los ciclos respiratorios rápidos y la intensidad central pueden provocar sibilancias o dificultad para respirar.",
+      "alternative": "Practique un trabajo abdominal más lento basado en la respiración con descanso frecuente y una postura de pecho abierto."
+    }
+  ],
+  "swollen_glands": [
+    {
+      "exerciseId": "neck_pull",
+      "reason": "El levantamiento de apoyo de la cabeza y el cuello puede agravar la sensibilidad de los ganglios linfáticos del cuello.",
+      "alternative": "Mantenga la cabeza apoyada y concéntrese en la activación suave del núcleo sin movimientos intensos del cuello."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "La inversión de las piernas por encima de la cabeza puede aumentar la presión y la incomodidad alrededor de los ganglios inflamados del cuello y los hombros.",
+      "alternative": "Elija un trabajo central en posición supina más neutral y apoyado con la cabeza y el cuello en una posición cómoda."
+    },
+    {
+      "exerciseId": "seated_spine_twist",
+      "reason": "La rotación fuerte alrededor de la columna cervical puede irritar los ganglios linfáticos sensibles del cuello y la mandíbula.",
+      "alternative": "Utilice rotaciones más pequeñas mientras está sentado con la columna larga y evite girar profundamente la cabeza."
+    }
+  ],
+  "vision_impairment": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Las posturas de equilibrio sin apoyo dependen de la retroalimentación visual y pueden aumentar el riesgo de caídas con baja visión.",
+      "alternative": "Utilice ejercicios con apoyo y conexión a tierra, como trabajo de piernas sentado y movilidad estable de pie."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Las inversiones y las transiciones rápidas pueden ser difíciles de juzgar con seguridad cuando la visión tiene problemas.",
+      "alternative": "Elija movilidad supina con apoyo y trabajo central suave con las manos sobre superficies estables."
+    }
+  ],
+  "hearing_impairment": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Los ejercicios que requieren señales verbales rápidas son más difíciles de seguir sin una audición confiable.",
+      "alternative": "Utilice movimientos lentos y predecibles con demostraciones visuales y gestos claros."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "La sincronización y el equilibrio complejos en Teaser pueden resultar peligrosos sin apoyo de indicaciones visuales o táctiles.",
+      "alternative": "Utilice levantamientos centrales sentado con apoyo, con las rodillas dobladas y señales constantes."
+    }
+  ],
+  "epilepsy_seizure": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "Las inversiones y las articulaciones espinales rápidas pueden aumentar el riesgo de una caída relacionada con las convulsiones.",
+      "alternative": "Mantenga la columna baja con progresiones de puentes apoyados y movimientos lentos."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "El trabajo de equilibrio inestable puede ser peligroso si se produce una convulsión durante el ejercicio.",
+      "alternative": "Utilice un trabajo central estable basado en el piso y evite posiciones de equilibrio sin apoyo."
+    }
+  ],
+  "severe_allergy": [
+    {
+      "exerciseId": "footwork",
+      "reason": "Las correas y accesorios del Reformer pueden contener látex o alérgenos que desencadenan una reacción grave.",
+      "alternative": "Utilice un trabajo de la parte inferior del cuerpo sobre una colchoneta con accesorios hipoalergénicos y equipo limpio."
+    }
+  ],
+  "chronic_pain_syndrome": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "El bombeo central sostenido puede ser demasiado intenso para provocar fatiga y sensibilidad al dolor generalizadas.",
+      "alternative": "Practique series más cortas con la cabeza apoyada y respirando suavemente."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "La alta demanda central y los requisitos de equilibrio pueden provocar dolor en múltiples regiones.",
+      "alternative": "Utilice trabajo central sentado modificado con apoyo y elevación baja."
+    }
+  ],
+  "skin_condition": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "Las extensiones boca abajo presionan el torso y pueden irritar la piel inflamada o sensible del pecho y el abdomen.",
+      "alternative": "Elija levantamientos en decúbito prono con apoyo con los antebrazos sobre la colchoneta o trabajos de extensión de la espalda sentado."
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "La presión sobre los hombros ejercida por la colchoneta o el equipo puede agravar el eczema, las heridas o la psoriasis en la parte superior del cuerpo.",
+      "alternative": "Utilice inclinaciones pélvicas suaves y variantes de puentes de glúteos apoyados con acolchado."
+    }
+  ],
+  "transplant_immunosuppression": [
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "La articulación e inversión espinal agresivas pueden ser demasiado estresantes, mientras que la función inmune y la recuperación siguen siendo delicadas.",
+      "alternative": "Utilice suaves inclinaciones pélvicas en decúbito supino y movilización de la columna con apoyo sin inversión."
+    }
+  ],
+  "recent_hospitalization": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "La inversión y el movimiento rápido de la columna suelen ser demasiado intensos para alguien que se recupera de una hospitalización reciente o de un reposo en cama.",
+      "alternative": "Elija progresiones de puentes con soporte y levantamientos de cadera lentos y controlados."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "Los problemas de equilibrio sin soporte aumentan el riesgo de caídas para los clientes que pierden su condición física después de la hospitalización.",
+      "alternative": "Utilice un trabajo de fuerza central conectado a tierra con ambos pies sobre la colchoneta."
+    }
+  ],
+  "pacemaker_implant": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "La extensión de la espalda en decúbito prono puede comprimir el pecho y la parte superior del cuerpo cerca del lugar del marcapasos.",
+      "alternative": "Elija levantamientos suaves de pecho con apoyo y con los antebrazos sobre la colchoneta."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "La carga pesada en los hombros y el pecho puede generar una presión incómoda cerca de un implante cardíaco.",
+      "alternative": "Utilice un soporte más ligero y movimientos de extensión de la espalda de rango inferior."
+    }
+  ],
+  "substance_use_recovery": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "El trabajo de equilibrio inestable puede ser peligroso si la coordinación o la concentración se ven afectadas durante la recuperación.",
+      "alternative": "Utilice ejercicios de Pilates estables y fundamentados con indicaciones claras y sencillas."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "La inversión y los cambios rápidos de posición pueden ser riesgosos si la atención y la conciencia corporal son variables.",
+      "alternative": "En su lugar, elija una movilidad suave en posición supina y un trabajo central con apoyo."
+    }
+  ],
+  "respiratory_pulmonary": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "La inversión y la compresión torácica profunda pueden empeorar la dificultad para respirar durante los ataques pulmonares.",
+      "alternative": "Utilice progresiones de puentes con apoyo o movilidad sentada suave con el pecho abierto."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Las piernas por encima de la cabeza y la flexión de la columna pueden restringir la caja torácica y provocar dificultad para respirar.",
+      "alternative": "Elija el trabajo central en decúbito supino con la cabeza y el pecho apoyados."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "La inversión y la compresión espinal pueden hacer que la respiración sea incómoda para alguien con limitaciones pulmonares.",
+      "alternative": "Utilice inclinaciones pélvicas suaves y articulaciones bajas de la columna sin inversión."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "La coordinación de la respiración de alta intensidad puede ser demasiado exigente para una función pulmonar comprometida.",
+      "alternative": "Practique un trabajo abdominal más lento basado en la respiración con descanso frecuente."
+    }
+  ],
+  "cardiovascular_disease": [
+    {
+      "exerciseId": "jackknife",
+      "reason": "La inversión y el esfuerzo elevado pueden aumentar la presión arterial y forzar el corazón.",
+      "alternative": "Utilice un trabajo central bajo y progresiones de puentes estables."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "Las transiciones rápidas y la posición de las piernas por encima de la cabeza pueden resultar estresantes para un sistema cardiovascular debilitado.",
+      "alternative": "Elija una movilidad suave en decúbito supino y una articulación espinal lenta."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "La carga pesada en la parte superior del cuerpo puede sobrecargar la respuesta de la frecuencia cardíaca y el control de la presión arterial.",
+      "alternative": "Utilice un soporte para hombros más ligero y evite la máxima resistencia."
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "Empujar las piernas de forma sostenida puede crear una demanda cardiovascular excesiva para alguien con una enfermedad cardíaca.",
+      "alternative": "Favorezca un trabajo de piernas más lento y de baja resistencia y controle de cerca el esfuerzo."
+    }
+  ],
+  "arrhythmia_cardiac_device": [
+    {
+      "exerciseId": "push_through",
+      "reason": "La compresión torácica profunda y la carga en la parte superior del cuerpo pueden irritar el sitio del dispositivo o alterar el control del ritmo.",
+      "alternative": "Elija una extensión de espalda suave y apoyada con una resistencia mínima."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "La extensión en decúbito prono y la presión en el pecho pueden resultar incómodas con un dispositivo cardíaco implantado.",
+      "alternative": "Utilice elevaciones suaves del pecho con los antebrazos sobre la colchoneta."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "La inversión rápida y los cambios repentinos de esfuerzo pueden desencadenar un ritmo cardíaco irregular.",
+      "alternative": "Manténgase cerca de la colchoneta y utilice progresiones de puente controladas."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "El trabajo de equilibrio inestable puede ser peligroso si una arritmia afecta la coordinación o la conciencia.",
+      "alternative": "Utilice ejercicios de estabilidad central con ambos pies sobre la colchoneta."
+    }
+  ],
+  "metabolic_endocrine": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "El bombeo rápido de la respiración y la intensidad central sostenida pueden desestabilizar los niveles de azúcar y energía en la sangre.",
+      "alternative": "Utilice series más cortas con respiración suave y descanso frecuente."
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "Empujar las piernas de forma sostenida puede crear una demanda metabólica rápida y cambios de energía.",
+      "alternative": "Elija un trabajo de piernas más lento y de menor resistencia con un ritmo cuidadoso."
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "La secuenciación dinámica de todo el cuerpo puede ser demasiado intensa cuando el equilibrio metabólico u hormonal es inestable.",
+      "alternative": "Concéntrese en un trabajo de articulación central y espinal más lento y apoyado."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "La alta intensidad central y la demanda de equilibrio pueden sobrecargar los sistemas energéticos regulados por glucosa o hormonas.",
+      "alternative": "Utilice levantamientos centrales sentado con apoyo, con las rodillas dobladas y la columna neutra."
+    }
+  ],
+  "autoimmune_inflammatory": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "La extensión profunda de la espalda y la carga prolongada de la parte superior del cuerpo pueden empeorar la inflamación de las articulaciones o los tejidos.",
+      "alternative": "Utilice levantamientos suaves en decúbito prono con apoyo y con un alcance reducido."
+    },
+    {
+      "exerciseId": "shoulder_bridge",
+      "reason": "El levantamiento de cadera con carga y la compresión del hombro pueden ser dolorosos o inflamatorios durante un brote.",
+      "alternative": "Elija inclinaciones pélvicas con una columna neutra y mucho descanso entre repeticiones."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "La inversión y la compresión espinal pueden agravar los síntomas inflamatorios sistémicos.",
+      "alternative": "Utilice inclinaciones pélvicas en decúbito supino y una suave movilización de la columna sin inversión."
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "El gran movimiento de la cadera y la carga rotacional pueden resultar demasiado intensos durante la inflamación autoinmune.",
+      "alternative": "Utilice círculos más pequeños con las piernas y apoye la pelvis con las manos."
+    }
+  ],
+  "immune_infectious": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "La intensidad central centrada en la respiración puede resultar demasiado agotadora durante una infección activa o un compromiso inmunológico.",
+      "alternative": "Practique respiración suave y descanse cuando se presenten síntomas."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "La inversión y el mayor esfuerzo pueden empeorar la fatiga y los síntomas de enfermedades sistémicas.",
+      "alternative": "Utilice progresiones de puentes soportadas y reduzca la intensidad."
+    },
+    {
+      "exerciseId": "running_reformer",
+      "reason": "El trabajo de resistencia sostenida puede ser demasiado exigente mientras se recupera de una infección.",
+      "alternative": "Elija trabajo de piernas de baja resistencia y bajo impacto con descansos adicionales."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "El esfuerzo intenso de la parte superior del cuerpo puede resultar peligroso durante una enfermedad aguda o una inmunidad reducida.",
+      "alternative": "Utilice una extensión suave de la espalda con apoyo y deténgase si los síntomas empeoran."
+    }
+  ],
+  "oncology_treatment": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "La inversión y la compresión espinal pueden tolerarse mal durante el tratamiento activo del cáncer.",
+      "alternative": "Elija un trabajo suave en posición supina con la cabeza y el pecho apoyados."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "El esfuerzo elevado y la inversión pueden aumentar la fatiga, los hematomas o el estrés cardiovascular.",
+      "alternative": "Utilice progresiones de puentes bajos con respiración controlada."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "La compresión torácica y la extensión de la espalda en decúbito prono pueden ser demasiado agresivas durante la fatiga relacionada con el tratamiento.",
+      "alternative": "Utilice levantamientos en decúbito prono con apoyo y con los antebrazos sobre la colchoneta."
+    },
+    {
+      "exerciseId": "short_spine_massage",
+      "reason": "La inversión y la articulación profunda de la columna pueden ser riesgosas cuando los recuentos sanguíneos o la tolerancia de los tejidos son bajos.",
+      "alternative": "En su lugar, utilice suaves inclinaciones pélvicas en decúbito supino y movilidad baja."
+    }
+  ],
+  "gastrointestinal_pelvic": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexión abdominal cargada puede aumentar la presión intraabdominal y agravar los síntomas pélvicos o gastrointestinales.",
+      "alternative": "Utilice inclinaciones pélvicas y una reconexión suave del núcleo con una columna neutra."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "El bombeo abdominal fuerte y la coordinación de la respiración pueden empeorar el suelo pélvico o las molestias digestivas.",
+      "alternative": "Practique un trabajo central más lento con menos compresión abdominal."
+    },
+    {
+      "exerciseId": "double_leg_stretch",
+      "reason": "La extensión combinada de los abdominales inferiores y el alcance del brazo pueden generar una tensión excesiva en el suelo pélvico y el abdomen.",
+      "alternative": "Utilice deslizadores para el talón y soportes para una sola pierna con una presión mínima."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "La alta demanda de elevación y equilibrio del core puede aumentar la presión pélvica y el malestar abdominal.",
+      "alternative": "Utilice un trabajo central sentado con apoyo, con las rodillas dobladas y un levantamiento suave."
+    }
+  ],
+  "neurological_disorder": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "El trabajo de equilibrio inestable puede aumentar el riesgo de caídas si la coordinación o la sensación se ven afectadas.",
+      "alternative": "Utilice ejercicios de estabilidad central con una amplia base de apoyo."
+    },
+    {
+      "exerciseId": "roll_over",
+      "reason": "La inversión y los cambios rápidos de posición pueden ser un desafío para los clientes con problemas de coordinación neurológica.",
+      "alternative": "Elija una movilidad espinal lenta y con apoyo y evite posiciones de piernas por encima de la cabeza."
+    },
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Los círculos grandes de las piernas requieren control y propiocepción que pueden verse afectados en condiciones neurológicas.",
+      "alternative": "Utilice círculos más pequeños con las piernas apoyadas o levantamientos con una sola pierna con la pelvis estabilizada."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "Una alta demanda de equilibrio y coordinación puede resultar insegura si el control motor es inconsistente.",
+      "alternative": "Utilice levantamientos centrales sentado con apoyo, con las rodillas dobladas y una base estable."
+    }
+  ],
+  "mental_cognitive": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Las posturas de equilibrio complejas pueden resultar peligrosas si se ven afectadas la concentración, la memoria o la velocidad de procesamiento.",
+      "alternative": "Utilice ejercicios sencillos y fundamentados con señales claras y predecibles."
+    },
+    {
+      "exerciseId": "boomerang",
+      "reason": "La secuenciación dinámica y las transiciones rápidas pueden abrumar a alguien con problemas cognitivos o de salud mental.",
+      "alternative": "Elija ejercicios más lentos y lineales con un movimiento a la vez."
+    },
+    {
+      "exerciseId": "criss_cross",
+      "reason": "La rotación y coordinación rápidas pueden ser difíciles de seguir de manera segura si hay síntomas cognitivos o emocionales.",
+      "alternative": "Utilice una rotación suave en posición sentada o supina con instrucciones claras y de ritmo."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "La alta complejidad y la demanda de equilibrio pueden ser excesivas cuando la concentración mental o la tolerancia al estrés son bajas.",
+      "alternative": "Utilice un trabajo central sentado con apoyo con movimientos simples y constantes."
+    }
+  ],
+  "other": [
+    {
+      "exerciseId": "control_balance",
+      "reason": "Esta condición no figura específicamente en la lista; elija un trabajo suave y con apoyo y consulte a un médico calificado antes de intentar realizar movimientos de alto riesgo.",
+      "alternative": "Utilice Pilates con una base estable, carga baja e instrucciones claras."
+    }
+  ],
+  "perimenopause_menopause": [
+    {
+      "exerciseId": "roll_over",
+      "reason": "La inversión puede desencadenar síntomas vasomotores y elevar la presión arterial durante los cambios hormonales.",
+      "alternative": "Elija un trabajo suave en posición supina con la cabeza y el pecho apoyados."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "La inversión de alto esfuerzo no es adecuada durante los cambios cardiovasculares hormonales y la posible reducción de la densidad ósea.",
+      "alternative": "Utilice progresiones de puentes con apoyo y elevaciones suaves de cadera con la columna neutra."
+    },
+    {
+      "exerciseId": "the_hundred",
+      "reason": "El trabajo respiratorio sostenido de alta intensidad puede resultar incómodo durante los sofocos o la sensibilidad cardiovascular.",
+      "alternative": "Practique un trabajo abdominal más lento, impulsado por la respiración, con series más cortas y una postura de pecho abierto."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "La inversión del equilibrio puede desafiar la estabilidad de la presión arterial y los cambios de coordinación asociados con la perimenopausia.",
+      "alternative": "Utilice ejercicios de estabilidad en el suelo con ambos pies sobre la colchoneta y movimientos de rango pequeño."
+    }
+  ],
+  "stroke_recovery": [
+    {
+      "exerciseId": "roll_up",
+      "reason": "La flexión espinal cargada con tracción bilateral no es segura en caso de hemiplejía o debilidad asimétrica.",
+      "alternative": "Concéntrese en la respiración suave, las inclinaciones pélvicas con apoyo y los deslizamientos unilaterales de las piernas."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "El equilibrio de alta exigencia y la coordinación bilateral no son seguros en la recuperación temprana del accidente cerebrovascular.",
+      "alternative": "Utilice un trabajo central sentado con apoyo, con las rodillas dobladas y los pies apoyados en el suelo."
+    },
+    {
+      "exerciseId": "control_balance",
+      "reason": "La inversión total del equilibrio requiere una coordinación bilateral que normalmente no está disponible después de un accidente cerebrovascular.",
+      "alternative": "Elija ejercicios de estabilidad central con una amplia base de apoyo."
+    },
+    {
+      "exerciseId": "spine_twist",
+      "reason": "La rotación bajo carga puede estresar la recuperación de las vías motoras y desafiar la musculatura espástica o débil.",
+      "alternative": "Utilice una rotación suave mientras está sentado con los brazos apoyados y un movimiento lento y controlado."
+    },
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "La plancha exige una estabilidad bilateral de hombros y piernas que normalmente no está disponible después de un derrame cerebral.",
+      "alternative": "Trabaje en una posición sentada o acostada de lado con apoyo, con una extremidad a la vez."
+    }
+  ],
+  "long_covid": [
+    {
+      "exerciseId": "the_hundred",
+      "reason": "El esfuerzo aeróbico sostenido puede desencadenar malestar post-esfuerzo en pacientes con COVID prolongado.",
+      "alternative": "Utilice un trabajo central más corto y suave basado en la respiración con descansos frecuentes."
+    },
+    {
+      "exerciseId": "teaser",
+      "reason": "El ejercicio de esfuerzo máximo es peligroso debido a la fatiga posviral y las limitaciones de la envoltura energética.",
+      "alternative": "Utilice la activación del núcleo sentado con soporte con carga mínima y ritmo lento."
+    },
+    {
+      "exerciseId": "jackknife",
+      "reason": "La inversión de alta intensidad no es segura durante la recuperación posviral con energía limitada.",
+      "alternative": "Elija puentes suaves en posición supina con transiciones lentas y descanse entre repeticiones."
+    },
+    {
+      "exerciseId": "swan_dive",
+      "reason": "El ejercicio dinámico propenso a un alto esfuerzo puede desencadenar una recaída de los síntomas post-esfuerzo.",
+      "alternative": "Utilice un levantamiento suave del antebrazo en decúbito prono o una posición de esfinge con el mínimo esfuerzo."
+    },
+    {
+      "exerciseId": "swimming",
+      "reason": "El levantamiento sostenido de brazos y piernas en decúbito prono puede agotar a un cliente con COVID prolongado dentro de los límites normales.",
+      "alternative": "Elija levantamientos de una sola extremidad con descanso total entre repeticiones y deténgase al primer signo de fatiga."
+    }
+  ],
+  "hip_labral_tear": [
+    {
+      "exerciseId": "one_leg_circle",
+      "reason": "Los círculos grandes de la cadera ejercen una tensión cortante sobre el labrum y pueden empeorar el desgarro.",
+      "alternative": "Utilice círculos muy pequeños con las piernas apoyadas y mantenga la pelvis completamente estable."
+    },
+    {
+      "exerciseId": "open_leg_rocker",
+      "reason": "La amplia apertura y el equilibrio de la cadera pueden afectar un labrum ya desgarrado.",
+      "alternative": "Utilice un trabajo suave de los aductores sentado con las piernas más juntas."
+    },
+    {
+      "exerciseId": "hip_circles",
+      "reason": "La carga rotacional de la cadera tensiona el tejido del labrum y corre el riesgo de desgarrarse aún más.",
+      "alternative": "Utilice movimientos de cadera más pequeños con estabilidad estricta y evite la rotación al final del rango."
+    },
+    {
+      "exerciseId": "front_splits",
+      "reason": "El rango extremo de la cadera en flexión y extensión comprime y corta el labrum.",
+      "alternative": "Utilice un trabajo suave con las bisagras de la cadera y evite posiciones extremas de la cadera."
+    },
+    {
+      "exerciseId": "scissors",
+      "reason": "La flexión alterna y rápida de la cadera puede irritar el desgarro del labrum y aumentar el dolor.",
+      "alternative": "Utilice un descenso lento y controlado de las piernas con un rango pequeño y pelvis neutra."
+    }
+  ],
+  "wrist_conditions": [
+    {
+      "exerciseId": "leg_pull_front",
+      "reason": "Todo el peso del cuerpo se carga a través de las muñecas en posición de tabla.",
+      "alternative": "Utilice una plancha con el antebrazo o modifíquela a un levantamiento de piernas sentado para descargar la muñeca."
+    },
+    {
+      "exerciseId": "push_up",
+      "reason": "La extensión de muñeca con carga agrava directamente fracturas, esguinces y tendinopatías.",
+      "alternative": "Utilice flexiones de pared o posiciones apoyadas en el antebrazo para eliminar la carga de la muñeca."
+    },
+    {
+      "exerciseId": "swan",
+      "reason": "La posición de flexión en decúbito prono coloca un peso corporal significativo a través de las muñecas.",
+      "alternative": "Utilice una posición boca abajo con apoyo de esfinge o antebrazo para evitar la carga en la muñeca."
+    },
+    {
+      "exerciseId": "side_bend",
+      "reason": "La carga de peso en plancha lateral carga la muñeca en extensión y compresión lateral.",
+      "alternative": "Utilice una tabla lateral del antebrazo o saque la muñeca de la colchoneta en posición de puño."
+    },
+    {
+      "exerciseId": "plank",
+      "reason": "La extensión sostenida de la muñeca bajo el peso corporal puede empeorar cualquier lesión o afección en la muñeca.",
+      "alternative": "Utilice una plancha de antebrazo como sustituto directo para lograr un trabajo central sin carga en la muñeca."
+    }
+  ],
+  "lymphedema": [
+    {
+      "exerciseId": "swan_dive",
+      "reason": "El movimiento dinámico del brazo por encima de la cabeza puede aumentar la presión linfática y empeorar la hinchazón en la extremidad afectada.",
+      "alternative": "Utilice un levantamiento suave del antebrazo en decúbito prono con los brazos apoyados y evite estirarse por encima de la cabeza."
+    },
+    {
+      "exerciseId": "arm_springs",
+      "reason": "La carga repetida del brazo con resistencia puede exacerbar el linfedema y alterar el drenaje linfático.",
+      "alternative": "Utilice movimientos suaves y rítmicos del brazo por debajo de la altura de los hombros sin resistencia."
+    },
+    {
+      "exerciseId": "rowing_series",
+      "reason": "La resistencia al tirar con los brazos puede empeorar el flujo linfático y aumentar la hinchazón.",
+      "alternative": "Utilice una movilidad suave del brazo apoyado sin resistencia y mantenga la extremidad ligeramente elevada."
+    },
+    {
+      "exerciseId": "push_through",
+      "reason": "Empujar desde arriba contra la resistencia tensiona los ganglios y vasos linfáticos afectados.",
+      "alternative": "Utilice un alcance suave sin resistencia y mantenga el brazo por debajo del hombro cuando sea posible."
+    },
+    {
+      "exerciseId": "magic_circle_press",
+      "reason": "Apretar el brazo o presionar por encima de la cabeza puede aumentar la presión venosa y linfática en las extremidades afectadas.",
+      "alternative": "Concéntrese en un trabajo suave y rítmico de la parte inferior del cuerpo o del core mientras descansa el brazo afectado."
+    }
+  ]
+}
