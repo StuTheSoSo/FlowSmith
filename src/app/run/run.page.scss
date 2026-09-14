@@ -1,10 +1,75 @@
 .runner-hero,
 .timer-card,
-.detail-card {
+.detail-card,
+.runner-state-card {
   border: 1.5px solid var(--sp-border);
   border-radius: 24px;
   background: linear-gradient(135deg, var(--sp-card-start) 58%, var(--sp-card-end) 100%);
   box-shadow: 0 8px 32px var(--sp-shadow), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.runner-state-card {
+  display: grid;
+  justify-items: start;
+  gap: 0.55rem;
+  margin: 1rem auto;
+  padding: 1.2rem;
+  text-align: left;
+}
+
+.runner-state-card h1,
+.runner-state-card p {
+  margin: 0;
+}
+
+.runner-state-card h1 {
+  font-size: 1.55rem;
+  line-height: 1.1;
+}
+
+.runner-state-card p:not(.eyebrow) {
+  color: var(--sp-ink-2);
+  line-height: 1.4;
+}
+
+.runner-state-card ion-spinner,
+.runner-state-card > ion-icon {
+  color: var(--ion-color-primary);
+  font-size: 2rem;
+}
+
+.error-state {
+  border-color: rgba(199, 86, 106, 0.3);
+  background: linear-gradient(135deg, rgba(255, 246, 249, 0.98), rgba(255, 250, 239, 0.94));
+}
+
+.error-state ion-icon {
+  color: #a53d50;
+}
+
+.state-actions,
+.completion-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+.completion-actions {
+  justify-content: center;
+  margin: 0.9rem auto;
+  padding: 1rem;
+  border: 1.5px solid rgba(74, 155, 121, 0.35);
+  border-radius: 20px;
+  background: rgba(224, 246, 232, 0.78);
+}
+
+.completion-message {
+  flex-basis: 100%;
+  margin: 0;
+  color: #26734f;
+  font-weight: 900;
+  text-align: center;
 }
 
 .runner-title-card {
@@ -95,8 +160,29 @@
   gap: 0.45rem;
 }
 
+.exercise-count {
+  margin: 0;
+  color: var(--ion-color-primary);
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
 .current-exercise h2 {
   font-size: 1.45rem;
+}
+
+.apparatus-badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.42rem 0.7rem;
+  border-radius: 10px;
+  background: var(--ion-color-primary);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .runner-stats {
@@ -155,6 +241,23 @@
   padding: 0.9rem;
 }
 
+.completion-banner {
+  display: flex;
+  gap: 0.55rem;
+  align-items: center;
+  margin: 0.85rem auto;
+  padding: 0.8rem 0.9rem;
+  border: 1.5px solid rgba(74, 155, 121, 0.35);
+  border-radius: 16px;
+  background: rgba(224, 246, 232, 0.82);
+  color: #26734f;
+}
+
+.completion-banner ion-icon {
+  flex-shrink: 0;
+  font-size: 1.3rem;
+}
+
 .warning-stack {
   display: grid;
   gap: 0.45rem;
@@ -206,6 +309,14 @@
     max-width: 840px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .runner-state-card {
+    max-width: 840px;
+  }
+
+  .completion-banner {
+    max-width: 840px;
   }
 
   .timer-card {

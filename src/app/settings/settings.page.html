@@ -46,6 +46,28 @@
           (ionChange)="onAutoAdvanceChange($any($event).detail.checked)"
         ></ion-toggle>
       </ion-item>
+      <ion-item lines="none" class="timer-setting">
+        <ion-label>
+          <strong>Exercise-end sound</strong>
+          <p>Play a short cue when the timer reaches zero.</p>
+        </ion-label>
+        <ion-toggle
+          slot="end"
+          [checked]="classRunner.settings.exerciseEndSound"
+          (ionChange)="onExerciseEndSoundChange($any($event).detail.checked)"
+        ></ion-toggle>
+      </ion-item>
+      <ion-item lines="none" class="timer-setting">
+        <ion-label>
+          <strong>Exercise-end haptics</strong>
+          <p>Use a brief vibration when supported by the device.</p>
+        </ion-label>
+        <ion-toggle
+          slot="end"
+          [checked]="classRunner.settings.exerciseEndHaptics"
+          (ionChange)="onExerciseEndHapticsChange($any($event).detail.checked)"
+        ></ion-toggle>
+      </ion-item>
     </ion-card-content>
   </ion-card>
 

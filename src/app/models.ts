@@ -18,6 +18,20 @@ export interface Exercise {
   contraindicationsNote?: string;
   alternativeExercise?: string;
   teachingCues?: string[];
+  movementProfile?: ExerciseMovementProfile;
+}
+
+export type SpinalAction = 'flexion' | 'extension' | 'rotation' | 'lateral-flexion' | 'neutral';
+export type FlowRole = 'preparation' | 'main' | 'closing';
+
+export interface ExerciseMovementProfile {
+  spinalActions?: SpinalAction[];
+  centered?: boolean;
+  expansion?: boolean;
+  breath?: boolean;
+  bodyPosition?: 'supine' | 'prone' | 'seated' | 'kneeling' | 'standing' | 'side-lying' | string;
+  complexity?: 1 | 2 | 3 | 4 | 5;
+  flowRoles?: FlowRole[];
 }
 
 export interface SafetyCondition {
@@ -69,6 +83,8 @@ export interface FlowPlan {
   goal: string;
   selectedConditionIds: string[];
   segments: FlowSegment[];
+  /** Set only when this plan has been saved to the flow library; absent for demo/template/draft plans. */
+  savedAt?: string;
 }
 
 export interface PilatesDataBundle {
@@ -76,6 +92,35 @@ export interface PilatesDataBundle {
   conditions: SafetyCondition[];
   contraindications: ContraindicationMap;
   programs: Program[];
+}
+
+export type FlowGradeStatus = 'strong' | 'developing' | 'needs-attention';
+
+export interface FlowGradeCategory {
+  id: string;
+  label: string;
+  score: number;
+  maxScore: number;
+  status: FlowGradeStatus;
+  summary: string;
+}
+
+export interface FlowShortcoming {
+  id: string;
+  severity: 'info' | 'attention';
+  title: string;
+  description: string;
+  suggestion: string;
+  segmentIds: string[];
+  exerciseIds: string[];
+}
+
+export interface FlowGradeReport {
+  overallScore: number;
+  status: FlowGradeStatus;
+  categories: FlowGradeCategory[];
+  strengths: string[];
+  shortcomings: FlowShortcoming[];
 }
 
 export interface LanguageOption {
@@ -88,6 +133,8 @@ export type RunnerStatus = 'ready' | 'running' | 'paused' | 'completed';
 
 export interface RunnerSettings {
   autoAdvanceOnExerciseEnd: boolean;
+  exerciseEndSound: boolean;
+  exerciseEndHaptics: boolean;
 }
 
 export interface RunExercise {

@@ -1,11 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>FlowSmith</ion-title>
-    <ion-buttons slot="end">
-      <ion-button fill="clear">
-        <ion-icon name="sparkles-outline" slot="icon-only" aria-hidden="true"></ion-icon>
-      </ion-button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -21,30 +16,103 @@
       <p class="eyebrow">Timeline planner</p>
       <h1>{{ plan.name }}</h1>
       <p>{{ plan.goal }}</p>
+      <small class="plan-save-status">
+        {{ planSaveStatus }}
+        <span class="library-badge" *ngIf="isSavedToLibrary">In library</span>
+      </small>
     </div>
 
     <div class="hero-stats" aria-label="Plan summary">
       <span><strong>{{ planDurationMinutes }}</strong> min</span>
       <span><strong>{{ plan.segments.length }}</strong> sections</span>
-      <span><strong>{{ savedPlansUsed }}/{{ freePlanLimit }}</strong> free plans</span>
+      <span><strong>{{ planExerciseCount }}</strong> exercises</span>
     </div>
 
-    <ion-button expand="block" class="start-class-button" (click)="startClass()">
+    <ion-button *ngIf="planExerciseCount; else addFirstExerciseButton" expand="block" class="start-class-button" (click)="startClass()">
       <ion-icon name="play-outline" slot="start" aria-hidden="true"></ion-icon>
       Start class
     </ion-button>
+    <ng-template #addFirstExerciseButton>
+      <ion-button expand="block" class="start-class-button" (click)="addFirstExercise()">
+        <ion-icon name="add-outline" slot="start" aria-hidden="true"></ion-icon>
+        Add first exercise
+      </ion-button>
+    </ng-template>
+
+    <ion-button fill="outline" expand="block" class="save-flow-button" [disabled]="!planExerciseCount" (click)="saveFlow()">
+      <ion-icon name="bookmark-outline" slot="start" aria-hidden="true"></ion-icon>
+      {{ isSavedToLibrary ? 'Update saved flow' : 'Save to library' }}
+    </ion-button>
   </section>
 
-  <!-- <section class="control-strip">
+  <section class="control-strip" aria-label="Find an exercise">
     <ion-searchbar
       class="exercise-search"
       placeholder="Search exercises, focus, equipment"
       debounce="250"
       [(ngModel)]="searchTerm"
     ></ion-searchbar>
-  </section> -->
+  </section>
 
   <ion-note color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-note>
+
+  <section class="grade-panel" [class.is-empty]="planExerciseCount === 0" *ngIf="flowGrade as grade" aria-labelledby="flow-grade-title">
+    <div class="grade-summary">
+      <div>
+        <p class="eyebrow">Flow review</p>
+        <ng-container *ngIf="planExerciseCount; else emptyGradeTitle">
+          <h2 id="flow-grade-title">{{ grade.overallScore }}<span>/100</span></h2>
+          <p>{{ grade.status === 'strong' ? 'A well-shaped sequence.' : grade.status === 'developing' ? 'A promising sequence with a few gaps.' : 'This sequence needs a little more structure.' }}</p>
+          <small class="grade-context">{{ planExerciseCount }} exercises reviewed</small>
+        </ng-container>
+        <ng-template #emptyGradeTitle>
+          <h2 id="flow-grade-title">Ready to build</h2>
+          <p>Add exercises to review balance, progression, breath, and transitions.</p>
+        </ng-template>
+      </div>
+      <div class="grade-ring" [class.is-strong]="grade.status === 'strong'" [class.is-developing]="grade.status === 'developing'">
+        <ion-icon name="pulse-outline" aria-hidden="true"></ion-icon>
+      </div>
+    </div>
+
+    <details class="grade-dimensions" *ngIf="planExerciseCount">
+      <summary>
+        <span>Review dimensions</span>
+        <span>{{ grade.categories.length }}</span>
+      </summary>
+      <div class="grade-categories" aria-label="Flow grade categories">
+        <div class="grade-category" *ngFor="let category of grade.categories">
+          <div>
+            <span>{{ category.label }}</span>
+            <strong>{{ category.score }}/{{ category.maxScore }}</strong>
+          </div>
+          <div class="grade-meter" aria-hidden="true"><span [style.width.%]="category.score / category.maxScore * 100"></span></div>
+        </div>
+      </div>
+    </details>
+
+    <div class="grade-strengths" *ngIf="planExerciseCount && grade.strengths.length">
+      <strong>Working well</strong>
+      <p *ngFor="let strength of grade.strengths">{{ strength }}</p>
+    </div>
+
+    <details class="grade-findings" *ngIf="grade.shortcomings.length">
+      <summary>
+        <span>{{ planExerciseCount ? 'What could improve' : 'Next step' }}</span>
+        <ion-badge color="warning">{{ grade.shortcomings.length }}</ion-badge>
+      </summary>
+      <article class="grade-finding" *ngFor="let issue of grade.shortcomings">
+        <strong>{{ issue.title }}</strong>
+        <p>{{ issue.description }}</p>
+        <span>{{ issue.suggestion }}</span>
+      </article>
+    </details>
+
+    <ion-button *ngIf="!planExerciseCount" fill="outline" size="small" class="grade-add-button" (click)="addFirstExercise()">
+      Browse exercises
+      <ion-icon name="arrow-down-outline" slot="end" aria-hidden="true"></ion-icon>
+    </ion-button>
+  </section>
 
   <!-- <section class="client-card">
     <div>
@@ -61,7 +129,7 @@
     (ionChange)="selectSegment($any($event).detail.value)"
   >
     <ion-segment-button *ngFor="let segment of plan.segments; trackBy: trackSegment" [value]="segment.id">
-      <ion-label>{{ segment.name }}</ion-label>
+      <ion-label>{{ getSegmentLabel(segment) }}</ion-label>
     </ion-segment-button>
   </ion-segment>
 
@@ -80,6 +148,12 @@
             <span>{{ segment.intent }}</span>
           </div>
         </header>
+
+        <div class="segment-empty" *ngIf="!segment.items.length">
+          <ion-icon name="add-circle-outline" aria-hidden="true"></ion-icon>
+          <span>No exercises in this section yet.</span>
+          <ion-button fill="clear" size="small" (click)="addFirstExercise()">Browse library</ion-button>
+        </div>
 
         <div
           class="flow-item"
@@ -102,7 +176,7 @@
             <div class="item-heading">
               <div>
                 <h3>{{ getExercise(item)?.name || item.exerciseId }}</h3>
-                <p>{{ getExercise(item)?.focus || getExercise(item)?.shortDescription || 'Imported from SafePilates' }}</p>
+                <p>{{ getExercise(item)?.focus || getExercise(item)?.shortDescription || 'Imported from FlowSmith' }}</p>
               </div>
               <ion-chip>{{ item.apparatus }}</ion-chip>
             </div>
@@ -111,6 +185,7 @@
               autoGrow="true"
               placeholder="Instructor notes or cues"
               [(ngModel)]="item.notes"
+              (ngModelChange)="updateNotes(item, $event)"
             ></ion-textarea>
 
             <div class="warning-stack" *ngIf="getWarnings(item).length">
@@ -126,16 +201,16 @@
           </div>
 
           <div class="item-actions" aria-label="Timeline item actions">
-            <ion-button fill="clear" size="small" (click)="moveItem(segment, item, -1)">
+            <ion-button fill="clear" size="small" aria-label="Move exercise up" (click)="moveItem(segment, item, -1)">
               <ion-icon name="chevron-up-outline" slot="icon-only" aria-hidden="true"></ion-icon>
             </ion-button>
-            <ion-button fill="clear" size="small" (click)="moveItem(segment, item, 1)">
+            <ion-button fill="clear" size="small" aria-label="Move exercise down" (click)="moveItem(segment, item, 1)">
               <ion-icon name="chevron-down-outline" slot="icon-only" aria-hidden="true"></ion-icon>
             </ion-button>
-            <ion-button fill="clear" size="small" (click)="duplicateItem(segment, item)">
+            <ion-button fill="clear" size="small" aria-label="Duplicate exercise" (click)="duplicateItem(segment, item)">
               <ion-icon name="copy-outline" slot="icon-only" aria-hidden="true"></ion-icon>
             </ion-button>
-            <ion-button fill="clear" color="danger" size="small" (click)="removeItem(segment, item)">
+            <ion-button fill="clear" color="danger" size="small" aria-label="Remove exercise" (click)="removeItem(segment, item)">
               <ion-icon name="trash-outline" slot="icon-only" aria-hidden="true"></ion-icon>
             </ion-button>
           </div>
@@ -146,7 +221,7 @@
     <aside class="library-panel" aria-label="Exercise library">
       <header>
         <div>
-          <p class="eyebrow">SafePilates library</p>
+          <p class="eyebrow">FlowSmith library</p>
           <h2>Add exercises</h2>
         </div>
         <span>{{ filteredExercises.length }} shown</span>

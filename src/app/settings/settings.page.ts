@@ -47,4 +47,18 @@ export class SettingsPage {
       autoAdvanceOnExerciseEnd: checked,
     });
   }
+
+  onExerciseEndSoundChange(checked: boolean): void {
+    this.classRunner.updateSettings({
+      ...this.classRunner.settings,
+      exerciseEndSound: checked,
+    });
+  }
+
+  onExerciseEndHapticsChange(checked: boolean): void {
+    this.classRunner.updateSettings({
+      ...this.classRunner.settings,
+      exerciseEndHaptics: checked,
+    });
+  }
 }

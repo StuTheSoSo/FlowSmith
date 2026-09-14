@@ -17,6 +17,7 @@ export class LibraryPage implements OnInit, OnDestroy {
   errorMessage = '';
 
   private languageSubscription?: Subscription;
+  private dataSubscription?: Subscription;
 
   constructor(
     private readonly flowData: FlowDataService,
@@ -29,19 +30,22 @@ export class LibraryPage implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.languageSubscription?.unsubscribe();
+    this.dataSubscription?.unsubscribe();
   }
 
   private loadBundle(language: string): void {
     this.isLoading = true;
     this.errorMessage = '';
 
-    this.flowData.load(language).subscribe({
+    this.dataSubscription?.unsubscribe();
+    this.dataSubscription = this.flowData.load(language).subscribe({
       next: (bundle) => {
         this.bundle = bundle;
         this.isLoading = false;
         this.changeDetector.detectChanges();
       },
       error: () => {
+        this.bundle = null;
         this.errorMessage = 'FlowSmith could not load the Pilates library.';
         this.isLoading = false;
         this.changeDetector.detectChanges();
@@ -51,6 +55,18 @@ export class LibraryPage implements OnInit, OnDestroy {
 
   get filteredExercises(): Exercise[] {
     return this.flowData.searchExercises(this.bundle, this.searchTerm, 60);
+  }
+
+  get totalExerciseCount(): number {
+    return this.bundle?.exercises.length ?? 0;
+  }
+
+  clearSearch(): void {
+    this.searchTerm = '';
+  }
+
+  retryLoad(): void {
+    this.loadBundle(this.flowData.currentLanguage);
   }
 
   openExercise(exercise: Exercise): void {

@@ -20,6 +20,47 @@
   box-shadow: 0 8px 32px var(--sp-shadow), 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
+.page-state-card,
+.empty-results {
+  display: grid;
+  justify-items: start;
+  gap: 0.45rem;
+  padding: 1.1rem;
+  border: 1.5px solid var(--sp-border);
+  border-radius: 22px;
+  background: linear-gradient(135deg, var(--sp-card-start) 58%, var(--sp-card-end) 100%);
+  box-shadow: 0 8px 32px var(--sp-shadow);
+  color: var(--sp-ink-2);
+}
+
+.page-state-card ion-spinner,
+.page-state-card ion-icon,
+.empty-results ion-icon {
+  color: var(--ion-color-primary);
+  font-size: 1.8rem;
+}
+
+.page-state-card strong,
+.empty-results strong {
+  color: var(--sp-brand-ink);
+}
+
+.page-state-card span,
+.empty-results span {
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+
+.error-state {
+  border-color: rgba(199, 86, 106, 0.3);
+}
+
+.empty-results {
+  margin-top: 0.2rem;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: none;
+}
+
 .results-panel header {
   display: flex;
   align-items: baseline;
@@ -46,6 +87,7 @@
   text-align: left;
 }
 
+.exercise-result:focus,
 .exercise-result:focus-visible {
   outline: 2px solid var(--ion-color-primary);
   outline-offset: 3px;

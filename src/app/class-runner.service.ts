@@ -10,7 +10,7 @@ export class ClassRunnerService {
   private readonly settingsSubject = new BehaviorSubject<RunnerSettings>(this.readSettings());
   readonly settings$ = this.settingsSubject.asObservable();
 
-  private readonly stateSubject = new BehaviorSubject<ClassRunState>(this.createState(this.flowPlanService.currentPlan, 'planner'));
+  private readonly stateSubject = new BehaviorSubject<ClassRunState>(this.createState(this.unloadedPlan(), 'planner'));
   readonly state$ = this.stateSubject.asObservable();
 
   private intervalId?: ReturnType<typeof setInterval>;
@@ -199,6 +199,11 @@ export class ClassRunnerService {
     };
   }
 
+  private unloadedPlan(): FlowPlan {
+    const currentPlan = this.flowPlanService.currentPlan;
+    return { ...currentPlan, segments: [] };
+  }
+
   private flattenPlan(plan: FlowPlan): RunExercise[] {
     return plan.segments.flatMap((segment) =>
       segment.items.map((item) => ({
@@ -214,7 +219,11 @@ export class ClassRunnerService {
   }
 
   private readSettings(): RunnerSettings {
-    const fallback: RunnerSettings = { autoAdvanceOnExerciseEnd: true };
+    const fallback: RunnerSettings = {
+      autoAdvanceOnExerciseEnd: true,
+      exerciseEndSound: false,
+      exerciseEndHaptics: false,
+    };
     const stored = localStorage.getItem(RUNNER_SETTINGS_KEY);
 
     if (!stored) {

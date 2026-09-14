@@ -12,14 +12,43 @@
   </ion-header>
 
   <section class="templates-hero">
-    <p class="eyebrow">SafePilates programs</p>
+    <p class="eyebrow">FlowSmith programs</p>
     <h1>Start from a template</h1>
-    <p>Use a SafePilates program as a timed FlowSmith class plan. Each exercise starts at 5 minutes until you customize durations.</p>
+    <p>Use a FlowSmith program as a timed class plan. Each exercise starts at 5 minutes until you customize durations.</p>
   </section>
 
-  <ion-note color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-note>
+  <section class="control-strip">
+    <ion-segment [(ngModel)]="activeView" class="view-picker" (ionChange)="setView($any($event).detail.value)">
+      <ion-segment-button value="templates">
+        <ion-label>Templates</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="flows">
+        <ion-label>My Flows</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </section>
 
-  <section class="template-grid" aria-label="Class templates">
+  <section class="page-state-card" *ngIf="activeView === 'templates' && isLoading" aria-live="polite">
+    <ion-spinner name="crescent" aria-hidden="true"></ion-spinner>
+    <strong>Loading templates</strong>
+    <span>Preparing class plans for you.</span>
+  </section>
+
+  <section class="page-state-card error-state" *ngIf="activeView === 'templates' && !isLoading && errorMessage" role="alert">
+    <ion-icon name="cloud-offline-outline" aria-hidden="true"></ion-icon>
+    <strong>Templates unavailable</strong>
+    <span>Try loading the class templates again.</span>
+    <ion-button fill="outline" size="small" (click)="retryLoad()">Try again</ion-button>
+  </section>
+
+  <section class="page-state-card" *ngIf="activeView === 'templates' && !isLoading && !errorMessage && !templates.length">
+    <ion-icon name="albums-outline" aria-hidden="true"></ion-icon>
+    <strong>No templates available</strong>
+    <span>Build a flow from the exercise library instead.</span>
+    <ion-button fill="outline" size="small" routerLink="/library">Browse library</ion-button>
+  </section>
+
+  <section class="template-grid" *ngIf="activeView === 'templates' && !isLoading && !errorMessage && templates.length" aria-label="Class templates">
     <article
       class="template-card"
       role="button"
@@ -34,12 +63,12 @@
       <div>
         <p class="eyebrow">{{ template.level || 'All levels' }}</p>
         <h2>{{ template.name }}</h2>
-        <p>{{ template.goal || template.description || 'SafePilates template flow' }}</p>
+        <p>{{ template.goal || template.description || 'FlowSmith template flow' }}</p>
       </div>
 
       <div class="template-meta">
         <ion-chip>{{ template.exerciseIds.length }} exercises</ion-chip>
-        <ion-chip>{{ getTemplateDurationMinutes(template) }} min</ion-chip>
+        <ion-chip>~{{ getTemplateDurationMinutes(template) }} min</ion-chip>
         <ion-chip *ngIf="template.accessLevel">{{ template.accessLevel }}</ion-chip>
       </div>
 
@@ -50,7 +79,7 @@
       <section class="template-preview" *ngIf="isExpanded(template)" aria-label="Template exercises">
         <header>
           <strong>Exercise order</strong>
-          <span>5 min each</span>
+          <span>Estimated at 5 min each</span>
         </header>
 
         <ol>
@@ -61,10 +90,56 @@
         </ol>
       </section>
 
-      <ion-button expand="block" (click)="startTemplate(template); $event.stopPropagation()">
-        <ion-icon name="play-outline" slot="start" aria-hidden="true"></ion-icon>
-        Start template
+      <ion-button expand="block" [disabled]="isNavigating" (click)="startTemplate(template); $event.stopPropagation()">
+        <ion-spinner *ngIf="isNavigating" name="dots" slot="start" aria-hidden="true"></ion-spinner>
+        <ion-icon *ngIf="!isNavigating" name="play-outline" slot="start" aria-hidden="true"></ion-icon>
+        {{ isNavigating ? 'Starting...' : 'Start template' }}
       </ion-button>
     </article>
+  </section>
+
+  <section class="flows-panel" *ngIf="activeView === 'flows'" aria-label="My saved flows">
+    <header>
+      <div>
+        <p class="eyebrow">Your flows</p>
+        <span>{{ savedFlows.length }} saved</span>
+      </div>
+      <ion-button fill="outline" size="small" (click)="createNewFlow()">
+        <ion-icon name="add-outline" slot="start" aria-hidden="true"></ion-icon>
+        New flow
+      </ion-button>
+    </header>
+
+    <article class="flow-card" *ngFor="let flow of savedFlows; trackBy: trackFlow">
+      <div>
+        <h2>{{ flow.name }}</h2>
+        <p *ngIf="flow.goal">{{ flow.goal }}</p>
+        <div class="flow-meta">
+          <ion-chip>{{ getFlowExerciseCount(flow) }} exercises</ion-chip>
+          <ion-chip>~{{ getFlowDurationMinutes(flow) }} min</ion-chip>
+        </div>
+      </div>
+
+      <div class="flow-actions">
+        <ion-button fill="clear" size="small" (click)="editFlow(flow)">
+          <ion-icon name="create-outline" slot="start" aria-hidden="true"></ion-icon>
+          Edit
+        </ion-button>
+        <ion-button fill="clear" size="small" [disabled]="isNavigating" (click)="startFlow(flow)">
+          <ion-icon name="play-outline" slot="start" aria-hidden="true"></ion-icon>
+          Start
+        </ion-button>
+        <ion-button fill="clear" color="danger" size="small" (click)="confirmDeleteFlow(flow)">
+          <ion-icon name="trash-outline" slot="icon-only" aria-hidden="true"></ion-icon>
+        </ion-button>
+      </div>
+    </article>
+
+    <div class="empty-results" *ngIf="!savedFlows.length">
+      <ion-icon name="bookmark-outline" aria-hidden="true"></ion-icon>
+      <strong>No saved flows yet</strong>
+      <span>Build a flow in the planner and save it, or start a new one from here.</span>
+      <ion-button fill="clear" size="small" (click)="createNewFlow()">Start a new flow</ion-button>
+    </div>
   </section>
 </ion-content>

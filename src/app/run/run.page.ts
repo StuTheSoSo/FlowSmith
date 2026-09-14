@@ -1,8 +1,9 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ClassRunnerService } from '../class-runner.service';
 import { FlowDataService } from '../flow-data.service';
-import { FlowPlanService } from '../flow-plan.service';
 import { ClassRunState, Contraindication, Exercise, PilatesDataBundle, RunExercise } from '../models';
 
 @Component({
@@ -14,39 +15,64 @@ import { ClassRunState, Contraindication, Exercise, PilatesDataBundle, RunExerci
 export class RunPage implements OnInit, OnDestroy {
   state = this.classRunner.state;
   bundle: PilatesDataBundle | null = null;
+  isLoading = true;
+  errorMessage = '';
+  completionMessage = '';
 
   private stateSubscription?: Subscription;
+  private languageSubscription?: Subscription;
   private dataSubscription?: Subscription;
+  private lastCompletedExerciseId = '';
 
   constructor(
     readonly classRunner: ClassRunnerService,
     private readonly flowData: FlowDataService,
-    private readonly flowPlanService: FlowPlanService,
-    private readonly changeDetector: ChangeDetectorRef
+    private readonly changeDetector: ChangeDetectorRef,
+    private readonly alertController: AlertController,
+    private readonly router: Router
   ) {}
 
   ngOnInit(): void {
-    if (this.classRunner.state.exercises.length === 0) {
-      this.classRunner.loadPlan(this.flowPlanService.currentPlan, 'planner');
-    }
-
     this.stateSubscription = this.classRunner.state$.subscribe((state) => {
       this.state = state;
+      if (state.completedExerciseId && state.completedExerciseId !== this.lastCompletedExerciseId) {
+        this.announceExerciseComplete(state.completedExerciseId);
+      } else if (!state.completedExerciseId) {
+        this.completionMessage = '';
+        this.lastCompletedExerciseId = '';
+      }
       this.changeDetector.detectChanges();
     });
 
-    this.dataSubscription = this.flowData.language$.subscribe((language) => {
-      this.flowData.load(language).subscribe((bundle) => {
-        this.bundle = bundle;
-        this.changeDetector.detectChanges();
-      });
+    this.languageSubscription = this.flowData.language$.subscribe((language) => {
+      this.loadBundle(language);
     });
   }
 
   ngOnDestroy(): void {
     this.classRunner.pauseOnRouteLeave();
     this.stateSubscription?.unsubscribe();
+    this.languageSubscription?.unsubscribe();
     this.dataSubscription?.unsubscribe();
+  }
+
+  private loadBundle(language: string): void {
+    this.isLoading = true;
+    this.errorMessage = '';
+    this.dataSubscription?.unsubscribe();
+    this.dataSubscription = this.flowData.load(language).subscribe({
+      next: (bundle) => {
+        this.bundle = bundle;
+        this.isLoading = false;
+        this.changeDetector.detectChanges();
+      },
+      error: () => {
+        this.bundle = null;
+        this.isLoading = false;
+        this.errorMessage = 'The exercise library could not be loaded.';
+        this.changeDetector.detectChanges();
+      },
+    });
   }
 
   get currentRunExercise(): RunExercise | undefined {
@@ -102,6 +128,10 @@ export class RunPage implements OnInit, OnDestroy {
     return this.state.status === 'completed';
   }
 
+  get hasClass(): boolean {
+    return this.state.exercises.length > 0;
+  }
+
   formatTime(totalSeconds: number): string {
     const minutes = Math.floor(totalSeconds / 60).toString().padStart(2, '0');
     const seconds = Math.max(0, totalSeconds % 60).toString().padStart(2, '0');
@@ -114,5 +144,91 @@ export class RunPage implements OnInit, OnDestroy {
     }
 
     return this.flowData.findExercise(this.bundle, runExercise.exerciseId)?.name ?? runExercise.exerciseId;
+  }
+
+  get currentBreathingCue(): string {
+    return this.currentExercise?.breathing || 'Use a steady breath and keep the movement controlled.';
+  }
+
+  get apparatusLabel(): string {
+    return this.currentRunExercise?.apparatus || 'Mat';
+  }
+
+  private announceExerciseComplete(completedExerciseId: string): void {
+    this.lastCompletedExerciseId = completedExerciseId;
+    const completedName = this.getExerciseName(this.state.exercises.find((exercise) => exercise.id === completedExerciseId));
+    this.completionMessage = this.isCompleted
+      ? `${completedName} complete. Class finished.`
+      : `${completedName} complete. Ready for ${this.getExerciseName(this.nextRunExercise)}.`;
+
+    if (this.classRunner.settings.exerciseEndHaptics && typeof navigator.vibrate === 'function') {
+      navigator.vibrate([120, 70, 120]);
+    }
+
+    if (this.classRunner.settings.exerciseEndSound) {
+      this.playCompletionTone();
+    }
+  }
+
+  private playCompletionTone(): void {
+    try {
+      const AudioContextClass = window.AudioContext || (window as typeof window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+      if (!AudioContextClass) {
+        return;
+      }
+      const context = new AudioContextClass();
+      const oscillator = context.createOscillator();
+      const gain = context.createGain();
+      oscillator.frequency.value = 660;
+      gain.gain.setValueAtTime(0.0001, context.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.16, context.currentTime + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.0001, context.currentTime + 0.28);
+      oscillator.connect(gain);
+      gain.connect(context.destination);
+      oscillator.start();
+      oscillator.stop(context.currentTime + 0.3);
+    } catch {
+      // Audio feedback is optional and can be unavailable in a browser context.
+    }
+  }
+
+  async confirmRestartExercise(): Promise<void> {
+    const alert = await this.alertController.create({
+      header: 'Restart this exercise?',
+      message: 'Your current timer progress for this exercise will be reset.',
+      buttons: [
+        { text: 'Cancel', role: 'cancel' },
+        { text: 'Restart', role: 'destructive', handler: () => this.classRunner.restartExercise() },
+      ],
+    });
+    await alert.present();
+  }
+
+  async confirmStopClass(): Promise<void> {
+    const alert = await this.alertController.create({
+      header: 'Stop this class?',
+      message: 'Your current run will end and its timer progress will be cleared.',
+      buttons: [
+        { text: 'Keep running', role: 'cancel' },
+        { text: 'Stop class', role: 'destructive', handler: () => this.classRunner.stop() },
+      ],
+    });
+    await alert.present();
+  }
+
+  restartClass(): void {
+    this.classRunner.stop();
+  }
+
+  returnToPlanner(): void {
+    this.router.navigateByUrl('/home');
+  }
+
+  browseTemplates(): void {
+    this.router.navigateByUrl('/templates');
+  }
+
+  retryLoad(): void {
+    this.loadBundle(this.flowData.currentLanguage);
   }
 }

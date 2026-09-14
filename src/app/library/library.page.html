@@ -20,12 +20,23 @@
     ></ion-searchbar>
   </section>
 
-  <ion-note color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-note>
+  <section class="page-state-card" *ngIf="isLoading" aria-live="polite">
+    <ion-spinner name="crescent" aria-hidden="true"></ion-spinner>
+    <strong>Loading exercises</strong>
+    <span>Preparing the FlowSmith library.</span>
+  </section>
 
-  <section class="results-panel" aria-label="Exercise library results">
+  <section class="page-state-card error-state" *ngIf="!isLoading && errorMessage" role="alert">
+    <ion-icon name="cloud-offline-outline" aria-hidden="true"></ion-icon>
+    <strong>Library unavailable</strong>
+    <span>Try loading the exercise library again.</span>
+    <ion-button fill="outline" size="small" (click)="retryLoad()">Try again</ion-button>
+  </section>
+
+  <section class="results-panel" *ngIf="!isLoading && !errorMessage" aria-label="Exercise library results">
     <header>
-      <p class="eyebrow">SafePilates library</p>
-      <span>{{ filteredExercises.length }} shown</span>
+      <p class="eyebrow">FlowSmith library</p>
+      <span>{{ filteredExercises.length }} shown of {{ totalExerciseCount }}</span>
     </header>
 
     <article
@@ -44,15 +55,23 @@
       </span>
       <ion-icon name="information-circle-outline" aria-hidden="true"></ion-icon>
     </article>
+
+    <div class="empty-results" *ngIf="!filteredExercises.length">
+      <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+      <strong>No exercises found</strong>
+      <span>Try a broader search, such as core, mat, or breath.</span>
+      <ion-button fill="clear" size="small" (click)="clearSearch()">Clear search</ion-button>
+    </div>
   </section>
 
-  <ion-modal [isOpen]="!!selectedExercise" (didDismiss)="closeExercise()">
+
+  <ion-modal [isOpen]="!!selectedExercise" (didDismiss)="closeExercise()" role="dialog" [attr.aria-labelledby]="selectedExercise ? 'exercise-detail-title' : null">
     <ng-template>
       <ion-header translucent>
         <ion-toolbar>
-          <ion-title>{{ selectedExercise?.name }}</ion-title>
+          <ion-title id="exercise-detail-title">{{ selectedExercise?.name }}</ion-title>
           <ion-buttons slot="end">
-            <ion-button fill="clear" (click)="closeExercise()">
+            <ion-button fill="clear" aria-label="Close exercise details" (click)="closeExercise()">
               <ion-icon name="close-outline" slot="icon-only" aria-hidden="true"></ion-icon>
             </ion-button>
           </ion-buttons>
@@ -63,7 +82,7 @@
         <section class="detail-hero" *ngIf="selectedExercise as exercise">
           <p class="eyebrow">{{ exercise.level || 'Exercise' }} · {{ exercise.category || 'Pilates' }}</p>
           <h1>{{ exercise.name }}</h1>
-          <p>{{ exercise.shortDescription || exercise.focus || 'Imported from SafePilates.' }}</p>
+          <p>{{ exercise.shortDescription || exercise.focus || 'Imported from FlowSmith.' }}</p>
 
           <div class="detail-chip-row">
             <ion-chip>{{ exercise.equipment || 'Mat' }}</ion-chip>
