@@ -1,4 +1,4 @@
-package com.flowsmith.app;
+package com.stuschwartz.flowsmith;
 
 import com.getcapacitor.BridgeActivity;
 

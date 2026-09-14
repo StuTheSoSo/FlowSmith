@@ -10,7 +10,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "import:safepilates-data": "node scripts/import-safepilates-data.mjs"
+    "import:safepilates-data": "node scripts/import-safepilates-data.mjs",
+    "generate:assets": "capacitor-assets generate"
   },
   "private": true,
   "dependencies": {
@@ -43,6 +44,7 @@
     "@angular-eslint/template-parser": "^21.3.1",
     "@angular/cli": "^21.2.7",
     "@angular/compiler-cli": "^21.2.8",
+    "@capacitor/assets": "^3.0.5",
     "@capacitor/cli": "^8.3.0",
     "@types/jasmine": "^6.0.0",
     "@types/node": "^18.16.18",

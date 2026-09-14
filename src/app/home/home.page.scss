@@ -597,6 +597,10 @@ ion-textarea {
     align-self: start;
     position: sticky;
     top: 1rem;
+    max-height: min(65vh, 640px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 }
 

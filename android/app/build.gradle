@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace = "com.flowsmith.app"
+    namespace = "com.stuschwartz.flowsmith"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.flowsmith.app"
+        applicationId "com.stuschwartz.flowsmith"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
