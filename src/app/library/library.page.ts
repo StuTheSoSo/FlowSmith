@@ -1,4 +1,5 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { FlowDataService } from '../flow-data.service';
 import { Exercise, PilatesDataBundle } from '../models';
@@ -21,6 +22,7 @@ export class LibraryPage implements OnInit, OnDestroy {
 
   constructor(
     private readonly flowData: FlowDataService,
+    private readonly translate: TranslateService,
     private readonly changeDetector: ChangeDetectorRef
   ) {}
 
@@ -46,7 +48,7 @@ export class LibraryPage implements OnInit, OnDestroy {
       },
       error: () => {
         this.bundle = null;
-        this.errorMessage = 'FlowSmith could not load the Pilates library.';
+        this.errorMessage = this.translate.instant('LIBRARY.ERROR_BODY');
         this.isLoading = false;
         this.changeDetector.detectChanges();
       },

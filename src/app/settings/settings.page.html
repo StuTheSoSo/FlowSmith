@@ -1,19 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Settings</ion-title>
+    <ion-title>{{ 'SETTINGS.TITLE' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Settings</ion-title>
+      <ion-title size="large">{{ 'SETTINGS.TITLE' | translate }}</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Color theme</ion-card-title>
+      <ion-card-title>{{ 'SETTINGS.THEME_TITLE' | translate }}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <div class="theme-row">
@@ -23,7 +23,7 @@
           [class.selected]="selectedTheme === theme.value"
           (click)="onThemeChange(theme.value)"
         >
-          <ion-label>{{ theme.label }}</ion-label>
+          <ion-label>{{ theme.labelKey | translate }}</ion-label>
         </ion-chip>
       </div>
     </ion-card-content>
@@ -31,14 +31,14 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Class timer</ion-card-title>
-      <ion-card-subtitle>Controls how FlowSmith advances during a live class</ion-card-subtitle>
+      <ion-card-title>{{ 'SETTINGS.TIMER_TITLE' | translate }}</ion-card-title>
+      <ion-card-subtitle>{{ 'SETTINGS.TIMER_SUBTITLE' | translate }}</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
       <ion-item lines="none" class="timer-setting">
         <ion-label>
-          <strong>Auto-advance exercises</strong>
-          <p>Move to the next exercise automatically when the timer reaches zero.</p>
+          <strong>{{ 'SETTINGS.AUTO_ADVANCE_TITLE' | translate }}</strong>
+          <p>{{ 'SETTINGS.AUTO_ADVANCE_BODY' | translate }}</p>
         </ion-label>
         <ion-toggle
           slot="end"
@@ -48,8 +48,8 @@
       </ion-item>
       <ion-item lines="none" class="timer-setting">
         <ion-label>
-          <strong>Exercise-end sound</strong>
-          <p>Play a short cue when the timer reaches zero.</p>
+          <strong>{{ 'SETTINGS.SOUND_TITLE' | translate }}</strong>
+          <p>{{ 'SETTINGS.SOUND_BODY' | translate }}</p>
         </ion-label>
         <ion-toggle
           slot="end"
@@ -59,8 +59,8 @@
       </ion-item>
       <ion-item lines="none" class="timer-setting">
         <ion-label>
-          <strong>Exercise-end haptics</strong>
-          <p>Use a brief vibration when supported by the device.</p>
+          <strong>{{ 'SETTINGS.HAPTICS_TITLE' | translate }}</strong>
+          <p>{{ 'SETTINGS.HAPTICS_BODY' | translate }}</p>
         </ion-label>
         <ion-toggle
           slot="end"
@@ -73,8 +73,8 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Language</ion-card-title>
-      <ion-card-subtitle>Applies to exercises, conditions, and library content</ion-card-subtitle>
+      <ion-card-title>{{ 'SETTINGS.LANGUAGE_TITLE' | translate }}</ion-card-title>
+      <ion-card-subtitle>{{ 'SETTINGS.LANGUAGE_SUBTITLE' | translate }}</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
       <div class="theme-row">
@@ -84,15 +84,28 @@
           [class.selected]="flowData.currentLanguage === language.code"
           (click)="onLanguageChange(language.code)"
         >
-          <ion-label>{{ language.label }}</ion-label>
+          <ion-label>{{ language.labelKey | translate }}</ion-label>
         </ion-chip>
       </div>
     </ion-card-content>
   </ion-card>
 
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ 'SETTINGS.TUTORIAL_TITLE' | translate }}</ion-card-title>
+      <ion-card-subtitle>{{ 'SETTINGS.TUTORIAL_SUBTITLE' | translate }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button fill="outline" expand="block" (click)="replayTutorial()">
+        <ion-icon name="play-circle-outline" slot="start" aria-hidden="true"></ion-icon>
+        {{ 'SETTINGS.REPLAY_TUTORIAL' | translate }}
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
   <section class="coming-soon-card">
     <ion-icon name="settings-outline" aria-hidden="true"></ion-icon>
-    <h2>More settings are coming soon</h2>
-    <p>Pro status and data source info will live here next.</p>
+    <h2>{{ 'SETTINGS.COMING_SOON_TITLE' | translate }}</h2>
+    <p>{{ 'SETTINGS.COMING_SOON_BODY' | translate }}</p>
   </section>
 </ion-content>

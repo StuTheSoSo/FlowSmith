@@ -1,0 +1,129 @@
+.onboarding-content {
+  --padding-top: calc(env(safe-area-inset-top) + 1rem);
+  --padding-bottom: calc(env(safe-area-inset-bottom) + 1rem);
+  --padding-start: 1rem;
+  --padding-end: 1rem;
+}
+
+.onboarding-shell {
+  display: grid;
+  gap: 1rem;
+  max-width: 480px;
+  min-height: 100%;
+  margin: 0 auto;
+  align-content: center;
+  position: relative;
+}
+
+.skip-button {
+  justify-self: end;
+  padding: 0.4rem 0.2rem;
+  border: none;
+  background: transparent;
+  color: var(--sp-ink-3);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.step-card {
+  display: grid;
+  justify-items: start;
+  gap: 0.6rem;
+  padding: 1.4rem 1.2rem;
+  border: 1.5px solid var(--sp-border);
+  border-radius: 26px;
+  background: linear-gradient(135deg, var(--sp-card-start) 58%, var(--sp-card-end) 100%);
+  box-shadow: 0 8px 32px var(--sp-shadow), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.step-icon {
+  display: grid;
+  place-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--ion-color-primary), var(--ion-color-tertiary));
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.step-card h1,
+.step-card .step-body {
+  margin: 0;
+}
+
+.step-card h1 {
+  font-size: 1.6rem;
+  line-height: 1.15;
+  color: var(--sp-brand-ink);
+}
+
+.step-body {
+  color: var(--sp-ink-2);
+  line-height: 1.4;
+}
+
+.step-bullets {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0.2rem 0 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.step-bullets li {
+  position: relative;
+  padding-left: 1.3rem;
+  color: var(--sp-ink-2);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.step-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--ion-color-primary);
+}
+
+.cta-row {
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.4rem;
+}
+
+.progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: var(--sp-border);
+  cursor: pointer;
+  transition: width 0.2s ease, background 0.2s ease;
+}
+
+.dot.is-active {
+  width: 1.4rem;
+  background: var(--ion-color-primary);
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}

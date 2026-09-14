@@ -1,34 +1,34 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/home" aria-label="Return to planner"></ion-back-button>
+      <ion-back-button defaultHref="/home" [attr.aria-label]="'RUN.BACK_ARIA' | translate"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{ state.source === 'planner' ? 'Planner flow' : 'Template flow' }}</ion-title>
+    <ion-title>{{ (state.source === 'planner' ? 'RUN.PLANNER_FLOW' : 'RUN.TEMPLATE_FLOW') | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <section class="runner-state-card" *ngIf="isLoading" aria-live="polite">
     <ion-spinner name="crescent" aria-hidden="true"></ion-spinner>
-    <h1>Loading class</h1>
-    <p>Preparing your exercises and safety notes.</p>
+    <h1>{{ 'RUN.LOADING_TITLE' | translate }}</h1>
+    <p>{{ 'RUN.LOADING_BODY' | translate }}</p>
   </section>
 
   <section class="runner-state-card error-state" *ngIf="!isLoading && errorMessage" role="alert">
     <ion-icon name="cloud-offline-outline" aria-hidden="true"></ion-icon>
-    <h1>Class details unavailable</h1>
+    <h1>{{ 'RUN.ERROR_TITLE' | translate }}</h1>
     <p>{{ errorMessage }}</p>
-    <ion-button fill="outline" (click)="retryLoad()">Try again</ion-button>
+    <ion-button fill="outline" (click)="retryLoad()">{{ 'COMMON.TRY_AGAIN' | translate }}</ion-button>
   </section>
 
   <section class="runner-state-card empty-state" *ngIf="!isLoading && !errorMessage && !hasClass">
     <ion-icon name="play-circle-outline" aria-hidden="true"></ion-icon>
-    <p class="eyebrow">Class runner</p>
-    <h1>No class loaded</h1>
-    <p>Start a flow from the Planner or choose a Template to begin teaching.</p>
+    <p class="eyebrow">{{ 'RUN.EMPTY_EYEBROW' | translate }}</p>
+    <h1>{{ 'RUN.EMPTY_TITLE' | translate }}</h1>
+    <p>{{ 'RUN.EMPTY_BODY' | translate }}</p>
     <div class="state-actions">
-      <ion-button (click)="returnToPlanner()">Go to planner</ion-button>
-      <ion-button fill="outline" (click)="browseTemplates()">Browse templates</ion-button>
+      <ion-button (click)="returnToPlanner()">{{ 'RUN.GO_TO_PLANNER' | translate }}</ion-button>
+      <ion-button fill="outline" (click)="browseTemplates()">{{ 'RUN.BROWSE_TEMPLATES' | translate }}</ion-button>
     </div>
   </section>
 
@@ -41,66 +41,66 @@
     <section class="timer-card" [class.completed]="isCompleted" [class.exercise-complete]="state.completedExerciseId">
     <div class="timer-ring" [style.--progress.%]="progressPercent">
       <span>{{ formatTime(exerciseRemainingSeconds) }}</span>
-      <small>{{ currentRunExercise?.segmentName || 'Class' }}</small>
+      <small>{{ currentRunExercise?.segmentName || ('RUN.CLASS_LABEL' | translate) }}</small>
     </div>
 
     <div class="current-exercise">
-      <p class="exercise-count">Exercise {{ state.currentIndex + 1 }} of {{ state.exercises.length }}</p>
+      <p class="exercise-count">{{ 'RUN.EXERCISE_COUNT' | translate: { current: state.currentIndex + 1, total: state.exercises.length } }}</p>
       <h2>{{ currentExercise?.name || getExerciseName(currentRunExercise) }}</h2>
-      <p>{{ currentExercise?.focus || currentExercise?.shortDescription || 'Prepare to teach the next movement.' }}</p>
+      <p>{{ currentExercise?.focus || currentExercise?.shortDescription || ('RUN.PREPARE_NEXT_MOVEMENT' | translate) }}</p>
       <span class="apparatus-badge">{{ apparatusLabel }}</span>
     </div>
     </section>
 
     <section class="runner-stats" aria-label="Timer summary">
-    <span><strong>{{ formatTime(state.elapsedSeconds) }}</strong> elapsed</span>
-    <span><strong>{{ formatTime(totalRemainingSeconds) }}</strong> left</span>
-    <span><strong>{{ formatTime(totalDurationSeconds) }}</strong> total</span>
+    <span><strong>{{ formatTime(state.elapsedSeconds) }}</strong> {{ 'RUN.ELAPSED' | translate }}</span>
+    <span><strong>{{ formatTime(totalRemainingSeconds) }}</strong> {{ 'RUN.LEFT' | translate }}</span>
+    <span><strong>{{ formatTime(totalDurationSeconds) }}</strong> {{ 'RUN.TOTAL' | translate }}</span>
     </section>
 
     <section class="runner-controls" aria-label="Class timer controls">
-    <ion-button fill="outline" (click)="classRunner.previous()" [disabled]="state.currentIndex === 0" [attr.aria-label]="state.currentIndex === 0 ? 'At first exercise' : 'Go to previous exercise'">
+    <ion-button fill="outline" (click)="classRunner.previous()" [disabled]="state.currentIndex === 0" [attr.aria-label]="(state.currentIndex === 0 ? 'RUN.AT_FIRST_EXERCISE_ARIA' : 'RUN.PREVIOUS_ARIA') | translate">
       <ion-icon name="play-skip-back-outline" slot="icon-only" aria-hidden="true"></ion-icon>
     </ion-button>
     <ion-button *ngIf="!isRunning && !isCompleted" class="primary-control" (click)="classRunner.start()">
       <ion-icon name="play-outline" slot="start" aria-hidden="true"></ion-icon>
-      {{ isPaused ? 'Resume' : 'Start' }}
+      {{ (isPaused ? 'RUN.RESUME' : 'RUN.START') | translate }}
     </ion-button>
     <ion-button *ngIf="isRunning" class="primary-control" (click)="classRunner.pause()">
       <ion-icon name="pause-outline" slot="start" aria-hidden="true"></ion-icon>
-      Pause
+      {{ 'RUN.PAUSE' | translate }}
     </ion-button>
-    <ion-button fill="outline" (click)="classRunner.next()" [disabled]="isCompleted" [attr.aria-label]="isCompleted ? 'Class finished' : 'Go to next exercise'">
+    <ion-button fill="outline" (click)="classRunner.next()" [disabled]="isCompleted" [attr.aria-label]="(isCompleted ? 'RUN.CLASS_FINISHED_ARIA' : 'RUN.NEXT_ARIA') | translate">
       <ion-icon name="play-skip-forward-outline" slot="icon-only" aria-hidden="true"></ion-icon>
     </ion-button>
     </section>
 
     <section class="completion-actions" *ngIf="isCompleted" aria-label="Completed class actions">
-      <p class="completion-message">Class complete. Nice work.</p>
-      <ion-button (click)="restartClass()">Restart class</ion-button>
-      <ion-button fill="outline" (click)="returnToPlanner()">Back to planner</ion-button>
+      <p class="completion-message">{{ 'RUN.COMPLETION_MESSAGE' | translate }}</p>
+      <ion-button (click)="restartClass()">{{ 'RUN.RESTART_CLASS' | translate }}</ion-button>
+      <ion-button fill="outline" (click)="returnToPlanner()">{{ 'RUN.BACK_TO_PLANNER' | translate }}</ion-button>
     </section>
 
     <section class="secondary-controls" *ngIf="!isCompleted">
-      <ion-button fill="clear" (click)="confirmRestartExercise()">Restart exercise</ion-button>
-      <ion-button fill="clear" color="danger" (click)="confirmStopClass()">Stop class</ion-button>
+      <ion-button fill="clear" (click)="confirmRestartExercise()">{{ 'RUN.RESTART_EXERCISE' | translate }}</ion-button>
+      <ion-button fill="clear" color="danger" (click)="confirmStopClass()">{{ 'RUN.STOP_CLASS' | translate }}</ion-button>
     </section>
 
     <section class="detail-grid">
     <article class="detail-card">
-      <p class="eyebrow">Notes / cues</p>
-      <p>{{ currentRunExercise?.notes || 'No instructor notes for this exercise yet.' }}</p>
+      <p class="eyebrow">{{ 'RUN.NOTES_CUES' | translate }}</p>
+      <p>{{ currentRunExercise?.notes || ('RUN.NO_NOTES' | translate) }}</p>
     </article>
 
     <article class="detail-card">
-      <p class="eyebrow">Breathing</p>
+      <p class="eyebrow">{{ 'RUN.BREATHING' | translate }}</p>
       <p>{{ currentBreathingCue }}</p>
     </article>
 
     <article class="detail-card">
-      <p class="eyebrow">Next up</p>
+      <p class="eyebrow">{{ 'RUN.NEXT_UP' | translate }}</p>
       <h3>{{ nextExercise?.name || getExerciseName(nextRunExercise) }}</h3>
-      <p>{{ nextExercise?.focus || nextExercise?.shortDescription || (nextRunExercise ? 'Prepare for the next movement.' : 'Class complete') }}</p>
+      <p>{{ nextExercise?.focus || nextExercise?.shortDescription || (nextRunExercise ? ('RUN.PREPARE_NEXT' | translate) : ('RUN.CLASS_COMPLETE' | translate)) }}</p>
     </article>
     </section>
 
@@ -113,9 +113,9 @@
     <div class="warning" *ngFor="let warning of warnings">
       <ion-icon name="alert-circle-outline" aria-hidden="true"></ion-icon>
       <div>
-        <strong>Safety note</strong>
+        <strong>{{ 'RUN.SAFETY_NOTE' | translate }}</strong>
         <p>{{ warning.reason }}</p>
-        <span *ngIf="warning.alternative">Alternative: {{ warning.alternative }}</span>
+        <span *ngIf="warning.alternative">{{ 'RUN.ALTERNATIVE' | translate: { alternative: warning.alternative } }}</span>
       </div>
     </div>
     </section>

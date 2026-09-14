@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { ClassRunnerService } from '../class-runner.service';
 import { FlowDataService } from '../flow-data.service';
@@ -29,6 +30,7 @@ export class RunPage implements OnInit, OnDestroy {
     private readonly flowData: FlowDataService,
     private readonly changeDetector: ChangeDetectorRef,
     private readonly alertController: AlertController,
+    private readonly translate: TranslateService,
     private readonly router: Router
   ) {}
 
@@ -69,7 +71,7 @@ export class RunPage implements OnInit, OnDestroy {
       error: () => {
         this.bundle = null;
         this.isLoading = false;
-        this.errorMessage = 'The exercise library could not be loaded.';
+        this.errorMessage = this.translate.instant('RUN.LOAD_ERROR');
         this.changeDetector.detectChanges();
       },
     });
@@ -140,26 +142,26 @@ export class RunPage implements OnInit, OnDestroy {
 
   getExerciseName(runExercise: RunExercise | undefined): string {
     if (!runExercise || !this.bundle) {
-      return 'Ready';
+      return this.translate.instant('RUN.READY');
     }
 
     return this.flowData.findExercise(this.bundle, runExercise.exerciseId)?.name ?? runExercise.exerciseId;
   }
 
   get currentBreathingCue(): string {
-    return this.currentExercise?.breathing || 'Use a steady breath and keep the movement controlled.';
+    return this.currentExercise?.breathing || this.translate.instant('RUN.DEFAULT_BREATHING_CUE');
   }
 
   get apparatusLabel(): string {
-    return this.currentRunExercise?.apparatus || 'Mat';
+    return this.currentRunExercise?.apparatus || this.translate.instant('COMMON.MAT');
   }
 
   private announceExerciseComplete(completedExerciseId: string): void {
     this.lastCompletedExerciseId = completedExerciseId;
     const completedName = this.getExerciseName(this.state.exercises.find((exercise) => exercise.id === completedExerciseId));
     this.completionMessage = this.isCompleted
-      ? `${completedName} complete. Class finished.`
-      : `${completedName} complete. Ready for ${this.getExerciseName(this.nextRunExercise)}.`;
+      ? this.translate.instant('RUN.EXERCISE_COMPLETE', { name: completedName })
+      : this.translate.instant('RUN.EXERCISE_COMPLETE_NEXT', { name: completedName, next: this.getExerciseName(this.nextRunExercise) });
 
     if (this.classRunner.settings.exerciseEndHaptics && typeof navigator.vibrate === 'function') {
       navigator.vibrate([120, 70, 120]);
@@ -194,11 +196,11 @@ export class RunPage implements OnInit, OnDestroy {
 
   async confirmRestartExercise(): Promise<void> {
     const alert = await this.alertController.create({
-      header: 'Restart this exercise?',
-      message: 'Your current timer progress for this exercise will be reset.',
+      header: this.translate.instant('RUN.RESTART_EXERCISE_CONFIRM_HEADER'),
+      message: this.translate.instant('RUN.RESTART_EXERCISE_CONFIRM_MESSAGE'),
       buttons: [
-        { text: 'Cancel', role: 'cancel' },
-        { text: 'Restart', role: 'destructive', handler: () => this.classRunner.restartExercise() },
+        { text: this.translate.instant('COMMON.CANCEL'), role: 'cancel' },
+        { text: this.translate.instant('RUN.RESTART'), role: 'destructive', handler: () => this.classRunner.restartExercise() },
       ],
     });
     await alert.present();
@@ -206,11 +208,11 @@ export class RunPage implements OnInit, OnDestroy {
 
   async confirmStopClass(): Promise<void> {
     const alert = await this.alertController.create({
-      header: 'Stop this class?',
-      message: 'Your current run will end and its timer progress will be cleared.',
+      header: this.translate.instant('RUN.STOP_CLASS_CONFIRM_HEADER'),
+      message: this.translate.instant('RUN.STOP_CLASS_CONFIRM_MESSAGE'),
       buttons: [
-        { text: 'Keep running', role: 'cancel' },
-        { text: 'Stop class', role: 'destructive', handler: () => this.classRunner.stop() },
+        { text: this.translate.instant('RUN.KEEP_RUNNING'), role: 'cancel' },
+        { text: this.translate.instant('RUN.STOP_CLASS'), role: 'destructive', handler: () => this.classRunner.stop() },
       ],
     });
     await alert.present();

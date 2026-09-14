@@ -126,6 +126,7 @@ export interface FlowGradeReport {
 export interface LanguageOption {
   code: string;
   label: string;
+  labelKey: string;
 }
 
 export type ClassRunSource = 'planner' | 'template';

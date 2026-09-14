@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { ClassRunnerService } from '../class-runner.service';
 import { FlowDataService } from '../flow-data.service';
@@ -35,6 +36,7 @@ export class HomePage implements OnInit, OnDestroy {
     private readonly flowGradingService: FlowGradingService,
     private readonly classRunner: ClassRunnerService,
     private readonly alertController: AlertController,
+    private readonly translate: TranslateService,
     private readonly router: Router
   ) {
     this.plan = this.flowPlanService.currentPlan;
@@ -61,7 +63,7 @@ export class HomePage implements OnInit, OnDestroy {
         this.changeDetector.detectChanges();
       },
       error: () => {
-        this.errorMessage = 'FlowSmith could not load the Pilates library.';
+        this.errorMessage = this.translate.instant('HOME.LOAD_ERROR');
         this.isLoading = false;
         this.changeDetector.detectChanges();
       },
@@ -100,9 +102,9 @@ export class HomePage implements OnInit, OnDestroy {
     return this.plan.segments.reduce((total, segment) => total + segment.items.length, 0);
   }
 
-  get planSaveStatus(): string {
+  get planSavedAtTime(): string | null {
     const savedAt = this.flowPlanService.lastEditedAt;
-    return savedAt ? `Saved at ${savedAt.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}` : 'Not saved yet';
+    return savedAt ? savedAt.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }) : null;
   }
 
   get isSavedToLibrary(): boolean {
@@ -111,12 +113,12 @@ export class HomePage implements OnInit, OnDestroy {
 
   async saveFlow(): Promise<void> {
     const alert = await this.alertController.create({
-      header: this.isSavedToLibrary ? 'Update flow in library' : 'Save flow to library',
-      inputs: [{ name: 'name', type: 'text', value: this.plan.name, placeholder: 'Flow name' }],
+      header: this.translate.instant(this.isSavedToLibrary ? 'HOME.SAVE_ALERT_HEADER_UPDATE' : 'HOME.SAVE_ALERT_HEADER_NEW'),
+      inputs: [{ name: 'name', type: 'text', value: this.plan.name, placeholder: this.translate.instant('HOME.SAVE_ALERT_PLACEHOLDER') }],
       buttons: [
-        { text: 'Cancel', role: 'cancel' },
+        { text: this.translate.instant('COMMON.CANCEL'), role: 'cancel' },
         {
-          text: 'Save',
+          text: this.translate.instant('COMMON.SAVE'),
           handler: (data) => {
             this.flowPlanService.saveCurrentPlanAsFlow(data?.name);
             this.changeDetector.detectChanges();
@@ -224,15 +226,26 @@ export class HomePage implements OnInit, OnDestroy {
 
   getSegmentLabel(segment: FlowSegment): string {
     if (segment.id === 'arrival') {
-      return 'Arrive';
+      return 'HOME.SEGMENT_ARRIVE';
     }
     if (segment.id === 'closing') {
-      return 'Close';
+      return 'HOME.SEGMENT_CLOSE';
     }
     if (segment.id === 'main-flow') {
-      return 'Main';
+      return 'HOME.SEGMENT_MAIN';
     }
     return segment.name;
+  }
+
+  get gradeStatusKey(): string {
+    switch (this.flowGrade?.status) {
+      case 'strong':
+        return 'HOME.GRADE_STATUS_STRONG';
+      case 'developing':
+        return 'HOME.GRADE_STATUS_DEVELOPING';
+      default:
+        return 'HOME.GRADE_STATUS_NEEDS_ATTENTION';
+    }
   }
 
   private scrollToLibrary(): void {

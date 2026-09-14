@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject, Observable, catchError, forkJoin, map, shareReplay, throwError } from 'rxjs';
 import { Contraindication, PilatesDataBundle, Exercise, LanguageOption } from './models';
 
@@ -8,15 +9,15 @@ export class FlowDataService {
   private static readonly LANGUAGE_KEY = 'flowsmith-language';
 
   readonly languages: LanguageOption[] = [
-    { code: 'en', label: 'English' },
-    { code: 'ar', label: 'Arabic' },
-    { code: 'de', label: 'German' },
-    { code: 'es', label: 'Spanish' },
-    { code: 'fr', label: 'French' },
-    { code: 'it', label: 'Italian' },
-    { code: 'ja', label: 'Japanese' },
-    { code: 'pt', label: 'Portuguese' },
-    { code: 'zh-Hans', label: 'Chinese' },
+    { code: 'en', label: 'English', labelKey: 'SETTINGS.LANG_EN' },
+    { code: 'ar', label: 'Arabic', labelKey: 'SETTINGS.LANG_AR' },
+    { code: 'de', label: 'German', labelKey: 'SETTINGS.LANG_DE' },
+    { code: 'es', label: 'Spanish', labelKey: 'SETTINGS.LANG_ES' },
+    { code: 'fr', label: 'French', labelKey: 'SETTINGS.LANG_FR' },
+    { code: 'it', label: 'Italian', labelKey: 'SETTINGS.LANG_IT' },
+    { code: 'ja', label: 'Japanese', labelKey: 'SETTINGS.LANG_JA' },
+    { code: 'pt', label: 'Portuguese', labelKey: 'SETTINGS.LANG_PT' },
+    { code: 'zh-Hans', label: 'Chinese', labelKey: 'SETTINGS.LANG_ZH' },
   ];
 
   private readonly dataSubject = new BehaviorSubject<PilatesDataBundle | null>(null);
@@ -27,7 +28,14 @@ export class FlowDataService {
 
   private readonly bundleCache = new Map<string, Observable<PilatesDataBundle>>();
 
-  constructor(private readonly http: HttpClient) {}
+  constructor(
+    private readonly http: HttpClient,
+    private readonly translate: TranslateService
+  ) {
+    this.translate.addLangs(this.languages.map((language) => language.code));
+    this.translate.setDefaultLang('en');
+    this.translate.use(this.currentLanguage);
+  }
 
   get currentLanguage(): string {
     return this.languageSubject.value;
@@ -40,6 +48,7 @@ export class FlowDataService {
 
     localStorage.setItem(FlowDataService.LANGUAGE_KEY, language);
     this.languageSubject.next(language);
+    this.translate.use(language);
   }
 
   private readStoredLanguage(): string {

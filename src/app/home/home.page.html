@@ -1,54 +1,55 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>FlowSmith</ion-title>
+    <ion-title>{{ 'HOME.HEADER_TITLE' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">FlowSmith</ion-title>
+      <ion-title size="large">{{ 'HOME.HEADER_TITLE' | translate }}</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <section class="planner-hero">
     <div>
-      <p class="eyebrow">Timeline planner</p>
+      <p class="eyebrow">{{ 'HOME.HERO_EYEBROW' | translate }}</p>
       <h1>{{ plan.name }}</h1>
       <p>{{ plan.goal }}</p>
       <small class="plan-save-status">
-        {{ planSaveStatus }}
-        <span class="library-badge" *ngIf="isSavedToLibrary">In library</span>
+        <ng-container *ngIf="planSavedAtTime as time; else notSavedYet">{{ 'HOME.SAVE_SAVED_AT' | translate: { time: time } }}</ng-container>
+        <ng-template #notSavedYet>{{ 'HOME.SAVE_NOT_SAVED' | translate }}</ng-template>
+        <span class="library-badge" *ngIf="isSavedToLibrary">{{ 'HOME.IN_LIBRARY' | translate }}</span>
       </small>
     </div>
 
     <div class="hero-stats" aria-label="Plan summary">
-      <span><strong>{{ planDurationMinutes }}</strong> min</span>
-      <span><strong>{{ plan.segments.length }}</strong> sections</span>
-      <span><strong>{{ planExerciseCount }}</strong> exercises</span>
+      <span><strong>{{ planDurationMinutes }}</strong> {{ 'HOME.STAT_MIN' | translate }}</span>
+      <span><strong>{{ plan.segments.length }}</strong> {{ 'HOME.STAT_SECTIONS' | translate }}</span>
+      <span><strong>{{ planExerciseCount }}</strong> {{ 'HOME.STAT_EXERCISES' | translate }}</span>
     </div>
 
     <ion-button *ngIf="planExerciseCount; else addFirstExerciseButton" expand="block" class="start-class-button" (click)="startClass()">
       <ion-icon name="play-outline" slot="start" aria-hidden="true"></ion-icon>
-      Start class
+      {{ 'HOME.START_CLASS' | translate }}
     </ion-button>
     <ng-template #addFirstExerciseButton>
       <ion-button expand="block" class="start-class-button" (click)="addFirstExercise()">
         <ion-icon name="add-outline" slot="start" aria-hidden="true"></ion-icon>
-        Add first exercise
+        {{ 'HOME.ADD_FIRST_EXERCISE' | translate }}
       </ion-button>
     </ng-template>
 
     <ion-button fill="outline" expand="block" class="save-flow-button" [disabled]="!planExerciseCount" (click)="saveFlow()">
       <ion-icon name="bookmark-outline" slot="start" aria-hidden="true"></ion-icon>
-      {{ isSavedToLibrary ? 'Update saved flow' : 'Save to library' }}
+      {{ (isSavedToLibrary ? 'HOME.UPDATE_SAVED_FLOW' : 'HOME.SAVE_TO_LIBRARY') | translate }}
     </ion-button>
   </section>
 
   <section class="control-strip" aria-label="Find an exercise">
     <ion-searchbar
       class="exercise-search"
-      placeholder="Search exercises, focus, equipment"
+      [placeholder]="'HOME.SEARCH_PLACEHOLDER' | translate"
       debounce="250"
       [(ngModel)]="searchTerm"
     ></ion-searchbar>
@@ -59,15 +60,15 @@
   <section class="grade-panel" [class.is-empty]="planExerciseCount === 0" *ngIf="flowGrade as grade" aria-labelledby="flow-grade-title">
     <div class="grade-summary">
       <div>
-        <p class="eyebrow">Flow review</p>
+        <p class="eyebrow">{{ 'HOME.GRADE_EYEBROW' | translate }}</p>
         <ng-container *ngIf="planExerciseCount; else emptyGradeTitle">
           <h2 id="flow-grade-title">{{ grade.overallScore }}<span>/100</span></h2>
-          <p>{{ grade.status === 'strong' ? 'A well-shaped sequence.' : grade.status === 'developing' ? 'A promising sequence with a few gaps.' : 'This sequence needs a little more structure.' }}</p>
-          <small class="grade-context">{{ planExerciseCount }} exercises reviewed</small>
+          <p>{{ gradeStatusKey | translate }}</p>
+          <small class="grade-context">{{ 'HOME.GRADE_EXERCISES_REVIEWED' | translate: { count: planExerciseCount } }}</small>
         </ng-container>
         <ng-template #emptyGradeTitle>
-          <h2 id="flow-grade-title">Ready to build</h2>
-          <p>Add exercises to review balance, progression, breath, and transitions.</p>
+          <h2 id="flow-grade-title">{{ 'HOME.GRADE_READY_TITLE' | translate }}</h2>
+          <p>{{ 'HOME.GRADE_READY_BODY' | translate }}</p>
         </ng-template>
       </div>
       <div class="grade-ring" [class.is-strong]="grade.status === 'strong'" [class.is-developing]="grade.status === 'developing'">
@@ -77,7 +78,7 @@
 
     <details class="grade-dimensions" *ngIf="planExerciseCount">
       <summary>
-        <span>Review dimensions</span>
+        <span>{{ 'HOME.GRADE_DIMENSIONS' | translate }}</span>
         <span>{{ grade.categories.length }}</span>
       </summary>
       <div class="grade-categories" aria-label="Flow grade categories">
@@ -92,13 +93,13 @@
     </details>
 
     <div class="grade-strengths" *ngIf="planExerciseCount && grade.strengths.length">
-      <strong>Working well</strong>
+      <strong>{{ 'HOME.GRADE_WORKING_WELL' | translate }}</strong>
       <p *ngFor="let strength of grade.strengths">{{ strength }}</p>
     </div>
 
     <details class="grade-findings" *ngIf="grade.shortcomings.length">
       <summary>
-        <span>{{ planExerciseCount ? 'What could improve' : 'Next step' }}</span>
+        <span>{{ (planExerciseCount ? 'HOME.GRADE_WHAT_COULD_IMPROVE' : 'HOME.GRADE_NEXT_STEP') | translate }}</span>
         <ion-badge color="warning">{{ grade.shortcomings.length }}</ion-badge>
       </summary>
       <article class="grade-finding" *ngFor="let issue of grade.shortcomings">
@@ -109,7 +110,7 @@
     </details>
 
     <ion-button *ngIf="!planExerciseCount" fill="outline" size="small" class="grade-add-button" (click)="addFirstExercise()">
-      Browse exercises
+      {{ 'HOME.GRADE_BROWSE_EXERCISES' | translate }}
       <ion-icon name="arrow-down-outline" slot="end" aria-hidden="true"></ion-icon>
     </ion-button>
   </section>
@@ -129,7 +130,7 @@
     (ionChange)="selectSegment($any($event).detail.value)"
   >
     <ion-segment-button *ngFor="let segment of plan.segments; trackBy: trackSegment" [value]="segment.id">
-      <ion-label>{{ getSegmentLabel(segment) }}</ion-label>
+      <ion-label>{{ getSegmentLabel(segment) | translate }}</ion-label>
     </ion-segment-button>
   </ion-segment>
 
@@ -151,8 +152,8 @@
 
         <div class="segment-empty" *ngIf="!segment.items.length">
           <ion-icon name="add-circle-outline" aria-hidden="true"></ion-icon>
-          <span>No exercises in this section yet.</span>
-          <ion-button fill="clear" size="small" (click)="addFirstExercise()">Browse library</ion-button>
+          <span>{{ 'HOME.SEGMENT_EMPTY' | translate }}</span>
+          <ion-button fill="clear" size="small" (click)="addFirstExercise()">{{ 'COMMON.BROWSE_LIBRARY' | translate }}</ion-button>
         </div>
 
         <div
@@ -167,23 +168,23 @@
               min="1"
               [ngModel]="item.durationMinutes"
               (ngModelChange)="updateDuration(item, $event)"
-              aria-label="Duration minutes"
+              [attr.aria-label]="'HOME.DURATION_ARIA' | translate"
             ></ion-input>
-            <span>min</span>
+            <span>{{ 'HOME.STAT_MIN' | translate }}</span>
           </div>
 
           <div class="item-body">
             <div class="item-heading">
               <div>
                 <h3>{{ getExercise(item)?.name || item.exerciseId }}</h3>
-                <p>{{ getExercise(item)?.focus || getExercise(item)?.shortDescription || 'Imported from FlowSmith' }}</p>
+                <p>{{ getExercise(item)?.focus || getExercise(item)?.shortDescription || ('HOME.IMPORTED_FALLBACK' | translate) }}</p>
               </div>
               <ion-chip>{{ item.apparatus }}</ion-chip>
             </div>
 
             <ion-textarea
               autoGrow="true"
-              placeholder="Instructor notes or cues"
+              [placeholder]="'HOME.NOTES_PLACEHOLDER' | translate"
               [(ngModel)]="item.notes"
               (ngModelChange)="updateNotes(item, $event)"
             ></ion-textarea>
@@ -192,25 +193,25 @@
               <div class="warning" *ngFor="let warning of getWarnings(item)">
                 <ion-icon name="alert-circle-outline" aria-hidden="true"></ion-icon>
                 <div>
-                  <strong>Safety note</strong>
+                  <strong>{{ 'HOME.SAFETY_NOTE' | translate }}</strong>
                   <p>{{ warning.reason }}</p>
-                  <span *ngIf="warning.alternative">Alternative: {{ warning.alternative }}</span>
+                  <span *ngIf="warning.alternative">{{ 'HOME.ALTERNATIVE' | translate: { alternative: warning.alternative } }}</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="item-actions" aria-label="Timeline item actions">
-            <ion-button fill="clear" size="small" aria-label="Move exercise up" (click)="moveItem(segment, item, -1)">
+            <ion-button fill="clear" size="small" [attr.aria-label]="'HOME.MOVE_UP_ARIA' | translate" (click)="moveItem(segment, item, -1)">
               <ion-icon name="chevron-up-outline" slot="icon-only" aria-hidden="true"></ion-icon>
             </ion-button>
-            <ion-button fill="clear" size="small" aria-label="Move exercise down" (click)="moveItem(segment, item, 1)">
+            <ion-button fill="clear" size="small" [attr.aria-label]="'HOME.MOVE_DOWN_ARIA' | translate" (click)="moveItem(segment, item, 1)">
               <ion-icon name="chevron-down-outline" slot="icon-only" aria-hidden="true"></ion-icon>
             </ion-button>
-            <ion-button fill="clear" size="small" aria-label="Duplicate exercise" (click)="duplicateItem(segment, item)">
+            <ion-button fill="clear" size="small" [attr.aria-label]="'HOME.DUPLICATE_ARIA' | translate" (click)="duplicateItem(segment, item)">
               <ion-icon name="copy-outline" slot="icon-only" aria-hidden="true"></ion-icon>
             </ion-button>
-            <ion-button fill="clear" color="danger" size="small" aria-label="Remove exercise" (click)="removeItem(segment, item)">
+            <ion-button fill="clear" color="danger" size="small" [attr.aria-label]="'HOME.REMOVE_ARIA' | translate" (click)="removeItem(segment, item)">
               <ion-icon name="trash-outline" slot="icon-only" aria-hidden="true"></ion-icon>
             </ion-button>
           </div>
@@ -221,16 +222,16 @@
     <aside class="library-panel" aria-label="Exercise library">
       <header>
         <div>
-          <p class="eyebrow">FlowSmith library</p>
-          <h2>Add exercises</h2>
+          <p class="eyebrow">{{ 'HOME.LIBRARY_PANEL_EYEBROW' | translate }}</p>
+          <h2>{{ 'HOME.ADD_EXERCISES' | translate }}</h2>
         </div>
-        <span>{{ filteredExercises.length }} shown</span>
+        <span>{{ 'HOME.SHOWN_COUNT' | translate: { count: filteredExercises.length } }}</span>
       </header>
 
       <button class="exercise-result" type="button" *ngFor="let exercise of filteredExercises; trackBy: trackExercise" (click)="addExercise(exercise)">
         <span>
           <strong>{{ exercise.name }}</strong>
-          <small>{{ exercise.level }} · {{ exercise.category }} · {{ exercise.equipment || 'Mat' }}</small>
+          <small>{{ exercise.level }} · {{ exercise.category }} · {{ exercise.equipment || ('COMMON.MAT' | translate) }}</small>
         </span>
         <ion-icon name="add-circle-outline" aria-hidden="true"></ion-icon>
       </button>

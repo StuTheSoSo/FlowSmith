@@ -1,9 +1,15 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { onboardingGuard } from './onboarding/onboarding.guard';
 
 const routes: Routes = [
   {
+    path: 'onboarding',
+    loadChildren: () => import('./onboarding/onboarding.module').then( m => m.OnboardingPageModule)
+  },
+  {
     path: 'home',
+    canActivate: [onboardingGuard],
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {

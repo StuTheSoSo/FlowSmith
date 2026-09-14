@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { ClassRunnerService } from '../class-runner.service';
 import { FlowDataService } from '../flow-data.service';
@@ -31,6 +32,7 @@ export class TemplatesPage implements OnInit, OnDestroy {
     private readonly flowPlanService: FlowPlanService,
     private readonly classRunner: ClassRunnerService,
     private readonly alertController: AlertController,
+    private readonly translate: TranslateService,
     private readonly router: Router,
     private readonly changeDetector: ChangeDetectorRef
   ) {}
@@ -68,7 +70,7 @@ export class TemplatesPage implements OnInit, OnDestroy {
       error: () => {
         this.bundle = null;
         this.isLoading = false;
-        this.errorMessage = 'FlowSmith could not load templates.';
+        this.errorMessage = this.translate.instant('TEMPLATES.ERROR_BODY');
         this.changeDetector.detectChanges();
       },
     });
@@ -157,11 +159,11 @@ export class TemplatesPage implements OnInit, OnDestroy {
 
   async confirmDeleteFlow(flow: FlowPlan): Promise<void> {
     const alert = await this.alertController.create({
-      header: 'Delete this flow?',
-      message: `"${flow.name}" will be removed from your library. This can't be undone.`,
+      header: this.translate.instant('TEMPLATES.DELETE_CONFIRM_HEADER'),
+      message: this.translate.instant('TEMPLATES.DELETE_CONFIRM_MESSAGE', { name: flow.name }),
       buttons: [
-        { text: 'Cancel', role: 'cancel' },
-        { text: 'Delete', role: 'destructive', handler: () => this.flowPlanService.deleteSavedFlow(flow.id) },
+        { text: this.translate.instant('COMMON.CANCEL'), role: 'cancel' },
+        { text: this.translate.instant('COMMON.DELETE'), role: 'destructive', handler: () => this.flowPlanService.deleteSavedFlow(flow.id) },
       ],
     });
     await alert.present();

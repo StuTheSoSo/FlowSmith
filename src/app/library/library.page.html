@@ -1,20 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Exercise Library</ion-title>
+    <ion-title>{{ 'LIBRARY.TITLE' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Exercise Library</ion-title>
+      <ion-title size="large">{{ 'LIBRARY.TITLE' | translate }}</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <section class="control-strip">
     <ion-searchbar
       class="exercise-search"
-      placeholder="Search exercises, focus, equipment"
+      [placeholder]="'LIBRARY.SEARCH_PLACEHOLDER' | translate"
       debounce="250"
       [(ngModel)]="searchTerm"
     ></ion-searchbar>
@@ -22,21 +22,21 @@
 
   <section class="page-state-card" *ngIf="isLoading" aria-live="polite">
     <ion-spinner name="crescent" aria-hidden="true"></ion-spinner>
-    <strong>Loading exercises</strong>
-    <span>Preparing the FlowSmith library.</span>
+    <strong>{{ 'LIBRARY.LOADING_TITLE' | translate }}</strong>
+    <span>{{ 'LIBRARY.LOADING_BODY' | translate }}</span>
   </section>
 
   <section class="page-state-card error-state" *ngIf="!isLoading && errorMessage" role="alert">
     <ion-icon name="cloud-offline-outline" aria-hidden="true"></ion-icon>
-    <strong>Library unavailable</strong>
-    <span>Try loading the exercise library again.</span>
-    <ion-button fill="outline" size="small" (click)="retryLoad()">Try again</ion-button>
+    <strong>{{ 'LIBRARY.ERROR_TITLE' | translate }}</strong>
+    <span>{{ 'LIBRARY.ERROR_BODY' | translate }}</span>
+    <ion-button fill="outline" size="small" (click)="retryLoad()">{{ 'COMMON.TRY_AGAIN' | translate }}</ion-button>
   </section>
 
   <section class="results-panel" *ngIf="!isLoading && !errorMessage" aria-label="Exercise library results">
     <header>
-      <p class="eyebrow">FlowSmith library</p>
-      <span>{{ filteredExercises.length }} shown of {{ totalExerciseCount }}</span>
+      <p class="eyebrow">{{ 'LIBRARY.EYEBROW' | translate }}</p>
+      <span>{{ 'LIBRARY.SHOWN_OF' | translate: { shown: filteredExercises.length, total: totalExerciseCount } }}</span>
     </header>
 
     <article
@@ -50,7 +50,7 @@
     >
       <span>
         <strong>{{ exercise.name }}</strong>
-        <small>{{ exercise.level }} · {{ exercise.category }} · {{ exercise.equipment || 'Mat' }}</small>
+        <small>{{ exercise.level }} · {{ exercise.category }} · {{ exercise.equipment || ('COMMON.MAT' | translate) }}</small>
         <small *ngIf="exercise.shortDescription">{{ exercise.shortDescription }}</small>
       </span>
       <ion-icon name="information-circle-outline" aria-hidden="true"></ion-icon>
@@ -58,9 +58,9 @@
 
     <div class="empty-results" *ngIf="!filteredExercises.length">
       <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-      <strong>No exercises found</strong>
-      <span>Try a broader search, such as core, mat, or breath.</span>
-      <ion-button fill="clear" size="small" (click)="clearSearch()">Clear search</ion-button>
+      <strong>{{ 'LIBRARY.EMPTY_TITLE' | translate }}</strong>
+      <span>{{ 'LIBRARY.EMPTY_BODY' | translate }}</span>
+      <ion-button fill="clear" size="small" (click)="clearSearch()">{{ 'LIBRARY.CLEAR_SEARCH' | translate }}</ion-button>
     </div>
   </section>
 
@@ -71,7 +71,7 @@
         <ion-toolbar>
           <ion-title id="exercise-detail-title">{{ selectedExercise?.name }}</ion-title>
           <ion-buttons slot="end">
-            <ion-button fill="clear" aria-label="Close exercise details" (click)="closeExercise()">
+            <ion-button fill="clear" [attr.aria-label]="'LIBRARY.CLOSE_DETAILS_ARIA' | translate" (click)="closeExercise()">
               <ion-icon name="close-outline" slot="icon-only" aria-hidden="true"></ion-icon>
             </ion-button>
           </ion-buttons>
@@ -80,28 +80,28 @@
 
       <ion-content fullscreen class="exercise-detail-content">
         <section class="detail-hero" *ngIf="selectedExercise as exercise">
-          <p class="eyebrow">{{ exercise.level || 'Exercise' }} · {{ exercise.category || 'Pilates' }}</p>
+          <p class="eyebrow">{{ exercise.level || ('LIBRARY.EXERCISE_FALLBACK' | translate) }} · {{ exercise.category || ('LIBRARY.PILATES_FALLBACK' | translate) }}</p>
           <h1>{{ exercise.name }}</h1>
-          <p>{{ exercise.shortDescription || exercise.focus || 'Imported from FlowSmith.' }}</p>
+          <p>{{ exercise.shortDescription || exercise.focus || ('LIBRARY.IMPORTED_FALLBACK' | translate) }}</p>
 
           <div class="detail-chip-row">
-            <ion-chip>{{ exercise.equipment || 'Mat' }}</ion-chip>
+            <ion-chip>{{ exercise.equipment || ('COMMON.MAT' | translate) }}</ion-chip>
             <ion-chip *ngIf="exercise.reps">{{ exercise.reps }}</ion-chip>
           </div>
         </section>
 
         <section class="detail-section" *ngIf="selectedExercise?.focus">
-          <h2>Focus</h2>
+          <h2>{{ 'LIBRARY.FOCUS' | translate }}</h2>
           <p>{{ selectedExercise?.focus }}</p>
         </section>
 
         <section class="detail-section" *ngIf="selectedExercise?.setup">
-          <h2>Setup</h2>
+          <h2>{{ 'LIBRARY.SETUP' | translate }}</h2>
           <p>{{ selectedExercise?.setup }}</p>
         </section>
 
         <section class="detail-section" *ngIf="getExerciseInstructions(selectedExercise).length">
-          <h2>Instructions</h2>
+          <h2>{{ 'LIBRARY.INSTRUCTIONS' | translate }}</h2>
           <ol>
             <li *ngFor="let step of getExerciseInstructions(selectedExercise)">{{ step }}</li>
           </ol>
@@ -109,34 +109,34 @@
 
         <section class="detail-grid">
           <article class="detail-section" *ngIf="selectedExercise?.breathing">
-            <h2>Breathing</h2>
+            <h2>{{ 'LIBRARY.BREATHING' | translate }}</h2>
             <p>{{ selectedExercise?.breathing }}</p>
           </article>
 
           <article class="detail-section" *ngIf="selectedExercise?.primaryMuscles?.length">
-            <h2>Primary muscles</h2>
+            <h2>{{ 'LIBRARY.PRIMARY_MUSCLES' | translate }}</h2>
             <p>{{ selectedExercise?.primaryMuscles?.join(', ') }}</p>
           </article>
         </section>
 
         <section class="detail-section" *ngIf="selectedExercise?.teachingCues?.length">
-          <h2>Teaching cues</h2>
+          <h2>{{ 'LIBRARY.TEACHING_CUES' | translate }}</h2>
           <ul>
             <li *ngFor="let cue of selectedExercise?.teachingCues">{{ cue }}</li>
           </ul>
         </section>
 
         <section class="detail-section" *ngIf="selectedExercise?.modifications?.length">
-          <h2>Modifications</h2>
+          <h2>{{ 'LIBRARY.MODIFICATIONS' | translate }}</h2>
           <ul>
             <li *ngFor="let modification of selectedExercise?.modifications">{{ modification }}</li>
           </ul>
         </section>
 
         <section class="detail-section safety-section" *ngIf="selectedExercise?.contraindicationsNote || selectedExercise?.alternativeExercise">
-          <h2>Safety</h2>
+          <h2>{{ 'LIBRARY.SAFETY' | translate }}</h2>
           <p *ngIf="selectedExercise?.contraindicationsNote">{{ selectedExercise?.contraindicationsNote }}</p>
-          <p *ngIf="selectedExercise?.alternativeExercise"><strong>Alternative:</strong> {{ selectedExercise?.alternativeExercise }}</p>
+          <p *ngIf="selectedExercise?.alternativeExercise"><strong>{{ 'LIBRARY.ALTERNATIVE_LABEL' | translate }}</strong> {{ selectedExercise?.alternativeExercise }}</p>
         </section>
       </ion-content>
     </ng-template>

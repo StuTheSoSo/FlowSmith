@@ -1,0 +1,54 @@
+<ion-content [fullscreen]="true" class="onboarding-content">
+  <div class="onboarding-shell">
+    <button class="skip-button" type="button" *ngIf="!isLastStep" (click)="skip()">{{ 'ONBOARDING.SKIP' | translate }}</button>
+
+    <div class="step-card">
+      <div class="step-icon">
+        <ion-icon [name]="currentStep.icon" aria-hidden="true"></ion-icon>
+      </div>
+
+      <p class="eyebrow">{{ currentStep.eyebrowKey | translate }}</p>
+      <h1>{{ currentStep.titleKey | translate }}</h1>
+      <p class="step-body">{{ currentStep.bodyKey | translate }}</p>
+
+      <ul class="step-bullets" *ngIf="currentStep.bulletKeys?.length">
+        <li *ngFor="let bulletKey of currentStep.bulletKeys">{{ bulletKey | translate }}</li>
+      </ul>
+
+      <div class="cta-row" *ngIf="isLastStep">
+        <ion-button expand="block" (click)="startBlankFlow()">
+          <ion-icon name="add-outline" slot="start" aria-hidden="true"></ion-icon>
+          {{ 'ONBOARDING.START_BLANK_FLOW' | translate }}
+        </ion-button>
+        <ion-button expand="block" fill="outline" (click)="browseTemplates()">
+          <ion-icon name="copy-outline" slot="start" aria-hidden="true"></ion-icon>
+          {{ 'ONBOARDING.BROWSE_TEMPLATES' | translate }}
+        </ion-button>
+        <ion-button expand="block" fill="clear" (click)="browseLibrary()">
+          <ion-icon name="library-outline" slot="start" aria-hidden="true"></ion-icon>
+          {{ 'ONBOARDING.EXPLORE_LIBRARY' | translate }}
+        </ion-button>
+      </div>
+    </div>
+
+    <div class="progress-dots" role="tablist" aria-label="Onboarding progress">
+      <button
+        type="button"
+        class="dot"
+        *ngFor="let step of steps; let i = index; trackBy: trackStep"
+        [class.is-active]="i === currentStepIndex"
+        [attr.aria-current]="i === currentStepIndex"
+        [attr.aria-label]="'Go to step ' + (i + 1) + ' of ' + steps.length"
+        (click)="goToStep(i)"
+      ></button>
+    </div>
+
+    <div class="nav-row">
+      <ion-button fill="clear" [disabled]="isFirstStep" (click)="back()">{{ 'ONBOARDING.BACK' | translate }}</ion-button>
+      <ion-button *ngIf="!isLastStep" (click)="next()">
+        {{ 'ONBOARDING.NEXT' | translate }}
+        <ion-icon name="arrow-forward-outline" slot="end" aria-hidden="true"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
