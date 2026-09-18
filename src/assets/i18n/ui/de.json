@@ -15,6 +15,14 @@
     "BROWSE_LIBRARY": "Bibliothek durchsuchen"
   },
   "HOME": {
+    "ITEM_ACTIONS": "Übungsaktionen",
+    "PICKER_DONE": "Fertig",
+    "PICKER_EQUIPMENT": "Geräte",
+    "PICKER_LEVEL": "Niveau",
+    "PICKER_ALL": "Alle",
+    "PICKER_NO_RESULTS": "Keine Übungen entsprechen diesen Filtern.",
+    "PICKER_IN_SECTION": "In diesem Abschnitt: {{count}}",
+    "PICKER_ADDED": "Hinzugefügt: {{count}}",
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "Zeitplan-Planer",
     "PLAN_NAME_ARIA": "Name des Flows",

@@ -15,6 +15,14 @@
     "BROWSE_LIBRARY": "تصفح المكتبة"
   },
   "HOME": {
+    "ITEM_ACTIONS": "إجراءات التمرين",
+    "PICKER_DONE": "تم",
+    "PICKER_EQUIPMENT": "المعدات",
+    "PICKER_LEVEL": "المستوى",
+    "PICKER_ALL": "الكل",
+    "PICKER_NO_RESULTS": "لا توجد تمارين تطابق هذه الفلاتر.",
+    "PICKER_IN_SECTION": "في هذا القسم: {{count}}",
+    "PICKER_ADDED": "تمت الإضافة: {{count}}",
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "مخطط الجدول الزمني",
     "PLAN_NAME_ARIA": "اسم التدفق",

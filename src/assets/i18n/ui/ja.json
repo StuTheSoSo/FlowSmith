@@ -15,6 +15,14 @@
     "BROWSE_LIBRARY": "ライブラリを見る"
   },
   "HOME": {
+    "ITEM_ACTIONS": "エクササイズの操作",
+    "PICKER_DONE": "完了",
+    "PICKER_EQUIPMENT": "器具",
+    "PICKER_LEVEL": "レベル",
+    "PICKER_ALL": "すべて",
+    "PICKER_NO_RESULTS": "条件に一致するエクササイズはありません。",
+    "PICKER_IN_SECTION": "このセクション内：{{count}}",
+    "PICKER_ADDED": "追加済み：{{count}}",
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "タイムラインプランナー",
     "PLAN_NAME_ARIA": "フロー名",

@@ -15,6 +15,14 @@
     "BROWSE_LIBRARY": "Browse library"
   },
   "HOME": {
+    "ITEM_ACTIONS": "Exercise actions",
+    "PICKER_DONE": "Done",
+    "PICKER_EQUIPMENT": "Equipment",
+    "PICKER_LEVEL": "Level",
+    "PICKER_ALL": "All",
+    "PICKER_NO_RESULTS": "No exercises match these filters.",
+    "PICKER_IN_SECTION": "In this section: {{count}}",
+    "PICKER_ADDED": "Added: {{count}}",
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "Timeline planner",
     "PLAN_NAME_ARIA": "Flow name",

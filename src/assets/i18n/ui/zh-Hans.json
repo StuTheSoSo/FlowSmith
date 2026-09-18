@@ -15,6 +15,14 @@
     "BROWSE_LIBRARY": "浏览资料库"
   },
   "HOME": {
+    "ITEM_ACTIONS": "动作操作",
+    "PICKER_DONE": "完成",
+    "PICKER_EQUIPMENT": "器械",
+    "PICKER_LEVEL": "级别",
+    "PICKER_ALL": "全部",
+    "PICKER_NO_RESULTS": "没有符合筛选条件的动作。",
+    "PICKER_IN_SECTION": "本节动作数：{{count}}",
+    "PICKER_ADDED": "已添加：{{count}}",
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "时间轴计划器",
     "PLAN_NAME_ARIA": "训练流名称",

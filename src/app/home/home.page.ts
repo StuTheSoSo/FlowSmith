@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController } from '@ionic/angular';
+import { ActionSheetController, AlertController } from '@ionic/angular';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
@@ -24,6 +24,12 @@ export class HomePage implements OnInit, OnDestroy {
   isLoading = true;
   errorMessage = '';
   flowGrade: FlowGradeReport | null = null;
+  gradeExpanded = true;
+  pickerOpen = false;
+  equipmentFilter = '';
+  levelFilter = '';
+  expandedItemId = '';
+  pickerAddedCount = 0;
 
   private languageSubscription?: Subscription;
   private highlightTimeout?: ReturnType<typeof setTimeout>;
@@ -38,7 +44,8 @@ export class HomePage implements OnInit, OnDestroy {
     private readonly classRunner: ClassRunnerService,
     private readonly alertController: AlertController,
     private readonly translate: TranslateService,
-    private readonly router: Router
+    private readonly router: Router,
+    private readonly actionSheetController: ActionSheetController
   ) {
     this.plan = this.flowPlanService.currentPlan;
   }
@@ -75,20 +82,60 @@ export class HomePage implements OnInit, OnDestroy {
     return this.plan.segments.find((segment) => segment.id === this.selectedSegmentId) ?? this.plan.segments[0];
   }
 
-  selectSegment(segmentId: string): void {
-    this.selectedSegmentId = segmentId;
-
-    this.scrollTimelineTo(document.getElementById(`segment-${segmentId}`));
-  }
-
-  private scrollTimelineTo(target: HTMLElement | null): void {
-    // scrollIntoView finds whichever ancestor actually scrolls, whether that's
-    // .timeline (desktop split view) or ion-content itself (mobile single column).
-    target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  openExercisePicker(segment: FlowSegment): void {
+    this.selectedSegmentId = segment.id;
+    this.searchTerm = '';
+    this.equipmentFilter = '';
+    this.levelFilter = '';
+    this.pickerAddedCount = 0;
+    this.pickerOpen = true;
   }
 
   get filteredExercises(): Exercise[] {
-    return this.flowData.searchExercises(this.bundle, this.searchTerm);
+    return this.flowData.searchExercises(this.bundle, this.searchTerm).filter((exercise) =>
+      (!this.equipmentFilter || exercise.equipment === this.equipmentFilter) &&
+      (!this.levelFilter || exercise.level === this.levelFilter)
+    );
+  }
+
+  get equipmentOptions(): string[] {
+    return [...new Set(this.bundle?.exercises.map((exercise) => exercise.equipment).filter((value): value is string => !!value) ?? [])].sort();
+  }
+
+  get levelOptions(): string[] {
+    return [...new Set(this.bundle?.exercises.map((exercise) => exercise.level).filter((value): value is string => !!value) ?? [])].sort();
+  }
+
+  getExerciseCountInSection(exercise: Exercise): number {
+    return this.selectedSegment.items.filter((item) => item.exerciseId === exercise.id).length;
+  }
+
+  toggleItem(item: FlowItem): void {
+    this.expandedItemId = this.expandedItemId === item.id ? '' : item.id;
+  }
+
+  async showItemActions(segment: FlowSegment, item: FlowItem): Promise<void> {
+    const sheet = await this.actionSheetController.create({
+      header: this.getExercise(item)?.name || item.exerciseId,
+      buttons: [
+        { text: this.translate.instant('HOME.DUPLICATE_ARIA'), icon: 'copy-outline', handler: () => this.duplicateItem(segment, item) },
+        { text: this.translate.instant('HOME.MOVE_UP_ARIA'), icon: 'arrow-up-outline', handler: () => this.moveItem(segment, item, -1) },
+        { text: this.translate.instant('HOME.MOVE_DOWN_ARIA'), icon: 'arrow-down-outline', handler: () => this.moveItem(segment, item, 1) },
+        { text: this.translate.instant('HOME.REMOVE_ARIA'), icon: 'trash-outline', role: 'destructive', handler: () => this.removeItem(segment, item) },
+        { text: this.translate.instant('COMMON.CANCEL'), role: 'cancel' },
+      ],
+    });
+    await sheet.present();
+  }
+
+  moveItem(segment: FlowSegment, item: FlowItem, direction: number): void {
+    const index = segment.items.indexOf(item);
+    const nextIndex = index + direction;
+    if (index < 0 || nextIndex < 0 || nextIndex >= segment.items.length) {
+      return;
+    }
+    moveItemInArray(segment.items, index, nextIndex);
+    this.commitPlanChange();
   }
 
   get planDurationMinutes(): number {
@@ -136,12 +183,12 @@ export class HomePage implements OnInit, OnDestroy {
   addExercise(exercise: Exercise): void {
     const item = this.createItem(exercise.id, 5, exercise.equipment ?? exercise.category ?? 'Mat', '');
     this.selectedSegment.items.push(item);
+    this.pickerAddedCount += 1;
     this.commitPlanChange();
     this.highlightedItemId = item.id;
     clearTimeout(this.highlightTimeout);
     this.changeDetector.detectChanges();
 
-    requestAnimationFrame(() => this.scrollTimelineTo(document.getElementById(`item-${item.id}`)));
     this.highlightTimeout = setTimeout(() => {
       this.highlightedItemId = '';
       this.changeDetector.detectChanges();
@@ -150,7 +197,7 @@ export class HomePage implements OnInit, OnDestroy {
 
   startClass(): void {
     if (!this.planExerciseCount) {
-      this.scrollToLibrary();
+      this.addFirstExercise();
       return;
     }
 
@@ -159,7 +206,7 @@ export class HomePage implements OnInit, OnDestroy {
   }
 
   addFirstExercise(): void {
-    this.scrollToLibrary();
+    this.openExercisePicker(this.plan.segments[0]);
   }
 
   removeItem(segment: FlowSegment, item: FlowItem): void {
@@ -191,7 +238,7 @@ export class HomePage implements OnInit, OnDestroy {
 
   updateNotes(item: FlowItem, value: unknown): void {
     item.notes = String(value ?? '');
-    this.commitPlanChange();
+    this.flowPlanService.updateCurrentPlan(this.plan);
   }
 
   updatePlanName(value: unknown): void {
@@ -287,8 +334,8 @@ export class HomePage implements OnInit, OnDestroy {
     }
   }
 
-  private scrollToLibrary(): void {
-    document.querySelector<HTMLElement>('.library-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  toggleGradeExpanded(): void {
+    this.gradeExpanded = !this.gradeExpanded;
   }
 
   private commitPlanChange(): void {

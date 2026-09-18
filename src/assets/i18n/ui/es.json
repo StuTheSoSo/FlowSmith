@@ -15,6 +15,14 @@
     "BROWSE_LIBRARY": "Explorar biblioteca"
   },
   "HOME": {
+    "ITEM_ACTIONS": "Acciones del ejercicio",
+    "PICKER_DONE": "Listo",
+    "PICKER_EQUIPMENT": "Equipo",
+    "PICKER_LEVEL": "Nivel",
+    "PICKER_ALL": "Todos",
+    "PICKER_NO_RESULTS": "Ningún ejercicio coincide con estos filtros.",
+    "PICKER_IN_SECTION": "En esta sección: {{count}}",
+    "PICKER_ADDED": "Añadidos: {{count}}",
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "Planificador de clases",
     "PLAN_NAME_ARIA": "Nombre del flujo",

@@ -15,6 +15,14 @@
     "BROWSE_LIBRARY": "Sfoglia la libreria"
   },
   "HOME": {
+    "ITEM_ACTIONS": "Azioni dell'esercizio",
+    "PICKER_DONE": "Fine",
+    "PICKER_EQUIPMENT": "Attrezzatura",
+    "PICKER_LEVEL": "Livello",
+    "PICKER_ALL": "Tutti",
+    "PICKER_NO_RESULTS": "Nessun esercizio corrisponde a questi filtri.",
+    "PICKER_IN_SECTION": "In questa sezione: {{count}}",
+    "PICKER_ADDED": "Aggiunti: {{count}}",
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "Pianificatore della lezione",
     "PLAN_NAME_ARIA": "Nome del flow",
