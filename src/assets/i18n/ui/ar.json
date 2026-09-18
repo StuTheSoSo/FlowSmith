@@ -29,6 +29,7 @@
     "UPDATE_SAVED_FLOW": "تحديث التدفق المحفوظ",
     "SEARCH_PLACEHOLDER": "ابحث عن التمارين، التركيز، المعدات",
     "LOAD_ERROR": "تعذر على FlowSmith تحميل مكتبة البيلاتس.",
+    "SCHEDULE_EYEBROW": "جدولك",
     "GRADE_EYEBROW": "مراجعة التدفق",
     "GRADE_STATUS_STRONG": "تسلسل جيد البناء.",
     "GRADE_STATUS_DEVELOPING": "تسلسل واعد مع بعض الثغرات.",

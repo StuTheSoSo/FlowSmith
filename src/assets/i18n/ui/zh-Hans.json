@@ -29,6 +29,7 @@
     "UPDATE_SAVED_FLOW": "更新已保存的流程",
     "SEARCH_PLACEHOLDER": "搜索动作、重点、器械",
     "LOAD_ERROR": "FlowSmith 无法加载普拉提资料库。",
+    "SCHEDULE_EYEBROW": "你的日程安排",
     "GRADE_EYEBROW": "流程评审",
     "GRADE_STATUS_STRONG": "结构良好的编排。",
     "GRADE_STATUS_DEVELOPING": "很有潜力的编排，但有一些不足之处。",

@@ -29,6 +29,7 @@
     "UPDATE_SAVED_FLOW": "保存済みフローを更新",
     "SEARCH_PLACEHOLDER": "エクササイズ・フォーカス・器具を検索",
     "LOAD_ERROR": "FlowSmith はピラティスライブラリを読み込めませんでした。",
+    "SCHEDULE_EYEBROW": "あなたのスケジュール",
     "GRADE_EYEBROW": "フローレビュー",
     "GRADE_STATUS_STRONG": "よく整ったシーケンスです。",
     "GRADE_STATUS_DEVELOPING": "有望なシーケンスですが、いくつかの改善点があります。",

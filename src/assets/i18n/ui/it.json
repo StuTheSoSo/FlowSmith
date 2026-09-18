@@ -29,6 +29,7 @@
     "UPDATE_SAVED_FLOW": "Aggiorna flow salvato",
     "SEARCH_PLACEHOLDER": "Cerca esercizi, focus, attrezzatura",
     "LOAD_ERROR": "FlowSmith non è riuscito a caricare la libreria Pilates.",
+    "SCHEDULE_EYEBROW": "Il tuo programma",
     "GRADE_EYEBROW": "Valutazione del flow",
     "GRADE_STATUS_STRONG": "Una sequenza ben strutturata.",
     "GRADE_STATUS_DEVELOPING": "Una sequenza promettente con alcune lacune.",

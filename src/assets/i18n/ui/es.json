@@ -29,6 +29,7 @@
     "UPDATE_SAVED_FLOW": "Actualizar flujo guardado",
     "SEARCH_PLACEHOLDER": "Buscar ejercicios, enfoque, equipo",
     "LOAD_ERROR": "FlowSmith no pudo cargar la biblioteca de Pilates.",
+    "SCHEDULE_EYEBROW": "Tu horario",
     "GRADE_EYEBROW": "Revisión del flujo",
     "GRADE_STATUS_STRONG": "Una secuencia bien estructurada.",
     "GRADE_STATUS_DEVELOPING": "Una secuencia prometedora con algunos vacíos.",

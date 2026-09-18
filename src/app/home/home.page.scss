@@ -313,6 +313,12 @@
   white-space: nowrap;
 }
 
+.schedule-section {
+  margin-top: 1.1rem;
+  padding-top: 1rem;
+  border-top: 1.5px dashed var(--sp-border);
+}
+
 .segment-picker {
   margin: 0.6rem 0 0.9rem;
   padding: 0.25rem;
@@ -330,11 +336,6 @@
 }
 
 .timeline {
-  max-height: min(65vh, 640px);
-  padding-right: 0.15rem;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  -webkit-overflow-scrolling: touch;
   align-content: start;
 }
 
@@ -598,6 +599,14 @@ ion-textarea {
     position: sticky;
     top: 1rem;
     max-height: min(65vh, 640px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .timeline {
+    max-height: min(65vh, 640px);
+    padding-right: 0.15rem;
     overflow-y: auto;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;

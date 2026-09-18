@@ -124,18 +124,21 @@
     <span class="premium-card-flag">Pro</span>
   </section> -->
 
-  <ion-segment
-    [(ngModel)]="selectedSegmentId"
-    class="segment-picker"
-    (ionChange)="selectSegment($any($event).detail.value)"
-  >
-    <ion-segment-button *ngFor="let segment of plan.segments; trackBy: trackSegment" [value]="segment.id">
-      <ion-label>{{ getSegmentLabel(segment) | translate }}</ion-label>
-    </ion-segment-button>
-  </ion-segment>
+  <section class="schedule-section" aria-labelledby="schedule-heading">
+    <p class="eyebrow" id="schedule-heading">{{ 'HOME.SCHEDULE_EYEBROW' | translate }}</p>
 
-  <main class="planner-grid">
-    <section class="timeline" aria-label="Class timeline">
+    <ion-segment
+      [(ngModel)]="selectedSegmentId"
+      class="segment-picker"
+      (ionChange)="selectSegment($any($event).detail.value)"
+    >
+      <ion-segment-button *ngFor="let segment of plan.segments; trackBy: trackSegment" [value]="segment.id">
+        <ion-label>{{ getSegmentLabel(segment) | translate }}</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <main class="planner-grid">
+      <section class="timeline" aria-label="Class timeline">
       <article
         class="timeline-segment"
         [id]="'segment-' + segment.id"
@@ -237,4 +240,5 @@
       </button>
     </aside>
   </main>
+  </section>
 </ion-content>
