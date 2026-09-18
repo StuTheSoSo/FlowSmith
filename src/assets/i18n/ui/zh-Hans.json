@@ -17,6 +17,8 @@
   "HOME": {
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "时间轴计划器",
+    "PLAN_NAME_ARIA": "训练流名称",
+    "UNTITLED_FLOW": "未命名的训练流",
     "SAVE_NOT_SAVED": "尚未保存",
     "SAVE_SAVED_AT": "已于 {{time}} 保存",
     "IN_LIBRARY": "已在资料库中",
@@ -53,6 +55,7 @@
     "ALTERNATIVE": "替代方案：{{alternative}}",
     "MOVE_UP_ARIA": "上移动作",
     "MOVE_DOWN_ARIA": "下移动作",
+    "DRAG_HANDLE_ARIA": "拖拽以重新排序动作",
     "DUPLICATE_ARIA": "复制动作",
     "REMOVE_ARIA": "移除动作",
     "LIBRARY_PANEL_EYEBROW": "FlowSmith 资料库",

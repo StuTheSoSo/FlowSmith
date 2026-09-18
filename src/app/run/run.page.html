@@ -33,15 +33,23 @@
   </section>
 
   <ng-container *ngIf="!isLoading && !errorMessage && hasClass">
-    <section class="runner-title-card">
-      <p class="eyebrow">{{ state.plan.goal }}</p>
-      <h1>{{ state.plan.name }}</h1>
-    </section>
+    <div class="stage-tracker" role="list" aria-label="Class stage progress">
+      <ng-container *ngFor="let segment of stageSegments; let last = last">
+        <div class="stage-step" role="listitem" [attr.data-status]="getStageStatus(segment)">
+          <span class="stage-dot">
+            <ion-icon *ngIf="getStageStatus(segment) === 'complete'" name="checkmark" aria-hidden="true"></ion-icon>
+          </span>
+          <span class="stage-label">{{ getStageLabel(segment) | translate }}</span>
+        </div>
+        <span class="stage-line" *ngIf="!last" [attr.data-status]="getStageStatus(segment)" aria-hidden="true"></span>
+      </ng-container>
+    </div>
 
-    <section class="timer-card" [class.completed]="isCompleted" [class.exercise-complete]="state.completedExerciseId">
+    <section class="timer-card" [class.completed]="isCompleted" [class.exercise-complete]="state.completedExerciseId" [attr.data-timer-status]="timerStatus">
     <div class="timer-ring" [style.--progress.%]="progressPercent">
       <span>{{ formatTime(exerciseRemainingSeconds) }}</span>
       <small>{{ currentRunExercise?.segmentName || ('RUN.CLASS_LABEL' | translate) }}</small>
+      <div class="timer-progress" aria-hidden="true"><span></span></div>
     </div>
 
     <div class="current-exercise">
@@ -59,7 +67,7 @@
     </section>
 
     <section class="runner-controls" aria-label="Class timer controls">
-    <ion-button fill="outline" (click)="classRunner.previous()" [disabled]="state.currentIndex === 0" [attr.aria-label]="(state.currentIndex === 0 ? 'RUN.AT_FIRST_EXERCISE_ARIA' : 'RUN.PREVIOUS_ARIA') | translate">
+    <ion-button class="skip-control" fill="clear" size="small" (click)="classRunner.previous()" [disabled]="state.currentIndex === 0" [attr.aria-label]="(state.currentIndex === 0 ? 'RUN.AT_FIRST_EXERCISE_ARIA' : 'RUN.PREVIOUS_ARIA') | translate">
       <ion-icon name="play-skip-back-outline" slot="icon-only" aria-hidden="true"></ion-icon>
     </ion-button>
     <ion-button *ngIf="!isRunning && !isCompleted" class="primary-control" (click)="classRunner.start()">
@@ -70,7 +78,7 @@
       <ion-icon name="pause-outline" slot="start" aria-hidden="true"></ion-icon>
       {{ 'RUN.PAUSE' | translate }}
     </ion-button>
-    <ion-button fill="outline" (click)="classRunner.next()" [disabled]="isCompleted" [attr.aria-label]="(isCompleted ? 'RUN.CLASS_FINISHED_ARIA' : 'RUN.NEXT_ARIA') | translate">
+    <ion-button class="skip-control" fill="clear" size="small" (click)="classRunner.next()" [disabled]="isCompleted" [attr.aria-label]="(isCompleted ? 'RUN.CLASS_FINISHED_ARIA' : 'RUN.NEXT_ARIA') | translate">
       <ion-icon name="play-skip-forward-outline" slot="icon-only" aria-hidden="true"></ion-icon>
     </ion-button>
     </section>
@@ -87,6 +95,17 @@
     </section>
 
     <section class="detail-grid">
+    <article class="detail-card next-up-card">
+      <div class="next-up-icon">
+        <ion-icon name="arrow-forward-circle" aria-hidden="true"></ion-icon>
+      </div>
+      <div>
+        <p class="eyebrow">{{ 'RUN.NEXT_UP' | translate }}</p>
+        <h3>{{ nextExercise?.name || getExerciseName(nextRunExercise) }}</h3>
+        <p>{{ nextExercise?.focus || nextExercise?.shortDescription || (nextRunExercise ? ('RUN.PREPARE_NEXT' | translate) : ('RUN.CLASS_COMPLETE' | translate)) }}</p>
+      </div>
+    </article>
+
     <article class="detail-card">
       <p class="eyebrow">{{ 'RUN.NOTES_CUES' | translate }}</p>
       <p>{{ currentRunExercise?.notes || ('RUN.NO_NOTES' | translate) }}</p>
@@ -95,12 +114,6 @@
     <article class="detail-card">
       <p class="eyebrow">{{ 'RUN.BREATHING' | translate }}</p>
       <p>{{ currentBreathingCue }}</p>
-    </article>
-
-    <article class="detail-card">
-      <p class="eyebrow">{{ 'RUN.NEXT_UP' | translate }}</p>
-      <h3>{{ nextExercise?.name || getExerciseName(nextRunExercise) }}</h3>
-      <p>{{ nextExercise?.focus || nextExercise?.shortDescription || (nextRunExercise ? ('RUN.PREPARE_NEXT' | translate) : ('RUN.CLASS_COMPLETE' | translate)) }}</p>
     </article>
     </section>
 

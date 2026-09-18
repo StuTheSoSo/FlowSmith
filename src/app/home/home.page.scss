@@ -24,6 +24,35 @@
   line-height: 1;
 }
 
+.plan-name-input {
+  --padding-bottom: 0.15rem;
+  --padding-end: 0.1rem;
+  --padding-start: 0.1rem;
+  --padding-top: 0.15rem;
+  --placeholder-color: var(--sp-ink-3);
+  --placeholder-opacity: 0.85;
+  margin: 0 0 0 -0.1rem;
+  border-bottom: 1.5px dashed transparent;
+  color: var(--sp-brand-ink);
+  font-size: 1.85rem;
+  font-weight: 900;
+  line-height: 1.15;
+  transition: border-color 0.15s ease;
+}
+
+.plan-name-input::part(native) {
+  font-style: normal;
+}
+
+.plan-name-input::part(placeholder) {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.plan-name-input.has-focus {
+  border-bottom-color: var(--ion-color-primary);
+}
+
 .planner-hero p:not(.eyebrow) {
   margin-top: 0.5rem;
   color: var(--sp-ink-2);
@@ -319,6 +348,95 @@
   border-top: 1.5px dashed var(--sp-border);
 }
 
+.segment-progress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.segment-progress-step {
+  display: grid;
+  justify-items: center;
+  gap: 0.3rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--sp-ink-3);
+  cursor: pointer;
+}
+
+.step-dot {
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 2px solid var(--sp-border);
+  border-radius: 999px;
+  background: #ffffff;
+  color: transparent;
+  font-size: 1rem;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.segment-progress-step.is-complete .step-dot {
+  border-color: var(--ion-color-primary);
+  background: var(--ion-color-primary);
+  color: #ffffff;
+}
+
+.segment-progress-step.is-current .step-dot {
+  box-shadow: 0 0 0 3px var(--sp-selected-shadow);
+}
+
+.step-label {
+  max-width: 4.5rem;
+  overflow: hidden;
+  font-size: 0.66rem;
+  font-weight: 800;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.segment-progress-step.is-current .step-label {
+  color: var(--sp-brand-ink);
+}
+
+.segment-progress-line {
+  flex: 1;
+  height: 2px;
+  margin: 0 0.2rem 1.3rem;
+  background: var(--sp-border);
+}
+
+.segment-progress-line.is-complete {
+  background: var(--ion-color-primary);
+}
+
+.segment-duration-bar {
+  height: 6px;
+  margin: 0.5rem 0 0.15rem;
+  border-radius: 999px;
+  background: rgba(212, 237, 242, 0.6);
+  overflow: hidden;
+}
+
+.segment-duration-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--ion-color-primary);
+  transition: width 0.2s ease;
+}
+
+.segment-duration-bar[data-status='under'] span {
+  background: #d6913f;
+}
+
+.segment-duration-bar[data-status='over'] span {
+  background: #c7566a;
+}
+
 .segment-picker {
   margin: 0.6rem 0 0.9rem;
   padding: 0.25rem;
@@ -352,26 +470,37 @@
 
 .segment-empty {
   display: grid;
-  justify-items: start;
-  gap: 0.2rem;
-  padding: 0.9rem;
-  border: 1px dashed rgba(43, 151, 173, 0.38);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.42);
-  color: var(--sp-ink-3);
-  font-size: 0.82rem;
+  justify-items: center;
+  gap: 0.5rem;
+  padding: 1.4rem 1rem;
+  border: 2px dashed var(--ion-color-primary);
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--sp-chip-start) 0%, var(--sp-chip-end) 100%);
+  color: var(--sp-brand-ink);
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.segment-empty:active {
+  transform: scale(0.98);
 }
 
 .segment-empty ion-icon {
   color: var(--ion-color-primary);
-  font-size: 1.35rem;
+  font-size: 2.4rem;
+}
+
+.segment-empty strong {
+  font-size: 1rem;
 }
 
 .segment-empty ion-button {
-  --padding-start: 0;
-  --padding-end: 0;
-  margin: 0;
+  margin: 0.15rem 0 0;
+  --border-radius: 14px;
   font-weight: 800;
+  pointer-events: auto;
 }
 
 .timeline-segment header,
@@ -405,13 +534,42 @@
 
 .flow-item {
   display: grid;
-  grid-template-columns: 54px minmax(0, 1fr) 36px;
+  grid-template-columns: 22px 54px minmax(0, 1fr) 36px;
   gap: 0.55rem;
   align-items: stretch;
   padding: 0.55rem;
   border: 1px solid rgba(212, 237, 242, 0.9);
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.72);
+}
+
+.flow-item-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.flow-item.cdk-drag-preview {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.flow-item.cdk-drag-placeholder {
+  opacity: 0.3;
+}
+
+.flow-item-list.cdk-drop-list-dragging .flow-item:not(.cdk-drag-placeholder) {
+  transition: transform 200ms ease;
+}
+
+.drag-handle {
+  display: grid;
+  place-items: center;
+  color: var(--sp-ink-3);
+  cursor: grab;
+  touch-action: none;
+}
+
+.drag-handle ion-icon {
+  font-size: 1.2rem;
 }
 
 .flow-item.just-added {
@@ -633,15 +791,17 @@ ion-textarea {
   }
 
   .flow-item {
-    grid-template-columns: 48px minmax(0, 1fr);
+    grid-template-columns: 20px 46px minmax(0, 1fr);
+    gap: 0.4rem;
   }
 
   .item-actions {
     grid-column: 1 / -1;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 44px);
+    justify-content: end;
   }
 
   .item-actions ion-button {
-    width: 100%;
+    width: 44px;
   }
 }

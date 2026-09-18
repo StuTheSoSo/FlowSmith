@@ -5,7 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { ClassRunnerService } from '../class-runner.service';
 import { FlowDataService } from '../flow-data.service';
-import { ClassRunState, Contraindication, Exercise, PilatesDataBundle, RunExercise } from '../models';
+import { ClassRunState, Contraindication, Exercise, FlowSegment, PilatesDataBundle, RunExercise } from '../models';
 
 @Component({
   selector: 'app-run',
@@ -116,6 +116,54 @@ export class RunPage implements OnInit, OnDestroy {
 
   get progressPercent(): number {
     return Math.round(this.classRunner.getProgress(this.state) * 100);
+  }
+
+  get timerStatus(): 'ok' | 'warning' | 'danger' {
+    const total = this.currentRunExercise?.durationSeconds ?? 0;
+    if (!total) {
+      return 'ok';
+    }
+
+    const percentRemaining = (this.exerciseRemainingSeconds / total) * 100;
+    if (percentRemaining <= 15) {
+      return 'danger';
+    }
+    if (percentRemaining <= 35) {
+      return 'warning';
+    }
+    return 'ok';
+  }
+
+  get stageSegments(): FlowSegment[] {
+    return this.state.plan.segments;
+  }
+
+  getStageLabel(segment: FlowSegment): string {
+    if (segment.id === 'arrival') {
+      return 'HOME.SEGMENT_ARRIVE';
+    }
+    if (segment.id === 'closing') {
+      return 'HOME.SEGMENT_CLOSE';
+    }
+    if (segment.id === 'main-flow') {
+      return 'HOME.SEGMENT_MAIN';
+    }
+    return segment.name;
+  }
+
+  getStageStatus(segment: FlowSegment): 'complete' | 'current' | 'upcoming' {
+    const indices = this.state.exercises
+      .map((exercise, index) => ({ exercise, index }))
+      .filter(({ exercise }) => exercise.segmentId === segment.id)
+      .map(({ index }) => index);
+
+    if (!indices.length) {
+      return 'upcoming';
+    }
+    if (!this.isCompleted && indices.includes(this.state.currentIndex)) {
+      return 'current';
+    }
+    return indices.every((index) => index < this.state.currentIndex || this.isCompleted) ? 'complete' : 'upcoming';
   }
 
   get isRunning(): boolean {

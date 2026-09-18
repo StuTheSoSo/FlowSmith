@@ -160,7 +160,7 @@ export class TemplatesPage implements OnInit, OnDestroy {
   async confirmDeleteFlow(flow: FlowPlan): Promise<void> {
     const alert = await this.alertController.create({
       header: this.translate.instant('TEMPLATES.DELETE_CONFIRM_HEADER'),
-      message: this.translate.instant('TEMPLATES.DELETE_CONFIRM_MESSAGE', { name: flow.name }),
+      message: this.translate.instant('TEMPLATES.DELETE_CONFIRM_MESSAGE', { name: flow.name || this.translate.instant('HOME.UNTITLED_FLOW') }),
       buttons: [
         { text: this.translate.instant('COMMON.CANCEL'), role: 'cancel' },
         { text: this.translate.instant('COMMON.DELETE'), role: 'destructive', handler: () => this.flowPlanService.deleteSavedFlow(flow.id) },

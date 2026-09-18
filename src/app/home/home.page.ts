@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { ClassRunnerService } from '../class-runner.service';
@@ -81,13 +82,9 @@ export class HomePage implements OnInit, OnDestroy {
   }
 
   private scrollTimelineTo(target: HTMLElement | null): void {
-    const container = document.querySelector<HTMLElement>('.timeline');
-    if (!container || !target) {
-      return;
-    }
-
-    const scrollTop = container.scrollTop + (target.getBoundingClientRect().top - container.getBoundingClientRect().top);
-    container.scrollTo({ top: scrollTop, behavior: 'smooth' });
+    // scrollIntoView finds whichever ancestor actually scrolls, whether that's
+    // .timeline (desktop split view) or ion-content itself (mobile single column).
+    target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   get filteredExercises(): Exercise[] {
@@ -120,7 +117,8 @@ export class HomePage implements OnInit, OnDestroy {
         {
           text: this.translate.instant('COMMON.SAVE'),
           handler: (data) => {
-            this.flowPlanService.saveCurrentPlanAsFlow(data?.name);
+            const name = data?.name?.trim() || this.plan.name.trim() || this.translate.instant('HOME.UNTITLED_FLOW');
+            this.flowPlanService.saveCurrentPlanAsFlow(name);
             this.changeDetector.detectChanges();
           },
         },
@@ -176,16 +174,12 @@ export class HomePage implements OnInit, OnDestroy {
     this.commitPlanChange();
   }
 
-  moveItem(segment: FlowSegment, item: FlowItem, direction: -1 | 1): void {
-    const currentIndex = segment.items.findIndex((candidate) => candidate.id === item.id);
-    const nextIndex = currentIndex + direction;
-
-    if (currentIndex < 0 || nextIndex < 0 || nextIndex >= segment.items.length) {
+  dropItem(segment: FlowSegment, event: CdkDragDrop<FlowItem[]>): void {
+    if (event.previousIndex === event.currentIndex) {
       return;
     }
 
-    segment.items.splice(currentIndex, 1);
-    segment.items.splice(nextIndex, 0, item);
+    moveItemInArray(segment.items, event.previousIndex, event.currentIndex);
     this.commitPlanChange();
   }
 
@@ -200,6 +194,24 @@ export class HomePage implements OnInit, OnDestroy {
     this.commitPlanChange();
   }
 
+  updatePlanName(value: unknown): void {
+    this.plan.name = String(value ?? '');
+    // Skip commitPlanChange's forced detectChanges() here: it re-writes the
+    // ion-input's value mid-keystroke and resets the caret to the start.
+    this.flowPlanService.updateCurrentPlan(this.plan);
+    this.refreshGrade();
+  }
+
+  finalizePlanName(): void {
+    // Leave the name blank so the input's placeholder ("Untitled Flow") shows
+    // as an obvious hint rather than being committed as a real title.
+    const trimmed = this.plan.name.trim();
+    if (trimmed !== this.plan.name) {
+      this.plan.name = trimmed;
+      this.commitPlanChange();
+    }
+  }
+
   getExercise(item: FlowItem): Exercise | undefined {
     return this.bundle ? this.flowData.findExercise(this.bundle, item.exerciseId) : undefined;
   }
@@ -210,6 +222,33 @@ export class HomePage implements OnInit, OnDestroy {
 
   getSegmentDuration(segment: FlowSegment): number {
     return segment.items.reduce((total, item) => total + item.durationMinutes, 0);
+  }
+
+  isSegmentComplete(segment: FlowSegment): boolean {
+    return segment.items.length > 0;
+  }
+
+  getSegmentProgressPercent(segment: FlowSegment): number {
+    if (!segment.durationTargetMinutes) {
+      return segment.items.length ? 100 : 0;
+    }
+
+    return Math.min(140, Math.round((this.getSegmentDuration(segment) / segment.durationTargetMinutes) * 100));
+  }
+
+  getSegmentProgressStatus(segment: FlowSegment): 'empty' | 'under' | 'good' | 'over' {
+    if (!segment.items.length) {
+      return 'empty';
+    }
+
+    const percent = this.getSegmentProgressPercent(segment);
+    if (percent < 70) {
+      return 'under';
+    }
+    if (percent > 115) {
+      return 'over';
+    }
+    return 'good';
   }
 
   trackSegment(_: number, segment: FlowSegment): string {

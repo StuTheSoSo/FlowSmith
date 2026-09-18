@@ -17,6 +17,8 @@
   "HOME": {
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "Zeitplan-Planer",
+    "PLAN_NAME_ARIA": "Name des Flows",
+    "UNTITLED_FLOW": "Unbenannter Flow",
     "SAVE_NOT_SAVED": "Noch nicht gespeichert",
     "SAVE_SAVED_AT": "Gespeichert um {{time}}",
     "IN_LIBRARY": "In der Bibliothek",
@@ -53,6 +55,7 @@
     "ALTERNATIVE": "Alternative: {{alternative}}",
     "MOVE_UP_ARIA": "Übung nach oben verschieben",
     "MOVE_DOWN_ARIA": "Übung nach unten verschieben",
+    "DRAG_HANDLE_ARIA": "Ziehen, um die Übung neu anzuordnen",
     "DUPLICATE_ARIA": "Übung duplizieren",
     "REMOVE_ARIA": "Übung entfernen",
     "LIBRARY_PANEL_EYEBROW": "FlowSmith-Bibliothek",

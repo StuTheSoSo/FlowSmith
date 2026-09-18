@@ -14,7 +14,15 @@
   <section class="planner-hero">
     <div>
       <p class="eyebrow">{{ 'HOME.HERO_EYEBROW' | translate }}</p>
-      <h1>{{ plan.name }}</h1>
+      <ion-input
+        class="plan-name-input"
+        [ngModel]="plan.name"
+        (ngModelChange)="updatePlanName($event)"
+        (ionBlur)="finalizePlanName()"
+        [attr.aria-label]="'HOME.PLAN_NAME_ARIA' | translate"
+        [placeholder]="'HOME.UNTITLED_FLOW' | translate"
+        autocapitalize="words"
+      ></ion-input>
       <p>{{ plan.goal }}</p>
       <small class="plan-save-status">
         <ng-container *ngIf="planSavedAtTime as time; else notSavedYet">{{ 'HOME.SAVE_SAVED_AT' | translate: { time: time } }}</ng-container>
@@ -127,6 +135,26 @@
   <section class="schedule-section" aria-labelledby="schedule-heading">
     <p class="eyebrow" id="schedule-heading">{{ 'HOME.SCHEDULE_EYEBROW' | translate }}</p>
 
+    <div class="segment-progress" role="list" aria-label="Section progress">
+      <ng-container *ngFor="let segment of plan.segments; trackBy: trackSegment; let last = last">
+        <button
+          type="button"
+          role="listitem"
+          class="segment-progress-step"
+          [class.is-complete]="isSegmentComplete(segment)"
+          [class.is-current]="segment.id === selectedSegmentId"
+          [attr.data-status]="getSegmentProgressStatus(segment)"
+          (click)="selectSegment(segment.id)"
+        >
+          <span class="step-dot">
+            <ion-icon *ngIf="isSegmentComplete(segment)" name="checkmark" aria-hidden="true"></ion-icon>
+          </span>
+          <span class="step-label">{{ getSegmentLabel(segment) | translate }}</span>
+        </button>
+        <span class="segment-progress-line" *ngIf="!last" [class.is-complete]="isSegmentComplete(segment)" aria-hidden="true"></span>
+      </ng-container>
+    </div>
+
     <ion-segment
       [(ngModel)]="selectedSegmentId"
       class="segment-picker"
@@ -153,18 +181,33 @@
           </div>
         </header>
 
-        <div class="segment-empty" *ngIf="!segment.items.length">
-          <ion-icon name="add-circle-outline" aria-hidden="true"></ion-icon>
-          <span>{{ 'HOME.SEGMENT_EMPTY' | translate }}</span>
-          <ion-button fill="clear" size="small" (click)="addFirstExercise()">{{ 'COMMON.BROWSE_LIBRARY' | translate }}</ion-button>
+        <div class="segment-duration-bar" [attr.data-status]="getSegmentProgressStatus(segment)" aria-hidden="true">
+          <span [style.width.%]="getSegmentProgressPercent(segment)"></span>
+        </div>
+
+        <div class="segment-empty" *ngIf="!segment.items.length" role="button" tabindex="0" (click)="addFirstExercise()" (keydown.enter)="addFirstExercise()">
+          <ion-icon name="add-circle" aria-hidden="true"></ion-icon>
+          <strong>{{ 'HOME.SEGMENT_EMPTY' | translate }}</strong>
+          <ion-button fill="solid" size="small" (click)="addFirstExercise(); $event.stopPropagation()">{{ 'COMMON.BROWSE_LIBRARY' | translate }}</ion-button>
         </div>
 
         <div
+          class="flow-item-list"
+          cdkDropList
+          [cdkDropListData]="segment.items"
+          (cdkDropListDropped)="dropItem(segment, $event)"
+        >
+        <div
           class="flow-item"
+          cdkDrag
           [id]="'item-' + item.id"
           [class.just-added]="item.id === highlightedItemId"
           *ngFor="let item of segment.items; trackBy: trackItem"
         >
+          <div class="drag-handle" cdkDragHandle [attr.aria-label]="'HOME.DRAG_HANDLE_ARIA' | translate">
+            <ion-icon name="reorder-two-outline" aria-hidden="true"></ion-icon>
+          </div>
+
           <div class="time-pill">
             <ion-input
               type="number"
@@ -205,12 +248,6 @@
           </div>
 
           <div class="item-actions" aria-label="Timeline item actions">
-            <ion-button fill="clear" size="small" [attr.aria-label]="'HOME.MOVE_UP_ARIA' | translate" (click)="moveItem(segment, item, -1)">
-              <ion-icon name="chevron-up-outline" slot="icon-only" aria-hidden="true"></ion-icon>
-            </ion-button>
-            <ion-button fill="clear" size="small" [attr.aria-label]="'HOME.MOVE_DOWN_ARIA' | translate" (click)="moveItem(segment, item, 1)">
-              <ion-icon name="chevron-down-outline" slot="icon-only" aria-hidden="true"></ion-icon>
-            </ion-button>
             <ion-button fill="clear" size="small" [attr.aria-label]="'HOME.DUPLICATE_ARIA' | translate" (click)="duplicateItem(segment, item)">
               <ion-icon name="copy-outline" slot="icon-only" aria-hidden="true"></ion-icon>
             </ion-button>
@@ -218,6 +255,7 @@
               <ion-icon name="trash-outline" slot="icon-only" aria-hidden="true"></ion-icon>
             </ion-button>
           </div>
+        </div>
         </div>
       </article>
     </section>

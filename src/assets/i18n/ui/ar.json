@@ -17,6 +17,8 @@
   "HOME": {
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "مخطط الجدول الزمني",
+    "PLAN_NAME_ARIA": "اسم التدفق",
+    "UNTITLED_FLOW": "تدفق بلا عنوان",
     "SAVE_NOT_SAVED": "لم يُحفظ بعد",
     "SAVE_SAVED_AT": "تم الحفظ في {{time}}",
     "IN_LIBRARY": "في المكتبة",
@@ -53,6 +55,7 @@
     "ALTERNATIVE": "البديل: {{alternative}}",
     "MOVE_UP_ARIA": "نقل التمرين لأعلى",
     "MOVE_DOWN_ARIA": "نقل التمرين لأسفل",
+    "DRAG_HANDLE_ARIA": "اسحب لإعادة ترتيب التمرين",
     "DUPLICATE_ARIA": "تكرار التمرين",
     "REMOVE_ARIA": "إزالة التمرين",
     "LIBRARY_PANEL_EYEBROW": "مكتبة FlowSmith",

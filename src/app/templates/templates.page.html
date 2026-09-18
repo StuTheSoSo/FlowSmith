@@ -112,7 +112,7 @@
 
     <article class="flow-card" *ngFor="let flow of savedFlows; trackBy: trackFlow">
       <div>
-        <h2>{{ flow.name }}</h2>
+        <h2>{{ flow.name || ('HOME.UNTITLED_FLOW' | translate) }}</h2>
         <p *ngIf="flow.goal">{{ flow.goal }}</p>
         <div class="flow-meta">
           <ion-chip>{{ 'TEMPLATES.EXERCISES_COUNT' | translate: { count: getFlowExerciseCount(flow) } }}</ion-chip>

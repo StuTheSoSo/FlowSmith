@@ -75,7 +75,7 @@ export class FlowPlanService {
   }
 
   /** Starts a fresh, unsaved draft in the planner so the user can build a new flow from scratch. */
-  startBlankFlow(name = 'New Flow'): FlowPlan {
+  startBlankFlow(name = 'Untitled Flow'): FlowPlan {
     const plan = this.createBlankPlan(name);
     this.updateCurrentPlan(plan);
     return plan;

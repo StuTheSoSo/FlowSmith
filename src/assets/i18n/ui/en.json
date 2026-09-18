@@ -17,6 +17,8 @@
   "HOME": {
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "Timeline planner",
+    "PLAN_NAME_ARIA": "Flow name",
+    "UNTITLED_FLOW": "Untitled Flow",
     "SAVE_NOT_SAVED": "Not saved yet",
     "SAVE_SAVED_AT": "Saved at {{time}}",
     "IN_LIBRARY": "In library",
@@ -53,6 +55,7 @@
     "ALTERNATIVE": "Alternative: {{alternative}}",
     "MOVE_UP_ARIA": "Move exercise up",
     "MOVE_DOWN_ARIA": "Move exercise down",
+    "DRAG_HANDLE_ARIA": "Drag to reorder exercise",
     "DUPLICATE_ARIA": "Duplicate exercise",
     "REMOVE_ARIA": "Remove exercise",
     "LIBRARY_PANEL_EYEBROW": "FlowSmith library",

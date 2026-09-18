@@ -17,6 +17,8 @@
   "HOME": {
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "Planejador de aula",
+    "PLAN_NAME_ARIA": "Nome do flow",
+    "UNTITLED_FLOW": "Flow sem título",
     "SAVE_NOT_SAVED": "Ainda não salvo",
     "SAVE_SAVED_AT": "Salvo às {{time}}",
     "IN_LIBRARY": "Na biblioteca",
@@ -53,6 +55,7 @@
     "ALTERNATIVE": "Alternativa: {{alternative}}",
     "MOVE_UP_ARIA": "Mover exercício para cima",
     "MOVE_DOWN_ARIA": "Mover exercício para baixo",
+    "DRAG_HANDLE_ARIA": "Arraste para reordenar o exercício",
     "DUPLICATE_ARIA": "Duplicar exercício",
     "REMOVE_ARIA": "Remover exercício",
     "LIBRARY_PANEL_EYEBROW": "Biblioteca FlowSmith",

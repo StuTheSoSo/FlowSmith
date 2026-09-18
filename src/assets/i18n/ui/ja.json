@@ -17,6 +17,8 @@
   "HOME": {
     "HEADER_TITLE": "FlowSmith",
     "HERO_EYEBROW": "タイムラインプランナー",
+    "PLAN_NAME_ARIA": "フロー名",
+    "UNTITLED_FLOW": "無題のフロー",
     "SAVE_NOT_SAVED": "まだ保存されていません",
     "SAVE_SAVED_AT": "{{time}} に保存済み",
     "IN_LIBRARY": "ライブラリに保存済み",
@@ -53,6 +55,7 @@
     "ALTERNATIVE": "代替: {{alternative}}",
     "MOVE_UP_ARIA": "エクササイズを上へ移動",
     "MOVE_DOWN_ARIA": "エクササイズを下へ移動",
+    "DRAG_HANDLE_ARIA": "ドラッグしてエクササイズを並べ替え",
     "DUPLICATE_ARIA": "エクササイズを複製",
     "REMOVE_ARIA": "エクササイズを削除",
     "LIBRARY_PANEL_EYEBROW": "FlowSmith ライブラリ",
