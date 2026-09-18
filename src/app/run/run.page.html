@@ -70,7 +70,7 @@
     <ion-button class="skip-control" fill="clear" size="small" (click)="classRunner.previous()" [disabled]="state.currentIndex === 0" [attr.aria-label]="(state.currentIndex === 0 ? 'RUN.AT_FIRST_EXERCISE_ARIA' : 'RUN.PREVIOUS_ARIA') | translate">
       <ion-icon name="play-skip-back-outline" slot="icon-only" aria-hidden="true"></ion-icon>
     </ion-button>
-    <ion-button *ngIf="!isRunning && !isCompleted" class="primary-control" (click)="classRunner.start()">
+    <ion-button *ngIf="!isRunning && !isCompleted" class="primary-control" (click)="startTeaching()">
       <ion-icon name="play-outline" slot="start" aria-hidden="true"></ion-icon>
       {{ (isPaused ? 'RUN.RESUME' : 'RUN.START') | translate }}
     </ion-button>
@@ -133,4 +133,24 @@
     </div>
     </section>
   </ng-container>
+  <ion-modal class="teaching-modal" [isOpen]="isRunning" aria-labelledby="teaching-current-name" (willDismiss)="pauseTeaching()">
+    <ng-template>
+      <section class="teaching-screen" [attr.data-timer-status]="timerStatus">
+        <button type="button" class="teaching-timer" (click)="pauseTeaching()"
+          [attr.aria-label]="('RUN.PAUSE' | translate) + ': ' + formatTime(exerciseRemainingSeconds)"
+          [attr.title]="'RUN.PAUSE' | translate">
+          <span [appFitText]="formatTime(exerciseRemainingSeconds)" [fitTextMax]="360">{{ formatTime(exerciseRemainingSeconds) }}</span>
+        </button>
+        <div class="teaching-current">
+          <h1 id="teaching-current-name" [appFitText]="getExerciseName(currentRunExercise)" [fitTextMax]="180">{{ getExerciseName(currentRunExercise) }}</h1>
+        </div>
+        <div class="teaching-next">
+          <p>{{ 'RUN.NEXT_UP' | translate }}</p>
+          <div class="teaching-next-name">
+            <h2 [appFitText]="nextRunExercise ? getExerciseName(nextRunExercise) : ('RUN.CLASS_COMPLETE' | translate)" [fitTextMax]="100">{{ nextRunExercise ? getExerciseName(nextRunExercise) : ('RUN.CLASS_COMPLETE' | translate) }}</h2>
+          </div>
+        </div>
+      </section>
+    </ng-template>
+  </ion-modal>
 </ion-content>

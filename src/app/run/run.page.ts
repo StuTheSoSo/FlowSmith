@@ -3,6 +3,8 @@ import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
+import { Capacitor } from '@capacitor/core';
+import { ScreenOrientation } from '@capacitor/screen-orientation';
 import { ClassRunnerService } from '../class-runner.service';
 import { FlowDataService } from '../flow-data.service';
 import { ClassRunState, Contraindication, Exercise, FlowSegment, PilatesDataBundle, RunExercise } from '../models';
@@ -24,6 +26,8 @@ export class RunPage implements OnInit, OnDestroy {
   private languageSubscription?: Subscription;
   private dataSubscription?: Subscription;
   private lastCompletedExerciseId = '';
+  private startingTeaching = false;
+  private ownsFullscreen = false;
 
   constructor(
     readonly classRunner: ClassRunnerService,
@@ -36,7 +40,9 @@ export class RunPage implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.stateSubscription = this.classRunner.state$.subscribe((state) => {
+      const wasRunning = this.isRunning;
       this.state = state;
+      if (wasRunning && !this.isRunning) void this.releaseTeachingScreen();
       if (state.completedExerciseId && state.completedExerciseId !== this.lastCompletedExerciseId) {
         this.announceExerciseComplete(state.completedExerciseId);
       } else if (!state.completedExerciseId) {
@@ -56,6 +62,53 @@ export class RunPage implements OnInit, OnDestroy {
     this.stateSubscription?.unsubscribe();
     this.languageSubscription?.unsubscribe();
     this.dataSubscription?.unsubscribe();
+    void this.releaseTeachingScreen();
+  }
+
+  ionViewWillLeave(): void {
+    this.classRunner.pauseOnRouteLeave();
+    void this.releaseTeachingScreen();
+  }
+
+  async startTeaching(): Promise<void> {
+    if (this.startingTeaching) return;
+    this.startingTeaching = true;
+    this.classRunner.start();
+    try {
+      if (!this.isRunning) return;
+      if (!Capacitor.isNativePlatform() && !document.fullscreenElement && document.documentElement.requestFullscreen) {
+        try {
+          await document.documentElement.requestFullscreen();
+          this.ownsFullscreen = true;
+        } catch {}
+      }
+      if (this.isRunning) {
+        try {
+          await ScreenOrientation.lock({ orientation: 'landscape' });
+        } catch {}
+      }
+    } finally {
+      this.startingTeaching = false;
+      if (!this.isRunning) await this.releaseTeachingScreen();
+    }
+  }
+
+  pauseTeaching(): void {
+    this.classRunner.pause();
+  }
+
+  private async releaseTeachingScreen(): Promise<void> {
+    try {
+      await ScreenOrientation.unlock();
+    } catch {}
+    if (this.ownsFullscreen) {
+      this.ownsFullscreen = false;
+      if (document.fullscreenElement) {
+        try {
+          await document.exitFullscreen();
+        } catch {}
+      }
+    }
   }
 
   private loadBundle(language: string): void {
