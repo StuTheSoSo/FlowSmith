@@ -230,10 +230,30 @@ export class HomePage implements OnInit, OnDestroy {
     this.commitPlanChange();
   }
 
-  updateDuration(item: FlowItem, value: unknown): void {
+  async editDuration(item: FlowItem): Promise<void> {
+    const alert = await this.alertController.create({
+      header: this.translate.instant('HOME.DURATION_ARIA'),
+      subHeader: this.getExercise(item)?.name || item.exerciseId,
+      inputs: [{ name: 'minutes', type: 'number', value: item.durationMinutes, min: 1 }],
+      buttons: [
+        { text: this.translate.instant('COMMON.CANCEL'), role: 'cancel' },
+        {
+          text: this.translate.instant('COMMON.SAVE'),
+          handler: (data) => this.updateDuration(item, data?.minutes),
+        },
+      ],
+    });
+    await alert.present();
+  }
+
+  updateDuration(item: FlowItem, value: unknown): boolean {
     const nextValue = Number(value);
-    item.durationMinutes = Number.isFinite(nextValue) && nextValue > 0 ? nextValue : item.durationMinutes;
+    if (!Number.isFinite(nextValue) || nextValue < 1) {
+      return false;
+    }
+    item.durationMinutes = nextValue;
     this.commitPlanChange();
+    return true;
   }
 
   updateNotes(item: FlowItem, value: unknown): void {

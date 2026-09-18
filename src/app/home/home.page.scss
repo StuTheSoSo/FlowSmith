@@ -3,7 +3,7 @@
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: start;
   gap: 0.5rem;
-  padding: 0.5rem 0 1rem;
+  padding: 1rem 0 1.25rem;
   border-bottom: 1px solid var(--sp-border);
 }
 
@@ -21,8 +21,8 @@
   margin: 0 0 0 -0.1rem;
   border-bottom: 1px dashed var(--sp-border);
   color: var(--sp-brand-ink);
-  font-size: 1.4rem;
-  font-weight: 900;
+  font-size: 1.65rem;
+  font-weight: 800;
   line-height: 1.15;
   transition: border-color 0.15s ease;
 }
@@ -47,6 +47,11 @@
   --padding-end: 0.4rem;
   font-size: 0.78rem;
   font-weight: 800;
+  --background: rgba(255, 255, 255, 0.85);
+  --border-radius: 8px;
+  --border-color: var(--sp-border);
+  --border-width: 1px;
+  --border-style: solid;
 }
 
 .plan-save-status {
@@ -61,6 +66,23 @@
 
 .plan-save-status small {
   flex-basis: 100%;
+  color: var(--sp-ink-3);
+}
+
+.plan-save-status strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--sp-brand-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.plan-save-status strong::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ion-color-primary);
 }
 
 .grade-panel {
@@ -80,7 +102,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.75rem;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -90,6 +112,11 @@
   font: inherit;
   text-align: start;
   cursor: pointer;
+}
+
+.grade-summary > div:first-child {
+  flex: 1;
+  min-width: 0;
 }
 
 .grade-chevron {
@@ -116,7 +143,7 @@
 
 .grade-summary h2 {
   color: var(--sp-brand-ink);
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   line-height: 1;
 }
 
@@ -216,7 +243,7 @@
   justify-content: space-between;
   gap: 0.75rem;
   color: var(--sp-ink-2);
-  font-size: 0.72rem;
+  font-size: 0.82rem;
 }
 
 .grade-category strong {
@@ -235,7 +262,7 @@
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, var(--ion-color-primary), #edb04d);
+  background: var(--ion-color-secondary);
 }
 
 .grade-strengths,
@@ -293,7 +320,7 @@
 
 .schedule-section {
   display: grid;
-  gap: 1.2rem;
+  gap: 1.5rem;
   padding-top: 1rem;
 }
 
@@ -322,21 +349,35 @@
 }
 
 .timeline-segment {
+  --section-accent: var(--ion-color-primary-shade);
+  --section-tint: var(--sp-chip-start);
   display: grid;
-  gap: 0.4rem;
+  gap: 0.65rem;
   min-width: 0;
 }
 
+.timeline-segment[data-section='arrival'] {
+  --section-accent: #356f5e;
+  --section-tint: #e4f2eb;
+}
+
+.timeline-segment[data-section='closing'] {
+  --section-accent: #8b6426;
+  --section-tint: #faf0dc;
+}
+
 .segment-empty {
-  padding: 0.6rem 0;
+  padding: 1rem;
+  border-inline-start: 3px solid var(--section-accent);
+  background: rgba(255, 255, 255, 0.5);
   color: var(--sp-ink-3);
   font-size: 0.82rem;
 }
 
 .timeline-segment header {
   display: grid;
-  grid-template-columns: 28px minmax(0, 1fr) auto;
-  gap: 0.5rem;
+  grid-template-columns: 34px minmax(0, 1fr) minmax(0, auto);
+  gap: 0.65rem;
   align-items: center;
 }
 
@@ -346,6 +387,8 @@
 
 .timeline-segment h2 {
   font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--sp-brand-ink);
 }
 
 .timeline-segment header span {
@@ -356,11 +399,16 @@
 .section-number {
   display: grid;
   place-items: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: var(--sp-chip-start);
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--section-tint);
   font-weight: 800;
+}
+
+.timeline-segment header .section-number {
+  color: var(--section-accent);
+  font-size: 0.95rem;
 }
 
 .timeline-segment header ion-button {
@@ -368,6 +416,11 @@
   min-height: 44px;
   font-size: 0.78rem;
   white-space: normal;
+  --color: var(--section-accent);
+  --background: var(--section-tint);
+  --border-radius: 8px;
+  --padding-start: 0.65rem;
+  --padding-end: 0.65rem;
 }
 
 .flow-item {
@@ -375,10 +428,24 @@
   grid-template-columns: 24px 48px minmax(0, 1fr) 44px;
   gap: 0.35rem;
   align-items: center;
-  padding: 0.4rem;
-  border: 1px solid rgba(212, 237, 242, 0.9);
+  padding: 0.55rem 0.4rem;
+  border: 1px solid var(--sp-border);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 6px var(--sp-shadow-soft);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.flow-item.is-expanded {
+  border-color: var(--section-accent);
+  box-shadow: 0 3px 12px var(--sp-shadow-soft);
+}
+
+@media (hover: hover) {
+  .flow-item:hover,
+  .exercise-result:hover {
+    border-color: var(--ion-color-primary);
+  }
 }
 
 .flow-item-list {
@@ -436,23 +503,27 @@
   place-items: center;
   align-content: center;
   min-height: 48px;
+  width: 48px;
+  padding: 0.25rem 0;
+  border: 1px solid var(--sp-border);
   border-radius: 6px;
-  background: var(--sp-chip-start);
+  background: var(--section-tint);
   color: var(--sp-brand-ink);
+  font-family: inherit;
   font-weight: 900;
+  cursor: pointer;
 }
 
-.time-pill ion-input {
-  width: 48px;
-  min-height: 28px;
-  --padding-bottom: 0;
-  --padding-end: 0;
-  --padding-start: 0;
-  --padding-top: 0;
-  color: var(--sp-brand-ink);
+.time-pill strong {
   font-size: 1rem;
-  font-weight: 900;
-  text-align: center;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+
+.time-pill ion-icon {
+  margin-top: 0.1rem;
+  font-size: 0.75rem;
 }
 
 .time-pill span {
@@ -474,6 +545,7 @@
   color: var(--sp-brand-ink);
   text-align: start;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .item-heading strong, .item-heading small {
@@ -494,13 +566,16 @@
 
 .item-heading ion-icon {
   flex-shrink: 0;
+  color: var(--sp-ink-3);
+  font-size: 0.85rem;
 }
 
 .item-details {
   grid-column: 2 / -1;
   display: grid;
   gap: 0.6rem;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0 0.25rem;
+  border-top: 1px solid var(--sp-border);
   color: var(--sp-ink-2);
   font-size: 0.85rem;
   line-height: 1.4;
@@ -602,6 +677,18 @@ ion-textarea {
 
 .class-actions {
   padding-bottom: 1rem;
+}
+
+.class-actions ion-button,
+.picker-done {
+  min-height: 48px;
+  --border-radius: 8px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.picker-done {
+  margin: 0 1rem 0.75rem;
 }
 
 .exercise-picker {

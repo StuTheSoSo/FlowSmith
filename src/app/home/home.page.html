@@ -38,6 +38,7 @@
     <p class="eyebrow" id="schedule-heading">{{ 'HOME.SCHEDULE_EYEBROW' | translate }}</p>
       <article
         class="timeline-segment"
+        [attr.data-section]="segment.id"
         [id]="'segment-' + segment.id"
         [attr.aria-labelledby]="'heading-' + segment.id"
         *ngFor="let segment of plan.segments; trackBy: trackSegment; let sectionIndex = index"
@@ -72,22 +73,20 @@
           cdkDrag
           [id]="'item-' + item.id"
           [class.just-added]="item.id === highlightedItemId"
+          [class.is-expanded]="expandedItemId === item.id"
           *ngFor="let item of segment.items; trackBy: trackItem"
         >
           <div class="drag-handle" cdkDragHandle [attr.title]="'HOME.DRAG_HANDLE_ARIA' | translate" aria-hidden="true">
             <ion-icon name="reorder-two-outline" aria-hidden="true"></ion-icon>
           </div>
 
-          <div class="time-pill">
-            <ion-input
-              type="number"
-              min="1"
-              [ngModel]="item.durationMinutes"
-              (ngModelChange)="updateDuration(item, $event)"
-              [attr.aria-label]="'HOME.DURATION_ARIA' | translate"
-            ></ion-input>
+          <button type="button" class="time-pill" (click)="editDuration(item)"
+            [attr.aria-label]="('HOME.DURATION_ARIA' | translate) + ': ' + item.durationMinutes + ', ' + (getExercise(item)?.name || item.exerciseId)"
+            [attr.title]="'HOME.DURATION_ARIA' | translate">
+            <strong>{{ item.durationMinutes }}</strong>
             <span>{{ 'HOME.STAT_MIN' | translate }}</span>
-          </div>
+            <ion-icon name="create-outline" aria-hidden="true"></ion-icon>
+          </button>
 
           <button type="button" class="item-heading" (click)="toggleItem(item)"
             [attr.aria-expanded]="expandedItemId === item.id" [attr.aria-controls]="'details-' + item.id">
