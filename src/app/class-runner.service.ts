@@ -174,6 +174,30 @@ export class ClassRunnerService {
     if (this.state.status === 'running' || this.state.status === 'setup') this.pause();
   }
 
+  updateCurrentExerciseDuration(durationSeconds: number): boolean {
+    const state = this.state;
+    const current = state.exercises[state.currentIndex];
+    if (!current || !['ready', 'setup', 'paused'].includes(state.status) ||
+      !Number.isSafeInteger(durationSeconds) || durationSeconds < 15 ||
+      durationSeconds <= state.currentExerciseElapsedSeconds) return false;
+
+    const plan = {
+      ...state.plan,
+      segments: state.plan.segments.map((segment) => ({
+        ...segment,
+        items: segment.items.map((item) => segment.id === current.segmentId && item.id === current.id
+          ? { ...item, durationMinutes: durationSeconds / 60 } : item),
+      })),
+    };
+    this.emitState({
+      ...state,
+      plan,
+      exercises: state.exercises.map((exercise, index) => index === state.currentIndex
+        ? { ...exercise, durationSeconds } : exercise),
+    });
+    return true;
+  }
+
   getCurrentExerciseRemainingSeconds(state = this.state): number {
     const current = state.exercises[state.currentIndex];
     return current ? Math.max(0, current.durationSeconds - state.currentExerciseElapsedSeconds) : 0;

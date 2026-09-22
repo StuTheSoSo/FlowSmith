@@ -32,6 +32,7 @@ export class HomePage implements OnInit, OnDestroy {
   pickerAddedCount = 0;
 
   private languageSubscription?: Subscription;
+  private dataSubscription?: Subscription;
   private highlightTimeout?: ReturnType<typeof setTimeout>;
 
   readonly plan: FlowPlan;
@@ -56,14 +57,18 @@ export class HomePage implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.languageSubscription?.unsubscribe();
+    this.dataSubscription?.unsubscribe();
     clearTimeout(this.highlightTimeout);
   }
 
   private loadBundle(language: string): void {
     this.isLoading = true;
     this.errorMessage = '';
-
-    this.flowData.load(language).subscribe({
+    this.searchTerm = '';
+    this.equipmentFilter = '';
+    this.levelFilter = '';
+    this.dataSubscription?.unsubscribe();
+    this.dataSubscription = this.flowData.load(language).subscribe({
       next: (bundle) => {
         this.bundle = bundle;
         this.refreshGrade();
@@ -234,12 +239,16 @@ export class HomePage implements OnInit, OnDestroy {
     const alert = await this.alertController.create({
       header: this.translate.instant('HOME.DURATION_ARIA'),
       subHeader: this.getExercise(item)?.name || item.exerciseId,
-      inputs: [{ name: 'minutes', type: 'number', value: item.durationMinutes, min: 1 }],
+      inputs: [{ name: 'minutes', type: 'number', value: item.durationMinutes, min: 0.25, attributes: { step: 0.25, 'aria-label': this.translate.instant('HOME.DURATION_ARIA') } }],
       buttons: [
         { text: this.translate.instant('COMMON.CANCEL'), role: 'cancel' },
         {
           text: this.translate.instant('COMMON.SAVE'),
-          handler: (data) => this.updateDuration(item, data?.minutes),
+          handler: (data) => {
+            if (this.updateDuration(item, data?.minutes)) return true;
+            alert.message = this.translate.instant('COMMON.INVALID_DURATION', { seconds: 15 });
+            return false;
+          },
         },
       ],
     });
@@ -248,7 +257,7 @@ export class HomePage implements OnInit, OnDestroy {
 
   updateDuration(item: FlowItem, value: unknown): boolean {
     const nextValue = Number(value);
-    if (!Number.isFinite(nextValue) || nextValue < 1) {
+    if (!Number.isFinite(nextValue) || nextValue < 0.25 || !Number.isSafeInteger(Math.round(nextValue * 60))) {
       return false;
     }
     item.durationMinutes = nextValue;

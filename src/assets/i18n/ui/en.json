@@ -7,6 +7,11 @@
     "SETTINGS": "Settings"
   },
   "COMMON": {
+    "DURATION": "Exercise duration",
+    "LESS_TIME": "Subtract 15 seconds",
+    "MORE_TIME": "Add 15 seconds",
+    "INVALID_DURATION": "Enter a valid duration of at least {{seconds}} seconds.",
+    "DURATION_CHANGED": "The class has changed. Close and reopen the duration editor.",
     "CANCEL": "Cancel",
     "SAVE": "Save",
     "DELETE": "Delete",

@@ -7,6 +7,11 @@
     "SETTINGS": "Einstellungen"
   },
   "COMMON": {
+    "DURATION": "Übungsdauer",
+    "LESS_TIME": "15 Sekunden abziehen",
+    "MORE_TIME": "15 Sekunden hinzufügen",
+    "INVALID_DURATION": "Gib eine gültige Dauer von mindestens {{seconds}} Sekunden ein.",
+    "DURATION_CHANGED": "Die Stunde hat sich geändert. Schließe die Dauerbearbeitung und öffne sie erneut.",
     "CANCEL": "Abbrechen",
     "SAVE": "Speichern",
     "DELETE": "Löschen",

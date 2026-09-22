@@ -19,6 +19,7 @@ interface ObservedRunnerState {
   currentExerciseEndsAt?: string;
   status: string;
   currentIndex: number;
+  currentDurationSeconds: number;
   currentExerciseElapsedSeconds: number;
 }
 
@@ -97,6 +98,7 @@ export class WatchProtocolService implements OnDestroy {
       currentExerciseEndsAt: this.classRunner.currentExerciseEndsAt,
       status: state.status,
       currentIndex: state.currentIndex,
+      currentDurationSeconds: state.exercises[state.currentIndex]?.durationSeconds ?? 0,
       currentExerciseElapsedSeconds: state.currentExerciseElapsedSeconds,
     };
     const previouslyObserved = this.lastObservedState;
@@ -107,6 +109,7 @@ export class WatchProtocolService implements OnDestroy {
       observed.status !== this.lastPublishedState.status ||
       observed.currentExerciseEndsAt !== this.lastPublishedState.currentExerciseEndsAt ||
       observed.currentIndex !== this.lastPublishedState.currentIndex ||
+      observed.currentDurationSeconds !== this.lastPublishedState.currentDurationSeconds ||
       (!!previouslyObserved && observed.currentExerciseElapsedSeconds < previouslyObserved.currentExerciseElapsedSeconds);
 
     if (stateChanged) this.commandRevision = this.classRunner.currentRevision;

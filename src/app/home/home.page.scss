@@ -441,6 +441,11 @@
   box-shadow: 0 3px 12px var(--sp-shadow-soft);
 }
 
+.planner-duration { grid-column: 2 / -1; grid-row: 2; justify-self: start; }
+.flow-item > .drag-handle { grid-column: 1; grid-row: 1; }
+.flow-item > .item-heading { grid-column: 2 / 4; grid-row: 1; }
+.flow-item > .item-menu { grid-column: 4; grid-row: 1; }
+
 @media (hover: hover) {
   .flow-item:hover,
   .exercise-result:hover {

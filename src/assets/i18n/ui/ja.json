@@ -7,6 +7,11 @@
     "SETTINGS": "設定"
   },
   "COMMON": {
+    "DURATION": "エクササイズの時間",
+    "LESS_TIME": "15秒減らす",
+    "MORE_TIME": "15秒追加",
+    "INVALID_DURATION": "{{seconds}}秒以上の有効な時間を入力してください。",
+    "DURATION_CHANGED": "クラスが変更されました。時間編集を閉じて、もう一度開いてください。",
     "CANCEL": "キャンセル",
     "SAVE": "保存",
     "DELETE": "削除",

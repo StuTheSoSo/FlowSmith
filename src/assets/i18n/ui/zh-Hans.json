@@ -7,6 +7,11 @@
     "SETTINGS": "设置"
   },
   "COMMON": {
+    "DURATION": "动作时长",
+    "LESS_TIME": "减少15秒",
+    "MORE_TIME": "增加15秒",
+    "INVALID_DURATION": "请输入至少{{seconds}}秒的有效时长。",
+    "DURATION_CHANGED": "课程已更改。请关闭并重新打开时长编辑器。",
     "CANCEL": "取消",
     "SAVE": "保存",
     "DELETE": "删除",

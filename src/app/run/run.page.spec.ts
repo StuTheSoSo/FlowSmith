@@ -47,4 +47,38 @@ describe('RunPage orientation', () => {
     expect(instant).toHaveBeenCalledWith('RUN.EXERCISE_COMPLETE_NEXT', { name: 'Hundred', next: 'Roll Up' });
     expect(page.isTeaching).toBeTrue();
   });
+
+  it('rejects duration saves after a watch action changes the state, exercise, or session', async () => {
+    const state = {
+      status: 'paused', currentIndex: 0, currentExerciseElapsedSeconds: 10,
+      exercises: [{ id: 'first', durationSeconds: 60 }, { id: 'second', durationSeconds: 60 }],
+    };
+    const runner = { currentSessionId: 'original', updateCurrentExerciseDuration: jasmine.createSpy('update').and.returnValue(true) };
+    const alert = { present: jasmine.createSpy('present').and.resolveTo(), message: '' };
+    let save: (data: { minutes: string }) => boolean = () => false;
+    (page as any).state = state;
+    (page as any).classRunner = runner;
+    (page as any).translate = { instant: (key: string) => key };
+    (page as any).alertController = {
+      create: async (options: { buttons: Array<{ handler?: typeof save }> }) => {
+        save = options.buttons[1].handler!;
+        return alert;
+      },
+    };
+    spyOn(page, 'getExerciseName').and.returnValue('First');
+    await page.editDuration();
+    state.status = 'running';
+    expect(save({ minutes: '1.5' })).toBeFalse();
+    state.status = 'paused';
+    state.currentIndex = 1;
+    expect(save({ minutes: '1.5' })).toBeFalse();
+    state.currentIndex = 0;
+    runner.currentSessionId = 'new-session';
+    expect(save({ minutes: '1.5' })).toBeFalse();
+    expect(runner.updateCurrentExerciseDuration).not.toHaveBeenCalled();
+    expect(alert.message).toBe('COMMON.DURATION_CHANGED');
+    runner.currentSessionId = 'original';
+    expect(save({ minutes: '1.5' })).toBeTrue();
+    expect(runner.updateCurrentExerciseDuration).toHaveBeenCalledOnceWith(90);
+  });
 });

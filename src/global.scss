@@ -90,6 +90,43 @@ ion-button {
 	font-weight: 800;
 }
 
+.duration-stepper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+.duration-stepper button {
+	min-height: 44px;
+	border: 1px solid var(--sp-border);
+	border-radius: 6px;
+	background: transparent;
+	color: var(--sp-brand-ink);
+	font: inherit;
+	cursor: pointer;
+}
+
+.duration-stepper .duration-adjust {
+	display: grid;
+	place-items: center;
+	width: 44px;
+	flex: 0 0 44px;
+	font-size: 20px;
+}
+
+.duration-stepper button:disabled { opacity: 0.35; cursor: default; }
+.duration-stepper button:focus-visible { outline: 2px solid var(--ion-color-primary); outline-offset: 2px; }
+
+.duration-value {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding: 8px 12px;
+	font-variant-numeric: tabular-nums;
+}
+
 .eyebrow,
 .summary-label {
 	margin: 0 0 0.18rem;

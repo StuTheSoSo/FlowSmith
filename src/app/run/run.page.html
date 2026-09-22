@@ -67,6 +67,10 @@
     <span><strong>{{ formatTime(totalDurationSeconds) }}</strong> {{ 'RUN.TOTAL' | translate }}</span>
     </section>
 
+    <div class="runner-duration" *ngIf="canEditDuration">
+      <ng-container *ngTemplateOutlet="durationEditor"></ng-container>
+    </div>
+
     <section class="runner-controls" aria-label="Class timer controls">
     <ion-button class="skip-control" fill="clear" size="small" (click)="classRunner.previous()" [disabled]="state.currentIndex === 0" [attr.aria-label]="(state.currentIndex === 0 ? 'RUN.AT_FIRST_EXERCISE_ARIA' : 'RUN.PREVIOUS_ARIA') | translate">
       <ion-icon name="play-skip-back-outline" slot="icon-only" aria-hidden="true"></ion-icon>
@@ -141,6 +145,7 @@
       <section class="teaching-screen" [attr.data-timer-status]="timerStatus">
         <div class="teaching-timer">
           <span [appFitText]="formatTime(exerciseRemainingSeconds)" [fitTextMax]="360">{{ formatTime(exerciseRemainingSeconds) }}</span>
+          <ng-container *ngIf="isSetup" [ngTemplateOutlet]="durationEditor"></ng-container>
         </div>
         <div class="teaching-current">
           <p *ngIf="isSetup" class="setup-label">{{ 'RUN.SETUP' | translate }}</p>
@@ -169,4 +174,23 @@
       </section>
     </ng-template>
   </ion-modal>
+  <ng-template #durationEditor>
+    <div class="duration-stepper" role="group" [attr.aria-label]="'COMMON.DURATION' | translate">
+      <button type="button" class="duration-adjust" (click)="adjustDuration(-15)"
+        [disabled]="!canEditDuration || (currentRunExercise?.durationSeconds || 0) - 15 < minimumDurationSeconds"
+        [attr.aria-label]="'COMMON.LESS_TIME' | translate" [attr.title]="'COMMON.LESS_TIME' | translate">
+        <ion-icon name="remove-outline" aria-hidden="true"></ion-icon>
+      </button>
+      <button type="button" class="duration-value" (click)="editDuration()" [disabled]="!canEditDuration"
+        [attr.aria-label]="('COMMON.DURATION' | translate) + ': ' + formatTime(currentRunExercise?.durationSeconds || 0)"
+        [attr.title]="'COMMON.DURATION' | translate">
+        {{ formatTime(currentRunExercise?.durationSeconds || 0) }}
+        <ion-icon name="create-outline" aria-hidden="true"></ion-icon>
+      </button>
+      <button type="button" class="duration-adjust" (click)="adjustDuration(15)" [disabled]="!canEditDuration"
+        [attr.aria-label]="'COMMON.MORE_TIME' | translate" [attr.title]="'COMMON.MORE_TIME' | translate">
+        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+      </button>
+    </div>
+  </ng-template>
 </ion-content>

@@ -7,6 +7,11 @@
     "SETTINGS": "Impostazioni"
   },
   "COMMON": {
+    "DURATION": "Durata dell'esercizio",
+    "LESS_TIME": "Sottrai 15 secondi",
+    "MORE_TIME": "Aggiungi 15 secondi",
+    "INVALID_DURATION": "Inserisci una durata valida di almeno {{seconds}} secondi.",
+    "DURATION_CHANGED": "La lezione è cambiata. Chiudi e riapri l'editor della durata.",
     "CANCEL": "Annulla",
     "SAVE": "Salva",
     "DELETE": "Elimina",

@@ -7,6 +7,11 @@
     "SETTINGS": "الإعدادات"
   },
   "COMMON": {
+    "DURATION": "مدة التمرين",
+    "LESS_TIME": "طرح 15 ثانية",
+    "MORE_TIME": "إضافة 15 ثانية",
+    "INVALID_DURATION": "أدخل مدة صالحة لا تقل عن {{seconds}} ثانية.",
+    "DURATION_CHANGED": "تغيرت الحصة. أغلق محرر المدة ثم افتحه مجددًا.",
     "CANCEL": "إلغاء",
     "SAVE": "حفظ",
     "DELETE": "حذف",

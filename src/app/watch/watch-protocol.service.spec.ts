@@ -129,6 +129,35 @@ describe('WatchProtocolService', () => {
     runner.stop();
   });
 
+  it('publishes duration-only edits and resumes from the revised remaining time', () => {
+    jasmine.clock().install();
+    jasmine.clock().mockDate(new Date('2026-09-22T12:00:00Z'));
+    const { runner, protocol } = createProtocol();
+    try {
+      runner.loadPlan(plan, 'planner');
+      runner.start();
+      jasmine.clock().tick(10000);
+      runner.pause();
+      const oldRevision = protocol.latestState!.revision;
+      runner.updateCurrentExerciseDuration(75);
+      expect(protocol.latestState?.currentExercise?.durationSeconds).toBe(75);
+      expect(protocol.latestState?.currentExercise?.remainingSeconds).toBe(65);
+      expect(protocol.latestState?.status).toBe('paused');
+      expect(protocol.latestState?.currentExerciseEndsAt).toBeUndefined();
+      const command = {
+        type: 'runner.command', protocolVersion: 1, sessionId: runner.currentSessionId,
+        messageId: 'resume-edited', sentAt: new Date().toISOString(), command: 'resume',
+        baseRevision: oldRevision,
+      };
+      expect(protocol.handleCommand(command).reason).toBe('stale-command');
+      expect(protocol.handleCommand({ ...command, baseRevision: protocol.latestState!.revision }).accepted).toBeTrue();
+      expect(protocol.latestState?.currentExerciseEndsAt).toBe('2026-09-22T12:01:15.000Z');
+    } finally {
+      runner.stop();
+      jasmine.clock().uninstall();
+    }
+  });
+
   it('applies a valid pause command once and rejects its duplicate', () => {
     const { runner, protocol } = createProtocol();
     runner.loadPlan(plan, 'planner');

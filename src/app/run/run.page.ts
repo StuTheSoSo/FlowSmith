@@ -109,6 +109,49 @@ export class RunPage implements OnInit, OnDestroy {
     return this.isRunning || this.isSetup;
   }
 
+  get canEditDuration(): boolean {
+    return !!this.currentRunExercise && ['ready', 'setup', 'paused'].includes(this.state.status);
+  }
+
+  get minimumDurationSeconds(): number {
+    return Math.max(15, this.state.currentExerciseElapsedSeconds + 1);
+  }
+
+  adjustDuration(seconds: number): void {
+    const current = this.currentRunExercise;
+    if (current) this.classRunner.updateCurrentExerciseDuration(current.durationSeconds + seconds);
+  }
+
+  async editDuration(): Promise<void> {
+    const current = this.currentRunExercise;
+    if (!current || !this.canEditDuration) return;
+    const sessionId = this.classRunner.currentSessionId;
+    const alert = await this.alertController.create({
+      header: this.translate.instant('HOME.DURATION_ARIA'),
+      subHeader: this.getExerciseName(current),
+      inputs: [{ name: 'minutes', type: 'number', value: current.durationSeconds / 60,
+        min: this.minimumDurationSeconds / 60,
+        attributes: { step: 0.25, 'aria-label': this.translate.instant('HOME.DURATION_ARIA') } }],
+      buttons: [
+        { text: this.translate.instant('COMMON.CANCEL'), role: 'cancel' },
+        {
+          text: this.translate.instant('COMMON.SAVE'),
+          handler: (data) => {
+            if (sessionId !== this.classRunner.currentSessionId || current.id !== this.currentRunExercise?.id || !this.canEditDuration) {
+              alert.message = this.translate.instant('COMMON.DURATION_CHANGED');
+              return false;
+            }
+            const durationSeconds = Math.round(Number(data?.minutes) * 60);
+            if (this.classRunner.updateCurrentExerciseDuration(durationSeconds)) return true;
+            alert.message = this.translate.instant('COMMON.INVALID_DURATION', { seconds: this.minimumDurationSeconds });
+            return false;
+          },
+        },
+      ],
+    });
+    await alert.present();
+  }
+
   private async presentRestoreSessionPrompt(): Promise<void> {
     const alert = await this.alertController.create({
       header: this.translate.instant('RUN.RESUME_SAVED_HEADER'),

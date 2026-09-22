@@ -97,6 +97,23 @@ describe('HomePage', () => {
     expect(component.planDurationMinutes).toBe(10);
   });
 
+  it('supports quarter-minute durations and rejects invalid values without persisting them', () => {
+    component.openExercisePicker(plan.segments[0]);
+    component.addExercise(matExercise);
+    const item = plan.segments[0].items[0];
+    expect(component.updateDuration(item, 0.25)).toBeTrue();
+    expect(component.planDurationMinutes).toBe(0.25);
+    expect(component.updateDuration(item, item.durationMinutes + 0.25)).toBeTrue();
+    expect(component.planDurationMinutes).toBe(0.5);
+    expect(component.updateDuration(item, item.durationMinutes - 0.25)).toBeTrue();
+    persist.calls.reset();
+    for (const invalid of ['', null, 'invalid', Infinity, 0, -1, 0.1]) {
+      expect(component.updateDuration(item, invalid)).toBeFalse();
+    }
+    expect(item.durationMinutes).toBe(0.25);
+    expect(persist).not.toHaveBeenCalled();
+  });
+
   it('expands only the selected row and persists cues', () => {
     component.openExercisePicker(plan.segments[0]);
     component.addExercise(matExercise);

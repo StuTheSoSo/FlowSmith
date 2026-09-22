@@ -62,6 +62,9 @@
 }
 
 .teaching-timer span { white-space: nowrap; }
+.teaching-timer > span { min-height: 0; flex: 1; }
+.teaching-timer .duration-stepper { flex-shrink: 0; font-size: 16px; }
+.runner-duration { margin: 12px 0; }
 .teaching-current h1 { font-weight: 700; }
 
 .teaching-current {

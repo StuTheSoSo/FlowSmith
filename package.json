@@ -9,6 +9,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:catalog": "node scripts/test-exercise-catalog.mjs",
     "test:watch": "{ cat 'ios/App/FlowSmith Watch Watch App/WatchRunnerState.swift'; printf '\n'; cat scripts/test-watch-mirror.swift; } | xcrun swift -",
     "lint": "ng lint",
     "import:safepilates-data": "node scripts/import-safepilates-data.mjs",

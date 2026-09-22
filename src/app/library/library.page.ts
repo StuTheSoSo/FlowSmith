@@ -38,11 +38,15 @@ export class LibraryPage implements OnInit, OnDestroy {
   private loadBundle(language: string): void {
     this.isLoading = true;
     this.errorMessage = '';
+    this.searchTerm = '';
 
     this.dataSubscription?.unsubscribe();
     this.dataSubscription = this.flowData.load(language).subscribe({
       next: (bundle) => {
         this.bundle = bundle;
+        if (this.selectedExercise) {
+          this.selectedExercise = this.flowData.findExercise(bundle, this.selectedExercise.id) ?? null;
+        }
         this.isLoading = false;
         this.changeDetector.detectChanges();
       },
@@ -56,7 +60,7 @@ export class LibraryPage implements OnInit, OnDestroy {
   }
 
   get filteredExercises(): Exercise[] {
-    return this.flowData.searchExercises(this.bundle, this.searchTerm, 60);
+    return this.flowData.searchExercises(this.bundle, this.searchTerm);
   }
 
   get totalExerciseCount(): number {

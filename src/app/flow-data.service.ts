@@ -79,11 +79,11 @@ export class FlowDataService {
 
         return throwError(() => error);
       }),
+      shareReplay(1),
       map((bundle) => {
         this.dataSubject.next(bundle);
         return bundle;
-      }),
-      shareReplay(1)
+      })
     );
 
     this.bundleCache.set(language, request$);
@@ -100,7 +100,7 @@ export class FlowDataService {
     );
   }
 
-  searchExercises(bundle: PilatesDataBundle | null, query: string, limit = 18): Exercise[] {
+  searchExercises(bundle: PilatesDataBundle | null, query: string, limit = Infinity): Exercise[] {
     if (!bundle) {
       return [];
     }

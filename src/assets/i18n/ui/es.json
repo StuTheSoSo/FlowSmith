@@ -7,6 +7,11 @@
     "SETTINGS": "Ajustes"
   },
   "COMMON": {
+    "DURATION": "Duración del ejercicio",
+    "LESS_TIME": "Restar 15 segundos",
+    "MORE_TIME": "Añadir 15 segundos",
+    "INVALID_DURATION": "Introduce una duración válida de al menos {{seconds}} segundos.",
+    "DURATION_CHANGED": "La clase ha cambiado. Cierra y vuelve a abrir el editor de duración.",
     "CANCEL": "Cancelar",
     "SAVE": "Guardar",
     "DELETE": "Eliminar",
