@@ -10,6 +10,11 @@ const routes: Routes = [
   {
     path: 'home',
     canActivate: [onboardingGuard],
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+  },
+  {
+    path: 'planner',
+    canActivate: [onboardingGuard],
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {

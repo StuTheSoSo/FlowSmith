@@ -133,4 +133,39 @@ describe('HomePage', () => {
     component.finalizePlanName();
     expect(plan.name).toBe('');
   });
+
+  it('only replaces the draft after confirming Clear and edits the new draft afterwards', async () => {
+    component.openExercisePicker(plan.segments[0]);
+    component.addExercise(matExercise);
+    plan.name = 'Saved flow';
+    plan.savedAt = new Date().toISOString();
+    const original = JSON.stringify(plan);
+    const blank: FlowPlan = {
+      id: 'new-draft', name: '', clientName: '', goal: '', selectedConditionIds: [],
+      segments: plan.segments.map(segment => ({ ...segment, items: [] })),
+    };
+    const service = TestBed.inject(FlowPlanService);
+    service.startBlankFlow = jasmine.createSpy().and.returnValue(blank);
+    const present = jasmine.createSpy().and.resolveTo();
+    const create = jasmine.createSpy().and.resolveTo({ present });
+    TestBed.inject(AlertController).create = create;
+
+    await component.confirmClearFlow();
+    expect(present).toHaveBeenCalled();
+    expect(service.startBlankFlow).not.toHaveBeenCalled();
+    expect(component.plan).toBe(plan);
+    const buttons = create.calls.mostRecent().args[0].buttons;
+    expect(buttons.find((button: { role: string }) => button.role === 'cancel').handler).toBeUndefined();
+    buttons.find((button: { role: string }) => button.role === 'destructive').handler();
+    expect(service.startBlankFlow).toHaveBeenCalledWith('');
+    expect(component.plan).toBe(blank);
+    expect(component.planExerciseCount).toBe(0);
+    expect(component.isSavedToLibrary).toBeFalse();
+    expect(component.pickerOpen).toBeFalse();
+    expect(component.selectedSegmentId).toBe(blank.segments[0].id);
+    expect(JSON.stringify(plan)).toBe(original);
+    component.addExercise(chairExercise);
+    expect(blank.segments[0].items[0].exerciseId).toBe(chairExercise.id);
+    expect(persist).toHaveBeenCalledWith(blank);
+  });
 });

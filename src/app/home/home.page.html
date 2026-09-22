@@ -1,5 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home" [attr.aria-label]="'DASHBOARD.HOME' | translate">
+        <ion-icon slot="icon-only" name="home-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-title>{{ 'HOME.HEADER_TITLE' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -25,11 +30,17 @@
         </small>
       </div>
     </div>
-    <ion-button fill="clear" class="save-flow-link" [disabled]="!planExerciseCount" (click)="saveFlow()"
-      [attr.title]="(isSavedToLibrary ? 'HOME.UPDATE_SAVED_FLOW' : 'HOME.SAVE_TO_LIBRARY') | translate">
-      <ion-icon name="bookmark-outline" slot="start" aria-hidden="true"></ion-icon>
-      {{ 'COMMON.SAVE' | translate }}
-    </ion-button>
+    <div class="plan-header-actions">
+      <ion-button fill="clear" class="save-flow-link" [disabled]="!planExerciseCount" (click)="saveFlow()"
+        [attr.title]="(isSavedToLibrary ? 'HOME.UPDATE_SAVED_FLOW' : 'HOME.SAVE_TO_LIBRARY') | translate">
+        <ion-icon name="bookmark-outline" slot="start" aria-hidden="true"></ion-icon>
+        {{ 'COMMON.SAVE' | translate }}
+      </ion-button>
+      <ion-button fill="clear" class="save-flow-link" (click)="confirmClearFlow()">
+        <ion-icon name="trash-outline" slot="start" aria-hidden="true"></ion-icon>
+        {{ 'HOME.CLEAR' | translate }}
+      </ion-button>
+    </div>
   </section>
 
   <ion-note color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-note>

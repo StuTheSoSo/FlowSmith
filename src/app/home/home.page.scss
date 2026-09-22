@@ -11,6 +11,17 @@
   min-width: 0;
 }
 
+.plan-header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .plan-header { grid-template-columns: minmax(0, 1fr); }
+  .plan-header-actions { justify-content: flex-end; }
+}
+
 .plan-name-input {
   --padding-bottom: 0.15rem;
   --padding-end: 0.1rem;

@@ -20,6 +20,9 @@
     "BROWSE_LIBRARY": "Bibliothek durchsuchen"
   },
   "HOME": {
+    "CLEAR": "Leeren",
+    "CLEAR_CONFIRM_HEADER": "Diesen Entwurf leeren?",
+    "CLEAR_CONFIRM_MESSAGE": "Einen neuen leeren Flow beginnen? Änderungen an diesem Entwurf werden verworfen. Deine gespeicherten Flows bleiben erhalten.",
     "ITEM_ACTIONS": "Übungsaktionen",
     "PICKER_DONE": "Fertig",
     "PICKER_EQUIPMENT": "Geräte",

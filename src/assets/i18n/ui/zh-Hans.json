@@ -20,6 +20,9 @@
     "BROWSE_LIBRARY": "浏览资料库"
   },
   "HOME": {
+    "CLEAR": "清空",
+    "CLEAR_CONFIRM_HEADER": "清空此草稿？",
+    "CLEAR_CONFIRM_MESSAGE": "开始一个新的空白流程？此草稿的更改将被放弃。已保存的流程将保留。",
     "ITEM_ACTIONS": "动作操作",
     "PICKER_DONE": "完成",
     "PICKER_EQUIPMENT": "器械",

@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar><ion-title>{{ 'DASHBOARD.HOME' | translate }}</ion-title></ion-toolbar>
+</ion-header>
+<ion-content>
+  <main class="home-layout" [attr.dir]="language === 'ar' ? 'rtl' : 'ltr'">
+    <header class="welcome">
+      <div class="brand"><img src="assets/icons/icon-128.webp" alt="" width="56" height="56"><h1>FlowSmith</h1></div>
+      <p class="introduction">{{ 'DASHBOARD.INTRO' | translate }}</p>
+      <ion-button routerLink="/planner"><ion-icon slot="start" name="add-outline"></ion-icon>{{ 'DASHBOARD.BUILD' | translate }}</ion-button>
+    </header>
+
+    <section class="foundations" aria-labelledby="foundations-title">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="foundations-title">{{ 'DASHBOARD.BASICS' | translate }}</h2></div>
+      <p>{{ 'DASHBOARD.BASICS_BODY' | translate }}</p>
+      <ul class="principles"><li *ngFor="let principle of principles">{{ 'DASHBOARD.' + principle | translate }}</li></ul>
+      <a class="text-link" routerLink="/home/read/principles">{{ 'DASHBOARD.PRINCIPLES.TITLE' | translate }}<ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+    </section>
+
+    <section class="practice" aria-labelledby="practice-title">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="practice-title">{{ 'DASHBOARD.PRACTICE' | translate }}</h2></div>
+      <div class="tip-grid">
+        <div *ngFor="let tip of ['BREATHING', 'ALIGNMENT', 'PRINCIPLES']; let index = index" class="tip">
+          <ion-icon [name]="articles[index === 0 ? 1 : index === 1 ? 2 : 0].icon" aria-hidden="true"></ion-icon>
+          <h3>{{ 'DASHBOARD.' + tip + '.TIP_TITLE' | translate }}</h3>
+          <p>{{ 'DASHBOARD.' + tip + '.TIP' | translate }}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured" aria-labelledby="featured-title">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="featured-title">{{ 'DASHBOARD.FEATURED' | translate }}</h2></div>
+      <div aria-live="polite">
+        <ion-spinner *ngIf="loading" [attr.aria-label]="'DASHBOARD.LOADING' | translate"></ion-spinner>
+        <ng-container *ngIf="exercise as featured">
+          <h3>{{ featured.name }}</h3><p>{{ featured.shortDescription }}</p>
+          <a class="text-link" routerLink="/library" [queryParams]="{ exercise: featured.id }">{{ 'DASHBOARD.EXERCISE_LINK' | translate }}<ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+        </ng-container>
+        <ng-container *ngIf="!loading && !exercise">
+          <p>{{ 'DASHBOARD.UNAVAILABLE' | translate }}</p>
+          <ion-button *ngIf="failed" fill="clear" (click)="loadExercise()">{{ 'COMMON.TRY_AGAIN' | translate }}</ion-button>
+          <a routerLink="/library">{{ 'COMMON.BROWSE_LIBRARY' | translate }}</a>
+        </ng-container>
+      </div>
+    </section>
+
+    <section class="reading" aria-labelledby="reading-title">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">04</span><h2 id="reading-title">{{ 'DASHBOARD.READING' | translate }}</h2></div>
+      <a class="article-link" *ngFor="let article of articles" [routerLink]="['/home/read', article.slug]">
+        <ion-icon [name]="article.icon" aria-hidden="true"></ion-icon>
+        <div><h3>{{ 'DASHBOARD.' + article.key + '.TITLE' | translate }}</h3><p>{{ 'DASHBOARD.' + article.key + '.SUMMARY' | translate }}</p></div>
+        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+      </a>
+    </section>
+    <p class="safety-note">{{ 'DASHBOARD.SAFETY' | translate }}</p>
+  </main>
+</ion-content>

@@ -404,7 +404,7 @@ export class RunPage implements OnInit, OnDestroy {
   }
 
   returnToPlanner(): void {
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/planner');
   }
 
   browseTemplates(): void {

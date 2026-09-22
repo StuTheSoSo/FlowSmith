@@ -1,0 +1,11 @@
+article { max-width: 720px; padding: 32px 24px 160px; margin: auto; color: var(--ion-text-color); }
+ion-icon { font-size: 32px; color: var(--ion-color-primary); }
+h1 { font-size: 30px; line-height: 1.2; margin: 16px 0; }
+h2 { font-size: 21px; margin: 28px 0 12px; }
+h1, h2 { letter-spacing: 0; overflow-wrap: anywhere; }
+p { font-size: 17px; line-height: 1.8; }
+.summary { font-size: 19px; padding-bottom: 24px; border-bottom: 1px solid var(--ion-color-medium); }
+aside { border-inline-start: 3px solid var(--ion-color-tertiary); padding-inline-start: 20px; }
+.safety { font-size: 14px; margin-top: 32px; }
+footer a { display: block; padding: 12px 0; color: var(--ion-color-primary); text-underline-offset: 4px; }
+a:focus-visible { outline: 2px solid var(--ion-color-primary); }

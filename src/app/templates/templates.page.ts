@@ -135,12 +135,12 @@ export class TemplatesPage implements OnInit, OnDestroy {
 
   createNewFlow(): void {
     this.flowPlanService.startBlankFlow();
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/planner');
   }
 
   editFlow(flow: FlowPlan): void {
     this.flowPlanService.loadSavedFlowIntoPlanner(flow.id);
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/planner');
   }
 
   startFlow(flow: FlowPlan): void {

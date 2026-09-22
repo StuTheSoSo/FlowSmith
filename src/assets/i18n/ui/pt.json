@@ -20,6 +20,9 @@
     "BROWSE_LIBRARY": "Explorar biblioteca"
   },
   "HOME": {
+    "CLEAR": "Limpar",
+    "CLEAR_CONFIRM_HEADER": "Limpar este rascunho?",
+    "CLEAR_CONFIRM_MESSAGE": "Iniciar uma nova sequência vazia? As alterações deste rascunho serão descartadas. As sequências salvas serão mantidas.",
     "ITEM_ACTIONS": "Ações do exercício",
     "PICKER_DONE": "Concluído",
     "PICKER_EQUIPMENT": "Equipamento",

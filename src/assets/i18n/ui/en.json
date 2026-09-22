@@ -1,4 +1,60 @@
 {
+  "DASHBOARD": {
+    "HOME": "Home",
+    "INTRO": "A little understanding. A more thoughtful practice.",
+    "BUILD": "Build a flow",
+    "BASICS": "The foundations of Pilates",
+    "BASICS_BODY": "Pilates brings attention to breath, movement and control. On a mat or apparatus, the aim is not the biggest movement: it is a movement you can perform with purpose. These six principles are commonly taught in contemporary Pilates.",
+    "BREATH": "Breath", "CONCENTRATION": "Concentration", "CONTROL": "Control", "CENTERING": "Centering", "PRECISION": "Precision", "FLOW": "Flow",
+    "PRACTICE": "Bring it into your practice",
+    "FEATURED": "An exercise to explore",
+    "READING": "Further reading",
+    "LOADING": "Loading exercise",
+    "UNAVAILABLE": "The featured exercise is unavailable right now.",
+    "EXERCISE_LINK": "Explore this exercise",
+    "TEACHING": "A cue for instructors",
+    "SOURCES": "Further resources",
+    "SAFETY": "General education, not an individual exercise prescription. Choose movements appropriate to your experience and health. Stop if an exercise causes pain, dizziness or unusual breathlessness; seek qualified advice when needed.",
+    "PRINCIPLES": {
+      "TITLE": "Principles, put into practice",
+      "SUMMARY": "Six ideas that give movement purpose, without making it rigid.",
+      "TIP_TITLE": "Make control the goal",
+      "TIP": "Choose a range you can manage smoothly. A smaller, deliberate movement is more useful than forcing the final position.",
+      "ONE_TITLE": "Attention before effort",
+      "ONE": "Concentration means noticing what you are doing. Before a repetition, notice your support points and your breath. Control means being able to begin, change and finish the movement deliberately, not simply moving as slowly as possible.",
+      "TWO_TITLE": "Support, not gripping",
+      "TWO": "Centering directs attention to support through the trunk. It does not mean holding the abdomen tight throughout a session. Precision is choosing the intended movement while allowing the rest of the body to contribute without unnecessary tension.",
+      "THREE_TITLE": "Let the parts connect",
+      "THREE": "Breath and flow connect one phase to the next. Keep breathing and make transitions unhurried. These six ideas are a commonly taught framework, not a test of perfection or a reason to push through discomfort.",
+      "CUE": "Offer one clear intention at a time: 'Return as deliberately as you reach.' Watch the response before adding another cue."
+    },
+    "BREATHING": {
+      "TITLE": "Breath and movement",
+      "SUMMARY": "Use breathing as a rhythm, not another task to get right.",
+      "TIP_TITLE": "Keep the breath moving",
+      "TIP": "Let the ribs expand comfortably as you inhale. Avoid holding your breath to finish a difficult repetition.",
+      "ONE_TITLE": "Begin with an easy breath",
+      "ONE": "In a comfortable position, notice where breathing moves your ribs. Allow them to expand on an inhale and settle on an exhale. There is no need to take the deepest possible breath or press your shoulders down.",
+      "TWO_TITLE": "Add one movement",
+      "TWO": "Try matching an easy movement to an unforced breath. Exhaling during effort is a useful starting cue, but breathing patterns vary by exercise and teaching approach. Continuous, comfortable breathing matters more than matching a count exactly.",
+      "THREE_TITLE": "Reduce the demand",
+      "THREE": "If you keep holding your breath, reduce the range, resistance or number of repetitions. Pause before trying again. Lightheadedness is a reason to stop, not a sign that breathing practice is working.",
+      "CUE": "Try 'Let the breath continue as you move.' Allow time for a natural breath instead of asking everyone to match your breathing speed."
+    },
+    "ALIGNMENT": {
+      "TITLE": "Alignment without rigidity",
+      "SUMMARY": "Find useful support and build movement from there.",
+      "TIP_TITLE": "Find your support",
+      "TIP": "Notice contact with the mat or apparatus. Let that support help you move without bracing your neck or jaw.",
+      "ONE_TITLE": "Start with the task",
+      "ONE": "Alignment is a relationship between body parts and the movement you are doing. There is no single pose to hold for every exercise. Begin with a comfortable, supported position and follow the setup for that specific movement.",
+      "TWO_TITLE": "Make range a choice",
+      "TWO": "Explore only as far as you can maintain the intended action and breathe comfortably. Bending the knees or reducing a reach may make an exercise more manageable. A modification is a useful choice, not a failed repetition.",
+      "THREE_TITLE": "Progress one thing at a time",
+      "THREE": "When a movement feels consistent, change one demand: range, resistance, repetitions or coordination. More is not always better. If pain or a health condition affects your movement, seek individual guidance before progressing.",
+      "CUE": "Ask 'Where do you feel supported?' Observe breathing and movement quality before suggesting a larger range or extra resistance."
+    }
+  },
   "TABS": {
     "PLANNER": "Planner",
     "LIBRARY": "Library",
@@ -20,6 +76,9 @@
     "BROWSE_LIBRARY": "Browse library"
   },
   "HOME": {
+    "CLEAR": "Clear",
+    "CLEAR_CONFIRM_HEADER": "Clear this draft?",
+    "CLEAR_CONFIRM_MESSAGE": "Start a new blank flow? Changes to this draft will be discarded. Your saved flows will be kept.",
     "ITEM_ACTIONS": "Exercise actions",
     "PICKER_DONE": "Done",
     "PICKER_EQUIPMENT": "Equipment",

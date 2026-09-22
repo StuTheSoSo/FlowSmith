@@ -20,6 +20,9 @@
     "BROWSE_LIBRARY": "Explorar biblioteca"
   },
   "HOME": {
+    "CLEAR": "Vaciar",
+    "CLEAR_CONFIRM_HEADER": "¿Vaciar este borrador?",
+    "CLEAR_CONFIRM_MESSAGE": "¿Empezar una sesión vacía? Se descartarán los cambios de este borrador. Tus sesiones guardadas se conservarán.",
     "ITEM_ACTIONS": "Acciones del ejercicio",
     "PICKER_DONE": "Listo",
     "PICKER_EQUIPMENT": "Equipo",

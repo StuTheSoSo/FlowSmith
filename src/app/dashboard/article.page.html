@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start"><ion-back-button defaultHref="/home" [text]="'DASHBOARD.HOME' | translate"></ion-back-button></ion-buttons>
+    <ion-title>{{ 'DASHBOARD.READING' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <article *ngIf="article as current" [attr.dir]="flowData.currentLanguage === 'ar' ? 'rtl' : 'ltr'">
+    <ion-icon [name]="current.icon" aria-hidden="true"></ion-icon>
+    <h1>{{ 'DASHBOARD.' + current.key + '.TITLE' | translate }}</h1>
+    <p class="summary">{{ 'DASHBOARD.' + current.key + '.SUMMARY' | translate }}</p>
+    <section *ngFor="let section of sections">
+      <h2>{{ 'DASHBOARD.' + current.key + '.' + section + '_TITLE' | translate }}</h2>
+      <p>{{ 'DASHBOARD.' + current.key + '.' + section | translate }}</p>
+    </section>
+    <aside><h2>{{ 'DASHBOARD.TEACHING' | translate }}</h2><p>{{ 'DASHBOARD.' + current.key + '.CUE' | translate }}</p></aside>
+    <p class="safety">{{ 'DASHBOARD.SAFETY' | translate }}</p>
+    <footer>
+      <h2>{{ 'DASHBOARD.SOURCES' | translate }}</h2>
+      <a href="https://www.nhs.uk/live-well/exercise/" target="_blank" rel="noopener noreferrer">NHS: Exercise</a>
+      <a routerLink="/home">{{ 'DASHBOARD.HOME' | translate }}</a>
+    </footer>
+  </article>
+</ion-content>

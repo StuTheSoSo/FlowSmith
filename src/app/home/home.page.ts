@@ -35,7 +35,7 @@ export class HomePage implements OnInit, OnDestroy {
   private dataSubscription?: Subscription;
   private highlightTimeout?: ReturnType<typeof setTimeout>;
 
-  readonly plan: FlowPlan;
+  plan: FlowPlan;
 
   constructor(
     readonly flowData: FlowDataService,
@@ -171,6 +171,35 @@ export class HomePage implements OnInit, OnDestroy {
           handler: (data) => {
             const name = data?.name?.trim() || this.plan.name.trim() || this.translate.instant('HOME.UNTITLED_FLOW');
             this.flowPlanService.saveCurrentPlanAsFlow(name);
+            this.changeDetector.detectChanges();
+          },
+        },
+      ],
+    });
+    await alert.present();
+  }
+
+  async confirmClearFlow(): Promise<void> {
+    const alert = await this.alertController.create({
+      header: this.translate.instant('HOME.CLEAR_CONFIRM_HEADER'),
+      message: this.translate.instant('HOME.CLEAR_CONFIRM_MESSAGE'),
+      buttons: [
+        { text: this.translate.instant('COMMON.CANCEL'), role: 'cancel' },
+        {
+          text: this.translate.instant('HOME.CLEAR'),
+          role: 'destructive',
+          handler: () => {
+            this.plan = this.flowPlanService.startBlankFlow('');
+            clearTimeout(this.highlightTimeout);
+            this.selectedSegmentId = this.plan.segments[0].id;
+            this.highlightedItemId = '';
+            this.expandedItemId = '';
+            this.searchTerm = '';
+            this.equipmentFilter = '';
+            this.levelFilter = '';
+            this.pickerAddedCount = 0;
+            this.pickerOpen = false;
+            this.refreshGrade();
             this.changeDetector.detectChanges();
           },
         },

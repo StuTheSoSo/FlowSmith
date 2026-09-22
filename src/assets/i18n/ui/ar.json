@@ -20,6 +20,9 @@
     "BROWSE_LIBRARY": "تصفح المكتبة"
   },
   "HOME": {
+    "CLEAR": "مسح",
+    "CLEAR_CONFIRM_HEADER": "مسح هذه المسودة؟",
+    "CLEAR_CONFIRM_MESSAGE": "هل تريد بدء تسلسل جديد فارغ؟ سيتم تجاهل تغييرات هذه المسودة. ستبقى تسلسلاتك المحفوظة كما هي.",
     "ITEM_ACTIONS": "إجراءات التمرين",
     "PICKER_DONE": "تم",
     "PICKER_EQUIPMENT": "المعدات",

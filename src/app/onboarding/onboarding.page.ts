@@ -112,7 +112,7 @@ export class OnboardingPage {
   startBlankFlow(): void {
     this.finish();
     this.flowPlanService.startBlankFlow();
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/planner');
   }
 
   browseTemplates(): void {

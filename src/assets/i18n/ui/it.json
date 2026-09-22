@@ -20,6 +20,9 @@
     "BROWSE_LIBRARY": "Sfoglia la libreria"
   },
   "HOME": {
+    "CLEAR": "Svuota",
+    "CLEAR_CONFIRM_HEADER": "Svuotare questa bozza?",
+    "CLEAR_CONFIRM_MESSAGE": "Iniziare una nuova sequenza vuota? Le modifiche alla bozza saranno eliminate. Le sequenze salvate saranno conservate.",
     "ITEM_ACTIONS": "Azioni dell'esercizio",
     "PICKER_DONE": "Fine",
     "PICKER_EQUIPMENT": "Attrezzatura",

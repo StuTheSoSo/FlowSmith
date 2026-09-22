@@ -20,6 +20,9 @@
     "BROWSE_LIBRARY": "ライブラリを見る"
   },
   "HOME": {
+    "CLEAR": "クリア",
+    "CLEAR_CONFIRM_HEADER": "この下書きをクリアしますか？",
+    "CLEAR_CONFIRM_MESSAGE": "新しい空のフローを作成しますか？この下書きの変更は破棄されます。保存済みのフローは保持されます。",
     "ITEM_ACTIONS": "エクササイズの操作",
     "PICKER_DONE": "完了",
     "PICKER_EQUIPMENT": "器具",

@@ -20,6 +20,9 @@
     "BROWSE_LIBRARY": "Parcourir la bibliothèque"
   },
   "HOME": {
+    "CLEAR": "Vider",
+    "CLEAR_CONFIRM_HEADER": "Vider ce brouillon ?",
+    "CLEAR_CONFIRM_MESSAGE": "Commencer une nouvelle séance vide ? Les modifications de ce brouillon seront perdues. Vos séances enregistrées seront conservées.",
     "ITEM_ACTIONS": "Actions de l'exercice",
     "PICKER_DONE": "Terminé",
     "PICKER_EQUIPMENT": "Matériel",
