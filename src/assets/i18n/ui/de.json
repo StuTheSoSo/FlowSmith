@@ -1,5 +1,12 @@
 {
   "DASHBOARD": {
+    "RESOURCES": {
+      "NOTE": "Externe Informationen auf Englisch. Internetzugang erforderlich; Links öffnen sich in einem neuen Tab.",
+      "EXERCISE": "Empfehlungen zu Bewegung, Kraft und Beweglichkeit sowie Übungsvideos.",
+      "PILATES": "Eine Einführung in Pilates, seine Ursprünge und seinen Bewegungsansatz.",
+      "PROFESSIONAL": "Weiterbildung, berufliche Standards und Materialien für Pilates-Lehrkräfte.",
+      "RELAXATION": "Forschungsergebnisse und Sicherheitshinweise zu Atem- und Entspannungstechniken."
+    },
     "HOME": "Start", "INTRO": "Mehr verstehen. Bewusster üben.", "BUILD": "Flow erstellen",
     "BASICS": "Die Grundlagen von Pilates", "BASICS_BODY": "Pilates verbindet Atmung, Bewegung und Kontrolle. Auf der Matte oder am Gerät zählt nicht die größtmögliche Bewegung, sondern eine bewusst ausgeführte. Diese sechs Prinzipien werden im heutigen Pilates häufig vermittelt.",
     "BREATH": "Atmung", "CONCENTRATION": "Konzentration", "CONTROL": "Kontrolle", "CENTERING": "Zentrierung", "PRECISION": "Präzision", "FLOW": "Bewegungsfluss",

@@ -1,23 +1,37 @@
 :host { display: block; }
 .home-layout { max-width: 1040px; margin: auto; padding: 24px 24px 160px; color: var(--ion-text-color); }
-.welcome { padding: 12px 0 28px; }
-.brand { display: flex; align-items: center; gap: 14px; }
-.brand img { flex: 0 0 56px; border-radius: 8px; }
-h1 { font-size: 30px; margin: 0; }
+.welcome { padding: 24px 0 40px; text-align: center; }
+.brand { display: flex; align-items: center; justify-content: center; gap: 18px; }
+.brand img { flex: 0 0 64px; width: 64px; height: 64px; border-radius: 8px; }
+h1 { font-size: 44px; font-weight: 800; line-height: 1.15; margin: 0; }
 h2 { font-size: 22px; margin: 0; }
 h3 { font-size: 18px; margin: 0 0 8px; }
 h1, h2, h3 { letter-spacing: 0; overflow-wrap: anywhere; }
 p { line-height: 1.65; margin: 10px 0 18px; }
-.introduction { max-width: 640px; font-size: 18px; }
+.introduction {
+  max-width: 36ch;
+  margin: 20px auto 0;
+  color: var(--sp-ink-2);
+  font-size: 20px;
+  line-height: 1.5;
+  text-wrap: balance;
+}
 ion-button { margin-inline: 0; min-height: 48px; height: auto; white-space: normal; }
 .welcome ion-button {
   display: flex;
   width: min(100%, 440px);
   min-height: 64px;
-  margin: 28px auto 8px;
-  font-size: 20px;
+  margin: 28px auto 0;
+  font-size: 18px;
   font-weight: 800;
   letter-spacing: 0;
+  text-transform: none;
+  --background: var(--sp-brand-ink);
+  --background-hover: var(--sp-ink-2);
+  --background-activated: var(--sp-ink);
+  --color: #ffffff;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 12px var(--sp-shadow);
   --padding-top: 16px;
   --padding-bottom: 16px;
   --padding-start: 24px;
@@ -40,6 +54,14 @@ ion-icon { flex-shrink: 0; font-size: 24px; }
 .article-link p { color: var(--ion-text-color); margin: 0; }
 .safety-note { font-size: 13px; border-inline-start: 2px solid var(--ion-color-medium); padding-inline-start: 14px; }
 [dir='rtl'] ion-icon[name='arrow-forward-outline'] { transform: rotate(180deg); }
+@media (max-width: 480px) {
+  .welcome { padding-top: 12px; padding-bottom: 32px; }
+  .brand { flex-direction: column; gap: 12px; }
+  .brand img { flex-basis: 56px; width: 56px; height: 56px; }
+  h1 { font-size: 36px; }
+  .introduction { font-size: 18px; margin-top: 16px; }
+  .welcome ion-button { margin-top: 24px; }
+}
 @media (min-width: 760px) {
   .home-layout { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); column-gap: 40px; }
   .welcome, .foundations, .practice, .safety-note { grid-column: 1 / -1; }

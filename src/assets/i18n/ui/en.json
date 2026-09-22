@@ -1,5 +1,12 @@
 {
   "DASHBOARD": {
+    "RESOURCES": {
+      "NOTE": "External resources in English. Internet access required; links open in a new tab.",
+      "EXERCISE": "Physical activity guidelines, strength, flexibility and exercise videos.",
+      "PILATES": "An introduction to Pilates, its origins and approach to movement.",
+      "PROFESSIONAL": "Education, professional standards and resources for Pilates teachers.",
+      "RELAXATION": "Evidence and safety information on breathing and relaxation techniques."
+    },
     "HOME": "Home",
     "INTRO": "A little understanding. A more thoughtful practice.",
     "BUILD": "Build a flow",

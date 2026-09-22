@@ -1,5 +1,12 @@
 {
   "DASHBOARD": {
+    "RESOURCES": {
+      "NOTE": "Risorse esterne in inglese. È necessaria una connessione Internet; i link si aprono in una nuova scheda.",
+      "EXERCISE": "Indicazioni su attività fisica, forza, flessibilità e video di esercizi.",
+      "PILATES": "Un’introduzione al Pilates, alle sue origini e al suo approccio al movimento.",
+      "PROFESSIONAL": "Formazione, standard professionali e risorse per insegnanti di Pilates.",
+      "RELAXATION": "Evidenze e informazioni sulla sicurezza delle tecniche di respirazione e rilassamento."
+    },
     "HOME": "Home", "INTRO": "Capire un po’ di più. Praticare con più consapevolezza.", "BUILD": "Crea una sequenza",
     "BASICS": "Le basi del Pilates", "BASICS_BODY": "Il Pilates unisce respiro, movimento e controllo. Sul tappetino o sugli attrezzi, l’obiettivo non è il movimento più ampio, ma quello eseguito con intenzione. Questi sei principi sono comunemente insegnati nel Pilates contemporaneo.",
     "BREATH": "Respiro", "CONCENTRATION": "Concentrazione", "CONTROL": "Controllo", "CENTERING": "Centratura", "PRECISION": "Precisione", "FLOW": "Fluidità",

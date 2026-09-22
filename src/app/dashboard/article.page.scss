@@ -8,4 +8,12 @@ p { font-size: 17px; line-height: 1.8; }
 aside { border-inline-start: 3px solid var(--ion-color-tertiary); padding-inline-start: 20px; }
 .safety { font-size: 14px; margin-top: 32px; }
 footer a { display: block; padding: 12px 0; color: var(--ion-color-primary); text-underline-offset: 4px; }
+.resource-note { font-size: 14px; color: var(--sp-ink-2); }
+.resource-list { list-style: none; padding: 0; margin: 20px 0; }
+.resource-list li { border-bottom: 1px solid var(--sp-border); }
+.resource-list a { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; padding: 16px 0; text-decoration: none; }
+.resource-list a > span { min-width: 0; overflow-wrap: anywhere; }
+.resource-list strong { text-decoration: underline; text-underline-offset: 4px; }
+.resource-list ion-icon { flex: 0 0 20px; font-size: 20px; }
+.resource-description { display: block; margin-top: 6px; font-size: 15px; line-height: 1.5; color: var(--sp-ink-2); }
 a:focus-visible { outline: 2px solid var(--ion-color-primary); }

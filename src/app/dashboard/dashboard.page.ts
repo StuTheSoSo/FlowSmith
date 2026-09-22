@@ -1,8 +1,8 @@
-import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { FlowDataService } from '../flow-data.service';
 import { Exercise } from '../models';
-import { ARTICLES, FEATURED_EXERCISE_ID } from './dashboard-content';
+import { ARTICLES, dailyFeaturedExercise } from './dashboard-content';
 
 @Component({
   selector: 'app-dashboard',
@@ -19,6 +19,8 @@ export class DashboardPage implements OnInit, OnDestroy {
   language = 'en';
   private languageSubscription?: Subscription;
   private dataSubscription?: Subscription;
+  private featuredDay = '';
+  private rotationTimer?: ReturnType<typeof setTimeout>;
 
   constructor(private readonly flowData: FlowDataService, private readonly changeDetector: ChangeDetectorRef) {}
 
@@ -30,13 +32,18 @@ export class DashboardPage implements OnInit, OnDestroy {
   }
 
   loadExercise(): void {
+    clearTimeout(this.rotationTimer);
+    const now = new Date();
+    const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    this.featuredDay = now.toDateString();
+    this.rotationTimer = setTimeout(() => this.loadExercise(), midnight.getTime() - now.getTime());
     this.dataSubscription?.unsubscribe();
     this.loading = true;
     this.failed = false;
     this.exercise = null;
     this.dataSubscription = this.flowData.load(this.language).subscribe({
       next: bundle => {
-        this.exercise = this.flowData.findExercise(bundle, FEATURED_EXERCISE_ID) ?? null;
+        this.exercise = dailyFeaturedExercise(bundle.exercises);
         this.loading = false;
         this.changeDetector.detectChanges();
       },
@@ -49,7 +56,16 @@ export class DashboardPage implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    clearTimeout(this.rotationTimer);
     this.languageSubscription?.unsubscribe();
     this.dataSubscription?.unsubscribe();
+  }
+
+  @HostListener('window:focus')
+  @HostListener('document:visibilitychange')
+  ionViewWillEnter(): void {
+    if (document.visibilityState === 'visible' && this.featuredDay !== new Date().toDateString()) {
+      this.loadExercise();
+    }
   }
 }
