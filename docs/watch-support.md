@@ -14,7 +14,7 @@ The first release should be a **phone-dependent companion experience**. The watc
 - iOS native target: iOS 15.0, Swift 5, iPhone and iPad families.
 - Android native target: min SDK 24, compile/target SDK 36.
 - Existing Capacitor plugins: App, Preferences, Screen Orientation, and a local WatchBridge.
-- Existing native targets: the iOS app, its SwiftUI Apple Watch companion, and the Android phone app. No Wear OS companion module exists yet.
+- Existing native targets: the iOS app, its SwiftUI Apple Watch companion, the Android phone app, and the Kotlin/Compose Wear OS companion in `android/wear` (min SDK 30).
 - Main timer owner: `src/app/class-runner.service.ts`.
 - Current timer implementation: persisted `BehaviorSubject` state with timestamp-based reconciliation; deadline-aligned timeouts refresh the UI but do not own elapsed time.
 - Current state includes source, cloned plan, flattened exercises, current index, current exercise elapsed seconds, total elapsed seconds, status, and optional completed exercise ID.
@@ -249,7 +249,7 @@ Rules:
 
 ## Phase 3: Native Bridge from Capacitor
 
-**Status: implemented; native device-build validation pending.** `WatchBridgeService` is initialized once at app startup. The iOS phone app uses `WatchConnectivity` and the Android phone app uses the Wear OS Data Layer to retain latest state, relay commands, send acknowledgements, and emit connection changes. Native compilation requires accepting the local Xcode license and installing a Java runtime before device validation can run.
+**Status: implemented and compiled on both platforms.** `WatchBridgeService` is initialized once at app startup. The iOS phone app uses `WatchConnectivity` and the Android phone app uses the Wear OS Data Layer to retain latest state, relay commands, send acknowledgements, and emit connection changes. Paired Wear OS delivery still needs runtime validation.
 
 Create a Capacitor plugin or native bridge owned by the project. A plugin is preferable to trying to expose watch communication through arbitrary WebView JavaScript.
 
@@ -317,6 +317,32 @@ Use a high-contrast, glanceable layout:
 The watch must not assume that a phone WebView is currently visible.
 
 ## Wear OS Implementation
+
+**Status: companion implemented; paired runtime and layout checks pending.** The watch displays current/next exercise, progress, a deadline-based countdown, and phone theme colors. Go/Resume, Pause, and confirmed Stop send live versioned commands; disconnected/pending controls are disabled and requests time out after five seconds without automatic retries. Cached Data Items restore the display, and opening the watch requests fresh state. The countdown repaint loop runs only while the activity is visible and the timer is running.
+
+Exercise names follow the phone's selected language. Watch controls and messages currently have English resources only. Next/Previous controls, haptics, ambient mode, and background command handling are not implemented. Keep the phone app open during initial testing; a reachable Data Layer node does not guarantee its WebView is executing.
+
+### Run from Android Studio
+
+1. Sync the project with Gradle. Select the `app` configuration and run it on a Google Play-enabled phone emulator or an Android phone.
+2. In Device Manager, create a Wear OS virtual device (API 30 or newer, preferably a current image). Use **Pair Wearable** to pair it with the phone emulator, or pair physical devices with the watch manufacturer's companion app.
+3. Select the `wear` configuration and the watch device, then Run. Install both debug apps from this project so their application IDs and signing certificates match.
+4. Open FlowSmith on the phone, load a class, then open FlowSmith Watch. Verify Go, Pause, Resume, confirmed Stop, Wait for Go, duration edits, language changes, and disconnect/reconnect. Check both small round and larger watch layouts.
+
+Both apps use `com.stuschwartz.flowsmith`. Debug builds use the default debug keystore; release builds share the existing phone keystore configuration when present. Do not mix debug and release installations when testing Data Layer delivery.
+
+The phone advertises `flowsmith_phone_bridge` while its bridge is loaded; the watch advertises `flowsmith_watch_bridge`. State uses `/flowsmith/runner/state`; commands, acknowledgements, and refresh requests use `/flowsmith/runner/command`, `/flowsmith/runner/ack`, and `/flowsmith/runner/request-state`.
+
+From the repository root:
+
+```sh
+npm run build -- --configuration production
+npx cap sync android
+JAVA_HOME='/Applications/Android Studio.app/Contents/jbr/Contents/Home' \
+  android/gradlew -p android :app:assembleDebug :wear:assembleDebug :wear:testDebugUnitTest
+```
+
+The Kotlin model tests cover countdown deadlines, held setup/paused time, stale state rejection, command guards, and malformed protocol payloads. They do not verify transport or watch layout. The following subsections retain the broader implementation checklist.
 
 ### Native project work
 

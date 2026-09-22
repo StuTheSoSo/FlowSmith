@@ -1,10 +1,12 @@
-	@Override
-	public void onCreate(android.os.Bundle savedInstanceState) {
-		registerPlugin(WatchBridgePlugin.class);
-		super.onCreate(savedInstanceState);
-	}
 package com.stuschwartz.flowsmith;
 
+import android.os.Bundle;
 import com.getcapacitor.BridgeActivity;
 
-public class MainActivity extends BridgeActivity {}
+public class MainActivity extends BridgeActivity {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        registerPlugin(WatchBridgePlugin.class);
+        super.onCreate(savedInstanceState);
+    }
+}

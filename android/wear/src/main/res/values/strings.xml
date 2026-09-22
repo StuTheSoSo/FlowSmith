@@ -1,0 +1,25 @@
+<resources>
+  <string name="app_name">FlowSmith Watch</string>
+  <string name="go">Go</string>
+  <string name="resume">Resume</string>
+  <string name="pause">Pause</string>
+  <string name="stop">Stop class</string>
+  <string name="cancel">Cancel</string>
+  <string name="stop_question">Stop class?</string>
+  <string name="stop_message">Reset the class to the first exercise?</string>
+  <string name="setup">Set up</string>
+  <string name="paused">Paused</string>
+  <string name="running">Running</string>
+  <string name="ready">Ready</string>
+  <string name="completed">Complete</string>
+  <string name="next_exercise">Next: %1$s</string>
+  <string name="last_exercise">Last exercise</string>
+  <string name="open_phone">Open FlowSmith on your phone and load a class.</string>
+  <string name="refresh">Refresh</string>
+  <string name="disconnected">Phone disconnected</string>
+  <string name="waiting">Waiting for phone...</string>
+  <string name="connection_error">Cannot reach phone. Open FlowSmith on the phone.</string>
+  <string name="command_rejected">Class changed. Try again.</string>
+  <string name="class_changed">Class changed. Confirm Stop again.</string>
+  <string name="command_timeout">No confirmation from phone. Check the phone before retrying.</string>
+</resources>

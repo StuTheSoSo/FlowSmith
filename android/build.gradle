@@ -9,8 +9,10 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:9.0.1'
         classpath 'com.google.gms:google-services:4.4.4'
+      classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21'
+      classpath 'org.jetbrains.kotlin:compose-compiler-gradle-plugin:2.0.21'
 
-        // NOTE: Do not place your application dependencies here; they belong
+      // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
@@ -25,6 +27,15 @@ allprojects {
     // Redirect build directories to avoid issues with node_modules on external drives
     buildDir = "${rootProject.buildDir}/${project.name}"
 
+    // Fix duplicate Kotlin stdlib dependencies (jdk7 / jdk8 duplicated in 1.8.0+)
+    configurations.all {
+        resolutionStrategy {
+            force "org.jetbrains.kotlin:kotlin-stdlib:1.8.22"
+            force "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22"
+            force "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22"
+        }
+    }
+
     // Exclude macOS metadata files (AppleDouble) from resource and asset processing.
     // These files (starting with ._) are often created on external drives and cause
     // build failures like "._layout is not a directory".
@@ -35,7 +46,7 @@ allprojects {
                 sourceSet.assets.exclude "**/._*"
             }
             // Ensure AAPT also ignores these files
-            project.android.aaptOptions.ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
+            project.android.aaptOptions.ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~:._*'
         }
     }
 }

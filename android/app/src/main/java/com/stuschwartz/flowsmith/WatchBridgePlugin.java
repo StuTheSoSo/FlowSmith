@@ -8,7 +8,6 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 import com.google.android.gms.wearable.CapabilityClient;
 import com.google.android.gms.wearable.CapabilityInfo;
 import com.google.android.gms.wearable.DataClient;
-import com.google.android.gms.wearable.DataEventBuffer;
 import com.google.android.gms.wearable.DataMap;
 import com.google.android.gms.wearable.MessageClient;
 import com.google.android.gms.wearable.MessageEvent;
@@ -19,12 +18,14 @@ import org.json.JSONException;
 
 @CapacitorPlugin(name = "WatchBridge")
 public class WatchBridgePlugin extends Plugin implements MessageClient.OnMessageReceivedListener,
-    DataClient.OnDataChangedListener, CapabilityClient.OnCapabilityChangedListener {
+    CapabilityClient.OnCapabilityChangedListener {
 
     private static final String CAPABILITY = "flowsmith_watch_bridge";
     private static final String STATE_PATH = "/flowsmith/runner/state";
     private static final String COMMAND_PATH = "/flowsmith/runner/command";
     private static final String ACK_PATH = "/flowsmith/runner/ack";
+    private static final String REQUEST_PATH = "/flowsmith/runner/request-state";
+    private static final String PHONE_CAPABILITY = "flowsmith_phone_bridge";
 
     private MessageClient messageClient;
     private DataClient dataClient;
@@ -36,8 +37,8 @@ public class WatchBridgePlugin extends Plugin implements MessageClient.OnMessage
         dataClient = Wearable.getDataClient(getContext());
         capabilityClient = Wearable.getCapabilityClient(getContext());
         messageClient.addListener(this);
-        dataClient.addListener(this);
         capabilityClient.addListener(this, CAPABILITY);
+        capabilityClient.addLocalCapability(PHONE_CAPABILITY);
     }
 
     @PluginMethod
@@ -84,6 +85,11 @@ public class WatchBridgePlugin extends Plugin implements MessageClient.OnMessage
 
     @Override
     public void onMessageReceived(MessageEvent event) {
+        if (REQUEST_PATH.equals(event.getPath())) {
+            capabilityClient.getCapability(CAPABILITY, CapabilityClient.FILTER_REACHABLE)
+                .addOnSuccessListener(capability -> notifyListeners("connectionChanged", connectionState(capability), true));
+            return;
+        }
         if (!COMMAND_PATH.equals(event.getPath())) return;
         try {
             JSObject command = new JSObject(new String(event.getData(), StandardCharsets.UTF_8));
@@ -94,11 +100,6 @@ public class WatchBridgePlugin extends Plugin implements MessageClient.OnMessage
     }
 
     @Override
-    public void onDataChanged(DataEventBuffer events) {
-        notifyListeners("connectionChanged", connectionState(null), false);
-    }
-
-    @Override
     public void onCapabilityChanged(CapabilityInfo capabilityInfo) {
         notifyListeners("connectionChanged", connectionState(capabilityInfo), false);
     }
@@ -106,8 +107,8 @@ public class WatchBridgePlugin extends Plugin implements MessageClient.OnMessage
     @Override
     protected void handleOnDestroy() {
         if (messageClient != null) messageClient.removeListener(this);
-        if (dataClient != null) dataClient.removeListener(this);
         if (capabilityClient != null) capabilityClient.removeListener(this, CAPABILITY);
+        if (capabilityClient != null) capabilityClient.removeLocalCapability(PHONE_CAPABILITY);
         super.handleOnDestroy();
     }
 
