@@ -263,6 +263,22 @@
     "COMING_SOON_BODY": "O status Pro e as informações da fonte de dados estarão aqui em breve."
   },
   "ONBOARDING": {
+    "WATCH": {
+      "EYEBROW": "Aplicativo complementar opcional",
+      "TITLE": "Sua aula, no seu pulso",
+      "BODY": "O aplicativo para Apple Watch ou Wear OS mostra o exercício atual, o tempo restante e o próximo exercício.",
+      "CONTROLS": "Inicie, pause, retome ou pare pelo relógio. Parar exige confirmação.",
+      "WAIT": "Com o avanço automático desativado, cada novo exercício aguarda seu comando de início. Altere isso nas configurações.",
+      "PHONE": "O celular controla a aula. Mantenha o FlowSmith aberto em primeiro plano e o celular pareado por perto; o relógio não funciona sozinho.",
+      "SETUP": "Conecte seu relógio",
+      "WEB": "O relógio exige o aplicativo nativo FlowSmith no celular, não um navegador. A configuração depende da plataforma:",
+      "IOS_PAIR": "Pareie o Apple Watch com o iPhone usando o aplicativo Watch da Apple.",
+      "IOS_INSTALL": "Instale o FlowSmith no iPhone e seu aplicativo complementar para Apple Watch pelo aplicativo Watch.",
+      "ANDROID_PAIR": "Pareie o relógio Wear OS com o celular Android usando o aplicativo complementar do fabricante do relógio.",
+      "ANDROID_INSTALL": "Instale o FlowSmith no celular Android e o aplicativo complementar FlowSmith para Wear OS correspondente no relógio.",
+      "LOAD": "Depois, abra o FlowSmith nos dois dispositivos e carregue uma sequência na tela de aula do celular. O relógio mostra a aula; inicie quando estiver pronto.",
+      "RECONNECT": "Os controles ficam indisponíveis sem conexão. Reabra o FlowSmith nos dois dispositivos e verifique a conexão. Não tem relógio? Continue o tour e use o celular."
+    },
     "SKIP": "Pular tour",
     "BACK": "Voltar",
     "NEXT": "Avançar",

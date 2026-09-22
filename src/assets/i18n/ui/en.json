@@ -291,6 +291,22 @@
     "COMING_SOON_BODY": "Pro status and data source info will live here next."
   },
   "ONBOARDING": {
+    "WATCH": {
+      "EYEBROW": "Optional companion",
+      "TITLE": "Your class, on your wrist",
+      "BODY": "Use an Apple Watch or Wear OS companion to see the current exercise, its countdown and what's next.",
+      "CONTROLS": "Go, pause, resume or stop from your watch. Stop asks for confirmation.",
+      "WAIT": "With auto-advance off, each new exercise waits for Go. Change this in Settings.",
+      "PHONE": "Your phone runs the class. Keep FlowSmith open in the foreground and your paired phone nearby; the watch is not standalone.",
+      "SETUP": "Connect your watch",
+      "WEB": "Watch support requires the native FlowSmith phone app, not a browser. Setup differs by platform:",
+      "IOS_PAIR": "Pair your Apple Watch with your iPhone using Apple's Watch app.",
+      "IOS_INSTALL": "Install FlowSmith on your iPhone and its Apple Watch companion through the Watch app.",
+      "ANDROID_PAIR": "Pair your Wear OS watch with your Android phone using the watch manufacturer's companion app.",
+      "ANDROID_INSTALL": "Install FlowSmith on your Android phone and the matching FlowSmith Wear OS companion on your watch.",
+      "LOAD": "Then open FlowSmith on both devices and load a flow into Run on your phone. Your watch mirrors the class; use Go when ready.",
+      "RECONNECT": "Controls are unavailable when disconnected. Reopen FlowSmith on both devices and check their connection. No watch? Continue the tour and use your phone."
+    },
     "SKIP": "Skip tour",
     "BACK": "Back",
     "NEXT": "Next",

@@ -263,6 +263,22 @@
     "COMING_SOON_BODY": "Pro 状态和数据来源信息将很快在此提供。"
   },
   "ONBOARDING": {
+    "WATCH": {
+      "EYEBROW": "可选手表配套应用",
+      "TITLE": "在手腕上掌握课程",
+      "BODY": "通过 Apple Watch 或 Wear OS 配套应用，查看当前练习、剩余时间和下一个练习。",
+      "CONTROLS": "可从手表开始、暂停、继续或停止课程。停止操作需要确认。",
+      "WAIT": "关闭自动推进后，每个新练习都会等待你点击开始。可在设置中更改。",
+      "PHONE": "课程由手机管理。请保持 FlowSmith 在前台打开，并将已配对的手机放在附近；手表不能独立运行。",
+      "SETUP": "连接手表",
+      "WEB": "手表功能需要手机上的原生 FlowSmith 应用，不支持浏览器。设置方法因平台而异：",
+      "IOS_PAIR": "使用 Apple 的 Watch 应用，将 Apple Watch 与 iPhone 配对。",
+      "IOS_INSTALL": "在 iPhone 上安装 FlowSmith，并通过 Watch 应用安装 Apple Watch 配套应用。",
+      "ANDROID_PAIR": "使用手表厂商的配套应用，将 Wear OS 手表与 Android 手机配对。",
+      "ANDROID_INSTALL": "在 Android 手机上安装 FlowSmith，并在手表上安装相匹配的 FlowSmith Wear OS 配套应用。",
+      "LOAD": "然后在两个设备上打开 FlowSmith，并在手机的课程运行页面加载一个流程。手表会同步显示课程；准备好后点击开始。",
+      "RECONNECT": "断开连接时无法使用控制按钮。请在两个设备上重新打开 FlowSmith 并检查连接。没有手表？继续导览，直接使用手机即可。"
+    },
     "SKIP": "跳过导览",
     "BACK": "上一步",
     "NEXT": "下一步",

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Capacitor } from '@capacitor/core';
+import { FlowDataService } from '../flow-data.service';
 import { FlowPlanService } from '../flow-plan.service';
 import { OnboardingService } from './onboarding.service';
 
@@ -9,6 +11,7 @@ interface OnboardingStep {
   titleKey: string;
   bodyKey: string;
   bulletKeys?: string[];
+  watchSetup?: boolean;
 }
 
 @Component({
@@ -18,6 +21,8 @@ interface OnboardingStep {
   standalone: false,
 })
 export class OnboardingPage {
+  readonly nativePlatform = Capacitor.isNativePlatform() ? Capacitor.getPlatform() : 'web';
+  readonly watchPlatforms = this.nativePlatform === 'ios' ? ['IOS'] : this.nativePlatform === 'android' ? ['ANDROID'] : ['IOS', 'ANDROID'];
   readonly steps: OnboardingStep[] = [
     {
       icon: 'sparkles-outline',
@@ -61,6 +66,14 @@ export class OnboardingPage {
       bulletKeys: ['ONBOARDING.STEP6_BULLET1', 'ONBOARDING.STEP6_BULLET2', 'ONBOARDING.STEP6_BULLET3'],
     },
     {
+      icon: 'watch-outline',
+      eyebrowKey: 'ONBOARDING.WATCH.EYEBROW',
+      titleKey: 'ONBOARDING.WATCH.TITLE',
+      bodyKey: 'ONBOARDING.WATCH.BODY',
+      bulletKeys: ['ONBOARDING.WATCH.CONTROLS', 'ONBOARDING.WATCH.WAIT', 'ONBOARDING.WATCH.PHONE'],
+      watchSetup: true,
+    },
+    {
       icon: 'flag-outline',
       eyebrowKey: 'ONBOARDING.STEP7_EYEBROW',
       titleKey: 'ONBOARDING.STEP7_TITLE',
@@ -73,7 +86,8 @@ export class OnboardingPage {
   constructor(
     private readonly onboarding: OnboardingService,
     private readonly flowPlanService: FlowPlanService,
-    private readonly router: Router
+    private readonly router: Router,
+    readonly flowData: FlowDataService
   ) {}
 
   get currentStep(): OnboardingStep {

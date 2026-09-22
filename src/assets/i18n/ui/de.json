@@ -263,6 +263,22 @@
     "COMING_SOON_BODY": "Pro-Status und Datenquelleninfos werden hier bald verfügbar sein."
   },
   "ONBOARDING": {
+    "WATCH": {
+      "EYEBROW": "Optionale Begleit-App",
+      "TITLE": "Deine Stunde am Handgelenk",
+      "BODY": "Die Begleit-App für Apple Watch oder Wear OS zeigt die aktuelle Übung, die verbleibende Zeit und die nächste Übung.",
+      "CONTROLS": "Starte, pausiere, setze fort oder stoppe über deine Uhr. Stoppen erfordert eine Bestätigung.",
+      "WAIT": "Ohne automatisches Weiterschalten wartet jede neue Übung auf den Start. Das lässt sich in den Einstellungen ändern.",
+      "PHONE": "Dein Telefon steuert die Stunde. Lass FlowSmith im Vordergrund geöffnet und das gekoppelte Telefon in der Nähe; die Uhr arbeitet nicht eigenständig.",
+      "SETUP": "Uhr verbinden",
+      "WEB": "Die Uhr benötigt die native FlowSmith-App auf dem Telefon, nicht die Browserversion. Die Einrichtung hängt von der Plattform ab:",
+      "IOS_PAIR": "Kopple deine Apple Watch über Apples Watch-App mit deinem iPhone.",
+      "IOS_INSTALL": "Installiere FlowSmith auf dem iPhone und die Apple-Watch-Begleit-App über die Watch-App.",
+      "ANDROID_PAIR": "Kopple deine Wear-OS-Uhr über die Begleit-App des Uhrenherstellers mit deinem Android-Telefon.",
+      "ANDROID_INSTALL": "Installiere FlowSmith auf dem Android-Telefon und die passende FlowSmith-Begleit-App für Wear OS auf der Uhr.",
+      "LOAD": "Öffne dann FlowSmith auf beiden Geräten und lade auf dem Telefon einen Flow in die Ansicht zum Unterrichten. Die Uhr zeigt die Stunde an; starte, sobald du bereit bist.",
+      "RECONNECT": "Ohne Verbindung sind die Steuerelemente nicht verfügbar. Öffne FlowSmith auf beiden Geräten erneut und prüfe die Verbindung. Keine Uhr? Setze die Tour fort und nutze dein Telefon."
+    },
     "SKIP": "Tour überspringen",
     "BACK": "Zurück",
     "NEXT": "Weiter",

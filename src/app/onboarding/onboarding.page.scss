@@ -75,7 +75,7 @@
 
 .step-bullets li {
   position: relative;
-  padding-left: 1.3rem;
+  padding-inline-start: 1.3rem;
   color: var(--sp-ink-2);
   font-size: 0.92rem;
   line-height: 1.4;
@@ -84,7 +84,7 @@
 .step-bullets li::before {
   content: '';
   position: absolute;
-  left: 0;
+  inset-inline-start: 0;
   top: 0.5rem;
   width: 0.5rem;
   height: 0.5rem;
@@ -98,6 +98,26 @@
   width: 100%;
   margin-top: 0.4rem;
 }
+
+.watch-setup {
+  width: 100%;
+  min-width: 0;
+  margin-top: 0.6rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--sp-border);
+  color: var(--sp-ink-2);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.watch-setup h2 { margin: 0 0 12px; font-size: 1.1rem; }
+.watch-setup h3 { margin: 16px 0 8px; font-size: 1rem; }
+.watch-setup ol { margin: 0; padding-inline-start: 1.3rem; }
+.watch-setup li + li { margin-top: 8px; }
+.watch-setup p { margin: 12px 0 0; }
+.watch-note { font-size: 0.85rem; }
+[dir='rtl'] ion-icon[name='arrow-forward-outline'] { transform: rotate(180deg); }
 
 .progress-dots {
   display: flex;

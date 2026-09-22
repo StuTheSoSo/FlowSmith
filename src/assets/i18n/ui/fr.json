@@ -263,6 +263,22 @@
     "COMING_SOON_BODY": "Le statut Pro et les informations sur les sources de données seront bientôt disponibles ici."
   },
   "ONBOARDING": {
+    "WATCH": {
+      "EYEBROW": "Application compagnon facultative",
+      "TITLE": "Votre cours, à votre poignet",
+      "BODY": "L’application pour Apple Watch ou Wear OS affiche l’exercice en cours, le temps restant et l’exercice suivant.",
+      "CONTROLS": "Démarrez, mettez en pause, reprenez ou arrêtez depuis la montre. L’arrêt demande une confirmation.",
+      "WAIT": "Sans avance automatique, chaque nouvel exercice attend votre signal de départ. Modifiez ce choix dans les réglages.",
+      "PHONE": "Le téléphone pilote le cours. Gardez FlowSmith ouvert au premier plan et le téléphone jumelé à proximité ; la montre ne fonctionne pas de façon autonome.",
+      "SETUP": "Connecter votre montre",
+      "WEB": "La montre nécessite l’application native FlowSmith sur le téléphone, pas un navigateur. La configuration dépend de la plateforme :",
+      "IOS_PAIR": "Jumelez votre Apple Watch avec votre iPhone à l’aide de l’application Watch d’Apple.",
+      "IOS_INSTALL": "Installez FlowSmith sur l’iPhone et son application compagnon Apple Watch depuis l’application Watch.",
+      "ANDROID_PAIR": "Jumelez votre montre Wear OS avec votre téléphone Android à l’aide de l’application du fabricant de la montre.",
+      "ANDROID_INSTALL": "Installez FlowSmith sur le téléphone Android et l’application compagnon FlowSmith pour Wear OS correspondante sur la montre.",
+      "LOAD": "Ouvrez ensuite FlowSmith sur les deux appareils et chargez une séance dans l’écran de cours du téléphone. La montre affiche le cours ; démarrez lorsque vous êtes prêt.",
+      "RECONNECT": "Les commandes sont indisponibles sans connexion. Rouvrez FlowSmith sur les deux appareils et vérifiez leur connexion. Pas de montre ? Poursuivez la visite et utilisez votre téléphone."
+    },
     "SKIP": "Passer la visite",
     "BACK": "Retour",
     "NEXT": "Suivant",

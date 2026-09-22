@@ -1,5 +1,5 @@
 <ion-content [fullscreen]="true" class="onboarding-content">
-  <div class="onboarding-shell">
+  <div class="onboarding-shell" [attr.dir]="flowData.currentLanguage === 'ar' ? 'rtl' : 'ltr'">
     <button class="skip-button" type="button" *ngIf="!isLastStep" (click)="skip()">{{ 'ONBOARDING.SKIP' | translate }}</button>
 
     <div class="step-card">
@@ -14,6 +14,20 @@
       <ul class="step-bullets" *ngIf="currentStep.bulletKeys?.length">
         <li *ngFor="let bulletKey of currentStep.bulletKeys">{{ bulletKey | translate }}</li>
       </ul>
+
+      <section class="watch-setup" *ngIf="currentStep.watchSetup" aria-labelledby="watch-setup-title">
+        <h2 id="watch-setup-title">{{ 'ONBOARDING.WATCH.SETUP' | translate }}</h2>
+        <p *ngIf="nativePlatform === 'web'" class="watch-note">{{ 'ONBOARDING.WATCH.WEB' | translate }}</p>
+        <section *ngFor="let platform of watchPlatforms" [attr.data-watch-platform]="platform">
+          <h3>{{ platform === 'IOS' ? 'Apple Watch' : 'Wear OS' }}</h3>
+          <ol>
+            <li>{{ 'ONBOARDING.WATCH.' + platform + '_PAIR' | translate }}</li>
+            <li>{{ 'ONBOARDING.WATCH.' + platform + '_INSTALL' | translate }}</li>
+          </ol>
+        </section>
+        <p>{{ 'ONBOARDING.WATCH.LOAD' | translate }}</p>
+        <p class="watch-note">{{ 'ONBOARDING.WATCH.RECONNECT' | translate }}</p>
+      </section>
 
       <div class="cta-row" *ngIf="isLastStep">
         <ion-button expand="block" (click)="startBlankFlow()">
