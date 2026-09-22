@@ -9,7 +9,7 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  grid-template-rows: minmax(0, 1fr) minmax(0, 0.42fr);
+  grid-template-rows: minmax(0, 1fr) minmax(0, 0.42fr) auto;
   gap: 24px;
   width: 100%;
   height: 100%;
@@ -29,17 +29,18 @@
 }
 
 .teaching-timer {
+  flex-direction: column;
+  justify-content: center;
   border: 0;
   padding: 0;
   background: transparent;
   color: inherit;
   font-family: inherit;
   font-weight: 800;
-  cursor: pointer;
   font-variant-numeric: tabular-nums;
 }
 
-.teaching-timer:focus-visible {
+.teaching-controls button:focus-visible {
   outline: 3px solid var(--ion-color-primary);
   outline-offset: 5px;
 }
@@ -62,6 +63,48 @@
 
 .teaching-timer span { white-space: nowrap; }
 .teaching-current h1 { font-weight: 700; }
+
+.teaching-current {
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.setup-label {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.teaching-controls {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.teaching-controls button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 8px;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--sp-timer-normal);
+  font: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.teaching-controls ion-icon { flex-shrink: 0; }
+.teaching-controls button:disabled { opacity: 0.35; cursor: default; }
+.teaching-controls .stop-control { color: var(--sp-timer-danger); }
 
 .teaching-next {
   grid-column: 1 / -1;
@@ -86,7 +129,7 @@
 @media (orientation: portrait) {
   .teaching-screen {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: minmax(0, 0.8fr) minmax(0, 1fr) minmax(0, 0.65fr);
+    grid-template-rows: minmax(0, 0.8fr) minmax(0, 1fr) minmax(0, 0.65fr) auto;
     gap: 16px;
   }
 }
@@ -396,6 +439,9 @@
   min-height: 48px;
   --border-radius: 18px;
 }
+
+.runner-controls { flex-wrap: wrap; }
+.runner-controls .stop-control { --color: var(--sp-timer-danger); }
 
 .primary-control {
   flex: 1;

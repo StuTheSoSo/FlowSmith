@@ -132,6 +132,8 @@
     "DELETE_CONFIRM_MESSAGE": "« {{name}} » sera retiré de votre bibliothèque. Cette action est irréversible."
   },
   "RUN": {
+    "GO": "Démarrer",
+    "SETUP": "Préparation",
     "PLANNER_FLOW": "Flux du planificateur",
     "TEMPLATE_FLOW": "Flux modèle",
     "BACK_ARIA": "Retour au planificateur",
@@ -194,7 +196,7 @@
     "TIMER_TITLE": "Minuteur de séance",
     "TIMER_SUBTITLE": "Contrôle la progression de FlowSmith pendant une séance en direct",
     "AUTO_ADVANCE_TITLE": "Avancement automatique des exercices",
-    "AUTO_ADVANCE_BODY": "Passer automatiquement à l'exercice suivant lorsque le minuteur atteint zéro.",
+    "AUTO_ADVANCE_BODY": "Activé : en continu. Désactivé : attendre Démarrer avant chaque exercice suivant.",
     "SOUND_TITLE": "Son de fin d'exercice",
     "SOUND_BODY": "Jouer un court signal sonore lorsque le minuteur atteint zéro.",
     "HAPTICS_TITLE": "Vibration de fin d'exercice",

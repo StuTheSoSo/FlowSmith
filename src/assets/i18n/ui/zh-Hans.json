@@ -132,6 +132,8 @@
     "DELETE_CONFIRM_MESSAGE": "“{{name}}”将从你的资料库中移除。此操作无法撤销。"
   },
   "RUN": {
+    "GO": "开始",
+    "SETUP": "准备",
     "PLANNER_FLOW": "计划流程",
     "TEMPLATE_FLOW": "模板流程",
     "BACK_ARIA": "返回计划器",
@@ -194,7 +196,7 @@
     "TIMER_TITLE": "课程计时器",
     "TIMER_SUBTITLE": "控制 FlowSmith 在实时课程中的推进方式",
     "AUTO_ADVANCE_TITLE": "自动进入下一个动作",
-    "AUTO_ADVANCE_BODY": "计时器归零时自动进入下一个动作。",
+    "AUTO_ADVANCE_BODY": "开启：连续进行。关闭：每个下一个动作前等待点击“开始”。",
     "SOUND_TITLE": "动作结束提示音",
     "SOUND_BODY": "计时器归零时播放简短提示音。",
     "HAPTICS_TITLE": "动作结束振动",

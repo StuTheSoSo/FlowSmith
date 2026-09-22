@@ -132,6 +132,8 @@
     "DELETE_CONFIRM_MESSAGE": "「{{name}}」はライブラリから削除されます。この操作は元に戻せません。"
   },
   "RUN": {
+    "GO": "開始",
+    "SETUP": "準備",
     "PLANNER_FLOW": "プランナーフロー",
     "TEMPLATE_FLOW": "テンプレートフロー",
     "BACK_ARIA": "プランナーに戻る",
@@ -194,7 +196,7 @@
     "TIMER_TITLE": "クラスタイマー",
     "TIMER_SUBTITLE": "ライブクラス中の FlowSmith の進行方法を制御します",
     "AUTO_ADVANCE_TITLE": "エクササイズの自動進行",
-    "AUTO_ADVANCE_BODY": "タイマーがゼロになったら自動的に次のエクササイズに進みます。",
+    "AUTO_ADVANCE_BODY": "オン：連続。オフ：次のエクササイズの前に「開始」を待ちます。",
     "SOUND_TITLE": "エクササイズ終了音",
     "SOUND_BODY": "タイマーがゼロになったら短い音を鳴らします。",
     "HAPTICS_TITLE": "エクササイズ終了バイブレーション",

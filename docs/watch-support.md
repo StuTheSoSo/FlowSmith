@@ -13,14 +13,23 @@ The first release should be a **phone-dependent companion experience**. The watc
 - Native bundle ID: `com.stuschwartz.flowsmith`.
 - iOS native target: iOS 15.0, Swift 5, iPhone and iPad families.
 - Android native target: min SDK 24, compile/target SDK 36.
-- Existing Capacitor plugins: Preferences and Screen Orientation.
-- Existing native targets: one iOS application target and one Android application module.
-- No Apple Watch target, watchOS extension, Wear OS module, or watch communication layer exists yet.
+- Existing Capacitor plugins: App, Preferences, Screen Orientation, and a local WatchBridge.
+- Existing native targets: the iOS app, its SwiftUI Apple Watch companion, and the Android phone app. No Wear OS companion module exists yet.
 - Main timer owner: `src/app/class-runner.service.ts`.
-- Current timer implementation: persisted `BehaviorSubject` state with timestamp-based reconciliation; the one-second JavaScript interval refreshes the UI but does not own elapsed time.
+- Current timer implementation: persisted `BehaviorSubject` state with timestamp-based reconciliation; deadline-aligned timeouts refresh the UI but do not own elapsed time.
 - Current state includes source, cloned plan, flattened exercises, current index, current exercise elapsed seconds, total elapsed seconds, status, and optional completed exercise ID.
 - Plan, runner settings, and the active runner snapshot use local storage. A restored active run pauses and asks the instructor to resume or discard it.
 - Phone UI entry point: `src/app/run/run.page.ts` and `src/app/run/run.page.html`.
+
+## Implemented Setup and Apple Watch Controls
+
+- Turn **Auto-advance exercises** off in Settings for **Wait for Go**, or on for **Continuous**. New settings default to Wait for Go; existing saved preferences are preserved.
+- At an exercise boundary, Wait for Go selects the next exercise in `setup` status with its full duration. Setup time is not counted as exercise or class elapsed time. The final exercise completes the class without another setup step.
+- The phone Run page, teaching screen, and Apple Watch each show separate **Go/Resume**, **Pause**, and **Stop** controls. Go starts ready/setup exercises or resumes a paused exercise; inapplicable controls are disabled. Stop requires confirmation and resets the class to its first exercise. Setup remains in the phone teaching screen. The watch uses live WatchConnectivity commands; the phone remains authoritative.
+- Watch controls are disabled while disconnected or awaiting confirmation. Transport errors and a five-second confirmation timeout are shown; commands are not automatically retried. State updates settle successful controls; rejected commands refresh the watch state.
+- Commands include a unique message ID, session ID, and base revision. Duplicate or stale actions are rejected. Revision checks track meaningful runner transitions, not unsent timer ticks.
+- Validation: runner/protocol/orientation tests, Swift command-payload tests, browser setup/Go/Pause checks, and a native build. Watch button layout was inspected in the simulator; live watch-button-to-phone delivery still needs verification with both updated apps running. Phone background suspension remains a platform constraint.
+- Run `npm run test:watch` for the Foundation-only Swift model and command checks.
 
 ## Product Scope
 
@@ -36,6 +45,7 @@ Display:
 
 Controls:
 
+- Go (ready/setup).
 - Pause.
 - Resume.
 - Next exercise.
@@ -91,7 +101,7 @@ interface RunnerSnapshot {
   planName: string;
   exercises: RunExercise[];
   currentIndex: number;
-  status: 'ready' | 'running' | 'paused' | 'completed';
+  status: 'ready' | 'setup' | 'running' | 'paused' | 'completed';
   elapsedSeconds: number;
   currentExerciseElapsedSeconds: number;
   startedAt?: string;

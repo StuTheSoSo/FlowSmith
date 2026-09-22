@@ -15,6 +15,34 @@ struct WatchRunnerState: Decodable {
 
     var palette: WatchAppearance { appearance ?? .fallback }
 
+    var controlCommand: String? {
+        switch status {
+        case "ready", "setup": return "start"
+        case "running": return "pause"
+        case "paused": return "resume"
+        default: return nil
+        }
+    }
+
+    var controlTitle: String {
+        switch status {
+        case "running": return "Pause"
+        case "paused": return "Resume"
+        default: return "Go"
+        }
+    }
+
+    func commandPayload(messageId: String, now: Date, command requestedCommand: String? = nil) -> [String: Any]? {
+        guard let command = requestedCommand ?? controlCommand,
+              command == controlCommand || (command == "stop" && controlCommand != nil) else { return nil }
+        return [
+            "type": "runner.command", "protocolVersion": protocolVersion,
+            "sessionId": sessionId, "messageId": messageId,
+            "sentAt": ISO8601DateFormatter().string(from: now),
+            "command": command, "baseRevision": revision
+        ]
+    }
+
     func timerColorHex(at now: Date) -> String {
         guard let duration = currentExercise?.durationSeconds, duration > 0 else { return palette.timerNormal }
         let percent = Double(remainingSeconds(at: now)) / Double(duration) * 100

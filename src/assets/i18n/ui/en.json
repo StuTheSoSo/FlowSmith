@@ -132,6 +132,8 @@
     "DELETE_CONFIRM_MESSAGE": "\"{{name}}\" will be removed from your library. This can't be undone."
   },
   "RUN": {
+    "GO": "Go",
+    "SETUP": "Set up",
     "PLANNER_FLOW": "Planner flow",
     "TEMPLATE_FLOW": "Template flow",
     "BACK_ARIA": "Return to planner",
@@ -194,7 +196,7 @@
     "TIMER_TITLE": "Class timer",
     "TIMER_SUBTITLE": "Controls how FlowSmith advances during a live class",
     "AUTO_ADVANCE_TITLE": "Auto-advance exercises",
-    "AUTO_ADVANCE_BODY": "Move to the next exercise automatically when the timer reaches zero.",
+    "AUTO_ADVANCE_BODY": "On: continuous. Off: wait for Go before each next exercise.",
     "SOUND_TITLE": "Exercise-end sound",
     "SOUND_BODY": "Play a short cue when the timer reaches zero.",
     "HAPTICS_TITLE": "Exercise-end haptics",

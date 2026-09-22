@@ -132,6 +132,8 @@
     "DELETE_CONFIRM_MESSAGE": "\"{{name}}\" se eliminará de tu biblioteca. Esto no se puede deshacer."
   },
   "RUN": {
+    "GO": "Comenzar",
+    "SETUP": "Preparación",
     "PLANNER_FLOW": "Flujo del planificador",
     "TEMPLATE_FLOW": "Flujo de plantilla",
     "BACK_ARIA": "Volver al planificador",
@@ -194,7 +196,7 @@
     "TIMER_TITLE": "Temporizador de clase",
     "TIMER_SUBTITLE": "Controla cómo avanza FlowSmith durante una clase en vivo",
     "AUTO_ADVANCE_TITLE": "Avance automático de ejercicios",
-    "AUTO_ADVANCE_BODY": "Pasa automáticamente al siguiente ejercicio cuando el temporizador llegue a cero.",
+    "AUTO_ADVANCE_BODY": "Activado: continuo. Desactivado: esperar a Comenzar antes del siguiente ejercicio.",
     "SOUND_TITLE": "Sonido al finalizar el ejercicio",
     "SOUND_BODY": "Reproduce un sonido corto cuando el temporizador llegue a cero.",
     "HAPTICS_TITLE": "Vibración al finalizar el ejercicio",

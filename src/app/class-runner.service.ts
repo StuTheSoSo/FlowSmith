@@ -91,12 +91,17 @@ export class ClassRunnerService {
     const state = this.state;
     if (state.status === 'running' || state.status === 'completed' || state.exercises.length === 0) return;
 
+    this.restorePromptPending = false;
     this.runningSince = Date.now();
     this.emitState({ ...state, status: 'running', completedExerciseId: undefined });
     this.startTimer();
   }
 
   pause(): void {
+    if (this.state.status === 'setup') {
+      this.emitState({ ...this.state, status: 'paused' });
+      return;
+    }
     if (this.state.status !== 'running') return;
     this.reconcileTime();
     if (this.state.status !== 'running') return;
@@ -166,7 +171,7 @@ export class ClassRunnerService {
   }
 
   pauseOnRouteLeave(): void {
-    if (this.state.status === 'running') this.pause();
+    if (this.state.status === 'running' || this.state.status === 'setup') this.pause();
   }
 
   getCurrentExerciseRemainingSeconds(state = this.state): number {
@@ -242,12 +247,6 @@ export class ClassRunnerService {
       };
       remainingSeconds -= untilExerciseEnd;
 
-      if (!this.settings.autoAdvanceOnExerciseEnd) {
-        this.clearTimer();
-        this.runningSince = undefined;
-        this.emitState({ ...nextState, status: 'paused' });
-        return;
-      }
       if (nextState.currentIndex >= nextState.exercises.length - 1) {
         this.clearTimer();
         this.runningSince = undefined;
@@ -259,6 +258,12 @@ export class ClassRunnerService {
         currentIndex: nextState.currentIndex + 1,
         currentExerciseElapsedSeconds: 0,
       };
+      if (!this.settings.autoAdvanceOnExerciseEnd) {
+        this.clearTimer();
+        this.runningSince = undefined;
+        this.emitState({ ...nextState, status: 'setup' });
+        return;
+      }
     }
 
     this.emitState(nextState);
@@ -325,7 +330,7 @@ export class ClassRunnerService {
         this.stateSubject.next({ ...this.state, status: 'paused' });
         this.persistSnapshot();
       }
-      this.restorePromptPending = this.state.status === 'paused' && this.state.exercises.length > 0;
+      this.restorePromptPending = ['paused', 'setup'].includes(this.state.status) && this.state.exercises.length > 0;
     } catch {
       localStorage.removeItem(RUNNER_SNAPSHOT_KEY);
     }
@@ -335,7 +340,7 @@ export class ClassRunnerService {
     return !!state && Array.isArray(state.exercises) && Array.isArray(state.plan?.segments) &&
       Number.isInteger(state.currentIndex) && state.currentIndex >= 0 &&
       Number.isFinite(state.currentExerciseElapsedSeconds) && Number.isFinite(state.elapsedSeconds) &&
-      ['ready', 'running', 'paused', 'completed'].includes(state.status);
+      ['ready', 'setup', 'running', 'paused', 'completed'].includes(state.status);
   }
 
   private createState(plan: FlowPlan, source: ClassRunSource): ClassRunState {
@@ -369,7 +374,7 @@ export class ClassRunnerService {
 
   private readSettings(): RunnerSettings {
     const fallback: RunnerSettings = {
-      autoAdvanceOnExerciseEnd: true,
+      autoAdvanceOnExerciseEnd: false,
       exerciseEndSound: false,
       exerciseEndHaptics: false,
     };

@@ -34,4 +34,17 @@ describe('RunPage orientation', () => {
     await page.startTeaching();
     expect(lock).toHaveBeenCalledOnceWith('landscape');
   });
+
+  it('announces the setup exercise rather than skipping its name', () => {
+    const first = { id: 'first', exerciseId: 'Hundred' };
+    const second = { id: 'second', exerciseId: 'Roll Up' };
+    (page as any).state = { status: 'setup', currentIndex: 1, exercises: [first, second] };
+    (page as any).classRunner = { settings: {} };
+    const instant = jasmine.createSpy('instant').and.returnValue('Ready for Roll Up');
+    (page as any).translate = { instant };
+    spyOn(page, 'getExerciseName').and.callFake((exercise) => exercise?.exerciseId ?? 'Ready');
+    (page as any).announceExerciseComplete('first');
+    expect(instant).toHaveBeenCalledWith('RUN.EXERCISE_COMPLETE_NEXT', { name: 'Hundred', next: 'Roll Up' });
+    expect(page.isTeaching).toBeTrue();
+  });
 });

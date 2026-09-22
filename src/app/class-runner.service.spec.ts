@@ -28,7 +28,41 @@ const flowPlanService = {
 } as FlowPlanService;
 
 describe('ClassRunnerService', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    localStorage.setItem('flowsmith-runner-settings', JSON.stringify({ autoAdvanceOnExerciseEnd: true }));
+  });
   afterEach(() => localStorage.clear());
+
+  it('waits for Go at the next exercise without consuming setup time and completes the final exercise', () => {
+    localStorage.removeItem('flowsmith-runner-settings');
+    jasmine.clock().install();
+    jasmine.clock().mockDate(new Date('2026-09-22T12:00:00Z'));
+    const runner = new ClassRunnerService(flowPlanService);
+    try {
+      runner.loadPlan(plan, 'planner');
+      runner.start();
+      jasmine.clock().tick(65000);
+      expect(runner.state.status).toBe('setup');
+      expect(runner.state.currentIndex).toBe(1);
+      expect(runner.getCurrentExerciseRemainingSeconds()).toBe(60);
+      expect(runner.state.elapsedSeconds).toBe(60);
+      expect(runner.currentExerciseEndsAt).toBeUndefined();
+      jasmine.clock().tick(30000);
+      expect(runner.state.elapsedSeconds).toBe(60);
+      const restored = new ClassRunnerService(flowPlanService);
+      expect(restored.state.status).toBe('setup');
+      expect(restored.hasRestorableSession).toBeTrue();
+      runner.start();
+      runner.start();
+      jasmine.clock().tick(60000);
+      expect(runner.state.status).toBe('completed');
+      expect(runner.state.elapsedSeconds).toBe(120);
+    } finally {
+      runner.stop();
+      jasmine.clock().uninstall();
+    }
+  });
 
   it('realigns refreshes to the deadline after delayed callbacks during a long run', () => {
     let now = Date.parse('2026-09-22T12:00:00.250Z');

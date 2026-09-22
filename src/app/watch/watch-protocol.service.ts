@@ -31,6 +31,7 @@ export class WatchProtocolService implements OnDestroy {
   private lastObservedState?: ObservedRunnerState;
   private lastPublishedState?: ObservedRunnerState;
   private processedSessionId = '';
+  private commandRevision = 0;
   private readonly processedMessageIds = new Set<string>();
   private readonly themeObserver = new MutationObserver(() => this.publishState(this.classRunner.state, true));
 
@@ -69,7 +70,8 @@ export class WatchProtocolService implements OnDestroy {
     if (this.processedMessageIds.has(candidate.messageId)) {
       return this.reject(candidate.sessionId, candidate.messageId, 'duplicate-command');
     }
-    if (candidate.baseRevision !== undefined && candidate.baseRevision < this.classRunner.currentRevision) {
+    if (candidate.command !== 'requestState' && candidate.baseRevision !== undefined &&
+      (candidate.baseRevision < this.commandRevision || candidate.baseRevision > this.classRunner.currentRevision)) {
       return this.reject(candidate.sessionId, candidate.messageId, 'stale-command');
     }
     if (!this.canApply(candidate)) {
@@ -100,14 +102,15 @@ export class WatchProtocolService implements OnDestroy {
     const previouslyObserved = this.lastObservedState;
     this.lastObservedState = observed;
 
-    const shouldPublish = force || !this.lastPublishedState ||
+    const stateChanged = !this.lastPublishedState ||
       observed.sessionId !== this.lastPublishedState.sessionId ||
       observed.status !== this.lastPublishedState.status ||
       observed.currentExerciseEndsAt !== this.lastPublishedState.currentExerciseEndsAt ||
       observed.currentIndex !== this.lastPublishedState.currentIndex ||
       (!!previouslyObserved && observed.currentExerciseElapsedSeconds < previouslyObserved.currentExerciseElapsedSeconds);
 
-    if (!shouldPublish) return;
+    if (stateChanged) this.commandRevision = this.classRunner.currentRevision;
+    if (!force && !stateChanged) return;
 
     const now = new Date().toISOString();
     this.lastPublishedState = observed;
@@ -168,7 +171,7 @@ export class WatchProtocolService implements OnDestroy {
     switch (message.command) {
       case 'start':
       case 'resume':
-        return status === 'ready' || status === 'paused';
+        return status === 'ready' || status === 'setup' || status === 'paused';
       case 'pause':
         return status === 'running';
       case 'next':
@@ -223,6 +226,7 @@ export class WatchProtocolService implements OnDestroy {
   }
 
   private reject(sessionId: string, messageId: string, reason: WatchCommandRejection): WatchCommandAck {
+    this.publishState(this.classRunner.state, true);
     return this.ack(sessionId, messageId, false, reason);
   }
 }

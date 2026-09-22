@@ -109,3 +109,30 @@ precondition(running.palette.accent == WatchAppearance.fallback.accent)
 let rgb = WatchAppearance.rgb("#e07a9a")
 precondition(rgb.red == 224.0 / 255 && rgb.green == 122.0 / 255 && rgb.blue == 154.0 / 255)
 print("PASS: phone palette decoded, RGB preserved, and warning/danger match 35%/15% thresholds")
+
+for (status, command, title) in [("ready", "start", "Go"), ("setup", "start", "Go"), ("running", "pause", "Pause"), ("paused", "resume", "Resume")] {
+    let controlled = try decodeFixture(["status": status])
+    let payload = controlled.commandPayload(messageId: "watch-test", now: controlled.sentAt)!
+    precondition(payload["command"] as? String == command)
+    precondition(payload["messageId"] as? String == "watch-test")
+    precondition(payload["sessionId"] as? String == controlled.sessionId)
+    precondition(payload["baseRevision"] as? Int == controlled.revision)
+    precondition(controlled.controlTitle == title)
+    precondition(PropertyListSerialization.propertyList(payload, isValidFor: .binary))
+}
+let setup = try decodeFixture(["status": "setup"])
+precondition(setup.remainingSeconds(at: setup.sentAt.addingTimeInterval(3600)) == 60)
+precondition(completed.commandPayload(messageId: "finished", now: .now) == nil)
+print("PASS: setup holds time; Go/Pause/Resume payloads include session and revision; completed controls disabled")
+
+for status in ["ready", "setup", "running", "paused"] {
+    let active = try decodeFixture(["status": status])
+    let stop = active.commandPayload(messageId: "stop-test", now: .now, command: "stop")!
+    precondition(stop["command"] as? String == "stop")
+    precondition(stop["sessionId"] as? String == active.sessionId)
+    precondition(stop["baseRevision"] as? Int == active.revision)
+}
+precondition(completed.commandPayload(messageId: "stop-finished", now: .now, command: "stop") == nil)
+precondition(running.commandPayload(messageId: "wrong-start", now: .now, command: "start") == nil)
+precondition(setup.commandPayload(messageId: "wrong-pause", now: .now, command: "pause") == nil)
+print("PASS: Stop is available for active classes; inapplicable Go/Pause/Stop commands are blocked")

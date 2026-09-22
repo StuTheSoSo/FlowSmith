@@ -153,6 +153,47 @@ describe('WatchProtocolService', () => {
     runner.stop();
   });
 
+  it('accepts watch Go, Pause after timer ticks, and Resume while rejecting duplicate and stale controls', () => {
+    jasmine.clock().install();
+    jasmine.clock().mockDate(new Date('2026-09-22T12:00:00Z'));
+    const { runner, protocol } = createProtocol();
+    const command = (name: string, messageId: string, baseRevision = protocol.latestState!.revision) => ({
+      type: 'runner.command', protocolVersion: 1, sessionId: runner.currentSessionId,
+      messageId, sentAt: new Date().toISOString(), command: name, baseRevision,
+    });
+    try {
+      runner.loadPlan(plan, 'planner');
+      runner.updateSettings({ ...runner.settings, autoAdvanceOnExerciseEnd: false });
+      runner.start();
+      const runningRevision = protocol.latestState!.revision;
+      jasmine.clock().tick(60000);
+      expect(protocol.latestState?.status).toBe('setup');
+      expect(protocol.handleCommand(command('pause', 'old-pause', runningRevision)).reason).toBe('stale-command');
+      const go = command('start', 'go');
+      expect(protocol.handleCommand(go).accepted).toBeTrue();
+      const deadline = runner.currentExerciseEndsAt;
+      expect(protocol.handleCommand(go).reason).toBe('duplicate-command');
+      expect(protocol.handleCommand({ ...go, messageId: 'second-tap' }).accepted).toBeFalse();
+      expect(runner.currentExerciseEndsAt).toBe(deadline);
+      const watchRevision = protocol.latestState!.revision;
+      jasmine.clock().tick(5000);
+      expect(protocol.handleCommand(command('pause', 'pause-after-ticks', watchRevision)).accepted).toBeTrue();
+      expect(runner.getCurrentExerciseRemainingSeconds()).toBe(55);
+      expect(protocol.handleCommand(command('resume', 'resume')).accepted).toBeTrue();
+      expect(runner.state.status).toBe('running');
+      const stop = command('stop', 'stop');
+      expect(protocol.handleCommand(stop).accepted).toBeTrue();
+      expect(runner.state.status).toBe('ready');
+      expect(runner.state.currentIndex).toBe(0);
+      expect(runner.state.elapsedSeconds).toBe(0);
+      expect(runner.currentSessionId).not.toBe(stop.sessionId);
+      expect(protocol.handleCommand(stop).reason).toBe('unknown-session');
+    } finally {
+      runner.stop();
+      jasmine.clock().uninstall();
+    }
+  });
+
   it('rejects stale and unknown-session commands without changing the runner', () => {
     const { runner, protocol } = createProtocol();
     runner.loadPlan(plan, 'planner');

@@ -19,7 +19,7 @@ struct ContentView: View {
 
             if let state = session.state {
                 TimelineView(.periodic(from: state.countdownAnchor, by: 1)) { context in
-                    RunnerMirrorView(state: state, now: context.date)
+                    RunnerMirrorView(state: state, now: context.date, session: session)
                 }
                 .id(state.countdownAnchor)
             } else {
@@ -37,17 +37,26 @@ struct ContentView: View {
 private struct RunnerMirrorView: View {
     let state: WatchRunnerState
     let now: Date
+    @ObservedObject var session: WatchSessionStore
+    @State private var confirmingStop = false
+    @State private var stopSessionId = ""
 
     var body: some View {
-        VStack(spacing: 5) {
+        VStack(spacing: 3) {
             Spacer(minLength: 0)
 
             Text(remainingTime)
-                .font(.system(size: 42, weight: .bold, design: .rounded))
+                .font(.system(size: 36, weight: .bold, design: .rounded))
                 .monospacedDigit()
                 .minimumScaleFactor(0.65)
                 .lineLimit(1)
                 .foregroundStyle(timerColor)
+
+            if state.status == "setup" {
+                Text("Set up")
+                    .font(.caption2)
+                    .foregroundStyle(Color(watchHex: state.palette.secondaryText))
+            }
 
             Text(state.currentExercise?.name ?? "Class complete")
                 .font(.headline)
@@ -72,7 +81,64 @@ private struct RunnerMirrorView: View {
                     .minimumScaleFactor(0.72)
             }
 
-                    Spacer(minLength: 4)
+            Spacer(minLength: 2)
+
+            HStack(spacing: 6) {
+                Button {
+                    session.sendControl(command: state.status == "paused" ? "resume" : "start")
+                } label: {
+                    Image(systemName: "play.fill")
+                        .frame(maxWidth: .infinity, minHeight: 44)
+                }
+                .disabled(state.status == "running" || state.controlCommand == nil)
+                .accessibilityLabel(state.status == "paused" ? "Resume" : "Go")
+                .help(state.status == "paused" ? "Resume" : "Go")
+                .accessibilityIdentifier("watch-go-control")
+
+                Button {
+                    session.sendControl(command: "pause")
+                } label: {
+                    Image(systemName: "pause.fill")
+                        .frame(maxWidth: .infinity, minHeight: 44)
+                }
+                .disabled(state.status != "running")
+                .accessibilityLabel("Pause")
+                .help("Pause")
+                .accessibilityIdentifier("watch-pause-control")
+
+                Button {
+                    stopSessionId = state.sessionId
+                    confirmingStop = true
+                } label: {
+                    Image(systemName: "stop.fill")
+                        .frame(maxWidth: .infinity, minHeight: 44)
+                }
+                .tint(Color(watchHex: state.palette.timerDanger))
+                .disabled(state.controlCommand == nil)
+                .accessibilityLabel("Stop class")
+                .help("Stop class")
+                .accessibilityIdentifier("watch-stop-control")
+            }
+            .buttonStyle(.bordered)
+            .tint(Color(watchHex: state.palette.accent))
+            .disabled(!session.isReachable || session.pendingCommandId != nil)
+
+            if session.pendingCommandId != nil {
+                Text("Waiting...").font(.system(size: 10))
+            }
+
+            if !session.isReachable {
+                Text("Phone disconnected")
+                    .font(.system(size: 10))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+            } else if let error = session.commandError {
+                Text(error)
+                    .font(.system(size: 10))
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.7)
+                    .foregroundStyle(Color(watchHex: state.palette.timerDanger))
+            }
 
             HStack(spacing: 4) {
                 Circle()
@@ -85,9 +151,17 @@ private struct RunnerMirrorView: View {
             Spacer(minLength: 0)
         }
         .padding(.horizontal, 12)
-        .padding(.vertical, 8)
+        .padding(.vertical, 4)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .foregroundStyle(Color(watchHex: state.palette.text))
+        .confirmationDialog("Stop class?", isPresented: $confirmingStop, titleVisibility: .visible) {
+            Button("Stop class", role: .destructive) {
+                session.sendControl(command: "stop", expectedSessionId: stopSessionId)
+            }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("Reset the class to the first exercise?")
+        }
     }
 
     private var remainingTime: String {
@@ -156,10 +230,42 @@ final class WatchSessionStore: NSObject, ObservableObject, WCSessionDelegate {
     @Published private(set) var messageReceivedCount = 0
     @Published private(set) var lastPayloadType: String?
     @Published private(set) var lastError: String?
+    @Published private(set) var pendingCommandId: String?
+    @Published private(set) var commandError: String?
+    private var pendingRevision = 0
+    private var pendingSessionId: String?
 
     let isSupportedText = WCSession.isSupported() ? "yes" : "no"
 
     private let session = WCSession.default
+
+    func sendControl(command: String? = nil, expectedSessionId: String? = nil) {
+        guard pendingCommandId == nil, session.activationState == .activated,
+              session.isReachable, let state else { return }
+        guard expectedSessionId == nil || expectedSessionId == state.sessionId else {
+            commandError = "Class changed. Try again."
+            return
+        }
+        let messageId = UUID().uuidString
+        guard let payload = state.commandPayload(messageId: messageId, now: .now, command: command) else { return }
+        pendingCommandId = messageId
+        pendingRevision = state.revision
+        pendingSessionId = state.sessionId
+        commandError = nil
+        session.sendMessage(payload, replyHandler: nil) { [weak self] error in
+            Task { @MainActor in
+                guard let self, self.pendingCommandId == messageId else { return }
+                self.pendingCommandId = nil
+                self.commandError = "Not sent. Try again."
+                self.lastError = error.localizedDescription
+            }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [weak self] in
+            guard let self, self.pendingCommandId == messageId else { return }
+            self.pendingCommandId = nil
+            self.commandError = "No confirmation. Check phone."
+        }
+    }
 
     func activate() {
         guard WCSession.isSupported() else {
@@ -196,6 +302,10 @@ final class WatchSessionStore: NSObject, ObservableObject, WCSessionDelegate {
     nonisolated func sessionReachabilityDidChange(_ session: WCSession) {
         Task { @MainActor in
             self.isReachable = session.isReachable
+            if !session.isReachable {
+                self.pendingCommandId = nil
+                self.commandError = nil
+            }
         }
     }
 
@@ -229,6 +339,17 @@ final class WatchSessionStore: NSObject, ObservableObject, WCSessionDelegate {
 
     private func apply(_ payload: [String: Any]) {
         lastPayloadType = payload["type"] as? String ?? "(missing type)"
+        if lastPayloadType == "runner.commandAck" {
+            guard payload["protocolVersion"] as? Int == 1,
+                  let messageId = payload["messageId"] as? String, messageId == pendingCommandId,
+                  payload["sessionId"] as? String == pendingSessionId,
+                  let accepted = payload["accepted"] as? Bool else { return }
+            if !accepted {
+                pendingCommandId = nil
+                commandError = "Class changed. Try again."
+            }
+            return
+        }
         guard payload["type"] as? String == "runner.state" else { return }
         guard JSONSerialization.isValidJSONObject(payload) else {
             lastError = "payload is not a valid JSON object"
@@ -239,6 +360,11 @@ final class WatchSessionStore: NSObject, ObservableObject, WCSessionDelegate {
             let nextState = try WatchRunnerState.decode(data)
             if let state, !nextState.canReplace(state) { return }
             state = nextState
+            if pendingCommandId != nil &&
+                (nextState.sessionId != pendingSessionId || nextState.revision > pendingRevision) {
+                pendingCommandId = nil
+            }
+            commandError = nil
             lastError = nil
         } catch {
             lastError = "decode failed: \(error)"

@@ -130,7 +130,7 @@ export interface LanguageOption {
 }
 
 export type ClassRunSource = 'planner' | 'template';
-export type RunnerStatus = 'ready' | 'running' | 'paused' | 'completed';
+export type RunnerStatus = 'ready' | 'setup' | 'running' | 'paused' | 'completed';
 
 export interface RunnerSettings {
   autoAdvanceOnExerciseEnd: boolean;

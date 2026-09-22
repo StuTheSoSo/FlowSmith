@@ -132,6 +132,8 @@
     "DELETE_CONFIRM_MESSAGE": "\"{{name}}\" verrà rimosso dalla tua libreria. Questa azione non può essere annullata."
   },
   "RUN": {
+    "GO": "Via",
+    "SETUP": "Preparazione",
     "PLANNER_FLOW": "Flow del pianificatore",
     "TEMPLATE_FLOW": "Flow modello",
     "BACK_ARIA": "Torna al pianificatore",
@@ -194,7 +196,7 @@
     "TIMER_TITLE": "Timer della lezione",
     "TIMER_SUBTITLE": "Controlla come FlowSmith avanza durante una lezione dal vivo",
     "AUTO_ADVANCE_TITLE": "Avanzamento automatico esercizi",
-    "AUTO_ADVANCE_BODY": "Passa automaticamente all'esercizio successivo quando il timer raggiunge lo zero.",
+    "AUTO_ADVANCE_BODY": "Attivo: continuo. Disattivo: attendi Via prima di ogni esercizio successivo.",
     "SOUND_TITLE": "Suono di fine esercizio",
     "SOUND_BODY": "Riproduci un breve suono quando il timer raggiunge lo zero.",
     "HAPTICS_TITLE": "Vibrazione di fine esercizio",

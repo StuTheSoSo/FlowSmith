@@ -132,6 +132,8 @@
     "DELETE_CONFIRM_MESSAGE": "\"{{name}}\" wird aus deiner Bibliothek entfernt. Dies kann nicht rückgängig gemacht werden."
   },
   "RUN": {
+    "GO": "Los",
+    "SETUP": "Vorbereiten",
     "PLANNER_FLOW": "Planer-Flow",
     "TEMPLATE_FLOW": "Vorlagen-Flow",
     "BACK_ARIA": "Zurück zum Planer",
@@ -194,7 +196,7 @@
     "TIMER_TITLE": "Kurs-Timer",
     "TIMER_SUBTITLE": "Steuert, wie FlowSmith während eines Kurses fortschreitet",
     "AUTO_ADVANCE_TITLE": "Übungen automatisch fortsetzen",
-    "AUTO_ADVANCE_BODY": "Automatisch zur nächsten Übung wechseln, wenn der Timer null erreicht.",
+    "AUTO_ADVANCE_BODY": "Ein: ohne Pause. Aus: vor jeder nächsten Übung auf Los warten.",
     "SOUND_TITLE": "Ton am Übungsende",
     "SOUND_BODY": "Spiele einen kurzen Ton, wenn der Timer null erreicht.",
     "HAPTICS_TITLE": "Vibration am Übungsende",

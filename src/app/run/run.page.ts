@@ -40,9 +40,12 @@ export class RunPage implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.stateSubscription = this.classRunner.state$.subscribe((state) => {
-      const wasRunning = this.isRunning;
+      const wasTeaching = this.isTeaching;
       this.state = state;
-      if (wasRunning && !this.isRunning) void this.releaseTeachingScreen();
+      if (wasTeaching && !this.isTeaching) void this.releaseTeachingScreen();
+      if (!wasTeaching && this.isTeaching && !this.startingTeaching && Capacitor.isNativePlatform()) {
+        void ScreenOrientation.lock({ orientation: 'landscape' }).catch(() => undefined);
+      }
       if (state.completedExerciseId && state.completedExerciseId !== this.lastCompletedExerciseId) {
         this.announceExerciseComplete(state.completedExerciseId);
       } else if (!state.completedExerciseId) {
@@ -96,6 +99,14 @@ export class RunPage implements OnInit, OnDestroy {
 
   pauseTeaching(): void {
     this.classRunner.pause();
+  }
+
+  get isSetup(): boolean {
+    return this.state.status === 'setup';
+  }
+
+  get isTeaching(): boolean {
+    return this.isRunning || this.isSetup;
   }
 
   private async presentRestoreSessionPrompt(): Promise<void> {
@@ -285,9 +296,10 @@ export class RunPage implements OnInit, OnDestroy {
   private announceExerciseComplete(completedExerciseId: string): void {
     this.lastCompletedExerciseId = completedExerciseId;
     const completedName = this.getExerciseName(this.state.exercises.find((exercise) => exercise.id === completedExerciseId));
+    const completedIndex = this.state.exercises.findIndex((exercise) => exercise.id === completedExerciseId);
     this.completionMessage = this.isCompleted
       ? this.translate.instant('RUN.EXERCISE_COMPLETE', { name: completedName })
-      : this.translate.instant('RUN.EXERCISE_COMPLETE_NEXT', { name: completedName, next: this.getExerciseName(this.nextRunExercise) });
+      : this.translate.instant('RUN.EXERCISE_COMPLETE_NEXT', { name: completedName, next: this.getExerciseName(this.state.exercises[completedIndex + 1]) });
 
     if (this.classRunner.settings.exerciseEndHaptics && typeof navigator.vibrate === 'function') {
       navigator.vibrate([120, 70, 120]);

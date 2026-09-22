@@ -53,6 +53,7 @@
     </div>
 
     <div class="current-exercise">
+      <p *ngIf="isSetup" class="eyebrow">{{ 'RUN.SETUP' | translate }}</p>
       <p class="exercise-count">{{ 'RUN.EXERCISE_COUNT' | translate: { current: state.currentIndex + 1, total: state.exercises.length } }}</p>
       <h2>{{ currentExercise?.name || getExerciseName(currentRunExercise) }}</h2>
       <p>{{ currentExercise?.focus || currentExercise?.shortDescription || ('RUN.PREPARE_NEXT_MOVEMENT' | translate) }}</p>
@@ -70,13 +71,16 @@
     <ion-button class="skip-control" fill="clear" size="small" (click)="classRunner.previous()" [disabled]="state.currentIndex === 0" [attr.aria-label]="(state.currentIndex === 0 ? 'RUN.AT_FIRST_EXERCISE_ARIA' : 'RUN.PREVIOUS_ARIA') | translate">
       <ion-icon name="play-skip-back-outline" slot="icon-only" aria-hidden="true"></ion-icon>
     </ion-button>
-    <ion-button *ngIf="!isRunning && !isCompleted" class="primary-control" (click)="startTeaching()">
+    <ion-button class="primary-control" (click)="startTeaching()" [disabled]="isRunning || isCompleted">
       <ion-icon name="play-outline" slot="start" aria-hidden="true"></ion-icon>
-      {{ (isPaused ? 'RUN.RESUME' : 'RUN.START') | translate }}
+      {{ (isPaused ? 'RUN.RESUME' : 'RUN.GO') | translate }}
     </ion-button>
-    <ion-button *ngIf="isRunning" class="primary-control" (click)="classRunner.pause()">
+    <ion-button class="primary-control" (click)="classRunner.pause()" [disabled]="!isRunning">
       <ion-icon name="pause-outline" slot="start" aria-hidden="true"></ion-icon>
       {{ 'RUN.PAUSE' | translate }}
+    </ion-button>
+    <ion-button class="skip-control stop-control" fill="clear" color="danger" (click)="confirmStopClass()" [disabled]="isCompleted" [attr.aria-label]="'RUN.STOP_CLASS' | translate" [attr.title]="'RUN.STOP_CLASS' | translate">
+      <ion-icon name="stop-outline" slot="icon-only" aria-hidden="true"></ion-icon>
     </ion-button>
     <ion-button class="skip-control" fill="clear" size="small" (click)="classRunner.next()" [disabled]="isCompleted" [attr.aria-label]="(isCompleted ? 'RUN.CLASS_FINISHED_ARIA' : 'RUN.NEXT_ARIA') | translate">
       <ion-icon name="play-skip-forward-outline" slot="icon-only" aria-hidden="true"></ion-icon>
@@ -91,7 +95,6 @@
 
     <section class="secondary-controls" *ngIf="!isCompleted">
       <ion-button fill="clear" (click)="confirmRestartExercise()">{{ 'RUN.RESTART_EXERCISE' | translate }}</ion-button>
-      <ion-button fill="clear" color="danger" (click)="confirmStopClass()">{{ 'RUN.STOP_CLASS' | translate }}</ion-button>
     </section>
 
     <section class="detail-grid">
@@ -133,15 +136,14 @@
     </div>
     </section>
   </ng-container>
-  <ion-modal class="teaching-modal" [isOpen]="isRunning" aria-labelledby="teaching-current-name" (willDismiss)="pauseTeaching()">
+  <ion-modal class="teaching-modal" [isOpen]="isTeaching" aria-labelledby="teaching-current-name" (willDismiss)="pauseTeaching()">
     <ng-template>
       <section class="teaching-screen" [attr.data-timer-status]="timerStatus">
-        <button type="button" class="teaching-timer" (click)="pauseTeaching()"
-          [attr.aria-label]="('RUN.PAUSE' | translate) + ': ' + formatTime(exerciseRemainingSeconds)"
-          [attr.title]="'RUN.PAUSE' | translate">
+        <div class="teaching-timer">
           <span [appFitText]="formatTime(exerciseRemainingSeconds)" [fitTextMax]="360">{{ formatTime(exerciseRemainingSeconds) }}</span>
-        </button>
+        </div>
         <div class="teaching-current">
+          <p *ngIf="isSetup" class="setup-label">{{ 'RUN.SETUP' | translate }}</p>
           <h1 id="teaching-current-name" [appFitText]="getExerciseName(currentRunExercise)" [fitTextMax]="180">{{ getExerciseName(currentRunExercise) }}</h1>
         </div>
         <div class="teaching-next">
@@ -149,6 +151,20 @@
           <div class="teaching-next-name">
             <h2 [appFitText]="nextRunExercise ? getExerciseName(nextRunExercise) : ('RUN.CLASS_COMPLETE' | translate)" [fitTextMax]="100">{{ nextRunExercise ? getExerciseName(nextRunExercise) : ('RUN.CLASS_COMPLETE' | translate) }}</h2>
           </div>
+        </div>
+        <div class="teaching-controls">
+          <button type="button" (click)="startTeaching()" [disabled]="isRunning || isCompleted">
+            <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+            {{ (isPaused ? 'RUN.RESUME' : 'RUN.GO') | translate }}
+          </button>
+          <button type="button" (click)="pauseTeaching()" [disabled]="!isRunning">
+            <ion-icon name="pause-outline" aria-hidden="true"></ion-icon>
+            {{ 'RUN.PAUSE' | translate }}
+          </button>
+          <button type="button" class="stop-control" (click)="confirmStopClass()" [disabled]="isCompleted">
+            <ion-icon name="stop-outline" aria-hidden="true"></ion-icon>
+            {{ 'RUN.STOP_CLASS' | translate }}
+          </button>
         </div>
       </section>
     </ng-template>
