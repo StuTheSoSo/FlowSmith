@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct FlowSmith_Watch_Watch_AppApp: App {
+    @StateObject private var session = WatchSessionStore()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(session: session)
         }
     }
 }

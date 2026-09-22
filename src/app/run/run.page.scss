@@ -14,7 +14,7 @@
   width: 100%;
   height: 100%;
   padding: max(24px, env(safe-area-inset-top)) max(28px, env(safe-area-inset-right)) max(20px, env(safe-area-inset-bottom)) max(28px, env(safe-area-inset-left));
-  color: #173c35;
+  color: var(--sp-timer-normal);
   background: linear-gradient(120deg, #ffffff, #edf5f1);
   letter-spacing: 0;
 }
@@ -44,8 +44,8 @@
   outline-offset: 5px;
 }
 
-.teaching-screen[data-timer-status='warning'] .teaching-timer { color: #8b5b13; }
-.teaching-screen[data-timer-status='danger'] .teaching-timer { color: #a42c40; }
+.teaching-screen[data-timer-status='warning'] .teaching-timer { color: var(--sp-timer-warning); }
+.teaching-screen[data-timer-status='danger'] .teaching-timer { color: var(--sp-timer-danger); }
 
 .teaching-timer span,
 .teaching-current h1,

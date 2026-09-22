@@ -158,3 +158,12 @@ export interface ClassRunState {
   status: RunnerStatus;
   completedExerciseId?: string;
 }
+
+export interface RunnerSnapshot {
+  version: 1;
+  sessionId: string;
+  revision?: number;
+  state: ClassRunState;
+  runningSince?: string;
+  updatedAt: string;
+}

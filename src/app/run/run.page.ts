@@ -55,6 +55,7 @@ export class RunPage implements OnInit, OnDestroy {
     this.languageSubscription = this.flowData.language$.subscribe((language) => {
       this.loadBundle(language);
     });
+    if (this.classRunner.hasRestorableSession) void this.presentRestoreSessionPrompt();
   }
 
   ngOnDestroy(): void {
@@ -97,9 +98,33 @@ export class RunPage implements OnInit, OnDestroy {
     this.classRunner.pause();
   }
 
+  private async presentRestoreSessionPrompt(): Promise<void> {
+    const alert = await this.alertController.create({
+      header: this.translate.instant('RUN.RESUME_SAVED_HEADER'),
+      message: this.translate.instant('RUN.RESUME_SAVED_MESSAGE'),
+      backdropDismiss: false,
+      buttons: [
+        {
+          text: this.translate.instant('RUN.DISCARD_SAVED'),
+          role: 'cancel',
+          handler: () => this.classRunner.discardRestoredSession(),
+        },
+        {
+          text: this.translate.instant('RUN.RESUME'),
+          handler: () => this.classRunner.resumeRestoredSession(),
+        },
+      ],
+    });
+    await alert.present();
+  }
+
   private async releaseTeachingScreen(): Promise<void> {
     try {
-      await ScreenOrientation.unlock();
+      if (Capacitor.isNativePlatform()) {
+        await ScreenOrientation.lock({ orientation: 'portrait' });
+      } else {
+        await ScreenOrientation.unlock();
+      }
     } catch {}
     if (this.ownsFullscreen) {
       this.ownsFullscreen = false;
