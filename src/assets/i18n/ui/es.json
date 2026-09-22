@@ -1,4 +1,32 @@
 {
+  "DASHBOARD": {
+    "HOME": "Inicio", "INTRO": "Comprender un poco más. Practicar con más atención.", "BUILD": "Crear una sesión",
+    "BASICS": "Los fundamentos del Pilates", "BASICS_BODY": "El Pilates reúne respiración, movimiento y control. En colchoneta o aparatos, el objetivo no es el movimiento más amplio, sino uno realizado con intención. Estos seis principios se enseñan habitualmente en el Pilates contemporáneo.",
+    "BREATH": "Respiración", "CONCENTRATION": "Concentración", "CONTROL": "Control", "CENTERING": "Centro", "PRECISION": "Precisión", "FLOW": "Fluidez",
+    "PRACTICE": "Llévalo a tu práctica", "FEATURED": "Un ejercicio para explorar", "READING": "Para profundizar", "LOADING": "Cargando ejercicio", "UNAVAILABLE": "El ejercicio destacado no está disponible ahora.", "EXERCISE_LINK": "Explorar este ejercicio", "TEACHING": "Una indicación para instructores", "SOURCES": "Más recursos",
+    "SAFETY": "Información general, no una prescripción individual. Elige movimientos adecuados a tu experiencia y salud. Detente si aparece dolor, mareo o falta de aire inusual; consulta a un profesional cuando sea necesario.",
+    "PRINCIPLES": {
+      "TITLE": "Los principios en la práctica", "SUMMARY": "Seis ideas que dan intención al movimiento, sin rigidez.", "TIP_TITLE": "Prioriza el control", "TIP": "Elige un recorrido que puedas controlar con suavidad. Un movimiento pequeño y deliberado es más útil que forzar la posición final.",
+      "ONE_TITLE": "Atención antes que esfuerzo", "ONE": "Concentrarse es observar lo que haces. Antes de cada repetición, nota tus apoyos y tu respiración. Control significa iniciar, cambiar y terminar el movimiento deliberadamente, no hacerlo siempre lo más lento posible.",
+      "TWO_TITLE": "Sostener sin tensar", "TWO": "El centro orienta la atención hacia el soporte del tronco. No significa mantener el abdomen contraído toda la sesión. La precisión consiste en realizar la acción prevista mientras el resto del cuerpo participa sin tensión innecesaria.",
+      "THREE_TITLE": "Conectar las partes", "THREE": "La respiración y la fluidez conectan una fase con otra. Sigue respirando y realiza las transiciones sin prisa. Estos principios son una guía habitual, no una prueba de perfección ni una razón para soportar molestias.",
+      "CUE": "Ofrece una intención cada vez: «Vuelve con la misma atención con la que te extiendes». Observa la respuesta antes de añadir otra indicación."
+    },
+    "BREATHING": {
+      "TITLE": "Respiración y movimiento", "SUMMARY": "Usa la respiración como ritmo, no como otra tarea que hacer perfecta.", "TIP_TITLE": "Deja fluir la respiración", "TIP": "Permite que las costillas se expandan cómodamente al inspirar. Evita contener el aire para terminar una repetición difícil.",
+      "ONE_TITLE": "Empieza con comodidad", "ONE": "En una postura cómoda, observa cómo se mueven las costillas al respirar. Permite que se expandan al inspirar y vuelvan al espirar. No hace falta tomar el máximo aire posible ni empujar los hombros hacia abajo.",
+      "TWO_TITLE": "Añade un movimiento", "TWO": "Combina un movimiento sencillo con una respiración natural. Espirar durante el esfuerzo puede ayudar, pero los patrones varían entre ejercicios y métodos. Respirar de forma continua y cómoda importa más que seguir una cuenta exacta.",
+      "THREE_TITLE": "Reduce la exigencia", "THREE": "Si contienes el aire repetidamente, reduce el recorrido, la resistencia o las repeticiones. Descansa antes de volver a intentarlo. El mareo es una razón para parar, no una señal de que la práctica funciona.",
+      "CUE": "Prueba: «Deja que la respiración continúe mientras te mueves». Respeta el ritmo natural de cada persona en lugar de imponer el tuyo."
+    },
+    "ALIGNMENT": {
+      "TITLE": "Alineación sin rigidez", "SUMMARY": "Encuentra un apoyo útil y construye el movimiento desde ahí.", "TIP_TITLE": "Encuentra tus apoyos", "TIP": "Nota el contacto con la colchoneta o el aparato. Aprovecha ese apoyo sin tensar el cuello ni la mandíbula.",
+      "ONE_TITLE": "Empieza por la tarea", "ONE": "La alineación relaciona las partes del cuerpo con el movimiento que realizas. No hay una postura única para todos los ejercicios. Empieza en una posición cómoda y apoyada, siguiendo la preparación específica de cada movimiento.",
+      "TWO_TITLE": "Elige el recorrido", "TWO": "Explora solo hasta donde puedas mantener la acción prevista y respirar cómodamente. Doblar las rodillas o acortar un alcance puede facilitar el ejercicio. Una adaptación es una elección útil, no una repetición fallida.",
+      "THREE_TITLE": "Progresa paso a paso", "THREE": "Cuando el movimiento sea consistente, cambia una sola exigencia: recorrido, resistencia, repeticiones o coordinación. Más no siempre es mejor. Si el dolor o una condición de salud afectan al movimiento, busca orientación individual antes de progresar.",
+      "CUE": "Pregunta: «¿Dónde sientes apoyo?». Observa la respiración y la calidad del movimiento antes de proponer más recorrido o resistencia."
+    }
+  },
   "TABS": {
     "PLANNER": "Planificador",
     "LIBRARY": "Biblioteca",
@@ -20,6 +48,7 @@
     "BROWSE_LIBRARY": "Explorar biblioteca"
   },
   "HOME": {
+    "TITLE_REQUIRED": "Introduce un título antes de guardar la sesión.",
     "CLEAR": "Vaciar",
     "CLEAR_CONFIRM_HEADER": "¿Vaciar este borrador?",
     "CLEAR_CONFIRM_MESSAGE": "¿Empezar una sesión vacía? Se descartarán los cambios de este borrador. Tus sesiones guardadas se conservarán.",

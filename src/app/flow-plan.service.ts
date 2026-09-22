@@ -37,10 +37,11 @@ export class FlowPlanService {
   /** Saves the current planner draft into the flow library, upserting by id so repeat saves update the same entry. */
   saveCurrentPlanAsFlow(name?: string): FlowPlan {
     const plan = this.currentPlan;
-    const trimmedName = name?.trim();
-    if (trimmedName) {
-      plan.name = trimmedName;
+    const trimmedName = (name ?? plan.name).trim();
+    if (!trimmedName) {
+      throw new Error('A flow title is required.');
     }
+    plan.name = trimmedName;
 
     const alreadySaved = this.savedFlows.some((flow) => flow.id === plan.id);
     if (!alreadySaved) {
@@ -75,7 +76,7 @@ export class FlowPlanService {
   }
 
   /** Starts a fresh, unsaved draft in the planner so the user can build a new flow from scratch. */
-  startBlankFlow(name = 'Untitled Flow'): FlowPlan {
+  startBlankFlow(name = ''): FlowPlan {
     const plan = this.createBlankPlan(name);
     this.updateCurrentPlan(plan);
     return plan;

@@ -1,4 +1,32 @@
 {
+  "DASHBOARD": {
+    "HOME": "Accueil", "INTRO": "Mieux comprendre pour pratiquer avec attention.", "BUILD": "Créer une séance",
+    "BASICS": "Les bases du Pilates", "BASICS_BODY": "Le Pilates associe respiration, mouvement et contrôle. Sur tapis ou sur appareil, il ne s’agit pas d’aller le plus loin possible, mais de bouger avec intention. Ces six principes sont couramment enseignés dans le Pilates contemporain.",
+    "BREATH": "Respiration", "CONCENTRATION": "Concentration", "CONTROL": "Contrôle", "CENTERING": "Centrage", "PRECISION": "Précision", "FLOW": "Fluidité",
+    "PRACTICE": "Dans votre pratique", "FEATURED": "Un exercice à découvrir", "READING": "Pour approfondir", "LOADING": "Chargement de l’exercice", "UNAVAILABLE": "L’exercice présenté est indisponible pour le moment.", "EXERCISE_LINK": "Découvrir cet exercice", "TEACHING": "Une consigne pour enseigner", "SOURCES": "Autres ressources",
+    "SAFETY": "Informations générales, et non programme individuel. Adaptez les mouvements à votre expérience et à votre santé. Arrêtez en cas de douleur, de vertiges ou d’essoufflement inhabituel ; demandez un avis qualifié si nécessaire.",
+    "PRINCIPLES": {
+      "TITLE": "Les principes en pratique", "SUMMARY": "Six repères pour donner du sens au mouvement, sans rigidité.", "TIP_TITLE": "Privilégiez le contrôle", "TIP": "Choisissez une amplitude fluide et maîtrisée. Un petit mouvement précis est plus utile qu’une position finale forcée.",
+      "ONE_TITLE": "L’attention avant l’effort", "ONE": "Se concentrer, c’est observer ce que l’on fait. Avant une répétition, prenez conscience de vos appuis et de votre respiration. Le contrôle permet de commencer, modifier et terminer le mouvement volontairement, sans forcément ralentir au maximum.",
+      "TWO_TITLE": "Soutenir sans crisper", "TWO": "Le centrage attire l’attention sur le soutien du tronc. Il ne demande pas de contracter les abdominaux pendant toute la séance. La précision consiste à réaliser l’action prévue tout en laissant le reste du corps participer sans tension inutile.",
+      "THREE_TITLE": "Relier les mouvements", "THREE": "La respiration et la fluidité relient les différentes phases. Continuez à respirer et prenez le temps des transitions. Ces principes sont des repères pédagogiques, pas un examen de perfection ni une raison d’ignorer l’inconfort.",
+      "CUE": "Donnez une seule intention à la fois : « Revenez avec autant d’attention que vous allez vers l’avant. » Observez la réponse avant d’ajouter une consigne."
+    },
+    "BREATHING": {
+      "TITLE": "Respiration et mouvement", "SUMMARY": "Un rythme pour accompagner le geste, pas une performance supplémentaire.", "TIP_TITLE": "Laissez circuler le souffle", "TIP": "Laissez les côtes s’ouvrir confortablement à l’inspiration. Évitez de bloquer le souffle pour terminer une répétition difficile.",
+      "ONE_TITLE": "Une respiration facile", "ONE": "Dans une position confortable, observez le mouvement de vos côtes. Laissez-les s’ouvrir à l’inspiration et revenir à l’expiration. Il n’est pas nécessaire d’inspirer au maximum ni d’abaisser les épaules de force.",
+      "TWO_TITLE": "Ajoutez un mouvement", "TWO": "Associez un geste facile à une respiration naturelle. Expirer pendant l’effort peut servir de repère, mais les rythmes varient selon les exercices et les approches. Respirer confortablement compte davantage que respecter exactement un décompte.",
+      "THREE_TITLE": "Réduisez la difficulté", "THREE": "Si vous bloquez régulièrement le souffle, réduisez l’amplitude, la résistance ou les répétitions. Faites une pause avant de reprendre. Des vertiges sont une raison de s’arrêter, pas un signe d’efficacité.",
+      "CUE": "Essayez : « Continuez à respirer pendant le mouvement. » Laissez à chacun son rythme naturel au lieu d’imposer le vôtre."
+    },
+    "ALIGNMENT": {
+      "TITLE": "L’alignement sans rigidité", "SUMMARY": "Trouvez des appuis utiles pour construire le mouvement.", "TIP_TITLE": "Trouvez vos appuis", "TIP": "Sentez le contact du tapis ou de l’appareil. Utilisez ce soutien sans crisper la nuque ou la mâchoire.",
+      "ONE_TITLE": "Partez du mouvement", "ONE": "L’alignement dépend des relations entre les parties du corps et du geste réalisé. Aucune posture ne convient à tous les exercices. Commencez dans une position confortable et soutenue, puis suivez la mise en place propre au mouvement.",
+      "TWO_TITLE": "Choisissez l’amplitude", "TWO": "Explorez une amplitude qui permet de conserver l’action souhaitée et une respiration aisée. Plier les genoux ou réduire la portée peut faciliter un exercice. Une adaptation est un choix utile, pas une répétition ratée.",
+      "THREE_TITLE": "Progressez étape par étape", "THREE": "Quand le geste devient régulier, modifiez une seule demande : amplitude, résistance, répétitions ou coordination. Plus n’est pas toujours mieux. Si une douleur ou un problème de santé influence vos mouvements, demandez un conseil personnalisé avant de progresser.",
+      "CUE": "Demandez : « Où sentez-vous vos appuis ? » Observez la respiration et la qualité du geste avant de proposer davantage d’amplitude ou de résistance."
+    }
+  },
   "TABS": {
     "PLANNER": "Planificateur",
     "LIBRARY": "Bibliothèque",
@@ -20,6 +48,7 @@
     "BROWSE_LIBRARY": "Parcourir la bibliothèque"
   },
   "HOME": {
+    "TITLE_REQUIRED": "Saisissez un titre avant d’enregistrer la séance.",
     "CLEAR": "Vider",
     "CLEAR_CONFIRM_HEADER": "Vider ce brouillon ?",
     "CLEAR_CONFIRM_MESSAGE": "Commencer une nouvelle séance vide ? Les modifications de ce brouillon seront perdues. Vos séances enregistrées seront conservées.",

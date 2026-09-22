@@ -1,4 +1,32 @@
 {
+  "DASHBOARD": {
+    "HOME": "Home", "INTRO": "Capire un po’ di più. Praticare con più consapevolezza.", "BUILD": "Crea una sequenza",
+    "BASICS": "Le basi del Pilates", "BASICS_BODY": "Il Pilates unisce respiro, movimento e controllo. Sul tappetino o sugli attrezzi, l’obiettivo non è il movimento più ampio, ma quello eseguito con intenzione. Questi sei principi sono comunemente insegnati nel Pilates contemporaneo.",
+    "BREATH": "Respiro", "CONCENTRATION": "Concentrazione", "CONTROL": "Controllo", "CENTERING": "Centratura", "PRECISION": "Precisione", "FLOW": "Fluidità",
+    "PRACTICE": "Nella tua pratica", "FEATURED": "Un esercizio da esplorare", "READING": "Per approfondire", "LOADING": "Caricamento esercizio", "UNAVAILABLE": "L’esercizio in evidenza non è disponibile al momento.", "EXERCISE_LINK": "Esplora questo esercizio", "TEACHING": "Un suggerimento per insegnare", "SOURCES": "Altre risorse",
+    "SAFETY": "Informazioni generali, non una prescrizione individuale. Scegli movimenti adatti alla tua esperienza e salute. Fermati in caso di dolore, vertigini o affanno insolito; chiedi un parere qualificato quando necessario.",
+    "PRINCIPLES": {
+      "TITLE": "I principi nella pratica", "SUMMARY": "Sei idee per dare intenzione al movimento, senza rigidità.", "TIP_TITLE": "Punta al controllo", "TIP": "Scegli un’ampiezza che puoi gestire con fluidità. Un movimento piccolo e consapevole è più utile di una posizione finale forzata.",
+      "ONE_TITLE": "Attenzione prima dello sforzo", "ONE": "Concentrarsi significa notare ciò che fai. Prima di una ripetizione, osserva gli appoggi e il respiro. Controllo significa iniziare, modificare e concludere il movimento consapevolmente, non necessariamente muoversi il più lentamente possibile.",
+      "TWO_TITLE": "Sostenere senza irrigidire", "TWO": "La centratura porta l’attenzione al sostegno del tronco. Non richiede di tenere l’addome contratto per tutta la sessione. La precisione consiste nell’eseguire l’azione prevista lasciando partecipare il resto del corpo senza tensioni inutili.",
+      "THREE_TITLE": "Collegare le fasi", "THREE": "Respiro e fluidità collegano una fase alla successiva. Continua a respirare e non affrettare le transizioni. Questi principi sono una guida diffusa, non una prova di perfezione né un motivo per ignorare il disagio.",
+      "CUE": "Offri un’intenzione alla volta: «Ritorna con la stessa attenzione con cui ti allunghi». Osserva la risposta prima di aggiungere un’altra indicazione."
+    },
+    "BREATHING": {
+      "TITLE": "Respiro e movimento", "SUMMARY": "Il respiro come ritmo, non come un altro compito da eseguire perfettamente.", "TIP_TITLE": "Lascia scorrere il respiro", "TIP": "Lascia espandere comodamente le costole durante l’inspirazione. Evita di trattenere il fiato per finire una ripetizione difficile.",
+      "ONE_TITLE": "Inizia con un respiro facile", "ONE": "In una posizione comoda, nota come il respiro muove le costole. Lasciale espandere inspirando e tornare espirando. Non serve inspirare al massimo né spingere le spalle verso il basso.",
+      "TWO_TITLE": "Aggiungi un movimento", "TWO": "Abbina un movimento semplice a un respiro spontaneo. Espirare durante lo sforzo può essere un buon punto di partenza, ma gli schemi variano secondo esercizio e metodo. Respirare con continuità conta più di seguire un conteggio preciso.",
+      "THREE_TITLE": "Riduci la richiesta", "THREE": "Se trattieni spesso il fiato, riduci ampiezza, resistenza o ripetizioni. Fai una pausa prima di riprovare. Le vertigini sono un motivo per fermarsi, non un segnale di efficacia dell’esercizio respiratorio.",
+      "CUE": "Prova: «Lascia continuare il respiro mentre ti muovi». Rispetta il ritmo naturale di ciascuno senza imporre il tuo."
+    },
+    "ALIGNMENT": {
+      "TITLE": "Allineamento senza rigidità", "SUMMARY": "Trova un sostegno utile e costruisci il movimento da lì.", "TIP_TITLE": "Trova i tuoi appoggi", "TIP": "Nota il contatto con il tappetino o l’attrezzo. Usa quel sostegno senza irrigidire collo o mandibola.",
+      "ONE_TITLE": "Parti dal compito", "ONE": "L’allineamento riguarda il rapporto tra le parti del corpo e il movimento svolto. Non esiste una postura unica per ogni esercizio. Parti da una posizione comoda e sostenuta e segui la preparazione specifica del movimento.",
+      "TWO_TITLE": "Scegli l’ampiezza", "TWO": "Esplora solo fin dove puoi mantenere l’azione prevista e respirare comodamente. Piegare le ginocchia o accorciare una leva può aiutare. Una modifica è una scelta utile, non una ripetizione fallita.",
+      "THREE_TITLE": "Progredisci gradualmente", "THREE": "Quando il movimento è stabile, cambia una sola richiesta: ampiezza, resistenza, ripetizioni o coordinazione. Di più non è sempre meglio. Se dolore o condizioni di salute influenzano il movimento, cerca una guida individuale prima di progredire.",
+      "CUE": "Chiedi: «Dove senti sostegno?». Osserva respiro e qualità del movimento prima di proporre maggiore ampiezza o resistenza."
+    }
+  },
   "TABS": {
     "PLANNER": "Pianificatore",
     "LIBRARY": "Libreria",
@@ -20,6 +48,7 @@
     "BROWSE_LIBRARY": "Sfoglia la libreria"
   },
   "HOME": {
+    "TITLE_REQUIRED": "Inserisci un titolo prima di salvare la sequenza.",
     "CLEAR": "Svuota",
     "CLEAR_CONFIRM_HEADER": "Svuotare questa bozza?",
     "CLEAR_CONFIRM_MESSAGE": "Iniziare una nuova sequenza vuota? Le modifiche alla bozza saranno eliminate. Le sequenze salvate saranno conservate.",

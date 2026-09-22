@@ -1,4 +1,32 @@
 {
+  "DASHBOARD": {
+    "HOME": "Start", "INTRO": "Mehr verstehen. Bewusster üben.", "BUILD": "Flow erstellen",
+    "BASICS": "Die Grundlagen von Pilates", "BASICS_BODY": "Pilates verbindet Atmung, Bewegung und Kontrolle. Auf der Matte oder am Gerät zählt nicht die größtmögliche Bewegung, sondern eine bewusst ausgeführte. Diese sechs Prinzipien werden im heutigen Pilates häufig vermittelt.",
+    "BREATH": "Atmung", "CONCENTRATION": "Konzentration", "CONTROL": "Kontrolle", "CENTERING": "Zentrierung", "PRECISION": "Präzision", "FLOW": "Bewegungsfluss",
+    "PRACTICE": "Impulse für deine Praxis", "FEATURED": "Eine Übung entdecken", "READING": "Zum Weiterlesen", "LOADING": "Übung wird geladen", "UNAVAILABLE": "Die vorgestellte Übung ist gerade nicht verfügbar.", "EXERCISE_LINK": "Übung ansehen", "TEACHING": "Ein Hinweis fürs Unterrichten", "SOURCES": "Weitere Informationen",
+    "SAFETY": "Allgemeine Informationen, kein individueller Trainingsplan. Wähle Bewegungen passend zu Erfahrung und Gesundheit. Bei Schmerzen, Schwindel oder ungewöhnlicher Atemnot aufhören und bei Bedarf fachlichen Rat einholen.",
+    "PRINCIPLES": {
+      "TITLE": "Prinzipien praktisch anwenden", "SUMMARY": "Sechs Ideen für bewusste Bewegung ohne Starrheit.", "TIP_TITLE": "Kontrolle als Ziel", "TIP": "Wähle einen Bewegungsumfang, den du flüssig steuern kannst. Eine kleine, bewusste Bewegung ist hilfreicher als eine erzwungene Endposition.",
+      "ONE_TITLE": "Aufmerksamkeit vor Anstrengung", "ONE": "Konzentration heißt wahrzunehmen, was du tust. Spüre vor einer Wiederholung deine Auflagepunkte und deinen Atem. Kontrolle bedeutet, eine Bewegung bewusst zu beginnen, zu verändern und zu beenden, nicht unbedingt möglichst langsam zu sein.",
+      "TWO_TITLE": "Stützen statt festhalten", "TWO": "Zentrierung lenkt die Aufmerksamkeit auf die Unterstützung durch den Rumpf. Sie verlangt keine dauerhafte Bauchanspannung. Präzision bedeutet, die beabsichtigte Bewegung auszuführen, während der übrige Körper ohne unnötige Spannung mitwirkt.",
+      "THREE_TITLE": "Die Teile verbinden", "THREE": "Atmung und Bewegungsfluss verbinden die einzelnen Phasen. Atme weiter und gestalte Übergänge ohne Hast. Diese Prinzipien sind ein verbreiteter Orientierungsrahmen, kein Perfektionstest und kein Grund, Beschwerden zu ignorieren.",
+      "CUE": "Gib jeweils eine klare Absicht vor: „Kehre genauso bewusst zurück, wie du dich streckst.“ Beobachte die Reaktion, bevor du einen weiteren Hinweis ergänzt."
+    },
+    "BREATHING": {
+      "TITLE": "Atmung und Bewegung", "SUMMARY": "Der Atem gibt Rhythmus, keine zusätzliche Leistungsaufgabe.", "TIP_TITLE": "Den Atem fließen lassen", "TIP": "Lass die Rippen beim Einatmen angenehm weit werden. Halte nicht die Luft an, um eine schwierige Wiederholung zu schaffen.",
+      "ONE_TITLE": "Mit leichtem Atem beginnen", "ONE": "Beobachte in einer bequemen Position, wie dein Atem die Rippen bewegt. Lass sie sich beim Einatmen weiten und beim Ausatmen zurücksinken. Du musst weder maximal tief einatmen noch die Schultern nach unten drücken.",
+      "TWO_TITLE": "Eine Bewegung hinzufügen", "TWO": "Verbinde eine leichte Bewegung mit ungezwungenem Atmen. Ausatmen bei Anstrengung kann ein guter Ausgangspunkt sein; Atemmuster unterscheiden sich jedoch je nach Übung und Methode. Ein ruhiger Atem ist wichtiger als ein exakt eingehaltenes Zählmuster.",
+      "THREE_TITLE": "Die Anforderung verringern", "THREE": "Wenn du wiederholt die Luft anhältst, verringere Bewegungsumfang, Widerstand oder Wiederholungen. Pausiere vor dem nächsten Versuch. Schwindel ist ein Grund aufzuhören, kein Zeichen für wirksames Atemtraining.",
+      "CUE": "Versuche: „Lass den Atem beim Bewegen weiterfließen.“ Gib Raum für den natürlichen Rhythmus, statt allen deinen Atemtakt vorzugeben."
+    },
+    "ALIGNMENT": {
+      "TITLE": "Ausrichtung ohne Starrheit", "SUMMARY": "Finde hilfreiche Unterstützung als Ausgangspunkt für Bewegung.", "TIP_TITLE": "Unterstützung wahrnehmen", "TIP": "Spüre den Kontakt zur Matte oder zum Gerät. Nutze diese Unterstützung, ohne Nacken oder Kiefer anzuspannen.",
+      "ONE_TITLE": "Von der Aufgabe ausgehen", "ONE": "Ausrichtung beschreibt das Verhältnis der Körperteile zur jeweiligen Bewegung. Es gibt keine Haltung für alle Übungen. Beginne bequem und unterstützt und beachte die Ausgangsposition der konkreten Übung.",
+      "TWO_TITLE": "Den Umfang bewusst wählen", "TWO": "Bewege dich nur so weit, wie du die beabsichtigte Aktion und einen angenehmen Atem beibehalten kannst. Gebeugte Knie oder ein kürzerer Hebel können helfen. Eine Anpassung ist eine sinnvolle Wahl, keine misslungene Wiederholung.",
+      "THREE_TITLE": "Schrittweise steigern", "THREE": "Wenn eine Bewegung verlässlich gelingt, ändere nur eine Anforderung: Umfang, Widerstand, Wiederholungen oder Koordination. Mehr ist nicht immer besser. Bei Schmerzen oder gesundheitlichen Einschränkungen ist vor einer Steigerung individuelle Beratung sinnvoll.",
+      "CUE": "Frage: „Wo spürst du Unterstützung?“ Beobachte Atmung und Bewegungsqualität, bevor du mehr Umfang oder Widerstand vorschlägst."
+    }
+  },
   "TABS": {
     "PLANNER": "Planer",
     "LIBRARY": "Bibliothek",
@@ -20,6 +48,7 @@
     "BROWSE_LIBRARY": "Bibliothek durchsuchen"
   },
   "HOME": {
+    "TITLE_REQUIRED": "Gib vor dem Speichern einen Flow-Titel ein.",
     "CLEAR": "Leeren",
     "CLEAR_CONFIRM_HEADER": "Diesen Entwurf leeren?",
     "CLEAR_CONFIRM_MESSAGE": "Einen neuen leeren Flow beginnen? Änderungen an diesem Entwurf werden verworfen. Deine gespeicherten Flows bleiben erhalten.",

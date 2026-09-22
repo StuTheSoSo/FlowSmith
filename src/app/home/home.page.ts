@@ -163,15 +163,20 @@ export class HomePage implements OnInit, OnDestroy {
   async saveFlow(): Promise<void> {
     const alert = await this.alertController.create({
       header: this.translate.instant(this.isSavedToLibrary ? 'HOME.SAVE_ALERT_HEADER_UPDATE' : 'HOME.SAVE_ALERT_HEADER_NEW'),
-      inputs: [{ name: 'name', type: 'text', value: this.plan.name, placeholder: this.translate.instant('HOME.SAVE_ALERT_PLACEHOLDER') }],
+      inputs: [{ name: 'name', type: 'text', value: this.plan.name, placeholder: this.translate.instant('HOME.SAVE_ALERT_PLACEHOLDER'), attributes: { required: true } }],
       buttons: [
         { text: this.translate.instant('COMMON.CANCEL'), role: 'cancel' },
         {
           text: this.translate.instant('COMMON.SAVE'),
           handler: (data) => {
-            const name = data?.name?.trim() || this.plan.name.trim() || this.translate.instant('HOME.UNTITLED_FLOW');
+            const name = typeof data?.name === 'string' ? data.name.trim() : '';
+            if (!name) {
+              alert.message = this.translate.instant('HOME.TITLE_REQUIRED');
+              return false;
+            }
             this.flowPlanService.saveCurrentPlanAsFlow(name);
             this.changeDetector.detectChanges();
+            return true;
           },
         },
       ],

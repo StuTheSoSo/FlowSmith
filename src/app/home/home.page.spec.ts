@@ -134,6 +134,24 @@ describe('HomePage', () => {
     expect(plan.name).toBe('');
   });
 
+  it('keeps the Save dialog open for missing titles and saves a trimmed title', async () => {
+    plan.name = 'Previous title';
+    const save = jasmine.createSpy('saveCurrentPlanAsFlow');
+    TestBed.inject(FlowPlanService).saveCurrentPlanAsFlow = save;
+    const alert = { present: jasmine.createSpy().and.resolveTo(), message: '' };
+    const create = jasmine.createSpy().and.resolveTo(alert);
+    TestBed.inject(AlertController).create = create;
+    await component.saveFlow();
+    const handler = create.calls.mostRecent().args[0].buttons[1].handler;
+    for (const name of ['', '   ', '\t\n', undefined]) {
+      expect(handler({ name })).toBeFalse();
+      expect(alert.message).toBe('HOME.TITLE_REQUIRED');
+    }
+    expect(save).not.toHaveBeenCalled();
+    expect(handler({ name: '  Evening Mat  ' })).toBeTrue();
+    expect(save).toHaveBeenCalledWith('Evening Mat');
+  });
+
   it('only replaces the draft after confirming Clear and edits the new draft afterwards', async () => {
     component.openExercisePicker(plan.segments[0]);
     component.addExercise(matExercise);
@@ -167,5 +185,30 @@ describe('HomePage', () => {
     component.addExercise(chairExercise);
     expect(blank.segments[0].items[0].exerciseId).toBe(chairExercise.id);
     expect(persist).toHaveBeenCalledWith(blank);
+  });
+});
+
+describe('Flow title persistence', () => {
+  beforeEach(() => {
+    const stored = new Map<string, string>();
+    spyOn(localStorage, 'getItem').and.callFake(key => stored.get(key) ?? null);
+    spyOn(localStorage, 'setItem').and.callFake((key, value) => { stored.set(key, value); });
+  });
+
+  it('starts unnamed and rejects blank titles without changing saved flows', () => {
+    const service = new FlowPlanService();
+    service.startBlankFlow();
+    expect(service.currentPlan.name).toBe('');
+    for (const name of [undefined, '', ' \t\n ']) {
+      expect(() => service.saveCurrentPlanAsFlow(name)).toThrowError('A flow title is required.');
+    }
+    expect(service.savedFlows).toEqual([]);
+    expect(service.currentPlan.savedAt).toBeUndefined();
+    service.saveCurrentPlanAsFlow('  Named flow  ');
+    const saved = JSON.stringify(service.savedFlows);
+    expect(service.currentPlan.name).toBe('Named flow');
+    expect(() => service.saveCurrentPlanAsFlow(' ')).toThrow();
+    expect(JSON.stringify(service.savedFlows)).toBe(saved);
+    expect(new FlowPlanService().savedFlows[0].name).toBe('Named flow');
   });
 });

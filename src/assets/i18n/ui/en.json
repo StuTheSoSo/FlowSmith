@@ -76,6 +76,7 @@
     "BROWSE_LIBRARY": "Browse library"
   },
   "HOME": {
+    "TITLE_REQUIRED": "Enter a flow title before saving.",
     "CLEAR": "Clear",
     "CLEAR_CONFIRM_HEADER": "Clear this draft?",
     "CLEAR_CONFIRM_MESSAGE": "Start a new blank flow? Changes to this draft will be discarded. Your saved flows will be kept.",

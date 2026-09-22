@@ -20,7 +20,10 @@
         [attr.aria-label]="'HOME.PLAN_NAME_ARIA' | translate"
         [placeholder]="'HOME.UNTITLED_FLOW' | translate"
         autocapitalize="words"
+        required
+        [attr.aria-describedby]="!plan.name.trim() ? 'flow-title-required' : null"
       ></ion-input>
+      <p id="flow-title-required" *ngIf="!plan.name.trim()" class="title-required">{{ 'HOME.TITLE_REQUIRED' | translate }}</p>
       <div class="plan-save-status">
         <strong>{{ planDurationMinutes }} {{ 'HOME.STAT_MIN' | translate }}</strong>
         <span>{{ planExerciseCount }} {{ 'HOME.STAT_EXERCISES' | translate }}</span>
@@ -31,7 +34,7 @@
       </div>
     </div>
     <div class="plan-header-actions">
-      <ion-button fill="clear" class="save-flow-link" [disabled]="!planExerciseCount" (click)="saveFlow()"
+      <ion-button fill="clear" class="save-flow-link" [disabled]="!planExerciseCount || !plan.name.trim()" (click)="saveFlow()"
         [attr.title]="(isSavedToLibrary ? 'HOME.UPDATE_SAVED_FLOW' : 'HOME.SAVE_TO_LIBRARY') | translate">
         <ion-icon name="bookmark-outline" slot="start" aria-hidden="true"></ion-icon>
         {{ 'COMMON.SAVE' | translate }}
